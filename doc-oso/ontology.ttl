@@ -1,0 +1,2430 @@
+@prefix : <https://w3id.org/earthsemantics/OSO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/earthsemantics/OSO#> .
+
+<https://w3id.org/earthsemantics/OSO> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/terms/contributor> <mailto:emso.dmsg@emso-eu.org> ;
+                                       <http://purl.org/dc/terms/created> "\"2025-04-04\""^^xsd:date ;
+                                       <http://purl.org/dc/terms/creator> "<https://orcid.org/0009-0008-1759-5254>"@en ;
+                                       <http://purl.org/dc/terms/description> "Descriptive ontology for open seas observatories (including all EMSO observatories for European Multidisciplinary Seafloor and water column Observatories)"@en ;
+                                       <http://purl.org/dc/terms/licence> "<https://creativecommons.org/licenses/by/4.0/>"^^xsd:anyURI ;
+                                       <http://purl.org/dc/terms/modified> "\"2025-04-15\""^^xsd:date ;
+                                       <http://purl.org/dc/terms/publisher> "<https://github.com/emso-eric>"^^xsd:anyURI ;
+                                       <http://purl.org/dc/terms/source> "<https://github.com/emso-eric/oso-ontology>"^^xsd:anyURI ;
+                                       <http://purl.org/dc/terms/title> "Open Seas Observatory Ontology"@en ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "\"OSO\"" ;
+                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "\"https://earthportal.eu/ontologies/OSO#\""^^xsd:anyURI ;
+                                       <http://rdfs.org/ns/void#uriSpace> "\"https://earthportal.eu/ontologies/OSO#\""^^xsd:anyURI ;
+                                       rdfs:comment "Ontology describing the relationships between Regional Facilities, Sites, Platforms, Research Infrastructures, Organizations, Cruises, and the persons in charge of each levels."@en ;
+                                       rdfs:label "Open Seas Observatories"@en ;
+                                       rdfs:seeAlso "<https://github.com/emso-eric/oso-ontology/CONTRIBUTING.md>"^^xsd:anyURI ;
+                                       owl:versionInfo 0.12 ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "This ontology aims to describe underwater observatories, in particular those associated with the European Multidisciplinary Seafloor and water column Observatories (EMSO), which is an European Research Infrastructure Consortium (ERIC) since 2016."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Sea Observatories"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://data.bioontology.org/metadata/prefixIRI
+<http://data.bioontology.org/metadata/prefixIRI> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty ;
+                                   rdfs:range <http://schema.org/Person> .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/licence
+<http://purl.org/dc/terms/licence> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://rdfs.org/ns/void#uriSpace
+<http://rdfs.org/ns/void#uriSpace> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:AnnotationProperty ;
+                                             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/title> .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/title
+<http://xmlns.com/foaf/0.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonth
+xsd:gYearMonth rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#wktLiteral
+<http://www.w3.org/2003/01/geo/wgs84_pos#wktLiteral> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/ontology#associatedWithRI
+<http://example.org/ontology#associatedWithRI> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://example.org/ontology#RF> ;
+                                               rdfs:range <http://example.org/ontology#RI> ;
+                                               rdfs:comment "A Regional Facility is associated with one or more Research Infrastructures."@en ;
+                                               rdfs:label "Regional Facility is associated with a Research Infrastructure"@en .
+
+
+###  http://example.org/ontology#containsPlatform
+<http://example.org/ontology#containsPlatform> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://example.org/ontology#SI> ;
+                                               rdfs:range <http://www.w3.org/ns/sosa/Platform> ;
+                                               rdfs:comment "A site contains one or more platforms."@en ;
+                                               rdfs:label "Site contains a Platform"@en .
+
+
+###  http://example.org/ontology#containsSite
+<http://example.org/ontology#containsSite> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://example.org/ontology#RF> ;
+                                           rdfs:range <http://example.org/ontology#SI> ;
+                                           rdfs:comment "A Regional Facility contains one or more Sites."@en ;
+                                           rdfs:label "Regional Facility contains a Site"@en .
+
+
+###  http://example.org/ontology#hasPrincipalInvestigator
+<http://example.org/ontology#hasPrincipalInvestigator> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://www.w3.org/ns/sosa/Platform> ;
+                                                       rdfs:range <http://schema.org/Person> ;
+                                                       rdfs:comment "A Platform may have zero or more Principal Investigators."@en ;
+                                                       rdfs:label "Platform has a Principal Investigator"@en .
+
+
+###  http://example.org/ontology#hasRegionalTeamLeader
+<http://example.org/ontology#hasRegionalTeamLeader> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://example.org/ontology#RF> ;
+                                                    rdfs:range <http://schema.org/Person> ;
+                                                    rdfs:comment "A Regional Facility is managed by one Regional Team Leader."@en ;
+                                                    rdfs:label "Regional Faciliy has a Regional Team Leader"@en .
+
+
+###  http://example.org/ontology#hasSiteResponsible
+<http://example.org/ontology#hasSiteResponsible> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://example.org/ontology#SI> ;
+                                                 rdfs:range <http://schema.org/Person> ;
+                                                 rdfs:comment "A Site is managed by one Site Responsible."@en ;
+                                                 rdfs:label "Site has a Site Responsible"@en .
+
+
+###  http://example.org/ontology#ledByOrganization
+<http://example.org/ontology#ledByOrganization> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://example.org/ontology#RF> ;
+                                                rdfs:range <http://xmlns.com/foaf/0.1/Organization> ;
+                                                rdfs:comment "A Regional Facility is managed by one or more Organizations."@en ;
+                                                rdfs:label "Regional Facility is managed by an Organization"@en .
+
+
+###  http://example.org/ontology#linkedToCampaigns
+<http://example.org/ontology#linkedToCampaigns> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://example.org/ontology#RF> ;
+                                                rdfs:range <http://example.org/ontology#OceanographicCampaign> ;
+                                                rdfs:comment "A Regional Facility is linked to zero or more Oceanographic Campaigns."@en ;
+                                                rdfs:label "Regional Facility is linked to Cruise"@en .
+
+
+###  http://example.org/ontology#linkedToSeries
+<http://example.org/ontology#linkedToSeries> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://example.org/ontology#RF> ;
+                                             rdfs:range <http://example.org/ontology#SeriesOfOceanographicCampaigns> ;
+                                             rdfs:comment "A Regional Facility is linked to zero or more of series of Oceanographic Campaigns."@en ;
+                                             rdfs:label "Regional Facility is linked to a Series of Cruises"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#ERIC_has_a_Director_General
+:ERIC_has_a_Director_General rdf:type owl:ObjectProperty ;
+                             rdfs:domain :ERIC ;
+                             rdfs:range <http://schema.org/Person> .
+
+
+###  https://w3id.org/earthsemantics/OSO#ERICfederate
+:ERICfederate rdf:type owl:ObjectProperty ;
+              rdfs:domain :ERIC ;
+              rdfs:range <http://example.org/ontology#RI> ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "ERIC federated a Research Infrastructure"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Platform_contains_Subplatforms
+:Platform_contains_Subplatforms rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://www.w3.org/ns/sosa/Platform> ;
+                                rdfs:range :Subplatform ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Plaform can contain several sub-platforms"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Project_is_led_by_an_Organization
+:Project_is_led_by_an_Organization rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :Project ;
+                                   rdfs:range <http://xmlns.com/foaf/0.1/Organization> ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Project is led by an organization"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#RFisRelatedTo
+:RFisRelatedTo rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://example.org/ontology#RF> ;
+               rdfs:range <http://example.org/ontology#RI> ;
+               rdfs:comment "A Regional Facility is related to zero or more Research Infrastructure" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional Facility is related to a Research Infrastructure"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#RFisledby
+:RFisledby rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://example.org/ontology#RI> ;
+           rdfs:range <http://schema.org/Person> ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Research Infrastructure is led by"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#RFispartofRI
+:RFispartofRI rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://example.org/ontology#RF> ;
+              rdfs:range <http://example.org/ontology#RI> ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional Facility is part of a Research Infrastructure"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#RegionalFacility_is_linked_to_a_project
+:RegionalFacility_is_linked_to_a_project rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://example.org/ontology#RF> ;
+                                         rdfs:range :Project ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional Facility is linked to a project"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Regional_Facility_is_part_of_EMSO_ERIC
+:Regional_Facility_is_part_of_EMSO_ERIC rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://example.org/ontology#RF> ;
+                                        rdfs:range :ERIC ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional Facility is part an ERIC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Site_has_Latitude
+:Site_has_Latitude rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain <http://example.org/ontology#SI> ,
+                               :Subsite ;
+                   rdfs:range [ rdf:type owl:Restriction ;
+                                owl:onProperty :Site_has_Latitude ;
+                                owl:someValuesFrom <http://www.w3.org/2003/01/geo/wgs84_pos#Latitude>
+                              ] ;
+                   rdfs:label "Site has Latitude"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Site_has_Longitude
+:Site_has_Longitude rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain <http://example.org/ontology#SI> ,
+                                :Subsite ;
+                    rdfs:range [ rdf:type owl:Restriction ;
+                                 owl:onProperty :Site_has_Latitude ;
+                                 owl:someValuesFrom <http://www.w3.org/2003/01/geo/wgs84_pos#Longitude>
+                               ] ;
+                    rdfs:label "Site has Longitude"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Site_has_a_Subsite
+:Site_has_a_Subsite rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://example.org/ontology#SI> ;
+                    rdfs:range :Subsite ;
+                    rdfs:comment "A site can be associated to one or more subsites"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Site has a subsite"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform
+:Subsite_contains_a_Platform rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Subsite ;
+                             rdfs:range <http://www.w3.org/ns/sosa/Platform> ;
+                             rdfs:comment "a subsite contains one or more platforms"@en ;
+                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Subsite contains a platform"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasBoundingBox
+:hasBoundingBox rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://example.org/ontology#RF> ;
+                rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                rdfs:comment "Links a regional facility to its spatial extent, aligned with EX_Extent/EX_GeographicBoundingBox in ISO 19115-3."@en ;
+                rdfs:label "has Bounding Box"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional Facility has a bouding box"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://example.org/ontology#RF> ,
+                        <http://example.org/ontology#RI> ,
+                        <http://xmlns.com/foaf/0.1/Organization> ;
+            rdfs:range <http://dbpedia.org/ontology/Country> ;
+            rdfs:label "has a country"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasGeometry
+:hasGeometry rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain <http://example.org/ontology#SI> ,
+                         :Subsite ;
+             rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://example.org/ontology#RF> ;
+             rdfs:range :Location ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "has location"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasMaxDepth
+:hasMaxDepth rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://example.org/ontology#SI> ,
+                         :Subsite ;
+             rdfs:range [ rdf:type owl:Restriction ;
+                          owl:onProperty :maxWaterDepth ;
+                          owl:someValuesFrom xsd:integer
+                        ] ;
+             rdfs:label "Site has maximum depth"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasMinDepth
+:hasMinDepth rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://example.org/ontology#SI> ,
+                         :Subsite ;
+             rdfs:range [ rdf:type owl:Restriction ;
+                          owl:onProperty :minWaterDepth ;
+                          owl:someValuesFrom xsd:integer
+                        ] ;
+             rdfs:label "Site has minimum depth"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#isMemberof
+:isMemberof rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+            rdfs:range :ERIC ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Organization is member of an ERIC"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/endDate
+<http://schema.org/endDate> rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Project ;
+                            rdfs:range xsd:date .
+
+
+###  http://schema.org/startDate
+<http://schema.org/startDate> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Project ;
+                              rdfs:range xsd:date .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#Latitude> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                   rdfs:range xsd:double .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#Longitude> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                    rdfs:range xsd:double .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://example.org/ontology#RF> ,
+                                                 <http://example.org/ontology#RI> ,
+                                                 <http://example.org/ontology#SI> ,
+                                                 <http://xmlns.com/foaf/0.1/Organization> ,
+                                                 :ERIC ;
+                                     rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#DistanceFromLand
+:DistanceFromLand rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://example.org/ontology#RF> ,
+                              <http://example.org/ontology#SI> ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "value expressed in nautical miles (NM)"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Distance from land"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#dateFirstDeployment
+:dateFirstDeployment rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <http://example.org/ontology#RF> ,
+                                 <http://example.org/ontology#SI> ,
+                                 <http://www.w3.org/ns/sosa/Platform> ,
+                                 :Subplatform ,
+                                 :Subsite ;
+                     rdfs:range xsd:date ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Date of first deployment"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasDOI
+:hasDOI rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://example.org/ontology#OceanographicCampaign> ,
+                    <http://example.org/ontology#SeriesOfOceanographicCampaigns> ;
+        rdfs:range xsd:string .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasEastLongitude
+:hasEastLongitude rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                  rdfs:range xsd:float ;
+                  rdfs:comment "Corresponds to eastBoundLongitude in ISO 19115-3"@en ;
+                  rdfs:label "East Longitude"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasNorthLatitude
+:hasNorthLatitude rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                  rdfs:range xsd:float ;
+                  rdfs:comment "Corresponds to northBoundLatitude in ISO 19115-3"@en ;
+                  rdfs:label "North Latitude"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasORCID
+:hasORCID rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://schema.org/Person> ;
+          rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasSouthLatitude
+:hasSouthLatitude rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                  rdfs:range xsd:float ;
+                  rdfs:comment "Corresponds to southBoundLatitude in ISO 19115-3"@en ;
+                  rdfs:label "South Latitude"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#hasWestLongitude
+:hasWestLongitude rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                  rdfs:range xsd:float ;
+                  rdfs:comment "Corresponds to westBoundLongitude in ISO 19115-3"@en ;
+                  rdfs:label "West Longitude"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#maxWaterDepth
+:maxWaterDepth rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://example.org/ontology#RF> ,
+                           <http://example.org/ontology#SI> ,
+                           <http://www.w3.org/ns/sosa/Platform> ,
+                           :Subplatform ,
+                           :Subsite ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "value expressed in meter (m)"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "has max depth"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#minWaterDepth
+:minWaterDepth rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://example.org/ontology#RF> ,
+                           <http://example.org/ontology#SI> ,
+                           <http://www.w3.org/ns/sosa/Platform> ,
+                           :Subplatform ,
+                           :Subsite ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "value expressed in meter (m)" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "has min depth"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing .
+
+
+###  http://example.org/ontology#OceanographicCampaign
+<http://example.org/ontology#OceanographicCampaign> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://example.org/ontology#SeriesOfOceanographicCampaigns> ;
+                                                    rdfs:comment "An oceanographic campaign linked to a Regional Facility."@en ;
+                                                    rdfs:label "Cruise"@en .
+
+
+###  http://example.org/ontology#RF
+<http://example.org/ontology#RF> rdf:type owl:Class ;
+                                 rdfs:subClassOf owl:Thing ;
+                                 rdfs:comment "A regional facility containing sites, associated with research infrastructures, oceanographic campaigns, organizations, and a Regional Team Leader."@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional Facility"@en .
+
+
+###  http://example.org/ontology#RI
+<http://example.org/ontology#RI> rdf:type owl:Class ;
+                                 rdfs:subClassOf owl:Thing ;
+                                 rdfs:comment "A research infrastructure may bring together one or more Regional Facilities"@en ;
+                                 rdfs:label "Research Infrastructure"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> "The following definition for RI from Article 2 (6) of the Regulation (EU) No 1291/2013 of 11 December 2013: `Establishing Horizon 2020 - the Framework Programme for Research and Innovation (2014- 2020)` applies: “RI are facilities, resources and services that are used by the research communities to conduct research and foster innovation in their fields. They include: major scientific equipment (or sets of instruments), knowledge-based resources such as collections, archives and scientific data, einfrastructures, such as data and computing systems and communication networks and any other tools that are essential to achieve excellence in research and innovation.” Accordingly, RI are implemented along different organisational models, including central sources and laboratories for experiments and measurement sessions, coordination and management of geographically distributed observatories or laboratories, remotely accessible resources for computing, data banks, physical sample repositories, surveys and longitudinal studies."@en ;
+                                 <http://www.w3.org/2004/02/skos/core#note> "RI"@en ,
+                                                                            "RI"@fr .
+
+
+###  http://example.org/ontology#SI
+<http://example.org/ontology#SI> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://example.org/ontology#RF> ;
+                                 rdfs:comment "A site belonging to a regional facility and managed by a Site Responsible."@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Site"@en .
+
+
+###  http://example.org/ontology#SeriesOfOceanographicCampaigns
+<http://example.org/ontology#SeriesOfOceanographicCampaigns> rdf:type owl:Class ;
+                                                             rdfs:subClassOf owl:Thing ;
+                                                             rdfs:comment "A serie of cruises linked to a Regional Facility."@en ;
+                                                             rdfs:label "Serie of Cruise"@en .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class ;
+                           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf owl:Thing ;
+                                                <http://data.bioontology.org/metadata/prefixIRI> "geo:Geometry" .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox
+<http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                      rdfs:comment "Equivalent to EX_GeographicBoundingBox in ISO 19115-3"@en ;
+                                                      rdfs:label "Bounding Box"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#Latitude> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#Longitude> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.w3.org/ns/sosa/Platform
+<http://www.w3.org/ns/sosa/Platform> rdf:type owl:Class ;
+                                     rdfs:subClassOf :Subsite ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://example.org/ontology#containsPlatform> ;
+                                                       owl:someValuesFrom <http://example.org/ontology#SI>
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :Subsite_contains_a_Platform ;
+                                                       owl:someValuesFrom :Subsite
+                                                     ] ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Platform"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf owl:Thing ;
+                                         <http://data.bioontology.org/metadata/prefixIRI> "foaf:Organization" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Discipline
+:Discipline rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ;
+            <http://data.bioontology.org/metadata/prefixIRI> "Discipline" ;
+            rdfs:comment "List of EMSO scientific disciplines associated to a Regional Facility"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Discipline"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#ERIC
+:ERIC rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      <http://data.bioontology.org/metadata/prefixIRI> "ERIC" ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "European Research Infrastructure Consortium"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "ERIC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          <http://data.bioontology.org/metadata/prefixIRI> "Location" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Project
+:Project rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         <http://data.bioontology.org/metadata/prefixIRI> "Project" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Subplatform
+:Subplatform rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/sosa/Platform> ;
+             <http://data.bioontology.org/metadata/prefixIRI> "Subplatform" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Subsite
+:Subsite rdf:type owl:Class ;
+         rdfs:subClassOf <http://example.org/ontology#SI> ;
+         <http://data.bioontology.org/metadata/prefixIRI> "Subsite" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Subsite"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/ontology#Antigonia
+<http://example.org/ontology#Antigonia> rdf:type owl:NamedIndividual ,
+                                                 <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#AutonomousDevices
+<http://example.org/ontology#AutonomousDevices> rdf:type owl:NamedIndividual ;
+                                                <http://example.org/ontology#hasPrincipalInvestigator> <http://example.org/ontology#PI_AutonomousDevices> ;
+                                                rdfs:label "Autonomous Devices"@en .
+
+
+###  http://example.org/ontology#Azores
+<http://example.org/ontology#Azores> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#RF> ;
+                                     <http://example.org/ontology#containsSite> <http://example.org/ontology#Lucky_Strike> ;
+                                     <http://example.org/ontology#hasRegionalTeamLeader> :Marjolaine_MATABOS ;
+                                     <http://example.org/ontology#linkedToCampaigns> :LUCKYDIVMIC ;
+                                     <http://example.org/ontology#linkedToSeries> :HYDROMOMAR ,
+                                                                                  :MOMARSAT ;
+                                     :RFispartofRI <http://example.org/ontology#EMSO-France> ;
+                                     :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                     :hasBoundingBox :Azoresbbox ;
+                                     :hasCountry :Portugal ;
+                                     :hasLocation :Azores_location ;
+                                     <http://xmlns.com/foaf/0.1/homepage> "https://www.emso-fr.org/Azores"@fr ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Azores"@en ,
+                                                                                     "Açores"@pt .
+
+
+###  http://example.org/ontology#BB
+<http://example.org/ontology#BB> rdf:type owl:NamedIndividual ,
+                                          <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Balearic_Sea
+<http://example.org/ontology#Balearic_Sea> rdf:type owl:NamedIndividual ,
+                                                    <http://example.org/ontology#RF> ;
+                                           <http://example.org/ontology#containsSite> <http://example.org/ontology#OBSEA> ;
+                                           <http://example.org/ontology#hasRegionalTeamLeader> :Joaquin_DEL_RIO ;
+                                           <http://example.org/ontology#ledByOrganization> :UPC ;
+                                           :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                           :hasLocation <https://dbpedia.org/page/Vilanova_i_la_Geltru> ,
+                                                        :Balearic_Sea ;
+                                           <http://xmlns.com/foaf/0.1/homepage> "https://www.obsea.es/"@en ;
+                                           :DistanceFromLand 2 ;
+                                           :dateFirstDeployment "2009-03-14" ;
+                                           :hasEastLongitude 1.7518 ;
+                                           :hasNorthLatitude 41.1814 ;
+                                           :maxWaterDepth 20 ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Balearic Sea"@en .
+
+
+###  http://example.org/ontology#Bay_of_Biscay_Slope
+<http://example.org/ontology#Bay_of_Biscay_Slope> rdf:type owl:NamedIndividual ,
+                                                           <http://example.org/ontology#RF> ;
+                                                  <http://example.org/ontology#containsSite> <http://example.org/ontology#Lampaul_Canyon> ;
+                                                  <http://example.org/ontology#ledByOrganization> :Ifremer ;
+                                                  <http://example.org/ontology#linkedToSeries> :CHEREEF-OBS ;
+                                                  :RFisRelatedTo <http://example.org/ontology#EMSO-France> ;
+                                                  :hasLocation :Bay_of_Biscay ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Bay of Biscay slope"@en .
+
+
+###  http://example.org/ontology#Black_Sea
+<http://example.org/ontology#Black_Sea> rdf:type owl:NamedIndividual ,
+                                                 <http://example.org/ontology#RF> ;
+                                        <http://example.org/ontology#containsSite> <http://example.org/ontology#EuxRo01> ,
+                                                                                   <http://example.org/ontology#EuxRo02> ,
+                                                                                   <http://example.org/ontology#EuxRo03> ;
+                                        <http://example.org/ontology#hasRegionalTeamLeader> :Vlad_Rădulescu ;
+                                        <http://example.org/ontology#ledByOrganization> :GeoEcoMar ;
+                                        :RegionalFacility_is_linked_to_a_project :EUXINUS ;
+                                        :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                        :hasBoundingBox :Black_Sea_RF_bbox ;
+                                        :hasLocation :Black_Sea ;
+                                        :DistanceFromLand 97 ;
+                                        :dateFirstDeployment "2013-06-01"^^xsd:date ;
+                                        :maxWaterDepth 95 ;
+                                        :minWaterDepth 15 ;
+                                        rdfs:comment "The Black Sea is one of the largest regional seas of the Eurasian continent and unique in many of its geographical, geological, biological, hydrographical and socio-political characteristics. With anoxic conditions in the deep, problems with invasive species and high sediment loads delivered to the system, this area has unique problems requiring long-term stations. The Black Sea is located in a geological complex area, where three major tectonic plates (Eurasian, Anatolian, Arabian) interact. Geo hazards, such as earthquarkes, submarine landslide, displacement along active faults, are present and are possible triggers of tsunami, together with extreme meteorological events."@en ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Black Sea"@en .
+
+
+###  http://example.org/ontology#CONDOR
+<http://example.org/ontology#CONDOR> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Canarias
+<http://example.org/ontology#Canarias> rdf:type owl:NamedIndividual ,
+                                                <http://example.org/ontology#RF> ;
+                                       <http://example.org/ontology#containsSite> <http://example.org/ontology#ESTOC> ;
+                                       <http://example.org/ontology#hasRegionalTeamLeader> :Eric_DELORY ;
+                                       <http://example.org/ontology#ledByOrganization> :CSIC ,
+                                                                                       :PLOCAN ,
+                                                                                       :ULPGC ;
+                                       :RegionalFacility_is_linked_to_a_project :Atlantic_Whale_Deal ;
+                                       :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                       :hasLocation :Canary_islands ;
+                                       <http://xmlns.com/foaf/0.1/homepage> "https://plocan.eu/en/installations/ocean-observatory"@en ;
+                                       :DistanceFromLand 60 ;
+                                       :dateFirstDeployment "1994-01" ;
+                                       :maxWaterDepth 3630 ;
+                                       <http://purl.org/dc/terms/description> "EMSO Canarias, a.k.a. ESTOC (29º10’ N, 15º30’ W) is a monitoring time-series program. The station is located within the weak southward return flows on the Eastern side of the North Atlantic subtropical gyre. ESTOC is an open ocean site, located well outside of the highly variable Eastern boundary with its strong coastal upwelling regime (although interaction with this regime exists). The site is sufficiently deep to encompass the Eastern subtropical North Atlantic’s major water masses including the North Atlantic Deep Water (except the AABW). ESTOC is windward of the Canary Islands to avoid wake effects of both the major currents and winds (Canary Current and Northeast Trade Winds), and is far enough from coasts and islands to serve as reference for satellite images and altimetry."@en ;
+                                       rdfs:comment "Canarias Regional Facility is linked to the Atlantic Whale Deal project (issue concerning collision with marine mammals)"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Canarias"@en .
+
+
+###  http://example.org/ontology#Cretan_Sea
+<http://example.org/ontology#Cretan_Sea> rdf:type owl:NamedIndividual ,
+                                                  <http://example.org/ontology#RF> ;
+                                         <http://example.org/ontology#containsSite> <http://example.org/ontology#E1M3A> ;
+                                         <http://example.org/ontology#hasRegionalTeamLeader> :George_PETIHAKIS ;
+                                         <http://example.org/ontology#ledByOrganization> :HCMR ;
+                                         :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                         :hasLocation :Aegean_Sea_Plate ;
+                                         <http://xmlns.com/foaf/0.1/homepage> "https://poseidon.hcmr.gr/"^^xsd:anyURI ;
+                                         :DistanceFromLand 24 ;
+                                         :dateFirstDeployment "2000-01" ;
+                                         :maxWaterDepth 1400 ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Cretan Sea"@en .
+
+
+###  http://example.org/ontology#DYFAMED
+<http://example.org/ontology#DYFAMED> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> ;
+                                      <http://example.org/ontology#containsPlatform> :Buoy_ODAS ,
+                                                                                     :Dyfamed_mooring ,
+                                                                                     :Mugobs ;
+                                      <http://example.org/ontology#hasSiteResponsible> :Laurent_COPPOLA ;
+                                      :hasCountry :France ;
+                                      :hasLocation :French_riviera ;
+                                      <http://xmlns.com/foaf/0.1/homepage> "https://www.emso-fr.org/fr/DYFAMED"^^xsd:anyURI ;
+                                      :DistanceFromLand 27 ;
+                                      :dateFirstDeployment "1988-02" ;
+                                      :maxWaterDepth 2300 ;
+                                      rdfs:comment "DYFAMED : DYnamique des Flux Atmosphériques en MEDiterranée"@fr ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "DYFAMED"@en .
+
+
+###  http://example.org/ontology#E1M3A
+<http://example.org/ontology#E1M3A> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/ontology#SI> ;
+                                    <http://example.org/ontology#hasSiteResponsible> :Leonidas_PERIVOLIOTIS ;
+                                    <http://purl.org/dc/terms/description> "The E1-M3A marine observatory is a pioneer station, the first open-ocean buoy in the Mediterranean deployed in January 2000 and currently part of the POSEIDON network since 2007. The Poseidon system operates a network of fixed measuring floats, which are moored at various locations in the Aegean and Ionian seas delivering near-real-time observations on important marine and atmospheric parameters. The oceanographic buoys constitute the backbone of the POSEIDON system and they are linked to both global and regional networks such as the OceanSITES and M3A’s respectively. In particular the POSEIDON E1 M3A buoy (WMO 61277) is the founder component of the Cretan Sea observatory complemented with several other platforms such as glider, FerryBox and a coastal buoy and is currently the most heavily equipped physical–biogeochemical observing site of the POSEIDON system."@en ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "E1-M3A"@en .
+
+
+###  http://example.org/ontology#E2M3A
+<http://example.org/ontology#E2M3A> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#EMSO-France
+<http://example.org/ontology#EMSO-France> rdf:type owl:NamedIndividual ,
+                                                   <http://example.org/ontology#RI> ;
+                                          owl:sameAs <https://vocab.ifremer.fr/scheme/SXT/IR/afae62c5-9962-4850-b174-f4edd6caf3c3#EMSO-France_Sextant> ;
+                                          :RFisledby :Dominique_LEFEVRE ,
+                                                     :Nadine_LANTERI ;
+                                          :hasCountry :France ;
+                                          <http://xmlns.com/foaf/0.1/homepage> "https://www.emso-fr.org/"@en ,
+                                                                               "https://www.emso-fr.org/fr"@fr ;
+                                          <http://purl.org/dc/terms/description> "EMSO-France est la contribution française au projet européen EMSO"@fr ,
+                                                                                 "EMSO-France is the French contribution to the European EMSO project"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "EMSO-France"@en .
+
+
+###  https://vocab.ifremer.fr/scheme/SXT/IR/afae62c5-9962-4850-b174-f4edd6caf3c3#EMSO-France_Sextant
+
+###  http://example.org/ontology#EMSO-PT
+<http://example.org/ontology#EMSO-PT> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#RI> ;
+                                      :hasCountry :Portugal ;
+                                      <http://xmlns.com/foaf/0.1/homepage> "https://emso-pt.pt/"@pt ;
+                                      <http://www.w3.org/2004/02/skos/core#note> "EMSO-PT"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "EMSO Portugal"@en .
+
+
+###  http://example.org/ontology#ESTOC
+<http://example.org/ontology#ESTOC> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/ontology#SI> ;
+                                    <http://example.org/ontology#hasSiteResponsible> :Eric_DELORY ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ESTOC"@en .
+
+
+###  http://example.org/ontology#EuxRo01
+<http://example.org/ontology#EuxRo01> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> ;
+                                      <http://example.org/ontology#hasSiteResponsible> :Vlad_Rădulescu ;
+                                      :hasGeometry :EuxRo01_geom ;
+                                      :dateFirstDeployment "2013-06-01" ;
+                                      <http://purl.org/dc/terms/description> "Moored surface buoy, acoustic linked with seabed system and linked via satellite with the shore."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "EuxRo01"@en .
+
+
+###  http://example.org/ontology#EuxRo02
+<http://example.org/ontology#EuxRo02> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> ;
+                                      <http://example.org/ontology#hasSiteResponsible> :Vlad_Rădulescu ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "EuxRo02"@en .
+
+
+###  http://example.org/ontology#EuxRo03
+<http://example.org/ontology#EuxRo03> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> ;
+                                      <http://example.org/ontology#hasSiteResponsible> :Vlad_Rădulescu ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "EuxRo03"@en .
+
+
+###  http://example.org/ontology#FF
+<http://example.org/ontology#FF> rdf:type owl:NamedIndividual ,
+                                          <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Fram_Strait
+<http://example.org/ontology#Fram_Strait> rdf:type owl:NamedIndividual ,
+                                                   <http://example.org/ontology#SI> ;
+                                          <http://example.org/ontology#containsPlatform> :mooring2 ;
+                                          <http://example.org/ontology#hasSiteResponsible> :Laura_DE_STEUR ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Fram Strait"@en .
+
+
+###  http://example.org/ontology#Hellenic_Arc
+<http://example.org/ontology#Hellenic_Arc> rdf:type owl:NamedIndividual ,
+                                                    <http://example.org/ontology#RF> ;
+                                           <http://example.org/ontology#containsSite> <http://example.org/ontology#PYLOS> ;
+                                           <http://example.org/ontology#hasRegionalTeamLeader> :George_PETIHAKIS ;
+                                           <http://example.org/ontology#ledByOrganization> :HCMR ;
+                                           :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                           :hasLocation :Aegean_Sea_Plate ;
+                                           <http://xmlns.com/foaf/0.1/homepage> "https://poseidon.hcmr.gr/"^^xsd:anyURI ;
+                                           :DistanceFromLand 12 ;
+                                           :dateFirstDeployment "2017-05" ;
+                                           :maxWaterDepth 1670 ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Hellenic Arc"@en .
+
+
+###  http://example.org/ontology#IbMa-CSV
+<http://example.org/ontology#IbMa-CSV> rdf:type owl:NamedIndividual ,
+                                                <http://example.org/ontology#SI> ;
+                                       :hasCountry :Portugal ;
+                                       :hasLocation :Gulf_of_Cadiz ;
+                                       rdfs:comment "IbMa-CSV: Iberian Margin Cap St. Vincent"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "IbMa-CSV"@en .
+
+
+###  http://example.org/ontology#Iberian_Margin
+<http://example.org/ontology#Iberian_Margin> rdf:type owl:NamedIndividual ,
+                                                      <http://example.org/ontology#RF> ;
+                                             <http://example.org/ontology#containsSite> <http://example.org/ontology#IbMa-CSV> ;
+                                             <http://example.org/ontology#hasRegionalTeamLeader> :Carlos_SOUSA ;
+                                             <http://example.org/ontology#ledByOrganization> :IPMA ;
+                                             :RFispartofRI <http://example.org/ontology#EMSO-PT> ;
+                                             :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                             :hasLocation :Gulf_of_Cadiz ;
+                                             <http://xmlns.com/foaf/0.1/homepage> "https://emso.eu/observatories-node/iberian-margin/"@en ,
+                                                                                  "https://emso-pt.pt/"^^xsd:anyURI ;
+                                             :DistanceFromLand 11 ;
+                                             :dateFirstDeployment "2021-05" ;
+                                             :maxWaterDepth 1200 ;
+                                             <http://purl.org/dc/terms/description> "The area of Gulf of Cadiz  is very important for geo-hazards. It was the site where one of the worst earthquakes that hit Europe occurred in 1755, coupled with a destructive tsunami. Here African and European tectonic plates converge. It is a seismic volcanic region. The Iberian Margin is also a pivotal ocean region where Atlantic and Mediterranean exchange waters, with the later spreading at intermediate levels playing a key role in the salt and heat budget and AMOC (Atlantic Meridional Overturning Circulation). The Iberian Margin is the northernmost region of the productive CCUS (Canary Current Upwelling System), one of the four EBUS (Eastern Boundary Upwelling Systems) of the global ocean, where a highly variable upwelling regime dominates along with a strong mesoscale activity. The geologic and oceanographic features of this region favour the presence of highly diverse benthic communities and have also a central role in the distribution of several marine mammals and fish species."@en ;
+                                             <http://www.w3.org/2004/02/skos/core#note> "IbMa"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Iberian Margin"@en .
+
+
+###  http://example.org/ontology#Iroise
+<http://example.org/ontology#Iroise> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#RF> ;
+                                     <http://example.org/ontology#containsSite> <http://example.org/ontology#Molène> ,
+                                                                                <http://example.org/ontology#Poulmic> ;
+                                     <http://example.org/ontology#hasRegionalTeamLeader> :Nadine_LANTERI ;
+                                     <http://example.org/ontology#ledByOrganization> :CNRS ,
+                                                                                     :Ifremer ;
+                                     :RFispartofRI <http://example.org/ontology#EMSO-France> ;
+                                     :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                     :hasBoundingBox :Iroise_RF_bbox ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Iroise"@en .
+
+
+###  http://example.org/ontology#LION
+<http://example.org/ontology#LION> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/ontology#SI> ;
+                                   <http://example.org/ontology#containsPlatform> :BILLION ,
+                                                                                  :Lion_mooring ;
+                                   <http://example.org/ontology#hasSiteResponsible> :Patrice_BRETEL ;
+                                   :hasCountry :France ;
+                                   :hasLocation :Gulf_of_Lion ;
+                                   rdfs:comment "LION"@en .
+
+
+###  http://example.org/ontology#LO
+<http://example.org/ontology#LO> rdf:type owl:NamedIndividual ,
+                                          <http://example.org/ontology#SI> ;
+                                 <http://example.org/ontology#containsPlatform> :ALBATROSS ,
+                                                                                :BJS ,
+                                                                                :MII ;
+                                 <http://example.org/ontology#hasSiteResponsible> :Dominique_LEFEVRE ,
+                                                                                  :Séverine_MARTINI ;
+                                 :Site_has_a_Subsite :ANTARES ;
+                                 :hasCountry :France ;
+                                 :hasLocation :French_riviera ;
+                                 <http://xmlns.com/foaf/0.1/homepage> "https://www.emso-fr.org/fr/LO"^^xsd:anyURI ;
+                                 :DistanceFromLand 23 ;
+                                 :dateFirstDeployment "2019-01" ;
+                                 :maxWaterDepth 2475 ;
+                                 rdfs:comment "LO: Ligure Ouest"@fr ;
+                                 <http://www.w3.org/2004/02/skos/core#altLabel> "Western Ligurian"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "LO"@en .
+
+
+###  http://example.org/ontology#Lampaul_Canyon
+<http://example.org/ontology#Lampaul_Canyon> rdf:type owl:NamedIndividual ,
+                                                      <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Ligurian_Sea
+<http://example.org/ontology#Ligurian_Sea> rdf:type owl:NamedIndividual ,
+                                                    <http://example.org/ontology#RF> ;
+                                           <http://example.org/ontology#containsSite> <http://example.org/ontology#DYFAMED> ,
+                                                                                      <http://example.org/ontology#LION> ,
+                                                                                      <http://example.org/ontology#LO> ,
+                                                                                      <http://example.org/ontology#Nice> ;
+                                           <http://example.org/ontology#hasRegionalTeamLeader> :Laurent_COPPOLA ;
+                                           <http://example.org/ontology#ledByOrganization> :CNRS ,
+                                                                                           :Ifremer ;
+                                           <http://example.org/ontology#linkedToSeries> :EMSO_LIGURE_OUEST ,
+                                                                                        :MOOSE-GE ,
+                                                                                        :MUG-OBS ;
+                                           :RFispartofRI <http://example.org/ontology#EMSO-France> ;
+                                           :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                           :hasBoundingBox :Ligurian_Sea_RF_bbox ;
+                                           :hasLocation :French_riviera ,
+                                                        :Gulf_of_Lion ;
+                                           <http://xmlns.com/foaf/0.1/homepage> "https://www.emso-fr.org/"^^xsd:anyURI ;
+                                           rdfs:comment "The Ligurian Sea is an active seismic region surrounded by a narrow and steep continental slope and alpine reliefs. Ligurian seismic events are not rare for seismic hazard evaluation in the Nice area and a similar event could be occurred along the margin at the level of the French-Italian border. Such event will produce destruction in a zone which is presently much more densely populated and could also be associated with a tsunami along the coast. The region is also characterized by the presence of rivers becoming streams after heavy rainfall. This promotes slope instability and the formation of submarine canyons. The Ligurian Sea is also strongly influenced by atmospheric inputs triggering changes in biomass production."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Ligurian Sea"@en .
+
+
+###  http://example.org/ontology#Lucky_Strike
+<http://example.org/ontology#Lucky_Strike> rdf:type owl:NamedIndividual ,
+                                                    <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Marmara
+<http://example.org/ontology#Marmara> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Marmara_Sea
+<http://example.org/ontology#Marmara_Sea> rdf:type owl:NamedIndividual ,
+                                                   <http://example.org/ontology#RF> ;
+                                          <http://example.org/ontology#containsSite> <http://example.org/ontology#Marmara> ,
+                                                                                     <http://example.org/ontology#SN-4> ;
+                                          <http://example.org/ontology#ledByOrganization> :CNRS ,
+                                                                                          :INGV ,
+                                                                                          :Ifremer ;
+                                          <http://example.org/ontology#linkedToCampaigns> :MARMESONET ,
+                                                                                          :MARNAUT ,
+                                                                                          :MARSITECRUISE ;
+                                          :RFispartofRI <http://example.org/ontology#EMSO-France> ;
+                                          :hasBoundingBox :Marmara_Sea_RF_bbox ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Marmara Sea"@en .
+
+
+###  http://example.org/ontology#Mayotte
+<http://example.org/ontology#Mayotte> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#RF> ;
+                                      <http://example.org/ontology#containsSite> <http://example.org/ontology#MayotteSite> ;
+                                      <http://example.org/ontology#ledByOrganization> :BRGM ,
+                                                                                      :CNRS ,
+                                                                                      :IPGP ,
+                                                                                      :Ifremer ;
+                                      <http://example.org/ontology#linkedToCampaigns> :MAYOBS ;
+                                      :RFisRelatedTo <http://example.org/ontology#EMSO-France> ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Mayotte"@en .
+
+
+###  http://example.org/ontology#MayotteSite
+<http://example.org/ontology#MayotteSite> rdf:type owl:NamedIndividual ,
+                                                   <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Mohn
+<http://example.org/ontology#Mohn> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/ontology#OceanographicCampaign> ;
+                                   rdfs:label "Cruise"@en .
+
+
+###  http://example.org/ontology#Molène
+<http://example.org/ontology#Molène> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#SI> ;
+                                     <http://example.org/ontology#containsPlatform> <http://example.org/ontology#AutonomousDevices> ,
+                                                                                    <http://example.org/ontology#SubmarinePlatform> ;
+                                     <http://example.org/ontology#hasSiteResponsible> <http://example.org/ontology#SiteResponsibleMolène> ;
+                                     rdfs:label "Molène"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://example.org/ontology#Molène> ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <http://example.org/ontology#SI> ;
+   owl:deprecated "true"^^xsd:boolean
+ ] .
+
+
+###  http://example.org/ontology#Munida
+<http://example.org/ontology#Munida> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#NEMO-01
+<http://example.org/ontology#NEMO-01> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#NEMO-02
+<http://example.org/ontology#NEMO-02> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#NEMO-SN1
+<http://example.org/ontology#NEMO-SN1> rdf:type owl:NamedIndividual ,
+                                                <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#NewHebridesSite
+<http://example.org/ontology#NewHebridesSite> rdf:type owl:NamedIndividual ,
+                                                       <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#New_Caledonia
+<http://example.org/ontology#New_Caledonia> rdf:type owl:NamedIndividual ,
+                                                     <http://example.org/ontology#RF> ;
+                                            <http://example.org/ontology#containsSite> <http://example.org/ontology#Antigonia> ,
+                                                                                       <http://example.org/ontology#Munida> ,
+                                                                                       <http://example.org/ontology#Stylaster> ;
+                                            <http://example.org/ontology#hasRegionalTeamLeader> :Karine_OLU ;
+                                            <http://example.org/ontology#ledByOrganization> :IRD ,
+                                                                                            :Ifremer ,
+                                                                                            :JAMSTEC ;
+                                            <http://example.org/ontology#linkedToCampaigns> :KANADEEP_2 ,
+                                                                                            :KASEASPACE ;
+                                            <http://example.org/ontology#linkedToSeries> :KASEAOPE ;
+                                            :RFisRelatedTo <http://example.org/ontology#EMSO-France> ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "New Caledonia"@en .
+
+
+###  http://example.org/ontology#Nice
+<http://example.org/ontology#Nice> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/ontology#SI> ;
+                                   <http://example.org/ontology#containsPlatform> :East_station ,
+                                                                                  :West_station ;
+                                   <http://example.org/ontology#hasSiteResponsible> :Karin_SIGLOCH ,
+                                                                                    :Sébastien_GARZIGLIA ;
+                                   :hasCountry :France ;
+                                   :hasLocation :French_riviera ;
+                                   <http://xmlns.com/foaf/0.1/homepage> "https://www.emso-fr.org/fr/Nice"^^xsd:anyURI ;
+                                   :DistanceFromLand 1 ;
+                                   :dateFirstDeployment "2015-10" ;
+                                   :maxWaterDepth 35 ;
+                                   :minWaterDepth 20 ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Nice"@en .
+
+
+###  http://example.org/ontology#NorEMSO
+<http://example.org/ontology#NorEMSO> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#RI> ;
+                                      :hasCountry :Norway ;
+                                      <http://xmlns.com/foaf/0.1/homepage> "https://www.uib.no/en/noremso/"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "NorEMSO"@en .
+
+
+###  http://example.org/ontology#Nordic_Seas
+<http://example.org/ontology#Nordic_Seas> rdf:type owl:NamedIndividual ,
+                                                   <http://example.org/ontology#RF> ;
+                                          <http://example.org/ontology#containsSite> <http://example.org/ontology#Fram_Strait> ,
+                                                                                     <http://example.org/ontology#South_Cape> ,
+                                                                                     <http://example.org/ontology#Station_M> ,
+                                                                                     <http://example.org/ontology#Svinøy> ,
+                                                                                     :Mohn ;
+                                          <http://example.org/ontology#hasRegionalTeamLeader> :Ilker_FER ;
+                                          <http://example.org/ontology#ledByOrganization> :UiB ;
+                                          :RFispartofRI <http://example.org/ontology#NorEMSO> ;
+                                          :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                          rdfs:comment """The Nordic Seas regional facility comprises 5 ocean glider sections, 4 mooring sites, and one multi array observatory. The facility is a mixture of existing monitoring components, which are expanded, and new establishments and the main aim is to contribute to increased understanding of the role of the Nordic Seas in the global climate system. Particularly, the multidisciplinary research conducted at Nordic Seas regional facility focuses on:
+
+Water transport, circulation and water mass properties of the Nordic Seas
+Sub-surface biogeochemistry • Methane release from seafloor
+Front variability between Polar and Atlantic Water
+Geophysical, oceanographic and ecological characterization of a hydrothermal vent
+The activity at the Nordic Seas regional facility is shown in the map, where the ocean glider transects are indicated with red lines and numbers, the mooring sites are indicated with white circles and named Svinøy, Station M, South Cape, and Fram Strait, and the multi array observatory is indicated with a white circle and named EMSO-Mohn.
+
+EMSO scientific disciplines: physical oceanography, biogeochemistry, marine ecology (planned)"""@en ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Nordic Seas"@en .
+
+
+###  http://example.org/ontology#OBSEA
+<http://example.org/ontology#OBSEA> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/ontology#SI> ;
+                                    <http://example.org/ontology#containsPlatform> :OBSEA_buoy ,
+                                                                                   :OBSEA_seabed_station ;
+                                    <http://example.org/ontology#hasSiteResponsible> :Joaquin_DEL_RIO ;
+                                    <http://purl.org/dc/terms/description> "OBSEA is a cabled seafloor observatory located 4 km off the Vilanova i la Geltru coast in a fishing protected area. It is connected to the coast by an energy and communications mixed cable (OceanOPS WMO number: 6103565)."@en ;
+                                    rdfs:comment "WMO ID 6103565"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OBSEA"@en .
+
+
+###  http://example.org/ontology#PAP-SO
+<http://example.org/ontology#PAP-SO> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#SI> ;
+                                     <http://xmlns.com/foaf/0.1/homepage> "https://projects.noc.ac.uk/pap/"@en ;
+                                     :dateFirstDeployment 1985 ;
+                                     :maxWaterDepth 4850 ;
+                                     <http://www.w3.org/2004/02/skos/core#altLabel> "The Porcupine Abyssal Plain Sustained Observatory"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "PAP-SO"@en .
+
+
+###  http://example.org/ontology#PI_AutonomousDevices
+<http://example.org/ontology#PI_AutonomousDevices> rdf:type owl:NamedIndividual ;
+                                                   <http://xmlns.com/foaf/0.1/name> "Nadine LANTERI"@en ;
+                                                   <http://xmlns.com/foaf/0.1/title> "Principal Investigator"@en .
+
+
+###  http://example.org/ontology#PI_PoulmicPlatform
+<http://example.org/ontology#PI_PoulmicPlatform> rdf:type owl:NamedIndividual ;
+                                                 <http://xmlns.com/foaf/0.1/name> "Nadine LANTERI"@en ;
+                                                 <http://xmlns.com/foaf/0.1/title> "Principal Investigator"@en .
+
+
+###  http://example.org/ontology#PI_SubmarinePlatform
+<http://example.org/ontology#PI_SubmarinePlatform> rdf:type owl:NamedIndividual ;
+                                                   <http://xmlns.com/foaf/0.1/name> "Nadine LANTERI"@en ;
+                                                   <http://xmlns.com/foaf/0.1/title> "Principal Investigator"@en .
+
+
+###  http://example.org/ontology#PYLOS
+<http://example.org/ontology#PYLOS> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/ontology#SI> ;
+                                    <http://example.org/ontology#containsPlatform> :PYLOS_Platform ,
+                                                                                   :PYLOS_buoy ,
+                                                                                   :Poseidon_III_platform ;
+                                    <http://example.org/ontology#hasSiteResponsible> :Leonidas_PERIVOLIOTIS ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PYLOS"@en .
+
+
+###  http://example.org/ontology#Porcupine_Abyssal_Plain
+<http://example.org/ontology#Porcupine_Abyssal_Plain> rdf:type owl:NamedIndividual ,
+                                                               <http://example.org/ontology#RF> ;
+                                                      <http://example.org/ontology#containsSite> <http://example.org/ontology#PAP-SO> ;
+                                                      <http://example.org/ontology#ledByOrganization> :NOC ;
+                                                      :RegionalFacility_is_linked_to_a_project :CLASS ;
+                                                      <http://www.w3.org/2004/02/skos/core#note> "PAP"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Porcupine Abyssal Plain"@en .
+
+
+###  http://example.org/ontology#Poulmic
+<http://example.org/ontology#Poulmic> rdf:type owl:NamedIndividual ,
+                                               <http://example.org/ontology#SI> ;
+                                      <http://example.org/ontology#containsPlatform> <http://example.org/ontology#PoulmicPlatform> ;
+                                      <http://example.org/ontology#hasSiteResponsible> <http://example.org/ontology#SiteResponsiblePoulmic> ;
+                                      rdfs:label "Poulmic"@en .
+
+
+###  http://example.org/ontology#PoulmicPlatform
+<http://example.org/ontology#PoulmicPlatform> rdf:type owl:NamedIndividual ;
+                                              <http://example.org/ontology#hasPrincipalInvestigator> <http://example.org/ontology#PI_PoulmicPlatform> ;
+                                              rdfs:label "PoulmicPlatform"@en .
+
+
+###  http://example.org/ontology#RegionalTeamLeaderIroise
+<http://example.org/ontology#RegionalTeamLeaderIroise> rdf:type owl:NamedIndividual ;
+                                                       <http://xmlns.com/foaf/0.1/name> "Nadine LANTERI"@en ;
+                                                       <http://xmlns.com/foaf/0.1/title> "Regional Team Leader"@en .
+
+
+###  http://example.org/ontology#SN-4
+<http://example.org/ontology#SN-4> rdf:type owl:NamedIndividual ,
+                                            <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#SiteResponsibleMolène
+<http://example.org/ontology#SiteResponsibleMolène> rdf:type owl:NamedIndividual ;
+                                                    <http://xmlns.com/foaf/0.1/name> "Nadine LANTERI"@en ;
+                                                    <http://xmlns.com/foaf/0.1/title> "Site Responsible"@en .
+
+
+###  http://example.org/ontology#SiteResponsiblePoulmic
+<http://example.org/ontology#SiteResponsiblePoulmic> rdf:type owl:NamedIndividual ;
+                                                     <http://xmlns.com/foaf/0.1/name> "Nadine LANTERI"@en ;
+                                                     <http://xmlns.com/foaf/0.1/title> "Site Responsible"@en .
+
+
+###  http://example.org/ontology#Smartbay
+<http://example.org/ontology#Smartbay> rdf:type owl:NamedIndividual ,
+                                                <http://example.org/ontology#SI> ;
+                                       <http://example.org/ontology#containsPlatform> :Smartbay_buoy ,
+                                                                                      :Smartbay_observatory ;
+                                       <http://example.org/ontology#hasSiteResponsible> :Alan_BERRY ;
+                                       :hasCountry :Ireland ;
+                                       <http://xmlns.com/foaf/0.1/homepage> "https://data.marine.ie/geonetwork/srv/api/records/ie.marine.data:dataset.4825"@en ,
+                                                                            "https://smartbay.marine.ie/"@en ;
+                                       :DistanceFromLand 1 ;
+                                       :dateFirstDeployment "2015-08" ;
+                                       :maxWaterDepth 25 ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Smartbay"@en .
+
+
+###  http://example.org/ontology#South_Adriatic_Sea
+<http://example.org/ontology#South_Adriatic_Sea> rdf:type owl:NamedIndividual ,
+                                                          <http://example.org/ontology#RF> ;
+                                                 <http://example.org/ontology#containsSite> <http://example.org/ontology#BB> ,
+                                                                                            <http://example.org/ontology#E2M3A> ,
+                                                                                            <http://example.org/ontology#FF> ;
+                                                 <http://example.org/ontology#hasRegionalTeamLeader> :Vanessa_CARDIN ;
+                                                 <http://example.org/ontology#ledByOrganization> :CNR ,
+                                                                                                 :OGS ;
+                                                 <http://example.org/ontology#linkedToCampaigns> :EMSO_SA ;
+                                                 :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "South Adriatic Sea"@en .
+
+
+###  http://example.org/ontology#South_Cape
+<http://example.org/ontology#South_Cape> rdf:type owl:NamedIndividual ,
+                                                  <http://example.org/ontology#SI> ;
+                                         <http://example.org/ontology#containsPlatform> :mooring3 ;
+                                         <http://example.org/ontology#hasSiteResponsible> :Bénédicte_FERRÉ ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "South Cape"@en .
+
+
+###  http://example.org/ontology#Station_M
+<http://example.org/ontology#Station_M> rdf:type owl:NamedIndividual ,
+                                                 <http://example.org/ontology#SI> ;
+                                        <http://example.org/ontology#containsPlatform> :mooring4 ;
+                                        <http://example.org/ontology#hasSiteResponsible> :Ingunn_SKJELVAN ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Station M"@en .
+
+
+###  http://example.org/ontology#Stylaster
+<http://example.org/ontology#Stylaster> rdf:type owl:NamedIndividual ,
+                                                 <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#SubmarinePlatform
+<http://example.org/ontology#SubmarinePlatform> rdf:type owl:NamedIndividual ;
+                                                <http://example.org/ontology#hasPrincipalInvestigator> <http://example.org/ontology#PI_SubmarinePlatform> ;
+                                                rdfs:label "Molène Submarine Platform"@en .
+
+
+###  http://example.org/ontology#Svinøy
+<http://example.org/ontology#Svinøy> rdf:type owl:NamedIndividual ,
+                                              <http://example.org/ontology#SI> ;
+                                     <http://example.org/ontology#containsPlatform> :mooring1 ;
+                                     <http://example.org/ontology#hasSiteResponsible> :Laura_DE_STEUR ;
+                                     <http://www.w3.org/2004/02/skos/core#altLabel> "Svinøy"@no ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Svinoy"@en .
+
+
+###  http://example.org/ontology#Vanuatu_Trench
+<http://example.org/ontology#Vanuatu_Trench> rdf:type owl:NamedIndividual ,
+                                                      <http://example.org/ontology#RF> ;
+                                             <http://example.org/ontology#containsSite> <http://example.org/ontology#NewHebridesSite> ;
+                                             <http://example.org/ontology#hasRegionalTeamLeader> :Martin_PATRIAT ;
+                                             <http://example.org/ontology#ledByOrganization> :Ifremer ;
+                                             :RFisRelatedTo <http://example.org/ontology#EMSO-France> ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Vanuatu Trench"@en .
+
+
+###  http://example.org/ontology#W1M3A
+<http://example.org/ontology#W1M3A> rdf:type owl:NamedIndividual ,
+                                             <http://example.org/ontology#SI> .
+
+
+###  http://example.org/ontology#Western_Ionian_Sea
+<http://example.org/ontology#Western_Ionian_Sea> rdf:type owl:NamedIndividual ,
+                                                          <http://example.org/ontology#RF> ;
+                                                 <http://example.org/ontology#containsSite> <http://example.org/ontology#NEMO-01> ,
+                                                                                            <http://example.org/ontology#NEMO-02> ,
+                                                                                            <http://example.org/ontology#NEMO-SN1> ;
+                                                 <http://example.org/ontology#hasRegionalTeamLeader> :Davide_EMBRIACO ;
+                                                 <http://example.org/ontology#ledByOrganization> :CNR ,
+                                                                                                 :INGV ;
+                                                 :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Western Ionian Sea"@en .
+
+
+###  http://example.org/ontology#Western_Mediterranean_Sea
+<http://example.org/ontology#Western_Mediterranean_Sea> rdf:type owl:NamedIndividual ,
+                                                                 <http://example.org/ontology#RF> ;
+                                                        <http://example.org/ontology#containsSite> <http://example.org/ontology#W1M3A> ;
+                                                        <http://example.org/ontology#hasRegionalTeamLeader> :Roberto_BOZZANO ;
+                                                        <http://example.org/ontology#ledByOrganization> :CNR ;
+                                                        :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Western Mediterranean Sea"@en .
+
+
+###  http://www.opengis.net/def/function/geosparql/
+<http://www.opengis.net/def/function/geosparql/> rdf:type owl:NamedIndividual ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "<p>All the GeoSPARQL Functions defined within the GeoSPARQL 1.1 specification</p>" ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "GeoSPARQL Functions	" .
+
+
+###  https://dbpedia.org/page/Vilanova_i_la_Geltru
+<https://dbpedia.org/page/Vilanova_i_la_Geltru> rdf:type owl:NamedIndividual ,
+                                                         :Location ;
+                                                owl:sameAs "https://dbpedia.org/page/Vilanova_i_la_Geltr%C3%BA"@en .
+
+
+###  https://vocab.ifremer.fr/scheme/SXT/IR/afae62c5-9962-4850-b174-f4edd6caf3c3#EMSO-France_Sextant
+<https://vocab.ifremer.fr/scheme/SXT/IR/afae62c5-9962-4850-b174-f4edd6caf3c3#EMSO-France_Sextant> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/earthsemantics/OSO#ALBATROSS
+:ALBATROSS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#ANTARES
+:ANTARES rdf:type owl:NamedIndividual ,
+                  :Subsite ;
+         :Subsite_contains_a_Platform :IL07 ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "ANTARES"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#ARDITI
+:ARDITI rdf:type owl:NamedIndividual ,
+                 <http://xmlns.com/foaf/0.1/Organization> ;
+        :hasCountry :Portugal ;
+        <http://xmlns.com/foaf/0.1/homepage> "https://www.arditi.pt/en/projetos-em-execucao/atlantic-whale-deal-project.html"@en ;
+        <http://purl.org/dc/terms/title> "ARDITI"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Agência Regional para o Desenvolvimento da Investigação, Tecnologia e Inovação"@pt ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "ARDITI"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Aegean_Sea_Plate
+:Aegean_Sea_Plate rdf:type owl:NamedIndividual ,
+                           :Location ;
+                  owl:sameAs "https://dbpedia.org/page/Aegean_Sea_Plate" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Alan_BERRY
+:Alan_BERRY rdf:type owl:NamedIndividual ,
+                     <http://schema.org/Person> ;
+            :hasORCID "orcid:0000-0002-4337-6556"^^xsd:anyURI ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Alan BERRY"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Atlantic_Whale_Deal
+:Atlantic_Whale_Deal rdf:type owl:NamedIndividual ,
+                              :Project ;
+                     :Project_is_led_by_an_Organization :ARDITI ;
+                     :hasCountry :France ,
+                                 :Ireland ,
+                                 :Portugal ,
+                                 :Spain ;
+                     <http://schema.org/endDate> "2026-11-30" ;
+                     <http://schema.org/startDate> "2023-12-01" ;
+                     <http://xmlns.com/foaf/0.1/homepage> "https://www.atlanticarea.eu/discover-our-projects/approved-projects/atlantic-whale-deal"@en ;
+                     <http://purl.org/dc/terms/title> "Atlantic Whale Deal"@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Atlantic Whale Deal"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Azores_location
+:Azores_location rdf:type owl:NamedIndividual ,
+                          :Location ;
+                 owl:sameAs "https://dbpedia.org/page/Azores"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Azoresbbox
+:Azoresbbox rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+            :hasEastLongitude -32.24135 ;
+            :hasNorthLatitude 37.31913 ;
+            :hasSouthLatitude 37.26039 ;
+            :hasWestLongitude -32.32582 ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Azores RF bbox"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#BILLION
+:BILLION rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/ns/sosa/Platform> ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "BILLION"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#BJS
+:BJS rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/ns/sosa/Platform> ;
+     :Platform_contains_Subplatforms :BJS_BathyBot ,
+                                     :BJS_BathyDock .
+
+
+###  https://w3id.org/earthsemantics/OSO#BJS_BathyBot
+:BJS_BathyBot rdf:type owl:NamedIndividual ,
+                       :Subplatform .
+
+
+###  https://w3id.org/earthsemantics/OSO#BJS_BathyDock
+:BJS_BathyDock rdf:type owl:NamedIndividual ,
+                        :Subplatform .
+
+
+###  https://w3id.org/earthsemantics/OSO#BRGM
+:BRGM rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :France ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "BRGM"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Balearic_Sea
+:Balearic_Sea rdf:type owl:NamedIndividual ,
+                       :Location ;
+              owl:sameAs "https://dbpedia.org/page/Balearic_Sea"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Bay_of_Biscay
+:Bay_of_Biscay rdf:type owl:NamedIndividual ,
+                        :Location ;
+               owl:sameAs "http://dbpedia.org/resource/Bay_of_Biscay" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Black_Sea
+:Black_Sea rdf:type owl:NamedIndividual ,
+                    :Location ;
+           owl:sameAs "dbr:Black_Sea" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Black_Sea_RF_bbox
+:Black_Sea_RF_bbox rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                   :hasEastLongitude 30.777999999999999 ;
+                   :hasNorthLatitude 44.706000000000003 ;
+                   :hasSouthLatitude 43.975999999999999 ;
+                   :hasWestLongitude 29.937999999999999 ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Black Sea RF bbox"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Buoy_ODAS
+:Buoy_ODAS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#Bénédicte_FERRÉ
+:Bénédicte_FERRÉ rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 :hasORCID "orcid:0000-0003-1646-9287"^^xsd:anyURI ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Bénédicte FERRÉ"@no .
+
+
+###  https://w3id.org/earthsemantics/OSO#CHEREEF-OBS
+:CHEREEF-OBS rdf:type owl:NamedIndividual ,
+                      <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#CLASS
+:CLASS rdf:type owl:NamedIndividual ,
+                :Project ;
+       :hasCountry :United_Kingdom ;
+       <http://schema.org/endDate> "2024-04" ;
+       <http://schema.org/startDate> "2018-04" ;
+       <http://xmlns.com/foaf/0.1/homepage> "https://projects.noc.ac.uk/class-project/"@en ;
+       <http://purl.org/dc/terms/title> "CLASS"@en ;
+       <http://www.w3.org/2004/02/skos/core#altLabel> "Climate Linked Atlantic Sector Science"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> """CLASS will deliver the knowledge and understanding of the Atlantic Ocean system that society needs to make evidence-based decisions regarding ocean management.
+
+We aim to address key knowledge gaps in our understanding of ocean variability, climate regulation and ocean services, and to assess how the ocean will evolve as a result of climate change and intensified human exploitation.
+
+CLASS will be delivered through an Atlantic focused science programme, building on sustained ocean observation, world class model development and state of the art technology, delivered through Marine National Capability underpinning activities."""@en ;
+       <http://www.w3.org/2004/02/skos/core#note> "CLASS"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "CLASS"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#CNR
+:CNR rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Organization> ;
+     :hasCountry :Italy ;
+     :isMemberof :EMSO ;
+     <http://xmlns.com/foaf/0.1/homepage> "https://www.cnr.it/it"@it ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Consiglio Nazionale delle Ricerche"@it ,
+                                                    "National Research Council of Italy"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "CNR"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#CNRS
+:CNRS rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :France ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "CNRS"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#CSIC
+:CSIC rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :Spain ;
+      <http://xmlns.com/foaf/0.1/homepage> "https://delegacion.canarias.csic.es/"@es ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "Consejo Superior de Investigaciones Científicas"@es ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "CSIC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Canada
+:Canada rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> ;
+        owl:sameAs "https://dbpedia.org/page/Canada"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Canary_islands
+:Canary_islands rdf:type owl:NamedIndividual ,
+                         :Location ;
+                owl:sameAs "https://dbpedia.org/page/Canary_Islands"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Carlos_SOUSA
+:Carlos_SOUSA rdf:type owl:NamedIndividual ,
+                       <http://schema.org/Person> ;
+              :hasORCID "orcid:0000-0003-4616-2278"^^xsd:anyURI ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Carlos SOUSA"@pt .
+
+
+###  https://w3id.org/earthsemantics/OSO#Condor_seamount
+:Condor_seamount rdf:type owl:NamedIndividual ,
+                          <http://example.org/ontology#RF> ;
+                 <http://example.org/ontology#associatedWithRI> <http://example.org/ontology#EMSO-PT> ;
+                 <http://example.org/ontology#containsSite> <http://example.org/ontology#CONDOR> ;
+                 <http://example.org/ontology#ledByOrganization> :IPMA ;
+                 <http://xmlns.com/foaf/0.1/homepage> "https://emso-pt.pt/en/observatorios/#acores"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Condor seamount"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Davide_EMBRIACO
+:Davide_EMBRIACO rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 :hasORCID "orcid:0000-0001-7943-7341"^^xsd:anyURI ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Davide EMBRIACO"@it .
+
+
+###  https://w3id.org/earthsemantics/OSO#Dominique_LEFEVRE
+:Dominique_LEFEVRE rdf:type owl:NamedIndividual ,
+                            <http://schema.org/Person> ;
+                   :hasORCID "orcid:0000-0003-1694-3807"^^xsd:anyURI ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Dominique LEFEVRE"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Dyfamed_mooring
+:Dyfamed_mooring rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#EMSO
+:EMSO rdf:type owl:NamedIndividual ,
+               :ERIC ;
+      :ERIC_has_a_Director_General :Ingrid_PUILLAT ;
+      :ERICfederate <http://example.org/ontology#EMSO-France> ,
+                    <http://example.org/ontology#EMSO-PT> ,
+                    <http://example.org/ontology#NorEMSO> ;
+      <http://xmlns.com/foaf/0.1/homepage> "https://data.emso.eu/home"@en ,
+                                           "https://emso.eu/"@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "European Multidisciplinary Seafloor and water column Observatories"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "EMSO"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#EMSO_LIGURE_OUEST
+:EMSO_LIGURE_OUEST rdf:type owl:NamedIndividual ,
+                            <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#EMSO_SA
+:EMSO_SA rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontology#OceanographicCampaign> .
+
+
+###  https://w3id.org/earthsemantics/OSO#EUXINUS
+:EUXINUS rdf:type owl:NamedIndividual ,
+                  :Project ;
+         :Project_is_led_by_an_Organization :GeoEcoMar ;
+         :hasCountry :Romania ;
+         :hasLocation :Black_Sea ;
+         <http://xmlns.com/foaf/0.1/homepage> "https://www.euxinus.eu/index_en.html"@en ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "IOSIN EMSO-EUXINUS network"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "IOSIN EMSO-EUXINUS is a regional security system for the Western Black Sea with real-time alerting to marine geo-hazards (eg submarine landslides, active fault movements, submarine earthquakes, tsunami waves, etc.), which monitors characteristics and dynamics coastal water bodies, including a number of meteorological parameters. Romania is represented in the European multidisciplinary consortium for the observation and research of the ocean floor and water column - EMSO ERIC (full name-European Multidisciplinary Seafloor and Water Column Observatory - European Research Infrastructure Consortium), through the National Institute of Marine Geology and Geoecology - GeoEcoMar. It provides EMSO ERIC real-time data on the physico-chemical and biological parameters of the water column, at different depths, data on early warning in case of marine hazards, as well as the experience of personnel involved in the proper functioning of the entire system. . The source of the provided data is the EUXINUS network of marine and coastal observatories (3 offshore and one coastal observatories), part of the Black Sea Security System, and their storage is done in the database within the National Center for Monitoring - Alarming to Marine Natural Hazards. , which operates within the Constanta branch of INCD GeoEcoMar."@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "EUXINUS"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#East_station
+:East_station rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#Eric_DELORY
+:Eric_DELORY rdf:type owl:NamedIndividual ,
+                      <http://schema.org/Person> ;
+             :hasORCID "orcid:0000-0002-3994-4389"^^xsd:anyURI ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Eric DELORY"@es .
+
+
+###  https://w3id.org/earthsemantics/OSO#European_Marine_Biological_Resource_Centre
+:European_Marine_Biological_Resource_Centre rdf:type owl:NamedIndividual ,
+                                                     :ERIC ;
+                                            <http://www.w3.org/2004/02/skos/core#altLabel> "European Marine Biological Resource Centre"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "EMBRC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#EuxRo01_geom
+:EuxRo01_geom rdf:type owl:NamedIndividual ,
+                       <http://www.opengis.net/ont/geosparql#Geometry> ;
+              <http://www.w3.org/2003/01/geo/wgs84_pos#Latitude> 44.706 ;
+              <http://www.w3.org/2003/01/geo/wgs84_pos#Longitude> 30.778 ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "EuxRo01 geometry"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#FCT
+:FCT rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Organization> ;
+     :hasCountry :Portugal ;
+     :isMemberof :EMSO ;
+     <http://xmlns.com/foaf/0.1/homepage> "https://www.fct.pt/"@pt ,
+                                          "https://www.fct.pt/en/"@en ;
+     rdfs:comment "The Fundação para a Ciência e a Tecnologia (FCT) represents Portugal in EMSO."@en ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Foundation for Science and Technology"@en ,
+                                                    "Fundação para a Ciência e a Tecnologia"@pt ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "FCT"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#France
+:France rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> ;
+        owl:sameAs "https://dbpedia.org/page/France"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#French_riviera
+:French_riviera rdf:type owl:NamedIndividual ,
+                         :Location ;
+                owl:sameAs "https://dbpedia.org/page/French_Riviera"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#GEOSTAR
+:GEOSTAR rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontology#SI> ;
+         <http://xmlns.com/foaf/0.1/homepage> "http://www.moist.it/sites/iberian_margin/1/LIDO1#metadata"^^xsd:anyURI ;
+         :hasNorthLatitude 36.352917 ;
+         :hasWestLongitude 9.518245 ;
+         :maxWaterDepth 3180 ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "GEOSTAR"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#GeoEcoMar
+:GeoEcoMar rdf:type owl:NamedIndividual ,
+                    <http://xmlns.com/foaf/0.1/Organization> ;
+           :hasCountry :Romania ;
+           :isMemberof :EMSO ;
+           <http://xmlns.com/foaf/0.1/homepage> "https://www.geoecomar.ro/website/en/index.html#"@en ,
+                                                "https://www.geoecomar.ro/website/index.html"@ro ;
+           rdfs:comment "The Ministry of National Education (ANCS) appointed GeoEcoMar to represent Romania in EMSO."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "GeoEcoMar"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#George_PETIHAKIS
+:George_PETIHAKIS rdf:type owl:NamedIndividual ,
+                           <http://schema.org/Person> ;
+                  :hasORCID "0000-0002-4290-3588"^^xsd:anyURI ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "George PETIHAKIS"@el .
+
+
+###  https://w3id.org/earthsemantics/OSO#Greece
+:Greece rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> ;
+        owl:sameAs "https://dbpedia.org/page/Greece"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Gulf_of_Cadiz
+:Gulf_of_Cadiz rdf:type owl:NamedIndividual ,
+                        :Location ;
+               owl:sameAs "https://dbpedia.org/page/Gulf_of_C%C3%A1diz"^^xsd:anyURI ,
+                          "https://fr.dbpedia.org/page/Cap_Saint-Vincent_(Portugal)"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Gulf_of_Lion
+:Gulf_of_Lion rdf:type owl:NamedIndividual ,
+                       :Location ;
+              owl:sameAs "https://dbpedia.org/page/Gulf_of_Lion"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#HCMR
+:HCMR rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :Greece ;
+      :isMemberof :EMSO ;
+      <http://xmlns.com/foaf/0.1/homepage> "https://www.hcmr.gr/el/"@el ,
+                                           "https://www.hcmr.gr/en/"@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "Hellenic Centre for Marine Research"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "HCMR"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#HYDROMOMAR
+:HYDROMOMAR rdf:type owl:NamedIndividual ,
+                     <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#Hellenic_Arc
+:Hellenic_Arc rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/earthsemantics/OSO#IL07
+:IL07 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#INGV
+:INGV rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :Italy ;
+      :isMemberof :EMSO ;
+      <http://xmlns.com/foaf/0.1/homepage> "https://www.ingv.it/"@en ,
+                                           "https://www.ingv.it/index.php"@it ;
+      rdfs:comment "The Ministry of Education, University and Research (MIUR) appointed INGV to represent the Italian scientific community of marine science distributed over different Italian Research Institutions."@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "Istituto Nazionale di Geofisica e Vulcanologia"@it ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "INGV"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#IPGP
+:IPGP rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :France ;
+      <http://xmlns.com/foaf/0.1/homepage> "https://www.ipgp.fr/"@fr ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "Institut Physique du Globe de Paris"@fr ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "IPGP"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#IPMA
+:IPMA rdf:type owl:NamedIndividual ,
+               <http://xmlns.com/foaf/0.1/Organization> ;
+      :hasCountry :Portugal ;
+      :isMemberof :EMSO ;
+      <http://xmlns.com/foaf/0.1/homepage> "https://www.ipma.pt/pt/index.html"@pt ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "Instituto Português do Mar e da Atmosfera"@pt ,
+                                                     "Portuguese Institute for Sea and Atmosphere"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "IPMA"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#IRD
+:IRD rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Organization> ;
+     :hasCountry :France ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "IRD"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ifremer
+:Ifremer rdf:type owl:NamedIndividual ,
+                  <http://xmlns.com/foaf/0.1/Organization> ;
+         :hasCountry :France ;
+         :isMemberof :EMSO ;
+         <http://xmlns.com/foaf/0.1/homepage> "https://en.ifremer.fr/"@en ,
+                                              "https://www.ifremer.fr/fr"@fr ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "French national institute for ocean science and technology"@en ,
+                                                        "Institut français de recherche pour l'exploitation de la mer"@fr ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Ifremer"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ilker_FER
+:Ilker_FER rdf:type owl:NamedIndividual ,
+                    <http://schema.org/Person> ;
+           :hasORCID "orcid:0000-0002-2427-2532"^^xsd:anyURI ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Ilker FER"@no .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ingrid_PUILLAT
+:Ingrid_PUILLAT rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "0000-0002-0695-9840"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Ingrid PUILLAT"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ingunn_SKJELVAN
+:Ingunn_SKJELVAN rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 :hasORCID "orcid:0000-0001-6761-5016"^^xsd:anyURI ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Ingunn SKJELVAN"@no .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ireland
+:Ireland rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> ;
+         owl:sameAs "https://dbpedia.org/page/Ireland" .
+
+
+###  https://w3id.org/earthsemantics/OSO#Irish_Seas
+:Irish_Seas rdf:type owl:NamedIndividual ,
+                     <http://example.org/ontology#RF> ;
+            <http://example.org/ontology#containsSite> <http://example.org/ontology#Smartbay> ,
+                                                       :South_Rockall ;
+            <http://example.org/ontology#ledByOrganization> :Marine_institute ;
+            :Regional_Facility_is_part_of_EMSO_ERIC :EMSO ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Irish Seas"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Iroise_RF_bbox
+:Iroise_RF_bbox rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                :hasEastLongitude -4377354 ;
+                :hasNorthLatitude 48.416666999999997 ;
+                :hasSouthLatitude 48.300000 ;
+                :hasWestLongitude -4.933333000000000 ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Iroise RF bbox"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Country> ;
+       owl:sameAs "https://dbpedia.org/page/Italy"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#JAMSTEC
+:JAMSTEC rdf:type owl:NamedIndividual ,
+                  <http://xmlns.com/foaf/0.1/Organization> ;
+         :hasCountry :Japan ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "Japan Agency for Marine-Earth Science and Technology"@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "JAMSTEC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Japan
+:Japan rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Country> ;
+       owl:sameAs "https://dbpedia.org/page/Japan"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Joaquin_DEL_RIO
+:Joaquin_DEL_RIO rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Joaquin DEL RIO FERNANDEZ"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#KANADEEP_2
+:KANADEEP_2 rdf:type owl:NamedIndividual ,
+                     <http://example.org/ontology#OceanographicCampaign> .
+
+
+###  https://w3id.org/earthsemantics/OSO#KASEAOPE
+:KASEAOPE rdf:type owl:NamedIndividual ,
+                   <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#KASEASPACE
+:KASEASPACE rdf:type owl:NamedIndividual ,
+                     <http://example.org/ontology#OceanographicCampaign> .
+
+
+###  https://w3id.org/earthsemantics/OSO#Karin_SIGLOCH
+:Karin_SIGLOCH rdf:type owl:NamedIndividual ,
+                        <http://schema.org/Person> ;
+               :hasORCID "orcid:0000-0002-9876-4628"^^xsd:anyURI ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Karin SIGLOCH"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Karine_OLU
+:Karine_OLU rdf:type owl:NamedIndividual ,
+                     <http://schema.org/Person> ;
+            :hasORCID "orcid:0000-0002-4906-4131"^^xsd:anyURI ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Karine OLU"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#LUCKYDIVMIC
+:LUCKYDIVMIC rdf:type owl:NamedIndividual ,
+                      <http://example.org/ontology#OceanographicCampaign> ;
+             :hasDOI "\"10.17600/18001345\""@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Laura_DE_STEUR
+:Laura_DE_STEUR rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "orcid:0000-0002-6043-7920"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Laura DE STEUR"@no .
+
+
+###  https://w3id.org/earthsemantics/OSO#Laurent_COPPOLA
+:Laurent_COPPOLA rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 :hasORCID "orcid:0000-0003-0473-1129"^^xsd:anyURI ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Laurent COPPOLA"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Laurent_GAUTIER
+:Laurent_GAUTIER rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 :hasORCID "orcid:0000-0002-1501-6609"^^xsd:anyURI ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Laurent GAUTIER"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Leonidas_PERIVOLIOTIS
+:Leonidas_PERIVOLIOTIS rdf:type owl:NamedIndividual ,
+                                <http://schema.org/Person> ;
+                       :hasORCID "orcid:0009-0004-0651-0041"^^xsd:anyURI ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Leonidas PERIVOLIOTIS"@el .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ligurian_Sea_RF_bbox
+:Ligurian_Sea_RF_bbox rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                      :hasEastLongitude 7.85399 ;
+                      :hasNorthLatitude 43.371616 ;
+                      :hasSouthLatitude 42.0143 ;
+                      :hasWestLongitude 4.686156 ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Ligurian Sea RF bbox"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Lion_mooring
+:Lion_mooring rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/ns/sosa/Platform> ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Lion mooring"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Louis_GELLI
+:Louis_GELLI rdf:type owl:NamedIndividual ,
+                      <http://schema.org/Person> ;
+             :hasORCID "orcid:0000-0001-7049-4577"^^xsd:anyURI ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Louis GELI"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#MARMESONET
+:MARMESONET rdf:type owl:NamedIndividual ,
+                     <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#MARMOR
+:MARMOR rdf:type owl:NamedIndividual ,
+                 :Project ;
+        :hasCountry :France ;
+        :hasLocation <http://example.org/ontology#Mayotte> ;
+        <http://xmlns.com/foaf/0.1/homepage> "https://www.marmor-project.org/fr"@fr ;
+        <http://www.w3.org/2004/02/skos/core#definition> """MARMOR (Marine Advanced geophysical Research equipment and Mayotte multidisciplinary Observatory for research and Response) est un projet d'une durée de 8 ans financé par l'ANR
+
+Le projet MARMOR a un double objectif :
+
+Structurer la communauté scientifique française, en fournissant à l'Infrastructure de Recherche Epos-France (ex Résif) les équipements nécessaires pour conduire des recherches d’excellence utilisant les outils de la sismologie et de la géodésie sous-marines.
+
+Mettre en place une infrastructure d’observation sous-marine à Mayotte pour assurer les impératifs de surveillance sismologique continue, temps-réel et 24/7 et conduire des recherches multidisciplinaires sur les phénomènes associés à la crise sismo-volcanique en cours."""@fr ;
+        <http://www.w3.org/2004/02/skos/core#note> "MARMOR"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Marine Advanced geophysical Research equipment and Mayotte multidisciplinary Observatory for research and Response"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#MARNAUT
+:MARNAUT rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontology#OceanographicCampaign> ;
+         :hasDOI "\"10.17600/7010070\""@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#MARSITECRUISE
+:MARSITECRUISE rdf:type owl:NamedIndividual ,
+                        <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#MAYOBS
+:MAYOBS rdf:type owl:NamedIndividual ,
+                 <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#MII
+:MII rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#MOMARSAT
+:MOMARSAT rdf:type owl:NamedIndividual ,
+                   <http://example.org/ontology#SeriesOfOceanographicCampaigns> ;
+          :hasDOI "\"10.18142/130\""@en ;
+          rdfs:comment "MOMAR is the acronym for MOnitoring the Mid Atlantic Ridge"@en ;
+          rdfs:label "MOMARSAT"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#MOOSE-GE
+:MOOSE-GE rdf:type owl:NamedIndividual ,
+                   <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#MUG-OBS
+:MUG-OBS rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontology#SeriesOfOceanographicCampaigns> .
+
+
+###  https://w3id.org/earthsemantics/OSO#Marha
+:Marha rdf:type owl:NamedIndividual ,
+                :Project ;
+       :Project_is_led_by_an_Organization :Office_français_de_la_biodiversité ;
+       :hasCountry :France ;
+       <http://xmlns.com/foaf/0.1/homepage> "https://www.life-marha.fr/"@fr ;
+       <http://purl.org/dc/terms/title> "Life Marha"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Life Marha"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Marine_institute
+:Marine_institute rdf:type owl:NamedIndividual ,
+                           <http://xmlns.com/foaf/0.1/Organization> ;
+                  :hasCountry :Ireland ;
+                  :isMemberof :EMSO ;
+                  <http://xmlns.com/foaf/0.1/homepage> "https://www.marine.ie/home"@en ;
+                  rdfs:comment "The Marine Institute is the national agency responsible for Marine Research, Technology Development and Innovation (RTDI)."@en ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Marine Institute"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MI"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Marjolaine_MATABOS
+:Marjolaine_MATABOS rdf:type owl:NamedIndividual ,
+                             <http://schema.org/Person> ;
+                    :hasORCID "orcid:0000-0003-1983-9896"^^xsd:anyURI ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Marjolaine MATABOS"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Marmara_Sea_RF_bbox
+:Marmara_Sea_RF_bbox rdf:type owl:NamedIndividual ,
+                              <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+                     :hasEastLongitude 29.91533 ;
+                     :hasNorthLatitude 41.2000000 ;
+                     :hasSouthLatitude 40.2300000 ;
+                     :hasWestLongitude 26.92771 ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Marmara Sea RF bbox"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Martin_PATRIAT
+:Martin_PATRIAT rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "orcid:0000-0002-3584-7952"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Martin PATRIAT"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Mohn
+:Mohn rdf:type owl:NamedIndividual ,
+               <http://example.org/ontology#SI> ;
+      <http://example.org/ontology#containsPlatform> :multi-array_observatory ;
+      <http://example.org/ontology#hasSiteResponsible> :Steffen_JORGENSEN ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Mohn"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Mugobs
+:Mugobs rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#NOC
+:NOC rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Organization> ;
+     :hasCountry :United_Kingdom ;
+     <http://xmlns.com/foaf/0.1/homepage> "https://noc.ac.uk/"@en ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "National Oceanography Centre"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "NOC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Nadine_LANTERI
+:Nadine_LANTERI rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "orcid:0000-0002-3836-0437"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Nadine LANTERI"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Norway
+:Norway rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> ;
+        owl:sameAs "https://dbpedia.org/page/Norway"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#OBSEA_buoy
+:OBSEA_buoy rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/sosa/Platform> ;
+            <http://example.org/ontology#hasPrincipalInvestigator> :Joaquin_DEL_RIO ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "OBSEA buoy"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#OBSEA_seabed_station
+:OBSEA_seabed_station rdf:type owl:NamedIndividual ;
+                      <http://example.org/ontology#hasPrincipalInvestigator> :Joaquin_DEL_RIO ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "OBSEA seabed station"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#OGS
+:OGS rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ocean_Network_Canada
+:Ocean_Network_Canada rdf:type owl:NamedIndividual ,
+                               <http://xmlns.com/foaf/0.1/Organization> ;
+                      :hasCountry :Canada ;
+                      <http://xmlns.com/foaf/0.1/homepage> "https://www.oceannetworks.ca/"@en ;
+                      <http://www.w3.org/2004/02/skos/core#altLabel> "Ocean Network Canada"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "ONC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Office_français_de_la_biodiversité
+:Office_français_de_la_biodiversité rdf:type owl:NamedIndividual ,
+                                             <http://xmlns.com/foaf/0.1/Organization> ;
+                                    :hasCountry :France ;
+                                    <http://xmlns.com/foaf/0.1/homepage> "https://www.ofb.gouv.fr/"@fr ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Office français de la biodiversité"@fr ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "OFB"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#PLOCAN
+:PLOCAN rdf:type owl:NamedIndividual ,
+                 <http://xmlns.com/foaf/0.1/Organization> ;
+        :hasCountry :Spain ;
+        :isMemberof :EMSO ;
+        <http://xmlns.com/foaf/0.1/homepage> "https://plocan.eu/"@es ,
+                                             "https://plocan.eu/en"@en ;
+        rdfs:comment "The Ministry of Economy & Competitiveness (MINECO) is represented by PLOCAN within EMSO."@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Oceanic Platform of the Canary Islands"@en ,
+                                                       "Plataforma Oceánica de Canarias"@es ;
+        <http://www.w3.org/2004/02/skos/core#note> "PLOCAN"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "PLOCAN"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#PYLOS_Platform
+:PYLOS_Platform rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#PYLOS_buoy
+:PYLOS_buoy rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#Patrice_BRETEL
+:Patrice_BRETEL rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "orcid:0000-0002-9326-4923"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Patrice BRETEL"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Paulo_RELVAS
+:Paulo_RELVAS rdf:type owl:NamedIndividual ,
+                       <http://schema.org/Person> ;
+              :hasORCID "orcid:0000-0002-6404-5895"^^xsd:anyURI ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Paulo RELVAS"@pt .
+
+
+###  https://w3id.org/earthsemantics/OSO#Pierre_HENRY
+:Pierre_HENRY rdf:type owl:NamedIndividual ,
+                       <http://schema.org/Person> ;
+              :hasORCID "orcid:0000-0002-2288-6805"^^xsd:anyURI ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Pierre HENRY"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Portugal
+:Portugal rdf:type owl:NamedIndividual ,
+                   <http://dbpedia.org/ontology/Country> ;
+          owl:sameAs "https://dbpedia.org/page/Portugal"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Poseidon_III_platform
+:Poseidon_III_platform rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#REVOSIMA
+:REVOSIMA rdf:type owl:NamedIndividual ,
+                   :Project ;
+          :Project_is_led_by_an_Organization :IPGP ;
+          <http://xmlns.com/foaf/0.1/homepage> "https://www.ipgp.fr/observation/infrastructures-nationales-hebergees/revosima/"@fr ;
+          <http://www.w3.org/2004/02/skos/core#note> "REVOSIMA"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Réseau de surveillance volcanologique et sismologique de Mayotte"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Research_Council_of_Norway
+:Research_Council_of_Norway rdf:type owl:NamedIndividual ,
+                                     <http://xmlns.com/foaf/0.1/Organization> ;
+                            :hasCountry :Norway ;
+                            :isMemberof :EMSO ;
+                            <http://xmlns.com/foaf/0.1/homepage> "https://www.forskningsradet.no/"@no ,
+                                                                 "https://www.forskningsradet.no/en/"@en ;
+                            rdfs:comment "The Kingdom of Norway is represented by The Research Council of Norway in EMSO."@en ;
+                            <http://www.w3.org/2004/02/skos/core#altLabel> "The Research Council of Norway"@en ;
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "RCN"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Roberto_BOZZANO
+:Roberto_BOZZANO rdf:type owl:NamedIndividual ,
+                          <http://schema.org/Person> ;
+                 :hasORCID "orcid:0000-0002-5163-2396"^^xsd:anyURI ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Roberto BOZZANO"@it .
+
+
+###  https://w3id.org/earthsemantics/OSO#Rockall
+:Rockall rdf:type owl:NamedIndividual ,
+                  :Location ;
+         owl:sameAs "https://dbpedia.org/page/Rockall"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Romania
+:Romania rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> ;
+         owl:sameAs "https://dbpedia.org/page/Romania"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#ScInObs
+:ScInObs rdf:type owl:NamedIndividual ,
+                  :Project ;
+         :hasCountry :France .
+
+
+###  https://w3id.org/earthsemantics/OSO#Smartbay_buoy
+:Smartbay_buoy rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/ns/sosa/Platform> ;
+               <http://example.org/ontology#hasPrincipalInvestigator> :Alan_BERRY ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Smartbay buoy"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Smartbay_observatory
+:Smartbay_observatory rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/ns/sosa/Platform> ;
+                      <http://example.org/ontology#hasPrincipalInvestigator> :Alan_BERRY ;
+                      <http://www.w3.org/2004/02/skos/core#altLabel> "Galway Bay Cable Observatory"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> """The SmartBay cabled observatory is connected to a shorestation via a 5km long subsea fibre optic power cable. This cable provides power to the observatory and facilitates high speed communication with the various instruments and sensors deployed. The observatory operates a core suite of sensors which measure several EOVs and other relevant environmental indicators. These instruments include CTD, Ph, dissolved oxygen, pco2, hydrophones, HD camera, flow cytometer and ADCP. These instruments are cabled to a central electronics node. This node also includes several additional ports and cables with multiple power and communications configurations which are available to host other novel sensors and instruments. The testing and demonstration of new and novel equipment is one of the main drivers behind the SmartBay facility, allowing researchers and industry the ability to trial their technology in the marine environment whilst also being in real time communication with their equipment at all times.
+
+Environmental data recorded by the various infrastructures at the SmartBay facility is streamed in real time to Marine Institute servers and subsequently to various online platforms and databases. The online data currently includes live video and audio, currents, wave data and feeds from the several instruments currently deployed."""@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Smartbay observatory"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#South_Rockall
+:South_Rockall rdf:type owl:NamedIndividual ,
+                        <http://example.org/ontology#SI> ;
+               <http://example.org/ontology#hasSiteResponsible> :Alan_BERRY ;
+               :hasCountry :Ireland ;
+               :hasLocation :Rockall ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "South Rockall"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/ontology/Country> ;
+       owl:sameAs "https://dbpedia.org/page/Spain"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Steffen_JORGENSEN
+:Steffen_JORGENSEN rdf:type owl:NamedIndividual ,
+                            <http://schema.org/Person> ;
+                   :hasORCID "orcid:0000-0003-0240-7907"^^xsd:anyURI ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Steffen Leth Jørgensen"@no .
+
+
+###  https://w3id.org/earthsemantics/OSO#Sweden
+:Sweden rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/ontology/Country> ;
+        owl:sameAs "https://dbpedia.org/page/Sweden"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Sébastien_GARZIGLIA
+:Sébastien_GARZIGLIA rdf:type owl:NamedIndividual ,
+                              <http://schema.org/Person> ;
+                     :hasORCID "orcid:0000-0003-1136-243X"^^xsd:anyURI ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Sébastien GARZIGLIA"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Séverine_MARTINI
+:Séverine_MARTINI rdf:type owl:NamedIndividual ,
+                           <http://schema.org/Person> ;
+                  :hasORCID "orcid:0000-0001-9471-1708"^^xsd:anyURI ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Séverine MARTINI"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#TamTam
+:TamTam rdf:type owl:NamedIndividual ,
+                 :Project ;
+        :hasCountry :France ,
+                    :Vanuatu ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Tam Tam"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Thibault_BARREYRE
+:Thibault_BARREYRE rdf:type owl:NamedIndividual ,
+                            <http://schema.org/Person> ;
+                   :hasORCID "orcid:0000-0002-5109-2633"^^xsd:anyURI ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Thibault BARREYRE"@fr .
+
+
+###  https://w3id.org/earthsemantics/OSO#Turquey
+:Turquey rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> ;
+         owl:sameAs "https://dbpedia.org/page/Turkey"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#ULPGC
+:ULPGC rdf:type owl:NamedIndividual ,
+                <http://xmlns.com/foaf/0.1/Organization> ;
+       :hasCountry :Spain ;
+       <http://xmlns.com/foaf/0.1/homepage> "https://www.ulpgc.es/"@es ;
+       <http://www.w3.org/2004/02/skos/core#altLabel> "Universidad de Las Palmas de Gran Canarias"@es ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "ULPGC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#UPC
+:UPC rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Organization> ;
+     :hasCountry :Spain ;
+     :isMemberof :EMSO ;
+     <http://xmlns.com/foaf/0.1/homepage> "https://www.upc.edu/ca"@ca ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Polytechnic University of Catalonia"@en ,
+                                                    "Universitat Politècnica de Catalunya"@ca ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "UPC"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#UiB
+:UiB rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Organization> ;
+     :hasCountry :Norway ;
+     :isMemberof :EMSO ;
+     <http://xmlns.com/foaf/0.1/homepage> "https://www.uib.no/en"@en ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Universitetet i Bergen"@no ,
+                                                    "University of Bergen"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "UiB"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#Ukraine
+:Ukraine rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> ;
+         owl:sameAs "https://dbpedia.org/page/Ukraine"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#United_Kingdom
+:United_Kingdom rdf:type owl:NamedIndividual ,
+                         <http://dbpedia.org/ontology/Country> ;
+                owl:sameAs "https://dbpedia.org/page/United_Kingdom"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Vanessa_CARDIN
+:Vanessa_CARDIN rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "orcid:0000-0002-4710-6844"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Vanessa CARDIN"@it .
+
+
+###  https://w3id.org/earthsemantics/OSO#Vanuatu
+:Vanuatu rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/ontology/Country> ;
+         owl:sameAs "https://dbpedia.org/page/Vanuatu"^^xsd:anyURI .
+
+
+###  https://w3id.org/earthsemantics/OSO#Vlad_Rădulescu
+:Vlad_Rădulescu rdf:type owl:NamedIndividual ,
+                         <http://schema.org/Person> ;
+                :hasORCID "orcid:0000-0001-8091-0052"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Vlad Rădulescu"@ro .
+
+
+###  https://w3id.org/earthsemantics/OSO#West_station
+:West_station rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#geosciences
+:geosciences rdf:type owl:NamedIndividual ,
+                      :Discipline ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Geosciences"@en .
+
+
+###  https://w3id.org/earthsemantics/OSO#mooring1
+:mooring1 rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#mooring2
+:mooring2 rdf:type owl:NamedIndividual ,
+                   <http://example.org/ontology#SI> .
+
+
+###  https://w3id.org/earthsemantics/OSO#mooring3
+:mooring3 rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#mooring4
+:mooring4 rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#multi-array_observatory
+:multi-array_observatory rdf:type owl:NamedIndividual ,
+                                  <http://www.w3.org/ns/sosa/Platform> .
+
+
+###  https://w3id.org/earthsemantics/OSO#physical_oceanography
+:physical_oceanography rdf:type owl:NamedIndividual ,
+                                :Discipline ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical oceanography"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#Latitude> <http://www.w3.org/2004/02/skos/core#prefLabel> "Latitude"@en .
+
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#Longitude> <http://www.w3.org/2004/02/skos/core#prefLabel> "Longitude"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

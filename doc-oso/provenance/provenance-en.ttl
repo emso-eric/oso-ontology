@@ -1,0 +1,13 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Open Seas Observatory Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <mailto:emso.dmsg@emso-eu.org>;
+	 dc:contributor <mailto:emso.dmsg@emso-eu.org>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt ""2025-04-04"";
+.
+:agent0 a prov:Agent; foaf:name "<https://orcid.org/0009-0008-1759-5254>".
