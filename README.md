@@ -47,7 +47,7 @@ The OSO ontology currently defines the following key classes, organised to descr
 | `Location`              | A geographic concept used to model the spatial extent or coordinates of observatory elements (point or bounding box). |
 | `Discipline`            | A scientific domain related to the data collected (e.g., physical oceanography, biogeochemistry, geophysics). |
 
-## OSO Ontology Visualisation
+## 🔗 OSO Ontology Visualisation
 
 You can interactively visualise the OSO ontology using WebVOWL by following this link:
 
