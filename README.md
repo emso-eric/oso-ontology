@@ -72,4 +72,4 @@ Further alignments with marine science ontologies (e.g., SOSA/SSN, ENVO, PROV-O)
 ## 📂 Access
 
 - **Ontology IRI**: [https://w3id.org/earthsemantics/OSO](https://w3id.org/earthsemantics/OSO)
-- **Documentation (HTML)**: `not yet available`
+- **Documentation (HTML)**: [https://emso-eric.github.io/oso-ontology/](https://emso-eric.github.io/oso-ontology/)
