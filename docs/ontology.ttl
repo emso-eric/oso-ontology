@@ -8,11 +8,11 @@
 
 <https://w3id.org/earthsemantics/OSO> rdf:type owl:Ontology ;
                                        <http://purl.org/dc/terms/contributor> <mailto:emso.dmsg@emso-eu.org> ;
-                                       <http://purl.org/dc/terms/created> "2025-04-04"^^xsd:date ;
+                                       <http://purl.org/dc/terms/created> "\"2025-04-04\""^^xsd:date ;
                                        <http://purl.org/dc/terms/creator> "<https://orcid.org/0009-0008-1759-5254>"@en ;
                                        <http://purl.org/dc/terms/description> "Descriptive ontology for open seas observatories (including all EMSO observatories for European Multidisciplinary Seafloor and water column Observatories)"@en ;
                                        <http://purl.org/dc/terms/licence> "<https://creativecommons.org/licenses/by/4.0/>"^^xsd:anyURI ;
-                                       <http://purl.org/dc/terms/modified> "2025-04-15"^^xsd:date ;
+                                       <http://purl.org/dc/terms/modified> "\"2025-04-15\""^^xsd:date ;
                                        <http://purl.org/dc/terms/publisher> "<https://github.com/emso-eric>"^^xsd:anyURI ;
                                        <http://purl.org/dc/terms/source> "<https://github.com/emso-eric/oso-ontology>"^^xsd:anyURI ;
                                        <http://purl.org/dc/terms/title> "Open Seas Observatory Ontology"@en ;
