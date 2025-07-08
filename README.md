@@ -1,8 +1,8 @@
-# 🌊 OSO Ontology – Open Seas Observatories
+# 🌊 OSO - Observatories of Seas Ontology
 
 ## 📌 Overview
 
-The **OSO Ontology** (Open Seas Observatories) provides a semantic framework for describing **subsea and deep-sea observatories**, with a particular focus on those operated within the **EMSO-ERIC** (European Multidisciplinary Seafloor and water column Observatory) which is an European Research Infrastructure Consortium.
+The **OSO** (Observatories of Seas Ontology) provides a semantic framework for describing **subsea and deep-sea observatories**, with a particular focus on those operated within the **EMSO-ERIC** (European Multidisciplinary Seafloor and water column Observatory) which is an European Research Infrastructure Consortium.
 
 The ontology structures observatories across **three main hierarchical levels**:
 
@@ -14,13 +14,13 @@ Two additional levels are planned for future development:
 - **Measured Parameters** – describing the observed phenomena (e.g., temperature, pressure, biogeochemical indicators),
 - **Datasets and PIDs** – linking observations and parameters to their corresponding published datasets (with persistent identifiers such as DOI).
 
-Developed in the context of the **EMSO-ERIC**, the OSO ontology supports the **FAIR principles** (Findable, Accessible, Interoperable, Reusable) by enabling semantic integration of marine observation data. It also facilitates:
+Developed in the context of the **EMSO-ERIC**, OSO supports the **FAIR principles** (Findable, Accessible, Interoperable, Reusable) by enabling semantic integration of marine observation data. It also facilitates:
 
 - Links to **organisations** responsible for the facilities,
 - Association with relevant **geographical areas**,
 - Connection to **scientific projects** and **oceanographic cruises**.
 
-The OSO ontology is aligned with existing standards and aims to contribute to the broader adoption of semantic technologies in marine science.
+OSO is aligned with existing standards and aims to contribute to the broader adoption of semantic technologies in marine science.
 
 ## 🧭 Objectives
 
@@ -47,16 +47,16 @@ The OSO ontology currently defines the following key classes, organised to descr
 | `Location`              | A geographic concept used to model the spatial extent or coordinates of observatory elements (point or bounding box). |
 | `Discipline`            | A scientific domain related to the data collected (e.g., physical oceanography, biogeochemistry, geophysics). |
 
-## 🔗 OSO Ontology Visualisation
+## 🔗 OSO Visualisation
 
 You can interactively visualise the OSO ontology using WebVOWL by following this link:
 
-[WebVOWL Visualization of the OSO Ontology](https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO)
+[WebVOWL Visualisation of the OSO Ontology](https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO)
 
 
 ## 🔗 Ontology Alignments
 
-The OSO ontology is designed to promote interoperability and semantic consistency with existing standards. It currently aligns with the following well-established vocabularies and ontologies:
+OSO is designed to promote interoperability and semantic consistency with existing standards. It currently aligns with the following well-established vocabularies and ontologies:
 
 | Ontology / Vocabulary | Prefix        | Purpose in OSO                                                                 |
 |------------------------|---------------|--------------------------------------------------------------------------------|
