@@ -3,11 +3,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <..\index-en.html> a prov:Entity;
-	 dc:title "Open Seas Observatory Ontology";
+	 dc:title "Observatories of Seas Ontology";
+	 prov:wasAttributedTo <https://orcid.org/0009-0008-1759-5254>;
+	 dc:creator <https://orcid.org/0009-0008-1759-5254>;
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <mailto:emso.dmsg@emso-eu.org>;
 	 dc:contributor <mailto:emso.dmsg@emso-eu.org>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt ""2025-04-04"";
+	 prov:wasGeneratedAt "2025-04-04";
 .
-:agent0 a prov:Agent; foaf:name "<https://orcid.org/0009-0008-1759-5254>".
+:agent0 a prov:Agent; foaf:name "Steven PIEL (Ifremer), on behalf of the EMSO community".
