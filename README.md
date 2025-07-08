@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-The **OSO** (Observatories of Seas Ontology) provides a semantic framework for describing **subsea and deep-sea observatories**, with a particular focus on those operated within the **EMSO-ERIC** (European Multidisciplinary Seafloor and water column Observatory) which is an European Research Infrastructure Consortium.
+**OSO** (Observatories of Seas Ontology) provides a semantic framework for describing **subsea and deep-sea observatories**, with a particular focus on those operated within the **EMSO-ERIC** (European Multidisciplinary Seafloor and water column Observatory) which is an European Research Infrastructure Consortium.
 
 The ontology structures observatories across **three main hierarchical levels**:
 
