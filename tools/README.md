@@ -67,11 +67,11 @@ OSO_RF_Site_Platform_Filtered_EMSO.xlsx
 
 A script is provided in the [`extraction/`](../extraction) folder to generate an Excel file containing only the Regional Facilities that are part of **EMSO ERIC**, along with their associated Sites, Subsites, Platforms, and Subplatforms.
 
-- Script: [`extraction/oso_extraction_hierarchy_EMSO_ERIC.py`](../extraction/oso_extraction_hierarchy_EMSO_ERIC.py)
+- Script: [`extraction/oso_extraction_hierarchy_EMSO_ERIC.py`](https://github.com/emso-eric/oso-ontology/blob/main/tools/oso_extraction_hierarchy_EMSO_ERIC.py)
 - Input file: `oso.ttl`
 - Output file: `OSO_RF_Site_Platform_Filtered_EMSO.xlsx`
 
-➡️ [See example output file (as of 2025-07-15)](../extraction/OSO_RF_Site_Platform_Filtered_EMSO_2025-07-15.xlsx)
+➡️ [See example output file (as of 2025-07-15)](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250715.xlsx)
 
 Run with:
 ```bash
