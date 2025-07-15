@@ -63,6 +63,20 @@ OSO_RF_Site_Platform_Filtered_EMSO.xlsx
 
 ---
 
+## 📊 Extraction of EMSO ERIC Hierarchical View
+
+A script is provided in the [`extraction/`](../extraction) folder to generate an Excel file containing only the Regional Facilities that are part of **EMSO ERIC**, along with their associated Sites, Subsites, Platforms, and Subplatforms.
+
+- Script: [`extraction/oso_extraction_hierarchy_EMSO_ERIC.py`](../extraction/oso_extraction_hierarchy_EMSO_ERIC.py)
+- Input file: `oso.ttl`
+- Output file: `OSO_RF_Site_Platform_Filtered_EMSO.xlsx`
+
+➡️ [See example output file (as of 2025-07-15)](../extraction/OSO_RF_Site_Platform_Filtered_EMSO_2025-07-15.xlsx)
+
+Run with:
+```bash
+python oso_extraction_hierarchy_EMSO_ERIC.py
+
 ## 🤝 Feedback / Contribution
 
 - Open an [issue on GitHub](https://github.com/emso-eric/oso-ontology/issues)
