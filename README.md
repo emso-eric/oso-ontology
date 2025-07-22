@@ -47,6 +47,12 @@ The OSO ontology currently defines the following key classes, organised to descr
 | `Location`              | A geographic concept used to model the spatial extent or coordinates of observatory elements (point or bounding box). |
 | `Discipline`            | A scientific domain related to the data collected (e.g., physical oceanography, biogeochemistry, geophysics). |
 
+## DCAT Metadata
+
+This ontology is described using the [DCAT standard](https://www.w3.org/TR/vocab-dcat-3/) to ensure better interoperability and indexing.
+
+- 📄 [View the DCAT metadata on EarthPortal](https://w3id.org/earthsemantics/OSO_DCAT)
+
 ## 🔗 OSO Visualisation
 
 You can interactively visualise the OSO ontology using WebVOWL by following this link:
