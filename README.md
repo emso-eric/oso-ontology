@@ -51,7 +51,7 @@ The OSO ontology currently defines the following key classes, organised to descr
 
 This ontology is described using the [DCAT standard](https://www.w3.org/TR/vocab-dcat-3/) to ensure better interoperability and indexing.
 
-- 📄 [View the DCAT metadata on EarthPortal](https://w3id.org/earthsemantics/OSO_DCAT)
+- 📄 [View the DCAT metadata on EarthPortal](https://earthportal.eu/ontologies/OSO-DCAT)
 
 ## 🔗 OSO Visualisation
 
