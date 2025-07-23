@@ -2,16 +2,17 @@
 
 This script extracts a 5-level hierarchy from the OSO ontology and generates an Excel file (`.xlsx`) containing only the **Regional Facilities** that are part of **EMSO ERIC**, along with their associated Sites, Subsites, Platforms, and Subplatforms.
 
+Updated for ontology version **0.15** (released on 2025-07-23).
+
 ---
 
 ## ✅ Requirements
 
-- Python **3.10** or higher
+- Python **3.10** or higher  
 - Required Python libraries:
 
 ```bash
 pip install rdflib pandas openpyxl
-```
 
 ---
 
@@ -47,6 +48,7 @@ OSO_RF_Site_Platform_Filtered_EMSO.xlsx
 ## 🧠 Ontology Reference
 
 - OSO Ontology URI: [`https://w3id.org/earthsemantics/OSO`](https://w3id.org/earthsemantics/OSO)
+- Version used: [`https://w3id.org/earthsemantics/OSO/0.15`](https://w3id.org/earthsemantics/OSO/0.15)
 - Source: [`https://github.com/emso-eric/oso-ontology`](https://github.com/emso-eric/oso-ontology)
 
 ---
@@ -71,7 +73,7 @@ A script is provided in the [`extraction/`](../extraction) folder to generate an
 - Input file: `oso.ttl`
 - Output file: `OSO_RF_Site_Platform_Filtered_EMSO.xlsx`
 
-➡️ [See example output file (as of 2025-07-15)](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250715.xlsx)
+➡️ [See example output file (2025-07-23)](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx)
 
 Run with:
 ```bash
