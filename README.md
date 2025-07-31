@@ -19,7 +19,7 @@ Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRne
 - Improved syntax compliance (spaces, punctuation, consistent `dcterms:` usage)
 - Enriched multilingual metadata and annotation properties
 - New and updated instances for sites and platforms
-- FAIR score: **63%** (according to O'FAIRe) — with targeted improvements under way
+- FAIR score: **62%** (according to O'FAIRe) — with targeted improvements under way
 
 ## 🧭 Objectives
 
