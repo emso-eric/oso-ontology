@@ -1,5 +1,8 @@
 # FAIRification Roadmap for the OSO Ontology (based on O'FAIRe Criteria)
 
+📊 **Live FAIRness score of OSO**:  
+[https://earthportal.eu/ajax/fair_score/html/?ontologies=OSO](https://earthportal.eu/ajax/fair_score/html/?ontologies=OSO)
+
 This document provides a structured checklist to improve the FAIRness of the OSO ontology according to the [O'FAIRe evaluation framework](https://www.ofaire.eu/). The goal is to progressively reach a score above **90%**, making OSO an exemplary FAIR ontology.
 
 ---
