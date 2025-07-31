@@ -28,12 +28,13 @@ Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRne
 - New and updated instances for sites and platforms
 - FAIR score: **62%** (according to O'FAIRe) — with targeted improvements under way
 
-## 📋 FAIRification Roadmap
+## 📋 FAIRisation Roadmap
 
-This ontology is progressively being aligned with the [FAIR principles](https://www.go-fair.org/fair-principles/) using the [O'FAIRe evaluation framework](https://www.ofaire.eu/).  
-The detailed improvement plan is available in the following file:
+This ontology is being progressively aligned with the FAIR principles using the [O'FAIRe evaluation framework](https://catalogue.fair-impact.eu/resources/ofaire).
 
-➡️ [FAIR-roadmap-OSO.md](./FAIR-roadmap-OSO.md)
+🧪 **Current FAIR score** (updated dynamically): [View OSO FAIRness score on EarthPortal](https://earthportal.eu/ajax/fair_score/html/?ontologies=OSO)
+
+See [FAIR-roadmap-OSO.md](./FAIR-roadmap-OSO.md) for the detailed action plan.
 
 We welcome feedback and contributions to improve its FAIRness over time.
 
