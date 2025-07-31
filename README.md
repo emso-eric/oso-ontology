@@ -1,6 +1,6 @@
 # 🌊 OSO - Observatories of Seas Ontology
 
-## Overview
+## 📖 Overview
 
 **OSO (Observatories of Seas Ontology)** provides a semantic framework to describe marine research infrastructures, with a focus on deep-sea observatories operated by EMSO-ERIC and national nodes like EMSO-France.
 
@@ -28,7 +28,7 @@ Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRne
 - New and updated instances for sites and platforms
 - FAIR score: **62%** (according to O'FAIRe) — with targeted improvements under way
 
-## FAIRification Roadmap
+## 📋 FAIRification Roadmap
 
 This ontology is progressively being aligned with the [FAIR principles](https://www.go-fair.org/fair-principles/) using the [O'FAIRe evaluation framework](https://www.ofaire.eu/).  
 The detailed improvement plan is available in the following file:
@@ -56,7 +56,7 @@ You can explore these resources directly or import them into ontology editors su
   *(Supports interactive browsing of classes, properties, and individuals)*
 
 
-## Structure & Key Concepts
+## 🧬 Structure & Key Concepts
 
 - **Hierarchical model**:  
   `RegionalFacility → Site → SubSite → Platform → SubPlatform`
