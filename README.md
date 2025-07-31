@@ -12,6 +12,13 @@ Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRne
 - **Documentation (HTML)**: [https://emso-eric.github.io/oso-ontology/](https://emso-eric.github.io/oso-ontology/)
 - **WebVOWL Visualisation of the OSO Ontology**: [https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO](https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO)
 
+## 🧭 Objectives
+
+- To provide a common vocabulary for describing marine observatories and their components.
+- To enhance interoperability of data across European marine research infrastructures.
+- To support data publication and discovery in FAIR-compliant data portals.
+- To align with existing ontologies and standards (SOSA, DCAT, GeoSPARQL, PROV-O).
+
 ## ✨ Highlights of version 0.15
 
 - Ontology IRI: `https://w3id.org/earthsemantics/OSO/0.15`
@@ -21,13 +28,14 @@ Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRne
 - New and updated instances for sites and platforms
 - FAIR score: **62%** (according to O'FAIRe) — with targeted improvements under way
 
-## 🧭 Objectives
+## FAIRification Roadmap
 
-- To provide a common vocabulary for describing marine observatories and their components.
-- To enhance interoperability of data across European marine research infrastructures.
-- To support data publication and discovery in FAIR-compliant data portals.
-- To align with existing ontologies and standards (SOSA, DCAT, GeoSPARQL, PROV-O).
+This ontology is progressively being aligned with the [FAIR principles](https://www.go-fair.org/fair-principles/) using the [O'FAIRe evaluation framework](https://www.ofaire.eu/).  
+The detailed improvement plan is available in the following file:
 
+➡️ [FAIR-roadmap-OSO.md](./FAIR-roadmap-OSO.md)
+
+We welcome feedback and contributions to improve its FAIRness over time.
 
 ## 📦 Download & Examples
 
