@@ -1,4 +1,4 @@
-# 🌊 OSO - Observatories of Seas Ontology
+# <img src="oso.png" alt="OSO logo" height="40"/> Observatories of Seas Ontology (OSO)
 
 ## 📖 Overview
 
