@@ -4,7 +4,7 @@
 
 **OSO (Observatories of Seas Ontology)** provides a semantic framework to describe marine research infrastructures, with a focus on deep-sea observatories operated by EMSO-ERIC and national nodes like EMSO-France.
 
-Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRness, and semantic alignment with existing vocabularies and data standards.
+Version **0.16** (published on August 1st, 2025) improves syntax compliance, FAIRness, and semantic alignment with existing vocabularies and data standards.
 
 ## 📂 Access
 
@@ -19,11 +19,12 @@ Version **0.15** (published on July 23, 2025) improves syntax compliance, FAIRne
 - To support data publication and discovery in FAIR-compliant data portals.
 - To align with existing ontologies and standards (SOSA, DCAT, GeoSPARQL, PROV-O).
 
-## ✨ Highlights of version 0.15
+## ✨ Highlights of version 0.16
 
-- Ontology IRI: `https://w3id.org/earthsemantics/OSO/0.15`
-- Published on **July 23, 2025**
+- Ontology IRI: `https://w3id.org/earthsemantics/OSO/0.16`
+- Published on **August 1st, 2025**
 - Improved syntax compliance (spaces, punctuation, consistent `dcterms:` usage)
+- CSR alignement added
 - Enriched multilingual metadata and annotation properties
 - New and updated instances for sites and platforms
 - FAIR score: **62%** (according to O'FAIRe) — with targeted improvements under way
