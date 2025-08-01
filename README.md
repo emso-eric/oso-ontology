@@ -52,7 +52,7 @@ You can explore these resources directly or import them into ontology editors su
 - 📊 **Download extracted tabular view (Excel)**:  
   [`OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx`](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx)
 
-- 🌐 **View or explore on [EarthPortal](https://earthportal.org/ontologies/OSO)**  
+- 🌐 **View or explore on [EarthPortal](https://earthportal.eu/ontologies/OSO)**  
   *(Supports interactive browsing of classes, properties, and individuals)*
 
 
