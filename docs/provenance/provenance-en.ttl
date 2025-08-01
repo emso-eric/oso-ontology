@@ -2,14 +2,23 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<https://w3id.org/earthsemantics/OSO/0.16> a prov:Entity;
 	 dc:title "Observatories of Seas Ontology";
 	 prov:wasAttributedTo <https://orcid.org/0009-0008-1759-5254>;
 	 dc:creator <https://orcid.org/0009-0008-1759-5254>;
+	 prov:wasAttributedTo <https://ror.org/044jxhp58>;
+	 dc:creator <https://ror.org/044jxhp58>;
 	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo <https://orcid.org/0009-0008-1759-5254>;
+	 dc:creator <https://orcid.org/0009-0008-1759-5254>;
 	 prov:wasAttributedTo <mailto:emso.dmsg@emso-eu.org>;
 	 dc:contributor <mailto:emso.dmsg@emso-eu.org>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2025-04-04";
+	 prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/0.15>;
+	 prov:wasGeneratedAt "2024-04-04";
 .
 :agent0 a prov:Agent; foaf:name "Steven PIEL (Ifremer), on behalf of the EMSO community".
+:agent1 a prov:Agent; foaf:name "Steven Piel (Ifremer), au nom de la communauté EMSO".
+:agent2 a prov:Agent; foaf:name "Steven Piel (Ifremer), on behalf of the EMSO community".
