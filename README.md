@@ -50,8 +50,7 @@ You can explore these resources directly or import them into ontology editors su
 
 
 - 📊 **Download extracted tabular view (Excel)**:  
-  [`OSO_RF_Site_Platform_Filtered_EMSO_20250715.xlsx`](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250715.xlsx)  
-  *(Based on OSO version 0.14. An updated extraction for version 0.15 will be provided soon.)*
+  [`OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx`](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx)
 
 - 🌐 **View or explore on [EarthPortal](https://earthportal.org/ontologies/OSO)**  
   *(Supports interactive browsing of classes, properties, and individuals)*
