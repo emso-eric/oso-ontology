@@ -9789,7 +9789,8 @@ EMSO scientific disciplines: physical oceanography, biogeochemistry, marine ecol
 
 
 ###  https://w3id.org/earthsemantics/OSO#OBSEA_seabed_station
-:OBSEA_seabed_station rdf:type owl:NamedIndividual ;
+:OBSEA_seabed_station rdf:type owl:NamedIndividual ,
+			:Platform  ;
                       :hasPrincipalInvestigator :Joaquin_DEL_RIO ;
                       rdfs:label "OBSEA seabed station"@el ,
                                  "OBSEA seabed station"@en ,
