@@ -10750,7 +10750,7 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
            :containsPlatform :Benthic_station ,
                              :EDOKKO ,
                              :pilot_line ,
-                             :profil_CTD ;
+                             :profile_CTD ;
            :isTestSite "false"^^xsd:boolean ;
            rdfs:label "Stylaster"@el ,
                       "Stylaster"@en ,
@@ -11664,18 +11664,18 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
                                                             "pilot line"@ro .
 
 
-###  https://w3id.org/earthsemantics/OSO#profil_CTD
-:profil_CTD rdf:type owl:NamedIndividual ,
+###  https://w3id.org/earthsemantics/OSO#profile_CTD
+:profile_CTD rdf:type owl:NamedIndividual ,
                      :Platform ;
-            rdfs:label "profil CTD"^^rdfs:Literal ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "profil CTD"@el ,
-                                                            "profil CTD"@en ,
-                                                            "profil CTD"@es ,
-                                                            "profil CTD"@fr ,
-                                                            "profil CTD"@it ,
-                                                            "profil CTD"@no ,
-                                                            "profil CTD"@pt ,
-                                                            "profil CTD"@ro .
+            rdfs:label "profile CTD"^^rdfs:Literal ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "profile CTD"@el ,
+                                                            "profile CTD"@en ,
+                                                            "profile CTD"@es ,
+                                                            "profile CTD"@fr ,
+                                                            "profile CTD"@it ,
+                                                            "profile CTD"@no ,
+                                                            "profile CTD"@pt ,
+                                                            "profile CTD"@ro .
 
 
 ###  https://www.wikidata.org/wiki/Q1657069
