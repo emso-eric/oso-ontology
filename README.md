@@ -51,10 +51,6 @@ This ontology is progressively aligned with the **FAIR principles** using the
 🧪 **Current FAIR score** (updated dynamically):  
 https://earthportal.eu/ajax/fair_score/html/?ontologies=OSO
 
-See the detailed roadmap:
-
-➡ `FAIR-roadmap-OSO.md`
-
 Feedback and contributions are welcome to further improve FAIR compliance.
 
 ---
