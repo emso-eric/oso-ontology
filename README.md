@@ -2,87 +2,202 @@
 
 ## 📖 Overview
 
-**OSO (Observatories of Seas Ontology)** provides a semantic framework to describe marine research infrastructures, with a focus on deep-sea observatories operated by EMSO-ERIC and national nodes like EMSO-France.
+**OSO (Observatories of Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as other observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
-Version **0.16** (published on August 1st, 2025) improves syntax compliance, FAIRness, and semantic alignment with existing vocabularies and data standards.
+Version **1.0.0** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
+
+The ontology supports the **FAIR management, discovery, and reuse of marine observation data**.
+
+---
 
 ## 📂 Access
 
-- **Ontology IRI**: [https://w3id.org/earthsemantics/OSO](https://w3id.org/earthsemantics/OSO)
-- **Documentation (HTML)**: [https://emso-eric.github.io/oso-ontology/](https://emso-eric.github.io/oso-ontology/)
-- **WebVOWL Visualisation of the OSO Ontology**: [https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO](https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO)
+- **Ontology IRI**: https://w3id.org/earthsemantics/OSO  
+- **Documentation (HTML)**: https://emso-eric.github.io/oso-ontology/  
+- **WebVOWL visualisation of the OSO ontology**: https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO  
+- **EarthPortal entry**: https://earthportal.eu/ontologies/OSO  
+
+---
 
 ## 🧭 Objectives
 
-- To provide a common vocabulary for describing marine observatories and their components.
-- To enhance interoperability of data across European marine research infrastructures.
-- To support data publication and discovery in FAIR-compliant data portals.
-- To align with existing ontologies and standards (SOSA, DCAT, GeoSPARQL, PROV-O).
+OSO aims to:
 
-## ✨ Highlights of version 0.16
+- Provide a **common vocabulary** for describing marine observatories and their components  
+- Enhance **interoperability across European marine research infrastructures**  
+- Support **data publication and discovery in FAIR-compliant data portals**  
+- Enable **semantic interoperability between marine data infrastructures**  
+- Align with widely adopted ontologies and standards  
 
-- Ontology IRI: `https://w3id.org/earthsemantics/OSO/0.16`
-- Published on **August 1st, 2025**
-- Improved syntax compliance (spaces, punctuation, consistent `dcterms:` usage)
-- CSR alignement added
-- Enriched multilingual metadata and annotation properties
-- New and updated instances for sites and platforms
-- FAIR score: **62%** (according to O'FAIRe) — with targeted improvements under way
+---
+
+## ✨ Highlights of version 1.0.0
+
+- First **stable release** of the ontology  
+- Improved ontology metadata and FAIR compliance  
+- Alignment with reference ontologies (**FOAF, DCAT, CERIF, PROV-O**)  
+- Enriched multilingual metadata  
+- Extended instances describing EMSO observatories and platforms  
+- Improved provenance metadata and ontology documentation  
+- Explicit documentation of the ontology engineering workflow  
+
+---
 
 ## 📋 FAIRisation Roadmap
 
-This ontology is being progressively aligned with the FAIR principles using the [O'FAIRe evaluation framework](https://catalogue.fair-impact.eu/resources/ofaire).
+This ontology is progressively aligned with the **FAIR principles** using the  
+[O'FAIRe evaluation framework](https://catalogue.fair-impact.eu/resources/ofaire).
 
-🧪 **Current FAIR score** (updated dynamically): [View OSO FAIRness score on EarthPortal](https://earthportal.eu/ajax/fair_score/html/?ontologies=OSO)
+🧪 **Current FAIR score** (updated dynamically):  
+https://earthportal.eu/ajax/fair_score/html/?ontologies=OSO
 
-See [FAIR-roadmap-OSO.md](./FAIR-roadmap-OSO.md) for the detailed action plan.
+See the detailed roadmap:
 
-We welcome feedback and contributions to improve its FAIRness over time.
+➡ `FAIR-roadmap-OSO.md`
+
+Feedback and contributions are welcome to further improve FAIR compliance.
+
+---
 
 ## 📦 Download & Examples
 
-You can explore these resources directly or import them into ontology editors such as [Protégé](https://protege.stanford.edu/) using their respective IRI.
+The ontology can be accessed directly via its persistent IRI or downloaded in several formats.
 
-- **Turtle (.ttl)**: [`https://w3id.org/earthsemantics/OSO/0.15`](https://w3id.org/earthsemantics/OSO/0.15)
-- **RDF/XML (.rdf)**: [`https://earthportal.eu/ontologies/OSO.rdf`](https://earthportal.eu/ontologies/OSO.rdf)
-- **OWL/XML (.owl)**: [`https://earthportal.eu/ontologies/OSO.owl`](https://earthportal.eu/ontologies/OSO.owl)
-- **CSV export**: [`https://earthportal.eu/ontologies/OSO.csv`](https://earthportal.eu/ontologies/OSO.csv)
-- **Version diff**: [`https://earthportal.eu/ontologies/OSO.diff`](https://earthportal.eu/ontologies/OSO.diff)
+**Main access**
 
+- Turtle (.ttl): https://w3id.org/earthsemantics/OSO
 
-- 📊 **Download extracted tabular view (Excel)**:  
-  [`OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx`](https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx)
+**Alternative formats**
 
-- 🌐 **View or explore on [EarthPortal](https://earthportal.eu/ontologies/OSO)**  
-  *(Supports interactive browsing of classes, properties, and individuals)*
+- RDF/XML: https://earthportal.eu/ontologies/OSO.rdf  
+- OWL/XML: https://earthportal.eu/ontologies/OSO.owl  
+- CSV export: https://earthportal.eu/ontologies/OSO.csv  
+- Ontology diff: https://earthportal.eu/ontologies/OSO.diff  
 
+📊 **Excel extraction**
+
+https://github.com/emso-eric/oso-ontology/blob/main/extraction/OSO_RF_Site_Platform_Filtered_EMSO_20250723.xlsx
+
+🌐 **Explore the ontology**
+
+https://earthportal.eu/ontologies/OSO
+
+---
 
 ## 🧬 Structure & Key Concepts
 
-- **Hierarchical model**:  
-  `RegionalFacility → Site → SubSite → Platform → SubPlatform`
+### Hierarchical model
 
-- **Key classes**:  
-  `RegionalFacility`, `Site`, `SubSite`, `Platform`, `SubPlatform`, `ResearchInfrastructure`, `Organisation`, `Project`, `Cruise`, `Discipline`, `Person`, `Geometry`, `BoundingBox`
+RegionalFacility → Site → SubSite → Platform → SubPlatform
 
-- **Ontology aligns with and reuses concepts from**:  
-  - `dcterms:` (Dublin Core Terms)  
-  - `foaf:` (Friend of a Friend)  
-  - `schema:` (Schema.org)  
-  - `geo:` and `wgs84_pos:` (Geospatial vocabularies)  
-  - `sosa:` / `ssn:` (Sensors and observations)  
-  - `prov:` (Provenance ontology)  
-  - `cerif:` (Common European Research Information Format)
+### Key classes
+
+`RegionalFacility`, `Site`, `SubSite`, `Platform`, `SubPlatform`,  
+`ResearchInfrastructure`, `Organisation`, `Project`, `Cruise`,  
+`Discipline`, `Person`, `Geometry`, `BoundingBox`
+
+These classes describe the organisational and technical components of marine observatories.
+
+### Ontology aligns with and reuses concepts from
+
+| Vocabulary | Purpose |
+|---|---|
+| `dcterms:` | Metadata and resource description |
+| `foaf:` | Organisations and persons |
+| `schema:` | Web data interoperability |
+| `geo:` / `wgs84_pos:` | Geospatial coordinates |
+| `sosa:` / `ssn:` | Sensors and observations |
+| `prov:` | Provenance tracking |
+| `cerif:` | Research infrastructures and organisations |
+
+This reuse improves **semantic interoperability across marine data systems**.
+
+---
+
+## 🔧 Versioning
+
+OSO follows the **Semantic Versioning (SemVer)** specification.
+
+Version format:
+
+MAJOR.MINOR.PATCH
+
+### Meaning
+
+| Version type | Meaning |
+|---|---|
+| MAJOR | incompatible ontology changes |
+| MINOR | backward-compatible ontology extensions |
+| PATCH | corrections, metadata improvements, or documentation updates |
+
+Example:
+
+0.17 → 1.0.0
+
+---
+
+## 🛠 Development Workflow
+
+The ontology is developed collaboratively within the **EMSO Data Management Service Group (DMSG)**.
+
+The engineering workflow includes:
+
+- ontology modelling with **Protégé**
+- ontology editing and validation using **VSCodium**
+- version control and collaboration through **GitHub**
+- iterative alignment with reference ontologies
+- FAIRness evaluation using **O'FAIRe**
+
+---
+
+## 🧾 Commit Convention
+
+This repository follows the **Conventional Commits** specification.
+
+Examples:
+
+feat: add Organisation alignment with CERIF  
+fix: correct domain of oso:containsSite  
+docs: update ontology metadata  
+refactor: reorganise platform hierarchy  
+
+This convention improves **traceability and changelog generation**.
+
+---
 
 ## 🤝 Contribute / Contact
 
-For feedback, suggestions or to contribute, feel free to:
+Contributions are welcome.
 
-- Open a [GitHub issue](https://github.com/emso-eric/oso-ontology/issues)
-- Contact the EMSO DMSG team: 📧 emso.dmsg@emso-eu.org
+You can:
 
+- open a GitHub issue  
+https://github.com/emso-eric/oso-ontology/issues  
+
+- report modelling issues  
+- suggest ontology improvements  
+- contribute to ontology extensions  
+
+Contact the **EMSO Data Management Service Group**
+
+📧 emso.dmsg@emso-eu.org
+
+---
 
 ## 📝 License
 
-This ontology is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
-Please cite or attribute the EMSO ERIC team when reusing.
+This ontology is released under the **Creative Commons Attribution 4.0 (CC-BY 4.0)** license.
+
+https://creativecommons.org/licenses/by/4.0/
+
+When reusing OSO please cite:
+
+OSO – Observatories of Seas Ontology.  
+EMSO ERIC / Ifremer.  
+FAIRsharing: 10.25504/FAIRsharing.654931
+
+---
+
+## 🙏 Acknowledgements
+
+OSO is developed collaboratively within the **EMSO Data Management Service Group (DMSG)** and benefits from contributions and feedback from the **EMSO ERIC community**.
