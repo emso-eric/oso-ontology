@@ -15,7 +15,8 @@ The ontology supports the **FAIR management, discovery, and reuse of marine obse
 - **Ontology IRI**: https://w3id.org/earthsemantics/OSO  
 - **Documentation (HTML)**: https://emso-eric.github.io/oso-ontology/  
 - **WebVOWL visualisation of the OSO ontology**: https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO  
-- **EarthPortal entry**: https://earthportal.eu/ontologies/OSO  
+- **EarthPortal entry**: https://earthportal.eu/ontologies/OSO
+- **SPARQL endpoint (Virtuoso)**: coming soon
 
 ---
 
@@ -39,7 +40,19 @@ OSO aims to:
 - Enriched multilingual metadata  
 - Extended instances describing EMSO observatories and platforms  
 - Improved provenance metadata and ontology documentation  
-- Explicit documentation of the ontology engineering workflow  
+- Explicit documentation of the ontology engineering workflow
+
+## 🔎 Knowledge Graph Access
+
+OSO will soon be available through a public **SPARQL endpoint** backed by a **Virtuoso triplestore**.
+
+This service will allow users to:
+
+- query the ontology and its instances using SPARQL
+- explore relationships between observatories, sites, platforms and projects
+- integrate OSO within semantic data infrastructures.
+
+The endpoint URL will be announced in a future release.
 
 ---
 
@@ -58,6 +71,10 @@ Feedback and contributions are welcome to further improve FAIR compliance.
 ## 📦 Download & Examples
 
 The ontology can be accessed directly via its persistent IRI or downloaded in several formats.
+
+**SPARQL access**
+
+A SPARQL endpoint providing access to the OSO knowledge graph will be available soon.
 
 **Main access**
 
@@ -84,7 +101,11 @@ https://earthportal.eu/ontologies/OSO
 
 ### Hierarchical model
 
-RegionalFacility → Site → SubSite → Platform → SubPlatform
+RegionalFacility
+ └─ Site
+     └─ SubSite
+         └─ Platform
+             └─ SubPlatform
 
 ### Key classes
 
