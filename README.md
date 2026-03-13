@@ -101,11 +101,13 @@ https://earthportal.eu/ontologies/OSO
 
 ### Hierarchical model
 
+```
 RegionalFacility
  └─ Site
      └─ SubSite
          └─ Platform
              └─ SubPlatform
+```
 
 ### Key classes
 
