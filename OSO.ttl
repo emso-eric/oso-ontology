@@ -114,9 +114,7 @@
                                                         "Παγκόσμια κάλυψη (εστίαση στις ευρωπαϊκές θάλασσες)· χρονική κάλυψη από περίπου το 1990 έως σήμερα."@el ;
                                        dcterms:created "2025-04-04"^^xsd:date ;
                                        dcterms:creator <https://orcid.org/0009-0008-1759-5254> ,
-                                                       <https://ror.org/044jxhp58> ,
-                                                       "Steven Piel (Ifremer), au nom de la communauté EMSO"@fr ,
-                                                       "Steven Piel (Ifremer), on behalf of the EMSO community"@en ;
+                                                       <https://ror.org/044jxhp58> ;
                                        dcterms:description "Ontologi som beskriver kyst- og dyphavsobservatorier, inkludert alle EMSO-observatorier, som del av den europeiske tverrfaglige infrastrukturen for havbunn og vannsøyle."@no ,
                                                            "Ontologia che descrive gli osservatori marini costieri e d'altura, compresi tutti gli osservatori EMSO, nell'ambito dell'infrastruttura europea multidisciplinare dei fondali marini e della colonna d'acqua."@it ,
                                                            "Ontologia que descreve os observatórios costeiros e de mar aberto, incluindo todos os observatórios EMSO no âmbito da infraestrutura europeia multidisciplinar dos fundos marinhos e da coluna de água."@pt ,
@@ -125,10 +123,12 @@
                                                            "Ontology describing coastal and open seas observatories, including all EMSO observatories as part of the European Multidisciplinary Seafloor and water column Observatories infrastructure."@en ,
                                                            "Ontología que describe los observatorios marinos costeros y de alta mar, incluyendo todos los observatorios EMSO en el marco de la infraestructura europea multidisciplinar para el fondo marino y la columna de agua."@es ,
                                                            "Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού."@el ;
-                                       dcterms:hasFormat <https://earthportal.eu/ontologies/OSO.csv> ,
-                                                         <https://earthportal.eu/ontologies/OSO.diff> ,
+                                       dcterms:hasFormat <https://earthportal.eu/ontologies/OSO.ttl> ,
+                                                         <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> ,
+                                                         <https://earthportal.eu/ontologies/OSO.rdf> ,
                                                          <https://earthportal.eu/ontologies/OSO.owl> ,
-                                                         <https://earthportal.eu/ontologies/OSO.rdf> ;
+                                                         <https://earthportal.eu/ontologies/OSO.csv> ,
+                                                         <https://earthportal.eu/ontologies/OSO.diff> ;
                                        dcterms:hasVersion "1.0.0" ;
                                        dcterms:identifier [ rdf:type adms:Identifier ;
                                                             skos:notation "10.25504/FAIRsharing.654931" ;
@@ -152,13 +152,12 @@
                                                         "pt" ,
                                                         "ro" ;
                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                       dcterms:modified "2026-03-13"^^xsd:date ;
+                                       dcterms:modified "2026-03-20"^^xsd:date ;
                                        dcterms:provenance "Ontology edited with Protégé 5.6.9 and VSCodium, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification."@en ;
-                                       dcterms:publisher <https://ror.org/04xkqms46> ,
-                                                         <https://ror.org/044jxhp58> ;
+                                       dcterms:publisher <https://ror.org/04xkqms46> ;
                                        dcterms:relation <https://emso-eric.github.io/oso-ontology/> ,
                                                         <https://github.com/emso-eric/oso-ontology> ,
-                                                        <https://w3id.org/earthsemantics/OSO_DCAT> ;
+                                                        <https://w3id.org/earthsemantics/OSO/dcat> ;
                                        dcterms:source <https://github.com/emso-eric/oso-ontology> ;
                                        dcterms:spatial "Acoperire globală (cu accent pe mările europene)"@ro ,
                                                        "Cobertura global (com foco nos mares europeus)"@pt ,
@@ -196,12 +195,11 @@
                                        vann:example OSO:Site ;
                                        vann:preferredNamespacePrefix "OSO" ;
                                        vann:preferredNamespaceUri OSO: ;
-                                       void:classes 99 ;
+                                       void:classes 102 ;
                                        void:exampleResource OSO:Azores ;
-                                       void:inDataset <https://w3id.org/earthsemantics/OSO_DCAT> ;
-                                       void:properties 218 ;
-                                       void:triples 11000 ;
-                                       void:uriSpace OSO: ;
+                                       void:properties 209 ;
+                                       void:triples 10987 ;
+                                       void:uriSpace "https://w3id.org/earthsemantics/OSO" ;
                                        schema:codeRepository <https://github.com/emso-eric/oso-ontology> ;
                                        rdfs:comment "Ontologi som beskriver forholdet mellom regionale fasiliteter, steder, plattformer, forskningsinfrastrukturer, organisasjoner, cruiser og de ansvarlige på hvert nivå."@no ,
                                                     "Ontologia che descrive le relazioni tra strutture regionali, siti, piattaforme, infrastrutture di ricerca, organizzazioni, crociere e i responsabili di ciascun livello."@it ,
@@ -223,7 +221,7 @@
                                                     <https://github.com/emso-eric/oso-ontology> ,
                                                     <https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO> ;
                                        owl:priorVersion <https://w3id.org/earthsemantics/OSO/0.17> ;
-                                       owl:versionInfo "1.0.0 - First stable release, major updates, and active SPARQL endpoint"@en ;
+                                       owl:versionInfo "1.0.0 - First stable public release"@en ;
                                        skos:definition "Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016."@ro ,
                                                        "Cette ontologie vise à décrire les observatoires sous-marins, en particulier ceux associés au réseau européen d'observatoires multidisciplinaires des fonds marins et de la colonne d'eau (EMSO), qui est un consortium européen d'infrastructures de recherche (ERIC) depuis 2016."@fr ,
                                                        "Denne ontologien har som mål å beskrive undervannsobservatorier, særlig de som er tilknyttet European Multidisciplinary Seafloor and Water Column Observatories (EMSO), som er et europeisk forskningsinfrastrukturkonsortium (ERIC) siden 2016."@no ,
