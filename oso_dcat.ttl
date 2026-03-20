@@ -1,0 +1,89 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/earthsemantics/OSO> a dcat:Dataset ;
+    dcterms:accessRights <http://purl.org/coar/access_right/c_abf2> ;
+    dcterms:creator <https://ror.org/044jxhp58>,
+        <https://ror.org/04xkqms46> ;
+    dcterms:description "Οντολογία που περιγράφει θαλάσσια παρατηρητήρια, πλατφόρμες και σχετικές υποδομές όπως το EMSO-ERIC."@el,
+        "An OWL ontology describing marine observatories, platforms, and related infrastructures such as EMSO-ERIC."@en,
+        "Ontología que describe observatorios marinos, plataformas e infraestructuras relacionadas como EMSO-ERIC."@es,
+        "Ontologie décrivant les observatoires marins, les plateformes et les infrastructures associées comme EMSO-ERIC."@fr,
+        "Ontologia che descrive osservatori marini, piattaforme e infrastrutture di ricerca come EMSO-ERIC."@it,
+        "Ontologi som beskriver marine observatorier, plattformer og tilknyttede infrastrukturer som EMSO-ERIC."@no,
+        "Ontologia que descreve observatórios marinhos, plataformas e infraestruturas de investigação como o EMSO-ERIC."@pt,
+        "Ontologie care descrie observatoare marine, platforme și infrastructuri asociate precum EMSO-ERIC."@ro ;
+    dcterms:identifier "doi:10.99999/placeholder" ;
+    dcterms:issued "2024-06-01"^^xsd:date ;
+    dcterms:language "el",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "no",
+        "pt",
+        "ro" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-07-29"^^xsd:date ;
+    dcterms:provenance "Co-developed by the EMSO Data Management Service Group with FAIR alignment."@en ;
+    dcterms:publisher <https://ror.org/04xkqms46> ;
+    dcterms:title "Οντολογία θαλάσσιων παρατηρητηρίων"@el,
+        "Open Seas Observatories Ontology"@en,
+        "Ontología de los observatorios marinos"@es,
+        "Ontologie des observatoires marins"@fr,
+        "Ontologia degli osservatori marini"@it,
+        "Ontologi for marine observatorier"@no,
+        "Ontologia dos observatórios marinhos"@pt,
+        "Ontologia observatoarelor marine"@ro ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "EMSO Data Management Service Group" ;
+            vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ] ;
+    dcat:distribution <https://earthportal.eu/ontologies/OSO.csv>,
+        <https://earthportal.eu/ontologies/OSO.diff>,
+        <https://earthportal.eu/ontologies/OSO.owl>,
+        <https://earthportal.eu/ontologies/OSO.rdf>,
+        <https://earthportal.eu/ontologies/OSO.ttl> ;
+    dcat:keyword "FAIR",
+        "marine observatory",
+        "ontology",
+        "research infrastructure" ;
+    dcat:landingPage <https://emso-eric.github.io/oso-ontology/> ;
+    dcat:theme [ a skos:Concept ;
+            skos:closeMatch <http://eurovoc.europa.eu/2114> ;
+            skos:exactMatch <http://www.wikidata.org/entity/Q43518> ;
+            skos:inScheme <http://eurovoc.europa.eu/> ;
+            skos:notation "2114" ;
+            skos:prefLabel "ωκεανογραφία"@el,
+                "oceanography"@en,
+                "oceanografía"@es,
+                "océanographie"@fr,
+                "oceanografia"@it,
+                "oseanografi"@no,
+                "oceanografia"@pt,
+                "oceanografie"@ro ];
+    foaf:homepage <https://github.com/emso-eric/oso-ontology> ;
+    foaf:page <https://emso-eric.github.io/oso-ontology/> .
+
+<https://earthportal.eu/ontologies/OSO.csv> a dcat:Distribution ;
+    dcterms:format "text/csv" ;
+    dcat:mediaType "text/csv" .
+
+<https://earthportal.eu/ontologies/OSO.diff> a dcat:Distribution ;
+    dcterms:format "text/plain" ;
+    dcat:mediaType "text/plain" .
+
+<https://earthportal.eu/ontologies/OSO.owl> a dcat:Distribution ;
+    dcterms:format "application/owl+xml" ;
+    dcat:mediaType "application/owl+xml" .
+
+<https://earthportal.eu/ontologies/OSO.rdf> a dcat:Distribution ;
+    dcterms:format "application/rdf+xml" ;
+    dcat:mediaType "application/rdf+xml" .
+
+<https://earthportal.eu/ontologies/OSO.ttl> a dcat:Distribution ;
+    dcterms:format "text/turtle" ;
+    dcat:mediaType "text/turtle" .
