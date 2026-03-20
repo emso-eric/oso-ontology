@@ -140,7 +140,9 @@
                                                               <https://doi.pangaea.de/10.1594/PANGAEA.957446> ,
                                                               <https://www.emso-fr.org/fr/Data/Data-catalogue#/search?from=1&to=30> ,
                                                               <https://www.seanoe.org/data/00947/105929/> ,
-                                                              <https://zenodo.org/records/10697877> ;
+                                                              <https://zenodo.org/records/10697877> ,
+                                                              <https://w3id.org/earthsemantics/OSO/void> ,
+                                                              <https://w3id.org/earthsemantics/OSO/dcat> ;
                                        dcterms:language "el" ,
                                                         "en" ,
                                                         "es" ,
