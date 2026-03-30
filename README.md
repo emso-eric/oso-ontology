@@ -17,6 +17,8 @@
 
 Version **1.0.0** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
 
+Not to be confused with [OpenScienceOntology (OSO)](https://gitlab.com/opensourcelab/scientificdata/ontologies/openscienceontology/data).
+
 The ontology supports the **FAIR management, discovery, and reuse of marine observation data**.
 
 ---
