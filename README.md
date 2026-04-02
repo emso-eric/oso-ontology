@@ -13,7 +13,7 @@
 
 ## 📖 Overview
 
-**OSO (Observatories of Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
+**OSO (Observatories of the Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
 Version **1.0.0** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
 
@@ -188,7 +188,7 @@ refactor: reorganise platform hierarchy
 
 ## 📖 How to cite
 
-OSO – Observatories of Seas Ontology
+OSO – Observatories of the Seas Ontology
 Version 1.0.0
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
