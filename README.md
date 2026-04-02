@@ -1,4 +1,8 @@
-# <img src="oso.png" alt="OSO logo" height="40"/> Observatories of the Seas Ontology (OSO)
+ <img src="oso.png" alt="OSO logo" height="40"/> 
+
+# Observatories of the Seas Ontology (OSO)
+
+**OSO is a FAIR ontology for marine observatories, ocean observation systems, and marine research infrastructures (EMSO, Argo).**
 
 ## 🧾 Ontology Reference
 
@@ -13,6 +17,8 @@
 
 ## 📖 Overview
 
+OSO is designed to describe **marine observatories and ocean observation systems** in a FAIR and interoperable way.
+
 **OSO (Observatories of the Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
 Version **1.0.0** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
@@ -20,6 +26,20 @@ Version **1.0.0** represents the **first stable release** of the ontology, conso
 Not to be confused with [OpenScienceOntology (OSO)](https://gitlab.com/opensourcelab/scientificdata/ontologies/openscienceontology/data) or [Ontology for Scenario Orchestration (OSO)](https://scite.ai/reports/ontology-for-scenario-orchestration-oso-6kyllX).
 
 The ontology supports the **FAIR management, discovery, and reuse of marine observation data**.
+
+---
+
+## 🌍 Scope
+
+OSO covers:
+
+* Marine observatories (coastal and deep-sea)
+* Ocean observation systems (fixed and mobile platforms, including floats)
+* Marine research infrastructures (EMSO, Argo, national observatories)
+* Scientific campaigns via CSR (Cruise Summary Reports)
+* Links between infrastructures, datasets, and publications (DOIs)
+
+This makes OSO suitable for integration in European and international marine data ecosystems.
 
 ---
 
@@ -78,6 +98,8 @@ The endpoint URL will be announced in a future release.
 ---
 
 ## 🧭 Objectives
+
+* Provide a semantic model for **marine observatories and ocean observation systems**
 
 OSO aims to:
 
@@ -183,6 +205,12 @@ fix: correct domain of oso:containsSite
 docs: update ontology metadata  
 refactor: reorganise platform hierarchy  
 ```
+
+---
+
+## 🔑 Keywords
+
+marine ontology, ocean observation ontology, marine observatories, research infrastructure ontology, EMSO, Argo, FAIR data, semantic interoperability, marine data infrastructure
 
 ---
 
