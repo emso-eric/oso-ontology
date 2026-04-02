@@ -1,4 +1,4 @@
-# <img src="oso.png" alt="OSO logo" height="40"/> Observatories of Seas Ontology (OSO)
+# <img src="oso.png" alt="OSO logo" height="40"/> Observatories of the Seas Ontology (OSO)
 
 ## 🧾 Ontology Reference
 
