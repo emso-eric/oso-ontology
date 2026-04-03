@@ -12931,27 +12931,6 @@ OSO:profil_CTD rdf:type owl:NamedIndividual ,
 <https://www.wikidata.org/entity/Q1657069> rdf:type owl:NamedIndividual .
 
 
-[ owl:unionOf [ ]
-] .
-
-[ owl:unionOf [ ]
-] .
-
-#################################################################
-#    Annotations
-#################################################################
-
-<http://bioportal.bioontology.org/ontologies/versionSubject> owl:versionInfo 0.14 .
-
-<https://earthportal.eu/ontologies/OSO.csv> dcterms:format "text/csv" .
-
-<https://earthportal.eu/ontologies/OSO.diff> dcterms:format "text/plain" .
-
-<https://earthportal.eu/ontologies/OSO.owl> dcterms:format "application/rdf+xml" ;
-                                           dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> .
-
-<https://earthportal.eu/ontologies/OSO.rdf> dcterms:format "application/rdf+xml" .
-
 OSO:Site_has_Latitude
     rdfs:label "Τοποθεσία έχει γεωγραφικό πλάτος"@el ,
                "Site has Latitude"@en ,
@@ -13057,4 +13036,3 @@ OSO:hasROR
                    "har en ROR"@no ,
                    "tem um ROR"@pt ,
                    "are un ROR"@ro .
-                   
