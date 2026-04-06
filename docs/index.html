@@ -13,11 +13,11 @@
 <script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
 	<dark-mode-toggle class="slider"></dark-mode-toggle>
 </div>
-<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Observatories of Seas Ontology</title>
+<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Observatories of the Seas Ontology (OSO)</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://earthportal.eu/ontologies/OSO#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://earthportal.eu/ontologies/OSO#","name":"Observatories of Seas Ontology", "headline":"Document describing the ontology https://earthportal.eu/ontologies/OSO#", "dateReleased":"2024-04-04", "dateModified":"2025-08-01", "version":"0.16 - CSR alignment added", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"https://orcid.org/0009-0008-1759-5254","url":"https://orcid.org/0009-0008-1759-5254"},{"@type":"Person","name":"Ifremer","url":"https://ror.org/044jxhp58"},{"@type":"Person","name":"Steven PIEL (Ifremer), on behalf of the EMSO community"},{"@type":"Person","name":"Steven Piel (Ifremer), au nom de la communauté EMSO"},{"@type":"Person","name":"Steven Piel (Ifremer), on behalf of the EMSO community"},{"@type":"Person","name":"https://orcid.org/0009-0008-1759-5254","url":"https://orcid.org/0009-0008-1759-5254"}], "contributor":[{"@type":"Person","name":"mailto:emso.dmsg@emso-eu.org","url":"mailto:emso.dmsg@emso-eu.org"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/earthsemantics/OSO#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/earthsemantics/OSO#","name":"Observatories of the Seas Ontology (OSO)", "headline":"The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework.", "dateReleased":"2025-04-04", "dateModified":"2026-04-02", "version":"1.0.0 - First stable public release", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/emso-eric/oso-ontology", "author":[{"@type":"Person","name":"Steven Piel","url":"https://orcid.org/0009-0008-1759-5254"},{"@type":"Person","name":"Steven Piel","url":"https://orcid.org/0009-0008-1759-5254"}], "contributor":[{"@type":"Person","name":"Groupe de gestion des données et des services EMSO (DMSG)","url":"https://w3id.org/earthsemantics/OSO#EMSO_DMSG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -62,7 +62,6 @@ function loadTOC(){
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
       $("#references").load("sections/references-en.html"); 
-      $("#changelog").load("sections/changelog-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -71,27 +70,25 @@ function loadTOC(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>Observatories of Seas Ontology</h1>
-<h2>Release: 2024-04-04</h2>
+<div style="float:right">language <a href="index-no.html"><b>no</b></a> <a href="index-pt.html"><b>pt</b></a> <a href="index-el.html"><b>el</b></a> <a href="index-en.html"><b>en</b></a> <a href="index-it.html"><b>it</b></a> <a href="index-fr.html"><b>fr</b></a> <a href="index-ro.html"><b>ro</b></a> <a href="index-es.html"><b>es</b></a> </div>
+<h1>Observatories of the Seas Ontology (OSO)</h1>
+<h2>Release: 2025-04-04</h2>
 
 
 <dl>
-<dt>Modified on: 2025-08-01</dt>
-<dt>This version:</dt>
-<dd><a href="https://w3id.org/earthsemantics/OSO/0.16">https://w3id.org/earthsemantics/OSO/0.16</a></dd>
+<dt>Modified on: 2026-04-02</dt>
 <dt>Previous version:</dt>
-<dd><a href="https://w3id.org/earthsemantics/OSO/0.15">https://w3id.org/earthsemantics/OSO/0.15</a></dd>
+<dd><a href="https://w3id.org/earthsemantics/OSO/0.17">https://w3id.org/earthsemantics/OSO/0.17</a></dd>
 <dt>Revision:</dt>
-<dd>0.16 - CSR alignment added</dd>
+<dd>1.0.0 - First stable public release</dd>
 <dt>Authors:</dt>
-<dd><a href="https://orcid.org/0009-0008-1759-5254">https://orcid.org/0009-0008-1759-5254</a></dd><dd><a href="https://ror.org/044jxhp58">Ifremer</a></dd><dd>Steven PIEL (Ifremer), on behalf of the EMSO community</dd><dd>Steven Piel (Ifremer), au nom de la communauté EMSO</dd><dd>Steven Piel (Ifremer), on behalf of the EMSO community</dd><dd><a href="https://orcid.org/0009-0008-1759-5254">https://orcid.org/0009-0008-1759-5254</a></dd>
+<dd><a href="https://orcid.org/0009-0008-1759-5254">Steven Piel</a></dd><dd><a href="https://orcid.org/0009-0008-1759-5254">Steven Piel</a></dd>
 
 <dt>Contributors:</dt>
-<dd><a href="mailto:emso.dmsg@emso-eu.org">mailto:emso.dmsg@emso-eu.org</a></dd>
+<dd><a href="https://w3id.org/earthsemantics/OSO#EMSO_DMSG">Groupe de gestion des données et des services EMSO (DMSG)</a></dd>
 
 <dt>Publisher:</dt>
-<dd><a href="https://github.com/emso-eric/oso-ontology">https://github.com/emso-eric/oso-ontology</a></dd>
+<dd><a href="https://ror.org/04xkqms46">Ifremer</a></dd>
 <dt>Imported Ontologies:</dt>
 <dd><a href="http://www.w3.org/2000/01/rdf-schema#">rdf-schema#</a></dd><dd><a href="http://www.w3.org/2002/07/owl">owl</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://xmlns.com/foaf/0.1/">&lt;http://xmlns.com/foaf/0.1/&gt;</a></dd>
 
@@ -99,12 +96,14 @@ function loadTOC(){
 <dd><a href="https://github.com/emso-eric/oso-ontology">https://github.com/emso-eric/oso-ontology</a></dd>
 
 <dt>See also:</dt>
-<dd><a href="https://github.com/emso-eric/oso-ontology">https://github.com/emso-eric/oso-ontology</a></dd>
+<dd><a href="https://emso-eric.github.io/oso-ontology/">https://emso-eric.github.io/oso-ontology/</a></dd><dd><a href="https://fairsharing.org/FAIRsharing.654931">https://fairsharing.org/FAIRsharing.654931</a></dd><dd><a href="https://github.com/emso-eric/oso-ontology">https://github.com/emso-eric/oso-ontology</a></dd><dd><a href="https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO">https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>https://orcid.org/0009-0008-1759-5254, Ifremer, Steven PIEL (Ifremer), on behalf of the EMSO community, Steven Piel (Ifremer), au nom de la communauté EMSO, Steven Piel (Ifremer), on behalf of the EMSO community, https://orcid.org/0009-0008-1759-5254. Observatories of Seas Ontology. Revision: 0.16 - CSR alignment added. Retrieved from: https://w3id.org/earthsemantics/OSO/0.16</dd>
+<dd>OSO – Observatories of the Seas Ontology (OSO). Version 1.0.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931.</dd>
+<dt>Vocabulary maintained at:</dt>
+<dd><a href="https://github.com/emso-eric/oso-ontology">https://github.com/emso-eric/oso-ontology</a></dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
