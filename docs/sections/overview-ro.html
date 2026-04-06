@@ -1,4 +1,4 @@
-<h2 id="overv" class="list">Observatories of the Seas Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">Ontologia observatoarelor marine: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -37,6 +37,10 @@ This ontology has the following classes and properties.</span>
          title="http://www.w3.org/2002/07/owl#AnnotationProperty">AnnotationProperty</a>
    </li>
    <li>
+      <a href="#ERICMembership"
+         title="https://w3id.org/earthsemantics/OSO#ERICMembership">Apartenență la un ERIC</a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/2002/07/owl#AsymmetricProperty"
          title="http://www.w3.org/2002/07/owl#AsymmetricProperty">AsymmetricProperty</a>
    </li>
@@ -53,6 +57,14 @@ This ontology has the following classes and properties.</span>
          title="http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox">
          <span>Bounding Box</span>
       </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/org/iode/po/voc/cruise-summary-reports#CruiseSummaryReport"
+         title="http://purl.org/org/iode/po/voc/cruise-summary-reports#CruiseSummaryReport">Campanie oceanografică</a>
+   </li>
+   <li>
+      <a href="#OceanographicCampaign"
+         title="https://w3id.org/earthsemantics/OSO#OceanographicCampaign">Campanie oceanografică</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2000/01/rdf-schema#Class" title="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
@@ -86,10 +98,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#OceanographicCampaign"
-         title="https://w3id.org/earthsemantics/OSO#OceanographicCampaign">Cruise</a>
-   </li>
-   <li>
       <a href="#http://www.w3.org/2002/07/owl#DataRange" title="http://www.w3.org/2002/07/owl#DataRange">DataRange</a>
    </li>
    <li>
@@ -115,10 +123,6 @@ This ontology has the following classes and properties.</span>
       <a href="#ERIC" title="https://w3id.org/earthsemantics/OSO#ERIC">ERIC</a>
    </li>
    <li>
-      <a href="#ERICMembership"
-         title="https://w3id.org/earthsemantics/OSO#ERICMembership">ERIC membership</a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/terms/FileFormat" title="http://purl.org/dc/terms/FileFormat">
          <span>File Format</span>
       </a>
@@ -133,10 +137,6 @@ This ontology has the following classes and properties.</span>
          title="http://www.w3.org/2002/07/owl#FunctionalProperty">FunctionalProperty</a>
    </li>
    <li>
-      <a href="#FundedProject"
-         title="https://w3id.org/earthsemantics/OSO#FundedProject">Funded project</a>
-   </li>
-   <li>
       <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
    </li>
    <li>
@@ -149,6 +149,10 @@ This ontology has the following classes and properties.</span>
       <a href="#http://schema.org/ImageObject" title="http://schema.org/ImageObject">
          <span>Image Object</span>
       </a>
+   </li>
+   <li>
+      <a href="#RegionalFacility"
+         title="https://w3id.org/earthsemantics/OSO#RegionalFacility">Infrastructură regională</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
@@ -191,6 +195,9 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/2000/01/rdf-schema#Literal" title="http://www.w3.org/2000/01/rdf-schema#Literal">
          <span>Literal</span>
       </a>
+   </li>
+   <li>
+      <a href="#Site" title="https://w3id.org/earthsemantics/OSO#Site">Loc de observare</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/Location" title="http://purl.org/dc/terms/Location">
@@ -241,23 +248,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#ObjectProperty" title="http://www.w3.org/2002/07/owl#ObjectProperty">ObjectProperty</a>
-   </li>
-   <li>
-      <a href="#Platform" title="https://w3id.org/earthsemantics/OSO#Platform">Observation Platform</a>
-   </li>
-   <li>
-      <a href="#SubPlatform"
-         title="https://w3id.org/earthsemantics/OSO#SubPlatform">Observation Subplatform</a>
-   </li>
-   <li>
-      <a href="#Subsite" title="https://w3id.org/earthsemantics/OSO#Subsite">Observation Subsite</a>
-   </li>
-   <li>
-      <a href="#Site" title="https://w3id.org/earthsemantics/OSO#Site">Observatory Site</a>
-   </li>
-   <li>
-      <a href="#http://purl.org/org/iode/po/voc/cruise-summary-reports#CruiseSummaryReport"
-         title="http://purl.org/org/iode/po/voc/cruise-summary-reports#CruiseSummaryReport">Oceanographic campaign</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/OnlineAccount" title="http://xmlns.com/foaf/0.1/OnlineAccount">Online Account</a>
@@ -320,12 +310,23 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#Platform" title="https://w3id.org/earthsemantics/OSO#Platform">Platformă de observație</a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/Policy" title="http://purl.org/dc/terms/Policy">
          <span>Policy</span>
       </a>
+   </li>
+   <li>
+      <a href="#ResearchProject"
+         title="https://w3id.org/earthsemantics/OSO#ResearchProject">Proiect de cercetare</a>
+   </li>
+   <li>
+      <a href="#FundedProject"
+         title="https://w3id.org/earthsemantics/OSO#FundedProject">Proiect finanțat</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/Project" title="http://xmlns.com/foaf/0.1/Project">Project</a>
@@ -345,16 +346,8 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/2002/07/owl#ReflexiveProperty" title="http://www.w3.org/2002/07/owl#ReflexiveProperty">ReflexiveProperty</a>
    </li>
    <li>
-      <a href="#RegionalFacility"
-         title="https://w3id.org/earthsemantics/OSO#RegionalFacility">Regional Facility</a>
-   </li>
-   <li>
       <a href="#ResearchInfrastructure"
          title="https://w3id.org/earthsemantics/OSO#ResearchInfrastructure">Research Infrastructure</a>
-   </li>
-   <li>
-      <a href="#ResearchProject"
-         title="https://w3id.org/earthsemantics/OSO#ResearchProject">Research project</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
@@ -369,7 +362,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#SeriesOfOceanographicCampaigns"
-         title="https://w3id.org/earthsemantics/OSO#SeriesOfOceanographicCampaigns">Series of Oceanographic Campaigns</a>
+         title="https://w3id.org/earthsemantics/OSO#SeriesOfOceanographicCampaigns">Serie de campanii oceanografice</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/SizeOrDuration" title="http://purl.org/dc/terms/SizeOrDuration">
@@ -384,6 +377,13 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/dc/terms/Standard" title="http://purl.org/dc/terms/Standard">
          <span>Standard</span>
       </a>
+   </li>
+   <li>
+      <a href="#Subsite" title="https://w3id.org/earthsemantics/OSO#Subsite">Sub-site de observație</a>
+   </li>
+   <li>
+      <a href="#SubPlatform"
+         title="https://w3id.org/earthsemantics/OSO#SubPlatform">Subplatformă de observație</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#SymmetricProperty" title="http://www.w3.org/2002/07/owl#SymmetricProperty">SymmetricProperty</a>
@@ -430,6 +430,39 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#annotatedTarget" title="http://www.w3.org/2002/07/owl#annotatedTarget">annotatedTarget</a>
+   </li>
+   <li>
+      <a href="#membershipInERIC"
+         title="https://w3id.org/earthsemantics/OSO#membershipInERIC">apartenență la un ERIC</a>
+   </li>
+   <li>
+      <a href="#hasERICMembership"
+         title="https://w3id.org/earthsemantics/OSO#hasERICMembership">are apartenență la un ERIC</a>
+   </li>
+   <li>
+      <a href="#hasSpatialExtent"
+         title="https://w3id.org/earthsemantics/OSO#hasSpatialExtent">are extindere spațială</a>
+   </li>
+   <li>
+      <a href="#hasLogo" title="https://w3id.org/earthsemantics/OSO#hasLogo">
+         <span>are siglă</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasSubsite" title="https://w3id.org/earthsemantics/OSO#hasSubsite">are subsite</a>
+   </li>
+   <li>
+      <a href="#hasEDMO" title="https://w3id.org/earthsemantics/OSO#hasEDMO">
+         <span>are un EDMO</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasROR" title="https://w3id.org/earthsemantics/OSO#hasROR">
+         <span>are un ROR</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasCountry" title="https://w3id.org/earthsemantics/OSO#hasCountry">are țară</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#assertionProperty" title="http://www.w3.org/2002/07/owl#assertionProperty">assertionProperty</a>
@@ -488,20 +521,14 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/earthsemantics/OSO#ERIC_has_a_Director_General">ERIC has a Director General</a>
    </li>
    <li>
+      <a href="#isERICMembershipOf"
+         title="https://w3id.org/earthsemantics/OSO#isERICMembershipOf">este apartenență la un ERIC a</a>
+   </li>
+   <li>
       <a href="#http://xmlns.com/foaf/0.1/focus" title="http://xmlns.com/foaf/0.1/focus">focus</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/fundedBy" title="http://xmlns.com/foaf/0.1/fundedBy">funded by</a>
-   </li>
-   <li>
-      <a href="#hasROR" title="https://w3id.org/earthsemantics/OSO#hasROR">
-         <span>has a ROR</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasEDMO" title="https://w3id.org/earthsemantics/OSO#hasEDMO">
-         <span>has an EDMO</span>
-      </a>
    </li>
    <li>
       <a href="#http://www.w3.org/2004/02/skos/core#broader" title="http://www.w3.org/2004/02/skos/core#broader">has broader</a>
@@ -517,13 +544,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/2004/02/skos/core#closeMatch" title="http://www.w3.org/2004/02/skos/core#closeMatch">has close match</a>
    </li>
    <li>
-      <a href="#hasCountry" title="https://w3id.org/earthsemantics/OSO#hasCountry">has country</a>
-   </li>
-   <li>
-      <a href="#hasERICMembership"
-         title="https://w3id.org/earthsemantics/OSO#hasERICMembership">has ERIC membership</a>
-   </li>
-   <li>
       <a href="#http://www.w3.org/2004/02/skos/core#exactMatch" title="http://www.w3.org/2004/02/skos/core#exactMatch">has exact match</a>
    </li>
    <li>
@@ -531,11 +551,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasLocation" title="https://w3id.org/earthsemantics/OSO#hasLocation">has location</a>
-   </li>
-   <li>
-      <a href="#hasLogo" title="https://w3id.org/earthsemantics/OSO#hasLogo">
-         <span>has logo</span>
-      </a>
    </li>
    <li>
       <a href="#http://www.w3.org/2004/02/skos/core#member" title="http://www.w3.org/2004/02/skos/core#member">has member</a>
@@ -566,13 +581,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasSite" title="https://w3id.org/earthsemantics/OSO#hasSite">has site</a>
-   </li>
-   <li>
-      <a href="#hasSpatialExtent"
-         title="https://w3id.org/earthsemantics/OSO#hasSpatialExtent">has spatial extent</a>
-   </li>
-   <li>
-      <a href="#hasSubsite" title="https://w3id.org/earthsemantics/OSO#hasSubsite">has subsite</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2004/02/skos/core#hasTopConcept"
@@ -608,10 +616,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#inverseOf" title="http://www.w3.org/2002/07/owl#inverseOf">inverseOf</a>
-   </li>
-   <li>
-      <a href="#isERICMembershipOf"
-         title="https://w3id.org/earthsemantics/OSO#isERICMembershipOf">is ERIC membership of</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2004/02/skos/core#mappingRelation"
@@ -670,10 +674,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.w3.org/2002/07/owl#members" title="http://www.w3.org/2002/07/owl#members">members</a>
-   </li>
-   <li>
-      <a href="#membershipInERIC"
-         title="https://w3id.org/earthsemantics/OSO#membershipInERIC">membership in ERIC</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/msnChatID" title="http://xmlns.com/foaf/0.1/msnChatID">
@@ -811,10 +811,6 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/earthsemantics/OSO#Site_has_a_Subsite">Site has a subsite</a>
    </li>
    <li>
-      <a href="#Site_has_Latitude"
-         title="https://w3id.org/earthsemantics/OSO#Site_has_Latitude">Site has Latitude</a>
-   </li>
-   <li>
       <a href="#Site_has_Longitude"
          title="https://w3id.org/earthsemantics/OSO#Site_has_Longitude">Site has Longitude</a>
    </li>
@@ -824,6 +820,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Site_is_part_of_a_RI"
          title="https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI">Site is part of an Research Infrastructure</a>
+   </li>
+   <li>
+      <a href="#Site_has_Latitude"
+         title="https://w3id.org/earthsemantics/OSO#Site_has_Latitude">Site-ul are latitudine</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/skypeID" title="http://xmlns.com/foaf/0.1/skypeID">
@@ -915,6 +915,21 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#hasLogo" title="https://w3id.org/earthsemantics/OSO#hasLogo">
+         <span>are siglă</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasEDMO" title="https://w3id.org/earthsemantics/OSO#hasEDMO">
+         <span>are un EDMO</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasROR" title="https://w3id.org/earthsemantics/OSO#hasROR">
+         <span>are un ROR</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://www.opengis.net/ont/geosparql#asWKT" title="http://www.opengis.net/ont/geosparql#asWKT">
          <span>as W K T</span>
       </a>
@@ -945,6 +960,14 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#dateEndDeployment"
+         title="https://w3id.org/earthsemantics/OSO#dateEndDeployment">Data de sfârșit a desfășurării</a>
+   </li>
+   <li>
+      <a href="#dateFirstDeployment"
+         title="https://w3id.org/earthsemantics/OSO#dateFirstDeployment">Data primei desfășurări</a>
+   </li>
+   <li>
       <a href="#http://purl.org/dc/terms/date" title="http://purl.org/dc/terms/date">
          <span>date</span>
       </a>
@@ -963,10 +986,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/dc/terms/dateSubmitted" title="http://purl.org/dc/terms/dateSubmitted">
          <span>date Submitted</span>
       </a>
-   </li>
-   <li>
-      <a href="#dateEndDeployment"
-         title="https://w3id.org/earthsemantics/OSO#dateEndDeployment">Deployment end date</a>
    </li>
    <li>
       <a href="#DistanceFromLand"
@@ -988,14 +1007,13 @@ This ontology has the following classes and properties.</span>
       <a href="#http://schema.org/endDate" title="http://schema.org/endDate">End date</a>
    </li>
    <li>
+      <a href="#isTestSite" title="https://w3id.org/earthsemantics/OSO#isTestSite">este sit de testare</a>
+   </li>
+   <li>
       <a href="#http://xmlns.com/foaf/0.1/family_name" title="http://xmlns.com/foaf/0.1/family_name">family_name</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/familyName" title="http://xmlns.com/foaf/0.1/familyName">familyName</a>
-   </li>
-   <li>
-      <a href="#dateFirstDeployment"
-         title="https://w3id.org/earthsemantics/OSO#dateFirstDeployment">First deployment date</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/firstName" title="http://xmlns.com/foaf/0.1/firstName">firstName</a>
@@ -1011,21 +1029,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/givenname" title="http://xmlns.com/foaf/0.1/givenname">Given name</a>
-   </li>
-   <li>
-      <a href="#hasROR" title="https://w3id.org/earthsemantics/OSO#hasROR">
-         <span>has a ROR</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasEDMO" title="https://w3id.org/earthsemantics/OSO#hasEDMO">
-         <span>has an EDMO</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasLogo" title="https://w3id.org/earthsemantics/OSO#hasLogo">
-         <span>has logo</span>
-      </a>
    </li>
    <li>
       <a href="#maxWaterDepth"
@@ -1049,9 +1052,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
          <span>identifier</span>
       </a>
-   </li>
-   <li>
-      <a href="#isTestSite" title="https://w3id.org/earthsemantics/OSO#isTestSite">is test site</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
@@ -1348,10 +1348,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#CNRS" title="https://w3id.org/earthsemantics/OSO#CNRS">CNRS</a>
-   </li>
-   <li>
-      <a href="#OntologyEngineeringWorkflow"
-         title="https://w3id.org/earthsemantics/OSO#OntologyEngineeringWorkflow">Collaborative ontology engineering within the EMSO Data Management Service Group (DMSG)</a>
    </li>
    <li>
       <a href="#CONDOR" title="https://w3id.org/earthsemantics/OSO#CONDOR">CONDOR</a>
@@ -1678,6 +1674,10 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#INFN" title="https://w3id.org/earthsemantics/OSO#INFN">INFN</a>
+   </li>
+   <li>
+      <a href="#OntologyEngineeringWorkflow"
+         title="https://w3id.org/earthsemantics/OSO#OntologyEngineeringWorkflow">Inginerie colaborativă a ontologiilor în cadrul EMSO Data Management Service Group (DMSG)</a>
    </li>
    <li>
       <a href="#Ingrid_PUILLAT"
@@ -2172,7 +2172,7 @@ This ontology has the following classes and properties.</span>
       <a href="#pilot_line" title="https://w3id.org/earthsemantics/OSO#pilot_line">pilot line</a>
    </li>
    <li>
-      <a href="#Planned" title="https://w3id.org/earthsemantics/OSO#Planned">Planned</a>
+      <a href="#Planned" title="https://w3id.org/earthsemantics/OSO#Planned">Planificat</a>
    </li>
    <li>
       <a href="#PLOCAN" title="https://w3id.org/earthsemantics/OSO#PLOCAN">PLOCAN</a>
