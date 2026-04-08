@@ -96,7 +96,7 @@ _:genid1 <http://omv.ontoware.org/2005/05/ontology#usedOntologyEngineeringMethod
 _:genid1 <http://omv.ontoware.org/2005/05/ontology#usedOntologyEngineeringMethodology> "Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες"@el .
 _:genid1 <http://omv.ontoware.org/2005/05/ontology#usedOntologyEngineeringTool> "Protégé 5.6.9" .
 _:genid1 <http://omv.ontoware.org/2005/05/ontology#usedOntologyEngineeringTool> "VSCodium 1.92.2" .
-_:genid1 <http://omv.ontoware.org/2005/05/ontology#version> "1.0.0" .
+_:genid1 <http://omv.ontoware.org/2005/05/ontology#version> "1.0.1" .
 _:genid1 <http://purl.org/dc/terms/abstract> "A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC."@pt .
 _:genid1 <http://purl.org/dc/terms/abstract> "L'ontologia OSO struttura gli osservatori marini in tre livelli gerarchici: infrastrutture regionali, siti e piattaforme. Supporta la gestione FAIR dei dati, l'interoperabilità e l'integrazione delle informazioni sulle infrastrutture marine, in particolare nel contesto EMSO ERIC."@it .
 _:genid1 <http://purl.org/dc/terms/abstract> "L'ontologie OSO structure les observatoires marins en trois niveaux hiérarchiques : infrastructures régionales, sites et plateformes. Elle soutient la gestion FAIR des données, l'interopérabilité et l'intégration des informations sur les infrastructures marines, notamment dans le cadre d'EMSO ERIC."@fr .
@@ -105,12 +105,13 @@ _:genid1 <http://purl.org/dc/terms/abstract> "OSO-ontologien strukturerer marine
 _:genid1 <http://purl.org/dc/terms/abstract> "Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC."@ro .
 _:genid1 <http://purl.org/dc/terms/abstract> "The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework."@en .
 _:genid1 <http://purl.org/dc/terms/abstract> "Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el .
-_:genid1 <http://purl.org/dc/terms/bibliographicCitation> "OSO – Observatories of the Seas Ontology (OSO). Version 1.0.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en .
+_:genid1 <http://purl.org/dc/terms/bibliographicCitation> "OSO – Observatories of the Seas Ontology (OSO). Version 1.0.1. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en .
 _:genid1 <http://purl.org/dc/terms/conformsTo> <https://semver.org/> .
 _:genid1 <http://purl.org/dc/terms/conformsTo> <https://www.conventionalcommits.org/> .
 _:genid1 <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/owl2-overview/> .
 _:genid1 <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/prov-o/> .
 _:genid1 <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/skos-reference/> .
+_:genid1 <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/sparql11-query/> .
 _:genid1 <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/vocab-dcat-3/> .
 _:genid1 <http://purl.org/dc/terms/contributor> <https://w3id.org/earthsemantics/OSO#EMSO_DMSG> .
 _:genid1 <http://purl.org/dc/terms/coverage> "Acoperire globală (cu accent pe mările europene); acoperire temporală de la ~1990 până în prezent."@ro .
@@ -133,7 +134,7 @@ _:genid1 <http://purl.org/dc/terms/description> "Ontología que describe los obs
 _:genid1 <http://purl.org/dc/terms/description> "Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού. Να μην συγχέεται με το OpenScienceOntology (OSO)."@el .
 _:genid1 <http://purl.org/dc/terms/hasFormat> <https://earthportal.eu/ontologies/OSO.ttl> .
 _:genid1 <http://purl.org/dc/terms/hasFormat> <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> .
-_:genid1 <http://purl.org/dc/terms/hasVersion> "1.0.0" .
+_:genid1 <http://purl.org/dc/terms/hasVersion> "1.0.1" .
 _:genid1 <http://purl.org/dc/terms/identifier> "10.25504/FAIRsharing.654931" .
 _:genid1 <http://purl.org/dc/terms/isReferencedBy> <https://doi.org/10.25504/FAIRsharing.654931> .
 _:genid1 <http://purl.org/dc/terms/isReferencedBy> <https://doi.pangaea.de/10.1594/PANGAEA.957446> .
@@ -149,12 +150,13 @@ _:genid1 <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso63
 _:genid1 <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
 _:genid1 <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/ro> .
 _:genid1 <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-_:genid1 <http://purl.org/dc/terms/modified> "2026-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid1 <http://purl.org/dc/terms/modified> "2026-04-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 _:genid1 <http://purl.org/dc/terms/provenance> "Ontology edited with Protégé 5.6.9 and VSCodium, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification."@en .
 _:genid1 <http://purl.org/dc/terms/publisher> <https://ror.org/04xkqms46> .
 _:genid1 <http://purl.org/dc/terms/relation> <https://emso-eric.github.io/oso-ontology/> .
 _:genid1 <http://purl.org/dc/terms/relation> <https://github.com/emso-eric/oso-ontology> .
 _:genid1 <http://purl.org/dc/terms/relation> <https://w3id.org/earthsemantics/OSO/dcat> .
+_:genid1 <http://purl.org/dc/terms/rightsHolder> <https://ror.org/04xkqms46> .
 _:genid1 <http://purl.org/dc/terms/source> <https://github.com/emso-eric/oso-ontology> .
 _:genid1 <http://purl.org/dc/terms/spatial> "Acoperire globală (cu accent pe mările europene)"@ro .
 _:genid1 <http://purl.org/dc/terms/spatial> "Cobertura global (com foco nos mares europeus)"@pt .
@@ -187,16 +189,17 @@ _:genid1 <http://purl.org/pav/createdBy> <https://orcid.org/0009-0008-1759-5254>
 _:genid1 <http://purl.org/pav/createdOn> "2025-04-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 _:genid1 <http://purl.org/pav/createdWith> <https://protege.stanford.edu/> .
 _:genid1 <http://purl.org/pav/createdWith> <https://vscodium.com/> .
-_:genid1 <http://purl.org/pav/previousVersion> <https://w3id.org/earthsemantics/OSO/0.17> .
-_:genid1 <http://purl.org/pav/version> "1.0.0" .
+_:genid1 <http://purl.org/pav/previousVersion> <https://w3id.org/earthsemantics/OSO/1.0.0> .
+_:genid1 <http://purl.org/pav/version> "1.0.1" .
 _:genid1 <http://purl.org/vocab/vann/example> <https://w3id.org/earthsemantics/OSO#Site> .
 _:genid1 <http://purl.org/vocab/vann/preferredNamespacePrefix> "OSO" .
 _:genid1 <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/earthsemantics/OSO#> .
-_:genid1 <http://rdfs.org/ns/void#classes> "102"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://rdfs.org/ns/void#classes> "109"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:genid1 <http://rdfs.org/ns/void#dataDump> <https://w3id.org/earthsemantics/OSO.ttl> .
 _:genid1 <http://rdfs.org/ns/void#exampleResource> <https://w3id.org/earthsemantics/OSO#Azores> .
-_:genid1 <http://rdfs.org/ns/void#properties> "209"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:genid1 <http://rdfs.org/ns/void#triples> "10987"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://rdfs.org/ns/void#properties> "212"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://rdfs.org/ns/void#sparqlEndpoint> <https://virtuoso.ifremer.fr/oso/sparql> .
+_:genid1 <http://rdfs.org/ns/void#triples> "11142"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:genid1 <http://rdfs.org/ns/void#uriSpace> "https://w3id.org/earthsemantics/OSO#" .
 _:genid1 <http://schema.org/codeRepository> <https://github.com/emso-eric/oso-ontology> .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologi som beskriver forholdet mellom regionale fasiliteter, steder, plattformer, forskningsinfrastrukturer, organisasjoner, cruiser og de ansvarlige på hvert nivå."@no .
@@ -207,6 +210,7 @@ _:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologie décrivant le
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology describing the relationships between Regional Facilities, Sites, Platforms, Research Infrastructures, Organisations, Cruises, and the persons in charge of each level."@en .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología que describe las relaciones entre instalaciones regionales, emplazamientos, plataformas, infraestructuras de investigación, organizaciones, cruceros y las personas responsables de cada nivel."@es .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Οντολογία που περιγράφει τις σχέσεις μεταξύ περιφερειακών υποδομών, τοποθεσιών, πλατφορμών, ερευνητικών υποδομών, οργανισμών, αποστολών και των υπευθύνων σε κάθε επίπεδο."@el .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/earthsemantics/OSO> .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#label> "Observatories of the Seas Ontology (OSO)"@en .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#label> "Ontologi for marine observatorier (OSO)"@no .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia degli osservatori marini (OSO)"@it .
@@ -219,7 +223,9 @@ _:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://emso-eric.githu
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://fairsharing.org/FAIRsharing.654931> .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/emso-eric/oso-ontology> .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO> .
-_:genid1 <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0 - First stable public release"@en .
+_:genid1 <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://w3id.org/earthsemantics/OSO/1.0.0> .
+_:genid1 <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/earthsemantics/OSO/1.0.0> .
+_:genid1 <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1 - Adding a SPARQL endpoint"@en .
 _:genid1 <http://www.w3.org/2004/02/skos/core#altLabel> "OSO" .
 _:genid1 <http://www.w3.org/2004/02/skos/core#definition> "Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016."@ro .
 _:genid1 <http://www.w3.org/2004/02/skos/core#definition> "Cette ontologie vise à décrire les observatoires sous-marins, en particulier ceux associés au réseau européen d'observatoires multidisciplinaires des fonds marins et de la colonne d'eau (EMSO), qui constitue un consortium européen d'infrastructures de recherche (ERIC) depuis 2016."@fr .
@@ -243,6 +249,7 @@ _:genid2 <http://www.w3.org/2004/02/skos/core#notation> "10.25504/FAIRsharing.65
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/adms#Identifier> .
 _:genid1 <http://www.w3.org/ns/adms#representationTechnique> "OWL 2 DL in Turtle syntax" .
 _:genid1 <http://www.w3.org/ns/adms#status> <http://purl.org/adms/status/Completed> .
+_:genid1 <http://www.w3.org/ns/dcat#accessURL> <https://virtuoso.ifremer.fr/oso/sparql> .
 _:genid1 <http://www.w3.org/ns/dcat#contactPoint> _:genid3 .
 _:genid3 <http://www.w3.org/2006/vcard/ns#hasOrganizationName> "EMSO ERIC" .
 _:genid3 <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:emso.dmsg@emso-eu.org> .
@@ -555,6 +562,9 @@ _:genid1 <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/earthseman
 <http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rights> .
 # 
+# http://purl.org/dc/terms/rightsHolder
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
@@ -633,6 +643,9 @@ _:genid1 <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/earthseman
 # http://rdfs.org/ns/void#properties
 <http://rdfs.org/ns/void#properties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://rdfs.org/ns/void#sparqlEndpoint
+<http://rdfs.org/ns/void#sparqlEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://rdfs.org/ns/void#triples
 <http://rdfs.org/ns/void#triples> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -650,9 +663,6 @@ _:genid1 <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/earthseman
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#isDefinedBy
-<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The definition of the subject resource." .
-<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
-<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isDefinedBy" .
 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
@@ -667,9 +677,6 @@ _:genid1 <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/earthseman
 # 
 # http://www.w3.org/2002/07/owl#backwardCompatibleWith
 <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property that indicates that a given ontology is backward compatible with another ontology." .
-<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#> .
-<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#label> "backwardCompatibleWith" .
 <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Ontology> .
 # 
@@ -699,9 +706,6 @@ _:genid1 <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/earthseman
 # 
 # http://www.w3.org/2002/07/owl#priorVersion
 <http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property that indicates the predecessor ontology of a given ontology." .
-<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#> .
-<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#label> "priorVersion" .
 <http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Ontology> .
 # 
@@ -4263,6 +4267,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/earthsemantics/OSO#ERIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/earthsemantics/OSO#ERIC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
 <https://w3id.org/earthsemantics/OSO#ERIC> <http://data.bioontology.org/metadata/prefixIRI> "omv:ERIC" .
+<https://w3id.org/earthsemantics/OSO#ERIC> <http://www.w3.org/2000/01/rdf-schema#comment> "A European Research Infrastructure Consortium established under the ERIC legal framework to support long-term scientific collaboration and shared research services."@en .
 <https://w3id.org/earthsemantics/OSO#ERIC> <http://www.w3.org/2000/01/rdf-schema#label> "ERIC"@el .
 <https://w3id.org/earthsemantics/OSO#ERIC> <http://www.w3.org/2000/01/rdf-schema#label> "ERIC"@en .
 <https://w3id.org/earthsemantics/OSO#ERIC> <http://www.w3.org/2000/01/rdf-schema#label> "ERIC"@es .
@@ -4283,6 +4288,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/earthsemantics/OSO#ERICMembership
 <https://w3id.org/earthsemantics/OSO#ERICMembership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/earthsemantics/OSO#ERICMembership> <http://www.w3.org/2000/01/rdf-schema#comment> "A class representing the membership relationship between an organisation or national entity and a European Research Infrastructure Consortium (ERIC)."@en .
 <https://w3id.org/earthsemantics/OSO#ERICMembership> <http://www.w3.org/2000/01/rdf-schema#label> "Apartenență la un ERIC"@ro .
 <https://w3id.org/earthsemantics/OSO#ERICMembership> <http://www.w3.org/2000/01/rdf-schema#label> "Appartenance à un ERIC"@fr .
 <https://w3id.org/earthsemantics/OSO#ERICMembership> <http://www.w3.org/2000/01/rdf-schema#label> "Appartenenza a un ERIC"@it .
@@ -4304,7 +4310,13 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/earthsemantics/OSO#ResearchProject> .
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A research project supported by dedicated financial funding from one or more organizations or funding bodies."@en .
+<https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Et forskningsprosjekt støttet av dedikert finansiering fra en eller flere organisasjoner eller finansieringskilder."@no .
+<https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Um projeto de investigação apoiado por financiamento específico proveniente de uma ou mais organizações ou entidades financiadoras."@pt .
+<https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un progetto di ricerca sostenuto da finanziamenti dedicati provenienti da una o più organizzazioni o enti finanziatori."@it .
+<https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un proiect de cercetare susținut prin finanțare dedicată din partea uneia sau mai multor organizații sau organisme de finanțare."@ro .
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un projet de recherche soutenu par un financement dédié provenant d'une ou plusieurs organisations ou agences de financement."@fr .
+<https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un proyecto de investigación respaldado por financiación específica de una o más organizaciones o entidades financiadoras."@es .
+<https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Ένα ερευνητικό έργο που υποστηρίζεται από ειδική χρηματοδότηση από έναν ή περισσότερους οργανισμούς ή φορείς χρηματοδότησης."@el .
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#label> "Finansiert prosjekt"@no .
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#label> "Funded project"@en .
 <https://w3id.org/earthsemantics/OSO#FundedProject> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto finanziato"@it .
@@ -4442,7 +4454,13 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Project> .
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured scientific activity designed to produce new knowledge, data, or understanding within a defined scope and duration."@en .
+<https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "En strukturert vitenskapelig aktivitet som har som mål å produsere ny kunnskap, data eller forståelse innenfor et definert omfang og tidsrom."@no .
+<https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "O activitate științifică structurată destinată să producă noi cunoștințe, date sau înțelegere într-un cadru și o durată definite."@ro .
+<https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Uma atividade científica estruturada concebida para produzir novo conhecimento, dados ou compreensão dentro de um âmbito e duração definidos."@pt .
+<https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un'attività scientifica strutturata progettata per produrre nuova conoscenza, dati o comprensione entro un ambito e una durata definiti."@it .
+<https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Una actividad científica estructurada destinada a producir nuevo conocimiento, datos o comprensión dentro de un alcance y una duración definidos."@es .
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Une activité scientifique structurée visant à produire de nouvelles connaissances, données ou compréhensions dans un périmètre et une durée définis."@fr .
+<https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#comment> "Επιστημονική δραστηριότητα με σαφή δομή που αποσκοπεί στην παραγωγή νέας γνώσης, δεδομένων ή κατανόησης, εντός καθορισμένου πλαισίου και διάρκειας."@el .
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#label> "Forskningsprosjekt"@no .
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto di ricerca"@it .
 <https://w3id.org/earthsemantics/OSO#ResearchProject> <http://www.w3.org/2000/01/rdf-schema#label> "Proiect de cercetare"@ro .
@@ -5224,26 +5242,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://purl.org/dc/terms/rightsHolder
 <http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> .
-<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/terms/description> "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."@en .
-<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/terms/issued> "2004-06-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@el .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@en .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@es .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@fr .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@it .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@no .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@pt .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@ro .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@el .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@en .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@es .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@fr .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@it .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@no .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@pt .
-<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@ro .
 # 
 # http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5548,6 +5546,9 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://projects.noc.ac.uk/class-project/
 <https://projects.noc.ac.uk/class-project/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png
+<https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
 # https://ror.org/00epmv149
 <https://ror.org/00epmv149> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -5666,6 +5667,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/earthsemantics/OSO
 <https://w3id.org/earthsemantics/OSO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/earthsemantics/OSO> <http://xmlns.com/foaf/0.1/depiction> <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png> .
 <https://w3id.org/earthsemantics/OSO> <http://xmlns.com/foaf/0.1/homepage> <https://emso-eric.github.io/oso-ontology/> .
 <https://w3id.org/earthsemantics/OSO> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <https://w3id.org/earthsemantics/OSO> .
 <https://w3id.org/earthsemantics/OSO> <http://xmlns.com/foaf/0.1/page> <https://earthportal.eu/ontologies/OSO> .
@@ -12272,11 +12274,13 @@ _:genid8 <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2
 <https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/identifier> <https://w3id.org/earthsemantics/OSO> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/issued> "2025-04-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/modified> "2026-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/modified> "2026-04-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/publisher> <https://ror.org/04xkqms46> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/dc/terms/title> "Observatories of the Seas Ontology dataset"@en .
-<https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/pav/previousVersion> <https://w3id.org/earthsemantics/OSO/0.17> .
-<https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/pav/version> "1.0.0" .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/pav/previousVersion> <https://w3id.org/earthsemantics/OSO/1.0.0> .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://purl.org/pav/version> "1.0.1" .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://rdfs.org/ns/void#sparqlEndpoint> <https://virtuoso.ifremer.fr/oso/sparql> .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/dcat#accessURL> <https://virtuoso.ifremer.fr/oso/sparql> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/dcat#contactPoint> _:genid9 .
 _:genid9 <http://www.w3.org/2006/vcard/ns#hasOrganizationName> "EMSO ERIC" .
 _:genid9 <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:emso.dmsg@emso-eu.org> .
@@ -12287,9 +12291,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/dcat#theme> <https://data.earthportal.eu/categories/CLIMATE> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/dcat#theme> <https://data.earthportal.eu/categories/EARTH> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/dcat#theme> <https://data.earthportal.eu/categories/ENV> .
-<https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/prov#generatedAtTime> "2026-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/prov#generatedAtTime> "2026-04-08"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/prov#wasAttributedTo> <https://ror.org/04xkqms46> .
-<https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/earthsemantics/OSO/0.17> .
+<https://w3id.org/earthsemantics/OSO/dataset> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/earthsemantics/OSO/1.0.0> .
 # 
 # https://www.atlanticarea.eu/discover-our-projects/approved-projects/atlantic-whale-deal
 # 
@@ -12315,9 +12319,34 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask> <http://www.w3.org/2000/01/rdf-schema#label> "Designed for Ontology Task"@en .
 <http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask> <http://www.w3.org/2004/02/skos/core#prefLabel> "Designed for Ontology Task"@en .
 # 
+<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/terms/description> "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."@en .
+<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/terms/issued> "2004-06-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@el .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@en .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@es .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@fr .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@it .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@no .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@pt .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization owning or managing rights over the resource."@ro .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@el .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@en .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@es .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@fr .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@it .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@no .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@pt .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Holder"@ro .
+# 
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the subject resource." .
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment" .
+# 
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The definition of the subject resource." .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isDefinedBy" .
 # 
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#comment> "A human-readable name for the subject." .
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12326,6 +12355,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#comment> "Further information about the subject resource." .
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#label> "seeAlso" .
+# 
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property that indicates that a given ontology is backward compatible with another ontology." .
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#> .
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#label> "backwardCompatibleWith" .
+# 
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property that indicates the predecessor ontology of a given ontology." .
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#> .
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#label> "priorVersion" .
 # 
 <http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property that provides version information for an ontology or another OWL construct." .
 <http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#> .

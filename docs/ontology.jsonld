@@ -267,7 +267,7 @@
     "@value" : "VSCodium 1.92.2"
   } ],
   "http://omv.ontoware.org/2005/05/ontology#version" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.0.1"
   } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "pt",
@@ -296,7 +296,7 @@
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@language" : "en",
-    "@value" : "OSO – Observatories of the Seas Ontology (OSO). Version 1.0.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."
+    "@value" : "OSO – Observatories of the Seas Ontology (OSO). Version 1.0.1. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."
   } ],
   "http://purl.org/dc/terms/conformsTo" : [ {
     "@id" : "https://semver.org/"
@@ -308,6 +308,8 @@
     "@id" : "https://www.w3.org/TR/prov-o/"
   }, {
     "@id" : "https://www.w3.org/TR/skos-reference/"
+  }, {
+    "@id" : "https://www.w3.org/TR/sparql11-query/"
   }, {
     "@id" : "https://www.w3.org/TR/vocab-dcat-3/"
   } ],
@@ -377,7 +379,7 @@
     "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl"
   } ],
   "http://purl.org/dc/terms/hasVersion" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.0.1"
   } ],
   "http://purl.org/dc/terms/identifier" : [ {
     "@value" : "10.25504/FAIRsharing.654931"
@@ -415,7 +417,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-04-02"
+    "@value" : "2026-04-08"
   } ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@language" : "en",
@@ -430,6 +432,9 @@
     "@id" : "https://github.com/emso-eric/oso-ontology"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO/dcat"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://ror.org/04xkqms46"
   } ],
   "http://purl.org/dc/terms/source" : [ {
     "@id" : "https://github.com/emso-eric/oso-ontology"
@@ -530,10 +535,10 @@
     "@id" : "https://vscodium.com/"
   } ],
   "http://purl.org/pav/previousVersion" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/0.17"
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.0"
   } ],
   "http://purl.org/pav/version" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.0.1"
   } ],
   "http://purl.org/vocab/vann/example" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Site"
@@ -546,7 +551,7 @@
   } ],
   "http://rdfs.org/ns/void#classes" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "102"
+    "@value" : "109"
   } ],
   "http://rdfs.org/ns/void#dataDump" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO.ttl"
@@ -556,11 +561,14 @@
   } ],
   "http://rdfs.org/ns/void#properties" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "209"
+    "@value" : "212"
+  } ],
+  "http://rdfs.org/ns/void#sparqlEndpoint" : [ {
+    "@id" : "https://virtuoso.ifremer.fr/oso/sparql"
   } ],
   "http://rdfs.org/ns/void#triples" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "10987"
+    "@value" : "11142"
   } ],
   "http://rdfs.org/ns/void#uriSpace" : [ {
     "@value" : "https://w3id.org/earthsemantics/OSO#"
@@ -596,6 +604,9 @@
     "@language" : "el",
     "@value" : "Οντολογία που περιγράφει τις σχέσεις μεταξύ περιφερειακών υποδομών, τοποθεσιών, πλατφορμών, ερευνητικών υποδομών, οργανισμών, αποστολών και των υπευθύνων σε κάθε επίπεδο."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Observatories of the Seas Ontology (OSO)"
@@ -630,6 +641,9 @@
   }, {
     "@id" : "https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO"
   } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.0"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#"
   }, {
@@ -639,9 +653,12 @@
   }, {
     "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "1.0.0 - First stable public release"
+    "@value" : "1.0.1 - Adding a SPARQL endpoint"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "OSO"
@@ -704,6 +721,9 @@
   } ],
   "http://www.w3.org/ns/adms#status" : [ {
     "@id" : "http://purl.org/adms/status/Completed"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://virtuoso.ifremer.fr/oso/sparql"
   } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "_:genid3"
@@ -2923,6 +2943,8 @@
     "@value" : "2004-06-14"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#AnnotationProperty"
+  }, {
     "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3210,6 +3232,11 @@
   } ]
 }, {
   "@id" : "http://rdfs.org/ns/void#properties",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#AnnotationProperty"
+  } ]
+}, {
+  "@id" : "http://rdfs.org/ns/void#sparqlEndpoint",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#AnnotationProperty"
   } ]
@@ -9612,6 +9639,11 @@
     "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
   } ]
 }, {
+  "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+  } ]
+}, {
   "@id" : "https://ror.org/004gzqz66",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
@@ -9868,6 +9900,9 @@
   "@id" : "https://w3id.org/earthsemantics/OSO",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+  } ],
+  "http://xmlns.com/foaf/0.1/depiction" : [ {
+    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png"
   } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://emso-eric.github.io/oso-ontology/"
@@ -14612,6 +14647,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A European Research Infrastructure Consortium established under the ERIC legal framework to support long-term scientific collaboration and shared research services."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "el",
     "@value" : "ERIC"
@@ -14673,6 +14712,10 @@
   "@id" : "https://w3id.org/earthsemantics/OSO#ERICMembership",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing the membership relationship between an organisation or national entity and a European Research Infrastructure Consortium (ERIC)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "ro",
@@ -16304,8 +16347,26 @@
     "@language" : "en",
     "@value" : "A research project supported by dedicated financial funding from one or more organizations or funding bodies."
   }, {
+    "@language" : "no",
+    "@value" : "Et forskningsprosjekt støttet av dedikert finansiering fra en eller flere organisasjoner eller finansieringskilder."
+  }, {
+    "@language" : "pt",
+    "@value" : "Um projeto de investigação apoiado por financiamento específico proveniente de uma ou mais organizações ou entidades financiadoras."
+  }, {
+    "@language" : "it",
+    "@value" : "Un progetto di ricerca sostenuto da finanziamenti dedicati provenienti da una o più organizzazioni o enti finanziatori."
+  }, {
+    "@language" : "ro",
+    "@value" : "Un proiect de cercetare susținut prin finanțare dedicată din partea uneia sau mai multor organizații sau organisme de finanțare."
+  }, {
     "@language" : "fr",
     "@value" : "Un projet de recherche soutenu par un financement dédié provenant d'une ou plusieurs organisations ou agences de financement."
+  }, {
+    "@language" : "es",
+    "@value" : "Un proyecto de investigación respaldado por financiación específica de una o más organizaciones o entidades financiadoras."
+  }, {
+    "@language" : "el",
+    "@value" : "Ένα ερευνητικό έργο που υποστηρίζεται από ειδική χρηματοδότηση από έναν ή περισσότερους οργανισμούς ή φορείς χρηματοδότησης."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
@@ -25847,8 +25908,26 @@
     "@language" : "en",
     "@value" : "A structured scientific activity designed to produce new knowledge, data, or understanding within a defined scope and duration."
   }, {
+    "@language" : "no",
+    "@value" : "En strukturert vitenskapelig aktivitet som har som mål å produsere ny kunnskap, data eller forståelse innenfor et definert omfang og tidsrom."
+  }, {
+    "@language" : "ro",
+    "@value" : "O activitate științifică structurată destinată să producă noi cunoștințe, date sau înțelegere într-un cadru și o durată definite."
+  }, {
+    "@language" : "pt",
+    "@value" : "Uma atividade científica estruturada concebida para produzir novo conhecimento, dados ou compreensão dentro de um âmbito e duração definidos."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'attività scientifica strutturata progettata per produrre nuova conoscenza, dati o comprensione entro un ambito e una durata definiti."
+  }, {
+    "@language" : "es",
+    "@value" : "Una actividad científica estructurada destinada a producir nuevo conocimiento, datos o comprensión dentro de un alcance y una duración definidos."
+  }, {
     "@language" : "fr",
     "@value" : "Une activité scientifique structurée visant à produire de nouvelles connaissances, données ou compréhensions dans un périmètre et une durée définis."
+  }, {
+    "@language" : "el",
+    "@value" : "Επιστημονική δραστηριότητα με σαφή δομή που αποσκοπεί στην παραγωγή νέας γνώσης, δεδομένων ή κατανόησης, εντός καθορισμένου πλαισίου και διάρκειας."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
@@ -33444,7 +33523,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-04-02"
+    "@value" : "2026-04-08"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://ror.org/04xkqms46"
@@ -33454,10 +33533,13 @@
     "@value" : "Observatories of the Seas Ontology dataset"
   } ],
   "http://purl.org/pav/previousVersion" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/0.17"
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.0"
   } ],
   "http://purl.org/pav/version" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.0.1"
+  } ],
+  "http://rdfs.org/ns/void#sparqlEndpoint" : [ {
+    "@id" : "https://virtuoso.ifremer.fr/oso/sparql"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
@@ -33465,6 +33547,9 @@
     "@id" : "http://rdfs.org/ns/void#Dataset"
   }, {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://virtuoso.ifremer.fr/oso/sparql"
   } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "_:genid9"
@@ -33484,13 +33569,13 @@
   } ],
   "http://www.w3.org/ns/prov#generatedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-04-02"
+    "@value" : "2026-04-08"
   } ],
   "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
     "@id" : "https://ror.org/04xkqms46"
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/0.17"
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.0"
   } ],
   "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO"

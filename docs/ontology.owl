@@ -127,7 +127,7 @@
         <ontology:usedOntologyEngineeringMethodology xml:lang="el">Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες</ontology:usedOntologyEngineeringMethodology>
         <ontology:usedOntologyEngineeringTool>Protégé 5.6.9</ontology:usedOntologyEngineeringTool>
         <ontology:usedOntologyEngineeringTool>VSCodium 1.92.2</ontology:usedOntologyEngineeringTool>
-        <ontology:version>1.0.0</ontology:version>
+        <ontology:version>1.0.1</ontology:version>
         <terms:abstract xml:lang="pt">A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC.</terms:abstract>
         <terms:abstract xml:lang="it">L&apos;ontologia OSO struttura gli osservatori marini in tre livelli gerarchici: infrastrutture regionali, siti e piattaforme. Supporta la gestione FAIR dei dati, l&apos;interoperabilità e l&apos;integrazione delle informazioni sulle infrastrutture marine, in particolare nel contesto EMSO ERIC.</terms:abstract>
         <terms:abstract xml:lang="fr">L&apos;ontologie OSO structure les observatoires marins en trois niveaux hiérarchiques : infrastructures régionales, sites et plateformes. Elle soutient la gestion FAIR des données, l&apos;interopérabilité et l&apos;intégration des informations sur les infrastructures marines, notamment dans le cadre d&apos;EMSO ERIC.</terms:abstract>
@@ -136,12 +136,13 @@
         <terms:abstract xml:lang="ro">Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC.</terms:abstract>
         <terms:abstract xml:lang="en">The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework.</terms:abstract>
         <terms:abstract xml:lang="el">Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC.</terms:abstract>
-        <terms:bibliographicCitation xml:lang="en">OSO – Observatories of the Seas Ontology (OSO). Version 1.0.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">OSO – Observatories of the Seas Ontology (OSO). Version 1.0.1. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931.</terms:bibliographicCitation>
         <terms:conformsTo rdf:resource="https://semver.org/"/>
         <terms:conformsTo rdf:resource="https://www.conventionalcommits.org/"/>
         <terms:conformsTo rdf:resource="https://www.w3.org/TR/owl2-overview/"/>
         <terms:conformsTo rdf:resource="https://www.w3.org/TR/prov-o/"/>
         <terms:conformsTo rdf:resource="https://www.w3.org/TR/skos-reference/"/>
+        <terms:conformsTo rdf:resource="https://www.w3.org/TR/sparql11-query/"/>
         <terms:conformsTo rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
         <terms:contributor rdf:resource="https://w3id.org/earthsemantics/OSO#EMSO_DMSG"/>
         <terms:coverage xml:lang="ro">Acoperire globală (cu accent pe mările europene); acoperire temporală de la ~1990 până în prezent.</terms:coverage>
@@ -164,7 +165,7 @@
         <terms:description xml:lang="el">Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού. Να μην συγχέεται με το OpenScienceOntology (OSO).</terms:description>
         <terms:hasFormat rdf:resource="https://earthportal.eu/ontologies/OSO.ttl"/>
         <terms:hasFormat rdf:resource="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl"/>
-        <terms:hasVersion>1.0.0</terms:hasVersion>
+        <terms:hasVersion>1.0.1</terms:hasVersion>
         <terms:identifier>10.25504/FAIRsharing.654931</terms:identifier>
         <terms:isReferencedBy rdf:resource="https://doi.org/10.25504/FAIRsharing.654931"/>
         <terms:isReferencedBy rdf:resource="https://doi.pangaea.de/10.1594/PANGAEA.957446"/>
@@ -180,12 +181,13 @@
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/ro"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-02</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-08</terms:modified>
         <terms:provenance xml:lang="en">Ontology edited with Protégé 5.6.9 and VSCodium, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification.</terms:provenance>
         <terms:publisher rdf:resource="https://ror.org/04xkqms46"/>
         <terms:relation rdf:resource="https://emso-eric.github.io/oso-ontology/"/>
         <terms:relation rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <terms:relation rdf:resource="https://w3id.org/earthsemantics/OSO/dcat"/>
+        <terms:rightsHolder rdf:resource="https://ror.org/04xkqms46"/>
         <terms:source rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <terms:spatial xml:lang="ro">Acoperire globală (cu accent pe mările europene)</terms:spatial>
         <terms:spatial xml:lang="pt">Cobertura global (com foco nos mares europeus)</terms:spatial>
@@ -218,16 +220,17 @@
         <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-04</pav:createdOn>
         <pav:createdWith rdf:resource="https://protege.stanford.edu/"/>
         <pav:createdWith rdf:resource="https://vscodium.com/"/>
-        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/0.17"/>
-        <pav:version>1.0.0</pav:version>
+        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
+        <pav:version>1.0.1</pav:version>
         <vann:example rdf:resource="https://w3id.org/earthsemantics/OSO#Site"/>
         <vann:preferredNamespacePrefix>OSO</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/earthsemantics/OSO#"/>
-        <void:classes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</void:classes>
+        <void:classes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</void:classes>
         <void:dataDump rdf:resource="https://w3id.org/earthsemantics/OSO.ttl"/>
         <void:exampleResource rdf:resource="https://w3id.org/earthsemantics/OSO#Azores"/>
-        <void:properties rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">209</void:properties>
-        <void:triples rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10987</void:triples>
+        <void:properties rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">212</void:properties>
+        <void:sparqlEndpoint rdf:resource="https://virtuoso.ifremer.fr/oso/sparql"/>
+        <void:triples rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11142</void:triples>
         <void:uriSpace>https://w3id.org/earthsemantics/OSO#</void:uriSpace>
         <schema:codeRepository rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <rdfs:comment xml:lang="no">Ontologi som beskriver forholdet mellom regionale fasiliteter, steder, plattformer, forskningsinfrastrukturer, organisasjoner, cruiser og de ansvarlige på hvert nivå.</rdfs:comment>
@@ -238,6 +241,7 @@
         <rdfs:comment xml:lang="en">Ontology describing the relationships between Regional Facilities, Sites, Platforms, Research Infrastructures, Organisations, Cruises, and the persons in charge of each level.</rdfs:comment>
         <rdfs:comment xml:lang="es">Ontología que describe las relaciones entre instalaciones regionales, emplazamientos, plataformas, infraestructuras de investigación, organizaciones, cruceros y las personas responsables de cada nivel.</rdfs:comment>
         <rdfs:comment xml:lang="el">Οντολογία που περιγράφει τις σχέσεις μεταξύ περιφερειακών υποδομών, τοποθεσιών, πλατφορμών, ερευνητικών υποδομών, οργανισμών, αποστολών και των υπευθύνων σε κάθε επίπεδο.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/earthsemantics/OSO"/>
         <rdfs:label xml:lang="en">Observatories of the Seas Ontology (OSO)</rdfs:label>
         <rdfs:label xml:lang="no">Ontologi for marine observatorier (OSO)</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia degli osservatori marini (OSO)</rdfs:label>
@@ -250,7 +254,9 @@
         <rdfs:seeAlso rdf:resource="https://fairsharing.org/FAIRsharing.654931"/>
         <rdfs:seeAlso rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <rdfs:seeAlso rdf:resource="https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO"/>
-        <versionInfo xml:lang="en">1.0.0 - First stable public release</versionInfo>
+        <backwardCompatibleWith rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
+        <priorVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
+        <versionInfo xml:lang="en">1.0.1 - Adding a SPARQL endpoint</versionInfo>
         <skos:altLabel>OSO</skos:altLabel>
         <skos:definition xml:lang="ro">Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016.</skos:definition>
         <skos:definition xml:lang="fr">Cette ontologie vise à décrire les observatoires sous-marins, en particulier ceux associés au réseau européen d&apos;observatoires multidisciplinaires des fonds marins et de la colonne d&apos;eau (EMSO), qui constitue un consortium européen d&apos;infrastructures de recherche (ERIC) depuis 2016.</skos:definition>
@@ -271,6 +277,7 @@
         <adms:identifier rdf:nodeID="genid2"/>
         <adms:representationTechnique>OWL 2 DL in Turtle syntax</adms:representationTechnique>
         <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+        <dcat:accessURL rdf:resource="https://virtuoso.ifremer.fr/oso/sparql"/>
         <dcat:contactPoint rdf:nodeID="genid3"/>
         <dcat:distribution rdf:nodeID="genid4"/>
         <dcat:keyword xml:lang="en">EMSO</dcat:keyword>
@@ -943,6 +950,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
     <!-- http://purl.org/dc/terms/source -->
 
 
@@ -1121,6 +1135,13 @@
     
 
 
+    <!-- http://rdfs.org/ns/void#sparqlEndpoint -->
+
+
+    <AnnotationProperty rdf:about="http://rdfs.org/ns/void#sparqlEndpoint"/>
+    
+
+
     <!-- http://rdfs.org/ns/void#triples -->
 
 
@@ -1163,9 +1184,6 @@
 
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
-        <rdfs:comment>The definition of the subject resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
-        <rdfs:label>isDefinedBy</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
@@ -1197,9 +1215,6 @@
 
 
     <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
-        <rdfs:comment>The annotation property that indicates that a given ontology is backward compatible with another ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>backwardCompatibleWith</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     </AnnotationProperty>
@@ -1249,9 +1264,6 @@
 
 
     <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
-        <rdfs:comment>The annotation property that indicates the predecessor ontology of a given ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>priorVersion</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     </AnnotationProperty>
@@ -6656,6 +6668,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <Class rdf:about="https://w3id.org/earthsemantics/OSO#ERIC">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <metadata:prefixIRI>omv:ERIC</metadata:prefixIRI>
+        <rdfs:comment xml:lang="en">A European Research Infrastructure Consortium established under the ERIC legal framework to support long-term scientific collaboration and shared research services.</rdfs:comment>
         <rdfs:label xml:lang="el">ERIC</rdfs:label>
         <rdfs:label xml:lang="en">ERIC</rdfs:label>
         <rdfs:label xml:lang="es">ERIC</rdfs:label>
@@ -6681,6 +6694,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <Class rdf:about="https://w3id.org/earthsemantics/OSO#ERICMembership">
+        <rdfs:comment xml:lang="en">A class representing the membership relationship between an organisation or national entity and a European Research Infrastructure Consortium (ERIC).</rdfs:comment>
         <rdfs:label xml:lang="ro">Apartenență la un ERIC</rdfs:label>
         <rdfs:label xml:lang="fr">Appartenance à un ERIC</rdfs:label>
         <rdfs:label xml:lang="it">Appartenenza a un ERIC</rdfs:label>
@@ -6707,7 +6721,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <Class rdf:about="https://w3id.org/earthsemantics/OSO#FundedProject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/earthsemantics/OSO#ResearchProject"/>
         <rdfs:comment xml:lang="en">A research project supported by dedicated financial funding from one or more organizations or funding bodies.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Et forskningsprosjekt støttet av dedikert finansiering fra en eller flere organisasjoner eller finansieringskilder.</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Um projeto de investigação apoiado por financiamento específico proveniente de uma ou mais organizações ou entidades financiadoras.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un progetto di ricerca sostenuto da finanziamenti dedicati provenienti da una o più organizzazioni o enti finanziatori.</rdfs:comment>
+        <rdfs:comment xml:lang="ro">Un proiect de cercetare susținut prin finanțare dedicată din partea uneia sau mai multor organizații sau organisme de finanțare.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Un projet de recherche soutenu par un financement dédié provenant d&apos;une ou plusieurs organisations ou agences de financement.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un proyecto de investigación respaldado por financiación específica de una o más organizaciones o entidades financiadoras.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Ένα ερευνητικό έργο που υποστηρίζεται από ειδική χρηματοδότηση από έναν ή περισσότερους οργανισμούς ή φορείς χρηματοδότησης.</rdfs:comment>
         <rdfs:label xml:lang="no">Finansiert prosjekt</rdfs:label>
         <rdfs:label xml:lang="en">Funded project</rdfs:label>
         <rdfs:label xml:lang="it">Progetto finanziato</rdfs:label>
@@ -6875,7 +6895,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <Class rdf:about="https://w3id.org/earthsemantics/OSO#ResearchProject">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:comment xml:lang="en">A structured scientific activity designed to produce new knowledge, data, or understanding within a defined scope and duration.</rdfs:comment>
+        <rdfs:comment xml:lang="no">En strukturert vitenskapelig aktivitet som har som mål å produsere ny kunnskap, data eller forståelse innenfor et definert omfang og tidsrom.</rdfs:comment>
+        <rdfs:comment xml:lang="ro">O activitate științifică structurată destinată să producă noi cunoștințe, date sau înțelegere într-un cadru și o durată definite.</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Uma atividade científica estruturada concebida para produzir novo conhecimento, dados ou compreensão dentro de um âmbito e duração definidos.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;attività scientifica strutturata progettata per produrre nuova conoscenza, dati o comprensione entro un ambito e una durata definiti.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una actividad científica estructurada destinada a producir nuevo conocimiento, datos o comprensión dentro de un alcance y una duración definidos.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Une activité scientifique structurée visant à produire de nouvelles connaissances, données ou compréhensions dans un périmètre et une durée définis.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Επιστημονική δραστηριότητα με σαφή δομή που αποσκοπεί στην παραγωγή νέας γνώσης, δεδομένων ή κατανόησης, εντός καθορισμένου πλαισίου και διάρκειας.</rdfs:comment>
         <rdfs:label xml:lang="no">Forskningsprosjekt</rdfs:label>
         <rdfs:label xml:lang="it">Progetto di ricerca</rdfs:label>
         <rdfs:label xml:lang="ro">Proiect de cercetare</rdfs:label>
@@ -8290,28 +8316,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
 
-    <NamedIndividual rdf:about="http://purl.org/dc/terms/rightsHolder">
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
-        <terms:description xml:lang="en">Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided.</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</terms:issued>
-        <rdfs:comment xml:lang="el">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="en">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="es">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="fr">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="it">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="no">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="pt">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="ro">A person or organization owning or managing rights over the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="el">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="en">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="es">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="fr">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="it">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="no">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="pt">Rights Holder</rdfs:label>
-        <rdfs:label xml:lang="ro">Rights Holder</rdfs:label>
-    </NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/rightsHolder"/>
     
 
 
@@ -8983,6 +8988,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png"/>
+    
+
+
     <!-- https://ror.org/00epmv149 -->
 
 
@@ -9220,6 +9232,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <NamedIndividual rdf:about="https://w3id.org/earthsemantics/OSO">
+        <foaf:depiction rdf:resource="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png"/>
         <foaf:homepage rdf:resource="https://emso-eric.github.io/oso-ontology/"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://w3id.org/earthsemantics/OSO"/>
         <foaf:page rdf:resource="https://earthportal.eu/ontologies/OSO"/>
@@ -17541,20 +17554,22 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
         <terms:identifier rdf:resource="https://w3id.org/earthsemantics/OSO"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-04</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-02</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-08</terms:modified>
         <terms:publisher rdf:resource="https://ror.org/04xkqms46"/>
         <terms:title xml:lang="en">Observatories of the Seas Ontology dataset</terms:title>
-        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/0.17"/>
-        <pav:version>1.0.0</pav:version>
+        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
+        <pav:version>1.0.1</pav:version>
+        <void:sparqlEndpoint rdf:resource="https://virtuoso.ifremer.fr/oso/sparql"/>
+        <dcat:accessURL rdf:resource="https://virtuoso.ifremer.fr/oso/sparql"/>
         <dcat:contactPoint rdf:nodeID="genid9"/>
         <dcat:distribution rdf:resource="https://w3id.org/earthsemantics/OSO.ttl"/>
         <dcat:landingPage rdf:resource="https://earthportal.eu/ontologies/OSO"/>
         <dcat:theme rdf:resource="https://data.earthportal.eu/categories/CLIMATE"/>
         <dcat:theme rdf:resource="https://data.earthportal.eu/categories/EARTH"/>
         <dcat:theme rdf:resource="https://data.earthportal.eu/categories/ENV"/>
-        <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-02</prov:generatedAtTime>
+        <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-08</prov:generatedAtTime>
         <prov:wasAttributedTo rdf:resource="https://ror.org/04xkqms46"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/earthsemantics/OSO/0.17"/>
+        <prov:wasDerivedFrom rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
     </NamedIndividual>
     <rdf:Description rdf:nodeID="genid9">
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
@@ -17614,10 +17629,37 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
         <rdfs:label xml:lang="en">Designed for Ontology Task</rdfs:label>
         <skos:prefLabel xml:lang="en">Designed for Ontology Task</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/rightsHolder">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:description xml:lang="en">Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</terms:issued>
+        <rdfs:comment xml:lang="el">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="es">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="no">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="pt">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="ro">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="el">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="en">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="es">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="fr">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="it">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="no">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="pt">Rights Holder</rdfs:label>
+        <rdfs:label xml:lang="ro">Rights Holder</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
         <rdfs:comment>A description of the subject resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
         <rdfs:label>comment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <rdfs:comment>The definition of the subject resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+        <rdfs:label>isDefinedBy</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:comment>A human-readable name for the subject.</rdfs:comment>
@@ -17628,6 +17670,16 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
         <rdfs:comment>Further information about the subject resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
         <rdfs:label>seeAlso</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
+        <rdfs:comment>The annotation property that indicates that a given ontology is backward compatible with another ontology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
+        <rdfs:label>backwardCompatibleWith</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+        <rdfs:comment>The annotation property that indicates the predecessor ontology of a given ontology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
+        <rdfs:label>priorVersion</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
         <rdfs:comment>The annotation property that provides version information for an ontology or another OWL construct.</rdfs:comment>
