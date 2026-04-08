@@ -7,7 +7,7 @@
 ## 🧾 Ontology Reference
 
 * **IRI**: https://w3id.org/earthsemantics/OSO
-* **Version**: 1.0.0
+* **Version**: 1.0.1
 * **License**: https://creativecommons.org/licenses/by/4.0/
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
@@ -45,11 +45,11 @@ This makes OSO suitable for integration in European and international marine dat
 
 ## 📂 Access
 
-* **Ontology IRI (persistent)**: https://w3id.org/earthsemantics/OSO
-* **Documentation (HTML)**: https://emso-eric.github.io/oso-ontology/
-* **WebVOWL visualisation**: https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO
-* **EarthPortal entry**: https://earthportal.eu/ontologies/OSO
-* **SPARQL endpoint (Virtuoso)**: coming soon
+* **Ontology IRI (persistent)**: [https://w3id.org/earthsemantics/OSO](https://w3id.org/earthsemantics/OSO)
+* **Documentation (HTML)**: [https://emso-eric.github.io/oso-ontology/](https://emso-eric.github.io/oso-ontology/)
+* **WebVOWL visualisation**: [https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO](https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO)
+* **EarthPortal entry**: [https://earthportal.eu/ontologies/OSO](https://earthportal.eu/ontologies/OSO)
+* **SPARQL endpoint (Virtuoso)**: [https://virtuoso.ifremer.fr/oso/sparql](https://virtuoso.ifremer.fr/oso/sparql)
 
 ---
 
@@ -111,15 +111,10 @@ OSO aims to:
 
 ---
 
-## ✨ Highlights of version 1.0.0
+## ✨ Highlights of version 1.0.1
 
-* First **stable release** of the ontology
-* Improved ontology metadata and FAIR compliance
-* Alignment with reference ontologies (**FOAF, DCAT, CERIF, PROV-O**)
-* Enriched multilingual metadata
-* Extended instances describing EMSO observatories and platforms
-* Improved provenance metadata and ontology documentation
-* Explicit documentation of the ontology engineering workflow
+* Adding a SPARQL Endpoint
+* Metadata improvement for EarthPortal
 
 ---
 
@@ -217,7 +212,7 @@ marine ontology, ocean observation ontology, marine observatories, research infr
 ## 📖 How to cite
 
 OSO – Observatories of the Seas Ontology
-Version 1.0.0
+Version 1.0.1
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
 
