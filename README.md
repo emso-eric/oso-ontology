@@ -12,6 +12,7 @@
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
 * **FAIRsharing DOI**: https://doi.org/10.25504/FAIRsharing.654931
+* **DOI (Zenodo)**: https://doi.org/10.5281/zenodo.19497913
 
 ---
 
