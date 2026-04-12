@@ -7,7 +7,7 @@
 ## 🧾 Ontology Reference
 
 * **IRI**: https://w3id.org/earthsemantics/OSO
-* **Version**: 1.0.1
+* **Version**: 1.0.2
 * **License**: https://creativecommons.org/licenses/by/4.0/
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
@@ -22,7 +22,7 @@ OSO is designed to describe **marine observatories and ocean observation systems
 
 **OSO (Observatories of the Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
-Version **1.0.1** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
+Version **1.0.2** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
 
 Not to be confused with [OpenScienceOntology (OSO)](https://gitlab.com/opensourcelab/scientificdata/ontologies/openscienceontology/data) or [Ontology for Scenario Orchestration (OSO)](https://scite.ai/reports/ontology-for-scenario-orchestration-oso-6kyllX).
 
@@ -112,10 +112,11 @@ OSO aims to:
 
 ---
 
-## ✨ Highlights of version 1.0.1
+## ✨ Highlights of version 1.0.2
 
-* Adding a SPARQL Endpoint
+* Add conceptual diagram
 * Metadata improvement for EarthPortal
+* FAIR metadata and resolvability
 
 ---
 
@@ -213,7 +214,7 @@ marine ontology, ocean observation ontology, marine observatories, research infr
 ## 📖 How to cite
 
 OSO – Observatories of the Seas Ontology
-Version 1.0.1
+Version 1.0.2
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
 
