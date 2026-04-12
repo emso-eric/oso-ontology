@@ -31,23 +31,24 @@
 @base <https://w3id.org/earthsemantics/OSO#> .
 
 <https://w3id.org/earthsemantics/OSO> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.1> ;
-    owl:backwardCompatibleWith <https://w3id.org/earthsemantics/OSO/1.0.0> ;
-    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.0> ;
-    owl:versionInfo "1.0.1 - Adding a SPARQL endpoint"@en ;
-    omv:version "1.0.1" ;
-    dcterms:hasVersion "1.0.1" ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.0> ;
-    pav:version "1.0.1" ;
-    dcterms:modified "2026-04-08"^^xsd:date ;
-    dcterms:bibliographicCitation "OSO – Observatories of the Seas Ontology (OSO). Version 1.0.1. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.2> ;
+    owl:backwardCompatibleWith <https://w3id.org/earthsemantics/OSO/1.0.1> , 
+                               <https://w3id.org/earthsemantics/OSO/1.0.0> ;
+    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.1> ;
+    owl:versionInfo "1.0.2 - Add OSO conceptual diagram"@en ;
+    omv:version "1.0.2" ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.2> ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.1> ;
+    pav:version "1.0.2" ;
+    dcterms:modified "2026-04-10"^^xsd:date ;
+    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.0.2. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
     owl:imports <http://www.w3.org/2000/01/rdf-schema#> ,
                 <http://www.w3.org/2002/07/owl#> ,
                 <http://www.w3.org/2004/02/skos/core#> ,
                 <http://xmlns.com/foaf/0.1/> ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     omv:acronym "OSO" ;
-    foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png> ;
+    foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png> ;
     omv:URI <https://w3id.org/earthsemantics/OSO> ;
     omv:resourceLocator <https://w3id.org/earthsemantics/OSO> ;
     omv:creationDate "2025-04-04"^^xsd:date ;
@@ -165,8 +166,10 @@
                                            "Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες"@el ;
     omv:usedOntologyEngineeringTool "Protégé 5.6.9" ,
                                     "VSCodium 1.92.2" ;
+    # Add LOV URL once OSO is indexed there
     omv:reference 
         <https://doi.org/10.25504/FAIRsharing.654931> ,
+        <https://doi.org/10.5281/zenodo.19497913> ,
         <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology> ,
         <https://github.com/emso-eric/oso-ontology> ,
         <https://earthportal.eu/ontologies/OSO> ;
@@ -201,11 +204,14 @@
                         "Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού. Να μην συγχέεται με το OpenScienceOntology (OSO)."@el ;
     dcterms:hasFormat <https://earthportal.eu/ontologies/OSO.ttl> ,
                       <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> ;
-    dcterms:identifier "10.25504/FAIRsharing.654931" ;
-    dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931> ,
-                           <https://doi.pangaea.de/10.1594/PANGAEA.957446> ,
+    dcterms:identifier <https://w3id.org/earthsemantics/OSO> ;
+    dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
+    dcterms:isReferencedBy <https://earthportal.eu/ontologies/OSO> ,
+                           <https://doi.org/10.25504/FAIRsharing.654931> ,
+                           <https://doi.org/10.5281/zenodo.19497913> ,
                            <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology> ,
                            <https://www.seanoe.org/data/00947/105929/> ,
+                           <https://doi.pangaea.de/10.1594/PANGAEA.957446> ,
                            <https://zenodo.org/records/10697877> ;
     dcterms:language <http://id.loc.gov/vocabulary/iso639-1/el> ,
                      <http://id.loc.gov/vocabulary/iso639-1/en> ,
@@ -221,11 +227,12 @@
     dcterms:rightsHolder <https://ror.org/04xkqms46> ;
     dcterms:relation <https://emso-eric.github.io/oso-ontology/> ,
                      <https://github.com/emso-eric/oso-ontology> ,
+                     <https://doi.org/10.5281/zenodo.19497913> ,
                      <https://w3id.org/earthsemantics/OSO/dcat> ;
-    foaf:page 
-        <https://emso-eric.github.io/oso-ontology/> ,
-        <https://github.com/emso-eric/oso-ontology> ,
-        <https://earthportal.eu/ontologies/OSO> ;
+    foaf:page <https://emso-eric.github.io/oso-ontology/> ,
+              <https://github.com/emso-eric/oso-ontology> ,
+              <https://earthportal.eu/ontologies/OSO> ,
+              <https://fairsharing.org/FAIRsharing.654931> ;
     foaf:homepage 
         <https://emso-eric.github.io/oso-ontology/> ;
     dcterms:source <https://github.com/emso-eric/oso-ontology> ;
@@ -269,6 +276,10 @@
     void:triples 11142 ;
     void:uriSpace "https://w3id.org/earthsemantics/OSO#" ;
     void:dataDump <https://w3id.org/earthsemantics/OSO.ttl> ;
+    # Add LOV catalog URL once available
+    schema:includedInDataCatalog <https://earthportal.eu/ontologies/OSO> ;
+    schema:sameAs <https://github.com/emso-eric/oso-ontology> ,
+                  <https://earthportal.eu/ontologies/OSO> ;
     schema:codeRepository <https://github.com/emso-eric/oso-ontology> ;
     rdfs:comment "Οντολογία που περιγράφει τις σχέσεις μεταξύ περιφερειακών υποδομών, τοποθεσιών, πλατφορμών, ερευνητικών υποδομών, οργανισμών, αποστολών και των υπευθύνων σε κάθε επίπεδο."@el ,
                  "Ontology describing the relationships between Regional Facilities, Sites, Platforms, Research Infrastructures, Organisations, Cruises, and the persons in charge of each level."@en ,
@@ -286,7 +297,8 @@
                "Ontología de los observatorios marinos (OSO)"@es ,
                "Ontologia dos observatórios marinhos (OSO)"@pt ,
                "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"@el ;
-    rdfs:seeAlso <https://emso-eric.github.io/oso-ontology/> ,
+    rdfs:seeAlso <https://doi.org/10.5281/zenodo.19497913> ,
+                 <https://emso-eric.github.io/oso-ontology/> ,
                  <https://fairsharing.org/FAIRsharing.654931> ,
                  <https://github.com/emso-eric/oso-ontology> ,
                  <https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO> ;
@@ -330,8 +342,8 @@
       dcat:downloadURL <https://w3id.org/earthsemantics/OSO.ttl> ;
       dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
       dcterms:format "text/turtle" ;
-      rdfs:label "OSO Turtle file (EarthPortal)"@en ;
-      rdfs:comment "Official distribution via EarthPortal"@en
+      rdfs:label "OSO Turtle serialization"@en ;
+      rdfs:comment "Official Turtle distribution of OSO"@en
     ] ;
     prov:wasGeneratedBy OSO:OntologyEngineeringWorkflow .
 
@@ -345,9 +357,10 @@
 # DCAT/VoID dataset description for OSO (supports FAIR F4 and R1)
 <https://w3id.org/earthsemantics/OSO/dataset>
     rdf:type void:Dataset , dcat:Dataset ;
-    pav:version "1.0.1" ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.0> ;
-    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.0> ;
+    pav:version "1.0.2" ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.1> ,
+                        <https://doi.org/10.5281/zenodo.19497913> ;
+    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.1> ;
     prov:generatedAtTime "2026-04-08"^^xsd:date ;
     prov:wasAttributedTo <https://ror.org/04xkqms46> ;
     dcterms:title "Observatories of the Seas Ontology dataset"@en ;
@@ -356,7 +369,7 @@
     dcterms:publisher <https://ror.org/04xkqms46> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:issued "2025-04-04"^^xsd:date ;
-    dcterms:modified "2026-04-08"^^xsd:date ;
+    dcterms:modified "2026-04-10"^^xsd:date ;
     dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
     void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/sparql> ;
     dcat:accessURL <https://virtuoso.ifremer.fr/oso/sparql> ;
