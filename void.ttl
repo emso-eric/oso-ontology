@@ -26,7 +26,7 @@
         <https://ror.org/04xkqms46> ;
     dcterms:publisher <https://ror.org/04xkqms46> ;
     dcterms:issued "2025-04-04"^^xsd:date ;
-    dcterms:modified "2026-04-08"^^xsd:date ;
+    dcterms:modified "2026-04-10"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:identifier <https://w3id.org/earthsemantics/OSO> ;
     dcterms:language
@@ -38,8 +38,8 @@
         "ro"^^xsd:language ,
         "el"^^xsd:language ,
         "no"^^xsd:language ;
-    owl:versionInfo "1.0.1" ;
-    dcterms:hasVersion "1.0.1" ;
+    owl:versionInfo "1.0.2" ;
+    dcterms:hasVersion "1.0.2" ;
     foaf:page <https://w3id.org/earthsemantics/OSO> ;
     foaf:homepage <https://github.com/emso-eric/oso-ontology> ;
     void:dataDump <https://earthportal.eu/ontologies/OSO.ttl> ;
