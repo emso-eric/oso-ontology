@@ -108,6 +108,7 @@
         <ontology:ontologyPurpose xml:lang="fr">Décrire la structure et les composants clés des observatoires marins afin d&apos;améliorer la gestion, l&apos;interopérabilité et la réutilisation des données, notamment dans le cadre de l&apos;infrastructure de recherche EMSO.</ontology:ontologyPurpose>
         <ontology:ontologyPurpose xml:lang="el">Περιγραφή της δομής και των βασικών στοιχείων των θαλάσσιων παρατηρητηρίων για τη βελτίωση της διαχείρισης δεδομένων, της διαλειτουργικότητας και της επαναχρησιμοποίησης, ιδιαίτερα στο πλαίσιο της υποδομής EMSO.</ontology:ontologyPurpose>
         <ontology:reference rdf:resource="https://doi.org/10.25504/FAIRsharing.654931"/>
+        <ontology:reference rdf:resource="https://doi.org/10.5281/zenodo.19497913"/>
         <ontology:reference rdf:resource="https://earthportal.eu/ontologies/OSO"/>
         <ontology:reference rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <ontology:reference rdf:resource="https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology"/>
@@ -127,7 +128,7 @@
         <ontology:usedOntologyEngineeringMethodology xml:lang="el">Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες</ontology:usedOntologyEngineeringMethodology>
         <ontology:usedOntologyEngineeringTool>Protégé 5.6.9</ontology:usedOntologyEngineeringTool>
         <ontology:usedOntologyEngineeringTool>VSCodium 1.92.2</ontology:usedOntologyEngineeringTool>
-        <ontology:version>1.0.1</ontology:version>
+        <ontology:version>1.0.2</ontology:version>
         <terms:abstract xml:lang="pt">A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC.</terms:abstract>
         <terms:abstract xml:lang="it">L&apos;ontologia OSO struttura gli osservatori marini in tre livelli gerarchici: infrastrutture regionali, siti e piattaforme. Supporta la gestione FAIR dei dati, l&apos;interoperabilità e l&apos;integrazione delle informazioni sulle infrastrutture marine, in particolare nel contesto EMSO ERIC.</terms:abstract>
         <terms:abstract xml:lang="fr">L&apos;ontologie OSO structure les observatoires marins en trois niveaux hiérarchiques : infrastructures régionales, sites et plateformes. Elle soutient la gestion FAIR des données, l&apos;interopérabilité et l&apos;intégration des informations sur les infrastructures marines, notamment dans le cadre d&apos;EMSO ERIC.</terms:abstract>
@@ -136,7 +137,7 @@
         <terms:abstract xml:lang="ro">Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC.</terms:abstract>
         <terms:abstract xml:lang="en">The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework.</terms:abstract>
         <terms:abstract xml:lang="el">Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC.</terms:abstract>
-        <terms:bibliographicCitation xml:lang="en">OSO – Observatories of the Seas Ontology (OSO). Version 1.0.1. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">Observatories of the Seas Ontology (OSO), version 1.0.2. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931.</terms:bibliographicCitation>
         <terms:conformsTo rdf:resource="https://semver.org/"/>
         <terms:conformsTo rdf:resource="https://www.conventionalcommits.org/"/>
         <terms:conformsTo rdf:resource="https://www.w3.org/TR/owl2-overview/"/>
@@ -165,10 +166,13 @@
         <terms:description xml:lang="el">Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού. Να μην συγχέεται με το OpenScienceOntology (OSO).</terms:description>
         <terms:hasFormat rdf:resource="https://earthportal.eu/ontologies/OSO.ttl"/>
         <terms:hasFormat rdf:resource="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl"/>
-        <terms:hasVersion>1.0.1</terms:hasVersion>
-        <terms:identifier>10.25504/FAIRsharing.654931</terms:identifier>
+        <terms:hasVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.2"/>
+        <terms:identifier rdf:resource="https://w3id.org/earthsemantics/OSO"/>
+        <terms:isDescribedBy rdf:resource="https://doi.org/10.25504/FAIRsharing.654931"/>
         <terms:isReferencedBy rdf:resource="https://doi.org/10.25504/FAIRsharing.654931"/>
+        <terms:isReferencedBy rdf:resource="https://doi.org/10.5281/zenodo.19497913"/>
         <terms:isReferencedBy rdf:resource="https://doi.pangaea.de/10.1594/PANGAEA.957446"/>
+        <terms:isReferencedBy rdf:resource="https://earthportal.eu/ontologies/OSO"/>
         <terms:isReferencedBy rdf:resource="https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology"/>
         <terms:isReferencedBy rdf:resource="https://www.seanoe.org/data/00947/105929/"/>
         <terms:isReferencedBy rdf:resource="https://zenodo.org/records/10697877"/>
@@ -181,9 +185,10 @@
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/ro"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-08</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-10</terms:modified>
         <terms:provenance xml:lang="en">Ontology edited with Protégé 5.6.9 and VSCodium, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification.</terms:provenance>
         <terms:publisher rdf:resource="https://ror.org/04xkqms46"/>
+        <terms:relation rdf:resource="https://doi.org/10.5281/zenodo.19497913"/>
         <terms:relation rdf:resource="https://emso-eric.github.io/oso-ontology/"/>
         <terms:relation rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <terms:relation rdf:resource="https://w3id.org/earthsemantics/OSO/dcat"/>
@@ -220,8 +225,8 @@
         <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-04</pav:createdOn>
         <pav:createdWith rdf:resource="https://protege.stanford.edu/"/>
         <pav:createdWith rdf:resource="https://vscodium.com/"/>
-        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
-        <pav:version>1.0.1</pav:version>
+        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.1"/>
+        <pav:version>1.0.2</pav:version>
         <vann:example rdf:resource="https://w3id.org/earthsemantics/OSO#Site"/>
         <vann:preferredNamespacePrefix>OSO</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/earthsemantics/OSO#"/>
@@ -233,6 +238,9 @@
         <void:triples rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11142</void:triples>
         <void:uriSpace>https://w3id.org/earthsemantics/OSO#</void:uriSpace>
         <schema:codeRepository rdf:resource="https://github.com/emso-eric/oso-ontology"/>
+        <schema:includedInDataCatalog rdf:resource="https://earthportal.eu/ontologies/OSO"/>
+        <schema:sameAs rdf:resource="https://earthportal.eu/ontologies/OSO"/>
+        <schema:sameAs rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <rdfs:comment xml:lang="no">Ontologi som beskriver forholdet mellom regionale fasiliteter, steder, plattformer, forskningsinfrastrukturer, organisasjoner, cruiser og de ansvarlige på hvert nivå.</rdfs:comment>
         <rdfs:comment xml:lang="it">Ontologia che descrive le relazioni tra strutture regionali, siti, piattaforme, infrastrutture di ricerca, organizzazioni, crociere e i responsabili di ciascun livello.</rdfs:comment>
         <rdfs:comment xml:lang="pt">Ontologia que descreve as relações entre instalações regionais, locais, plataformas, infraestruturas de investigação, organizações, cruzeiros e os responsáveis por cada nível.</rdfs:comment>
@@ -250,13 +258,15 @@
         <rdfs:label xml:lang="fr">Ontologie des observatoires marins (OSO)</rdfs:label>
         <rdfs:label xml:lang="es">Ontología de los observatorios marinos (OSO)</rdfs:label>
         <rdfs:label xml:lang="el">Οντολογία θαλάσσιων παρατηρητηρίων (OSO)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.5281/zenodo.19497913"/>
         <rdfs:seeAlso rdf:resource="https://emso-eric.github.io/oso-ontology/"/>
         <rdfs:seeAlso rdf:resource="https://fairsharing.org/FAIRsharing.654931"/>
         <rdfs:seeAlso rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <rdfs:seeAlso rdf:resource="https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO"/>
         <backwardCompatibleWith rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
-        <priorVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
-        <versionInfo xml:lang="en">1.0.1 - Adding a SPARQL endpoint</versionInfo>
+        <backwardCompatibleWith rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.1"/>
+        <priorVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.1"/>
+        <versionInfo xml:lang="en">1.0.2 - Add OSO conceptual diagram</versionInfo>
         <skos:altLabel>OSO</skos:altLabel>
         <skos:definition xml:lang="ro">Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016.</skos:definition>
         <skos:definition xml:lang="fr">Cette ontologie vise à décrire les observatoires sous-marins, en particulier ceux associés au réseau européen d&apos;observatoires multidisciplinaires des fonds marins et de la colonne d&apos;eau (EMSO), qui constitue un consortium européen d&apos;infrastructures de recherche (ERIC) depuis 2016.</skos:definition>
@@ -313,8 +323,8 @@
     <rdf:Description rdf:nodeID="genid4">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <terms:format>text/turtle</terms:format>
-        <rdfs:comment xml:lang="en">Official distribution via EarthPortal</rdfs:comment>
-        <rdfs:label xml:lang="en">OSO Turtle file (EarthPortal)</rdfs:label>
+        <rdfs:comment xml:lang="en">Official Turtle distribution of OSO</rdfs:comment>
+        <rdfs:label xml:lang="en">OSO Turtle serialization</rdfs:label>
         <dcat:accessURL rdf:resource="https://w3id.org/earthsemantics/OSO.ttl"/>
         <dcat:downloadURL rdf:resource="https://w3id.org/earthsemantics/OSO.ttl"/>
         <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/turtle"/>
@@ -781,6 +791,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/isDescribedBy -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isDescribedBy"/>
+    
+
+
     <!-- http://purl.org/dc/terms/isFormatOf -->
 
 
@@ -1160,6 +1177,20 @@
 
 
     <AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
+    
+
+
+    <!-- http://schema.org/includedInDataCatalog -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/includedInDataCatalog"/>
+    
+
+
+    <!-- http://schema.org/sameAs -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/sameAs"/>
     
 
 
@@ -8676,6 +8707,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://fairsharing.org/FAIRsharing.654931 -->
+
+
+    <NamedIndividual rdf:about="https://fairsharing.org/FAIRsharing.654931"/>
+    
+
+
     <!-- https://github.com/emso-eric/oso-ontology -->
 
 
@@ -8988,10 +9026,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png -->
+    <!-- https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png -->
 
 
-    <NamedIndividual rdf:about="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png"/>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png"/>
     
 
 
@@ -9232,11 +9270,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <NamedIndividual rdf:about="https://w3id.org/earthsemantics/OSO">
-        <foaf:depiction rdf:resource="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso.png"/>
+        <foaf:depiction rdf:resource="https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png"/>
         <foaf:homepage rdf:resource="https://emso-eric.github.io/oso-ontology/"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://w3id.org/earthsemantics/OSO"/>
         <foaf:page rdf:resource="https://earthportal.eu/ontologies/OSO"/>
         <foaf:page rdf:resource="https://emso-eric.github.io/oso-ontology/"/>
+        <foaf:page rdf:resource="https://fairsharing.org/FAIRsharing.654931"/>
         <foaf:page rdf:resource="https://github.com/emso-eric/oso-ontology"/>
         <foaf:page rdf:resource="https://w3id.org/earthsemantics/OSO_DCAT"/>
     </NamedIndividual>
@@ -17554,11 +17593,12 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
         <terms:identifier rdf:resource="https://w3id.org/earthsemantics/OSO"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-04</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-08</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-10</terms:modified>
         <terms:publisher rdf:resource="https://ror.org/04xkqms46"/>
         <terms:title xml:lang="en">Observatories of the Seas Ontology dataset</terms:title>
-        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
-        <pav:version>1.0.1</pav:version>
+        <pav:previousVersion rdf:resource="https://doi.org/10.5281/zenodo.19497913"/>
+        <pav:previousVersion rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.1"/>
+        <pav:version>1.0.2</pav:version>
         <void:sparqlEndpoint rdf:resource="https://virtuoso.ifremer.fr/oso/sparql"/>
         <dcat:accessURL rdf:resource="https://virtuoso.ifremer.fr/oso/sparql"/>
         <dcat:contactPoint rdf:nodeID="genid9"/>
@@ -17569,7 +17609,7 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
         <dcat:theme rdf:resource="https://data.earthportal.eu/categories/ENV"/>
         <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-08</prov:generatedAtTime>
         <prov:wasAttributedTo rdf:resource="https://ror.org/04xkqms46"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.0"/>
+        <prov:wasDerivedFrom rdf:resource="https://w3id.org/earthsemantics/OSO/1.0.1"/>
     </NamedIndividual>
     <rdf:Description rdf:nodeID="genid9">
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
