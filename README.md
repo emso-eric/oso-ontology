@@ -7,7 +7,7 @@
 ## 🧾 Ontology Reference
 
 * **IRI**: https://w3id.org/earthsemantics/OSO
-* **Version**: 1.0.2
+* **Version**: 1.0.3
 * **License**: https://creativecommons.org/licenses/by/4.0/
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
@@ -112,11 +112,11 @@ OSO aims to:
 
 ---
 
-## ✨ Highlights of version 1.0.2
+## ✨ Highlights of version 1.0.3
 
-* Add conceptual diagram
-* Metadata improvement for EarthPortal
-* FAIR metadata and resolvability
+* Metadata cleanup
+* FAIR improvements
+* Publication fixes
 
 ---
 
@@ -157,7 +157,7 @@ RegionalFacility
 | `dcterms:`            | Metadata                 |
 | `foaf:`               | Organisations & persons  |
 | `schema:`             | Web interoperability     |
-| `geo:` / `wgs84_pos:` | Geospatial               |
+| `geosparql:`          | Geospatial               |
 | `sosa:` / `ssn:`      | Sensors & observations   |
 | `prov:`               | Provenance               |
 | `cerif:`              | Research infrastructures |
@@ -174,7 +174,7 @@ OSO follows **Semantic Versioning (SemVer)**:
 | MINOR | extensions       |
 | PATCH | fixes            |
 
-Example: `0.17 → 1.0.0`
+Example: `1.0.2 → 1.0.3`
 
 ---
 
@@ -214,7 +214,7 @@ marine ontology, ocean observation ontology, marine observatories, research infr
 ## 📖 How to cite
 
 OSO – Observatories of the Seas Ontology
-Version 1.0.2
+Version 1.0.3
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
 
