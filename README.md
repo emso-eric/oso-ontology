@@ -2,12 +2,12 @@
 
 # Observatories of the Seas Ontology (OSO)
 
-**OSO is a FAIR ontology for marine observatories, ocean observation systems, and marine research infrastructures (EMSO, Argo).**
+**OSO is a FAIR and interoperable ontology for marine observatories, ocean observation systems, and marine research infrastructures (EMSO, Argo, and related infrastructures).**
 
 ## 🧾 Ontology Reference
 
 * **IRI**: https://w3id.org/earthsemantics/OSO
-* **Version**: 1.0.3
+* **Version**: 1.0.4
 * **License**: https://creativecommons.org/licenses/by/4.0/
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
@@ -22,7 +22,8 @@ OSO is designed to describe **marine observatories and ocean observation systems
 
 **OSO (Observatories of the Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
-Version **1.0.3** represents the **first stable release** of the ontology, consolidating previous developments and improving FAIR metadata, semantic interoperability, and alignment with reference ontologies.
+Version 1.0.4 further improves FAIR metadata, semantic interoperability,
+ontology engineering metadata, and machine-readable accessibility.
 
 Not to be confused with [OpenScienceOntology (OSO)](https://gitlab.com/opensourcelab/scientificdata/ontologies/openscienceontology/data) or [Ontology for Scenario Orchestration (OSO)](https://scite.ai/reports/ontology-for-scenario-orchestration-oso-6kyllX).
 
@@ -48,6 +49,7 @@ This makes OSO suitable for integration in European and international marine dat
 
 * **Ontology IRI (persistent)**: [https://w3id.org/earthsemantics/OSO](https://w3id.org/earthsemantics/OSO)
 * **Documentation (HTML)**: [https://emso-eric.github.io/oso-ontology/](https://emso-eric.github.io/oso-ontology/)
+* **LOV entry**: [https://lov.linkeddata.es/dataset/lov/vocabs/oso](https://lov.linkeddata.es/dataset/lov/vocabs/oso)
 * **WebVOWL visualisation**: [https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO](https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO)
 * **EarthPortal entry**: [https://earthportal.eu/ontologies/OSO](https://earthportal.eu/ontologies/OSO)
 * **SPARQL endpoint (Virtuoso)**: [https://virtuoso.ifremer.fr/oso/sparql](https://virtuoso.ifremer.fr/oso/sparql)
@@ -86,15 +88,15 @@ The ontology is available in machine-readable formats:
 
 ## 🔎 Knowledge Graph Access
 
-OSO will soon be available through a public **SPARQL endpoint** backed by a **Virtuoso triplestore**.
+OSO is accessible through a public SPARQL endpoint backed by Virtuoso.
 
-This service will allow users to:
+The endpoint provides:
 
 * query the ontology and its instances using SPARQL
 * explore relationships between observatories, sites, platforms and projects
 * integrate OSO within semantic data infrastructures
 
-The endpoint URL will be announced in a future release.
+See [https://virtuoso.ifremer.fr/oso/](https://virtuoso.ifremer.fr/oso/)
 
 ---
 
@@ -112,11 +114,30 @@ OSO aims to:
 
 ---
 
-## ✨ Highlights of version 1.0.3
+## ✨ Highlights of version 1.0.4
 
-* Metadata cleanup
-* FAIR improvements
-* Publication fixes
+* Improved FAIR metadata
+* Improved ontology engineering metadata
+* LOV indexing support
+* Enhanced semantic alignments
+* Improved organisation identifiers (ROR / EDMO)
+* Improved DCAT and VoID descriptions
+* Enhanced multilingual metadata
+* OWL reasoning support
+* Improved machine-readable distributions
+* Public SPARQL endpoint integration
+
+---
+
+## 📊 Metrics (v1.0.4)
+
+| Metric | Value |
+|---|---:|
+| Classes | 60 |
+| Properties | 175 |
+| Individuals | 575 |
+| RDF triples | 9406 |
+| OWL axioms | 17934 |
 
 ---
 
@@ -214,7 +235,7 @@ marine ontology, ocean observation ontology, marine observatories, research infr
 ## 📖 How to cite
 
 OSO – Observatories of the Seas Ontology
-Version 1.0.3
+Version 1.0.4
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
 
