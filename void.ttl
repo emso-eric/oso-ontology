@@ -36,7 +36,7 @@
         <https://ror.org/04xkqms46> ;
     dcterms:publisher <https://ror.org/04xkqms46> ;
     dcterms:issued "2025-04-04"^^xsd:date ;
-    dcterms:modified "2026-04-18"^^xsd:date ;
+    dcterms:modified "2026-05-09"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:identifier <https://w3id.org/earthsemantics/OSO> ;
     dcterms:language
@@ -48,12 +48,12 @@
         "ro"^^xsd:language ,
         "el"^^xsd:language ,
         "no"^^xsd:language ;
-    owl:versionInfo "1.0.3" ;
-    dcterms:hasVersion "1.0.3" ;
-    pav:version "1.0.3" ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.2> ;
-    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.2> ;
-    prov:generatedAtTime "2026-04-18"^^xsd:date ;
+    owl:versionInfo "1.0.4" ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
+    pav:version "1.0.4" ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.3> ;
+    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.3> ;
+    prov:generatedAtTime "2026-05-09"^^xsd:date ;
     prov:wasAttributedTo <https://ror.org/04xkqms46> ;
     foaf:page <https://w3id.org/earthsemantics/OSO> ;
     foaf:homepage <https://github.com/emso-eric/oso-ontology> ;
@@ -63,11 +63,15 @@
     void:dataDump <https://earthportal.eu/ontologies/OSO.ttl> ;
     dcat:distribution <https://earthportal.eu/ontologies/OSO.ttl> ;
     void:exampleResource <https://w3id.org/earthsemantics/OSO#Azores> ;
-    void:triples 8073 ;
-    void:classes 13 ;
-    void:properties 52 ;
-    void:entities 323 ;
+    void:triples 9406 ;
+    void:classes 60 ;
+    void:properties 175 ;
+    void:entities 575 ;
     void:uriSpace "https://w3id.org/earthsemantics/OSO#" ;
+    schema:includedInDataCatalog
+        <https://earthportal.eu/ontologies/OSO> ,
+        <https://fairsharing.org/FAIRsharing.654931> ,
+        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
     void:vocabulary
         <https://w3id.org/earthsemantics/OSO> ,
         <http://www.w3.org/2002/07/owl#> ,
