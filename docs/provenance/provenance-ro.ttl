@@ -6,11 +6,13 @@
 	 dc:title "Ontologia observatoarelor marine (OSO)";
 	 prov:wasAttributedTo <https://orcid.org/0009-0008-1759-5254>;
 	 dc:creator <https://orcid.org/0009-0008-1759-5254>;
+	 prov:wasAttributedTo <https://ror.org/02feahw73>;
+	 dc:creator <https://ror.org/02feahw73>;
 	 prov:wasAttributedTo <https://orcid.org/0009-0008-1759-5254>;
 	 dc:creator <https://orcid.org/0009-0008-1759-5254>;
 	 prov:wasAttributedTo <https://w3id.org/earthsemantics/OSO#EMSO_DMSG>;
 	 dc:contributor <https://w3id.org/earthsemantics/OSO#EMSO_DMSG>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/1.0.2>;
+	 prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/1.0.3>;
 	 prov:wasGeneratedAt "2025-04-04";
 .
