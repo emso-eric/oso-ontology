@@ -7,7 +7,7 @@
 ## 🧾 Ontology Reference
 
 * **IRI**: https://w3id.org/earthsemantics/OSO
-* **Version**: 1.0.4
+* **Version**: 1.0.5
 * **License**: https://creativecommons.org/licenses/by/4.0/
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
@@ -22,8 +22,9 @@ OSO is designed to describe **marine observatories and ocean observation systems
 
 **OSO (Observatories of the Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
-Version 1.0.4 further improves FAIR metadata, semantic interoperability,
-ontology engineering metadata, and machine-readable accessibility.
+Version 1.0.5 further improves FAIR metadata, provenance information,
+ontology engineering metadata, semantic interoperability,
+machine-readable accessibility, and FAIR assessment compatibility.
 
 Not to be confused with [OpenScienceOntology (OSO)](https://gitlab.com/opensourcelab/scientificdata/ontologies/openscienceontology/data) or [Ontology for Scenario Orchestration (OSO)](https://scite.ai/reports/ontology-for-scenario-orchestration-oso-6kyllX).
 
@@ -114,18 +115,18 @@ OSO aims to:
 
 ---
 
-## ✨ Highlights of version 1.0.4
+## ✨ Highlights of version 1.0.5
 
-* Improved FAIR metadata
-* Improved ontology engineering metadata
-* LOV indexing support
-* Enhanced semantic alignments
-* Improved organisation identifiers (ROR / EDMO)
-* Improved DCAT and VoID descriptions
-* Enhanced multilingual metadata
-* OWL reasoning support
-* Improved machine-readable distributions
+* Improved FAIR metadata and provenance information
+* Enhanced ontology engineering methodology metadata
+* Improved compatibility with O’FAIRe FAIR assessment
+* Extended DCAT and VoID metadata descriptions
+* Improved machine-readable ontology distributions
+* Enhanced semantic interoperability
+* Improved multilingual metadata coverage
 * Public SPARQL endpoint integration
+* LOV indexing support
+* Improved persistent identifiers and versioning metadata
 
 ---
 
@@ -235,9 +236,28 @@ marine ontology, ocean observation ontology, marine observatories, research infr
 ## 📖 How to cite
 
 OSO – Observatories of the Seas Ontology
-Version 1.0.4
+Version 1.0.5
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
+
+---
+
+## 🌐 FAIR & Semantic Web Integration
+
+OSO is designed to be fully interoperable within the Semantic Web ecosystem.
+
+The ontology provides:
+
+* persistent IRIs via w3id
+* machine-readable RDF serialisations
+* SPARQL query access
+* DCAT and VoID descriptions
+* FAIRsharing and LOV indexing
+* multilingual metadata
+* provenance and versioning metadata
+* semantic alignments with external ontologies and registries
+
+OSO follows FAIR and Linked Open Data best practices.
 
 ---
 
