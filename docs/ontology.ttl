@@ -305,14 +305,14 @@
                                                           <https://w3id.org/earthsemantics/OSO/1.0.3> ,
                                                           <https://w3id.org/earthsemantics/OSO/1.0.4> ;
                                owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
-                               owl:versionInfo "1.0.5 – xxx"@el ,
-                                               "1.0.5 – xxx"@en ,
-                                               "1.0.5 – xxx"@es ,
-                                               "1.0.5 – xxx"@fr ,
-                                               "1.0.5 – xxx"@it ,
-                                               "1.0.5 – xxx"@no ,
-                                               "1.0.5 – xxx"@pt ,
-                                               "1.0.5 – xxx"@ro ;
+                               owl:versionInfo "1.0.5 – amélioration des métadonnées FAIR, des informations de provenance et des métadonnées d’ingénierie ontologique"@fr ,
+                                               "1.0.5 – forbedring av FAIR-metadata, proveniensinformasjon og metadata for ontologiutvikling"@no ,
+                                               "1.0.5 – improved FAIR metadata, provenance information, and ontology engineering metadata"@en ,
+                                               "1.0.5 – mejora de los metadatos FAIR, de la información de procedencia y de los metadatos de ingeniería ontológica"@es ,
+                                               "1.0.5 – melhoria dos metadados FAIR, das informações de proveniência e dos metadados de engenharia ontológica"@pt ,
+                                               "1.0.5 – miglioramento dei metadati FAIR, delle informazioni di provenienza e dei metadati di ingegneria ontologica"@it ,
+                                               "1.0.5 – îmbunătățirea metadatelor FAIR, a informațiilor de proveniență și a metadatelor de inginerie ontologică"@ro ,
+                                               "1.0.5 – βελτίωση των μεταδεδομένων FAIR, των πληροφοριών προέλευσης και των μεταδεδομένων οντολογικής μηχανικής"@el ;
                                <http://www.w3.org/2004/02/skos/core#altLabel> "Open Seas Observatories"@en ,
                                                                               "OSO" ;
                                <http://www.w3.org/2004/02/skos/core#definition> "Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016."@ro ,

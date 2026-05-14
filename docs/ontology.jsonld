@@ -1543,29 +1543,29 @@
     "@id" : "https://w3id.org/earthsemantics/OSO/1.0.4"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "el",
-    "@value" : "1.0.5 – xxx"
-  }, {
-    "@language" : "en",
-    "@value" : "1.0.5 – xxx"
-  }, {
-    "@language" : "es",
-    "@value" : "1.0.5 – xxx"
-  }, {
     "@language" : "fr",
-    "@value" : "1.0.5 – xxx"
-  }, {
-    "@language" : "it",
-    "@value" : "1.0.5 – xxx"
+    "@value" : "1.0.5 – amélioration des métadonnées FAIR, des informations de provenance et des métadonnées d’ingénierie ontologique"
   }, {
     "@language" : "no",
-    "@value" : "1.0.5 – xxx"
+    "@value" : "1.0.5 – forbedring av FAIR-metadata, proveniensinformasjon og metadata for ontologiutvikling"
+  }, {
+    "@language" : "en",
+    "@value" : "1.0.5 – improved FAIR metadata, provenance information, and ontology engineering metadata"
+  }, {
+    "@language" : "es",
+    "@value" : "1.0.5 – mejora de los metadatos FAIR, de la información de procedencia y de los metadatos de ingeniería ontológica"
   }, {
     "@language" : "pt",
-    "@value" : "1.0.5 – xxx"
+    "@value" : "1.0.5 – melhoria dos metadados FAIR, das informações de proveniência e dos metadados de engenharia ontológica"
+  }, {
+    "@language" : "it",
+    "@value" : "1.0.5 – miglioramento dei metadati FAIR, delle informazioni di provenienza e dei metadati di ingegneria ontologica"
   }, {
     "@language" : "ro",
-    "@value" : "1.0.5 – xxx"
+    "@value" : "1.0.5 – îmbunătățirea metadatelor FAIR, a informațiilor de proveniență și a metadatelor de inginerie ontologică"
+  }, {
+    "@language" : "el",
+    "@value" : "1.0.5 – βελτίωση των μεταδεδομένων FAIR, των πληροφοριών προέλευσης και των μεταδεδομένων οντολογικής μηχανικής"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",

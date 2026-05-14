@@ -297,14 +297,14 @@
 <http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://w3id.org/earthsemantics/OSO/1.0.3> .
 <http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://w3id.org/earthsemantics/OSO/1.0.4> .
 <http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/earthsemantics/OSO/1.0.4> .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@el .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@en .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@es .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@fr .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@it .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@no .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@pt .
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – xxx"@ro .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – amélioration des métadonnées FAIR, des informations de provenance et des métadonnées d’ingénierie ontologique"@fr .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – forbedring av FAIR-metadata, proveniensinformasjon og metadata for ontologiutvikling"@no .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – improved FAIR metadata, provenance information, and ontology engineering metadata"@en .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – mejora de los metadatos FAIR, de la información de procedencia y de los metadatos de ingeniería ontológica"@es .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – melhoria dos metadados FAIR, das informações de proveniência e dos metadados de engenharia ontológica"@pt .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – miglioramento dei metadati FAIR, delle informazioni di provenienza e dei metadati di ingegneria ontologica"@it .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – îmbunătățirea metadatelor FAIR, a informațiilor de proveniență și a metadatelor de inginerie ontologică"@ro .
+<http://www.w3.org/ns/prov-o> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.5 – βελτίωση των μεταδεδομένων FAIR, των πληροφοριών προέλευσης και των μεταδεδομένων οντολογικής μηχανικής"@el .
 <http://www.w3.org/ns/prov-o> <http://www.w3.org/2004/02/skos/core#altLabel> "Open Seas Observatories"@en .
 <http://www.w3.org/ns/prov-o> <http://www.w3.org/2004/02/skos/core#altLabel> "OSO" .
 <http://www.w3.org/ns/prov-o> <http://www.w3.org/2004/02/skos/core#definition> "Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016."@ro .
