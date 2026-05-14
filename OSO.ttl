@@ -1,6 +1,6 @@
 # OBSERVATORIES OF THE SEAS ONTOLOGY (OSO)
-# Version: 1.0.4
-# Release date: 2026-05-09
+# Version: 1.0.5
+# Release date: 2026-05-14
 # Persistent IRI: https://w3id.org/earthsemantics/OSO
 
 @base <https://w3id.org/earthsemantics/OSO#> .
@@ -39,28 +39,29 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/earthsemantics/OSO> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.4> ;
-    owl:backwardCompatibleWith <https://w3id.org/earthsemantics/OSO/1.0.3> ,
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.5> ;
+    owl:backwardCompatibleWith <https://w3id.org/earthsemantics/OSO/1.0.4> ,
+                               <https://w3id.org/earthsemantics/OSO/1.0.3> ,
                                <https://w3id.org/earthsemantics/OSO/1.0.2> ,
                                <https://w3id.org/earthsemantics/OSO/1.0.1> ,
                                <https://w3id.org/earthsemantics/OSO/1.0.0> ;
-    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.3> ;
-    owl:versionInfo "1.0.4 – improved semantic alignments, multilingual metadata, OWL reasoning support, organisation identifiers, and FAIR metadata"@en ;
-    owl:versionInfo "1.0.4 – amélioration des alignements sémantiques, des métadonnées multilingues, du support du raisonnement OWL, des identifiants d’organisations et des métadonnées FAIR"@fr ;
-    owl:versionInfo "1.0.4 – mejora de las alineaciones semánticas, los metadatos multilingües, el soporte de razonamiento OWL, los identificadores de organizaciones y los metadatos FAIR"@es ;
-    owl:versionInfo "1.0.4 – miglioramento degli allineamenti semantici, dei metadati multilingue, del supporto al ragionamento OWL, degli identificativi delle organizzazioni e dei metadati FAIR"@it ;
-    owl:versionInfo "1.0.4 – melhoria dos alinhamentos semânticos, dos metadados multilingues, do suporte ao raciocínio OWL, dos identificadores das organizações e dos metadados FAIR"@pt ;
-    owl:versionInfo "1.0.4 – forbedring av semantiske tilpasninger, flerspråklige metadata, støtte for OWL-resonnering, organisasjonsidentifikatorer og FAIR-metadata"@no ;
-    owl:versionInfo "1.0.4 – îmbunătățirea alinierilor semantice, a metadatelor multilingve, a suportului pentru raționament OWL, a identificatorilor organizațiilor și a metadatelor FAIR"@ro ;
-    owl:versionInfo "1.0.4 – βελτίωση των σημασιολογικών αντιστοιχίσεων, των πολυγλωσσικών μεταδεδομένων, της υποστήριξης συλλογιστικής OWL, των αναγνωριστικών οργανισμών και των μεταδεδομένων FAIR"@el ;
-    omv:version "1.0.4" ;
-    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.3> ;
-    pav:version "1.0.4" ;
-    dcterms:modified "2026-05-09"^^xsd:date ;
-    pav:curatedOn "2026-05-09"^^xsd:date ;
+    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
+    owl:versionInfo "1.0.5 – xxx"@en ;
+    owl:versionInfo "1.0.5 – xxx"@fr ;
+    owl:versionInfo "1.0.5 – xxx"@es ;
+    owl:versionInfo "1.0.5 – xxx"@it ;
+    owl:versionInfo "1.0.5 – xxx"@pt ;
+    owl:versionInfo "1.0.5 – xxx"@no ;
+    owl:versionInfo "1.0.5 – xxx"@ro ;
+    owl:versionInfo "1.0.5 – xxx"@el ;
+    omv:version "1.0.5" ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.5> ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
+    pav:version "1.0.5" ;
+    dcterms:modified "2026-05-14"^^xsd:date ;
+    pav:curatedOn "2026-05-14"^^xsd:date ;
     pav:curatedBy <https://orcid.org/0009-0008-1759-5254> ;
-    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.0.4 EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
+    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.0.5 EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
     owl:imports <http://www.w3.org/2004/02/skos/core> ,
                 <http://xmlns.com/foaf/0.1/> ,
                 <http://www.w3.org/ns/prov-o> ,
@@ -229,30 +230,27 @@
         "Ποιες ωκεανογραφικές αποστολές συνδέονται με μια περιφερειακή υποδομή;"@el ;
     omv:status "Published" ;
     prov:wasAttributedTo <https://ror.org/044jxhp58> ;
-    prov:generatedAtTime "2026-05-09"^^xsd:date ;
+    prov:generatedAtTime "2026-05-14"^^xsd:date ;
     omv:useImports <http://www.w3.org/2000/01/rdf-schema#> ,
                    <http://www.w3.org/2002/07/owl#> ,
                    <http://www.w3.org/2004/02/skos/core#> ,
                    <http://xmlns.com/foaf/0.1/> ;
-    mod:ontologyInUse 
-        OSO:EMSO_EVOLVE ,
-        OSO:EMSO_DMSG ;
-    mod:endorsedBy 
-        <https://ror.org/04xkqms46> ,
-        <https://ror.org/0312sjw67> ,
-        <https://ror.org/044jxhp58> ;
-    omv:usedOntologyEngineeringMethodology "Co-construction with domain experts and iterative alignment with reference ontologies"@en ,
-                                           "Samskaping med fagpersoner og iterativ tilpasning til referanseontologier"@no ,
-                                           "Co-construction avec des experts métier et alignement itératif avec des ontologies de référence"@fr ,
-                                           "Co-construcție cu experți din domeniu și aliniere iterativă cu ontologii de referință"@ro ,
-                                           "Co-costruzione con esperti di dominio e allineamento iterativo con ontologie di riferimento"@it ,
-                                           "Co-construcción con expertos del dominio y alineación iterativa con ontologías de referencia"@es ,
-                                           "Co-construção com especialistas no domínio e alinhamento iterativo com ontologias de referência"@pt ,
-                                           "Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες"@el ,
-                                           <https://w3id.org/okn/o/sd#OntologyEngineering> ;
+    mod:ontologyInUse <https://earthportal.eu/projects/EMSO_EVOLVE> ,
+                      OSO:EMSO_EVOLVE ;
+    mod:endorsedBy <https://ror.org/04xkqms46> ,
+                   <https://ror.org/0312sjw67> ,
+                   <https://ror.org/044jxhp58> ;
+    omv:usedOntologyEngineeringMethodology <https://w3id.org/okn/o/sd#OntologyEngineering> ;
+    rdfs:comment "Co-construction with domain experts and iterative alignment with reference ontologies"@en ,
+                 "Samskaping med fagpersoner og iterativ tilpasning til referanseontologier"@no ,
+                 "Co-construction avec des experts métier et alignement itératif avec des ontologies de référence"@fr ,
+                 "Co-construcție cu experți din domeniu și aliniere iterativă cu ontologii de referință"@ro ,
+                 "Co-costruzione con esperti di dominio e allineamento iterativo con ontologie di riferimento"@it ,
+                 "Co-construcción con expertos del dominio y alineación iterativa con ontologías de referencia"@es ,
+                 "Co-construção com especialistas no domínio e alinhamento iterativo com ontologias de referência"@pt ,
+                 "Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες"@el ;
     omv:usedOntologyEngineeringTool "Protégé 5.6.9" ,
                                     "VSCodium 1.92.2" ;
-    # Add LOV and Ontobee URL once OSO are indexed there
     omv:reference 
         <https://doi.org/10.25504/FAIRsharing.654931> ,
         <https://doi.org/10.5281/zenodo.19497913> ,
@@ -316,8 +314,7 @@
                      <http://schema.org/> ,
                      <http://omv.ontoware.org/2005/05/ontology#> ,
                      <https://w3id.org/mod#> ;
-    dcterms:identifier "https://w3id.org/earthsemantics/OSO" ,
-                       "10.5281/zenodo.19497913" ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.19497913> ;
     dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
     dcterms:isReferencedBy <https://earthportal.eu/ontologies/OSO> ,
                            <https://fairsharing.org/FAIRsharing.654931> ,
@@ -395,15 +392,15 @@
     void:exampleResource OSO:Azores ;
     mod:hierarchyProperty rdfs:subClassOf ;
     mod:obsoleteParent owl:deprecated ;
-    mod:maxDepth "6"^^xsd:integer ;
+    mod:maxDepth 6 ;
     void:classes 60 ;
     void:properties 175 ;
     void:entities 575 ;
     void:triples 9406 ;
-    omv:numberOfClasses "60"^^xsd:integer ;
-    omv:numberOfProperties "175"^^xsd:integer ;
-    omv:numberOfIndividuals "575"^^xsd:integer ;
-    omv:numberOfAxioms "17934"^^xsd:integer ;
+    omv:numberOfClasses 60 ;
+    omv:numberOfProperties 175 ;
+    omv:numberOfIndividuals 575 ;
+    omv:numberOfAxioms 17934 ;
     void:subset <https://w3id.org/earthsemantics/OSO> ;
     void:vocabulary <http://www.w3.org/2002/07/owl#> ,
                     <http://www.w3.org/2000/01/rdf-schema#> ,
@@ -482,7 +479,7 @@
                    "A nu se confunda cu OpenScienceOntology (OSO) sau cu Ontology for Scenario Orchestration (OSO)."@ro ;
     adms:identifier [
         rdf:type adms:Identifier ;
-        skos:notation "10.25504/FAIRsharing.654931" ;
+        skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
         skos:prefLabel "FAIRsharing DOI for OSO"@en
     ] ;
     adms:identifier [
@@ -492,17 +489,17 @@
     ] ;
     adms:identifier [
         rdf:type adms:Identifier ;
-        skos:notation "10.5281/zenodo.19497913" ;
-        skos:prefLabel "Zenodo DOI for OSO"@en ;
+        skos:notation "https://doi.org/10.5281/zenodo.19497913" ;
+        skos:prefLabel "Zenodo DOI for OSO"@en
     ] ;
-    datacite:doi "10.5281/zenodo.19497913" ;
+    datacite:doi "https://doi.org/10.5281/zenodo.19497913" ;
     schema:copyrightHolder OSO:EMSO ,
                            OSO:Ifremer ;
     adms:representationTechnique "OWL 2 DL in Turtle syntax" ;
     adms:status <http://purl.org/adms/status/Completed> ;
     dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
-    void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/sparql> ;
-    dcat:accessURL <https://virtuoso.ifremer.fr/oso/sparql> ;
+    void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/> ;
+    dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
     dcat:contactPoint [
         rdf:type vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
@@ -547,68 +544,99 @@
         "Επίσημη διανομή Turtle της Οντολογίας Θαλάσσιων Παρατηρητηρίων (OSO), φιλοξενούμενη από το EarthPortal."@el .
 
 
-# Turtle serialization of OSO hosted on GitHub (raw access)
-<https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl>
+# DCAT distributions for OSO serializations
+
+<https://w3id.org/earthsemantics/OSO.ttl>
     rdf:type dcat:Distribution ;
     dcterms:isFormatOf <https://w3id.org/earthsemantics/OSO> ;
-    dcat:accessURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO.ttl> ;
     dcat:downloadURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
     dcterms:format "text/turtle" ;
-    rdfs:label
-        "OSO Turtle serialization (GitHub)"@en ,
-        "Sérialisation Turtle d’OSO (GitHub)"@fr ,
-        "Serialización Turtle de OSO (GitHub)"@es ,
-        "Serializzazione Turtle di OSO (GitHub)"@it ,
-        "Serialização Turtle do OSO (GitHub)"@pt ,
-        "Serializare Turtle OSO (GitHub)"@ro ,
-        "OSO Turtle-serialisering (GitHub)"@no ,
-        "Σειριοποίηση Turtle του OSO (GitHub)"@el .
+    rdfs:label "OSO Turtle serialization"@en ,
+               "Sérialisation Turtle d’OSO"@fr .
 
-
-# RDF/XML serialization of OSO hosted on EarthPortal
-<https://earthportal.eu/ontologies/OSO.owl>
+<https://w3id.org/earthsemantics/OSO.owl>
     rdf:type dcat:Distribution ;
     dcterms:isFormatOf <https://w3id.org/earthsemantics/OSO> ;
-    dcat:accessURL <https://earthportal.eu/ontologies/OSO.owl> ;
-    dcat:downloadURL <https://earthportal.eu/ontologies/OSO.owl> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO.owl> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.owl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
     dcterms:format "application/rdf+xml" ;
-    rdfs:label
-        "OSO RDF/XML serialization (EarthPortal)"@en ,
-        "Sérialisation RDF/XML d’OSO (EarthPortal)"@fr ,
-        "Serialización RDF/XML de OSO (EarthPortal)"@es ,
-        "Serializzazione RDF/XML di OSO (EarthPortal)"@it ,
-        "Serialização RDF/XML do OSO (EarthPortal)"@pt ,
-        "Serializare RDF/XML OSO (EarthPortal)"@ro ,
-        "OSO RDF/XML-serialisering (EarthPortal)"@no ,
-        "Σειριοποίηση RDF/XML του OSO (EarthPortal)"@el .
+    rdfs:label "OSO RDF/XML serialization"@en ,
+               "Sérialisation RDF/XML d’OSO"@fr .
+
+<https://w3id.org/earthsemantics/OSO.jsonld>
+    rdf:type dcat:Distribution ;
+    dcterms:isFormatOf <https://w3id.org/earthsemantics/OSO> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO.jsonld> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.jsonld> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+    dcterms:format "application/ld+json" ;
+    rdfs:label "OSO JSON-LD serialization"@en ,
+               "Sérialisation JSON-LD d’OSO"@fr .
+
+<https://w3id.org/earthsemantics/OSO.nt>
+    rdf:type dcat:Distribution ;
+    dcterms:isFormatOf <https://w3id.org/earthsemantics/OSO> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO.nt> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.nt> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/n-triples> ;
+    dcterms:format "application/n-triples" ;
+    rdfs:label "OSO N-Triples serialization"@en ,
+               "Sérialisation N-Triples d’OSO"@fr .
+
+<https://w3id.org/earthsemantics/OSO.n3>
+    rdf:type dcat:Distribution ;
+    dcterms:isFormatOf <https://w3id.org/earthsemantics/OSO> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO.n3> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.n3> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/n3> ;
+    dcterms:format "text/n3" ;
+    rdfs:label "OSO N3 serialization"@en ,
+               "Sérialisation N3 d’OSO"@fr .
+
+<https://w3id.org/earthsemantics/OSO.trig>
+    rdf:type dcat:Distribution ;
+    dcterms:isFormatOf <https://w3id.org/earthsemantics/OSO> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO.trig> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.trig> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/trig> ;
+    dcterms:format "application/trig" ;
+    rdfs:label "OSO TriG serialization"@en ,
+               "Sérialisation TriG d’OSO"@fr .
 
 
-# DCAT/VoID dataset description for OSO (supports FAIR F4 and R1)
+# DCAT/VoID dataset description for OSO
+
 <https://w3id.org/earthsemantics/OSO/dataset>
     rdf:type void:Dataset , dcat:Dataset ;
-    pav:version "1.0.4" ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.3> ,
+    pav:version "1.0.5" ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ,
                         <https://doi.org/10.5281/zenodo.19497913> ;
-    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.3> ;
-    prov:generatedAtTime "2026-04-29"^^xsd:date ;
+    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.4> ;
+    prov:generatedAtTime "2026-05-14"^^xsd:date ;
     prov:wasAttributedTo <https://ror.org/044jxhp58> ;
     dcterms:title "Observatories of the Seas Ontology dataset"@en ;
-    dcterms:description "RDF dataset describing marine observatories structured by OSO ontology."@en ;
-    dcterms:identifier <https://w3id.org/earthsemantics/OSO> ,
-                       "10.5281/zenodo.19497913" ;
+    dcterms:description "RDF dataset describing marine observatories structured by the Observatories of the Seas Ontology."@en ;
+    dcterms:identifier
+        <https://w3id.org/earthsemantics/OSO> ,
+        <https://doi.org/10.5281/zenodo.19497913> ,
+        <https://doi.org/10.25504/FAIRsharing.654931> ;
     dcterms:publisher <https://ror.org/044jxhp58> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:issued "2025-04-04"^^xsd:date ;
-    dcterms:modified "2026-04-29"^^xsd:date ;
+    dcterms:modified "2026-05-14"^^xsd:date ;
     dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
     void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/sparql> ;
-    dcat:accessURL <https://virtuoso.ifremer.fr/oso/sparql> ;
+    dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
     dcat:distribution
-        <https://earthportal.eu/ontologies/OSO.ttl> ,
-        <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> ,
-        <https://earthportal.eu/ontologies/OSO.owl> ;
+        <https://w3id.org/earthsemantics/OSO.ttl> ,
+        <https://w3id.org/earthsemantics/OSO.owl> ,
+        <https://w3id.org/earthsemantics/OSO.jsonld> ,
+        <https://w3id.org/earthsemantics/OSO.nt> ,
+        <https://w3id.org/earthsemantics/OSO.n3> ,
+        <https://w3id.org/earthsemantics/OSO.trig> ;
     dcat:theme
         <https://data.earthportal.eu/categories/EARTH> ,
         <https://data.earthportal.eu/categories/ENV> ,
@@ -620,6 +648,7 @@
         vcard:hasOrganizationName "EMSO ERIC" ;
     ] ;
     foaf:primaryTopic <https://w3id.org/earthsemantics/OSO> .
+
 
 <https://orcid.org/0009-0008-1759-5254>
   rdf:type foaf:Person ;
@@ -806,8 +835,11 @@
 ###  https://w3id.org/earthsemantics/OSO#EMSO_DMSG
 OSO:EMSO_DMSG rdf:type owl:NamedIndividual ,
                        foaf:Group ,
-                       cerif:Organisation ;
+                       foaf:Organization ,
+                       cerif:Organisation ,
+                       schema:Organization ;
     dcterms:isPartOf <https://ror.org/04xkqms46> ;
+    schema:parentOrganization <https://ror.org/04xkqms46> ;
     rdfs:label "EMSO Data Management Service Group"@en ,
                "Groupe de service pour la gestion des données EMSO"@fr ,
                "Grupo de servicios de gestión de datos de EMSO"@es ,
@@ -840,6 +872,7 @@ OSO:EMSO_DMSG rdf:type owl:NamedIndividual ,
                         "EMSO databehandlingstjenestegruppe støtter dataforvaltning, interoperabilitet og FAIR-praksis i EMSO-fellesskapet."@no ,
                         "Η ομάδα υπηρεσιών διαχείρισης δεδομένων EMSO υποστηρίζει τη διαχείριση δεδομένων, τη διαλειτουργικότητα και τις πρακτικές FAIR στην κοινότητα EMSO."@el ,
                         "Grupul de servicii pentru gestionarea datelor EMSO sprijină gestionarea datelor, interoperabilitatea și practicile FAIR în cadrul comunității EMSO."@ro ;
+    foaf:homepage <https://emso.eu/> ;
     rdfs:seeAlso <https://emso.eu/> .
 
 
@@ -2979,11 +3012,12 @@ OSO:ERIC rdf:type owl:Class ;
 ###  https://w3id.org/earthsemantics/OSO#EMSO_EVOLVE
 OSO:EMSO_EVOLVE rdf:type owl:NamedIndividual ,
                          OSO:FundedProject ,
-                        cerif:Project ;
+                        cerif:Project ,
+                        schema:Project ;
     schema:funder OSO:European_Commission ;
     dcterms:identifier "HORIZON-INFRA-2025-01" ;
+    foaf:homepage <https://mission-europe-recherche.fr/fr/projets-laureats/infrastructure-de-recherche/emso-evolve> ;
     rdfs:seeAlso <https://cordis.europa.eu/> ,
-                 <https://mission-europe-recherche.fr/fr/projets-laureats/infrastructure-de-recherche/emso-evolve> ,
                  <https://plocan.eu/en/european-commission-approves-six-strategic-marine-rdi-projects-involving-plocan> ;
     dcterms:title "Ευρωπαϊκό Όραμα για μακροπρόθεσμες ωκεάνιες παρατηρήσεις και περιβαλλοντική βιωσιμότητα (EMSO EVOLVE)"@el ,
                   "European VisiOn for Long-term Ocean Observations and EnVironmEntal Sustainability (EMSO EVOLVE)"@en ,
@@ -5245,7 +5279,8 @@ OSO:European_Marine_Biological_Resource_Centre rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/earthsemantics/OSO#EuxRo01
 OSO:EuxRo01 rdf:type owl:NamedIndividual ,
                      OSO:Site ;
-            OSO:containsPlatform OSO:EuxRo01_surface_buoy ;
+            OSO:containsPlatform OSO:EuxRo01_seabed_station ,
+                                 OSO:EuxRo01_surface_buoy ;
             OSO:hasGeometry OSO:EuxRo01_geom ;
             OSO:hasSiteResponsible OSO:Vlad_Rădulescu ;
             OSO:dateFirstDeployment "2013-06-01"^^xsd:date ;
@@ -5292,6 +5327,23 @@ OSO:EuxRo01_geom rdf:type owl:NamedIndividual ,
                                 "EuxRo01 geometry"@no ,
                                 "EuxRo01 geometry"@pt ,
                                 "EuxRo01 geometry"@ro .
+
+
+###  https://w3id.org/earthsemantics/OSO#EuxRo01_seabed_station
+OSO:EuxRo01_seabed_station rdf:type owl:NamedIndividual ,
+                                    OSO:Platform ;
+                           OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/11/> ;
+                           skos:closeMatch <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthscienceplatforms/c_172cedf2> ;
+                           OSO:hasPrincipalInvestigator OSO:Vlad_Rădulescu ;
+                           rdfs:label "EuxRo01 seabed station"@en ;
+                           skos:prefLabel "EuxRo01 seabed station"@el ,
+                                          "EuxRo01 seabed station"@en ,
+                                          "EuxRo01 seabed station"@es ,
+                                          "EuxRo01 seabed station"@fr ,
+                                          "EuxRo01 seabed station"@it ,
+                                          "EuxRo01 seabed station"@no ,
+                                          "EuxRo01 seabed station"@pt ,
+                                          "EuxRo01 seabed station"@ro .
 
 
 ###  https://w3id.org/earthsemantics/OSO#EuxRo01_surface_buoy

@@ -7,62 +7,69 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/earthsemantics/OSO> a dcat:Dataset ;
-    dcterms:identifier "https://w3id.org/earthsemantics/OSO" ,
-                       "10.5281/zenodo.19497913" ;
-    dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931> ,
-                       <https://doi.org/10.5281/zenodo.19497913> ;
-    dcterms:relation <https://doi.org/10.25504/FAIRsharing.654931> ,
-                 <https://doi.org/10.5281/zenodo.19497913> ;
-    dcterms:title "Οντολογία θαλάσσιων παρατηρητηρίων"@el,
-        "Observatories of the Seas Ontology"@en,
-        "Ontología de los observatorios marinos"@es,
-        "Ontologie des observatoires marins"@fr,
-        "Ontologia degli osservatori marini"@it,
-        "Ontologi for marine observatorier"@no,
-        "Ontologia dos observatórios marinhos"@pt,
-        "Ontologia observatoarelor marine"@ro ;
-    dcterms:description "Οντολογία που περιγράφει θαλάσσια παρατηρητήρια, πλατφόρμες και σχετικές υποδομές όπως το EMSO-ERIC."@el,
-        "An OWL ontology describing marine observatories, platforms, and related infrastructures such as EMSO-ERIC."@en,
-        "Ontología que describe observatorios marinos, plataformas e infraestructuras relacionadas como EMSO-ERIC."@es,
-        "Ontologie décrivant les observatoires marins, les plateformes et les infrastructures associées comme EMSO-ERIC."@fr,
-        "Ontologia che descrive osservatori marini, piattaforme e infrastrutture di ricerca come EMSO-ERIC."@it,
-        "Ontologi som beskriver marine observatorier, plattformer og tilknyttede infrastrukturer som EMSO-ERIC."@no,
-        "Ontologia que descreve observatórios marinhos, plataformas e infraestruturas de investigação como o EMSO-ERIC."@pt,
-        "Ontologie care descrie observatoare marine, platforme și infrastructuri asociate precum EMSO-ERIC."@ro ;
-    dcterms:creator <https://ror.org/044jxhp58>,
+    dcterms:identifier <https://doi.org/10.5281/zenodo.19497913> ;
+    dcterms:isReferencedBy
+        <https://doi.org/10.25504/FAIRsharing.654931> ,
+        <https://doi.org/10.5281/zenodo.19497913> ,
+        <https://earthportal.eu/ontologies/OSO> ,
+        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
+    dcterms:relation
+        <https://doi.org/10.25504/FAIRsharing.654931> ,
+        <https://doi.org/10.5281/zenodo.19497913> ,
+        <https://github.com/emso-eric/oso-ontology> ;
+    dcterms:title
+        "Observatories of the Seas Ontology"@en ,
+        "Ontologie des observatoires marins"@fr ,
+        "Ontología de los observatorios marinos"@es ,
+        "Ontologia degli osservatori marini"@it ,
+        "Ontologia dos observatórios marinhos"@pt ,
+        "Ontologi for marine observatorier"@no ,
+        "Ontologia observatoarelor marine"@ro ,
+        "Οντολογία θαλάσσιων παρατηρητηρίων"@el ;
+    dcterms:description
+        "An OWL ontology describing marine observatories, Regional Facilities, Sites, Platforms and related research infrastructures, especially in the EMSO ERIC context."@en ,
+        "Ontologie OWL décrivant les observatoires marins, les infrastructures régionales, les sites, les plateformes et les infrastructures de recherche associées, notamment dans le contexte d’EMSO ERIC."@fr ;
+    dcterms:creator
+        <https://ror.org/044jxhp58> ,
         <https://ror.org/04xkqms46> ;
     dcterms:publisher <https://ror.org/04xkqms46> ;
     dcterms:rightsHolder <https://ror.org/04xkqms46> ;
     dcterms:issued "2025-04-04"^^xsd:date ;
-    dcterms:modified "2026-05-09"^^xsd:date ;
+    dcterms:modified "2026-05-14"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/el>,
-                 <http://id.loc.gov/vocabulary/iso639-1/en>,
-                 <http://id.loc.gov/vocabulary/iso639-1/es>,
-                 <http://id.loc.gov/vocabulary/iso639-1/fr>,
-                 <http://id.loc.gov/vocabulary/iso639-1/it>,
-                 <http://id.loc.gov/vocabulary/iso639-1/no>,
-                 <http://id.loc.gov/vocabulary/iso639-1/pt>,
-                 <http://id.loc.gov/vocabulary/iso639-1/ro> ;
+    dcterms:language
+        <http://id.loc.gov/vocabulary/iso639-1/el> ,
+        <http://id.loc.gov/vocabulary/iso639-1/en> ,
+        <http://id.loc.gov/vocabulary/iso639-1/es> ,
+        <http://id.loc.gov/vocabulary/iso639-1/fr> ,
+        <http://id.loc.gov/vocabulary/iso639-1/it> ,
+        <http://id.loc.gov/vocabulary/iso639-1/no> ,
+        <http://id.loc.gov/vocabulary/iso639-1/pt> ,
+        <http://id.loc.gov/vocabulary/iso639-1/ro> ;
     dcterms:accessRights <http://purl.org/coar/access_right/c_abf2> ;
-    dcterms:provenance "Co-developed by the EMSO Data Management Service Group with FAIR alignment."@en ;
-    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
-    owl:versionInfo "1.0.4" ;
-    dcat:version "1.0.4" ;
+    dcterms:provenance "Co-developed by the EMSO Data Management Service Group with FAIR alignment, semantic interoperability and versioned publication workflows."@en ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.5> ;
+    owl:versionInfo "1.0.5" ;
+    dcat:version "1.0.5" ;
     foaf:depiction <https://emso-eric.github.io/oso-ontology/oso-diagram.png> ;
-    dcat:keyword "FAIR"@en,
-        "marine observatory"@en,
-        "ontology"@en,
-        "EMSO"@en,
-        "underwater observatory"@en,
-        "marine data"@en,
-        "research infrastructure"@en ;
+    dcat:keyword
+        "FAIR"@en ,
+        "marine observatory"@en ,
+        "ontology"@en ,
+        "EMSO"@en ,
+        "underwater observatory"@en ,
+        "marine data"@en ,
+        "research infrastructure"@en ,
+        "semantic interoperability"@en ;
     dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
     foaf:homepage <https://emso-eric.github.io/oso-ontology/> ;
-    foaf:page <https://earthportal.eu/ontologies/OSO> ,
-              <https://emso-eric.github.io/oso-ontology/> ,
-              <https://github.com/emso-eric/oso-ontology> ,
-              <https://doi.org/10.5281/zenodo.19497913> ;
+    foaf:page
+        <https://earthportal.eu/ontologies/OSO> ,
+        <https://emso-eric.github.io/oso-ontology/> ,
+        <https://github.com/emso-eric/oso-ontology> ,
+        <https://doi.org/10.5281/zenodo.19497913> ,
+        <https://fairsharing.org/FAIRsharing.654931> ,
+        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
     dcat:contactPoint [
         a vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
@@ -70,69 +77,72 @@
     ] ;
     dcat:theme [
         a skos:Concept ;
-        skos:prefLabel "ωκεανογραφία"@el,
-            "oceanography"@en,
-            "oceanografía"@es,
-            "océanographie"@fr,
-            "oceanografia"@it,
-            "oseanografi"@no,
-            "oceanografia"@pt,
-            "oceanografie"@ro ;
+        skos:prefLabel
+            "oceanography"@en ,
+            "océanographie"@fr ,
+            "oceanografía"@es ,
+            "oceanografia"@it ,
+            "oceanografia"@pt ,
+            "oseanografi"@no ,
+            "oceanografie"@ro ,
+            "ωκεανογραφία"@el ;
         skos:exactMatch <http://www.wikidata.org/entity/Q43518> ;
         skos:closeMatch <http://eurovoc.europa.eu/2114> ;
         skos:inScheme <http://eurovoc.europa.eu/> ;
         skos:notation "2114"
     ] ;
     dcat:distribution
-        <https://earthportal.eu/ontologies/OSO.ttl>,
-        <https://earthportal.eu/ontologies/OSO.rdf>,
-        <https://earthportal.eu/ontologies/OSO.owl>,
-        <https://earthportal.eu/ontologies/OSO.csv>,
-        <https://earthportal.eu/ontologies/OSO.diff>,
-        <https://virtuoso.ifremer.fr/oso/sparql>,
+        <https://earthportal.eu/ontologies/OSO.ttl> ,
+        <https://earthportal.eu/ontologies/OSO.rdf> ,
+        <https://earthportal.eu/ontologies/OSO.owl> ,
+        <https://earthportal.eu/ontologies/OSO.csv> ,
+        <https://earthportal.eu/ontologies/OSO.diff> ,
+        <https://virtuoso.ifremer.fr/oso/sparql> ,
         <https://doi.org/10.5281/zenodo.19497913> .
-
-# Distributions
 
 <https://earthportal.eu/ontologies/OSO.ttl> a dcat:Distribution ;
     dcterms:title "OSO Turtle serialization"@en ;
     dcat:accessURL <https://earthportal.eu/ontologies/OSO.ttl> ;
     dcat:downloadURL <https://earthportal.eu/ontologies/OSO.ttl> ;
-    dcterms:format <https://www.iana.org/assignments/media-types/text/turtle> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcterms:format "text/turtle" .
 
 <https://earthportal.eu/ontologies/OSO.rdf> a dcat:Distribution ;
     dcterms:title "OSO RDF/XML serialization"@en ;
     dcat:accessURL <https://earthportal.eu/ontologies/OSO.rdf> ;
     dcat:downloadURL <https://earthportal.eu/ontologies/OSO.rdf> ;
-    dcterms:format <https://www.iana.org/assignments/media-types/application/rdf+xml> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dcterms:format "application/rdf+xml" .
 
 <https://earthportal.eu/ontologies/OSO.owl> a dcat:Distribution ;
     dcterms:title "OSO OWL serialization"@en ;
     dcat:accessURL <https://earthportal.eu/ontologies/OSO.owl> ;
     dcat:downloadURL <https://earthportal.eu/ontologies/OSO.owl> ;
-    dcterms:format <https://www.iana.org/assignments/media-types/application/owl+xml> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dcterms:format "application/rdf+xml" .
 
 <https://earthportal.eu/ontologies/OSO.csv> a dcat:Distribution ;
     dcterms:title "OSO CSV export"@en ;
     dcat:accessURL <https://earthportal.eu/ontologies/OSO.csv> ;
     dcat:downloadURL <https://earthportal.eu/ontologies/OSO.csv> ;
-    dcterms:format <https://www.iana.org/assignments/media-types/text/csv> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+    dcterms:format "text/csv" .
 
 <https://earthportal.eu/ontologies/OSO.diff> a dcat:Distribution ;
     dcterms:title "OSO diff file"@en ;
     dcat:accessURL <https://earthportal.eu/ontologies/OSO.diff> ;
     dcat:downloadURL <https://earthportal.eu/ontologies/OSO.diff> ;
-    dcterms:format <https://www.iana.org/assignments/media-types/text/plain> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/plain> ;
+    dcterms:format "text/plain" .
 
 <https://doi.org/10.5281/zenodo.19497913> a dcat:Distribution ;
     dcterms:title "OSO archived release on Zenodo"@en ;
-    dcterms:description "Archived release of OSO version 1.0.4 on Zenodo."@en ;
+    dcterms:description "Archived release of OSO version 1.0.5 on Zenodo."@en ;
     dcat:accessURL <https://doi.org/10.5281/zenodo.19497913> .
-
-# SPARQL endpoint
 
 <https://virtuoso.ifremer.fr/oso/sparql> a dcat:Distribution ;
     dcterms:title "OSO SPARQL endpoint"@en ;
     dcterms:description "SPARQL endpoint providing query access to the OSO ontology."@en ;
     dcat:accessURL <https://virtuoso.ifremer.fr/oso/sparql> ;
-    dcterms:format <https://www.iana.org/assignments/media-types/application/sparql-query> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/sparql-query> ;
+    dcterms:format "application/sparql-query" .
