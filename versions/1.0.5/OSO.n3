@@ -9628,14 +9628,14 @@ OSO:SeriesOfOceanographicCampaigns a owl:Class ;
         foaf: ;
     owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
     owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.5> ;
-    owl:versionInfo "1.0.5 – xxx"@el,
-        "1.0.5 – xxx"@en,
-        "1.0.5 – xxx"@es,
-        "1.0.5 – xxx"@fr,
-        "1.0.5 – xxx"@it,
-        "1.0.5 – xxx"@no,
-        "1.0.5 – xxx"@pt,
-        "1.0.5 – xxx"@ro ;
+    owl:versionInfo "1.0.5 – βελτίωση των μεταδεδομένων FAIR, των πληροφοριών προέλευσης και των μεταδεδομένων οντολογικής μηχανικής"@el,
+        "1.0.5 – improved FAIR metadata, provenance information, and ontology engineering metadata"@en,
+        "1.0.5 – mejora de los metadatos FAIR, de la información de procedencia y de los metadatos de ingeniería ontológica"@es,
+        "1.0.5 – amélioration des métadonnées FAIR, des informations de provenance et des métadonnées d’ingénierie ontologique"@fr,
+        "1.0.5 – miglioramento dei metadati FAIR, delle informazioni di provenienza e dei metadati di ingegneria ontologica"@it,
+        "1.0.5 – forbedring av FAIR-metadata, proveniensinformasjon og metadata for ontologiutvikling"@no,
+        "1.0.5 – melhoria dos metadados FAIR, das informações de proveniência e dos metadados de engenharia ontológica"@pt,
+        "1.0.5 – îmbunătățirea metadatelor FAIR, a informațiilor de proveniență și a metadatelor de inginerie ontologică"@ro ;
     skos:altLabel "OSO",
         "Open Seas Observatories"@en ;
     skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,

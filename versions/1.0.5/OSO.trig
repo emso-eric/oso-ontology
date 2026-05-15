@@ -30,7 +30,7 @@
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:N6de27d1064b047f4bffff22d8a5c3e69 {
+_:N979f7700669c474587250fe365d8dc43 {
     OSO:Bay_of_Biscay_Slope a owl:NamedIndividual,
             OSO:RegionalFacility ;
         rdfs:label "Bay of Biscay canyons"@en ;
@@ -1417,7 +1417,7 @@ _:N6de27d1064b047f4bffff22d8a5c3e69 {
         pav:version "1.0.5" ;
         void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/sparql> ;
         dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
-        dcat:contactPoint _:n4212b58f2fc1495d8cdcfc68817cf1adb5 ;
+        dcat:contactPoint _:n122f08207bd34d298ab53e7dcce8f07db5 ;
         dcat:distribution <https://w3id.org/earthsemantics/OSO.jsonld>,
             <https://w3id.org/earthsemantics/OSO.n3>,
             <https://w3id.org/earthsemantics/OSO.nt>,
@@ -9626,14 +9626,14 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
             foaf: ;
         owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
         owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.5> ;
-        owl:versionInfo "1.0.5 – xxx"@el,
-            "1.0.5 – xxx"@en,
-            "1.0.5 – xxx"@es,
-            "1.0.5 – xxx"@fr,
-            "1.0.5 – xxx"@it,
-            "1.0.5 – xxx"@no,
-            "1.0.5 – xxx"@pt,
-            "1.0.5 – xxx"@ro ;
+        owl:versionInfo "1.0.5 – βελτίωση των μεταδεδομένων FAIR, των πληροφοριών προέλευσης και των μεταδεδομένων οντολογικής μηχανικής"@el,
+            "1.0.5 – improved FAIR metadata, provenance information, and ontology engineering metadata"@en,
+            "1.0.5 – mejora de los metadatos FAIR, de la información de procedencia y de los metadatos de ingeniería ontológica"@es,
+            "1.0.5 – amélioration des métadonnées FAIR, des informations de provenance et des métadonnées d’ingénierie ontologique"@fr,
+            "1.0.5 – miglioramento dei metadati FAIR, delle informazioni di provenienza e dei metadati di ingegneria ontologica"@it,
+            "1.0.5 – forbedring av FAIR-metadata, proveniensinformasjon og metadata for ontologiutvikling"@no,
+            "1.0.5 – melhoria dos metadados FAIR, das informações de proveniência e dos metadados de engenharia ontológica"@pt,
+            "1.0.5 – îmbunătățirea metadatelor FAIR, a informațiilor de proveniență și a metadatelor de inginerie ontologică"@ro ;
         skos:altLabel "OSO",
             "Open Seas Observatories"@en ;
         skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,
@@ -9662,13 +9662,13 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
             "Må ikke forveksles med OpenScienceOntology (OSO) eller Ontology for Scenario Orchestration (OSO)."@no,
             "Não confundir com OpenScienceOntology (OSO) nem com Ontology for Scenario Orchestration (OSO)."@pt,
             "A nu se confunda cu OpenScienceOntology (OSO) sau cu Ontology for Scenario Orchestration (OSO)."@ro ;
-        adms:identifier _:n4212b58f2fc1495d8cdcfc68817cf1adb1,
-            _:n4212b58f2fc1495d8cdcfc68817cf1adb2,
-            _:n4212b58f2fc1495d8cdcfc68817cf1adb3 ;
+        adms:identifier _:n122f08207bd34d298ab53e7dcce8f07db1,
+            _:n122f08207bd34d298ab53e7dcce8f07db2,
+            _:n122f08207bd34d298ab53e7dcce8f07db3 ;
         adms:representationTechnique "OWL 2 DL in Turtle syntax" ;
         adms:status <http://purl.org/adms/status/Completed> ;
         dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
-        dcat:contactPoint _:n4212b58f2fc1495d8cdcfc68817cf1adb4 ;
+        dcat:contactPoint _:n122f08207bd34d298ab53e7dcce8f07db4 ;
         dcat:distribution <https://earthportal.eu/ontologies/OSO.owl>,
             <https://earthportal.eu/ontologies/OSO.ttl>,
             <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/OSO.ttl> ;
@@ -10068,30 +10068,30 @@ Environmental data recorded by the various infrastructures at the SmartBay facil
             "Plataforma de observação"@pt,
             "Platformă de observație"@ro .
 
-    _:n4212b58f2fc1495d8cdcfc68817cf1adb6 a owl:Axiom ;
+    _:n122f08207bd34d298ab53e7dcce8f07db6 a owl:Axiom ;
         owl:annotatedProperty rdf:type ;
         owl:annotatedSource OSO:Molène ;
         owl:annotatedTarget OSO:Site ;
         owl:deprecated true .
 
-    _:n4212b58f2fc1495d8cdcfc68817cf1adb1 a adms:Identifier ;
+    _:n122f08207bd34d298ab53e7dcce8f07db1 a adms:Identifier ;
         skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
         skos:prefLabel "FAIRsharing DOI for OSO"@en .
 
-    _:n4212b58f2fc1495d8cdcfc68817cf1adb2 a adms:Identifier ;
+    _:n122f08207bd34d298ab53e7dcce8f07db2 a adms:Identifier ;
         skos:notation "https://w3id.org/earthsemantics/OSO" ;
         skos:prefLabel "Persistent IRI for OSO"@en .
 
-    _:n4212b58f2fc1495d8cdcfc68817cf1adb3 a adms:Identifier ;
+    _:n122f08207bd34d298ab53e7dcce8f07db3 a adms:Identifier ;
         skos:notation "https://doi.org/10.5281/zenodo.19497913" ;
         skos:prefLabel "Zenodo DOI for OSO"@en .
 
-    _:n4212b58f2fc1495d8cdcfc68817cf1adb4 a vcard:Kind ;
+    _:n122f08207bd34d298ab53e7dcce8f07db4 a vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
         vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
         vcard:hasOrganizationName "EMSO ERIC" .
 
-    _:n4212b58f2fc1495d8cdcfc68817cf1adb5 a vcard:Kind ;
+    _:n122f08207bd34d298ab53e7dcce8f07db5 a vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
         vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
         vcard:hasOrganizationName "EMSO ERIC" .

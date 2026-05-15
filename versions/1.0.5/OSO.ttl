@@ -46,14 +46,14 @@
                                <https://w3id.org/earthsemantics/OSO/1.0.1> ,
                                <https://w3id.org/earthsemantics/OSO/1.0.0> ;
     owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
-    owl:versionInfo "1.0.5 – xxx"@en ;
-    owl:versionInfo "1.0.5 – xxx"@fr ;
-    owl:versionInfo "1.0.5 – xxx"@es ;
-    owl:versionInfo "1.0.5 – xxx"@it ;
-    owl:versionInfo "1.0.5 – xxx"@pt ;
-    owl:versionInfo "1.0.5 – xxx"@no ;
-    owl:versionInfo "1.0.5 – xxx"@ro ;
-    owl:versionInfo "1.0.5 – xxx"@el ;
+    owl:versionInfo "1.0.5 – improved FAIR metadata, provenance information, and ontology engineering metadata"@en ;
+    owl:versionInfo "1.0.5 – amélioration des métadonnées FAIR, des informations de provenance et des métadonnées d’ingénierie ontologique"@fr ;
+    owl:versionInfo "1.0.5 – mejora de los metadatos FAIR, de la información de procedencia y de los metadatos de ingeniería ontológica"@es ;
+    owl:versionInfo "1.0.5 – miglioramento dei metadati FAIR, delle informazioni di provenienza e dei metadati di ingegneria ontologica"@it ;
+    owl:versionInfo "1.0.5 – melhoria dos metadados FAIR, das informações de proveniência e dos metadados de engenharia ontológica"@pt ;
+    owl:versionInfo "1.0.5 – forbedring av FAIR-metadata, proveniensinformasjon og metadata for ontologiutvikling"@no ;
+    owl:versionInfo "1.0.5 – îmbunătățirea metadatelor FAIR, a informațiilor de proveniență și a metadatelor de inginerie ontologică"@ro ;
+    owl:versionInfo "1.0.5 – βελτίωση των μεταδεδομένων FAIR, των πληροφοριών προέλευσης και των μεταδεδομένων οντολογικής μηχανικής"@el ;
     omv:version "1.0.5" ;
     dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.0.5> ;
     pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.4> ;
