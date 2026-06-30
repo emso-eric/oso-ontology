@@ -1,0 +1,112 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/earthsemantics/OSO/void>
+    a dcat:Dataset , void:Dataset ;
+    dcterms:title
+        "Observatories of the Seas Ontology"@en ,
+        "Ontologie des observatoires marins"@fr ,
+        "Ontología de los observatorios marinos"@es ,
+        "Ontologia degli osservatori marini"@it ,
+        "Ontologia dos observatórios marinhos"@pt ,
+        "Ontologi for marine observatorier"@no ,
+        "Ontologia observatoarelor marine"@ro ,
+        "Οντολογία των θαλάσσιων παρατηρητηρίων"@el ;
+    dcterms:description
+        "A FAIR ontology for describing marine observatories, Regional Facilities, Sites, Platforms and related research infrastructures, especially in the EMSO ERIC context."@en ,
+        "Ontologie FAIR décrivant les observatoires marins, les infrastructures régionales, les sites, les plateformes et les infrastructures de recherche associées, notamment dans le contexte d’EMSO ERIC."@fr ;
+    dcterms:creator
+        <https://ror.org/044jxhp58> ,
+        <https://ror.org/04xkqms46> ;
+    foaf:maker
+        <https://ror.org/044jxhp58> ,
+        <https://ror.org/04xkqms46> ;
+    dcterms:publisher <https://ror.org/04xkqms46> ;
+    dcterms:issued "2025-04-04"^^xsd:date ;
+    dcterms:modified "2026-05-23"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.19497913> ;
+    dcterms:language
+        "en"^^xsd:language ,
+        "fr"^^xsd:language ,
+        "es"^^xsd:language ,
+        "it"^^xsd:language ,
+        "pt"^^xsd:language ,
+        "ro"^^xsd:language ,
+        "el"^^xsd:language ,
+        "no"^^xsd:language ;
+    owl:versionInfo "1.1.0" ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.1.0> ;
+    pav:version "1.1.0" ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.0.5> ;
+    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.0.5> ;
+    prov:generatedAtTime "2026-06-30"^^xsd:date ;
+    prov:wasAttributedTo <https://ror.org/04xkqms46> ;
+
+    foaf:page <https://w3id.org/earthsemantics/OSO> ;
+    foaf:homepage <https://github.com/emso-eric/oso-ontology> ;
+    dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
+
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO/sparql> ;
+    void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/sparql> ;
+
+    void:dataDump <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
+    dcat:distribution
+        <https://w3id.org/earthsemantics/OSO/OSO.ttl> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.owl> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.jsonld> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.nt> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.n3> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.trig> ;
+
+    void:exampleResource <https://w3id.org/earthsemantics/OSO#Azores> ;
+
+    void:triples 15107 ;
+    void:classes 84 ;
+    void:properties 172 ;
+    void:entities 761 ;
+    void:uriSpace "https://w3id.org/earthsemantics/OSO#" ;
+
+    schema:includedInDataCatalog
+        <https://earthportal.eu/ontologies/OSO> ,
+        <https://fairsharing.org/FAIRsharing.654931> ,
+        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
+
+    void:vocabulary
+        <https://w3id.org/earthsemantics/OSO> ,
+        <http://www.w3.org/2002/07/owl#> ,
+        <http://www.w3.org/2000/01/rdf-schema#> ,
+        <http://www.w3.org/2004/02/skos/core#> ,
+        <http://purl.org/dc/terms/> ,
+        <http://www.w3.org/ns/dcat#> ,
+        <http://rdfs.org/ns/void#> ,
+        <http://xmlns.com/foaf/0.1/> ;
+
+    dcat:theme
+        <https://data.earthportal.eu/categories/EARTH> ,
+        <https://data.earthportal.eu/categories/ENV> ,
+        <https://data.earthportal.eu/categories/CLIMATE> ;
+
+    dcterms:isReferencedBy
+        <https://earthportal.eu/ontologies/OSO> ,
+        <https://fairsharing.org/FAIRsharing.654931> ,
+        <https://doi.org/10.25504/FAIRsharing.654931> ,
+        <https://doi.org/10.5281/zenodo.19497913> ,
+        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
+
+    dcat:contactPoint [
+        a vcard:Kind ;
+        vcard:fn "EMSO Data Management Service Group" ;
+        vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
+        vcard:hasOrganizationName "EMSO ERIC"
+    ] ;
+
+    foaf:primaryTopic <https://w3id.org/earthsemantics/OSO> .
