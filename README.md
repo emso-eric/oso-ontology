@@ -7,7 +7,7 @@
 ## 🧾 Ontology Reference
 
 * **IRI**: https://w3id.org/earthsemantics/OSO
-* **Version**: 1.0.5
+* **Version**: 1.1.0
 * **License**: https://creativecommons.org/licenses/by/4.0/
 * **Publisher**: EMSO ERIC
 * **Creators**: EMSO Data Management Service Group (DMSG), Ifremer
@@ -22,7 +22,7 @@ OSO is designed to describe **marine observatories and ocean observation systems
 
 **OSO (Observatories of the Seas Ontology)** provides a semantic framework to describe **marine observatories**, including those operated by **EMSO ERIC** as well as observatories managed by national nodes such as **EMSO-France** or developed within research projects.
 
-Version 1.0.5 further improves FAIR metadata, provenance information,
+Version 1.1.0 further improves FAIR metadata, provenance information,
 ontology engineering metadata, semantic interoperability,
 machine-readable accessibility, and FAIR assessment compatibility.
 
@@ -115,30 +115,21 @@ OSO aims to:
 
 ---
 
-## ✨ Highlights of version 1.0.5
+## ✨ Highlights of version 1.1.0
 
-* Improved FAIR metadata and provenance information
-* Enhanced ontology engineering methodology metadata
-* Improved compatibility with O’FAIRe FAIR assessment
-* Extended DCAT and VoID metadata descriptions
-* Improved machine-readable ontology distributions
-* Enhanced semantic interoperability
-* Improved multilingual metadata coverage
-* Public SPARQL endpoint integration
-* LOV indexing support
-* Improved persistent identifiers and versioning metadata
+major ontology refactoring with strengthened semantic interoperability, extensive enrichment of the marine observatory knowledge graph, broader reuse of community standards and external identifiers, enhanced geospatial modelling, and improved FAIR compliance.
 
 ---
 
-## 📊 Metrics (v1.0.4)
+## 📊 Metrics (v1.1.0)
 
 | Metric | Value |
 |---|---:|
-| Classes | 60 |
-| Properties | 175 |
-| Individuals | 575 |
-| RDF triples | 9406 |
-| OWL axioms | 17934 |
+| Classes | 84 |
+| Properties | 172 |
+| Individuals | 761 |
+| RDF triples | 15107 |
+| OWL axioms | 24767 |
 
 ---
 
@@ -236,7 +227,7 @@ marine ontology, ocean observation ontology, marine observatories, research infr
 ## 📖 How to cite
 
 OSO – Observatories of the Seas Ontology
-Version 1.0.5
+Version 1.1.0
 EMSO ERIC / Ifremer
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
 
