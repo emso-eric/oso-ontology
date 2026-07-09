@@ -27,3 +27,7 @@ The objective is to ensure that every release follows a reproducible process whi
 - Ensure reproducibility.
 - Facilitate knowledge transfer.
 - Progressively replace manual release tasks by an automated CI/CD pipeline while preserving reproducibility and traceability.
+
+## Documentation
+
+- [OSO Release Workflow](Release_Workflow.md)
