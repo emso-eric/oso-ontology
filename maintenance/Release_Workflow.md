@@ -25,6 +25,16 @@ The OSO release workflow is organised into the following phases:
 5. GitHub release
 6. External publication
 
+```mermaid
+flowchart TD
+    A[Ontology Development]
+    --> B[Release Preparation]
+    --> C[Documentation Generation]
+    --> D[Distribution Package Generation]
+    --> E[GitHub Release]
+    --> F[External Publication]
+```
+
 ## Terminology
 
 The following terminology is used throughout this document.
@@ -57,18 +67,7 @@ The sequence of activities required to prepare, validate, package and publish a 
 
 The future automated workflow intended to progressively replace manual release tasks while ensuring reproducibility, traceability and quality assurance.
 
-```mermaid
-flowchart TD
-    A[Ontology Development]
-    --> B[Release Preparation]
-    --> C[Documentation Generation]
-    --> D[Distribution Package Generation]
-    --> E[GitHub Release]
-    --> F[External Publication]
-```
-
-
-# Phase 1 – Ontology Development
+## Phase 1 – Ontology Development
 
 ## Objective
 
@@ -136,7 +135,7 @@ Before proceeding to the release preparation phase, the ontology should be revie
 | URI verification | ✅ Possible |
 | External link checking | ✅ Possible |
 
-# Phase 2 – Release Preparation
+## Phase 2 – Release Preparation
 
 ## Objective
 
@@ -211,7 +210,7 @@ Before proceeding to the documentation generation phase, verify that:
 | Metadata consistency verification | ✅ High |
 | Release validation | ✅ High |
 
-# Phase 3 – Documentation Generation
+## Phase 3 – Documentation Generation
 
 ## Objective
 
@@ -297,7 +296,7 @@ Before proceeding to the distribution package generation phase, verify that:
 | GitHub Pages publication | ✅ High |
 | Broken link checking | ✅ High |
 
-# Phase 4 – Distribution Package Generation
+## Phase 4 – Distribution Package Generation
 
 ## Objective
 
