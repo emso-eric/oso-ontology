@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="oso.png" alt="OSO logo" height="120">
+  <img src="oso.png" alt="OSO logo" height="180">
 </p>
 
 <h1 align="center">
@@ -7,17 +7,30 @@ Observatories of the Seas Ontology (OSO)
 </h1>
 
 <p align="center">
-A FAIR ontology for marine observatories, ocean observation systems and marine research infrastructures.
+<b>A FAIR ontology for marine observatories, ocean observation systems and marine research infrastructures.</b>
 </p>
 
 <p align="center">
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue)
-![License](https://img.shields.io/badge/license-CC--BY--4.0-green)
-![FAIR](https://img.shields.io/badge/FAIR-Compliant-success)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
-![EarthPortal](https://img.shields.io/badge/EarthPortal-Published-blueviolet)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](...)
+[![License](https://img.shields.io/badge/license-CC--BY--4.0-green.svg)](...)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19497913-blue.svg)](...)
+[![FAIRsharing](https://img.shields.io/badge/FAIRsharing-Registered-success.svg)](...)
+[![EarthPortal](https://img.shields.io/badge/EarthPortal-Published-purple.svg)](...)
+[![GitHub Pages](https://img.shields.io/badge/Documentation-Online-success.svg)](...)
 
+</p>
+
+<p align="center">
+
+<a href="https://w3id.org/earthsemantics/OSO">
+<img src="docs/share/qr-code.svg" alt="OSO QR Code" height="160">
+</a>
+
+</p>
+
+<p align="center">
+Scan the QR code to access the persistent ontology IRI.
 </p>
 
 ---
