@@ -400,3 +400,196 @@ Before proceeding to the GitHub release phase, verify that:
 | Archive creation | ✅ High |
 | RDF validation | ✅ High |
 | Artefact completeness verification | ✅ High |
+
+## Phase 5 – GitHub Release
+
+## Objective
+
+Publish the new OSO release on GitHub, ensuring that all release artefacts are versioned, traceable and publicly accessible.
+
+## Inputs
+
+- Distribution artefacts
+- Generated documentation
+- Release version number
+- Release notes
+
+## Outputs
+
+- Updated GitHub repository
+- Git tag
+- GitHub Release
+- Published release assets
+
+## Software tools
+
+| Tool | Role |
+|------|------|
+| **Git** | Version control and release management. |
+| **GitHub** | Repository hosting, release publication and GitHub Pages hosting. |
+
+## Activities
+
+The following activities are typically performed during this phase.
+
+### 5.1 Commit release artefacts
+
+Commit all files modified during the release process, including:
+
+- ontology source;
+- generated RDF serialisations;
+- generated documentation;
+- metadata files;
+- archived release version.
+
+### 5.2 Create a Git tag
+
+Create a Git tag matching the ontology version (e.g. `v1.1.0`).
+
+The Git tag provides a permanent reference to the published release.
+
+### 5.3 Create a GitHub Release
+
+Create a new GitHub Release associated with the corresponding Git tag.
+
+The release description should summarise the main additions, improvements and bug fixes introduced in this version.
+
+### 5.4 Publish the repository
+
+Push all commits, tags and release information to the GitHub repository.
+
+Verify that:
+
+- the repository has been successfully updated;
+- the Git tag is visible;
+- the GitHub Release has been published;
+- GitHub Pages reflects the current release.
+
+## Validation
+
+Before proceeding to the external publication phase, verify that:
+
+- the GitHub repository contains the complete release;
+- all release artefacts are available;
+- the Git tag matches the ontology version;
+- the GitHub Release has been successfully published;
+- GitHub Pages is accessible and up to date.
+
+## Automation potential
+
+| Activity | Automation |
+|----------|------------|
+| Commit verification | ✅ Partial |
+| Git tag creation | ✅ High |
+| GitHub Release creation | ✅ High |
+| Release notes generation | ✅ Partial |
+| Repository publication | ✅ High |
+
+## Phase 6 – External Publication
+
+## Objective
+
+Publish the new OSO release to external ontology repositories and persistent archives in order to maximise its visibility, accessibility, interoperability and long-term preservation.
+
+## Inputs
+
+- Published GitHub Release
+- Distribution artefacts
+- Release metadata
+
+## Outputs
+
+- Updated ontology repositories
+- Archived release
+- Persistent identifiers
+- Publicly accessible ontology resources
+
+## Software tools
+
+| Tool | Role |
+|------|------|
+| **EarthPortal** | Ontology publication and discovery. |
+| **Zenodo** | Long-term preservation and DOI assignment. |
+| **Linked Open Vocabularies (LOV)** | Ontology indexing and visibility within the Semantic Web community. |
+
+## Activities
+
+The following activities are typically performed during this phase.
+
+### 6.1 Publish to EarthPortal
+
+Submit the new ontology version to EarthPortal.
+
+Verify that:
+
+- the ontology is successfully processed;
+- ontology metrics are correctly computed;
+- classes, properties and individuals are correctly indexed;
+- ontology metadata are up to date.
+
+### 6.2 Publish to Zenodo
+
+Create a new version of the existing Zenodo record.
+
+Verify that:
+
+- the correct release version is selected;
+- authors and affiliations are up to date;
+- metadata are complete;
+- the DOI is correctly assigned;
+- all uploaded artefacts correspond to the GitHub Release.
+
+### 6.3 Register the release in LOV
+
+Submit the new ontology version to the Linked Open Vocabularies (LOV) catalogue, when applicable.
+
+Verify that:
+
+- the ontology is successfully indexed;
+- ontology metadata are correctly harvested;
+- links to the authoritative GitHub repository remain valid.
+
+### 6.4 Verify external publications
+
+Confirm that all external platforms reference the same ontology version and that published metadata are consistent across repositories.
+
+## Validation
+
+Before considering the release complete, verify that:
+
+- GitHub, EarthPortal, Zenodo and LOV reference the same ontology version;
+- persistent identifiers resolve correctly;
+- ontology metadata are consistent across all publication platforms;
+- public access to the ontology is operational.
+
+## Automation potential
+
+| Activity | Automation |
+|----------|------------|
+| EarthPortal publication | ⚠️ Partial (depending on API availability) |
+| Zenodo publication | ✅ High (REST API) |
+| LOV registration | ⚠️ Low to Partial |
+| Metadata consistency verification | ✅ High |
+| Persistent identifier verification | ✅ High |
+
+# CI/CD Roadmap
+
+The current release workflow combines manual and automated tasks.
+
+The long-term objective is to automate as many steps as possible while preserving reproducibility, traceability and quality assurance.
+
+The following priorities have been identified:
+
+| Priority | Candidate for automation |
+|----------|--------------------------|
+| High | Metadata update |
+| High | Ontology statistics computation |
+| High | RDF serialisation generation |
+| High | Widoco documentation generation |
+| High | RDF validation |
+| High | GitHub Release creation |
+| Medium | Zenodo publication |
+| Medium | EarthPortal publication |
+| Low | LOV publication |
+
+The GitHub repository is intended to become the central entry point of the release workflow, with external repositories progressively synchronised through automated CI/CD processes.
