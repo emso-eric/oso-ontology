@@ -12,8 +12,8 @@ Observatories of the Seas Ontology (OSO)
 
 <p align="center">
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](...)
-[![License](https://img.shields.io/badge/license-CC--BY--4.0-green.svg)](...)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/emso-eric/oso-ontology/tree/main/versions/1.1.0)
+[![License](https://img.shields.io/badge/license-CC--BY--4.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19497913-blue.svg)](...)
 [![FAIRsharing](https://img.shields.io/badge/FAIRsharing-Registered-success.svg)](...)
 [![EarthPortal](https://img.shields.io/badge/EarthPortal-Published-purple.svg)](...)
