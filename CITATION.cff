@@ -1,0 +1,80 @@
+cff-version: 1.2.0
+
+title: "Observatories of the Seas Ontology (OSO)"
+
+message: >
+  If you use the Observatories of the Seas Ontology (OSO) in your research,
+  please cite it using the metadata provided in this file.
+
+type: software
+
+authors:
+  - family-names: Piel
+    given-names: Steven
+    affiliation: Ifremer
+    orcid: "https://orcid.org/0009-0008-1759-5254"
+
+  - name: EMSO Data Management Service Group (DMSG)
+    affiliation: EMSO ERIC
+
+version: "1.1.0"
+
+date-released: 2026-06-30
+
+license: "CC-BY-4.0"
+
+publisher: EMSO ERIC
+
+repository-code: https://github.com/emso-eric/oso-ontology
+
+url: https://w3id.org/earthsemantics/OSO
+
+doi: 10.5281/zenodo.19497913
+
+abstract: >
+  The Observatories of the Seas Ontology (OSO) is a FAIR ontology for marine
+  observatories, ocean observation systems and marine research infrastructures.
+  It promotes semantic interoperability through Linked Open Data principles and
+  alignment with widely adopted ontologies and standards.
+
+keywords:
+  - ontology
+  - marine observatories
+  - ocean observation
+  - semantic web
+  - linked data
+  - FAIR
+  - RDF
+  - OWL
+  - EMSO
+  - Argo
+
+identifiers:
+  - type: doi
+    value: 10.25504/FAIRsharing.654931
+    description: FAIRsharing record
+
+  - type: url
+    value: https://earthportal.eu/ontologies/OSO
+    description: EarthPortal entry
+
+  - type: url
+    value: https://emso-eric.github.io/oso-ontology/
+    description: GitHub Pages documentation
+
+  - type: url
+    value: https://virtuoso.ifremer.fr/oso/sparql
+    description: Public SPARQL endpoint
+
+preferred-citation:
+  type: dataset
+  title: "Observatories of the Seas Ontology (OSO)"
+  authors:
+    - family-names: Piel
+      given-names: Steven
+    - name: EMSO Data Management Service Group (DMSG)
+  publisher: EMSO ERIC
+  version: "1.1.0"
+  year: 2026
+  doi: 10.5281/zenodo.19497913
+  url: https://w3id.org/earthsemantics/OSO
