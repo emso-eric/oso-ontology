@@ -59,22 +59,42 @@ OSO has been designed according to FAIR and Linked Open Data principles.
 graph TD
 
 RI[Research Infrastructure]
+RF[Regional Facility]
+Site[Site]
+SubSite[SubSite<br/>optional]
+Platform[Platform]
+SubPlatform[SubPlatform<br/>optional]
 
-RI --> RF[Regional Facility]
+Cruise[Cruise / CSR]
+Project[Project]
+Person[Person]
+InstrumentType[Instrument type]
 
+EDMO[EDMO organisation ID]
+ROR[ROR organisation ID]
+CERIF[CERIF]
+ORCID[ORCID]
+NERC_L06[NERC L06]
+
+RI --> RF
 RF --> Site
-
 Site --> SubSite
-
+Site --> Platform
 SubSite --> Platform
-
 Platform --> SubPlatform
 
-Platform --> Cruise
+RF --> Cruise
+RF --> Project
+RF --> Person
+Site --> Person
+Platform --> Person
 
-Platform --> Dataset
-
-Dataset --> Publication
+RF -. organisation identifier .-> EDMO
+RF -. organisation identifier .-> ROR
+Project -. aligned with .-> CERIF
+Person -. identifier .-> ORCID
+InstrumentType -. controlled vocabulary .-> NERC_L06
+Platform --> InstrumentType
 ```
 
 ---
