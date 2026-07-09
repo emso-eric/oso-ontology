@@ -92,3 +92,78 @@ Before proceeding to the release preparation phase, the ontology should be revie
 | Ontology metadata verification | ✅ Possible |
 | URI verification | ✅ Possible |
 | External link checking | ✅ Possible |
+
+# Phase 2 – Release Preparation
+
+## Objective
+
+Prepare the ontology for publication by updating its metadata, version information and embedded statistics, ensuring that all release artefacts are consistent before distribution.
+
+## Inputs
+
+- Validated ontology source (`OSO.ttl`)
+- Release version number
+- Release date
+- Computed ontology statistics
+
+## Outputs
+
+- Release-ready ontology (`OSO.ttl`)
+- Updated ontology metadata
+- Updated ontology statistics
+
+## Activities
+
+The following activities are typically performed during this phase.
+
+### 2.1 Update ontology metadata
+
+Update all version-related metadata throughout the ontology, including:
+
+- ontology version;
+- `owl:versionIRI`;
+- `owl:versionInfo`;
+- release date;
+- last modification date;
+- copyright statement (if applicable);
+- contributors (if applicable).
+
+Ensure that all version identifiers remain consistent across the ontology.
+
+### 2.2 Update embedded ontology statistics
+
+Recompute and update the ontology statistics embedded directly in `OSO.ttl`.
+
+The following metrics are currently maintained:
+
+| Metric | Predicate | Computation method |
+|---------|-----------|--------------------|
+| Maximum class hierarchy depth | `mod:maxDepth` | Protégé Metrics |
+| Number of classes | `omv:numberOfClasses` | Protégé Metrics |
+| Number of properties | `omv:numberOfProperties` | Protégé Metrics |
+| Number of individuals | `omv:numberOfIndividuals` | Protégé Metrics |
+| Number of axioms | `omv:numberOfAxioms` | Protégé Metrics |
+| Number of RDF triples | `void:triples` | RDFLib (`len(Graph)`) |
+| Number of ontology entities | `void:entities` | Computed as Classes + Properties + Individuals |
+
+These metrics are embedded directly in the ontology to improve interoperability, transparency and FAIRness, independently of ontology repository implementations.
+
+## Validation
+
+Before proceeding to the documentation generation phase, verify that:
+
+- the ontology version is consistent throughout all metadata;
+- version identifiers are synchronised;
+- release dates are correct;
+- ontology statistics have been recomputed;
+- all embedded metrics correspond to the current ontology version.
+
+## Automation potential
+
+| Activity | Automation |
+|----------|------------|
+| Version number update | ✅ High |
+| Metadata update | ✅ High |
+| Statistics computation | ✅ High |
+| Metadata consistency verification | ✅ High |
+| Release validation | ✅ High |
