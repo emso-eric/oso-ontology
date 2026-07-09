@@ -258,11 +258,3 @@ https://creativecommons.org/licenses/by/4.0/
 # Acknowledgements
 
 OSO is collaboratively developed by the **EMSO Data Management Service Group (DMSG)** with contributions from the EMSO ERIC community, Ifremer and partner organisations.
-
----
-
-<p align="center">
-
-Developed collaboratively by the EMSO Data Management Service Group (DMSG) to promote FAIR and interoperable marine knowledge.
-
-</p>
