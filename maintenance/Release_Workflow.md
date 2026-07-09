@@ -253,3 +253,108 @@ Before proceeding to the distribution package generation phase, verify that:
 | Documentation verification | ✅ Partial |
 | GitHub Pages publication | ✅ High |
 | Broken link checking | ✅ High |
+
+# Phase 4 – Distribution Package Generation
+
+## Objective
+
+Generate all distribution artefacts required for publishing and preserving the current OSO release.
+
+The ontology is distributed in multiple RDF serialisation formats together with metadata files describing the ontology and its dataset.
+
+## Inputs
+
+- Release-ready ontology (`OSO.ttl`)
+- RDFLib conversion scripts
+
+## Outputs
+
+The following artefacts are generated for each release:
+
+| Artefact | Description |
+|----------|-------------|
+| `OSO.ttl` | Turtle serialization (authoritative source) |
+| `OSO.owl` | RDF/XML serialization |
+| `OSO.jsonld` | JSON-LD serialization |
+| `OSO.nt` | N-Triples serialization |
+| `OSO.n3` | Notation3 serialization |
+| `OSO.trig` | TriG serialization |
+| `dcat.ttl` | DCAT metadata description |
+| `void.ttl` | VoID dataset description |
+
+Each ontology release is also archived under:
+
+```
+versions/
+    x.x.x/
+```
+
+to ensure long-term reproducibility and traceability.
+
+## Software tools
+
+| Tool | Role |
+|------|------|
+| **RDFLib** | Generate alternative RDF serialisation formats. |
+| **Python** | Execute the distribution generation scripts. |
+| **Git** | Version control and publication. |
+
+## Activities
+
+The following activities are typically performed during this phase.
+
+### 4.1 Generate RDF serialisations
+
+Generate all supported RDF serialisation formats from the authoritative Turtle source (`OSO.ttl`).
+
+The generated files must describe exactly the same ontology content.
+
+### 4.2 Generate metadata descriptions
+
+Generate or update:
+
+- `dcat.ttl`
+- `void.ttl`
+
+These metadata files describe the ontology as a FAIR RDF dataset and improve interoperability with ontology repositories and semantic web applications.
+
+### 4.3 Archive the release
+
+Create a new version directory under:
+
+```
+versions/x.x.x/
+```
+
+and copy all release artefacts into this directory.
+
+The archived release must remain immutable once published.
+
+### 4.4 Verify generated artefacts
+
+Verify that:
+
+- all RDF serialisations are successfully generated;
+- all files can be parsed correctly;
+- ontology metadata remain identical across serialisations;
+- version information is consistent;
+- archived files correspond to the current release.
+
+## Validation
+
+Before proceeding to the GitHub release phase, verify that:
+
+- every expected artefact has been generated;
+- all serialisations are valid RDF;
+- metadata files are consistent;
+- the version archive is complete.
+
+## Automation potential
+
+| Activity | Automation |
+|----------|------------|
+| RDF serialisation generation | ✅ High |
+| Metadata generation | ✅ High |
+| Archive creation | ✅ High |
+| RDF validation | ✅ High |
+| Artefact completeness verification | ✅ High |
