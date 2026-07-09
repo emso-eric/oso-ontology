@@ -1,68 +1,92 @@
-<p align="center">
-  <img src="oso.png" alt="OSO logo" height="180">
-</p>
-
 <h1 align="center">
 Observatories of the Seas Ontology (OSO)
 </h1>
 
 <p align="center">
-<b>A FAIR ontology for marine observatories, ocean observation systems and marine research infrastructures.</b>
+<b>A FAIR, multilingual and interoperable ontology for marine observatories, ocean observing systems and marine research infrastructures.</b>
 </p>
 
 <p align="center">
-
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/emso-eric/oso-ontology/tree/main/versions/1.1.0)
-[![License](https://img.shields.io/badge/license-CC--BY--4.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19497913-blue.svg)](https://zenodo.org/records/19497913)
-[![FAIRsharing](https://img.shields.io/badge/FAIRsharing-Registered-success.svg)](https://doi.org/10.25504/FAIRsharing.654931)
-[![EarthPortal](https://img.shields.io/badge/EarthPortal-Published-purple.svg)](https://earthportal.eu/ontologies/OSO)
-[![GitHub Pages](https://img.shields.io/badge/Documentation-Online-success.svg)](https://emso-eric.github.io/oso-ontology/)
-
+  <img src="docs/share/oso-social-qrcode.png"
+       alt="Observatories of the Seas Ontology (OSO)"
+       width="100%">
 </p>
 
 <p align="center">
+OSO enables semantic interoperability across marine observatories, ocean observing systems and research infrastructures by connecting organisations, observatories, platforms, projects, scientific campaigns and datasets using Linked Open Data principles.
+</p>
 
+---
+
+<b>🔗 Persistent IRI</b>&nbsp;
 <a href="https://w3id.org/earthsemantics/OSO">
-<img src="docs/share/qr-code.svg" alt="OSO QR Code" height="160">
+https://w3id.org/earthsemantics/OSO
 </a>
 
-</p>
+<b>📦 Publish &amp; Cite</b>&nbsp;
+<a href="https://github.com/emso-eric/oso-ontology"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github"></a>
+<a href="https://github.com/emso-eric/oso-ontology/releases"><img src="https://img.shields.io/badge/Release-v1.1.0-blue"></a>
+<a href="https://doi.org/10.5281/zenodo.19497913"><img src="https://img.shields.io/badge/Zenodo-DOI-1682D4?logo=zenodo"></a>
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC--BY--4.0-green"></a>
+<br>
 
-<p align="center">
-Scan the QR code to access the persistent ontology IRI.
-</p>
+<b>🔎 Discover</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://earthportal.eu/ontologies/OSO"><img src="https://img.shields.io/badge/EarthPortal-Catalogue-8A2BE2"></a>
+<a href="https://lov.linkeddata.es/dataset/lov/vocabs/oso"><img src="https://img.shields.io/badge/LOV-Catalogue-3366CC"></a>
+<a href="https://doi.org/10.25504/FAIRsharing.654931"><img src="https://img.shields.io/badge/FAIRsharing-Registry-2E8B57"></a>
+<br>
+
+<b>📚 Explore</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://emso-eric.github.io/oso-ontology/"><img src="https://img.shields.io/badge/Widoco-Docs-228B22"></a>
+<a href="https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO"><img src="https://img.shields.io/badge/WebVOWL-View-F28C28"></a>
+<a href="https://virtuoso.ifremer.fr/oso/sparql"><img src="https://img.shields.io/badge/SPARQL-Query-1E90FF"></a>
+<br>
+
+<b>🌐 Standards</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/RDF-W3C-0B6FA4">
+<img src="https://img.shields.io/badge/OWL-2-F28C28">
+<img src="https://img.shields.io/badge/SKOS-W3C-7B68EE">
+<img src="https://img.shields.io/badge/DCAT-3-2E8B57">
+<img src="https://img.shields.io/badge/VoID-W3C-3CB371">
+<img src="https://img.shields.io/badge/GeoSPARQL-OGC-228B22">
+<img src="https://img.shields.io/badge/SSN%2FSOSA-W3C-8A2BE2">
 
 ---
 
 # Why OSO?
 
-The **Observatories of the Seas Ontology (OSO)** provides a FAIR semantic framework for describing marine observatories, ocean observation systems, research infrastructures, observing platforms, scientific campaigns and associated organisations.
+The **Observatories of the Seas Ontology (OSO)** is a FAIR, multilingual ontology that provides a common semantic model for marine observatories, ocean observing systems and marine research infrastructures.
 
-OSO facilitates semantic interoperability between marine data infrastructures by promoting reusable identifiers, standard vocabularies and Linked Open Data principles.
+It enables organisations to describe and interlink infrastructures, observing sites, platforms, scientific campaigns, datasets and people using persistent identifiers, Linked Open Data principles and internationally recognised standards.
 
-The ontology has been developed within the **EMSO Data Management Service Group (DMSG)** and is intended for use by the wider marine science community.
+Originally developed within the **EMSO Data Management Service Group (DMSG)**, OSO is designed as an open and reusable ontology for the global marine science community.
 
 ---
 
 # FAIR by Design
 
-OSO has been designed according to FAIR and Linked Open Data principles.
+OSO has been designed from the outset according to FAIR and Linked Open Data principles.
 
-| FAIR Feature | Status |
-|---------------|:------:|
+| FAIR Capability | Status |
+|-----------------------------------|:------:|
 | Persistent ontology IRI (w3id) | ✅ |
-| Zenodo DOI | ✅ |
-| FAIRsharing registration | ✅ |
-| EarthPortal publication | ✅ |
+| Versioned DOI (Zenodo) | ✅ |
+| FAIRsharing registry | ✅ |
+| EarthPortal catalogue | ✅ |
 | Linked Open Vocabularies (LOV) | ✅ |
-| GitHub Pages documentation | ✅ |
+| HTML documentation (GitHub Pages) | ✅ |
 | Public SPARQL endpoint | ✅ |
 | DCAT metadata | ✅ |
 | VoID description | ✅ |
 | JSON-LD distribution | ✅ |
 | Multilingual annotations | ✅ |
 | Provenance metadata | ✅ |
+| ORCID author identification | ✅ |
+| Open license (CC BY 4.0) | ✅ |
+
+OSO has also been independently evaluated using the **[O'FAIRe](https://github.com/agroportal/fairness)** (Ontology FAIRness Evaluator) framework, which provides an objective assessment of ontology FAIRness. The evaluation details are publicly available from the **[OSO EarthPortal page](https://earthportal.eu/ontologies/OSO)**.
+
+Together, these features make OSO a FAIR, interoperable and reusable ontology for marine observatories, ocean observing systems and marine research infrastructures.
 
 ---
 
@@ -112,7 +136,7 @@ Platform --> InstrumentType
 
 ---
 
-# Quick Access
+# Essential Links
 
 | Resource | Link |
 |-----------|------|
@@ -194,22 +218,15 @@ Example describing a regional facility and one of its sites.
 
 # Citation
 
-If you use OSO in scientific work, please cite:
+If you use the **Observatories of the Seas Ontology (OSO)** in research, publications or software, please cite:
 
-> **Piel S. et al.**
-> *Observatories of the Seas Ontology (OSO).*
-> EMSO ERIC / Ifremer.
+> Piel, S. & EMSO Data Management Service Group (DMSG). (2026). *Observatories of the Seas Ontology (OSO)* (Version 1.1.0). EMSO ERIC. https://doi.org/10.5281/zenodo.19497913
 
-Persistent identifiers:
+**Persistent ontology IRI**
 
-- **Ontology IRI**  
-  https://w3id.org/earthsemantics/OSO
+https://w3id.org/earthsemantics/OSO
 
-- **Zenodo DOI**  
-  https://doi.org/10.5281/zenodo.19497913
-
-- **FAIRsharing DOI**  
-  https://doi.org/10.25504/FAIRsharing.654931
+For citation metadata compatible with GitHub and reference managers, see the [`CITATION.cff`](CITATION.cff) file.
 
 ---
 
