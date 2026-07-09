@@ -39,6 +39,26 @@ The following terminology is used throughout this document.
 | **Release workflow** | The sequence of activities required to prepare, validate, package and publish a new OSO release. |
 | **CI/CD pipeline** | The future automated workflow intended to progressively replace manual release tasks while ensuring reproducibility, traceability and quality assurance. |
 
+Source ontology (OSO.ttl)
+            │
+            ▼
+    Ontology Development
+            │
+            ▼
+    Release Preparation
+            │
+            ▼
+ Documentation Generation
+            │
+            ▼
+Distribution Package Generation
+            │
+            ▼
+      GitHub Release
+            │
+            ▼
+ External Publication
+
 # Phase 1 – Ontology Development
 
 ## Objective
