@@ -18,7 +18,7 @@ OSO enables semantic interoperability across marine observatories, ocean observi
 
 ---
 
-<b>🔗 Persistent IRI</b>&nbsp;
+<b>🌐 Persistent IRI</b>&nbsp;
 <a href="https://w3id.org/earthsemantics/OSO">
 https://w3id.org/earthsemantics/OSO
 </a>
@@ -49,7 +49,11 @@ https://w3id.org/earthsemantics/OSO
 <img src="https://img.shields.io/badge/DCAT-3-2E8B57">
 <img src="https://img.shields.io/badge/VoID-W3C-3CB371">
 <img src="https://img.shields.io/badge/GeoSPARQL-OGC-228B22">
-<img src="https://img.shields.io/badge/SSN%2FSOSA-W3C-8A2BE2">
+
+<b>🚀 Future Alignments</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5">
+<img src="https://img.shields.io/badge/I-ADOPT Framework | Planned-1E88E5">
+<img src="https://img.shields.io/badge/SHACL-Planned-1E88E5">
 
 ---
 
