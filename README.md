@@ -25,7 +25,9 @@ https://w3id.org/earthsemantics/OSO
 
 <b>📦 Publish &amp; Cite</b>&nbsp;
 <a href="https://github.com/emso-eric/oso-ontology"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github"></a>
-<a href="https://github.com/emso-eric/oso-ontology/releases"><img src="https://img.shields.io/badge/Release-v1.1.0-blue"></a>
+<a href="https://github.com/emso-eric/oso-ontology/releases">
+  <img src="https://img.shields.io/github/v/release/emso-eric/oso-ontology?display_name=release">
+</a>
 <a href="https://doi.org/10.5281/zenodo.19497913"><img src="https://img.shields.io/badge/Zenodo-DOI-1682D4?logo=zenodo"></a>
 <a href="https://archive.softwareheritage.org/swh:1:dir:e887186ed48167fae4ee4d36206bc85df8fefe52;origin=https://github.com/emso-eric/oso-ontology;visit=swh:1:snp:fa1599aaf1ba5484554bb3956942fdb19c88b0f4;anchor=swh:1:rev:3e66d88657d483d3c2df62e9fe4a89d6db69a508">
   <img src="https://archive.softwareheritage.org/badge/swh:1:dir:e887186ed48167fae4ee4d36206bc85df8fefe52/" alt="Archived | swh:1:dir:e887186ed48167fae4ee4d36206bc85df8fefe52"/>
