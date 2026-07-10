@@ -18,12 +18,12 @@ OSO enables semantic interoperability across marine observatories, ocean observi
 
 ---
 
-<b>🌐 Persistent IRI</b>&nbsp;
+🔗&nbsp;
 <a href="https://w3id.org/earthsemantics/OSO">
 https://w3id.org/earthsemantics/OSO
 </a>
 
-<b>📦 Publish &amp; Cite</b>&nbsp;
+📦
 <a href="https://github.com/emso-eric/oso-ontology"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github"></a>
 <a href="https://github.com/emso-eric/oso-ontology/releases">
   <img src="https://img.shields.io/github/v/release/emso-eric/oso-ontology?display_name=release">
@@ -35,19 +35,19 @@ https://w3id.org/earthsemantics/OSO
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC--BY--4.0-green"></a>
 <br>
 
-<b>🔎 Discover</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+🔎
 <a href="https://earthportal.eu/ontologies/OSO"><img src="https://img.shields.io/badge/EarthPortal-Catalogue-8A2BE2"></a>
 <a href="https://lov.linkeddata.es/dataset/lov/vocabs/oso"><img src="https://img.shields.io/badge/LOV-Catalogue-3366CC"></a>
 <a href="https://doi.org/10.25504/FAIRsharing.654931"><img src="https://img.shields.io/badge/FAIRsharing-Registry-2E8B57"></a>
 <br>
 
-<b>📚 Explore</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+📚
 <a href="https://emso-eric.github.io/oso-ontology/"><img src="https://img.shields.io/badge/Widoco-Docs-228B22"></a>
 <a href="https://service.tib.eu/webvowl/#iri=https://w3id.org/earthsemantics/OSO"><img src="https://img.shields.io/badge/WebVOWL-View-F28C28"></a>
 <a href="https://virtuoso.ifremer.fr/oso/sparql"><img src="https://img.shields.io/badge/SPARQL-Query-1E90FF"></a>
 <br>
 
-<b>🌐 Standards</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+🌐
 <a href="https://www.w3.org/RDF/" target="_blank"><img src="https://img.shields.io/badge/RDF-W3C-0B6FA4"></a>
 <a href="https://www.w3.org/TR/owl2-overview/" target="_blank"><img src="https://img.shields.io/badge/OWL-2-F28C28"></a>
 <a href="https://www.w3.org/TR/skos-reference/" target="_blank"><img src="https://img.shields.io/badge/SKOS-W3C-7B68EE"></a>
@@ -59,7 +59,7 @@ https://w3id.org/earthsemantics/OSO
 <a href="https://www.w3.org/TR/vcard-rdf/" target="_blank"><img src="https://img.shields.io/badge/vCard-W3C-607D8B"></a>
 <a href="https://semiceu.github.io/ADMS/releases/2.00/" target="_blank"><img src="https://img.shields.io/badge/ADMS-EU-607D8B"></a>
 
-<b>📄 Formats</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+📄
 <a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.jsonld"><img src="https://img.shields.io/badge/JSON--LD-Download-B7791F"></a>
 <a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.ttl"><img src="https://img.shields.io/badge/Turtle-Download-B7791F"></a>
 <a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.nt"><img src="https://img.shields.io/badge/N--Triples-Download-B7791F"></a>
@@ -67,7 +67,7 @@ https://w3id.org/earthsemantics/OSO
 <a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.trig"><img src="https://img.shields.io/badge/TriG-Download-B7791F"></a>
 <a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.owl"><img src="https://img.shields.io/badge/OWL-Download-B7791F"></a>
 
-<b>🚀 Next Steps</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+🚀
 <a href="https://www.w3.org/TR/vocab-ssn/"><img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5"></a>
 <a href="https://i-adopt.github.io/"><img src="https://img.shields.io/badge/I--ADOPT-Planned-1E88E5"></a>
 <a href="https://www.w3.org/TR/shacl/"><img src="https://img.shields.io/badge/SHACL-Planned-1E88E5"></a>
