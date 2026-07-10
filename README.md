@@ -83,22 +83,13 @@ Originally developed within the **EMSO Data Management Service Group (DMSG)**, O
 
 OSO has been designed from the outset according to FAIR and Linked Open Data principles.
 
-| FAIR Capability | Status |
-|-----------------------------------|:------:|
-| Persistent ontology IRI (w3id) | ✅ |
-| Versioned DOI (Zenodo) | ✅ |
-| FAIRsharing registry | ✅ |
-| EarthPortal catalogue | ✅ |
-| Linked Open Vocabularies (LOV) | ✅ |
-| HTML documentation (GitHub Pages) | ✅ |
-| Public SPARQL endpoint | ✅ |
-| DCAT metadata | ✅ |
-| VoID description | ✅ |
-| JSON-LD distribution | ✅ |
-| Multilingual annotations | ✅ |
-| Provenance metadata | ✅ |
-| ORCID author identification | ✅ |
-| Open license (CC BY 4.0) | ✅ |
+|     Findable     |   Accessible   |  Interoperable |    Reusable    |
+| :--------------: | :------------: | :------------: | :------------: |
+| ✅ Persistent IRI | ✅ GitHub Pages | ✅ RDF/OWL/SKOS |   ✅ CC BY 4.0  |
+|       ✅ DOI      |    ✅ SPARQL    |   ✅ DCAT/VoID  |  ✅ Provenance  |
+|   ✅ FAIRsharing  |   ✅ Downloads  |   ✅ GeoSPARQL  |     ✅ ORCID    |
+|   ✅ EarthPortal  |                |    ✅ JSON-LD   | ✅ Multilingual |
+
 
 OSO has also been independently evaluated using the **[O'FAIRe](https://github.com/agroportal/fairness)** (Ontology FAIRness Evaluator) framework, which provides an objective assessment of ontology FAIRness. The evaluation details are publicly available from the **[OSO EarthPortal page](https://earthportal.eu/ontologies/OSO)**.
 
