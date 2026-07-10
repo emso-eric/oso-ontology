@@ -83,13 +83,18 @@ Originally developed within the **EMSO Data Management Service Group (DMSG)**, O
 
 OSO has been designed from the outset according to FAIR and Linked Open Data principles.
 
-|     Findable     |   Accessible   |  Interoperable |    Reusable    |
-| :--------------: | :------------: | :------------: | :------------: |
-| ✅ Persistent IRI | ✅ GitHub Pages | ✅ RDF/OWL/SKOS |   ✅ CC BY 4.0  |
-|       ✅ DOI      |    ✅ SPARQL    |   ✅ DCAT/VoID  |  ✅ Provenance  |
-|   ✅ FAIRsharing  |   ✅ Downloads  |   ✅ GeoSPARQL  |     ✅ ORCID    |
-|   ✅ EarthPortal  |                |    ✅ JSON-LD   | ✅ Multilingual |
+| **🟦 Findable**            | **🟩 Accessible**         | **🟨 Interoperable**     | **🟥 Reusable**    |
+| :---------------------- | :--------------------- | :-------------------- | :-------------- |
+| Persistent IRI (w3id) | SPARQL endpoint         | RDF / OWL / SKOS      | CC BY 4.0            |
+| Versioned DOI         | GitHub repository       | GeoSPARQL             | Provenance           |
+| EarthPortal           | HTML documentation      | DCAT / VoID           | Rich Multilingual annotations        |
+| FAIRsharing           | Multiple RDF formats    | NERC Vocabularies     | ORCID attribution         | 
+| LOV                   | GitHub Releases         | ROR / EDMO            | Community governance |
+|                       |                         | SeaDataNet CSR        |                      |
+|                       |                         | Wikidata              |                      |
 
+
+OSO addresses all four FAIR principles (Findable, Accessible, Interoperable and Reusable) through persistent identifiers, semantic web standards, rich metadata and open dissemination.
 
 OSO has also been independently evaluated using the **[O'FAIRe](https://github.com/agroportal/fairness)** (Ontology FAIRness Evaluator) framework, which provides an objective assessment of ontology FAIRness. The evaluation details are publicly available from the **[OSO EarthPortal page](https://earthportal.eu/ontologies/OSO)**.
 
