@@ -42,13 +42,25 @@ https://w3id.org/earthsemantics/OSO
 <a href="https://virtuoso.ifremer.fr/oso/sparql"><img src="https://img.shields.io/badge/SPARQL-Query-1E90FF"></a>
 <br>
 
-<b>🌐 Standards</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/RDF-W3C-0B6FA4">
-<img src="https://img.shields.io/badge/OWL-2-F28C28">
-<img src="https://img.shields.io/badge/SKOS-W3C-7B68EE">
-<img src="https://img.shields.io/badge/DCAT-3-2E8B57">
-<img src="https://img.shields.io/badge/VoID-W3C-3CB371">
-<img src="https://img.shields.io/badge/GeoSPARQL-OGC-228B22">
+<b>🌐 Standards</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.w3.org/RDF/" target="_blank"><img src="https://img.shields.io/badge/RDF-W3C-0B6FA4"></a>
+<a href="https://www.w3.org/TR/owl2-overview/" target="_blank"><img src="https://img.shields.io/badge/OWL-2-F28C28"></a>
+<a href="https://www.w3.org/TR/skos-reference/" target="_blank"><img src="https://img.shields.io/badge/SKOS-W3C-7B68EE"></a>
+<a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank"><img src="https://img.shields.io/badge/DCAT-3-2E8B57"></a>
+<a href="https://www.w3.org/TR/void/" target="_blank"><img src="https://img.shields.io/badge/VoID-W3C-3CB371"></a>
+<a href="https://opengeospatial.github.io/ogc-geosparql/" target="_blank"><img src="https://img.shields.io/badge/GeoSPARQL-OGC-228B22"></a>
+<a href="https://xmlns.com/foaf/spec/" target="_blank"><img src="https://img.shields.io/badge/FOAF-Reused-607D8B"></a>
+<a href="https://www.w3.org/TR/prov-o/" target="_blank"><img src="https://img.shields.io/badge/PROV--O-W3C-607D8B"></a>
+<a href="https://www.w3.org/TR/vcard-rdf/" target="_blank"><img src="https://img.shields.io/badge/vCard-W3C-607D8B"></a>
+<a href="https://semiceu.github.io/ADMS/releases/2.00/" target="_blank"><img src="https://img.shields.io/badge/ADMS-EU-607D8B"></a>
+
+<b>📄 Formats</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.jsonld"><img src="https://img.shields.io/badge/JSON--LD-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.ttl"><img src="https://img.shields.io/badge/Turtle-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.nt"><img src="https://img.shields.io/badge/N--Triples-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.n3"><img src="https://img.shields.io/badge/N3-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.trig"><img src="https://img.shields.io/badge/TriG-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.owl"><img src="https://img.shields.io/badge/OWL-Download-B7791F"></a>
 
 <b>🚀 Next Steps</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.w3.org/TR/vocab-ssn/"><img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5"></a>
