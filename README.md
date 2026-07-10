@@ -107,6 +107,7 @@ Together, these features make OSO a FAIR, interoperable and reusable ontology fo
 ```mermaid
 graph TD
 
+%% Core observatory hierarchy
 RI[Research Infrastructure]
 RF[Regional Facility]
 Site[Site]
@@ -114,36 +115,41 @@ SubSite[SubSite<br/>optional]
 Platform[Platform]
 SubPlatform[SubPlatform<br/>optional]
 
-Cruise[Cruise / CSR]
-Project[Project]
+%% Scientific context
+Cruise[Scientific Cruise]
+Project[Research Project]
 Person[Person]
-InstrumentType[Instrument type]
+PlatformType[Platform Type]
 
-EDMO[EDMO organisation ID]
-ROR[ROR organisation ID]
-CERIF[CERIF]
+%% External identifiers and vocabularies
+EDMO[EDMO]
+ROR[ROR]
+CSR[SeaDataNet CSR]
 ORCID[ORCID]
 NERC_L06[NERC L06]
 
-RI --> RF
-RF --> Site
-Site --> SubSite
-Site --> Platform
-SubSite --> Platform
-Platform --> SubPlatform
+%% Core hierarchy
+RI -->|comprises| RF
+RF -->|comprises| Site
+Site -->|may comprise| SubSite
+Site -->|hosts| Platform
+SubSite -->|hosts| Platform
+Platform -->|may comprise| SubPlatform
 
-RF --> Cruise
-RF --> Project
-RF --> Person
-Site --> Person
-Platform --> Person
+%% Scientific context
+RF -->|supports| Cruise
+RF -->|supports| Project
+RF -->|involves| Person
+Site -->|involves| Person
+Platform -->|operated by| Person
+Platform -->|classified as| PlatformType
 
+%% External links
 RF -. organisation identifier .-> EDMO
 RF -. organisation identifier .-> ROR
-Project -. aligned with .-> CERIF
+Cruise -. cruise identifier .-> CSR
 Person -. identifier .-> ORCID
-InstrumentType -. controlled vocabulary .-> NERC_L06
-Platform --> InstrumentType
+PlatformType -. controlled vocabulary .-> NERC_L06
 ```
 
 ---
