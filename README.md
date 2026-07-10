@@ -50,10 +50,10 @@ https://w3id.org/earthsemantics/OSO
 <img src="https://img.shields.io/badge/VoID-W3C-3CB371">
 <img src="https://img.shields.io/badge/GeoSPARQL-OGC-228B22">
 
-<b>🚀 Future Alignments</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5">
-<img src="https://img.shields.io/badge/I-ADOPT Framework | Planned-1E88E5">
-<img src="https://img.shields.io/badge/SHACL-Planned-1E88E5">
+<b>🚀 Next Steps</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.w3.org/TR/vocab-ssn/"><img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5"></a>
+<a href="https://i-adopt.github.io/"><img src="https://img.shields.io/badge/I-ADOPT | Planned-1E88E5"></a>
+<a href="https://www.w3.org/TR/shacl/"><img src="https://img.shields.io/badge/SHACL-Planned-1E88E5"></a>
 
 ---
 
