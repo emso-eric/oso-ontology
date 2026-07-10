@@ -38,7 +38,7 @@ https://w3id.org/earthsemantics/OSO
 
 <b>📚 Explore</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://emso-eric.github.io/oso-ontology/"><img src="https://img.shields.io/badge/Widoco-Docs-228B22"></a>
-<a href="https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO"><img src="https://img.shields.io/badge/WebVOWL-View-F28C28"></a>
+<a href="https://service.tib.eu/webvowl/#iri=https://w3id.org/earthsemantics/OSO"><img src="https://img.shields.io/badge/WebVOWL-View-F28C28"></a>
 <a href="https://virtuoso.ifremer.fr/oso/sparql"><img src="https://img.shields.io/badge/SPARQL-Query-1E90FF"></a>
 <br>
 
