@@ -64,8 +64,24 @@ https://w3id.org/earthsemantics/OSO
 
 <b>🚀 Next Steps</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.w3.org/TR/vocab-ssn/"><img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5"></a>
-<a href="https://i-adopt.github.io/"><img src="https://img.shields.io/badge/I-ADOPT | Planned-1E88E5"></a>
+<a href="https://i-adopt.github.io/"><img src="https://img.shields.io/badge/I--ADOPT-Planned-1E88E5"></a>
 <a href="https://www.w3.org/TR/shacl/"><img src="https://img.shields.io/badge/SHACL-Planned-1E88E5"></a>
+
+---
+
+# Table of Contents
+
+- [Why OSO?](#why-oso)
+- [FAIR by Design](#fair-by-design)
+- [Ontology Overview](#ontology-overview)
+- [Scope](#scope)
+- [Getting Started](#getting-started)
+- [Usage Examples](#usage-examples)
+- [Documentation and Resources](#documentation-and-resources)
+- [Citation](#citation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -87,7 +103,7 @@ OSO has been designed from the outset according to FAIR and Linked Open Data pri
 | :---------------------- | :--------------------- | :-------------------- | :-------------- |
 | Persistent IRI (w3id) | SPARQL endpoint         | RDF / OWL / SKOS      | CC BY 4.0            |
 | Versioned DOI         | GitHub repository       | GeoSPARQL             | Provenance           |
-| EarthPortal           | HTML documentation      | DCAT / VoID           | Rich Multilingual annotations        |
+| EarthPortal           | HTML documentation      | DCAT / VoID           | Rich multilingual annotations        |
 | FAIRsharing           | Multiple RDF formats    | NERC Vocabularies     | ORCID attribution         | 
 | LOV                   | GitHub Releases         | ROR / EDMO            | Community governance |
 |                       |                         | SeaDataNet CSR        |                      |
@@ -154,125 +170,249 @@ PlatformType -. controlled vocabulary .-> NERC_L06
 
 ---
 
-# Essential Links
+---
 
-| Resource | Link |
-|-----------|------|
-| Persistent ontology IRI | https://w3id.org/earthsemantics/OSO |
-| Documentation (Widoco) | https://emso-eric.github.io/oso-ontology/ |
-| EarthPortal | https://earthportal.eu/ontologies/OSO |
-| SPARQL Endpoint | https://virtuoso.ifremer.fr/oso/sparql |
-| GitHub Repository | https://github.com/emso-eric/oso-ontology |
-| Zenodo | https://doi.org/10.5281/zenodo.19497913 |
-| FAIRsharing | https://doi.org/10.25504/FAIRsharing.654931 |
-| LOV | https://lov.linkeddata.es/dataset/lov/vocabs/oso |
+# Scope
+
+OSO provides a semantic representation of the organisational, geographical and scientific components of marine observatories and ocean observing systems.
+
+| Domain | Main concepts covered |
+|---|---|
+| Research infrastructures | Research infrastructures and regional facilities |
+| Observatory structure | Sites, optional subsites, platforms and optional subplatforms |
+| Scientific activities | Research projects, scientific cruises and campaigns |
+| Organisations | Operators, partners and contributing organisations |
+| People | Researchers, contributors and responsible persons |
+| Observation assets | Platforms, platform categories and associated resources |
+| Data resources | Datasets, catalogues and related semantic metadata |
+| Spatial information | Coordinates, geometries, bounding boxes and depth ranges |
+| External identifiers | ROR, EDMO, ORCID and SeaDataNet CSR |
+| Controlled vocabularies | NERC vocabularies and other recognised semantic resources |
+
+OSO is designed to connect these components within a single knowledge graph rather than representing marine observatories as isolated organisational or geographical entities.
+
+Its distinctive contribution is the semantic connection of:
+
+- marine research infrastructures and their regional components;
+- observing sites, platforms and scientific activities;
+- organisations and people through persistent identifiers;
+- marine domain vocabularies and international knowledge graphs;
+- human-readable documentation and machine-actionable RDF data.
 
 ---
 
-# Downloads
+# Getting Started
 
-The latest release is available in several RDF serialisation formats.
+OSO can be accessed and explored in several complementary ways.
 
-| File | Description |
-|------|-------------|
-| `OSO.ttl` | Turtle (authoritative source) |
-| `OSO.owl` | RDF/XML |
-| `OSO.jsonld` | JSON-LD |
-| `OSO.nt` | N-Triples |
-| `OSO.n3` | Notation3 |
-| `OSO.trig` | TriG |
-| `dcat.ttl` | DCAT metadata |
-| `void.ttl` | VoID description |
+1. **Browse the ontology documentation**
 
----
+   Use the [Widoco documentation](https://emso-eric.github.io/oso-ontology/) to inspect classes, properties, individuals and ontology metadata.
 
-# Repository Structure
+2. **Explore the ontology visually**
 
-```text
-.
-├── docs/              # Widoco documentation
-├── images/            # Ontology figures
-├── maintenance/       # Maintenance documentation
-├── versions/          # Archived releases
-├── .github/           # CI/CD workflows
-│
-├── OSO.ttl            # Authoritative ontology source
-├── dcat.ttl
-├── void.ttl
-│
-├── README.md
-├── CHANGELOG.md
-└── LICENSE
-```
+   Open the [WebVOWL visualisation](https://service.tib.eu/webvowl/#iri=https://w3id.org/earthsemantics/OSO) to explore the main classes and relationships.
+
+3. **Query the knowledge graph**
+
+   Use the public [SPARQL endpoint](https://virtuoso.ifremer.fr/oso/sparql) to query OSO resources and their external links.
+
+4. **Download a serialisation**
+
+   The current release is available in Turtle, RDF/XML, JSON-LD, N-Triples, Notation3 and TriG through the format badges at the top of this README.
+
+5. **Reuse the persistent ontology IRI**
+
+   ```text
+   https://w3id.org/earthsemantics/OSO
+   ```
+
+> `OSO.ttl` is the authoritative source file. Other RDF serialisations are generated from this source.
 
 ---
 
-# Documentation
+# Usage Examples
 
-| Resource | Description |
-|----------|-------------|
-| `/docs` | HTML documentation generated with Widoco |
-| `/maintenance` | Maintenance and release workflow |
-| `/versions` | Archived ontology releases |
-| `/images` | Images and diagrams used throughout the ontology |
-| `CHANGELOG.md` | Release history |
+## Turtle example
 
----
-
-# Example
-
-Example describing a regional facility and one of its sites.
+The following simplified example illustrates how a regional facility can be connected to one of its observing sites.
 
 ```turtle
-:EMSOFrance
-    a oso:RegionalFacility ;
-    oso:containsSite :AzoresSite .
+@prefix oso: <https://w3id.org/earthsemantics/OSO/> .
+@prefix ex:  <https://example.org/resource/> .
 
-:AzoresSite
+ex:RegionalFacility
+    a oso:RegionalFacility ;
+    oso:containsSite ex:ObservingSite .
+
+ex:ObservingSite
     a oso:Site .
 ```
+
+The exact classes and properties available in the current release are documented in the [OSO reference documentation](https://emso-eric.github.io/oso-ontology/).
+
+## SPARQL example: list OSO sites
+
+```sparql
+PREFIX oso:  <https://w3id.org/earthsemantics/OSO/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?site ?label
+WHERE {
+  ?site a oso:Site .
+
+  OPTIONAL {
+    ?site rdfs:label ?label .
+    FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
+  }
+}
+ORDER BY ?label
+```
+
+## SPARQL example: list platforms
+
+```sparql
+PREFIX oso:  <https://w3id.org/earthsemantics/OSO/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?platform ?label
+WHERE {
+  ?platform a oso:Platform .
+
+  OPTIONAL {
+    ?platform rdfs:label ?label .
+    FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
+  }
+}
+ORDER BY ?label
+```
+
+## SPARQL example: inspect external links
+
+```sparql
+PREFIX oso:  <https://w3id.org/earthsemantics/OSO/>
+
+SELECT DISTINCT ?resource ?property ?externalResource
+WHERE {
+  ?resource ?property ?externalResource .
+
+  FILTER(STRSTARTS(STR(?resource), STR(oso:)))
+  FILTER(isIRI(?externalResource))
+  FILTER(!STRSTARTS(STR(?externalResource), STR(oso:)))
+}
+ORDER BY ?resource ?property
+LIMIT 100
+```
+
+This query can be used to identify links from OSO resources to external identifiers, vocabularies and knowledge graphs.
+
+---
+
+# Documentation and Resources
+
+| Resource | Purpose |
+|---|---|
+| [Persistent ontology IRI](https://w3id.org/earthsemantics/OSO) | Stable and version-independent ontology identifier |
+| [HTML documentation](https://emso-eric.github.io/oso-ontology/) | Human-readable ontology reference |
+| [WebVOWL](https://service.tib.eu/webvowl/#iri=https://w3id.org/earthsemantics/OSO) | Interactive ontology visualisation |
+| [SPARQL endpoint](https://virtuoso.ifremer.fr/oso/sparql) | Machine-queryable knowledge graph |
+| [GitHub repository](https://github.com/emso-eric/oso-ontology) | Source files, issues and development history |
+| [GitHub releases](https://github.com/emso-eric/oso-ontology/releases) | Versioned ontology releases |
+| [Zenodo record](https://doi.org/10.5281/zenodo.19497913) | Citable archived release with DOI |
+| [EarthPortal](https://earthportal.eu/ontologies/OSO) | Ontology catalogue, metrics and FAIR evaluation |
+| [FAIRsharing](https://doi.org/10.25504/FAIRsharing.654931) | FAIRsharing registry record |
+| [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov/vocabs/oso) | LOV vocabulary catalogue record |
+
+## Repository organisation
+
+| Path | Content |
+|---|---|
+| [`OSO.ttl`](OSO.ttl) | Authoritative ontology source |
+| [`versions/`](versions/) | Archived and versioned serialisations |
+| [`docs/`](docs/) | Generated HTML documentation and supporting assets |
+| [`maintenance/`](maintenance/) | Maintenance and release procedures |
+| [`dcat.ttl`](dcat.ttl) | DCAT metadata describing OSO distributions |
+| [`void.ttl`](void.ttl) | VoID dataset description |
+| [`CITATION.cff`](CITATION.cff) | Machine-readable citation metadata |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidance |
+| [`LICENSE`](LICENSE) | Licence information |
 
 ---
 
 # Citation
 
-If you use the **Observatories of the Seas Ontology (OSO)** in research, publications or software, please cite:
+When using OSO in research, publications, data services or software, please cite the version used.
 
-> Piel, S. & EMSO Data Management Service Group (DMSG). (2026). *Observatories of the Seas Ontology (OSO)* (Version 1.1.0). EMSO ERIC. https://doi.org/10.5281/zenodo.19497913
+> Piel, S., and EMSO Data Management Service Group (DMSG). (2026).  
+> *Observatories of the Seas Ontology (OSO)* (Version 1.1.0).  
+> EMSO ERIC. https://doi.org/10.5281/zenodo.19497913
 
-**Persistent ontology IRI**
+## Persistent ontology IRI
 
+```text
 https://w3id.org/earthsemantics/OSO
+```
 
-For citation metadata compatible with GitHub and reference managers, see the [`CITATION.cff`](CITATION.cff) file.
+Citation metadata compatible with GitHub, Zotero and other reference managers is available in [`CITATION.cff`](CITATION.cff).
+
+For reproducible reuse, cite the DOI of the specific version rather than only the persistent ontology IRI.
 
 ---
 
 # Contributing
 
-Contributions are welcome.
+Contributions that improve the ontology, its alignments, documentation or data quality are welcome.
+
+Possible contributions include:
+
+- proposals for new classes, properties or relationships;
+- corrections to labels, definitions or multilingual annotations;
+- additional links to authoritative identifiers and controlled vocabularies;
+- validation rules and competency questions;
+- examples, documentation and SPARQL queries;
+- reports of inconsistencies or missing resources.
 
 Please use:
 
-- GitHub Issues
-- Pull Requests
+- [GitHub Issues](https://github.com/emso-eric/oso-ontology/issues) for questions, proposals and problem reports;
+- [Pull Requests](https://github.com/emso-eric/oso-ontology/pulls) for reviewed modifications.
 
-Development and release procedures are documented in:
-
-```
-maintenance/
-```
+Detailed contribution guidance is available in [`CONTRIBUTING.md`](CONTRIBUTING.md), while maintenance and release procedures are documented in [`maintenance/`](maintenance/).
 
 ---
 
 # License
 
-This project is distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+OSO is distributed under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**.
 
-https://creativecommons.org/licenses/by/4.0/
+You are free to share and adapt OSO, provided that appropriate attribution is given.
+
+See the [`LICENSE`](LICENSE) file or the [CC BY 4.0 licence description](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
 # Acknowledgements
 
-OSO is collaboratively developed by the **EMSO Data Management Service Group (DMSG)** with contributions from the EMSO ERIC community, Ifremer and partner organisations.
+OSO was initiated and is collaboratively developed within the **EMSO Data Management Service Group (DMSG)** as an open semantic resource for the marine science community.
+
+Its development benefits from contributions, domain expertise and infrastructure provided by members of the EMSO ERIC community, Ifremer and partner organisations.
+
+OSO also builds upon and links to established standards, registries and semantic resources maintained by organisations and communities including:
+
+- the World Wide Web Consortium (W3C);
+- the Open Geospatial Consortium (OGC);
+- the NERC Vocabulary Server;
+- SeaDataNet;
+- the European Directory of Marine Organisations (EDMO);
+- the Research Organization Registry (ROR);
+- ORCID;
+- Wikidata;
+- EarthPortal, FAIRsharing and Linked Open Vocabularies.
+
+These external resources remain governed and maintained by their respective organisations.
+
+---
+
+<p align="center">
+  <b>Observatories of the Seas Ontology — connecting marine observatories through shared semantics.</b>
+</p>
