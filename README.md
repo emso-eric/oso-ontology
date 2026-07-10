@@ -76,7 +76,6 @@ https://w3id.org/earthsemantics/OSO
 - [Ontology Overview](#ontology-overview)
 - [Scope](#scope)
 - [Getting Started](#getting-started)
-- [Usage Examples](#usage-examples)
 - [Documentation and Resources](#documentation-and-resources)
 - [Citation](#citation)
 - [Contributing](#contributing)
