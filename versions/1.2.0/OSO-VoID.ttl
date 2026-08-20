@@ -1,0 +1,103 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================================
+# OSO Knowledge Graph - VoID description
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/dataset>
+    a dcat:Dataset ,
+      void:Dataset ;
+
+    dcterms:title
+        "OSO Knowledge Graph"@en ,
+        "Graphe de connaissances OSO"@fr ;
+
+    dcterms:description
+        "Instance data described using the Observatories of the Seas Ontology (OSO), including marine observatories, Regional Facilities, Sites, Platforms, organisations and related entities."@en ,
+        "Données d’instances décrites à l’aide de l’Ontologie des observatoires marins (OSO), notamment les observatoires marins, Regional Facilities, Sites, Platforms, organisations et entités associées."@fr ;
+
+    dcterms:creator
+        <https://ror.org/044jxhp58> ,
+        <https://ror.org/04xkqms46> ;
+
+    foaf:maker
+        <https://ror.org/044jxhp58> ,
+        <https://ror.org/04xkqms46> ;
+
+    dcterms:publisher <https://ror.org/04xkqms46> ;
+    dcterms:issued "2025-04-04"^^xsd:date ;
+    dcterms:modified "2026-08-20"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    # TODO: add the Zenodo DOI for OSO 1.2.0 after publication
+    #dcterms:identifier <https://doi.org/10.5281/zenodo.19497912> ;
+
+    dcterms:conformsTo <https://w3id.org/earthsemantics/OSO> ;
+
+    dcterms:language
+        "en"^^xsd:language ,
+        "fr"^^xsd:language ,
+        "es"^^xsd:language ,
+        "it"^^xsd:language ,
+        "pt"^^xsd:language ,
+        "ro"^^xsd:language ,
+        "el"^^xsd:language ,
+        "no"^^xsd:language ;
+
+    owl:versionInfo "1.2.0" ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    pav:version "1.2.0" ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+    prov:generatedAtTime "2026-08-20"^^xsd:date ;
+    prov:wasAttributedTo <https://ror.org/04xkqms46> ;
+
+    foaf:page <https://w3id.org/earthsemantics/OSO> ;
+    foaf:homepage <https://github.com/emso-eric/oso-ontology> ;
+
+    dcat:distribution <https://w3id.org/earthsemantics/OSO/OSO-instances.ttl> ;
+    dcat:accessURL <https://w3id.org/earthsemantics/OSO/sparql> ;
+
+    void:dataDump <https://w3id.org/earthsemantics/OSO/OSO-instances.ttl> ;
+    void:sparqlEndpoint <https://virtuoso.ifremer.fr/oso/sparql> ;
+
+    void:exampleResource <https://w3id.org/earthsemantics/OSO#Azores> ;
+
+    # Provisional statistics for the current 1.2.0 working files.
+    # Recompute from the final OSO-instances.ttl before release.
+    void:triples 11654 ;
+    void:classes 49 ;
+    void:properties 117 ;
+    void:entities 381 ;
+    void:uriSpace "https://w3id.org/earthsemantics/OSO#" ;
+
+    void:vocabulary
+        <https://w3id.org/earthsemantics/OSO> ,
+        <http://www.w3.org/2002/07/owl#> ,
+        <http://www.w3.org/2000/01/rdf-schema#> ,
+        <http://www.w3.org/2004/02/skos/core#> ,
+        <http://purl.org/dc/terms/> ,
+        <http://www.w3.org/ns/dcat#> ,
+        <http://xmlns.com/foaf/0.1/> ;
+
+    dcat:theme
+        <https://data.earthportal.eu/categories/EARTH> ,
+        <https://data.earthportal.eu/categories/ENV> ,
+        <https://data.earthportal.eu/categories/CLIMATE> ;
+
+    dcat:contactPoint [
+        a vcard:Kind ;
+        vcard:fn "EMSO Data Management Service Group" ;
+        vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
+        vcard:hasOrganizationName "EMSO ERIC"
+    ] ;
+
+    foaf:primaryTopic <https://w3id.org/earthsemantics/OSO> .
