@@ -6,7 +6,7 @@
 |---|---|
 | Ontology | Observatories of the Seas Ontology (OSO) |
 | Version | 1.2.0 |
-| Release date | 2026-XX-XX |
+| Release date | 2026-08-20 |
 | Persistent IRI | https://w3id.org/earthsemantics/OSO |
 | Version IRI | https://w3id.org/earthsemantics/OSO/1.2.0/ |
 | License | CC-BY 4.0 |
