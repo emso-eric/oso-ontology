@@ -138,7 +138,7 @@ Zenodo DOI: https://doi.org/10.5281/zenodo.22030990
 ## Related resources
 
 - FAIRsharing: https://fairsharing.org/FAIRsharing.654931
-- Zenodo (OSO): https://doi.org/10.5281/zenodo.19497913
+- Zenodo (OSO): https://doi.org/10.5281/zenodo.19497912
 - GitHub repository: https://github.com/emso-eric/oso-ontology
 
 ---
