@@ -442,34 +442,6 @@ OSO:SemanticVisualizationTool a owl:Class ;
         "Uma ferramenta utilizada para visualizar artefactos semânticos, grafos RDF ou estruturas de ontologias."@pt,
         "Un instrument utilizat pentru vizualizarea artefactelor semantice, a grafurilor RDF sau a structurilor de ontologii."@ro .
 
-OSO:Site_has_a_Subsite a owl:ObjectProperty ;
-    rdfs:label "Ο σταθμός έχει έναν υποσταθμό"@el,
-        "Site has a subsite"@en,
-        "El sitio tiene un subsitio"@es,
-        "Le site possède un sous-site"@fr,
-        "Il sito possiede un sottosito"@it,
-        "Området har et underområde"@no,
-        "O sítio possui um subsítio"@pt,
-        "Situl are un sub-sit"@ro ;
-    rdfs:comment "Ένας σταθμός μπορεί να συνδέεται με έναν ή περισσότερους υποσταθμούς."@el,
-        "A site can be associated to one or more subsites."@en,
-        "Un sitio puede estar asociado a uno o más subsitios."@es,
-        "Un site peut être associé à un ou plusieurs sous-sites."@fr,
-        "Un sito può essere associato a uno o più sottositi."@it,
-        "Et område kan være knyttet til ett eller flere underområder."@no,
-        "Um sítio pode estar associado a um ou mais subsítios."@pt,
-        "Un sit poate fi asociat cu unul sau mai multe sub-situri."@ro ;
-    rdfs:domain OSO:Site ;
-    rdfs:range OSO:Subsite ;
-    skos:prefLabel "Ο σταθμός έχει έναν υποσταθμό"@el,
-        "Site has a subsite"@en,
-        "El sitio tiene un subsitio"@es,
-        "Le site possède un sous-site"@fr,
-        "Il sito possiede un sottosito"@it,
-        "Området har et underområde"@no,
-        "O sítio possui um subsítio"@pt,
-        "Situl are un sub-sit"@ro .
-
 OSO:Site_is_part_of_a_RI a owl:ObjectProperty ;
     rdfs:label "Ο σταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"@el,
         "Site is part of a Research Infrastructure"@en,
@@ -489,34 +461,6 @@ OSO:Site_is_part_of_a_RI a owl:ObjectProperty ;
         "Området er en del av en forskningsinfrastruktur"@no,
         "O sítio faz parte de uma Infraestrutura de Investigação"@pt,
         "Situl face parte dintr-o infrastructură de cercetare"@ro .
-
-OSO:Subsite_contains_a_Platform a owl:ObjectProperty ;
-    rdfs:label "Ο υποσταθμός περιέχει μια πλατφόρμα"@el,
-        "Subsite contains a platform"@en,
-        "El subsitio contiene una plataforma"@es,
-        "Le sous-site contient une plateforme"@fr,
-        "Il sottosito contiene una piattaforma"@it,
-        "Underområdet inneholder en plattform"@no,
-        "O subsítio contém uma plataforma"@pt,
-        "Sub-situl conține o platformă"@ro ;
-    rdfs:comment "Ένας υποσταθμός περιέχει μία ή περισσότερες πλατφόρμες."@el,
-        "A subsite contains one or more platforms."@en,
-        "Un subsitio contiene una o más plataformas."@es,
-        "Un sous-site contient une ou plusieurs plateformes."@fr,
-        "Un sottosito contiene una o più piattaforme."@it,
-        "Et underområde inneholder én eller flere plattformer."@no,
-        "Um subsítio contém uma ou mais plataformas."@pt,
-        "Un sub-sit conține una sau mai multe platforme."@ro ;
-    rdfs:domain OSO:Subsite ;
-    rdfs:range OSO:Platform ;
-    skos:prefLabel "Ο υποσταθμός περιέχει μια πλατφόρμα"@el,
-        "Subsite contains a platform"@en,
-        "El subsitio contiene una plataforma"@es,
-        "Le sous-site contient une plateforme"@fr,
-        "Il sottosito contiene una piattaforma"@it,
-        "Underområdet inneholder en plattform"@no,
-        "O subsítio contém uma plataforma"@pt,
-        "Sub-situl conține o platformă"@ro .
 
 OSO:Subsite_is_part_of_a_RI a owl:ObjectProperty ;
     rdfs:label "Ο υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"@el,
@@ -591,12 +535,24 @@ OSO:dateEndDeployment a owl:DatatypeProperty ;
         "Dato som markerer slutten på den operative utplasseringen av et instrument, en plattform, et sted eller en infrastruktur."@no,
         "Data que marca o fim da implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
         "Data care marchează sfârșitul desfășurării operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-    rdfs:domain OSO:Platform,
-        OSO:RegionalFacility,
-        OSO:Site,
-        OSO:SubPlatform,
-        OSO:Subsite ;
-    rdfs:range xsd:date ;
+    rdfs:domain [
+        a owl:Class ;
+            owl:unionOf (
+            OSO:Platform
+            OSO:RegionalFacility
+            OSO:Site
+            OSO:SubPlatform
+            OSO:Subsite
+            )
+    ] ;
+    rdfs:range [
+        a rdfs:Datatype ;
+        owl:unionOf (
+            xsd:date
+            xsd:gYearMonth
+            xsd:gYear
+            )
+    ] ;
     rdfs:subPropertyOf schema1:endDate ;
     skos:prefLabel "Ημερομηνία λήξης εγκατάστασης"@el,
         "Deployment end date"@en,
@@ -624,12 +580,24 @@ OSO:dateFirstDeployment a owl:DatatypeProperty ;
         "Dato for første operative utplassering av et instrument, en plattform, et sted eller en infrastruktur."@no,
         "Data da primeira implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
         "Data primei desfășurări operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-    rdfs:domain OSO:Platform,
-        OSO:RegionalFacility,
-        OSO:Site,
-        OSO:SubPlatform,
-        OSO:Subsite ;
-    rdfs:range xsd:date ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:Platform
+            OSO:RegionalFacility
+            OSO:Site
+            OSO:SubPlatform
+            OSO:Subsite
+            )
+        ] ;
+    rdfs:range [
+        a rdfs:Datatype ;
+        owl:unionOf (
+            xsd:date
+            xsd:gYearMonth
+            xsd:gYear
+            )
+        ] ;
     rdfs:subPropertyOf schema1:startDate ;
     skos:prefLabel "Ημερομηνία πρώτης εγκατάστασης"@el,
         "First deployment date"@en,
@@ -658,8 +626,13 @@ OSO:distanceFromLand a owl:DatatypeProperty ;
         "Avstand fra kysten uttrykt i nautiske mil (NM)."@no,
         "Distância à costa expressa em milhas náuticas (NM)."@pt,
         "Distanța față de coastă exprimată în mile marine (NM)."@ro ;
-    rdfs:domain OSO:RegionalFacility,
-        OSO:Site ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:RegionalFacility
+            OSO:Site
+            )
+    ] ;
     rdfs:range xsd:decimal ;
     skos:prefLabel "απόσταση από την ακτή"@el,
         "distance from land"@en,
@@ -688,7 +661,7 @@ OSO:eastBoundLongitude a owl:DatatypeProperty ;
         "Longitude oriental máxima de uma caixa geográfica delimitadora, correspondente a eastBoundLongitude na ISO 19115-3."@pt,
         "Longitudinea estică maximă a unei zone geografice delimitate, corespunzătoare eastBoundLongitude din ISO 19115-3."@ro ;
     rdfs:domain OSO:BoundingBox ;
-    rdfs:range xsd:float ;
+    rdfs:range xsd:decimal ;
     skos:prefLabel "ανατολικό όριο γεωγραφικού μήκους"@el,
         "east bound longitude"@en,
         "longitud este máxima"@es,
@@ -923,8 +896,8 @@ OSO:hasLogo a owl:ObjectProperty ;
         "tem logótipo"@pt,
         "are siglă"@ro .
 
-OSO:hasORCID a owl:FunctionalProperty,
-        owl:ObjectProperty ;
+OSO:hasORCID a owl:ObjectProperty,
+               owl:FunctionalProperty ;
     rdfs:label "ORCID"@el,
         "ORCID"@en,
         "ORCID"@es,
@@ -942,7 +915,6 @@ OSO:hasORCID a owl:FunctionalProperty,
         "Esta propriedade liga uma pessoa ao seu identificador ORCID."@pt,
         "Această proprietate leagă o persoană de identificatorul său ORCID."@ro ;
     rdfs:domain schema1:Person ;
-    rdfs:range xsd:anyURI ;
     skos:definition "Συνδέει ένα πρόσωπο με το αναγνωριστικό ORCID (Open Researcher and Contributor ID)."@el,
         "Relates a person to their ORCID (Open Researcher and Contributor ID) identifier."@en,
         "Relaciona una persona con su identificador ORCID (Open Researcher and Contributor ID)."@es,
@@ -988,8 +960,8 @@ OSO:hasPlatformCategory a owl:ObjectProperty ;
         "tem categoria de plataforma"@pt,
         "are categorie de platformă"@ro .
 
-OSO:hasROR a owl:FunctionalProperty,
-        owl:ObjectProperty ;
+OSO:hasROR a owl:ObjectProperty,
+             owl:FunctionalProperty ;
     rdfs:label "έχει ROR"@el,
         "has a ROR"@en,
         "tiene un ROR"@es,
@@ -1007,7 +979,6 @@ OSO:hasROR a owl:FunctionalProperty,
         "Esta propriedade liga uma Organização ao seu identificador ROR (Research Organization Registry)."@pt,
         "Această proprietate leagă o organizație de identificatorul său ROR (Research Organization Registry)."@ro ;
     rdfs:domain foaf:Organization ;
-    rdfs:range xsd:anyURI ;
     skos:definition "Συνδέει έναν οργανισμό με το αναγνωριστικό ROR (Research Organization Registry)."@el,
         "Relates an organisation to its ROR (Research Organization Registry) identifier."@en,
         "Relaciona una organización con su identificador ROR (Research Organization Registry)."@es,
@@ -1139,8 +1110,13 @@ OSO:isTestSite a owl:DatatypeProperty ;
         "Angir om et sted eller delsted regnes som et teststed (true/false)."@no,
         "Indica se um sítio ou subsítio é considerado um sítio de teste (true/false)."@pt,
         "Indică dacă un sit sau un subsit este considerat sit de testare (true/false)."@ro ;
-    rdfs:domain OSO:Site,
-        OSO:Subsite ;
+    rdfs:domain [
+        a owl:Class ;
+    owl:unionOf (
+        OSO:Site
+        OSO:Subsite
+    )
+    ] ;
     rdfs:range xsd:boolean ;
     skos:prefLabel "είναι δοκιμαστικός τόπος"@el,
         "is test site"@en,
@@ -1169,10 +1145,15 @@ OSO:maxWaterDepth a owl:DatatypeProperty ;
         "Verdi uttrykt i meter (m)."@no,
         "Valor expresso em metros (m)."@pt,
         "Valoare exprimată în metri (m)."@ro ;
-    rdfs:domain OSO:Platform,
-        OSO:RegionalFacility,
-        OSO:Site,
-        OSO:Subsite ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:Platform
+            OSO:RegionalFacility
+            OSO:Site
+            OSO:Subsite
+            )
+    ] ;
     rdfs:range xsd:integer ;
     skos:prefLabel "έχει μέγιστο βάθος"@el,
         "has maximum depth"@en,
@@ -1202,7 +1183,6 @@ OSO:membershipInERIC a owl:ObjectProperty ;
         "Leagă o entitate de apartenență ERIC de organizația ERIC corespunzătoare."@ro ;
     rdfs:domain OSO:ERICMembership ;
     rdfs:range OSO:ERIC ;
-    owl:inverseOf OSO:hasERICMembership ;
     skos:definition "Συνδέει μια οντότητα συμμετοχής ERIC με τον οργανισμό ERIC στον οποίο εφαρμόζεται η συμμετοχή."@el,
         "Relates an ERIC membership entity to the ERIC organisation in which the membership applies."@en,
         "Relaciona una entidad de membresía ERIC con la organización ERIC a la que corresponde la adhesión."@es,
@@ -1238,10 +1218,15 @@ OSO:minWaterDepth a owl:DatatypeProperty ;
         "Verdi uttrykt i meter (m)."@no,
         "Valor expresso em metros (m)."@pt,
         "Valoare exprimată în metri (m)."@ro ;
-    rdfs:domain OSO:Platform,
-        OSO:RegionalFacility,
-        OSO:Site,
-        OSO:Subsite ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:Platform
+            OSO:RegionalFacility
+            OSO:Site
+            OSO:Subsite
+            )
+    ] ;
     rdfs:range xsd:integer ;
     skos:prefLabel "έχει ελάχιστο βάθος"@el,
         "has minimum depth"@en,
@@ -1344,7 +1329,7 @@ OSO:westBoundLongitude a owl:DatatypeProperty ;
         "Longitude oeste máxima de uma caixa geográfica delimitadora, correspondente a westBoundLongitude na ISO 19115-3."@pt,
         "Longitudinea vestică maximă a unei zone geografice delimitate, corespunzătoare westBoundLongitude din ISO 19115-3."@ro ;
     rdfs:domain OSO:BoundingBox ;
-    rdfs:range xsd:float ;
+    rdfs:range xsd:decimal ;
     skos:prefLabel "δυτικό όριο γεωγραφικού μήκους"@el,
         "west bound longitude"@en,
         "longitud oeste máxima"@es,
@@ -1506,9 +1491,14 @@ OSO:hasCountry a owl:ObjectProperty ;
         "Knytter en organisasjon eller forskningsinfrastruktur til tilhørende land."@no,
         "Liga uma organização ou infraestrutura de investigação ao país associado."@pt,
         "Leagă o organizație sau infrastructură de cercetare de țara asociată."@ro ;
-    rdfs:domain foaf:Organization,
-        OSO:RegionalFacility,
-        OSO:ResearchInfrastructure ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            foaf:Organization
+            OSO:RegionalFacility
+            OSO:ResearchInfrastructure
+            )
+    ] ;
     rdfs:range <http://dbpedia.org/ontology/Country> ;
     rdfs:subPropertyOf schema1:addressCountry ;
     owl:inverseOf OSO:isCountryOf ;
@@ -1539,8 +1529,13 @@ OSO:hasGeometry a owl:FunctionalProperty,
         "Knytter et sted eller underområde til dets geometri."@no,
         "Liga um local ou sublocal à sua geometria."@pt,
         "Leagă un sit sau subsit de geometria sa."@ro ;
-    rdfs:domain OSO:Site,
-        OSO:Subsite ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:Site
+            OSO:Subsite
+            )
+    ] ;
     rdfs:range geosparql:Geometry ;
     owl:inverseOf OSO:isGeometryOf ;
     skos:prefLabel "έχει γεωμετρία"@el,
@@ -1669,8 +1664,7 @@ OSO:hasRegionalTeamLeader a owl:FunctionalProperty,
         "tem responsável regional"@pt,
         "are responsabil regional"@ro .
 
-OSO:hasSiteResponsible a owl:FunctionalProperty,
-        owl:ObjectProperty ;
+OSO:hasSiteResponsible a owl:ObjectProperty ;
     rdfs:label "έχει υπεύθυνο τοποθεσίας"@el,
         "has site responsible"@en,
         "tiene responsable del sitio"@es,
@@ -1863,9 +1857,14 @@ OSO:isCountryOf a owl:ObjectProperty ;
         "Liga um país a uma organização ou infraestrutura de investigação associada."@pt,
         "Leagă o țară de o organizație sau infrastructură de cercetare asociată."@ro ;
     rdfs:domain <http://dbpedia.org/ontology/Country> ;
-    rdfs:range foaf:Organization,
-        OSO:RegionalFacility,
-        OSO:ResearchInfrastructure ;
+    rdfs:range [
+    a owl:Class ;
+        owl:unionOf (
+            foaf:Organization
+            OSO:RegionalFacility
+            OSO:ResearchInfrastructure
+            )
+    ] ;
     owl:inverseOf OSO:hasCountry ;
     skos:prefLabel "είναι χώρα του"@el,
         "is country of"@en,
@@ -1931,8 +1930,13 @@ OSO:isGeometryOf a owl:ObjectProperty ;
         "Liga uma geometria ao local ou sublocal que descreve."@pt,
         "Leagă o geometrie de situl sau subsitul pe care îl descrie."@ro ;
     rdfs:domain geosparql:Geometry ;
-    rdfs:range OSO:Site,
-        OSO:Subsite ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:Site
+            OSO:Subsite
+            )
+    ] ;
     owl:inverseOf OSO:hasGeometry ;
     skos:prefLabel "είναι η γεωμετρία της"@el,
         "is geometry of"@en,
@@ -1960,8 +1964,13 @@ OSO:isLedByOrganization a owl:ObjectProperty ;
         "En regional infrastruktur administreres eller koordineres av én eller flere organisasjoner."@no,
         "Uma infraestrutura regional é gerida ou coordenada por uma ou mais organizações."@pt,
         "O infrastructură regională este gestionată sau coordonată de una sau mai multe organizații."@ro ;
-    rdfs:domain OSO:OceanographicCampaign,
-        OSO:RegionalFacility ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:OceanographicCampaign
+            OSO:RegionalFacility
+            )
+    ] ;
     rdfs:range foaf:Organization ;
     owl:inverseOf OSO:leadsRegionalFacility ;
     skos:prefLabel "συντονίζεται από οργανισμό"@el,
@@ -2077,8 +2086,13 @@ OSO:isManagedBy a owl:ObjectProperty ;
         "Knytter en forskningsinfrastruktur (ERIC eller nasjonal) til organisasjonen som administrerer eller koordinerer den."@no,
         "Liga uma infraestrutura de investigação (ERIC ou nacional) à organização que a gere ou coordena."@pt,
         "Leagă o infrastructură de cercetare (ERIC sau națională) de organizația care o gestionează sau coordonează."@ro ;
-    rdfs:domain OSO:ERIC,
-        OSO:ResearchInfrastructure ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:ERIC
+            OSO:ResearchInfrastructure
+            )
+    ] ;
     rdfs:range foaf:Organization ;
     owl:inverseOf OSO:managesInfrastructure ;
     skos:prefLabel "διαχειρίζεται από"@el,
@@ -2406,8 +2420,13 @@ OSO:leadsRegionalFacility a owl:ObjectProperty ;
         "Liga uma organização a uma infraestrutura regional que gere ou coordena."@pt,
         "Leagă o organizație de infrastructura regională pe care o gestionează sau coordonează."@ro ;
     rdfs:domain foaf:Organization ;
-    rdfs:range OSO:OceanographicCampaign,
-        OSO:RegionalFacility ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:OceanographicCampaign
+            OSO:RegionalFacility
+            )
+    ] ;
     owl:inverseOf OSO:isLedByOrganization ;
     skos:prefLabel "συντονίζει περιφερειακή υποδομή"@el,
         "leads regional facility"@en,
@@ -2473,8 +2492,13 @@ OSO:managesInfrastructure a owl:ObjectProperty ;
         "Liga uma organização à infraestrutura de investigação que gere ou coordena."@pt,
         "Leagă o organizație de infrastructura de cercetare pe care o gestionează sau coordonează."@ro ;
     rdfs:domain foaf:Organization ;
-    rdfs:range OSO:ERIC,
-        OSO:ResearchInfrastructure ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (
+            OSO:ERIC
+            OSO:ResearchInfrastructure
+            )
+    ] ;
     owl:inverseOf OSO:isManagedBy ;
     skos:prefLabel "διαχειρίζεται υποδομή"@el,
         "manages infrastructure"@en,
@@ -2735,7 +2759,7 @@ OSO:hasERICMembership a owl:ObjectProperty ;
         <https://w3id.org/earthsemantics/OSO/OSO.trig>,
         <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
     dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    dcterms:identifier <https://doi.org/10.5281/zenodo.19497913> ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
     dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
     dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931>,
         <https://doi.org/10.5281/zenodo.19497912>,

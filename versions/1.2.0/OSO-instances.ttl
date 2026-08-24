@@ -853,7 +853,7 @@ OSO:ANTARES a owl:NamedIndividual,
         "ANTARES"@no,
         "ANTARES"@pt,
         "ANTARES"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:IL07 ;
+    OSO:containsPlatform OSO:IL07 ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2014-01-01"^^xsd:date ;
     OSO:isTestSite false .
@@ -1185,7 +1185,7 @@ OSO:BJS a owl:NamedIndividual,
         "BJS"@pt,
         "BJS"@ro ;
     foaf:name "Secondary Junction Box"@en ;
-    OSO:Subsite_contains_a_Platform OSO:BJS_BathyBot,
+    OSO:containsPlatform OSO:BJS_BathyBot,
         OSO:BJS_BathyDock,
         OSO:BJS_SeabedStation ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
@@ -1758,7 +1758,7 @@ OSO:Capelinhos a owl:NamedIndividual,
         "Capelinhos"@no,
         "Capelinhos"@pt,
         "Capelinhos"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:Capelinhos_AutonomousDevices ;
+    OSO:containsPlatform OSO:Capelinhos_AutonomousDevices ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
@@ -4509,7 +4509,7 @@ OSO:LO a owl:NamedIndividual,
         "LO"@no,
         "LO"@pt,
         "LO"@ro ;
-    OSO:Site_has_a_Subsite OSO:ANTARES,
+    OSO:hasSubsite OSO:ANTARES,
         OSO:BJS ;
     OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:ALBATROSS,
@@ -4593,7 +4593,7 @@ OSO:LavaLake a owl:NamedIndividual,
         "Lava Lake"@no,
         "Lava Lake"@pt,
         "Lava Lake"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:SeaMoNWest,
+    OSO:containsPlatform OSO:SeaMoNWest,
         OSO:WestLake ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
@@ -4765,7 +4765,7 @@ OSO:Lucky_Strike a owl:NamedIndividual,
         "Lucky Strike"@no,
         "Lucky Strike"@pt,
         "Lucky Strike"@ro ;
-    OSO:Site_has_a_Subsite OSO:Capelinhos,
+    OSO:hasSubsite OSO:Capelinhos,
         OSO:Cimendef,
         OSO:Crystal,
         OSO:Cypres,
@@ -5868,7 +5868,7 @@ OSO:MontSegur a owl:NamedIndividual,
         "Mont Segur"@no,
         "Mont Segur"@pt,
         "Mont Segur"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:MontSegur_AutonomousDevices ;
+    OSO:containsPlatform OSO:MontSegur_AutonomousDevices ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
     OSO:hasCountry OSO:France ;
     OSO:isTestSite false .
@@ -7893,7 +7893,7 @@ OSO:Surface a owl:NamedIndividual,
         "Surface"@no,
         "Surface"@pt,
         "Surface"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:Lucky_Strike_Surface_BOREL ;
+    OSO:containsPlatform OSO:Lucky_Strike_Surface_BOREL ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateEndDeployment "2023-07-15"^^xsd:date ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
@@ -7923,7 +7923,7 @@ OSO:Svinoy a owl:NamedIndividual,
         "Svinøy"@no,
         "Svinoy"@pt,
         "Svinoy"@ro ;
-    OSO:Site_has_a_Subsite OSO:Svinoy_North,
+    OSO:hasSubsite OSO:Svinoy_North,
         OSO:Svinoy_South ;
     OSO:hasCountry OSO:Norway ;
     OSO:hasSiteResponsible OSO:Laura_DE_STEUR ;
@@ -7950,7 +7950,7 @@ OSO:Svinoy_North a owl:NamedIndividual,
         "Svinøy North"@no,
         "Svinoy North"@pt,
         "Svinoy North"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:Svinoy_North_Subsurface_Mooring ;
+    OSO:containsPlatform OSO:Svinoy_North_Subsurface_Mooring ;
     OSO:hasCountry OSO:Norway ;
     OSO:hasPrincipalInvestigator OSO:Laura_DE_STEUR .
 
@@ -8004,7 +8004,7 @@ OSO:Svinoy_South a owl:NamedIndividual,
         "Svinøy South"@no,
         "Svinoy South"@pt,
         "Svinoy South"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:Svinoy_South_Subsurface_Mooring ;
+    OSO:containsPlatform OSO:Svinoy_South_Subsurface_Mooring ;
     OSO:hasCountry OSO:Norway ;
     OSO:hasPrincipalInvestigator OSO:Laura_DE_STEUR .
 
@@ -8110,7 +8110,7 @@ OSO:TourEiffel a owl:NamedIndividual,
         "Tour Eiffel"@no,
         "Tour Eiffel"@pt,
         "Tour Eiffel"@ro ;
-    OSO:Subsite_contains_a_Platform OSO:SeaMoNEast,
+    OSO:containsPlatform OSO:SeaMoNEast,
         OSO:TourEiffel_AutonomousDevices ;
     OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
@@ -8330,7 +8330,7 @@ OSO:Western_Ionian_Sea a owl:NamedIndividual,
         OSO:R3,
         OSO:SN1 ;
     OSO:dateFirstDeployment "2001-01-01"^^xsd:date ;
-    OSO:distanceFromLand 13 ;
+    OSO:distanceFromLand 13.0 ;
     OSO:hasCountry OSO:Italy ;
     OSO:hasERICMembership OSO:Western_Ionian_Sea_EMSO_membership ;
     OSO:hasRegionalTeamLeader OSO:Davide_EMBRIACO ;

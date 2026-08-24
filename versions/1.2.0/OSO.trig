@@ -16,6 +16,7 @@
 @prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema1: <http://schema.org/> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
@@ -33,7 +34,7 @@
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:Nef2c313d7c1b47478e2f1f1719d6f110 {
+_:N546d79eed3c8416b8ea51cbc3e783187 {
     OSO:Bay_of_Biscay_Slope a owl:NamedIndividual,
             OSO:RegionalFacility ;
         rdfs:label "Φαράγγια του Βισκαϊκού Κόλπου"@el,
@@ -678,34 +679,6 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
         OSO:hasROR <https://ror.org/00epmv149> ;
         OSO:isMemberOf OSO:EMSO .
 
-    OSO:Site_has_a_Subsite a owl:ObjectProperty ;
-        rdfs:label "Ο σταθμός έχει έναν υποσταθμό"@el,
-            "Site has a subsite"@en,
-            "El sitio tiene un subsitio"@es,
-            "Le site possède un sous-site"@fr,
-            "Il sito possiede un sottosito"@it,
-            "Området har et underområde"@no,
-            "O sítio possui um subsítio"@pt,
-            "Situl are un sub-sit"@ro ;
-        rdfs:comment "Ένας σταθμός μπορεί να συνδέεται με έναν ή περισσότερους υποσταθμούς."@el,
-            "A site can be associated to one or more subsites."@en,
-            "Un sitio puede estar asociado a uno o más subsitios."@es,
-            "Un site peut être associé à un ou plusieurs sous-sites."@fr,
-            "Un sito può essere associato a uno o più sottositi."@it,
-            "Et område kan være knyttet til ett eller flere underområder."@no,
-            "Um sítio pode estar associado a um ou mais subsítios."@pt,
-            "Un sit poate fi asociat cu unul sau mai multe sub-situri."@ro ;
-        rdfs:domain OSO:Site ;
-        rdfs:range OSO:Subsite ;
-        skos:prefLabel "Ο σταθμός έχει έναν υποσταθμό"@el,
-            "Site has a subsite"@en,
-            "El sitio tiene un subsitio"@es,
-            "Le site possède un sous-site"@fr,
-            "Il sito possiede un sottosito"@it,
-            "Området har et underområde"@no,
-            "O sítio possui um subsítio"@pt,
-            "Situl are un sub-sit"@ro .
-
     OSO:Site_is_part_of_a_RI a owl:ObjectProperty ;
         rdfs:label "Ο σταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"@el,
             "Site is part of a Research Infrastructure"@en,
@@ -750,34 +723,6 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Molène Submarine Platform"@ro ;
         OSO:hasCountry OSO:France ;
         OSO:hasPrincipalInvestigator OSO:PI_SubmarinePlatform .
-
-    OSO:Subsite_contains_a_Platform a owl:ObjectProperty ;
-        rdfs:label "Ο υποσταθμός περιέχει μια πλατφόρμα"@el,
-            "Subsite contains a platform"@en,
-            "El subsitio contiene una plataforma"@es,
-            "Le sous-site contient une plateforme"@fr,
-            "Il sottosito contiene una piattaforma"@it,
-            "Underområdet inneholder en plattform"@no,
-            "O subsítio contém uma plataforma"@pt,
-            "Sub-situl conține o platformă"@ro ;
-        rdfs:comment "Ένας υποσταθμός περιέχει μία ή περισσότερες πλατφόρμες."@el,
-            "A subsite contains one or more platforms."@en,
-            "Un subsitio contiene una o más plataformas."@es,
-            "Un sous-site contient une ou plusieurs plateformes."@fr,
-            "Un sottosito contiene una o più piattaforme."@it,
-            "Et underområde inneholder én eller flere plattformer."@no,
-            "Um subsítio contém uma ou mais plataformas."@pt,
-            "Un sub-sit conține una sau mai multe platforme."@ro ;
-        rdfs:domain OSO:Subsite ;
-        rdfs:range OSO:Platform ;
-        skos:prefLabel "Ο υποσταθμός περιέχει μια πλατφόρμα"@el,
-            "Subsite contains a platform"@en,
-            "El subsitio contiene una plataforma"@es,
-            "Le sous-site contient une plateforme"@fr,
-            "Il sottosito contiene una piattaforma"@it,
-            "Underområdet inneholder en plattform"@no,
-            "O subsítio contém uma plataforma"@pt,
-            "Sub-situl conține o platformă"@ro .
 
     OSO:Subsite_is_part_of_a_RI a owl:ObjectProperty ;
         rdfs:label "Ο υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"@el,
@@ -944,12 +889,8 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Dato som markerer slutten på den operative utplasseringen av et instrument, en plattform, et sted eller en infrastruktur."@no,
             "Data que marca o fim da implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
             "Data care marchează sfârșitul desfășurării operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-        rdfs:domain OSO:Platform,
-            OSO:RegionalFacility,
-            OSO:Site,
-            OSO:SubPlatform,
-            OSO:Subsite ;
-        rdfs:range xsd:date ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b1 ;
+        rdfs:range _:n1469223e979d46a3b8e214807df182f4b7 ;
         rdfs:subPropertyOf schema1:endDate ;
         skos:prefLabel "Ημερομηνία λήξης εγκατάστασης"@el,
             "Deployment end date"@en,
@@ -977,12 +918,8 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Dato for første operative utplassering av et instrument, en plattform, et sted eller en infrastruktur."@no,
             "Data da primeira implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
             "Data primei desfășurări operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-        rdfs:domain OSO:Platform,
-            OSO:RegionalFacility,
-            OSO:Site,
-            OSO:SubPlatform,
-            OSO:Subsite ;
-        rdfs:range xsd:date ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b11 ;
+        rdfs:range _:n1469223e979d46a3b8e214807df182f4b17 ;
         rdfs:subPropertyOf schema1:startDate ;
         skos:prefLabel "Ημερομηνία πρώτης εγκατάστασης"@el,
             "First deployment date"@en,
@@ -1011,8 +948,7 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Avstand fra kysten uttrykt i nautiske mil (NM)."@no,
             "Distância à costa expressa em milhas náuticas (NM)."@pt,
             "Distanța față de coastă exprimată în mile marine (NM)."@ro ;
-        rdfs:domain OSO:RegionalFacility,
-            OSO:Site ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b21 ;
         rdfs:range xsd:decimal ;
         skos:prefLabel "απόσταση από την ακτή"@el,
             "distance from land"@en,
@@ -1041,7 +977,7 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Longitude oriental máxima de uma caixa geográfica delimitadora, correspondente a eastBoundLongitude na ISO 19115-3."@pt,
             "Longitudinea estică maximă a unei zone geografice delimitate, corespunzătoare eastBoundLongitude din ISO 19115-3."@ro ;
         rdfs:domain OSO:BoundingBox ;
-        rdfs:range xsd:float ;
+        rdfs:range xsd:decimal ;
         skos:prefLabel "ανατολικό όριο γεωγραφικού μήκους"@el,
             "east bound longitude"@en,
             "longitud este máxima"@es,
@@ -1323,7 +1259,6 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Esta propriedade liga uma pessoa ao seu identificador ORCID."@pt,
             "Această proprietate leagă o persoană de identificatorul său ORCID."@ro ;
         rdfs:domain schema1:Person ;
-        rdfs:range xsd:anyURI ;
         skos:definition "Συνδέει ένα πρόσωπο με το αναγνωριστικό ORCID (Open Researcher and Contributor ID)."@el,
             "Relates a person to their ORCID (Open Researcher and Contributor ID) identifier."@en,
             "Relaciona una persona con su identificador ORCID (Open Researcher and Contributor ID)."@es,
@@ -1388,7 +1323,6 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Esta propriedade liga uma Organização ao seu identificador ROR (Research Organization Registry)."@pt,
             "Această proprietate leagă o organizație de identificatorul său ROR (Research Organization Registry)."@ro ;
         rdfs:domain foaf:Organization ;
-        rdfs:range xsd:anyURI ;
         skos:definition "Συνδέει έναν οργανισμό με το αναγνωριστικό ROR (Research Organization Registry)."@el,
             "Relates an organisation to its ROR (Research Organization Registry) identifier."@en,
             "Relaciona una organización con su identificador ROR (Research Organization Registry)."@es,
@@ -1520,8 +1454,7 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Angir om et sted eller delsted regnes som et teststed (true/false)."@no,
             "Indica se um sítio ou subsítio é considerado um sítio de teste (true/false)."@pt,
             "Indică dacă un sit sau un subsit este considerat sit de testare (true/false)."@ro ;
-        rdfs:domain OSO:Site,
-            OSO:Subsite ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b24 ;
         rdfs:range xsd:boolean ;
         skos:prefLabel "είναι δοκιμαστικός τόπος"@el,
             "is test site"@en,
@@ -1550,10 +1483,7 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Verdi uttrykt i meter (m)."@no,
             "Valor expresso em metros (m)."@pt,
             "Valoare exprimată în metri (m)."@ro ;
-        rdfs:domain OSO:Platform,
-            OSO:RegionalFacility,
-            OSO:Site,
-            OSO:Subsite ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b27 ;
         rdfs:range xsd:integer ;
         skos:prefLabel "έχει μέγιστο βάθος"@el,
             "has maximum depth"@en,
@@ -1583,7 +1513,6 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Leagă o entitate de apartenență ERIC de organizația ERIC corespunzătoare."@ro ;
         rdfs:domain OSO:ERICMembership ;
         rdfs:range OSO:ERIC ;
-        owl:inverseOf OSO:hasERICMembership ;
         skos:definition "Συνδέει μια οντότητα συμμετοχής ERIC με τον οργανισμό ERIC στον οποίο εφαρμόζεται η συμμετοχή."@el,
             "Relates an ERIC membership entity to the ERIC organisation in which the membership applies."@en,
             "Relaciona una entidad de membresía ERIC con la organización ERIC a la que corresponde la adhesión."@es,
@@ -1619,10 +1548,7 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Verdi uttrykt i meter (m)."@no,
             "Valor expresso em metros (m)."@pt,
             "Valoare exprimată în metri (m)."@ro ;
-        rdfs:domain OSO:Platform,
-            OSO:RegionalFacility,
-            OSO:Site,
-            OSO:Subsite ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b32 ;
         rdfs:range xsd:integer ;
         skos:prefLabel "έχει ελάχιστο βάθος"@el,
             "has minimum depth"@en,
@@ -1751,7 +1677,7 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "Longitude oeste máxima de uma caixa geográfica delimitadora, correspondente a westBoundLongitude na ISO 19115-3."@pt,
             "Longitudinea vestică maximă a unei zone geografice delimitate, corespunzătoare westBoundLongitude din ISO 19115-3."@ro ;
         rdfs:domain OSO:BoundingBox ;
-        rdfs:range xsd:float ;
+        rdfs:range xsd:decimal ;
         skos:prefLabel "δυτικό όριο γεωγραφικού μήκους"@el,
             "west bound longitude"@en,
             "longitud oeste máxima"@es,
@@ -1829,8 +1755,8 @@ _:Nef2c313d7c1b47478e2f1f1719d6f110 {
             "ANTARES"@no,
             "ANTARES"@pt,
             "ANTARES"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:IL07 ;
         OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:IL07 ;
         OSO:dateFirstDeployment "2014-01-01"^^xsd:date ;
         OSO:isTestSite false .
 
@@ -2161,10 +2087,10 @@ ATLANTIC WHALE DEAL believes that by protecting whales, they're also making a po
             "BJS"@pt,
             "BJS"@ro ;
         foaf:name "Secondary Junction Box"@en ;
-        OSO:Subsite_contains_a_Platform OSO:BJS_BathyBot,
+        OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:BJS_BathyBot,
             OSO:BJS_BathyDock,
             OSO:BJS_SeabedStation ;
-        OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
         OSO:dateFirstDeployment "2020-01-01"^^xsd:date ;
         OSO:isTestSite false .
 
@@ -2734,8 +2660,8 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "Capelinhos"@no,
             "Capelinhos"@pt,
             "Capelinhos"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:Capelinhos_AutonomousDevices ;
         OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:Capelinhos_AutonomousDevices ;
         OSO:isTestSite false .
 
     OSO:Carlos_SOUSA a schema1:Person,
@@ -3112,7 +3038,7 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "DYFAMED"@no,
             "DYFAMED"@pt,
             "DYFAMED"@ro ;
-        adms:identifier _:n139f6b09eafe455f8949bb1019719b59b1 ;
+        adms:identifier _:na5c6c5fc02784cdda6175453a92edc60b1 ;
         OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
         OSO:containsPlatform OSO:Dyfamed_Mugobs,
             OSO:Dyfamed_ODAS,
@@ -3545,7 +3471,7 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "Campagnes EMSO Mer Ligure Ouest"@fr ;
         skos:prefLabel "EMSO LIGURE OUEST"@en,
             "EMSO LIGURE OUEST"@fr ;
-        adms:identifier _:n139f6b09eafe455f8949bb1019719b59b2 ;
+        adms:identifier _:na5c6c5fc02784cdda6175453a92edc60b2 ;
         prov:wasAssociatedWith OSO:EMSO_France .
 
     OSO:EMSO_SA a owl:NamedIndividual,
@@ -5451,8 +5377,6 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "LO"@no,
             "LO"@pt,
             "LO"@ro ;
-        OSO:Site_has_a_Subsite OSO:ANTARES,
-            OSO:BJS ;
         OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
         OSO:containsPlatform OSO:ALBATROSS,
             OSO:MII ;
@@ -5462,6 +5386,8 @@ CLASS will be delivered through an Atlantic focused science programme, building 
         OSO:hasLocation OSO:French_riviera ;
         OSO:hasSiteResponsible OSO:Dominique_LEFEVRE,
             OSO:Séverine_MARTINI ;
+        OSO:hasSubsite OSO:ANTARES,
+            OSO:BJS ;
         OSO:isTestSite false ;
         OSO:maxWaterDepth 2475 .
 
@@ -5535,9 +5461,9 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "Lava Lake"@no,
             "Lava Lake"@pt,
             "Lava Lake"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:SeaMoNWest,
-            OSO:WestLake ;
         OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:SeaMoNWest,
+            OSO:WestLake ;
         OSO:isTestSite false .
 
     OSO:Ligurian_Sea a owl:NamedIndividual,
@@ -5707,7 +5633,13 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "Lucky Strike"@no,
             "Lucky Strike"@pt,
             "Lucky Strike"@ro ;
-        OSO:Site_has_a_Subsite OSO:Capelinhos,
+        OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:Lucky_Strike_AutonomousDevices,
+            OSO:Lucky_Strike_EGIM,
+            OSO:Lucky_Strike_Hydrographic_Mooring ;
+        OSO:hasSiteResponsible OSO:Laurent_GAUTIER,
+            OSO:Thibault_BARREYRE ;
+        OSO:hasSubsite OSO:Capelinhos,
             OSO:Cimendef,
             OSO:Crystal,
             OSO:Cypres,
@@ -5722,12 +5654,6 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             OSO:TourEiffel,
             OSO:WhiteCastle,
             OSO:Y3 ;
-        OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
-        OSO:containsPlatform OSO:Lucky_Strike_AutonomousDevices,
-            OSO:Lucky_Strike_EGIM,
-            OSO:Lucky_Strike_Hydrographic_Mooring ;
-        OSO:hasSiteResponsible OSO:Laurent_GAUTIER,
-            OSO:Thibault_BARREYRE ;
         OSO:isTestSite false .
 
     OSO:Lucky_Strike_AutonomousDevices a owl:NamedIndividual,
@@ -6810,8 +6736,8 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Mont Segur"@no,
             "Mont Segur"@pt,
             "Mont Segur"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:MontSegur_AutonomousDevices ;
         OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:MontSegur_AutonomousDevices ;
         OSO:hasCountry OSO:France ;
         OSO:isTestSite false .
 
@@ -9068,8 +8994,8 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Surface"@no,
             "Surface"@pt,
             "Surface"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:Lucky_Strike_Surface_BOREL ;
         OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:Lucky_Strike_Surface_BOREL ;
         OSO:dateEndDeployment "2023-07-15"^^xsd:date ;
         OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
         OSO:hasCountry OSO:Portugal ;
@@ -9098,10 +9024,10 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Svinøy"@no,
             "Svinoy"@pt,
             "Svinoy"@ro ;
-        OSO:Site_has_a_Subsite OSO:Svinoy_North,
-            OSO:Svinoy_South ;
         OSO:hasCountry OSO:Norway ;
         OSO:hasSiteResponsible OSO:Laura_DE_STEUR ;
+        OSO:hasSubsite OSO:Svinoy_North,
+            OSO:Svinoy_South ;
         OSO:isTestSite false .
 
     OSO:Svinoy_North a owl:NamedIndividual,
@@ -9125,7 +9051,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Svinøy North"@no,
             "Svinoy North"@pt,
             "Svinoy North"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:Svinoy_North_Subsurface_Mooring ;
+        OSO:containsPlatform OSO:Svinoy_North_Subsurface_Mooring ;
         OSO:hasCountry OSO:Norway ;
         OSO:hasPrincipalInvestigator OSO:Laura_DE_STEUR .
 
@@ -9179,7 +9105,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Svinøy South"@no,
             "Svinoy South"@pt,
             "Svinoy South"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:Svinoy_South_Subsurface_Mooring ;
+        OSO:containsPlatform OSO:Svinoy_South_Subsurface_Mooring ;
         OSO:hasCountry OSO:Norway ;
         OSO:hasPrincipalInvestigator OSO:Laura_DE_STEUR .
 
@@ -9285,9 +9211,9 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Tour Eiffel"@no,
             "Tour Eiffel"@pt,
             "Tour Eiffel"@ro ;
-        OSO:Subsite_contains_a_Platform OSO:SeaMoNEast,
-            OSO:TourEiffel_AutonomousDevices ;
         OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+        OSO:containsPlatform OSO:SeaMoNEast,
+            OSO:TourEiffel_AutonomousDevices ;
         OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
         OSO:hasCountry OSO:Portugal ;
         OSO:isTestSite false .
@@ -9505,7 +9431,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             OSO:R3,
             OSO:SN1 ;
         OSO:dateFirstDeployment "2001-01-01"^^xsd:date ;
-        OSO:distanceFromLand 13 ;
+        OSO:distanceFromLand 13.0 ;
         OSO:hasCountry OSO:Italy ;
         OSO:hasERICMembership OSO:Western_Ionian_Sea_EMSO_membership ;
         OSO:hasRegionalTeamLeader OSO:Davide_EMBRIACO ;
@@ -9838,9 +9764,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Knytter en organisasjon eller forskningsinfrastruktur til tilhørende land."@no,
             "Liga uma organização ou infraestrutura de investigação ao país associado."@pt,
             "Leagă o organizație sau infrastructură de cercetare de țara asociată."@ro ;
-        rdfs:domain foaf:Organization,
-            OSO:RegionalFacility,
-            OSO:ResearchInfrastructure ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b37 ;
         rdfs:range <http://dbpedia.org/ontology/Country> ;
         rdfs:subPropertyOf schema1:addressCountry ;
         owl:inverseOf OSO:isCountryOf ;
@@ -9852,6 +9776,43 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "har land"@no,
             "tem país"@pt,
             "are țară"@ro .
+
+    OSO:hasERICMembership a owl:ObjectProperty ;
+        rdfs:label "έχει συμμετοχή σε ERIC"@el,
+            "has ERIC membership"@en,
+            "tiene membresía en un ERIC"@es,
+            "a une appartenance à un ERIC"@fr,
+            "ha un'appartenenza a un ERIC"@it,
+            "har medlemskap i et ERIC"@no,
+            "tem participação em um ERIC"@pt,
+            "are apartenență la un ERIC"@ro ;
+        rdfs:comment "Συνδέει μια περιφερειακή υποδομή με τη συμμετοχή της σε μια υποδομή ERIC."@el,
+            "Links a regional facility to its membership within an ERIC infrastructure."@en,
+            "Relaciona una infraestructura regional con su membresía dentro de una infraestructura ERIC."@es,
+            "Relie une infrastructure régionale à son appartenance à un ERIC."@fr,
+            "Collega un'infrastruttura regionale alla sua adesione a un'infrastruttura ERIC."@it,
+            "Knytter en regional infrastruktur til medlemskapet i en ERIC-infrastruktur."@no,
+            "Liga uma infraestrutura regional à sua participação em uma infraestrutura ERIC."@pt,
+            "Leagă o infrastructură regională de apartenența sa la o infrastructură ERIC."@ro ;
+        rdfs:domain OSO:RegionalFacility ;
+        rdfs:range OSO:ERICMembership ;
+        owl:inverseOf OSO:isERICMembershipOf ;
+        skos:definition "Συνδέει μια περιφερειακή υποδομή με την οντότητα συμμετοχής ERIC της."@el,
+            "Relates a regional facility to its ERIC membership entity."@en,
+            "Relaciona una infraestructura regional con su entidad de membresía ERIC."@es,
+            "Relie une infrastructure régionale à son entité d’adhésion ERIC."@fr,
+            "Collega un'infrastruttura regionale alla sua entità di adesione ERIC."@it,
+            "Knytter en regional infrastruktur til dens ERIC-medlemskapsenhet."@no,
+            "Liga uma infraestrutura regional à sua entidade de adesão ERIC."@pt,
+            "Leagă o infrastructură regională de entitatea sa de apartenență ERIC."@ro ;
+        skos:prefLabel "έχει συμμετοχή σε ERIC"@el,
+            "has ERIC membership"@en,
+            "tiene membresía en un ERIC"@es,
+            "a une appartenance à un ERIC"@fr,
+            "ha un'appartenenza a un ERIC"@it,
+            "har medlemskap i et ERIC"@no,
+            "tem participação em um ERIC"@pt,
+            "are apartenență la un ERIC"@ro .
 
     OSO:hasGeometry a owl:FunctionalProperty,
             owl:ObjectProperty ;
@@ -9871,8 +9832,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Knytter et sted eller underområde til dets geometri."@no,
             "Liga um local ou sublocal à sua geometria."@pt,
             "Leagă un sit sau subsit de geometria sa."@ro ;
-        rdfs:domain OSO:Site,
-            OSO:Subsite ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b41 ;
         rdfs:range geosparql:Geometry ;
         owl:inverseOf OSO:isGeometryOf ;
         skos:prefLabel "έχει γεωμετρία"@el,
@@ -10001,8 +9961,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "tem responsável regional"@pt,
             "are responsabil regional"@ro .
 
-    OSO:hasSiteResponsible a owl:FunctionalProperty,
-            owl:ObjectProperty ;
+    OSO:hasSiteResponsible a owl:ObjectProperty ;
         rdfs:label "έχει υπεύθυνο τοποθεσίας"@el,
             "has site responsible"@en,
             "tiene responsable del sitio"@es,
@@ -10195,9 +10154,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga um país a uma organização ou infraestrutura de investigação associada."@pt,
             "Leagă o țară de o organizație sau infrastructură de cercetare asociată."@ro ;
         rdfs:domain <http://dbpedia.org/ontology/Country> ;
-        rdfs:range foaf:Organization,
-            OSO:RegionalFacility,
-            OSO:ResearchInfrastructure ;
+        rdfs:range _:n1469223e979d46a3b8e214807df182f4b44 ;
         owl:inverseOf OSO:hasCountry ;
         skos:prefLabel "είναι χώρα του"@el,
             "is country of"@en,
@@ -10263,8 +10220,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga uma geometria ao local ou sublocal que descreve."@pt,
             "Leagă o geometrie de situl sau subsitul pe care îl descrie."@ro ;
         rdfs:domain geosparql:Geometry ;
-        rdfs:range OSO:Site,
-            OSO:Subsite ;
+        rdfs:range _:n1469223e979d46a3b8e214807df182f4b48 ;
         owl:inverseOf OSO:hasGeometry ;
         skos:prefLabel "είναι η γεωμετρία της"@el,
             "is geometry of"@en,
@@ -10292,8 +10248,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "En regional infrastruktur administreres eller koordineres av én eller flere organisasjoner."@no,
             "Uma infraestrutura regional é gerida ou coordenada por uma ou mais organizações."@pt,
             "O infrastructură regională este gestionată sau coordonată de una sau mai multe organizații."@ro ;
-        rdfs:domain OSO:OceanographicCampaign,
-            OSO:RegionalFacility ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b51 ;
         rdfs:range foaf:Organization ;
         owl:inverseOf OSO:leadsRegionalFacility ;
         skos:prefLabel "συντονίζεται από οργανισμό"@el,
@@ -10409,8 +10364,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Knytter en forskningsinfrastruktur (ERIC eller nasjonal) til organisasjonen som administrerer eller koordinerer den."@no,
             "Liga uma infraestrutura de investigação (ERIC ou nacional) à organização que a gere ou coordena."@pt,
             "Leagă o infrastructură de cercetare (ERIC sau națională) de organizația care o gestionează sau coordonează."@ro ;
-        rdfs:domain OSO:ERIC,
-            OSO:ResearchInfrastructure ;
+        rdfs:domain _:n1469223e979d46a3b8e214807df182f4b54 ;
         rdfs:range foaf:Organization ;
         owl:inverseOf OSO:managesInfrastructure ;
         skos:prefLabel "διαχειρίζεται από"@el,
@@ -10738,8 +10692,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga uma organização a uma infraestrutura regional que gere ou coordena."@pt,
             "Leagă o organizație de infrastructura regională pe care o gestionează sau coordonează."@ro ;
         rdfs:domain foaf:Organization ;
-        rdfs:range OSO:OceanographicCampaign,
-            OSO:RegionalFacility ;
+        rdfs:range _:n1469223e979d46a3b8e214807df182f4b57 ;
         owl:inverseOf OSO:isLedByOrganization ;
         skos:prefLabel "συντονίζει περιφερειακή υποδομή"@el,
             "leads regional facility"@en,
@@ -10805,8 +10758,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga uma organização à infraestrutura de investigação que gere ou coordena."@pt,
             "Leagă o organizație de infrastructura de cercetare pe care o gestionează sau coordonează."@ro ;
         rdfs:domain foaf:Organization ;
-        rdfs:range OSO:ERIC,
-            OSO:ResearchInfrastructure ;
+        rdfs:range _:n1469223e979d46a3b8e214807df182f4b60 ;
         owl:inverseOf OSO:isManagedBy ;
         skos:prefLabel "διαχειρίζεται υποδομή"@el,
             "manages infrastructure"@en,
@@ -12758,43 +12710,6 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "YASGUI"@pt,
             "YASGUI"@ro .
 
-    OSO:hasERICMembership a owl:ObjectProperty ;
-        rdfs:label "έχει συμμετοχή σε ERIC"@el,
-            "has ERIC membership"@en,
-            "tiene membresía en un ERIC"@es,
-            "a une appartenance à un ERIC"@fr,
-            "ha un'appartenenza a un ERIC"@it,
-            "har medlemskap i et ERIC"@no,
-            "tem participação em um ERIC"@pt,
-            "are apartenență la un ERIC"@ro ;
-        rdfs:comment "Συνδέει μια περιφερειακή υποδομή με τη συμμετοχή της σε μια υποδομή ERIC."@el,
-            "Links a regional facility to its membership within an ERIC infrastructure."@en,
-            "Relaciona una infraestructura regional con su membresía dentro de una infraestructura ERIC."@es,
-            "Relie une infrastructure régionale à son appartenance à un ERIC."@fr,
-            "Collega un'infrastruttura regionale alla sua adesione a un'infrastruttura ERIC."@it,
-            "Knytter en regional infrastruktur til medlemskapet i en ERIC-infrastruktur."@no,
-            "Liga uma infraestrutura regional à sua participação em uma infraestrutura ERIC."@pt,
-            "Leagă o infrastructură regională de apartenența sa la o infrastructură ERIC."@ro ;
-        rdfs:domain OSO:RegionalFacility ;
-        rdfs:range OSO:ERICMembership ;
-        owl:inverseOf OSO:isERICMembershipOf ;
-        skos:definition "Συνδέει μια περιφερειακή υποδομή με την οντότητα συμμετοχής ERIC της."@el,
-            "Relates a regional facility to its ERIC membership entity."@en,
-            "Relaciona una infraestructura regional con su entidad de membresía ERIC."@es,
-            "Relie une infrastructure régionale à son entité d’adhésion ERIC."@fr,
-            "Collega un'infrastruttura regionale alla sua entità di adesione ERIC."@it,
-            "Knytter en regional infrastruktur til dens ERIC-medlemskapsenhet."@no,
-            "Liga uma infraestrutura regional à sua entidade de adesão ERIC."@pt,
-            "Leagă o infrastructură regională de entitatea sa de apartenență ERIC."@ro ;
-        skos:prefLabel "έχει συμμετοχή σε ERIC"@el,
-            "has ERIC membership"@en,
-            "tiene membresía en un ERIC"@es,
-            "a une appartenance à un ERIC"@fr,
-            "ha un'appartenenza a un ERIC"@it,
-            "har medlemskap i et ERIC"@no,
-            "tem participação em um ERIC"@pt,
-            "are apartenență la un ERIC"@ro .
-
     <https://w3id.org/earthsemantics/OSO> a owl:Ontology ;
         rdfs:label "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"@el,
             "Observatories of the Seas Ontology (OSO)"@en,
@@ -12961,7 +12876,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             <https://w3id.org/earthsemantics/OSO/OSO.trig>,
             <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
         dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.19497913> ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
         dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
         dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931>,
             <https://doi.org/10.5281/zenodo.19497912>,
@@ -13147,13 +13062,13 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Må ikke forveksles med OpenScienceOntology (OSO) eller Ontology for Scenario Orchestration (OSO)."@no,
             "Não confundir com OpenScienceOntology (OSO) nem com Ontology for Scenario Orchestration (OSO)."@pt,
             "A nu se confunda cu OpenScienceOntology (OSO) sau cu Ontology for Scenario Orchestration (OSO)."@ro ;
-        adms:identifier _:n5f8122993886443a8f6854c0a05646ebb1,
-            _:n5f8122993886443a8f6854c0a05646ebb2,
-            _:n5f8122993886443a8f6854c0a05646ebb3 ;
+        adms:identifier _:n1469223e979d46a3b8e214807df182f4b63,
+            _:n1469223e979d46a3b8e214807df182f4b64,
+            _:n1469223e979d46a3b8e214807df182f4b65 ;
         adms:representationTechnique "OWL 2 DL in Turtle syntax" ;
         adms:status <http://purl.org/adms/status/Completed> ;
         dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
-        dcat:contactPoint _:n5f8122993886443a8f6854c0a05646ebb4 ;
+        dcat:contactPoint _:n1469223e979d46a3b8e214807df182f4b66 ;
         dcat:keyword "θαλάσσια παρατηρητήρια"@el,
             "EMSO"@en,
             "FAIR data"@en,
@@ -15211,6 +15126,34 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Itália"@pt,
             "Italia"@ro .
 
+    OSO:Subsite a owl:Class ;
+        rdfs:label "Υποτοποθεσία παρατήρησης"@el,
+            "Observation Subsite"@en,
+            "Sub-sitio de observación"@es,
+            "Sous-site d'observation"@fr,
+            "Sotto-sito di osservazione"@it,
+            "Delområde for observasjon"@no,
+            "Sublocal de observação"@pt,
+            "Sub-site de observație"@ro ;
+        metadata:prefixIRI "OSO:Subsite" ;
+        rdfs:comment "Μια υποτοποθεσία παρατήρησης, λεπτότερο συστατικό ενός τόπου, που επιτρέπει αυξημένη χωρική ανάλυση για μέτρηση ή οργανολογία."@el,
+            "A subsite of observation, a finer component of a site, enabling increased spatial granularity for measurement or instrumentation."@en,
+            "Un sub-sitio de observación, componente más detallado de un sitio, que permite una mayor granularidad espacial para mediciones o instrumentación."@es,
+            "Un sous-site d'observation, composante plus fine d’un site, qui permet une granularité spatiale accrue pour la mesure ou l'instrumentation."@fr,
+            "Un sotto-sito di osservazione, componente più fine di un sito, che consente una maggiore granularità spaziale per le misurazioni o la strumentazione."@it,
+            "Et delområde for observasjon, en finere komponent av et sted, som muliggjør økt romlig granularitet for måling eller instrumentering."@no,
+            "Um sublocal de observação, componente mais detalhado de um site, permitindo maior granularidade espacial para medições ou instrumentação."@pt,
+            "Un sub-site de observație, componentă mai detaliată a unui site, care permite o granularitate spațială crescută pentru măsurători sau instrumentare."@ro ;
+        rdfs:subClassOf OSO:Site ;
+        skos:prefLabel "Υποτοποθεσία παρατήρησης"@el,
+            "Observation Subsite"@en,
+            "Sub-sitio de observación"@es,
+            "Sous-site d'observation"@fr,
+            "Sotto-sito di osservazione"@it,
+            "Delområde for observasjon"@no,
+            "Sublocal de observação"@pt,
+            "Sub-site de observație"@ro .
+
     OSO:EMSO-France a owl:NamedIndividual,
             cerif:Organisation,
             OSO:ResearchInfrastructure ;
@@ -15284,34 +15227,6 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
         OSO:isManagedBy OSO:CNRS,
             OSO:Ifremer ;
         OSO:isPartOf OSO:EMSO .
-
-    OSO:Subsite a owl:Class ;
-        rdfs:label "Υποτοποθεσία παρατήρησης"@el,
-            "Observation Subsite"@en,
-            "Sub-sitio de observación"@es,
-            "Sous-site d'observation"@fr,
-            "Sotto-sito di osservazione"@it,
-            "Delområde for observasjon"@no,
-            "Sublocal de observação"@pt,
-            "Sub-site de observație"@ro ;
-        metadata:prefixIRI "OSO:Subsite" ;
-        rdfs:comment "Μια υποτοποθεσία παρατήρησης, λεπτότερο συστατικό ενός τόπου, που επιτρέπει αυξημένη χωρική ανάλυση για μέτρηση ή οργανολογία."@el,
-            "A subsite of observation, a finer component of a site, enabling increased spatial granularity for measurement or instrumentation."@en,
-            "Un sub-sitio de observación, componente más detallado de un sitio, que permite una mayor granularidad espacial para mediciones o instrumentación."@es,
-            "Un sous-site d'observation, composante plus fine d’un site, qui permet une granularité spatiale accrue pour la mesure ou l'instrumentation."@fr,
-            "Un sotto-sito di osservazione, componente più fine di un sito, che consente una maggiore granularità spaziale per le misurazioni o la strumentazione."@it,
-            "Et delområde for observasjon, en finere komponent av et sted, som muliggjør økt romlig granularitet for måling eller instrumentering."@no,
-            "Um sublocal de observação, componente mais detalhado de um site, permitindo maior granularidade espacial para medições ou instrumentação."@pt,
-            "Un sub-site de observație, componentă mai detaliată a unui site, care permite o granularitate spațială crescută pentru măsurători sau instrumentare."@ro ;
-        rdfs:subClassOf OSO:Site ;
-        skos:prefLabel "Υποτοποθεσία παρατήρησης"@el,
-            "Observation Subsite"@en,
-            "Sub-sitio de observación"@es,
-            "Sous-site d'observation"@fr,
-            "Sotto-sito di osservazione"@it,
-            "Delområde for observasjon"@no,
-            "Sublocal de observação"@pt,
-            "Sub-site de observație"@ro .
 
     OSO:EMSO a owl:NamedIndividual,
             cerif:Organisation,
@@ -15508,34 +15423,220 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Plataforma de observação"@pt,
             "Platformă de observație"@ro .
 
-    _:n139f6b09eafe455f8949bb1019719b59b3 a vcard:Kind ;
+    _:na5c6c5fc02784cdda6175453a92edc60b3 a vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
         vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
         vcard:hasOrganizationName "EMSO ERIC" .
 
-    _:n139f6b09eafe455f8949bb1019719b59b1 a adms:Identifier ;
-        schema1:value "10.17882/43749" ;
-        skos:notation "10.17882/43749" .
+    _:n1469223e979d46a3b8e214807df182f4b1 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b2 .
 
-    _:n139f6b09eafe455f8949bb1019719b59b2 a adms:Identifier ;
-        dcterms:creator "Flotte Océanographique Française" ;
-        skos:notation "10.18142/295" .
+    _:n1469223e979d46a3b8e214807df182f4b10 rdf:first xsd:gYear ;
+        rdf:rest () .
 
-    _:n5f8122993886443a8f6854c0a05646ebb1 a adms:Identifier ;
+    _:n1469223e979d46a3b8e214807df182f4b11 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b12 .
+
+    _:n1469223e979d46a3b8e214807df182f4b12 rdf:first OSO:Platform ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b13 .
+
+    _:n1469223e979d46a3b8e214807df182f4b13 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b14 .
+
+    _:n1469223e979d46a3b8e214807df182f4b14 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b15 .
+
+    _:n1469223e979d46a3b8e214807df182f4b15 rdf:first OSO:SubPlatform ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b16 .
+
+    _:n1469223e979d46a3b8e214807df182f4b16 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b17 a rdfs:Datatype ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b18 .
+
+    _:n1469223e979d46a3b8e214807df182f4b18 rdf:first xsd:date ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b19 .
+
+    _:n1469223e979d46a3b8e214807df182f4b19 rdf:first xsd:gYearMonth ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b20 .
+
+    _:n1469223e979d46a3b8e214807df182f4b2 rdf:first OSO:Platform ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b3 .
+
+    _:n1469223e979d46a3b8e214807df182f4b20 rdf:first xsd:gYear ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b21 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b22 .
+
+    _:n1469223e979d46a3b8e214807df182f4b22 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b23 .
+
+    _:n1469223e979d46a3b8e214807df182f4b23 rdf:first OSO:Site ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b24 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b25 .
+
+    _:n1469223e979d46a3b8e214807df182f4b25 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b26 .
+
+    _:n1469223e979d46a3b8e214807df182f4b26 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b27 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b28 .
+
+    _:n1469223e979d46a3b8e214807df182f4b28 rdf:first OSO:Platform ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b29 .
+
+    _:n1469223e979d46a3b8e214807df182f4b29 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b30 .
+
+    _:n1469223e979d46a3b8e214807df182f4b3 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b4 .
+
+    _:n1469223e979d46a3b8e214807df182f4b30 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b31 .
+
+    _:n1469223e979d46a3b8e214807df182f4b31 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b32 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b33 .
+
+    _:n1469223e979d46a3b8e214807df182f4b33 rdf:first OSO:Platform ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b34 .
+
+    _:n1469223e979d46a3b8e214807df182f4b34 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b35 .
+
+    _:n1469223e979d46a3b8e214807df182f4b35 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b36 .
+
+    _:n1469223e979d46a3b8e214807df182f4b36 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b37 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b38 .
+
+    _:n1469223e979d46a3b8e214807df182f4b38 rdf:first foaf:Organization ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b39 .
+
+    _:n1469223e979d46a3b8e214807df182f4b39 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b40 .
+
+    _:n1469223e979d46a3b8e214807df182f4b4 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b5 .
+
+    _:n1469223e979d46a3b8e214807df182f4b40 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b41 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b42 .
+
+    _:n1469223e979d46a3b8e214807df182f4b42 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b43 .
+
+    _:n1469223e979d46a3b8e214807df182f4b43 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b44 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b45 .
+
+    _:n1469223e979d46a3b8e214807df182f4b45 rdf:first foaf:Organization ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b46 .
+
+    _:n1469223e979d46a3b8e214807df182f4b46 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b47 .
+
+    _:n1469223e979d46a3b8e214807df182f4b47 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b48 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b49 .
+
+    _:n1469223e979d46a3b8e214807df182f4b49 rdf:first OSO:Site ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b50 .
+
+    _:n1469223e979d46a3b8e214807df182f4b5 rdf:first OSO:SubPlatform ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b6 .
+
+    _:n1469223e979d46a3b8e214807df182f4b50 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b51 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b52 .
+
+    _:n1469223e979d46a3b8e214807df182f4b52 rdf:first OSO:OceanographicCampaign ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b53 .
+
+    _:n1469223e979d46a3b8e214807df182f4b53 rdf:first OSO:RegionalFacility ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b54 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b55 .
+
+    _:n1469223e979d46a3b8e214807df182f4b55 rdf:first OSO:ERIC ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b56 .
+
+    _:n1469223e979d46a3b8e214807df182f4b56 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b57 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b58 .
+
+    _:n1469223e979d46a3b8e214807df182f4b58 rdf:first OSO:OceanographicCampaign ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b59 .
+
+    _:n1469223e979d46a3b8e214807df182f4b59 rdf:first OSO:RegionalFacility ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b6 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b60 a owl:Class ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b61 .
+
+    _:n1469223e979d46a3b8e214807df182f4b61 rdf:first OSO:ERIC ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b62 .
+
+    _:n1469223e979d46a3b8e214807df182f4b62 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n1469223e979d46a3b8e214807df182f4b63 a adms:Identifier ;
         skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
         skos:prefLabel "FAIRsharing DOI for OSO"@en .
 
-    _:n5f8122993886443a8f6854c0a05646ebb2 a adms:Identifier ;
+    _:n1469223e979d46a3b8e214807df182f4b64 a adms:Identifier ;
         skos:notation "https://w3id.org/earthsemantics/OSO" ;
         skos:prefLabel "Persistent IRI for OSO"@en .
 
-    _:n5f8122993886443a8f6854c0a05646ebb3 a adms:Identifier ;
+    _:n1469223e979d46a3b8e214807df182f4b65 a adms:Identifier ;
         skos:notation "https://doi.org/10.5281/zenodo.19497912" ;
         skos:prefLabel "Zenodo DOI for OSO"@en .
 
-    _:n5f8122993886443a8f6854c0a05646ebb4 a vcard:Kind ;
+    _:n1469223e979d46a3b8e214807df182f4b66 a vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
         vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
         vcard:hasOrganizationName "EMSO ERIC" .
+
+    _:n1469223e979d46a3b8e214807df182f4b7 a rdfs:Datatype ;
+        owl:unionOf _:n1469223e979d46a3b8e214807df182f4b8 .
+
+    _:n1469223e979d46a3b8e214807df182f4b8 rdf:first xsd:date ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b9 .
+
+    _:n1469223e979d46a3b8e214807df182f4b9 rdf:first xsd:gYearMonth ;
+        rdf:rest _:n1469223e979d46a3b8e214807df182f4b10 .
+
+    _:na5c6c5fc02784cdda6175453a92edc60b1 a adms:Identifier ;
+        schema1:value "10.17882/43749" ;
+        skos:notation "10.17882/43749" .
+
+    _:na5c6c5fc02784cdda6175453a92edc60b2 a adms:Identifier ;
+        dcterms:creator "Flotte Océanographique Française" ;
+        skos:notation "10.18142/295" .
 }
 
