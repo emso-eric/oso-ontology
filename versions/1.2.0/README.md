@@ -131,7 +131,7 @@ EMSO ERIC / Ifremer.
 
 FAIRsharing DOI: https://doi.org/10.25504/FAIRsharing.654931
 
-Zenodo DOI: https://doi.org/10.5281/zenodo.22030990
+Zenodo DOI: [https://doi.org/10.5281/zenodo.19497912](https://doi.org/10.5281/zenodo.19497912)
 
 ---
 
