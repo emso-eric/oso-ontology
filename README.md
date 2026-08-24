@@ -60,12 +60,12 @@ https://w3id.org/earthsemantics/OSO
 <a href="https://semiceu.github.io/ADMS/releases/2.00/" target="_blank"><img src="https://img.shields.io/badge/ADMS-EU-607D8B"></a>
 
 📄
-<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.jsonld"><img src="https://img.shields.io/badge/JSON--LD-Download-B7791F"></a>
-<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.ttl"><img src="https://img.shields.io/badge/Turtle-Download-B7791F"></a>
-<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.nt"><img src="https://img.shields.io/badge/N--Triples-Download-B7791F"></a>
-<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.n3"><img src="https://img.shields.io/badge/N3-Download-B7791F"></a>
-<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.trig"><img src="https://img.shields.io/badge/TriG-Download-B7791F"></a>
-<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.1.0/OSO.owl"><img src="https://img.shields.io/badge/OWL-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.2.0/OSO.jsonld"><img src="https://img.shields.io/badge/JSON--LD-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.2.0/OSO.ttl"><img src="https://img.shields.io/badge/Turtle-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.2.0/OSO.nt"><img src="https://img.shields.io/badge/N--Triples-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.2.0/OSO.n3"><img src="https://img.shields.io/badge/N3-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.2.0/OSO.trig"><img src="https://img.shields.io/badge/TriG-Download-B7791F"></a>
+<a href="https://github.com/emso-eric/oso-ontology/blob/main/versions/1.2.0/OSO.owl"><img src="https://img.shields.io/badge/OWL-Download-B7791F"></a>
 
 🚀
 <a href="https://www.w3.org/TR/vocab-ssn/"><img src="https://img.shields.io/badge/SSN%2FSOSA-Planned-1E88E5"></a>
@@ -271,7 +271,7 @@ OSO can be accessed and explored in several complementary ways.
 When using OSO in research, publications, data services or software, please cite the version used.
 
 > Piel, S., and EMSO Data Management Service Group (DMSG). (2026).  
-> *Observatories of the Seas Ontology (OSO)* (Version 1.1.0).  
+> *Observatories of the Seas Ontology (OSO)* (Version 1.2.0).  
 > EMSO ERIC. https://doi.org/10.5281/zenodo.19497913
 
 ## Persistent ontology IRI
