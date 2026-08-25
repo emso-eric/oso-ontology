@@ -62,6 +62,7 @@ OSO-ontology.ttl
 OSO-instances.ttl
         ↓
      OSO.ttl
+```
 
 This architecture allows ontology registries, semantic tools and other
 applications to consume the ontology model independently from the OSO
@@ -149,6 +150,7 @@ Conforms: True
 ```
 
 ---
+
 
 ## Version history
 
