@@ -87,7 +87,7 @@ OSO:Condor_seamount a owl:NamedIndividual,
         "Condor-sjøfjell"@no,
         "Monte submarino Condor"@pt,
         "Muntele submarin Condor"@ro ;
-    OSO:associatedWithRI OSO:EMSO-PT ;
+    OSO:RegionalFacility_is_related_to_RI OSO:EMSO-PT ;
     OSO:containsSite OSO:CONDOR ;
     OSO:isLedByOrganization OSO:IPMA .
 
@@ -141,7 +141,7 @@ OSO:EMBRC-France a owl:NamedIndividual,
         "Centrul European pentru Resurse Biologice Marine Franța"@ro ;
     OSO:isManagedBy OSO:CNRS,
         OSO:Sorbonne_Universite ;
-    OSO:isPartOf OSO:EMBRC .
+    OSO:isPartOfResearchInfrastructure OSO:EMBRC .
 
 OSO:EMSO_EVOLVE a schema1:Project,
         owl:NamedIndividual,
@@ -854,7 +854,7 @@ OSO:ANTARES a owl:NamedIndividual,
         "ANTARES"@pt,
         "ANTARES"@ro ;
     OSO:containsPlatform OSO:IL07 ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2014-01-01"^^xsd:date ;
     OSO:isTestSite false .
 
@@ -988,7 +988,7 @@ ATLANTIC WHALE DEAL believes that by protecting whales, they're also making a po
         "Atlantic Whale Deal"@pt,
         "Atlantic Whale Deal"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/AtlanticWhaleDeal.png> ;
-    OSO:Project_is_led_by_an_Organization OSO:ARDITI ;
+    OSO:isLedByOrganization OSO:ARDITI ;
     OSO:hasCountry OSO:France,
         OSO:Ireland,
         OSO:Portugal,
@@ -1188,7 +1188,7 @@ OSO:BJS a owl:NamedIndividual,
     OSO:containsPlatform OSO:BJS_BathyBot,
         OSO:BJS_BathyDock,
         OSO:BJS_SeabedStation ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2020-01-01"^^xsd:date ;
     OSO:isTestSite false .
 
@@ -1759,7 +1759,7 @@ OSO:Capelinhos a owl:NamedIndividual,
         "Capelinhos"@pt,
         "Capelinhos"@ro ;
     OSO:containsPlatform OSO:Capelinhos_AutonomousDevices ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:Carlos_SOUSA a schema1:Person,
@@ -2593,7 +2593,7 @@ OSO:EMSO_DMSG a schema1:Organization,
         "données marines"@fr,
         "gestion des données"@fr,
         "interopérabilité"@fr ;
-    OSO:hasLeader OSO:Enoc_MARTINEZ .
+    OSO:hasGroupLeader OSO:Enoc_MARTINEZ .
 
 OSO:EMSO_LIGURE_OUEST a owl:NamedIndividual,
         OSO:SeriesOfOceanographicCampaigns ;
@@ -2828,7 +2828,7 @@ OSO:EUXINUS a schema1:Project,
         "EUXINUS"@fr,
         "EUXINUS"@ro ;
     prov:wasAssociatedWith OSO:GeoEcoMar ;
-    OSO:Project_is_led_by_an_Organization OSO:GeoEcoMar ;
+    OSO:isLedByOrganization OSO:GeoEcoMar ;
     OSO:hasCountry OSO:Romania ;
     OSO:hasLocation OSO:Black_Sea .
 
@@ -2880,7 +2880,7 @@ OSO:EastVulcano a owl:NamedIndividual,
         "East vulcano"@no,
         "East vulcano"@pt,
         "East vulcano"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:East_of_Gran_Canaria a owl:NamedIndividual,
@@ -4190,7 +4190,7 @@ OSO:Isabel a owl:NamedIndividual,
         "Isabel"@no,
         "Isabel"@pt,
         "Isabel"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:JAMSTEC a owl:NamedIndividual,
@@ -4595,7 +4595,7 @@ OSO:LavaLake a owl:NamedIndividual,
         "Lava Lake"@ro ;
     OSO:containsPlatform OSO:SeaMoNWest,
         OSO:WestLake ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:Ligurian_Sea a owl:NamedIndividual,
@@ -4725,7 +4725,7 @@ OSO:Lion_mooring a owl:NamedIndividual,
         "Lion mooring"@pt,
         "Lion mooring"@ro ;
     OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> ;
-    OSO:isPartOfNetwork OSO:EMSO-France .
+    OSO:isAssociatedWithNetwork OSO:EMSO-France.
 
 OSO:Lucky_Strike a owl:NamedIndividual,
         OSO:Site ;
@@ -4972,7 +4972,7 @@ OSO:MARLEY a owl:NamedIndividual,
         "MARLEY"@ro ;
     OSO:isLinkedToCampaign OSO:ChEReef_2022 ;
     OSO:isLinkedToCampaignSeries OSO:CHEREEF_OBS ;
-    OSO:isPartOfNetwork OSO:EMSO-France ;
+    OSO:isAssociatedWithNetwork OSO:EMSO-France;
     OSO:maxWaterDepth 780 .
 
 OSO:MARMESONET a owl:NamedIndividual,
@@ -5318,7 +5318,7 @@ OSO:Marha a schema1:Project,
         "LIFE Marha"@pt,
         "LIFE Marha"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> ;
-    OSO:Project_is_led_by_an_Organization OSO:OFB ;
+    OSO:isLedByOrganization OSO:OFB ;
     OSO:hasCountry OSO:France ;
     OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> .
 
@@ -5869,7 +5869,7 @@ OSO:MontSegur a owl:NamedIndividual,
         "Mont Segur"@pt,
         "Mont Segur"@ro ;
     OSO:containsPlatform OSO:MontSegur_AutonomousDevices ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:hasCountry OSO:France ;
     OSO:isTestSite false .
 
@@ -7154,7 +7154,7 @@ OSO:REVOSIMA a schema1:Project,
         "REVOSIMA"@pt,
         "REVOSIMA"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> ;
-    OSO:Project_is_led_by_an_Organization OSO:BRGM,
+    OSO:isLedByOrganization OSO:BRGM,
         OSO:CNRS,
         OSO:IPGP,
         OSO:Ifremer ;
@@ -7894,7 +7894,7 @@ OSO:Surface a owl:NamedIndividual,
         "Surface"@pt,
         "Surface"@ro ;
     OSO:containsPlatform OSO:Lucky_Strike_Surface_BOREL ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateEndDeployment "2023-07-15"^^xsd:date ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
     OSO:hasCountry OSO:Portugal ;
@@ -8112,7 +8112,7 @@ OSO:TourEiffel a owl:NamedIndividual,
         "Tour Eiffel"@ro ;
     OSO:containsPlatform OSO:SeaMoNEast,
         OSO:TourEiffel_AutonomousDevices ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
     OSO:hasCountry OSO:Portugal ;
     OSO:isTestSite false .
@@ -12052,7 +12052,7 @@ OSO:EMSO-France a owl:NamedIndividual,
         OSO:Nadine_LANTERI ;
     OSO:isManagedBy OSO:CNRS,
         OSO:Ifremer ;
-    OSO:isPartOf OSO:EMSO .
+    OSO:isPartOfResearchInfrastructure OSO:EMSO .
 
 OSO:EMSO a owl:NamedIndividual,
         cerif:Organisation,
