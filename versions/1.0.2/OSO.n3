@@ -445,7 +445,7 @@ OSO:Ocean_Network_Canada a owl:NamedIndividual,
         <https://ror.org/05gknh003>,
         <https://www.oceannetworks.ca/>,
         <https://www.wikidata.org/wiki/Q16959841> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q16959841> ;
+    = <https://www.wikidata.org/entity/Q16959841> ;
     skos:altLabel "ONC"@en,
         "oceannetworks.ca"@en,
         "Ocean Networks Canada"@fr ;
@@ -3392,7 +3392,7 @@ OSO:EMBRC a owl:NamedIndividual,
         <https://ror.org/0038zss60>,
         <https://www.embrc.eu/>,
         <https://www.wikidata.org/entity/Q113551509> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q113551509> ;
+    = <https://www.wikidata.org/entity/Q113551509> ;
     skos:altLabel "EMBRC"@en,
         "EMBRC-ERIC"@en,
         "European Marine Biological Resource Centre"@en,
@@ -4516,7 +4516,7 @@ OSO:IRD a owl:NamedIndividual,
         <https://ror.org/05q3vnk25>,
         <https://www.ird.fr/>,
         <https://www.wikidata.org/wiki/Q2910510> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q2910510> ;
+    = <https://www.wikidata.org/entity/Q2910510> ;
     skos:altLabel "Research Institute for Development"@en,
         "Institut de recherche pour le développement"@fr ;
     skos:closeMatch <https://edmo.seadatanet.org/report/1933> ;
@@ -5073,7 +5073,7 @@ OSO:JAMSTEC a owl:NamedIndividual,
         <https://www.jamstec.go.jp/e/>,
         <https://www.jamstec.go.jp/j/>,
         <https://www.wikidata.org/wiki/Q1683113> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q1683113> ;
+    = <https://www.wikidata.org/entity/Q1683113> ;
     skos:altLabel "Japan Agency for Marine-Earth Science and Technology"@en,
         "海洋研究開発機構"@ja ;
     skos:closeMatch <https://edmo.seadatanet.org/report/1537> ;
@@ -5106,7 +5106,7 @@ OSO:Japan a <http://dbpedia.org/ontology/Country>,
         "Japan"@no,
         "Japão"@pt,
         "Japonia"@ro ;
-    owl:sameAs <http://dbpedia.org/resource/Japan> ;
+    = <http://dbpedia.org/resource/Japan> ;
     skos:altLabel "Nihon"@en,
         "Nippon"@en,
         "État du Japon"@fr,
@@ -7327,7 +7327,7 @@ OSO:OFB a owl:NamedIndividual,
     rdfs:seeAlso <https://ror.org/04f5ctv63>,
         <https://www.ofb.gouv.fr/>,
         <https://www.wikidata.org/wiki/Q96378553> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q96378553> ;
+    = <https://www.wikidata.org/entity/Q96378553> ;
     skos:altLabel "OFB"@en,
         "OFB"@fr ;
     skos:definition "French public agency dedicated to biodiversity protection, environmental monitoring, marine ecosystems and sustainable management of natural resources."@en,
@@ -11132,7 +11132,7 @@ OSO:ARDITI a owl:NamedIndividual,
         <https://ror.org/01y0vz750>,
         <https://www.arditi.pt/>,
         <https://www.wikidata.org/entity/Q98077015> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q98077015> ;
+    = <https://www.wikidata.org/entity/Q98077015> ;
     skos:altLabel "Regional Agency for the Development of Research, Technology and Innovation"@en,
         "Agência Regional para o Desenvolvimento da Investigação, Tecnologia e Inovação"@pt ;
     skos:definition "A Portuguese regional research and innovation organization supporting research, technology transfer and innovation in the Autonomous Region of Madeira."@en,
@@ -11674,7 +11674,7 @@ OSO:European_Commission a owl:NamedIndividual,
     rdfs:seeAlso <https://commission.europa.eu/>,
         <https://ror.org/00k4n6c32>,
         <https://www.wikidata.org/entity/Q8880> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q8880> ;
+    = <https://www.wikidata.org/entity/Q8880> ;
     skos:altLabel "EC"@en,
         "European Union Commission"@en,
         "Commission de l’Union européenne"@fr ;
@@ -11809,7 +11809,7 @@ OSO:IPGP a owl:NamedIndividual,
         <https://ror.org/004gzqz66>,
         <https://www.ipgp.fr/>,
         <https://www.wikidata.org/wiki/Q3152060> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q3152060> ;
+    = <https://www.wikidata.org/entity/Q3152060> ;
     skos:altLabel "Paris Institute of Earth Physics"@en,
         "Institut de Physique du Globe de Paris"@fr ;
     skos:closeMatch <https://edmo.seadatanet.org/report/519> ;
@@ -11896,7 +11896,7 @@ OSO:LIRMM a schema1:Organization,
     schema1:url <https://www.lirmm.fr/> ;
     rdfs:seeAlso <https://www.lirmm.fr/>,
         <https://www.wikidata.org/entity/Q3214420> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q3214420> ;
+    = <https://www.wikidata.org/entity/Q3214420> ;
     skos:altLabel "Εργαστήριο Πληροφορικής, Ρομποτικής και Μικροηλεκτρονικής του Μονπελιέ"@el,
         "Laboratory of Informatics, Robotics and Microelectronics of Montpellier"@en,
         "Laboratorio de Informática, Robótica y Microelectrónica de Montpellier"@es,
@@ -12126,7 +12126,7 @@ OSO:OGS a owl:NamedIndividual,
         <https://www.ogs.it/>,
         <https://www.ogs.it/en>,
         <https://www.wikidata.org/wiki/Q1503323> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q1503323> ;
+    = <https://www.wikidata.org/entity/Q1503323> ;
     skos:altLabel "National Institute of Oceanography and Applied Geophysics"@en,
         "Institut national d’océanographie et de géophysique appliquée"@fr,
         "Istituto Nazionale di Oceanografia e di Geofisica Sperimentale"@it ;
@@ -13313,7 +13313,7 @@ OSO:BRGM a owl:NamedIndividual,
         <https://ror.org/05hnb7x64>,
         <https://www.brgm.fr/fr>,
         <https://www.wikidata.org/entity/Q138691> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q138691> ;
+    = <https://www.wikidata.org/entity/Q138691> ;
     skos:altLabel "French Geological Survey"@en,
         "Bureau de recherches géologiques et minières"@fr ;
     skos:definition "A French public research and expert organization in Earth sciences, providing scientific and technical support for geology, mineral resources, groundwater, natural risks and environmental management."@en,
@@ -13392,7 +13392,7 @@ OSO:CSIC a owl:NamedIndividual,
         <https://www.csic.es/en>,
         <https://www.csic.es/es>,
         <https://www.wikidata.org/entity/Q1024362> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q1024362> ;
+    = <https://www.wikidata.org/entity/Q1024362> ;
     skos:altLabel "Spanish National Research Council"@en,
         "Consejo Superior de Investigaciones Científicas"@es ;
     skos:definition "Spain's national public research organization, conducting multidisciplinary scientific research and technological development, including marine and environmental sciences."@en,
@@ -13660,7 +13660,7 @@ OSO:IPMA a owl:NamedIndividual,
         <https://ror.org/01sp7nd78>,
         <https://www.ipma.pt/pt/index.html>,
         <https://www.wikidata.org/wiki/Q1526902> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q1526902> ;
+    = <https://www.wikidata.org/entity/Q1526902> ;
     skos:altLabel "Portuguese Institute for Sea and Atmosphere"@en,
         "Institut portugais de la mer et de l’atmosphère"@fr,
         "Instituto Português do Mar e da Atmosfera"@pt ;
@@ -14077,7 +14077,7 @@ OSO:Greece a <http://dbpedia.org/ontology/Country>,
         "Hellas"@no,
         "Grécia"@pt,
         "Grecia"@ro ;
-    owl:sameAs <http://dbpedia.org/resource/Greece> ;
+    = <http://dbpedia.org/resource/Greece> ;
     skos:altLabel "Ελληνική Δημοκρατία"@el,
         "Hellenic Republic"@en,
         "République hellénique"@fr ;
@@ -14117,7 +14117,7 @@ OSO:INGV a owl:NamedIndividual,
         <https://ror.org/00qps9a02>,
         <https://www.ingv.it/>,
         <https://www.wikidata.org/wiki/Q1674866> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q1674866> ;
+    = <https://www.wikidata.org/entity/Q1674866> ;
     skos:altLabel "National Institute of Geophysics and Volcanology"@en,
         "Institut national de géophysique et de volcanologie"@fr,
         "Istituto Nazionale di Geofisica e Vulcanologia"@it ;
@@ -14336,7 +14336,7 @@ OSO:CNR a owl:NamedIndividual,
         <https://ror.org/04zaypm56>,
         <https://www.cnr.it/it>,
         <https://www.wikidata.org/entity/Q902464> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q902464> ;
+    = <https://www.wikidata.org/entity/Q902464> ;
     skos:altLabel "Italian National Research Council"@en,
         "National Research Council of Italy"@en,
         "Consiglio Nazionale delle Ricerche"@it ;
@@ -14594,7 +14594,7 @@ OSO:Ireland a <http://dbpedia.org/ontology/Country>,
         "Irland"@no,
         "Irlanda"@pt,
         "Irlanda"@ro ;
-    owl:sameAs <http://dbpedia.org/resource/Ireland> ;
+    = <http://dbpedia.org/resource/Ireland> ;
     skos:altLabel "Republic of Ireland"@en,
         "République d'Irlande"@fr,
         "Poblacht na hÉireann"@ga,
@@ -14832,7 +14832,7 @@ OSO:CNRS a owl:NamedIndividual,
         <https://www.cnrs.fr/en>,
         <https://www.cnrs.fr/fr>,
         <https://www.wikidata.org/entity/Q280413> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q280413> ;
+    = <https://www.wikidata.org/entity/Q280413> ;
     skos:altLabel "French National Centre for Scientific Research"@en,
         "National Centre for Scientific Research"@en,
         "Centre national de la recherche scientifique"@fr ;
@@ -15224,7 +15224,7 @@ OSO:Ifremer a owl:NamedIndividual,
         <https://www.ifremer.fr/>,
         <https://www.ifremer.fr/en>,
         <https://www.wikidata.org/wiki/Q1657069> ;
-    owl:sameAs <https://dbpedia.org/resource/Ifremer>,
+    = <https://dbpedia.org/resource/Ifremer>,
         <https://www.wikidata.org/entity/Q1657069> ;
     skos:altLabel "French National Institute for Ocean Science and Technology"@en,
         "French Research Institute for Exploitation of the Sea"@en,
@@ -15261,7 +15261,7 @@ OSO:Italy a <http://dbpedia.org/ontology/Country>,
         "Italia"@no,
         "Itália"@pt,
         "Italia"@ro ;
-    owl:sameAs <http://dbpedia.org/resource/Italy> ;
+    = <http://dbpedia.org/resource/Italy> ;
     skos:altLabel "Italian Republic"@en,
         "République italienne"@fr,
         "Repubblica Italiana"@it ;
@@ -15404,7 +15404,7 @@ OSO:EMSO a owl:NamedIndividual,
         <https://emso.eu/>,
         <https://ror.org/04xkqms46>,
         <https://www.wikidata.org/entity/Q113541398> ;
-    owl:sameAs <https://www.wikidata.org/entity/Q113541398> ;
+    = <https://www.wikidata.org/entity/Q113541398> ;
     skos:altLabel "EMSO"@en,
         "EMSO-ERIC"@en,
         "European Multidisciplinary Seafloor and Water Column Observatory"@en,
