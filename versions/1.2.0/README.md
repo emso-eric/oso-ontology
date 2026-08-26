@@ -3,15 +3,15 @@
 ## Release information
 
 | Property | Value |
-|---|---|
-| Ontology | Observatories of the Seas Ontology (OSO) |
-| Version | 1.2.0 |
-| Release date | 2026-08-25 |
-| Persistent IRI | https://w3id.org/earthsemantics/OSO |
-| Version IRI | https://w3id.org/earthsemantics/OSO/1.2.0/ |
-| License | CC-BY 4.0 |
-| Publisher | EMSO ERIC |
-| Contributors | EMSO Data Management Service Group (DMSG), Ifremer |
+| :--- | :--- |
+| **Ontology** | Observatories of the Seas Ontology (OSO) |
+| **Version** | 1.2.0 |
+| **Release date** | **2026-08-25** |
+| **Persistent IRI** | https://w3id.org/earthsemantics/OSO |
+| **Version IRI** | https://w3id.org/earthsemantics/OSO/1.2.0/ |
+| **License** | CC-BY 4.0 |
+| **Publisher** | EMSO ERIC |
+| **Contributors** | EMSO Data Management Service Group (DMSG), Ifremer |
 
 ---
 
@@ -48,7 +48,7 @@ both the ontology model and the OSO Knowledge Graph.
 OSO 1.2.0 is published through four complementary RDF distributions:
 
 | Distribution | Content |
-|---|---|
+| :--- | :--- |
 | `OSO-ontology.ttl` | Ontology model (TBox), including ontology metadata, classes, properties and axioms |
 | `OSO-instances.ttl` | OSO Knowledge Graph instance data (ABox) |
 | `OSO-shacl.ttl` | SHACL shapes for structural and semantic validation of OSO instance data |
@@ -76,7 +76,7 @@ to use OSO.ttl
 Two metadata files describe the OSO publication:
 
 | File | Purpose |
-|---|---|
+| :--- | :--- |
 | `OSO-dcat.ttl` | DCAT description of the OSO ontology, Knowledge Graph and distributions |
 | `OSO-void.ttl` | VoID description and statistics of the OSO Knowledge Graph |
 
@@ -85,13 +85,13 @@ Two metadata files describe the OSO publication:
 ## Main resources
 
 | Resource | URL |
-|---|---|
-| Ontology IRI | https://w3id.org/earthsemantics/OSO |
-| Version IRI | https://w3id.org/earthsemantics/OSO/1.2.0/ |
-| Documentation | https://emso-eric.github.io/oso-ontology/ |
-| EarthPortal | https://earthportal.eu/ontologies/OSO |
-| LOV | https://lov.linkeddata.es/dataset/lov/vocabs/oso |
-| SPARQL endpoint | https://virtuoso.ifremer.fr/oso/sparql |
+| :--- | :--- |
+| **Ontology IRI** | https://w3id.org/earthsemantics/OSO |
+| **Version IRI** | https://w3id.org/earthsemantics/OSO/1.2.0/ |
+| **Documentation** | https://emso-eric.github.io/oso-ontology/ |
+| **EarthPortal** | https://earthportal.eu/ontologies/OSO |
+| **LOV** | https://lov.linkeddata.es/dataset/lov/vocabs/oso |
+| **SPARQL endpoint** | https://virtuoso.ifremer.fr/oso/sparql |
 
 ---
 
@@ -100,34 +100,34 @@ Two metadata files describe the OSO publication:
 ### Ontology model
 
 | Metric | Value |
-|---|---:|
-| RDF triples | 3,423 |
-| OWL classes | 44 |
-| Object properties | 59 |
-| Datatype properties | 11 |
+| :--- | ---: |
+| **RDF triples** | 3,423 |
+| **OWL classes** | 44 |
+| **Object properties** | 59 |
+| **Datatype properties** | 11 |
 
 ### Instance data
 
 | Metric | Value |
-|---|---:|
-| RDF triples | 11,654 |
-| OWL named individuals | 354 |
-| Classes used | 49 |
-| Properties used | 113 |
-| URI resources | 1,166 |
+| :--- | ---: |
+| **RDF triples** | 11,654 |
+| **OWL named individuals** | 354 |
+| **Classes used** | 49 |
+| **Properties used** | 113 |
+| **URI resources** | 1,166 |
 
 ### SHACL validation shapes
 
 | Metric | Value |
-|---|---:|
-| RDF triples | 421 |
-| Validation status | Conforms |
+| :--- | ---: |
+| **RDF triples** | 421 |
+| **Validation status** | Conforms |
 
 ### Complete distribution
 
 | Metric | Value |
-|---|---:|
-| RDF triples | 15,077 |
+| :--- | ---: |
+| **RDF triples** | 15,077 |
 
 ---
 
@@ -153,8 +153,8 @@ Conforms: True
 ## Version history
 
 | Version | Description |
-|---|---|
-| 1.2.0 | Current release |
+| :--- | :--- |
+| **1.2.0** | **Current release** |
 | 1.1.0 | Previous release |
 
 Previous version IRI:  
