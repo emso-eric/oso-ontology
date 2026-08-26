@@ -62,7 +62,7 @@ OSO-ontology.ttl
 OSO-instances.ttl
         ↓
      OSO.ttl
-
+```
 This architecture allows ontology registries, semantic tools and other
 applications to consume the ontology model independently from the OSO
 Knowledge Graph, while SHACL-aware tools can use OSO-shacl.ttl to
