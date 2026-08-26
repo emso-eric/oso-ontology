@@ -1,0 +1,216 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================================
+# OSO ontology (TBox + rich ontology metadata)
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO>
+    a owl:Ontology ,
+      dcat:Dataset ;
+
+    dcterms:title "Observatories of the Seas Ontology"@en ;
+    dcterms:alternative "OSO"@en ;
+
+    dcterms:description "OSO is an ontology designed to describe marine observatories, research infrastructures, observation platforms, associated organisations, scientific activities and related metadata in a FAIR and interoperable way."@en ;
+
+    dcterms:creator <https://orcid.org/0000-0001-8502-9812> ;
+    pav:curatedBy <https://orcid.org/0000-0001-8502-9812> ;
+    dcterms:publisher <https://ror.org/044jxhp58> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    dcterms:created "2025-03-01"^^xsd:date ;
+    dcterms:modified "2026-08-25"^^xsd:date ;
+
+    dcterms:language
+        <http://id.loc.gov/vocabulary/iso639-1/en> ,
+        <http://id.loc.gov/vocabulary/iso639-1/fr> ,
+        <http://id.loc.gov/vocabulary/iso639-1/es> ,
+        <http://id.loc.gov/vocabulary/iso639-1/it> ,
+        <http://id.loc.gov/vocabulary/iso639-1/pt> ,
+        <http://id.loc.gov/vocabulary/iso639-1/no> ,
+        <http://id.loc.gov/vocabulary/iso639-1/ro> ,
+        <http://id.loc.gov/vocabulary/iso639-1/el> ;
+
+    dcat:keyword
+        "marine observatories"@en ,
+        "research infrastructures"@en ,
+        "semantic web"@en ,
+        "ontology"@en ,
+        "FAIR"@en ,
+        "ocean observing systems"@en ;
+
+    foaf:homepage <https://github.com/emso-eric/oso-ontology> ;
+    dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
+
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+    owl:versionInfo "1.2.0"@en ;
+    dcat:version "1.2.0" ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
+
+    dcat:distribution
+    <https://w3id.org/earthsemantics/OSO/OSO-ontology.ttl> ,
+    <https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl> .
+
+
+# ============================================================================
+# OSO Knowledge Graph (ABox / domain instance data)
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/dataset>
+    a dcat:Dataset ,
+      void:Dataset ;
+
+    dcterms:title "OSO Knowledge Graph"@en ;
+    dcterms:description "Instance data described using the Observatories of the Seas Ontology (OSO), including marine observatories, research infrastructures, observation platforms, organisations and related entities."@en ;
+
+    dcterms:creator <https://orcid.org/0000-0001-8502-9812> ;
+    dcterms:publisher <https://ror.org/044jxhp58> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    dcterms:modified "2026-08-20"^^xsd:date ;
+    dcterms:conformsTo <https://w3id.org/earthsemantics/OSO> ;
+    dcat:version "1.2.0" ;
+
+    dcat:distribution <https://w3id.org/earthsemantics/OSO/OSO-instances.ttl> ;
+    dcat:accessService <https://w3id.org/earthsemantics/OSO/sparql> .
+
+
+# ============================================================================
+# OSO complete bundle (ontology + instance data)
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/complete>
+    a dcat:Dataset ;
+
+    dcterms:title "OSO complete distribution"@en ;
+    dcterms:description "Combined distribution of OSO containing both the ontology model and the instance data."@en ;
+
+    dcterms:creator <https://orcid.org/0000-0001-8502-9812> ;
+    dcterms:publisher <https://ror.org/044jxhp58> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    dcterms:modified "2026-08-20"^^xsd:date ;
+    dcterms:conformsTo <https://w3id.org/earthsemantics/OSO> ;
+    dcterms:hasPart <https://w3id.org/earthsemantics/OSO> ,
+                    <https://w3id.org/earthsemantics/OSO/dataset> ;
+    dcat:version "1.2.0" ;
+
+    dcat:distribution
+        <https://w3id.org/earthsemantics/OSO/OSO.ttl> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.owl> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.jsonld> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.nt> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.n3> ,
+        <https://w3id.org/earthsemantics/OSO/OSO.trig> .
+
+
+# ============================================================================
+# Turtle distribution of the ontology only (TBox)
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/OSO-ontology.ttl>
+    a dcat:Distribution ;
+    dcterms:title "OSO ontology – Turtle distribution"@en ;
+    dcterms:description "Ontology-only distribution of OSO containing the ontology model, axioms and ontology metadata, without domain instance data."@en ;
+    dcterms:format "text/turtle" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO-ontology.ttl> .
+
+
+# ============================================================================
+# Turtle distribution of the instance data only (ABox)
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/OSO-instances.ttl>
+    a dcat:Distribution ;
+    dcterms:title "OSO instance data – Turtle distribution"@en ;
+    dcterms:description "Instance-data distribution of the OSO Knowledge Graph, without the ontology schema."@en ;
+    dcterms:format "text/turtle" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO-instances.ttl> .
+
+
+# ============================================================================
+# Complete Turtle distribution (TBox + ABox)
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/OSO.ttl>
+    a dcat:Distribution ;
+    dcterms:title "OSO complete – Turtle distribution"@en ;
+    dcterms:description "Complete OSO distribution containing both the ontology model and the instance data."@en ;
+    dcterms:format "text/turtle" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO.ttl> .
+
+
+# ============================================================================
+# Additional serializations of the complete distribution
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/OSO.owl>
+    a dcat:Distribution ;
+    dcterms:title "OSO complete – RDF/XML distribution"@en ;
+    dcterms:format "application/rdf+xml" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO.owl> .
+
+<https://w3id.org/earthsemantics/OSO/OSO.jsonld>
+    a dcat:Distribution ;
+    dcterms:title "OSO complete – JSON-LD distribution"@en ;
+    dcterms:format "application/ld+json" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO.jsonld> .
+
+<https://w3id.org/earthsemantics/OSO/OSO.nt>
+    a dcat:Distribution ;
+    dcterms:title "OSO complete – N-Triples distribution"@en ;
+    dcterms:format "application/n-triples" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/n-triples> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO.nt> .
+
+<https://w3id.org/earthsemantics/OSO/OSO.n3>
+    a dcat:Distribution ;
+    dcterms:title "OSO complete – N3 distribution"@en ;
+    dcterms:format "text/n3" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/n3> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO.n3> .
+
+<https://w3id.org/earthsemantics/OSO/OSO.trig>
+    a dcat:Distribution ;
+    dcterms:title "OSO complete – TriG distribution"@en ;
+    dcterms:format "application/trig" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/trig> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO.trig> .
+
+
+# ============================================================================
+# SPARQL service exposing the complete OSO graph
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/sparql>
+    a dcat:DataService ;
+    dcterms:title "OSO SPARQL endpoint"@en ;
+    dcterms:description "SPARQL endpoint providing query access to the OSO ontology and instance data."@en ;
+    dcat:endpointURL <https://virtuoso.ifremer.fr/oso/sparql> ;
+    dcat:landingPage <https://virtuoso.ifremer.fr/oso/> ;
+    dcat:servesDataset <https://w3id.org/earthsemantics/OSO/complete> .
+
+
+# ============================================================================
+# OSO SHACL distribution
+# ============================================================================
+
+<https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl>
+    a dcat:Distribution ;
+    dcterms:title "OSO SHACL validation shapes"@en ;
+    dcterms:description "SHACL shapes used to validate OSO instance data against structural and semantic constraints."@en ;
+    dcterms:format "text/turtle" ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl> .

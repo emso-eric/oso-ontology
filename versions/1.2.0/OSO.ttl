@@ -103,7 +103,7 @@ OSO:Condor_seamount a owl:NamedIndividual,
         "Condor-sjøfjell"@no,
         "Monte submarino Condor"@pt,
         "Muntele submarin Condor"@ro ;
-    OSO:associatedWithRI OSO:EMSO-PT ;
+    OSO:RegionalFacility_is_related_to_RI OSO:EMSO-PT ;
     OSO:containsSite OSO:CONDOR ;
     OSO:isLedByOrganization OSO:IPMA .
 
@@ -157,7 +157,7 @@ OSO:EMBRC-France a owl:NamedIndividual,
         "Centrul European pentru Resurse Biologice Marine Franța"@ro ;
     OSO:isManagedBy OSO:CNRS,
         OSO:Sorbonne_Universite ;
-    OSO:isPartOf OSO:EMBRC .
+    OSO:isPartOfResearchInfrastructure OSO:EMBRC .
 
 OSO:EarthScience a owl:NamedIndividual,
         OSO:Discipline ;
@@ -496,42 +496,6 @@ OSO:Pacific_Peering a owl:NamedIndividual,
         "Pacific Peering"@ro ;
     OSO:isInvolvedIn OSO:TamTam .
 
-OSO:Project_is_led_by_an_Organization a owl:ObjectProperty ;
-    rdfs:label "Το έργο διευθύνεται από οργανισμό"@el,
-        "Project is led by an organisation"@en,
-        "El proyecto está dirigido por una organización"@es,
-        "Le projet est dirigé par une organisation"@fr,
-        "Il progetto è guidato da un'organizzazione"@it,
-        "Prosjektet ledes av en organisasjon"@no,
-        "O projeto é liderado por uma organização"@pt,
-        "Proiectul este coordonat de o organizație"@ro ;
-    rdfs:comment "Υποδεικνύει τον οργανισμό που είναι υπεύθυνος για τη διεύθυνση ή τον συντονισμό ενός ερευνητικού έργου."@el,
-        "Indicates the organization responsible for leading or coordinating a research project."@en,
-        "Indica la organización responsable de dirigir o coordinar un proyecto de investigación."@es,
-        "Indique l'organisation responsable de la direction ou de la coordination d’un projet de recherche."@fr,
-        "Indica l'organizzazione responsabile della direzione o del coordinamento di un progetto di ricerca."@it,
-        "Angir organisasjonen som er ansvarlig for å lede eller koordinere et forskningsprosjekt."@no,
-        "Indica a organização responsável pela liderança ou coordenação de um projeto de investigação."@pt,
-        "Indică organizația responsabilă de coordonarea sau conducerea unui proiect de cercetare."@ro ;
-    rdfs:domain OSO:ResearchProject ;
-    rdfs:range foaf:Organization ;
-    skos:definition "Συνδέει ένα ερευνητικό έργο με τον οργανισμό που είναι υπεύθυνος για τη διεύθυνση ή τον συντονισμό του."@el,
-        "Relates a research project to the organisation responsible for leading or coordinating it."@en,
-        "Relaciona un proyecto de investigación con la organización responsable de liderarlo o coordinarlo."@es,
-        "Relie un projet de recherche à l’organisation responsable de sa direction ou de sa coordination."@fr,
-        "Collega un progetto di ricerca all'organizzazione responsabile della sua direzione o coordinamento."@it,
-        "Knytter et forskningsprosjekt til organisasjonen som leder eller koordinerer det."@no,
-        "Liga um projeto de investigação à organização responsável pela sua coordenação ou liderança."@pt,
-        "Leagă un proiect de cercetare de organizația responsabilă de coordonarea sau conducerea acestuia."@ro ;
-    skos:prefLabel "Το έργο διευθύνεται από οργανισμό"@el,
-        "Project is led by an organisation"@en,
-        "El proyecto está dirigido por una organización"@es,
-        "Le projet est dirigé par une organisation"@fr,
-        "Il progetto è guidato da un'organizzazione"@it,
-        "Prosjektet ledes av en organisasjon"@no,
-        "O projeto é liderado por uma organização"@pt,
-        "Proiectul este coordonat de o organizație"@ro .
-
 OSO:RegionalFacility_is_linked_to_a_project a owl:ObjectProperty ;
     rdfs:label "Η περιφερειακή υποδομή συνδέεται με έργο"@el,
         "Regional Facility is linked to a project"@en,
@@ -587,7 +551,6 @@ OSO:RegionalFacility_is_part_of_a_RI a owl:ObjectProperty ;
         "Leagă o infrastructură regională de infrastructura sa principală de cercetare."@ro ;
     rdfs:domain OSO:RegionalFacility ;
     rdfs:range OSO:ResearchInfrastructure ;
-    owl:inverseOf OSO:hasRegionalFacility ;
     skos:definition "Συνδέει μια περιφερειακή υποδομή με την ερευνητική υποδομή της οποίας αποτελεί μέρος."@el,
         "Relates a regional facility to the research infrastructure of which it is part."@en,
         "Relaciona una infraestructura regional con la infraestructura de investigación de la que forma parte."@es,
@@ -723,34 +686,6 @@ OSO:SubmarinePlatform a owl:NamedIndividual,
     OSO:hasCountry OSO:France ;
     OSO:hasPrincipalInvestigator OSO:PI_SubmarinePlatform .
 
-OSO:Subsite_is_part_of_a_RI a owl:ObjectProperty ;
-    rdfs:label "Ο υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"@el,
-        "Subsite is part of a Research Infrastructure"@en,
-        "El subsitio forma parte de una Infraestructura de Investigación"@es,
-        "Le sous-site fait partie d'une infrastructure de recherche"@fr,
-        "Il sottosito fa parte di un'Infrastruttura di Ricerca"@it,
-        "Underområdet er en del av en forskningsinfrastruktur"@no,
-        "O subsítio faz parte de uma Infraestrutura de Investigação"@pt,
-        "Sub-situl face parte dintr-o infrastructură de cercetare"@ro ;
-    rdfs:comment "Ένας υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής."@el,
-        "A subsite is part of a Research Infrastructure."@en,
-        "Un subsitio forma parte de una Infraestructura de Investigación."@es,
-        "Un sous-site fait partie d'une infrastructure de recherche."@fr,
-        "Un sottosito fa parte di un'Infrastruttura di Ricerca."@it,
-        "Et underområde er en del av en forskningsinfrastruktur."@no,
-        "Um subsítio faz parte de uma Infraestrutura de Investigação."@pt,
-        "Un sub-sit face parte dintr-o infrastructură de cercetare."@ro ;
-    rdfs:domain OSO:Subsite ;
-    rdfs:range OSO:ResearchInfrastructure ;
-    skos:prefLabel "Ο υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"@el,
-        "Subsite is part of a Research Infrastructure"@en,
-        "El subsitio forma parte de una Infraestructura de Investigación"@es,
-        "Le sous-site fait partie d'une infrastructure de recherche"@fr,
-        "Il sottosito fa parte di un'Infrastruttura di Ricerca"@it,
-        "Underområdet er en del av en forskningsinfrastruktur"@no,
-        "O subsítio faz parte de uma Infraestrutura de Investigação"@pt,
-        "Sub-situl face parte dintr-o infrastructură de cercetare"@ro .
-
 OSO:Sweden a <http://dbpedia.org/ontology/Country>,
         owl:NamedIndividual ;
     rdfs:label "Σουηδία"@el,
@@ -842,34 +777,6 @@ OSO:Vanuatu_Trench a owl:NamedIndividual,
     OSO:hasCountry OSO:Vanuatu ;
     OSO:hasRegionalTeamLeader OSO:Martin_PATRIAT ;
     OSO:isLedByOrganization OSO:Ifremer .
-
-OSO:associatedWithRI a owl:ObjectProperty ;
-    rdfs:label "Η Περιφερειακή Εγκατάσταση συνδέεται με μια Ερευνητική Υποδομή"@el,
-        "Regional Facility is associated with a Research Infrastructure"@en,
-        "La Instalación Regional está asociada con una Infraestructura de Investigación"@es,
-        "L'installation régionale est associée à une infrastructure de recherche"@fr,
-        "La Struttura Regionale è associata a una Infrastruttura di Ricerca"@it,
-        "Regional fasilitet er knyttet til en forskningsinfrastruktur"@no,
-        "A Instalação Regional está associada a uma Infraestrutura de Investigação"@pt,
-        "Facilitatea regională este asociată cu o infrastructură de cercetare"@ro ;
-    rdfs:comment "Μια Περιφερειακή Εγκατάσταση συνδέεται με μία ή περισσότερες Ερευνητικές Υποδομές."@el,
-        "A Regional Facility is associated with one or more Research Infrastructures."@en,
-        "Una Instalación Regional está asociada con una o más Infraestructuras de Investigación."@es,
-        "Une installation régionale est associée à une ou plusieurs infrastructures de recherche."@fr,
-        "Una Struttura Regionale è associata a una o più Infrastrutture di Ricerca."@it,
-        "En regional fasilitet er knyttet til én eller flere forskningsinfrastrukturer."@no,
-        "Uma Instalação Regional está associada a uma ou mais Infraestruturas de Investigação."@pt,
-        "O facilitate regională este asociată cu una sau mai multe infrastructuri de cercetare."@ro ;
-    rdfs:domain OSO:RegionalFacility ;
-    rdfs:range OSO:ResearchInfrastructure ;
-    skos:prefLabel "Η Περιφερειακή Εγκατάσταση συνδέεται με μια Ερευνητική Υποδομή"@el,
-        "Regional Facility is associated with a Research Infrastructure"@en,
-        "La Instalación Regional está asociada con una Infraestructura de Investigación"@es,
-        "L'installation régionale est associée à une infrastructure de recherche"@fr,
-        "La Struttura Regionale è associata a una Infrastruttura di Ricerca"@it,
-        "Regional fasilitet er knyttet til en forskningsinfrastruktur"@no,
-        "A Instalação Regional está associada a uma Infraestrutura de Investigação"@pt,
-        "Facilitatea regională este asociată cu o infrastructură de cercetare"@ro .
 
 OSO:dateEndDeployment a owl:DatatypeProperty ;
     rdfs:label "Ημερομηνία λήξης εγκατάστασης"@el,
@@ -1104,7 +1011,7 @@ OSO:hasDepth a owl:DatatypeProperty ;
         "har dybde"@no,
         "tem profundidade"@pt,
         "are adâncime"@ro ;
-    rdfs:domain owl:Thing ;
+    rdfs:domain owl:Site ;
     rdfs:range xsd:decimal ;
     skos:prefLabel "έχει βάθος"@el,
         "has depth"@en,
@@ -1207,6 +1114,34 @@ OSO:hasFormerDirectorGeneral a owl:ObjectProperty ;
         "har tidligere generaldirektør"@no,
         "tem antigo diretor-geral"@pt,
         "are fost director general"@ro .
+
+OSO:hasGroupLeader a owl:ObjectProperty ;
+    rdfs:label "έχει υπεύθυνο ομάδας"@el,
+        "has group leader"@en,
+        "tiene responsable de grupo"@es,
+        "a pour responsable de groupe"@fr,
+        "ha un responsabile di gruppo"@it,
+        "har gruppeleder"@no,
+        "tem líder de grupo"@pt,
+        "are lider de grup"@ro ;
+    rdfs:comment "Συνδέει μια ομάδα με το πρόσωπο που είναι υπεύθυνο για τη διεύθυνση ή τον συντονισμό της."@el,
+        "Links a group to the person responsible for leading or coordinating it."@en,
+        "Relaciona un grupo con la persona responsable de dirigirlo o coordinarlo."@es,
+        "Relie un groupe à la personne chargée de le diriger ou de le coordonner."@fr,
+        "Collega un gruppo alla persona responsabile della sua direzione o del suo coordinamento."@it,
+        "Knytter en gruppe til personen som er ansvarlig for å lede eller koordinere den."@no,
+        "Liga um grupo à pessoa responsável pela sua liderança ou coordenação."@pt,
+        "Leagă un grup de persoana responsabilă de conducerea sau coordonarea acestuia."@ro ;
+    rdfs:domain foaf:Group ;
+    rdfs:range schema1:Person ;
+    skos:prefLabel "έχει υπεύθυνο ομάδας"@el,
+        "has group leader"@en,
+        "tiene responsable de grupo"@es,
+        "a pour responsable de groupe"@fr,
+        "ha un responsabile di gruppo"@it,
+        "har gruppeleder"@no,
+        "tem líder de grupo"@pt,
+        "are lider de grup"@ro .
 
 OSO:hasLogo a owl:ObjectProperty ;
     rdfs:label "έχει λογότυπο"@el,
@@ -1364,6 +1299,34 @@ OSO:hasStatus a owl:ObjectProperty ;
         "tem estado"@pt,
         "are statut"@ro .
 
+OSO:isAssociatedWithNetwork a owl:ObjectProperty ;
+    rdfs:label "συνδέεται με δίκτυο"@el,
+        "is associated with network"@en,
+        "está asociada a una red"@es,
+        "est associée à un réseau"@fr,
+        "è associata a una rete"@it,
+        "er tilknyttet et nettverk"@no,
+        "está associada a uma rede"@pt,
+        "este asociată cu o rețea"@ro ;
+    rdfs:comment "Συνδέει μια πλατφόρμα με μια ερευνητική υποδομή ή ένα δίκτυο με το οποίο σχετίζεται, χωρίς να υποδηλώνει επίσημη συμμετοχή."@el,
+        "Links a platform to a research infrastructure or network with which it is associated, without implying formal membership."@en,
+        "Relaciona una plataforma con una infraestructura de investigación o red con la que está asociada, sin implicar una pertenencia formal."@es,
+        "Relie une plateforme à une infrastructure de recherche ou à un réseau auquel elle est associée, sans impliquer une appartenance formelle."@fr,
+        "Collega una piattaforma a un'infrastruttura di ricerca o a una rete con cui è associata, senza implicare un'appartenenza formale."@it,
+        "Knytter en plattform til en forskningsinfrastruktur eller et nettverk den er assosiert med, uten å innebære formelt medlemskap."@no,
+        "Liga uma plataforma a uma infraestrutura de investigação ou rede com a qual está associada, sem implicar uma pertença formal."@pt,
+        "Leagă o platformă de o infrastructură de cercetare sau de o rețea cu care este asociată, fără a implica apartenență formală."@ro ;
+    rdfs:domain OSO:Platform ;
+    rdfs:range OSO:ResearchInfrastructure ;
+    skos:prefLabel "συνδέεται με δίκτυο"@el,
+        "is associated with network"@en,
+        "está asociada a una red"@es,
+        "est associée à un réseau"@fr,
+        "è associata a una rete"@it,
+        "er tilknyttet et nettverk"@no,
+        "está associada a uma rede"@pt,
+        "este asociată cu o rețea"@ro .
+
 OSO:isInvolvedIn a owl:ObjectProperty ;
     rdfs:label "συμμετέχει σε"@el,
         "is involved in"@en,
@@ -1403,7 +1366,6 @@ OSO:isLedByPerson a owl:ObjectProperty ;
         "Leagă o infrastructură de cercetare de conducătorul său științific sau operațional."@ro ;
     rdfs:domain OSO:ResearchInfrastructure ;
     rdfs:range schema1:Person ;
-    owl:inverseOf OSO:leadsResearchInfrastructure ;
     skos:definition "Συνδέει μια ερευνητική υποδομή με το πρόσωπο που είναι υπεύθυνο για τη διεύθυνσή της."@el,
         "Relates a research infrastructure to the person responsible for leading it."@en,
         "Relaciona una infraestructura de investigación con la persona responsable de dirigirla."@es,
@@ -1421,25 +1383,33 @@ OSO:isLedByPerson a owl:ObjectProperty ;
         "A infraestrutura de investigação é liderada por"@pt,
         "Infrastructura de cercetare este condusă de"@ro .
 
-OSO:isPartOfNetwork a owl:ObjectProperty ;
-    rdfs:label "είναι μέρος δικτύου"@el,
-        "is part of network"@en,
-        "forma parte de una red"@es,
-        "fait partie d’un réseau"@fr,
-        "fa parte di una rete"@it,
-        "er del av et nettverk"@no,
-        "faz parte de uma rede"@pt,
-        "face parte dintr-o rețea"@ro ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:prefLabel "είναι μέρος δικτύου"@el,
-        "is part of network"@en,
-        "forma parte de una red"@es,
-        "fait partie d’un réseau"@fr,
-        "fa parte di una rete"@it,
-        "er del av et nettverk"@no,
-        "faz parte de uma rede"@pt,
-        "face parte dintr-o rețea"@ro .
+OSO:isPartOfResearchInfrastructure a owl:ObjectProperty ;
+    rdfs:label "είναι μέρος ερευνητικής υποδομής"@el,
+        "is part of research infrastructure"@en,
+        "forma parte de una infraestructura de investigación"@es,
+        "fait partie d’une infrastructure de recherche"@fr,
+        "fa parte di un'infrastruttura di ricerca"@it,
+        "er del av en forskningsinfrastruktur"@no,
+        "faz parte de uma infraestrutura de investigação"@pt,
+        "face parte dintr-o infrastructură de cercetare"@ro ;
+    rdfs:comment "Συνδέει μια ερευνητική υποδομή με μια ευρύτερη ερευνητική υποδομή της οποίας αποτελεί μέρος."@el,
+        "Links a research infrastructure to a broader research infrastructure of which it is part."@en,
+        "Relaciona una infraestructura de investigación con una infraestructura de investigación más amplia de la que forma parte."@es,
+        "Relie une infrastructure de recherche à une infrastructure de recherche plus large dont elle fait partie."@fr,
+        "Collega un'infrastruttura di ricerca a un'infrastruttura di ricerca più ampia di cui fa parte."@it,
+        "Knytter en forskningsinfrastruktur til en overordnet forskningsinfrastruktur som den er en del av."@no,
+        "Liga uma infraestrutura de investigação a uma infraestrutura de investigação mais ampla da qual faz parte."@pt,
+        "Leagă o infrastructură de cercetare de o infrastructură de cercetare mai largă din care face parte."@ro ;
+    rdfs:domain OSO:ResearchInfrastructure ;
+    rdfs:range OSO:ResearchInfrastructure ;
+    skos:prefLabel "είναι μέρος ερευνητικής υποδομής"@el,
+        "is part of research infrastructure"@en,
+        "forma parte de una infraestructura de investigación"@es,
+        "fait partie d’une infrastructure de recherche"@fr,
+        "fa parte di un'infrastruttura di ricerca"@it,
+        "er del av en forskningsinfrastruktur"@no,
+        "faz parte de uma infraestrutura de investigação"@pt,
+        "face parte dintr-o infrastructură de cercetare"@ro .
 
 OSO:isTestSite a owl:DatatypeProperty ;
     rdfs:label "είναι δοκιμαστικός τόπος"@el,
@@ -1762,7 +1732,7 @@ OSO:ANTARES a owl:NamedIndividual,
         "ANTARES"@no,
         "ANTARES"@pt,
         "ANTARES"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:IL07 ;
     OSO:dateFirstDeployment "2014-01-01"^^xsd:date ;
     OSO:isTestSite false .
@@ -1897,13 +1867,13 @@ ATLANTIC WHALE DEAL believes that by protecting whales, they're also making a po
         "Atlantic Whale Deal"@pt,
         "Atlantic Whale Deal"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/AtlanticWhaleDeal.png> ;
-    OSO:Project_is_led_by_an_Organization OSO:ARDITI ;
     OSO:hasCountry OSO:France,
         OSO:Ireland,
         OSO:Portugal,
         OSO:Spain ;
     OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/AtlanticWhaleDeal.png> ;
-    OSO:hasSpatialExtent OSO:AtlanticWhaleDeal_bbox .
+    OSO:hasSpatialExtent OSO:AtlanticWhaleDeal_bbox ;
+    OSO:isLedByOrganization OSO:ARDITI .
 
 OSO:Azores a owl:NamedIndividual,
         OSO:RegionalFacility ;
@@ -2094,7 +2064,7 @@ OSO:BJS a owl:NamedIndividual,
         "BJS"@pt,
         "BJS"@ro ;
     foaf:name "Secondary Junction Box"@en ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:BJS_BathyBot,
         OSO:BJS_BathyDock,
         OSO:BJS_SeabedStation ;
@@ -2667,7 +2637,7 @@ OSO:Capelinhos a owl:NamedIndividual,
         "Capelinhos"@no,
         "Capelinhos"@pt,
         "Capelinhos"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:Capelinhos_AutonomousDevices ;
     OSO:isTestSite false .
 
@@ -3688,9 +3658,9 @@ OSO:EUXINUS a schema1:Project,
         "EUXINUS"@fr,
         "EUXINUS"@ro ;
     prov:wasAssociatedWith OSO:GeoEcoMar ;
-    OSO:Project_is_led_by_an_Organization OSO:GeoEcoMar ;
     OSO:hasCountry OSO:Romania ;
-    OSO:hasLocation OSO:Black_Sea .
+    OSO:hasLocation OSO:Black_Sea ;
+    OSO:isLedByOrganization OSO:GeoEcoMar .
 
 OSO:EarthPortalLogo a schema1:ImageObject ;
     rdfs:label "Λογότυπο EarthPortal"@el,
@@ -3740,7 +3710,7 @@ OSO:EastVulcano a owl:NamedIndividual,
         "East vulcano"@no,
         "East vulcano"@pt,
         "East vulcano"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:East_of_Gran_Canaria a owl:NamedIndividual,
@@ -4214,7 +4184,15 @@ OSO:FAIRAssessmentTool a owl:Class ;
         "Uno strumento software utilizzato per valutare il livello di conformità FAIR degli artefatti semantici."@it,
         "Et programvareverktøy som brukes til å evaluere FAIR-nivået til semantiske artefakter."@no,
         "Uma ferramenta de software utilizada para avaliar o nível de conformidade FAIR de artefactos semânticos."@pt,
-        "Un instrument software utilizat pentru evaluarea nivelului de conformitate FAIR al artefactelor semantice."@ro .
+        "Un instrument software utilizat pentru evaluarea nivelului de conformitate FAIR al artefactelor semantice."@ro ;
+    skos:prefLabel "Εργαλείο αξιολόγησης FAIR"@el,
+        "FAIR assessment tool"@en,
+        "Herramienta de evaluación FAIR"@es,
+        "Outil d'évaluation FAIR"@fr,
+        "Strumento di valutazione FAIR"@it,
+        "FAIR-evalueringsverktøy"@no,
+        "Ferramenta de avaliação FAIR"@pt,
+        "Instrument de evaluare FAIR"@ro .
 
 OSO:FF a owl:NamedIndividual,
         OSO:Site ;
@@ -5069,7 +5047,7 @@ OSO:Isabel a owl:NamedIndividual,
         "Isabel"@no,
         "Isabel"@pt,
         "Isabel"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:JAMSTEC a owl:NamedIndividual,
@@ -5472,7 +5450,7 @@ OSO:LavaLake a owl:NamedIndividual,
         "Lava Lake"@no,
         "Lava Lake"@pt,
         "Lava Lake"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:SeaMoNWest,
         OSO:WestLake ;
     OSO:isTestSite false .
@@ -5604,7 +5582,7 @@ OSO:Lion_mooring a owl:NamedIndividual,
         "Lion mooring"@pt,
         "Lion mooring"@ro ;
     OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> ;
-    OSO:isPartOfNetwork OSO:EMSO-France .
+    OSO:isAssociatedWithNetwork OSO:EMSO-France .
 
 OSO:Lucky_Strike a owl:NamedIndividual,
         OSO:Site ;
@@ -5849,9 +5827,9 @@ OSO:MARLEY a owl:NamedIndividual,
         "MARLEY"@no,
         "MARLEY"@pt,
         "MARLEY"@ro ;
+    OSO:isAssociatedWithNetwork OSO:EMSO-France ;
     OSO:isLinkedToCampaign OSO:ChEReef_2022 ;
     OSO:isLinkedToCampaignSeries OSO:CHEREEF_OBS ;
-    OSO:isPartOfNetwork OSO:EMSO-France ;
     OSO:maxWaterDepth 780 .
 
 OSO:MARMESONET a owl:NamedIndividual,
@@ -6197,9 +6175,9 @@ OSO:Marha a schema1:Project,
         "LIFE Marha"@pt,
         "LIFE Marha"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> ;
-    OSO:Project_is_led_by_an_Organization OSO:OFB ;
     OSO:hasCountry OSO:France ;
-    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> .
+    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> ;
+    OSO:isLedByOrganization OSO:OFB .
 
 OSO:Marine_Institute a owl:NamedIndividual,
         foaf:Organization,
@@ -6747,7 +6725,7 @@ OSO:MontSegur a owl:NamedIndividual,
         "Mont Segur"@no,
         "Mont Segur"@pt,
         "Mont Segur"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:MontSegur_AutonomousDevices ;
     OSO:hasCountry OSO:France ;
     OSO:isTestSite false .
@@ -7368,13 +7346,41 @@ OSO:OFB a owl:NamedIndividual,
     OSO:hasROR <https://ror.org/04f5ctv63> .
 
 OSO:Ocean_Data_Acquisition_System a owl:Class ;
-    rdfs:label "Ocean Data Acquisition System"@en ;
+    rdfs:label "Σύστημα συλλογής ωκεανογραφικών δεδομένων"@el,
+        "Ocean Data Acquisition System"@en,
+        "Sistema de adquisición de datos oceánicos"@es,
+        "Système d’acquisition de données océaniques"@fr,
+        "Sistema di acquisizione dati oceanografici"@it,
+        "System for innsamling av havdata"@no,
+        "Sistema de aquisição de dados oceânicos"@pt,
+        "Sistem de achiziție a datelor oceanografice"@ro ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Ocean_data_acquisition_system>,
         <https://unesdoc.unesco.org/ark:/48223/pf0000023696> ;
     rdfs:subClassOf OSO:Platform ;
-    skos:altLabel "ODAS"@en ;
-    skos:definition "A general type of oceanographic data acquisition system used for marine observations."@en ;
-    skos:prefLabel "Ocean Data Acquisition System"@en .
+    skos:altLabel "ODAS"@el,
+        "ODAS"@en,
+        "ODAS"@es,
+        "ODAS"@fr,
+        "ODAS"@it,
+        "ODAS"@no,
+        "ODAS"@pt,
+        "ODAS"@ro ;
+    skos:definition "Ένας γενικός τύπος συστήματος συλλογής ωκεανογραφικών δεδομένων που χρησιμοποιείται για θαλάσσιες παρατηρήσεις."@el,
+        "A general type of oceanographic data acquisition system used for marine observations."@en,
+        "Un tipo general de sistema de adquisición de datos oceanográficos utilizado para observaciones marinas."@es,
+        "Un type général de système d’acquisition de données océanographiques utilisé pour les observations marines."@fr,
+        "Un tipo generale di sistema di acquisizione di dati oceanografici utilizzato per le osservazioni marine."@it,
+        "En generell type system for innsamling av oseanografiske data brukt til marine observasjoner."@no,
+        "Um tipo geral de sistema de aquisição de dados oceanográficos utilizado para observações marinhas."@pt,
+        "Un tip general de sistem de achiziție a datelor oceanografice utilizat pentru observații marine."@ro ;
+    skos:prefLabel "Σύστημα συλλογής ωκεανογραφικών δεδομένων"@el,
+        "Ocean Data Acquisition System"@en,
+        "Sistema de adquisición de datos oceánicos"@es,
+        "Système d’acquisition de données océaniques"@fr,
+        "Sistema di acquisizione dati oceanografici"@it,
+        "System for innsamling av havdata"@no,
+        "Sistema de aquisição de dados oceânicos"@pt,
+        "Sistem de achiziție a datelor oceanografice"@ro .
 
 OSO:Oceanography a owl:NamedIndividual,
         OSO:Discipline ;
@@ -7414,7 +7420,15 @@ OSO:OntologyEditor a owl:Class ;
         "Uno strumento semantico utilizzato per creare, modificare e mantenere ontologie."@it,
         "Et semantisk verktøy som brukes til å opprette, redigere og vedlikeholde ontologier."@no,
         "Uma ferramenta semântica utilizada para criar, editar e manter ontologias."@pt,
-        "Un instrument semantic utilizat pentru crearea, editarea și întreținerea ontologiilor."@ro .
+        "Un instrument semantic utilizat pentru crearea, editarea și întreținerea ontologiilor."@ro ;
+    skos:prefLabel "Επεξεργαστής οντολογιών"@el,
+        "Ontology editor"@en,
+        "Editor de ontologías"@es,
+        "Éditeur d'ontologies"@fr,
+        "Editor di ontologie"@it,
+        "Ontologiredigeringsverktøy"@no,
+        "Editor de ontologias"@pt,
+        "Editor de ontologii"@ro .
 
 OSO:OntologyEngineeringGroupLogo a schema1:ImageObject ;
     rdfs:label "Λογότυπο του Ontology Engineering Group"@el,
@@ -8060,7 +8074,15 @@ OSO:RDFFramework a owl:Class ;
         "Un framework software utilizzato per creare, analizzare, manipolare, serializzare o validare grafi RDF."@it,
         "Et programvarerammeverk som brukes til å opprette, analysere, manipulere, serialisere eller validere RDF-grafer."@no,
         "Um framework de software utilizado para criar, analisar, manipular, serializar ou validar grafos RDF."@pt,
-        "Un cadru software utilizat pentru crearea, parsarea, manipularea, serializarea sau validarea grafurilor RDF."@ro .
+        "Un cadru software utilizat pentru crearea, parsarea, manipularea, serializarea sau validarea grafurilor RDF."@ro ;
+    skos:prefLabel "Πλαίσιο RDF"@el,
+        "RDF framework"@en,
+        "Framework RDF"@es,
+        "Framework RDF"@fr,
+        "Framework RDF"@it,
+        "RDF-rammeverk"@no,
+        "Framework RDF"@pt,
+        "Cadru RDF"@ro .
 
 OSO:RDFLibLogo a schema1:ImageObject ;
     rdfs:label "Λογότυπο RDFLib"@el,
@@ -8125,12 +8147,12 @@ OSO:REVOSIMA a schema1:Project,
         "REVOSIMA"@pt,
         "REVOSIMA"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> ;
-    OSO:Project_is_led_by_an_Organization OSO:BRGM,
+    OSO:hasCountry OSO:France ;
+    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> ;
+    OSO:isLedByOrganization OSO:BRGM,
         OSO:CNRS,
         OSO:IPGP,
-        OSO:Ifremer ;
-    OSO:hasCountry OSO:France ;
-    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> .
+        OSO:Ifremer .
 
 OSO:SN-4 a owl:NamedIndividual,
         OSO:Site ;
@@ -8235,7 +8257,15 @@ OSO:SPARQLService a owl:Class ;
         "Un servizio che espone dati RDF attraverso il linguaggio di interrogazione SPARQL."@it,
         "En tjeneste som eksponerer RDF-data gjennom spørrespråket SPARQL."@no,
         "Um serviço que expõe dados RDF através da linguagem de consulta SPARQL."@pt,
-        "Un serviciu care expune date RDF prin intermediul limbajului de interogare SPARQL."@ro .
+        "Un serviciu care expune date RDF prin intermediul limbajului de interogare SPARQL."@ro ;
+    skos:prefLabel "Υπηρεσία SPARQL"@el,
+        "SPARQL service"@en,
+        "Servicio SPARQL"@es,
+        "Service SPARQL"@fr,
+        "Servizio SPARQL"@it,
+        "SPARQL-tjeneste"@no,
+        "Serviço SPARQL"@pt,
+        "Serviciu SPARQL"@ro .
 
 OSO:Sapin a owl:NamedIndividual,
         OSO:Subsite ;
@@ -8387,7 +8417,15 @@ OSO:SemanticDatabase a owl:Class ;
         "Un sistema software progettato per archiviare, gestire e interrogare dati semantici come grafi RDF e grafi della conoscenza."@it,
         "Et programvaresystem utviklet for å lagre, administrere og spørre semantiske data som RDF-grafer og kunnskapsgrafer."@no,
         "Um sistema de software concebido para armazenar, gerir e consultar dados semânticos, como grafos RDF e grafos de conhecimento."@pt,
-        "Un sistem software conceput pentru stocarea, gestionarea și interogarea datelor semantice, precum grafuri RDF și grafuri de cunoștințe."@ro .
+        "Un sistem software conceput pentru stocarea, gestionarea și interogarea datelor semantice, precum grafuri RDF și grafuri de cunoștințe."@ro ;
+    skos:prefLabel "Σημασιολογική βάση δεδομένων"@el,
+        "Semantic database"@en,
+        "Base de datos semántica"@es,
+        "Base de données sémantique"@fr,
+        "Base di dati semantica"@it,
+        "Semantisk database"@no,
+        "Base de dados semântica"@pt,
+        "Bază de date semantică"@ro .
 
 OSO:SemanticDocumentationTool a owl:Class ;
     rdfs:label "Εργαλείο σημασιολογικής τεκμηρίωσης"@el,
@@ -8406,7 +8444,15 @@ OSO:SemanticDocumentationTool a owl:Class ;
         "Uno strumento utilizzato per generare documentazione per artefatti semantici."@it,
         "Et verktøy som brukes til å generere dokumentasjon for semantiske artefakter."@no,
         "Uma ferramenta utilizada para gerar documentação para artefactos semânticos."@pt,
-        "Un instrument utilizat pentru generarea documentației pentru artefacte semantice."@ro .
+        "Un instrument utilizat pentru generarea documentației pentru artefacte semantice."@ro ;
+    skos:prefLabel "Εργαλείο σημασιολογικής τεκμηρίωσης"@el,
+        "Semantic documentation tool"@en,
+        "Herramienta de documentación semántica"@es,
+        "Outil de documentation sémantique"@fr,
+        "Strumento di documentazione semantica"@it,
+        "Verktøy for semantisk dokumentasjon"@no,
+        "Ferramenta de documentação semântica"@pt,
+        "Instrument de documentare semantică"@ro .
 
 OSO:SemanticPortalFramework a owl:Class ;
     rdfs:label "Πλαίσιο για σημασιολογικές πύλες"@el,
@@ -8425,7 +8471,15 @@ OSO:SemanticPortalFramework a owl:Class ;
         "Un framework software utilizzato per creare, distribuire e gestire repository di artefatti semantici e portali di ontologie."@it,
         "Et programvarerammeverk som brukes til å bygge, distribuere og administrere semantiske artefaktlagre og ontologiportaler."@no,
         "Um framework de software utilizado para construir, implementar e gerir repositórios de artefactos semânticos e portais de ontologias."@pt,
-        "Un framework software utilizat pentru construirea, implementarea și administrarea depozitelor de artefacte semantice și a portalurilor de ontologii."@ro .
+        "Un framework software utilizat pentru construirea, implementarea și administrarea depozitelor de artefacte semantice și a portalurilor de ontologii."@ro ;
+    skos:prefLabel "Πλαίσιο για σημασιολογικές πύλες"@el,
+        "Semantic portal framework"@en,
+        "Framework para portales semánticos"@es,
+        "Framework de portail sémantique"@fr,
+        "Framework per portali semantici"@it,
+        "Rammeverk for semantiske portaler"@no,
+        "Framework para portais semânticos"@pt,
+        "Framework pentru portaluri semantice"@ro .
 
 OSO:SemanticRepository a owl:Class ;
     rdfs:label "Σημασιολογικό αποθετήριο"@el,
@@ -8445,7 +8499,15 @@ OSO:SemanticRepository a owl:Class ;
         "Un catalogo o repository utilizzato per pubblicare, indicizzare, scoprire e condividere artefatti semantici."@it,
         "Et katalog eller repositorium som brukes til å publisere, indeksere, oppdage og dele semantiske artefakter."@no,
         "Um catálogo ou repositório utilizado para publicar, indexar, descobrir e partilhar artefactos semânticos."@pt,
-        "Un catalog sau depozit utilizat pentru publicarea, indexarea, descoperirea și partajarea artefactelor semantice."@ro .
+        "Un catalog sau depozit utilizat pentru publicarea, indexarea, descoperirea și partajarea artefactelor semantice."@ro ;
+    skos:prefLabel "Σημασιολογικό αποθετήριο"@el,
+        "Semantic repository"@en,
+        "Repositorio semántico"@es,
+        "Dépôt sémantique"@fr,
+        "Repository semantico"@it,
+        "Semantisk repositorium"@no,
+        "Repositório semântico"@pt,
+        "Depozit semantic"@ro .
 
 OSO:SemanticVisualizationTool a owl:Class ;
     rdfs:label "Εργαλείο σημασιολογικής απεικόνισης"@el,
@@ -8464,7 +8526,15 @@ OSO:SemanticVisualizationTool a owl:Class ;
         "Uno strumento utilizzato per visualizzare artefatti semantici, grafi RDF o strutture di ontologie."@it,
         "Et verktøy som brukes til å visualisere semantiske artefakter, RDF-grafer eller ontologistrukturer."@no,
         "Uma ferramenta utilizada para visualizar artefactos semânticos, grafos RDF ou estruturas de ontologias."@pt,
-        "Un instrument utilizat pentru vizualizarea artefactelor semantice, a grafurilor RDF sau a structurilor de ontologii."@ro .
+        "Un instrument utilizat pentru vizualizarea artefactelor semantice, a grafurilor RDF sau a structurilor de ontologii."@ro ;
+    skos:prefLabel "Εργαλείο σημασιολογικής απεικόνισης"@el,
+        "Semantic visualization tool"@en,
+        "Herramienta de visualización semántica"@es,
+        "Outil de visualisation sémantique"@fr,
+        "Strumento di visualizzazione semantica"@it,
+        "Verktøy for semantisk visualisering"@no,
+        "Ferramenta de visualização semântica"@pt,
+        "Instrument de vizualizare semantică"@ro .
 
 OSO:Sintra a owl:NamedIndividual,
         OSO:Subsite ;
@@ -9005,7 +9075,7 @@ OSO:Surface a owl:NamedIndividual,
         "Surface"@no,
         "Surface"@pt,
         "Surface"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:Lucky_Strike_Surface_BOREL ;
     OSO:dateEndDeployment "2023-07-15"^^xsd:date ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
@@ -9222,7 +9292,7 @@ OSO:TourEiffel a owl:NamedIndividual,
         "Tour Eiffel"@no,
         "Tour Eiffel"@pt,
         "Tour Eiffel"@ro ;
-    OSO:Subsite_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:SeaMoNEast,
         OSO:TourEiffel_AutonomousDevices ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
@@ -9875,7 +9945,7 @@ OSO:hasLocation a owl:ObjectProperty ;
         "Liga uma infraestrutura regional à sua descrição de localização geográfica ou à sua geometria."@pt,
         "Leagă o infrastructură regională de descrierea locației sale geografice sau de geometria sa."@ro ;
     rdfs:domain OSO:RegionalFacility ;
-    rdfs:range OSO:Geometry ;
+    rdfs:range schema1:Place ;
     owl:inverseOf OSO:isLocationOf ;
     skos:prefLabel "έχει τοποθεσία"@el,
         "has location"@en,
@@ -10264,7 +10334,7 @@ OSO:isLedByOrganization a owl:ObjectProperty ;
         "Uma infraestrutura regional é gerida ou coordenada por uma ou mais organizações."@pt,
         "O infrastructură regională este gestionată sau coordonată de una sau mai multe organizații."@ro ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( OSO:OceanographicCampaign OSO:RegionalFacility ) ] ;
+            owl:unionOf ( OSO:OceanographicCampaign OSO:RegionalFacility OSO:ResearchProject ) ] ;
     rdfs:range foaf:Organization ;
     owl:inverseOf OSO:leadsRegionalFacility ;
     skos:prefLabel "συντονίζεται από οργανισμό"@el,
@@ -10351,7 +10421,7 @@ OSO:isLocationOf a owl:ObjectProperty ;
         "Knytter en geografisk lokasjonsbeskrivelse eller geometri til den regionale infrastrukturen den beskriver."@no,
         "Liga uma descrição de localização geográfica ou uma geometria à infraestrutura regional que descreve."@pt,
         "Leagă o descriere a locației geografice sau o geometrie de infrastructura regională pe care o descrie."@ro ;
-    rdfs:domain OSO:Geometry ;
+    rdfs:domain schema1:Place ;
     rdfs:range OSO:RegionalFacility ;
     owl:inverseOf OSO:hasLocation ;
     skos:prefLabel "είναι η τοποθεσία της"@el,
@@ -11308,7 +11378,15 @@ OSO:CollaborativeDevelopmentPlatform a owl:Class ;
         "Una piattaforma software che supporta lo sviluppo collaborativo, il controllo di versione, il tracciamento delle issue e la gestione del codice sorgente."@it,
         "En programvareplattform som støtter samarbeidsbasert programvareutvikling, versjonskontroll, saksoppfølging og håndtering av kildekode."@no,
         "Uma plataforma de software que suporta o desenvolvimento colaborativo, o controlo de versões, o acompanhamento de problemas e a gestão do código-fonte."@pt,
-        "O platformă software care sprijină dezvoltarea colaborativă, controlul versiunilor, urmărirea problemelor și gestionarea codului sursă."@ro .
+        "O platformă software care sprijină dezvoltarea colaborativă, controlul versiunilor, urmărirea problemelor și gestionarea codului sursă."@ro ;
+    skos:prefLabel "Πλατφόρμα συνεργατικής ανάπτυξης"@el,
+        "Collaborative development platform"@en,
+        "Plataforma de desarrollo colaborativo"@es,
+        "Plateforme de développement collaboratif"@fr,
+        "Piattaforma di sviluppo collaborativo"@it,
+        "Plattform for samarbeidsutvikling"@no,
+        "Plataforma de desenvolvimento colaborativo"@pt,
+        "Platformă de dezvoltare colaborativă"@ro .
 
 OSO:DataTerraLogo a schema1:ImageObject ;
     rdfs:label "Λογότυπο Data Terra"@el,
@@ -12348,7 +12426,15 @@ OSO:SemanticEcosystemResource a owl:Class ;
         "Una risorsa utilizzata per progettare, mantenere, pubblicare, documentare, validare o riutilizzare artefatti semantici."@it,
         "En ressurs som brukes til å utvikle, vedlikeholde, publisere, dokumentere, validere eller gjenbruke semantiske artefakter."@no,
         "Um recurso utilizado para conceber, manter, publicar, documentar, validar ou reutilizar artefactos semânticos."@pt,
-        "O resursă utilizată pentru proiectarea, întreținerea, publicarea, documentarea, validarea sau reutilizarea artefactelor semantice."@ro .
+        "O resursă utilizată pentru proiectarea, întreținerea, publicarea, documentarea, validarea sau reutilizarea artefactelor semantice."@ro ;
+    skos:prefLabel "Πόρος του σημασιολογικού οικοσυστήματος"@el,
+        "Semantic ecosystem resource"@en,
+        "Recurso del ecosistema semántico"@es,
+        "Ressource d’écosystème sémantique"@fr,
+        "Risorsa dell'ecosistema semantico"@it,
+        "Ressurs i det semantiske økosystemet"@no,
+        "Recurso do ecossistema semântico"@pt,
+        "Resursă a ecosistemului semantic"@ro .
 
 OSO:StanfordCenterForBiomedicalInformaticsResearch a schema1:Organization,
         owl:NamedIndividual ;
@@ -12398,6 +12484,24 @@ OSO:StanfordCenterForBiomedicalInformaticsResearch a schema1:Organization,
         "Stanford Center for Biomedical Informatics Research"@no,
         "Stanford Center for Biomedical Informatics Research"@pt,
         "Stanford Center for Biomedical Informatics Research"@ro .
+
+OSO:Status a owl:Class ;
+    rdfs:label "Κατάσταση"@el,
+        "Status"@en,
+        "Estado"@es,
+        "Statut"@fr,
+        "Stato"@it,
+        "Status"@no,
+        "Estado"@pt,
+        "Statut"@ro ;
+    skos:prefLabel "Κατάσταση"@el,
+        "Status"@en,
+        "Estado"@es,
+        "Statut"@fr,
+        "Stato"@it,
+        "Status"@no,
+        "Estado"@pt,
+        "Statut"@ro .
 
 OSO:Stefano_MISEROCCHI a schema1:Person,
         owl:NamedIndividual ;
@@ -12914,19 +13018,20 @@ OSO:YASGUI a schema1:WebApplication,
         <http://id.loc.gov/vocabulary/iso639-1/pt>,
         <http://id.loc.gov/vocabulary/iso639-1/ro> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-08-20"^^xsd:date ;
-    dcterms:provenance "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.121.03429 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."@el,
-        "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.121.03429 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."@en,
-        "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.121.03429 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."@es,
-        "L'ontologie a été développée et maintenue à l'aide de Protégé 5.6.9, VSCodium 1.121.03429 et RDFLib 7.6.0, versionnée et publiée via GitHub. La gestion des versions suit Semantic Versioning (SemVer) et l'historique des commits respecte la spécification Conventional Commits. Les métadonnées de l'ontologie sont vérifiées et mises à jour, et les statistiques de l'ontologie sont recalculées à chaque nouvelle version."@fr,
-        "L'ontologia è stata sviluppata e mantenuta utilizzando Protégé 5.6.9, VSCodium 1.121.03429 e RDFLib 7.6.0, versionata e pubblicata tramite GitHub. Il versionamento segue Semantic Versioning (SemVer) e la cronologia dei commit rispetta la specifica Conventional Commits. I metadati dell'ontologia vengono verificati e aggiornati, e le statistiche dell'ontologia vengono ricalcolate a ogni nuova versione."@it,
-        "Ontologien ble utviklet og vedlikeholdt med Protégé 5.6.9, VSCodium 1.121.03429 og RDFLib 7.6.0, versjonskontrollert og publisert gjennom GitHub. Versjoneringen følger Semantic Versioning (SemVer), og commit-historikken følger spesifikasjonen Conventional Commits. Ontologiens metadata blir gjennomgått og oppdatert, og ontologistatistikken blir beregnet på nytt for hver nye versjon."@no,
-        "A ontologia foi desenvolvida e mantida utilizando o Protégé 5.6.9, o VSCodium 1.121.03429 e o RDFLib 7.6.0, versionada e publicada através do GitHub. O versionamento segue o Semantic Versioning (SemVer) e o histórico de commits respeita a especificação Conventional Commits. Os metadados da ontologia são revistos e atualizados, e as estatísticas da ontologia são recalculadas a cada nova versão."@pt,
-        "Ontologia a fost dezvoltată și întreținută utilizând Protégé 5.6.9, VSCodium 1.121.03429 și RDFLib 7.6.0, gestionată prin controlul versiunilor și publicată prin GitHub. Versionarea urmează Semantic Versioning (SemVer), iar istoricul commit-urilor respectă specificația Conventional Commits. Metadatele ontologiei sunt revizuite și actualizate, iar statisticile ontologiei sunt recalculate pentru fiecare nouă versiune."@ro ;
+    dcterms:modified "2026-08-25"^^xsd:date ;
+    dcterms:provenance "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.126.04524 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."@el,
+        "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.126.04524 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."@en,
+        "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.126.04524 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."@es,
+        "L'ontologie a été développée et maintenue à l'aide de Protégé 5.6.9, VSCodium 1.126.04524 et RDFLib 7.6.0, versionnée et publiée via GitHub. La gestion des versions suit Semantic Versioning (SemVer) et l'historique des commits respecte la spécification Conventional Commits. Les métadonnées de l'ontologie sont vérifiées et mises à jour, et les statistiques de l'ontologie sont recalculées à chaque nouvelle version."@fr,
+        "L'ontologia è stata sviluppata e mantenuta utilizzando Protégé 5.6.9, VSCodium 1.126.04524 e RDFLib 7.6.0, versionata e pubblicata tramite GitHub. Il versionamento segue Semantic Versioning (SemVer) e la cronologia dei commit rispetta la specifica Conventional Commits. I metadati dell'ontologia vengono verificati e aggiornati, e le statistiche dell'ontologia vengono ricalcolate a ogni nuova versione."@it,
+        "Ontologien ble utviklet og vedlikeholdt med Protégé 5.6.9, VSCodium 1.126.04524 og RDFLib 7.6.0, versjonskontrollert og publisert gjennom GitHub. Versjoneringen følger Semantic Versioning (SemVer), og commit-historikken følger spesifikasjonen Conventional Commits. Ontologiens metadata blir gjennomgått og oppdatert, og ontologistatistikken blir beregnet på nytt for hver nye versjon."@no,
+        "A ontologia foi desenvolvida e mantida utilizando o Protégé 5.6.9, o VSCodium 1.126.04524 e o RDFLib 7.6.0, versionada e publicada através do GitHub. O versionamento segue o Semantic Versioning (SemVer) e o histórico de commits respeita a especificação Conventional Commits. Os metadados da ontologia são revistos e atualizados, e as estatísticas da ontologia são recalculadas a cada nova versão."@pt,
+        "Ontologia a fost dezvoltată și întreținută utilizând Protégé 5.6.9, VSCodium 1.126.04524 și RDFLib 7.6.0, gestionată prin controlul versiunilor și publicată prin GitHub. Versionarea urmează Semantic Versioning (SemVer), iar istoricul commit-urilor respectă specificația Conventional Commits. Metadatele ontologiei sunt revizuite și actualizate, iar statisticile ontologiei sunt recalculate pentru fiecare nouă versiune."@ro ;
     dcterms:publisher OSO:Ifremer ;
     dcterms:relation <https://doi.org/10.5281/zenodo.19497912>,
         <https://emso-eric.github.io/oso-ontology/>,
         <https://github.com/emso-eric/oso-ontology>,
+        <https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl>,
         <https://w3id.org/earthsemantics/OSO/dcat> ;
     dcterms:rightsHolder OSO:Ifremer ;
     dcterms:source <https://github.com/emso-eric/oso-ontology> ;
@@ -13045,14 +13150,14 @@ OSO:YASGUI a schema1:WebApplication,
         foaf: ;
     owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
     owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    owl:versionInfo "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"@el,
-        "1.2.0 – separated ontology model and instance data distributions; corrected SmartBay typographical error"@en,
-        "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; corrección de una errata en SmartBay"@es,
-        "1.2.0 – séparation des distributions du modèle ontologique et des données d’instances ; correction d’une erreur typographique concernant SmartBay"@fr,
-        "1.2.0 – separazione delle distribuzioni del modello ontologico e dei dati delle istanze; correzione di un refuso relativo a SmartBay"@it,
-        "1.2.0 – separate distribusjoner for ontologimodellen og instansdata; retting av en skrivefeil knyttet til SmartBay"@no,
-        "1.2.0 – separação das distribuições do modelo ontológico e dos dados de instâncias; correção de um erro tipográfico relativo ao SmartBay"@pt,
-        "1.2.0 – separarea distribuțiilor modelului ontologic și ale datelor de instanță; corectarea unei erori de tipar privind SmartBay"@ro ;
+    owl:versionInfo "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· εισαγωγή επικύρωσης SHACL· βελτίωση της συνέπειας μεταξύ TBox, ABox και SHACL· εμπλουτισμός της μοντελοποίησης του σημασιολογικού οικοσυστήματος, των μεταδεδομένων της οντολογίας και των πολυγλωσσικών επισημάνσεων· βελτίωση κλάσεων και ιδιοτήτων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"@el,
+        "1.2.0 – separated ontology model and instance data distributions; introduced SHACL validation; improved TBox, ABox and SHACL consistency; enriched semantic ecosystem modelling, ontology metadata and multilingual annotations; refined classes and properties; corrected SmartBay typographical error"@en,
+        "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; introducción de la validación SHACL; mejora de la coherencia entre TBox, ABox y SHACL; enriquecimiento del modelado del ecosistema semántico, los metadatos de la ontología y las anotaciones multilingües; refinamiento de clases y propiedades; corrección de una errata relativa a SmartBay"@es,
+        "1.2.0 – séparation des distributions du modèle ontologique et des données d’instances ; introduction de la validation SHACL ; amélioration de la cohérence entre TBox, ABox et SHACL ; enrichissement de la modélisation de l’écosystème sémantique, des métadonnées de l’ontologie et des annotations multilingues ; amélioration des classes et propriétés ; correction d’une erreur typographique concernant SmartBay"@fr,
+        "1.2.0 – separazione delle distribuzioni del modello ontologico e dei dati delle istanze; introduzione della validazione SHACL; miglioramento della coerenza tra TBox, ABox e SHACL; arricchimento della modellazione dell’ecosistema semantico, dei metadati dell’ontologia e delle annotazioni multilingue; perfezionamento di classi e proprietà; correzione di un refuso relativo a SmartBay"@it,
+        "1.2.0 – separate distribusjoner for ontologimodellen og instansdata; innføring av SHACL-validering; forbedret konsistens mellom TBox, ABox og SHACL; beriket modellering av det semantiske økosystemet, ontologimetadata og flerspråklige annotasjoner; forbedring av klasser og egenskaper; retting av en skrivefeil knyttet til SmartBay"@no,
+        "1.2.0 – separação das distribuições do modelo ontológico e dos dados de instâncias; introdução da validação SHACL; melhoria da coerência entre TBox, ABox e SHACL; enriquecimento da modelação do ecossistema semântico, dos metadados da ontologia e das anotações multilingues; aperfeiçoamento de classes e propriedades; correção de um erro tipográfico relativo ao SmartBay"@pt,
+        "1.2.0 – separarea distribuțiilor modelului ontologic și ale datelor de instanță; introducerea validării SHACL; îmbunătățirea coerenței între TBox, ABox și SHACL; îmbogățirea modelării ecosistemului semantic, a metadatelor ontologiei și a adnotărilor multilingve; rafinarea claselor și proprietăților; corectarea unei erori tipografice referitoare la SmartBay"@ro ;
     skos:altLabel "OSO",
         "Open Seas Observatories"@en ;
     skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,
@@ -13960,7 +14065,7 @@ OSO:EMSO_DMSG a schema1:Organization,
         "données marines"@fr,
         "gestion des données"@fr,
         "interopérabilité"@fr ;
-    OSO:hasLeader OSO:Enoc_MARTINEZ .
+    OSO:hasGroupLeader OSO:Enoc_MARTINEZ .
 
 OSO:Greece a <http://dbpedia.org/ontology/Country>,
         owl:NamedIndividual ;
@@ -14152,7 +14257,15 @@ OSO:ResearchProject a owl:Class ;
         "En strukturert vitenskapelig aktivitet som har som mål å produsere ny kunnskap, data eller forståelse innenfor et definert omfang og tidsrom."@no,
         "Uma atividade científica estruturada concebida para produzir novo conhecimento, dados ou compreensão dentro de um âmbito e duração definidos."@pt,
         "O activitate științifică structurată destinată să producă noi cunoștințe, date sau înțelegere într-un cadru și o durată definite."@ro ;
-    rdfs:subClassOf foaf:Project .
+    rdfs:subClassOf foaf:Project ;
+    skos:prefLabel "Ερευνητικό έργο"@el,
+        "Research project"@en,
+        "Proyecto de investigación"@es,
+        "Projet de recherche"@fr,
+        "Progetto di ricerca"@it,
+        "Forskningsprosjekt"@no,
+        "Projeto de investigação"@pt,
+        "Proiect de cercetare"@ro .
 
 OSO:Roberto_BOZZANO a schema1:Person,
         owl:NamedIndividual ;
@@ -14408,7 +14521,6 @@ OSO:Discipline a owl:Class ;
         "Liste over EMSO-vitenskapelige disipliner knyttet til en regional fasilitet."@no,
         "Lista das disciplinas científicas da EMSO associadas a uma Instalação Regional."@pt,
         "Listă a disciplinelor științifice EMSO asociate unei facilități regionale."@ro ;
-    rdfs:subClassOf owl:Thing ;
     skos:prefLabel "Επιστημονικός κλάδος"@el,
         "Discipline"@en,
         "Disciplina"@es,
@@ -14772,7 +14884,15 @@ OSO:SemanticTool a owl:Class ;
         "Uno strumento software utilizzato durante l'intero ciclo di vita degli artefatti semantici."@it,
         "Et programvareverktøy som brukes gjennom hele livssyklusen til semantiske artefakter."@no,
         "Uma ferramenta de software utilizada ao longo do ciclo de vida dos artefactos semânticos."@pt,
-        "Un instrument software utilizat pe parcursul întregului ciclu de viață al artefactelor semantice."@ro .
+        "Un instrument software utilizat pe parcursul întregului ciclu de viață al artefactelor semantice."@ro ;
+    skos:prefLabel "Σημασιολογικό εργαλείο"@el,
+        "Semantic tool"@en,
+        "Herramienta semántica"@es,
+        "Outil sémantique"@fr,
+        "Strumento semantico"@it,
+        "Semantisk verktøy"@no,
+        "Ferramenta semântica"@pt,
+        "Instrument semantic"@ro .
 
 OSO:Vlad_Rădulescu a schema1:Person,
         owl:NamedIndividual ;
@@ -14840,7 +14960,15 @@ OSO:FundedProject a owl:Class ;
         "Et forskningsprosjekt støttet av dedikert finansiering fra en eller flere organisasjoner eller finansieringskilder."@no,
         "Um projeto de investigação apoiado por financiamento específico proveniente de uma ou mais organizações ou entidades financiadoras."@pt,
         "Un proiect de cercetare susținut prin finanțare dedicată din partea uneia sau mai multor organizații sau organisme de finanțare."@ro ;
-    rdfs:subClassOf OSO:ResearchProject .
+    rdfs:subClassOf OSO:ResearchProject ;
+    skos:prefLabel "Χρηματοδοτούμενο έργο"@el,
+        "Funded project"@en,
+        "Proyecto financiado"@es,
+        "Projet financé"@fr,
+        "Progetto finanziato"@it,
+        "Finansiert prosjekt"@no,
+        "Projeto financiado"@pt,
+        "Proiect finanțat"@ro .
 
 OSO:OceanographicCampaign a owl:Class ;
     rdfs:label "Ωκεανογραφική εκστρατεία"@el,
@@ -14893,7 +15021,6 @@ OSO:SeriesOfOceanographicCampaigns a owl:Class ;
         "Um agrupamento temático ou temporal de campanhas oceanográficas relacionadas, associado a uma infraestrutura regional."@pt,
         "O grupare tematică sau temporală de campanii oceanografice asociate unei infrastructuri regionale."@ro ;
     rdfs:seeAlso OSO:OceanographicCampaign ;
-    rdfs:subClassOf owl:Thing ;
     skos:prefLabel "Σειρά ωκεανογραφικών εκστρατειών"@el,
         "Series of Oceanographic Campaigns"@en,
         "Serie de campañas oceanográficas"@es,
@@ -15009,6 +15136,32 @@ OSO:ERICMembership a owl:Class ;
         "Participação em um ERIC"@pt,
         "Apartenență la un ERIC"@ro .
 
+OSO:Norway a <http://dbpedia.org/ontology/Country>,
+        owl:NamedIndividual ;
+    rdfs:label "Νορβηγία"@el,
+        "Norway"@en,
+        "Noruega"@es,
+        "Norvège"@fr,
+        "Norvegia"@it,
+        "Norge"@no,
+        "Noruega"@pt,
+        "Norvegia"@ro ;
+    skos:altLabel "Norway"@en,
+        "Norvège"@fr,
+        "Norge"@no ;
+    skos:exactMatch <http://dbpedia.org/resource/Norway>,
+        <http://www.wikidata.org/entity/Q20>,
+        <https://sws.geonames.org/3144096/> ;
+    skos:notation "NO" ;
+    skos:prefLabel "Νορβηγία"@el,
+        "Norway"@en,
+        "Noruega"@es,
+        "Norvège"@fr,
+        "Norvegia"@it,
+        "Norge"@no,
+        "Noruega"@pt,
+        "Norvegia"@ro .
+
 OSO:ResearchInfrastructure a owl:Class ;
     rdfs:label "Ερευνητική Υποδομή"@el,
         "Research Infrastructure"@en,
@@ -15046,32 +15199,6 @@ OSO:ResearchInfrastructure a owl:Class ;
         "Forskningsinfrastruktur"@no,
         "Infraestrutura de Investigação"@pt,
         "Infrastructură de cercetare"@ro .
-
-OSO:Norway a <http://dbpedia.org/ontology/Country>,
-        owl:NamedIndividual ;
-    rdfs:label "Νορβηγία"@el,
-        "Norway"@en,
-        "Noruega"@es,
-        "Norvège"@fr,
-        "Norvegia"@it,
-        "Norge"@no,
-        "Noruega"@pt,
-        "Norvegia"@ro ;
-    skos:altLabel "Norway"@en,
-        "Norvège"@fr,
-        "Norge"@no ;
-    skos:exactMatch <http://dbpedia.org/resource/Norway>,
-        <http://www.wikidata.org/entity/Q20>,
-        <https://sws.geonames.org/3144096/> ;
-    skos:notation "NO" ;
-    skos:prefLabel "Νορβηγία"@el,
-        "Norway"@en,
-        "Noruega"@es,
-        "Norvège"@fr,
-        "Norvegia"@it,
-        "Norge"@no,
-        "Noruega"@pt,
-        "Norvegia"@ro .
 
 OSO:Ifremer a owl:NamedIndividual,
         foaf:Organization,
@@ -15254,7 +15381,7 @@ OSO:EMSO-France a owl:NamedIndividual,
         OSO:Nadine_LANTERI ;
     OSO:isManagedBy OSO:CNRS,
         OSO:Ifremer ;
-    OSO:isPartOf OSO:EMSO .
+    OSO:isPartOfResearchInfrastructure OSO:EMSO .
 
 OSO:EMSO a owl:NamedIndividual,
         cerif:Organisation,
@@ -15372,7 +15499,6 @@ OSO:RegionalFacility a owl:Class ;
         "Infraestrutura regional que contém locais, associada a infraestruturas de investigação, campanhas oceanográficas, organizações e um líder regional."@pt,
         "Infrastructură regională care conține site-uri, asociată cu infrastructuri de cercetare, campanii oceanografice, organizații și un lider de echipă regional."@ro ;
     rdfs:seeAlso sweetHumanResearch: ;
-    rdfs:subClassOf owl:Thing ;
     skos:altLabel "EMSO Regional Facility"@en,
         "EMSO regional observatory node"@en,
         "European Multidisciplinary Seafloor and Water Column Observatory Regional Facility"@en,
