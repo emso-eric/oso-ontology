@@ -11,6 +11,40 @@
     "@value" : "FAIRsharing DOI for OSO"
   } ]
 }, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#OceanographicCampaign"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ResearchProject"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid2",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/adms#Identifier"
@@ -23,16 +57,74 @@
     "@value" : "Persistent IRI for OSO"
   } ]
 }, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ERIC"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#OceanographicCampaign"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ERIC"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid3",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/adms#Identifier"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "https://doi.org/10.5281/zenodo.19497913"
+    "@value" : "https://doi.org/10.5281/zenodo.19497912"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "Zenodo DOI for OSO"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#SubPlatform"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+    } ]
   } ]
 }, {
   "@id" : "_:genid4",
@@ -49,7 +141,95 @@
     "@value" : "EMSO ERIC"
   } ]
 }, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#SubPlatform"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
   "http://schema.org/value" : [ {
     "@value" : "10.17882/43749"
   } ],
@@ -60,7 +240,7 @@
     "@value" : "10.17882/43749"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid69",
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Flotte Océanographique Française"
   } ],
@@ -71,7 +251,7 @@
     "@value" : "10.18142/295"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid70",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2006/vcard/ns#Kind"
   } ],
@@ -83,6 +263,16 @@
   } ],
   "http://www.w3.org/2006/vcard/ns#hasOrganizationName" : [ {
     "@value" : "EMSO ERIC"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    }, {
+      "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    } ]
   } ]
 }, {
   "@id" : "http://aims.fao.org/aos/agrovoc/c_946",
@@ -322,16 +512,10 @@
   "@id" : "http://purl.org/dc/terms/isDescribedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/isFormatOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/isPartOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/isReferencedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/language",
@@ -425,30 +609,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#Dataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#dataDump",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#entities",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#exampleResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#sparqlEndpoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#triples",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#uriSpace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://rdfs.org/ns/void#vocabulary",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/EventSeries",
@@ -619,163 +779,10 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@value" : "$Date: 2009/04/20 15:00:30 $"
-  } ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "A vocabulary for representing latitude, longitude and \n altitude information in the WGS84 geodetic reference datum. \n Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details."
-  } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "WGS84 Geo Positioning: an RDF vocabulary"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\nRecent changes to this namespace:\n$Log: wgs84_pos.rdf,v $\nRevision 1.22  2009/04/20 15:00:30  timbl\nRemove the time bits which have been deal with elsewhere eg in iCal.\n\nRevision 1.21  2009/04/20 12:52:47  timbl\ntry again\n\nRevision 1.20  2009/04/20 12:42:11  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.19  2009/04/20 12:36:31  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.18  2006/02/01 22:01:04  danbri\nClarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid\n\nRevision 1.17  2004/02/06 17:38:12  danbri\nFixed a bad commit screwup\n\nRevision 1.15  2003/04/19 11:24:08  danbri\nFixed the typo even more.\n\nRevision 1.14  2003/04/19 11:16:56  danbri\nfixed a typo\n\nRevision 1.13  2003/02/19 22:27:27  connolly\nrelaxed domain constraints on lat/long/alt from Point to SpatialThing\n\nRevision 1.12  2003/01/12 01:41:41  danbri\nTrying local copy of XSLT doc.\n\nRevision 1.11  2003/01/12 01:20:18  danbri\nadded a link to morten's xslt rdfs viewer.\n\nRevision 1.10  2003/01/11 18:56:49  danbri\nRemoved datatype range from lat and long properties, since they would\nhave required each occurance of the property to mention the datatype.\n\nRevision 1.9  2003/01/11 11:41:31  danbri\nAnother typo; repaired rdfs:Property to rdf:Property x4\n\nRevision 1.8  2003/01/11 11:05:02  danbri\nAdded an rdfs:range for each lat/long/alt property,\nhttp://www.w3.org/2001/XMLSchema#float\n\nRevision 1.7  2003/01/10 20:25:16  danbri\nLonger rdfs:comment for Point, trying to be Earth-centric and neutral about\ncoordinate system(s) at the same time. Feedback welcomed.\n\nRevision 1.6  2003/01/10 20:18:30  danbri\nAdded CVS log comments into the RDF/XML as an rdfs:comment property of the\nvocabulary. Note that this is not common practice (but seems both harmless\nand potentially useful).\n\n\nrevision 1.5\ndate: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5\nUpdated schema:\nAdded a dc:date, added url for more info. Changed the rdfs:label of the\nnamespace from gp to geo. Added a class Point, set as the rdfs:domain of\neach property. Added XML comment on the lat_long property suggesting that\nwe might not need it (based on #rdfig commentary from implementors).\n\nrevision 1.4\ndate: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5\nFixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in\n#rdfig for catching this error.\n\nrevision 1.3\ndate: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3\nfixed buglet in vocab, added more wgs links\n\nrevision 1.2\ndate: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4\nRemoved alt from the as-a-flat-string property, and switched from\nspace separated to comma separated.\n\nrevision 1.1\ndate: 2003/01/10 10:53:23;  author: danbri;  state: Exp;\nbasic geo vocab\n\n"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "geo"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
-  }, {
-    "@value" : "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "point"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes.\n"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SpatialThing"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "altitude"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The WGS84 latitude of a SpatialThing (decimal degrees)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "latitude"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long",
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A comma-separated representation of a latitude, longitude coordinate."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "lat/long"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/based_near"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The WGS84 longitude of a SpatialThing (decimal degrees)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "longitude"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2006/vcard/ns#Kind",
+  "@id" : "http://www.w3.org/2002/07/owl#Site",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.w3.org/2006/vcard/ns#fn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2006/vcard/ns#hasEmail",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2006/vcard/ns#hasOrganizationName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/adms#Identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/adms#identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/adms#representationTechnique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/adms#status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#Catalog",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#Dataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#Distribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#accessURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#contactPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#distribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#downloadURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#keyword",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#landingPage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#mediaType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#theme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov-o",
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
@@ -1078,7 +1085,7 @@
     "@id" : "https://vscodium.com/"
   } ],
   "http://omv.ontoware.org/2005/05/ontology#version" : [ {
-    "@value" : "1.1.0"
+    "@value" : "1.2.0"
   } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "pt",
@@ -1107,7 +1114,7 @@
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@language" : "en",
-    "@value" : "Observatories of the Seas Ontology (OSO), version 1.1.0 EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."
+    "@value" : "Observatories of the Seas Ontology (OSO), version 1.2.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."
   } ],
   "http://purl.org/dc/terms/conformsTo" : [ {
     "@id" : "https://semver.org/"
@@ -1213,10 +1220,10 @@
     "@id" : "https://w3id.org/earthsemantics/OSO/OSO.ttl"
   } ],
   "http://purl.org/dc/terms/hasVersion" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/1.1.0/"
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.2.0/"
   } ],
   "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "10.5281/zenodo.19497913"
+    "@id" : "https://doi.org/10.5281/zenodo.22030990"
   } ],
   "http://purl.org/dc/terms/isDescribedBy" : [ {
     "@id" : "https://doi.org/10.25504/FAIRsharing.654931"
@@ -1224,7 +1231,7 @@
   "http://purl.org/dc/terms/isReferencedBy" : [ {
     "@id" : "https://doi.org/10.25504/FAIRsharing.654931"
   }, {
-    "@id" : "https://doi.org/10.5281/zenodo.19497913"
+    "@id" : "https://doi.org/10.5281/zenodo.19497912"
   }, {
     "@id" : "https://doi.pangaea.de/10.1594/PANGAEA.957446"
   }, {
@@ -1260,42 +1267,44 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-26"
+    "@value" : "2026-08-25"
   } ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@language" : "pt",
-    "@value" : "A ontologia foi desenvolvida e mantida utilizando o Protégé 5.6.9, o VSCodium 1.121.03429 e o RDFLib 7.6.0, versionada e publicada através do GitHub. O versionamento segue o Semantic Versioning (SemVer) e o histórico de commits respeita a especificação Conventional Commits. Os metadados da ontologia são revistos e atualizados, e as estatísticas da ontologia são recalculadas a cada nova versão."
+    "@value" : "A ontologia foi desenvolvida e mantida utilizando o Protégé 5.6.9, o VSCodium 1.126.04524 e o RDFLib 7.6.0, versionada e publicada através do GitHub. O versionamento segue o Semantic Versioning (SemVer) e o histórico de commits respeita a especificação Conventional Commits. Os metadados da ontologia são revistos e atualizados, e as estatísticas da ontologia são recalculadas a cada nova versão."
   }, {
     "@language" : "it",
-    "@value" : "L'ontologia è stata sviluppata e mantenuta utilizzando Protégé 5.6.9, VSCodium 1.121.03429 e RDFLib 7.6.0, versionata e pubblicata tramite GitHub. Il versionamento segue Semantic Versioning (SemVer) e la cronologia dei commit rispetta la specifica Conventional Commits. I metadati dell'ontologia vengono verificati e aggiornati, e le statistiche dell'ontologia vengono ricalcolate a ogni nuova versione."
+    "@value" : "L'ontologia è stata sviluppata e mantenuta utilizzando Protégé 5.6.9, VSCodium 1.126.04524 e RDFLib 7.6.0, versionata e pubblicata tramite GitHub. Il versionamento segue Semantic Versioning (SemVer) e la cronologia dei commit rispetta la specifica Conventional Commits. I metadati dell'ontologia vengono verificati e aggiornati, e le statistiche dell'ontologia vengono ricalcolate a ogni nuova versione."
   }, {
     "@language" : "fr",
-    "@value" : "L'ontologie a été développée et maintenue à l'aide de Protégé 5.6.9, VSCodium 1.121.03429 et RDFLib 7.6.0, versionnée et publiée via GitHub. La gestion des versions suit Semantic Versioning (SemVer) et l'historique des commits respecte la spécification Conventional Commits. Les métadonnées de l'ontologie sont vérifiées et mises à jour, et les statistiques de l'ontologie sont recalculées à chaque nouvelle version."
+    "@value" : "L'ontologie a été développée et maintenue à l'aide de Protégé 5.6.9, VSCodium 1.126.04524 et RDFLib 7.6.0, versionnée et publiée via GitHub. La gestion des versions suit Semantic Versioning (SemVer) et l'historique des commits respecte la spécification Conventional Commits. Les métadonnées de l'ontologie sont vérifiées et mises à jour, et les statistiques de l'ontologie sont recalculées à chaque nouvelle version."
   }, {
     "@language" : "es",
-    "@value" : "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.121.03429 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."
+    "@value" : "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.126.04524 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."
   }, {
     "@language" : "ro",
-    "@value" : "Ontologia a fost dezvoltată și întreținută utilizând Protégé 5.6.9, VSCodium 1.121.03429 și RDFLib 7.6.0, gestionată prin controlul versiunilor și publicată prin GitHub. Versionarea urmează Semantic Versioning (SemVer), iar istoricul commit-urilor respectă specificația Conventional Commits. Metadatele ontologiei sunt revizuite și actualizate, iar statisticile ontologiei sunt recalculate pentru fiecare nouă versiune."
+    "@value" : "Ontologia a fost dezvoltată și întreținută utilizând Protégé 5.6.9, VSCodium 1.126.04524 și RDFLib 7.6.0, gestionată prin controlul versiunilor și publicată prin GitHub. Versionarea urmează Semantic Versioning (SemVer), iar istoricul commit-urilor respectă specificația Conventional Commits. Metadatele ontologiei sunt revizuite și actualizate, iar statisticile ontologiei sunt recalculate pentru fiecare nouă versiune."
   }, {
     "@language" : "no",
-    "@value" : "Ontologien ble utviklet og vedlikeholdt med Protégé 5.6.9, VSCodium 1.121.03429 og RDFLib 7.6.0, versjonskontrollert og publisert gjennom GitHub. Versjoneringen følger Semantic Versioning (SemVer), og commit-historikken følger spesifikasjonen Conventional Commits. Ontologiens metadata blir gjennomgått og oppdatert, og ontologistatistikken blir beregnet på nytt for hver nye versjon."
+    "@value" : "Ontologien ble utviklet og vedlikeholdt med Protégé 5.6.9, VSCodium 1.126.04524 og RDFLib 7.6.0, versjonskontrollert og publisert gjennom GitHub. Versjoneringen følger Semantic Versioning (SemVer), og commit-historikken følger spesifikasjonen Conventional Commits. Ontologiens metadata blir gjennomgått og oppdatert, og ontologistatistikken blir beregnet på nytt for hver nye versjon."
   }, {
     "@language" : "en",
-    "@value" : "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.121.03429 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."
+    "@value" : "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.126.04524 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."
   }, {
     "@language" : "el",
-    "@value" : "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.121.03429 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."
+    "@value" : "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.126.04524 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Ifremer"
   } ],
   "http://purl.org/dc/terms/relation" : [ {
-    "@id" : "https://doi.org/10.5281/zenodo.19497913"
+    "@id" : "https://doi.org/10.5281/zenodo.19497912"
   }, {
     "@id" : "https://emso-eric.github.io/oso-ontology/"
   }, {
     "@id" : "https://github.com/emso-eric/oso-ontology"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO/dcat"
   } ],
@@ -1405,13 +1414,13 @@
   } ],
   "http://purl.org/pav/curatedOn" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-26"
+    "@value" : "2026-08-20"
   } ],
   "http://purl.org/pav/previousVersion" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.5/"
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.1.0/"
   } ],
   "http://purl.org/pav/version" : [ {
-    "@value" : "1.1.0"
+    "@value" : "1.2.0"
   } ],
   "http://purl.org/spar/datacite/doi" : [ {
     "@value" : "10.5281/zenodo.19497913"
@@ -1464,43 +1473,6 @@
     "@id" : "https://github.com/emso-eric/oso-ontology/issues"
   }, {
     "@id" : "https://github.com/emso-eric/oso-ontology/issues?q=is%3Aopen+label%3Aenhancement"
-  } ],
-  "http://rdfs.org/ns/void#dataDump" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.ttl"
-  } ],
-  "http://rdfs.org/ns/void#entities" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1017"
-  } ],
-  "http://rdfs.org/ns/void#exampleResource" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Azores"
-  } ],
-  "http://rdfs.org/ns/void#sparqlEndpoint" : [ {
-    "@id" : "https://virtuoso.ifremer.fr/oso/"
-  } ],
-  "http://rdfs.org/ns/void#triples" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "15107"
-  } ],
-  "http://rdfs.org/ns/void#uriSpace" : [ {
-    "@value" : "https://w3id.org/earthsemantics/OSO#"
-  } ],
-  "http://rdfs.org/ns/void#vocabulary" : [ {
-    "@id" : "http://purl.org/dc/terms/"
-  }, {
-    "@id" : "http://rdfs.org/ns/void#"
-  }, {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#"
-  }, {
-    "@id" : "http://www.w3.org/2002/07/owl#"
-  }, {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
-  }, {
-    "@id" : "http://www.w3.org/2004/02/skos/core#"
-  }, {
-    "@id" : "http://www.w3.org/ns/dcat#"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
   "http://schema.org/associatedMedia" : [ {
     "@id" : "https://emso-eric.github.io/oso-ontology/resources/oso-diagram.png"
@@ -1640,7 +1612,7 @@
     "@value" : "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://doi.org/10.5281/zenodo.19497913"
+    "@id" : "https://doi.org/10.5281/zenodo.19497912"
   }, {
     "@id" : "https://emso-eric.github.io/oso-ontology/"
   }, {
@@ -1662,6 +1634,8 @@
     "@id" : "https://w3id.org/earthsemantics/OSO/1.0.4/"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO/1.0.5/"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.1.0/"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core"
@@ -1671,32 +1645,32 @@
     "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.5/"
+    "@id" : "https://w3id.org/earthsemantics/OSO/1.1.0/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "es",
-    "@value" : "1.1.0 – importante refactorización de la ontología con una interoperabilidad semántica reforzada, un amplio enriquecimiento del grafo de conocimiento de los observatorios marinos, una mayor reutilización de estándares comunitarios e identificadores externos, una modelización geoespacial mejorada y una mayor conformidad con los principios FAIR."
-  }, {
-    "@language" : "pt",
-    "@value" : "1.1.0 – importante refatoração da ontologia com interoperabilidade semântica reforçada, um enriquecimento significativo do grafo de conhecimento dos observatórios marinhos, uma maior reutilização de normas comunitárias e identificadores externos, uma modelação geoespacial melhorada e uma maior conformidade com os princípios FAIR."
-  }, {
-    "@language" : "it",
-    "@value" : "1.1.0 – importante rifattorizzazione dell'ontologia con interoperabilità semantica rafforzata, un significativo arricchimento del grafo della conoscenza degli osservatori marini, un maggiore riutilizzo di standard comunitari e identificatori esterni, una modellazione geospaziale migliorata e una migliore conformità ai principi FAIR."
-  }, {
-    "@language" : "en",
-    "@value" : "1.1.0 – major ontology refactoring with strengthened semantic interoperability, extensive enrichment of the marine observatory knowledge graph, broader reuse of community standards and external identifiers, enhanced geospatial modelling, and improved FAIR compliance."
-  }, {
-    "@language" : "no",
-    "@value" : "1.1.0 – omfattende omarbeiding av ontologien med styrket semantisk interoperabilitet, betydelig berikelse av kunnskapsgrafen for marine observatorier, økt gjenbruk av fellesskapsstandarder og eksterne identifikatorer, forbedret geospatial modellering og bedre samsvar med FAIR-prinsippene."
+    "@value" : "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; introducción de la validación SHACL; mejora de la coherencia entre TBox, ABox y SHACL; enriquecimiento del modelado del ecosistema semántico, los metadatos de la ontología y las anotaciones multilingües; refinamiento de clases y propiedades; corrección de una errata relativa a SmartBay"
   }, {
     "@language" : "ro",
-    "@value" : "1.1.0 – refactorizare majoră a ontologiei, cu interoperabilitate semantică consolidată, îmbogățirea semnificativă a grafului de cunoștințe al observatoarelor marine, reutilizarea extinsă a standardelor comunitare și a identificatorilor externi, modelare geospațială îmbunătățită și o conformitate sporită cu principiile FAIR."
+    "@value" : "1.2.0 – separarea distribuțiilor modelului ontologic și ale datelor de instanță; introducerea validării SHACL; îmbunătățirea coerenței între TBox, ABox și SHACL; îmbogățirea modelării ecosistemului semantic, a metadatelor ontologiei și a adnotărilor multilingve; rafinarea claselor și proprietăților; corectarea unei erori tipografice referitoare la SmartBay"
+  }, {
+    "@language" : "no",
+    "@value" : "1.2.0 – separate distribusjoner for ontologimodellen og instansdata; innføring av SHACL-validering; forbedret konsistens mellom TBox, ABox og SHACL; beriket modellering av det semantiske økosystemet, ontologimetadata og flerspråklige annotasjoner; forbedring av klasser og egenskaper; retting av en skrivefeil knyttet til SmartBay"
+  }, {
+    "@language" : "en",
+    "@value" : "1.2.0 – separated ontology model and instance data distributions; introduced SHACL validation; improved TBox, ABox and SHACL consistency; enriched semantic ecosystem modelling, ontology metadata and multilingual annotations; refined classes and properties; corrected SmartBay typographical error"
+  }, {
+    "@language" : "it",
+    "@value" : "1.2.0 – separazione delle distribuzioni del modello ontologico e dei dati delle istanze; introduzione della validazione SHACL; miglioramento della coerenza tra TBox, ABox e SHACL; arricchimento della modellazione dell’ecosistema semantico, dei metadati dell’ontologia e delle annotazioni multilingue; perfezionamento di classi e proprietà; correzione di un refuso relativo a SmartBay"
+  }, {
+    "@language" : "pt",
+    "@value" : "1.2.0 – separação das distribuições do modelo ontológico e dos dados de instâncias; introdução da validação SHACL; melhoria da coerência entre TBox, ABox e SHACL; enriquecimento da modelação do ecossistema semântico, dos metadados da ontologia e das anotações multilingues; aperfeiçoamento de classes e propriedades; correção de um erro tipográfico relativo ao SmartBay"
   }, {
     "@language" : "fr",
-    "@value" : "1.1.0 – refonte majeure de l'ontologie avec une interopérabilité sémantique renforcée, un enrichissement important du graphe de connaissances des observatoires marins, une réutilisation accrue des standards communautaires et des identifiants externes, une modélisation géospatiale améliorée et une meilleure conformité aux principes FAIR."
+    "@value" : "1.2.0 – séparation des distributions du modèle ontologique et des données d’instances ; introduction de la validation SHACL ; amélioration de la cohérence entre TBox, ABox et SHACL ; enrichissement de la modélisation de l’écosystème sémantique, des métadonnées de l’ontologie et des annotations multilingues ; amélioration des classes et propriétés ; correction d’une erreur typographique concernant SmartBay"
   }, {
     "@language" : "el",
-    "@value" : "1.1.0 – σημαντική αναδιοργάνωση της οντολογίας με ενισχυμένη σημασιολογική διαλειτουργικότητα, σημαντικό εμπλουτισμό του γράφου γνώσης των θαλάσσιων παρατηρητηρίων, ευρύτερη επαναχρησιμοποίηση κοινοτικών προτύπων και εξωτερικών αναγνωριστικών, βελτιωμένη γεωχωρική μοντελοποίηση και αυξημένη συμμόρφωση με τις αρχές FAIR."
+    "@value" : "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· εισαγωγή επικύρωσης SHACL· βελτίωση της συνέπειας μεταξύ TBox, ABox και SHACL· εμπλουτισμός της μοντελοποίησης του σημασιολογικού οικοσυστήματος, των μεταδεδομένων της οντολογίας και των πολυγλωσσικών επισημάνσεων· βελτίωση κλάσεων και ιδιοτήτων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -1804,21 +1778,6 @@
   } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://earthportal.eu/ontologies/OSO.ttl"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.jsonld"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.n3"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.nt"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.owl"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.trig"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.ttl"
   } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "en",
@@ -2062,6 +2021,144 @@
     "@value" : "active"
   } ]
 }, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "$Date: 2009/04/20 15:00:30 $"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A vocabulary for representing latitude, longitude and \n altitude information in the WGS84 geodetic reference datum. \n Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "WGS84 Geo Positioning: an RDF vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\nRecent changes to this namespace:\n$Log: wgs84_pos.rdf,v $\nRevision 1.22  2009/04/20 15:00:30  timbl\nRemove the time bits which have been deal with elsewhere eg in iCal.\n\nRevision 1.21  2009/04/20 12:52:47  timbl\ntry again\n\nRevision 1.20  2009/04/20 12:42:11  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.19  2009/04/20 12:36:31  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.18  2006/02/01 22:01:04  danbri\nClarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid\n\nRevision 1.17  2004/02/06 17:38:12  danbri\nFixed a bad commit screwup\n\nRevision 1.15  2003/04/19 11:24:08  danbri\nFixed the typo even more.\n\nRevision 1.14  2003/04/19 11:16:56  danbri\nfixed a typo\n\nRevision 1.13  2003/02/19 22:27:27  connolly\nrelaxed domain constraints on lat/long/alt from Point to SpatialThing\n\nRevision 1.12  2003/01/12 01:41:41  danbri\nTrying local copy of XSLT doc.\n\nRevision 1.11  2003/01/12 01:20:18  danbri\nadded a link to morten's xslt rdfs viewer.\n\nRevision 1.10  2003/01/11 18:56:49  danbri\nRemoved datatype range from lat and long properties, since they would\nhave required each occurance of the property to mention the datatype.\n\nRevision 1.9  2003/01/11 11:41:31  danbri\nAnother typo; repaired rdfs:Property to rdf:Property x4\n\nRevision 1.8  2003/01/11 11:05:02  danbri\nAdded an rdfs:range for each lat/long/alt property,\nhttp://www.w3.org/2001/XMLSchema#float\n\nRevision 1.7  2003/01/10 20:25:16  danbri\nLonger rdfs:comment for Point, trying to be Earth-centric and neutral about\ncoordinate system(s) at the same time. Feedback welcomed.\n\nRevision 1.6  2003/01/10 20:18:30  danbri\nAdded CVS log comments into the RDF/XML as an rdfs:comment property of the\nvocabulary. Note that this is not common practice (but seems both harmless\nand potentially useful).\n\n\nrevision 1.5\ndate: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5\nUpdated schema:\nAdded a dc:date, added url for more info. Changed the rdfs:label of the\nnamespace from gp to geo. Added a class Point, set as the rdfs:domain of\neach property. Added XML comment on the lat_long property suggesting that\nwe might not need it (based on #rdfig commentary from implementors).\n\nrevision 1.4\ndate: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5\nFixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in\n#rdfig for catching this error.\n\nrevision 1.3\ndate: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3\nfixed buglet in vocab, added more wgs links\n\nrevision 1.2\ndate: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4\nRemoved alt from the as-a-flat-string property, and switched from\nspace separated to comma separated.\n\nrevision 1.1\ndate: 2003/01/10 10:53:23;  author: danbri;  state: Exp;\nbasic geo vocab\n\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "geo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
+  }, {
+    "@value" : "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes.\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SpatialThing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "altitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The WGS84 latitude of a SpatialThing (decimal degrees)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "latitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A comma-separated representation of a latitude, longitude coordinate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lat/long"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/based_near"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The WGS84 longitude of a SpatialThing (decimal degrees)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "longitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#Kind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#fn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#hasEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#hasOrganizationName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#representationTechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#Catalog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#accessURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#contactPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#landingPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/sparql-service-description#endpoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -2172,77 +2269,6 @@
 }, {
   "@id" : "https://earthportal.eu/ontologies/OSO",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://earthportal.eu/ontologies/OSO.ttl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://www.iana.org/assignments/media-types/text/turtle"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Distribución Turtle oficial de la Ontología de los observatorios marinos (OSO), alojada por EarthPortal."
-  }, {
-    "@language" : "pt",
-    "@value" : "Distribuição Turtle oficial da Ontologia dos observatórios marinhos (OSO), alojada pelo EarthPortal."
-  }, {
-    "@language" : "fr",
-    "@value" : "Distribution Turtle officielle de l’Ontologie des observatoires marins (OSO), hébergée par EarthPortal."
-  }, {
-    "@language" : "it",
-    "@value" : "Distribuzione Turtle ufficiale dell’Ontologia degli osservatori marini (OSO), ospitata da EarthPortal."
-  }, {
-    "@language" : "ro",
-    "@value" : "Distribuția Turtle oficială a Ontologiei observatoarelor marine (OSO), găzduită de EarthPortal."
-  }, {
-    "@language" : "en",
-    "@value" : "Official Turtle distribution of the Observatories of the Seas Ontology (OSO), hosted by EarthPortal."
-  }, {
-    "@language" : "no",
-    "@value" : "Offisiell Turtle-distribusjon av Ontologi for marine observatorier (OSO), hostet av EarthPortal."
-  }, {
-    "@language" : "el",
-    "@value" : "Επίσημη διανομή Turtle της Οντολογίας Θαλάσσιων Παρατηρητηρίων (OSO), φιλοξενούμενη από το EarthPortal."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO Turtle serialization (EarthPortal)"
-  }, {
-    "@language" : "es",
-    "@value" : "Serialización Turtle de OSO (EarthPortal)"
-  }, {
-    "@language" : "ro",
-    "@value" : "Serializarea Turtle a OSO (EarthPortal)"
-  }, {
-    "@language" : "pt",
-    "@value" : "Serialização Turtle do OSO (EarthPortal)"
-  }, {
-    "@language" : "it",
-    "@value" : "Serializzazione Turtle di OSO (EarthPortal)"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation Turtle d’OSO (EarthPortal)"
-  }, {
-    "@language" : "no",
-    "@value" : "Turtle-serialisering av OSO (EarthPortal)"
-  }, {
-    "@language" : "el",
-    "@value" : "Σειριοποίηση Turtle του OSO (EarthPortal)"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://earthportal.eu/ontologies/OSO.ttl"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://earthportal.eu/ontologies/OSO.ttl"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/text/turtle"
-  } ]
 }, {
   "@id" : "https://edmo.seadatanet.org/report/1022",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -2858,7 +2884,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/ns/prov#generatedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-26"
+    "@value" : "2026-08-20"
   } ],
   "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Ifremer"
@@ -3039,11 +3065,11 @@
     "@language" : "ro",
     "@value" : "ANTARES"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#IL07"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#IL07"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateFirstDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -3731,9 +3757,6 @@
   "http://xmlns.com/foaf/0.1/depiction" : [ {
     "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/AtlanticWhaleDeal.png"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Project_is_led_by_an_Organization" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ARDITI"
-  } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#France"
   }, {
@@ -3748,6 +3771,9 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#hasSpatialExtent" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#AtlanticWhaleDeal_bbox"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#isLedByOrganization" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#ARDITI"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Azores",
@@ -3826,7 +3852,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "200"
+    "@value" : "200.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasBoundingBox" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Azores_RF_bbox"
@@ -4328,15 +4354,15 @@
     "@language" : "en",
     "@value" : "Secondary Junction Box"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#BJS_BathyBot"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#BJS_BathyDock"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#BJS_SeabedStation"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateFirstDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -4856,7 +4882,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "2"
+    "@value" : "2.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Spain"
@@ -5391,7 +5417,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "97"
+    "@value" : "97.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasBoundingBox" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Black_Sea_RF_bbox"
@@ -7310,7 +7336,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "60"
+    "@value" : "60.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasERICMembership" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Canarias_EMSO_membership"
@@ -7494,11 +7520,11 @@
     "@language" : "ro",
     "@value" : "Capelinhos"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Capelinhos_AutonomousDevices"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Capelinhos_AutonomousDevices"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -7715,7 +7741,7 @@
     "@value" : "Celtic Seas"
   } ],
   "https://w3id.org/earthsemantics/OSO#containsSite" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Smartbay"
+    "@id" : "https://w3id.org/earthsemantics/OSO#SmartBay"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#South_Rockall_Trough"
   } ],
@@ -8160,6 +8186,31 @@
   }, {
     "@language" : "el",
     "@value" : "Μια πλατφόρμα λογισμικού που υποστηρίζει τη συνεργατική ανάπτυξη λογισμικού, τον έλεγχο εκδόσεων, την παρακολούθηση ζητημάτων και τη διαχείριση πηγαίου κώδικα."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Collaborative development platform"
+  }, {
+    "@language" : "it",
+    "@value" : "Piattaforma di sviluppo collaborativo"
+  }, {
+    "@language" : "es",
+    "@value" : "Plataforma de desarrollo colaborativo"
+  }, {
+    "@language" : "pt",
+    "@value" : "Plataforma de desenvolvimento colaborativo"
+  }, {
+    "@language" : "fr",
+    "@value" : "Plateforme de développement collaboratif"
+  }, {
+    "@language" : "ro",
+    "@value" : "Platformă de dezvoltare colaborativă"
+  }, {
+    "@language" : "no",
+    "@value" : "Plattform for samarbeidsutvikling"
+  }, {
+    "@language" : "el",
+    "@value" : "Πλατφόρμα συνεργατικής ανάπτυξης"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Condor_seamount",
@@ -8264,7 +8315,7 @@
     "@language" : "el",
     "@value" : "Όρος Κόνδορ"
   } ],
-  "https://w3id.org/earthsemantics/OSO#associatedWithRI" : [ {
+  "https://w3id.org/earthsemantics/OSO#RegionalFacility_is_related_to_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-PT"
   } ],
   "https://w3id.org/earthsemantics/OSO#containsSite" : [ {
@@ -8383,7 +8434,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "24"
+    "@value" : "24.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasERICMembership" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Cretan_Sea_EMSO_membership"
@@ -8812,7 +8863,7 @@
     "@value" : "DYFAMED"
   } ],
   "http://www.w3.org/ns/adms#identifier" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid68"
   } ],
   "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
@@ -8830,7 +8881,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "27"
+    "@value" : "27.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#France"
@@ -9417,9 +9468,6 @@
   }, {
     "@language" : "el",
     "@value" : "Επιστημονικός κλάδος"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "es",
@@ -10700,7 +10748,7 @@
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#Sorbonne_Universite"
   } ],
-  "https://w3id.org/earthsemantics/OSO#isPartOf" : [ {
+  "https://w3id.org/earthsemantics/OSO#isPartOfResearchInfrastructure" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMBRC"
   } ]
 }, {
@@ -11157,7 +11205,7 @@
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#Ifremer"
   } ],
-  "https://w3id.org/earthsemantics/OSO#isPartOf" : [ {
+  "https://w3id.org/earthsemantics/OSO#isPartOfResearchInfrastructure" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO"
   } ]
 }, {
@@ -11778,7 +11826,7 @@
     "@language" : "en",
     "@value" : "marine data"
   } ],
-  "https://w3id.org/earthsemantics/OSO#hasLeader" : [ {
+  "https://w3id.org/earthsemantics/OSO#hasGroupLeader" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Enoc_MARTINEZ"
   } ]
 }, {
@@ -12046,7 +12094,7 @@
     "@value" : "EMSO LIGURE OUEST"
   } ],
   "http://www.w3.org/ns/adms#identifier" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO_France"
@@ -12350,7 +12398,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#hasDepth" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "3670"
+    "@value" : "3670.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasSiteResponsible" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Eric_DELORY"
@@ -12782,14 +12830,14 @@
   "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#GeoEcoMar"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Project_is_led_by_an_Organization" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#GeoEcoMar"
-  } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Romania"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasLocation" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Black_Sea"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#isLedByOrganization" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#GeoEcoMar"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#EarthPortal",
@@ -13189,7 +13237,7 @@
     "@language" : "ro",
     "@value" : "East vulcano"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
@@ -14965,6 +15013,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα εργαλείο λογισμικού που χρησιμοποιείται για την αξιολόγηση του επιπέδου FAIR σημασιολογικών τεχνουργημάτων."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "FAIR assessment tool"
+  }, {
+    "@language" : "no",
+    "@value" : "FAIR-evalueringsverktøy"
+  }, {
+    "@language" : "pt",
+    "@value" : "Ferramenta de avaliação FAIR"
+  }, {
+    "@language" : "es",
+    "@value" : "Herramienta de evaluación FAIR"
+  }, {
+    "@language" : "ro",
+    "@value" : "Instrument de evaluare FAIR"
+  }, {
+    "@language" : "fr",
+    "@value" : "Outil d'évaluation FAIR"
+  }, {
+    "@language" : "it",
+    "@value" : "Strumento di valutazione FAIR"
+  }, {
+    "@language" : "el",
+    "@value" : "Εργαλείο αξιολόγησης FAIR"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#FCT",
@@ -15505,6 +15578,31 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#ResearchProject"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "no",
+    "@value" : "Finansiert prosjekt"
+  }, {
+    "@language" : "en",
+    "@value" : "Funded project"
+  }, {
+    "@language" : "it",
+    "@value" : "Progetto finanziato"
+  }, {
+    "@language" : "ro",
+    "@value" : "Proiect finanțat"
+  }, {
+    "@language" : "fr",
+    "@value" : "Projet financé"
+  }, {
+    "@language" : "pt",
+    "@value" : "Projeto financiado"
+  }, {
+    "@language" : "es",
+    "@value" : "Proyecto financiado"
+  }, {
+    "@language" : "el",
+    "@value" : "Χρηματοδοτούμενο έργο"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Galatea",
@@ -15785,9 +15883,6 @@
   "https://w3id.org/earthsemantics/OSO#isMemberOf" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO"
   } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Geometry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#George_PETIHAKIS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Person" ],
@@ -16686,7 +16781,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "12"
+    "@value" : "12.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasERICMembership" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Hellenic_Arc_EMSO_membership"
@@ -18406,7 +18501,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "11"
+    "@value" : "11.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasERICMembership" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Iberian_Margin_EMSO_membership"
@@ -19082,7 +19177,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1"
+    "@value" : "1.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasBoundingBox" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Iroise_RF_bbox"
@@ -19366,7 +19461,7 @@
     "@language" : "ro",
     "@value" : "Isabel"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
@@ -20846,11 +20941,6 @@
     "@language" : "ro",
     "@value" : "LO"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Site_has_a_Subsite" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ANTARES"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#BJS"
-  } ],
   "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
@@ -20865,7 +20955,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "23"
+    "@value" : "23.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#France"
@@ -20877,6 +20967,11 @@
     "@id" : "https://w3id.org/earthsemantics/OSO#Dominique_LEFEVRE"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#Séverine_MARTINI"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#hasSubsite" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#ANTARES"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO#BJS"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -21428,13 +21523,13 @@
     "@language" : "ro",
     "@value" : "Lava Lake"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#SeaMoNWest"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#WestLake"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -21894,7 +21989,7 @@
   "https://w3id.org/earthsemantics/OSO#hasPlatformCategory" : [ {
     "@id" : "http://vocab.nerc.ac.uk/collection/L06/current/48/"
   } ],
-  "https://w3id.org/earthsemantics/OSO#isPartOfNetwork" : [ {
+  "https://w3id.org/earthsemantics/OSO#isAssociatedWithNetwork" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ]
 }, {
@@ -22091,7 +22186,22 @@
     "@language" : "ro",
     "@value" : "Lucky Strike"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Site_has_a_Subsite" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_AutonomousDevices"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_EGIM"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_Hydrographic_Mooring"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#hasSiteResponsible" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Laurent_GAUTIER"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Thibault_BARREYRE"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#hasSubsite" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Capelinhos"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#Cimendef"
@@ -22121,21 +22231,6 @@
     "@id" : "https://w3id.org/earthsemantics/OSO#WhiteCastle"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#Y3"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_AutonomousDevices"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_EGIM"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_Hydrographic_Mooring"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#hasSiteResponsible" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Laurent_GAUTIER"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Thibault_BARREYRE"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -22682,14 +22777,14 @@
     "@language" : "ro",
     "@value" : "MARLEY"
   } ],
+  "https://w3id.org/earthsemantics/OSO#isAssociatedWithNetwork" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
   "https://w3id.org/earthsemantics/OSO#isLinkedToCampaign" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#ChEReef_2022"
   } ],
   "https://w3id.org/earthsemantics/OSO#isLinkedToCampaignSeries" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#CHEREEF_OBS"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#isPartOfNetwork" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
   "https://w3id.org/earthsemantics/OSO#maxWaterDepth" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -23684,14 +23779,14 @@
   "http://xmlns.com/foaf/0.1/depiction" : [ {
     "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Project_is_led_by_an_Organization" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#OFB"
-  } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#France"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasLogo" : [ {
     "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#isLedByOrganization" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#OFB"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#MarineEnvironment",
@@ -25550,11 +25645,11 @@
     "@language" : "fr",
     "@value" : "Mont Ségur"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#MontSegur_AutonomousDevices"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#MontSegur_AutonomousDevices"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#France"
@@ -26277,7 +26372,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1"
+    "@value" : "1.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#France"
@@ -28040,6 +28135,27 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Ocean Data Acquisition System"
+  }, {
+    "@language" : "ro",
+    "@value" : "Sistem de achiziție a datelor oceanografice"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema de adquisición de datos oceánicos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Sistema de aquisição de dados oceânicos"
+  }, {
+    "@language" : "it",
+    "@value" : "Sistema di acquisizione dati oceanografici"
+  }, {
+    "@language" : "no",
+    "@value" : "System for innsamling av havdata"
+  }, {
+    "@language" : "fr",
+    "@value" : "Système d’acquisition de données océaniques"
+  }, {
+    "@language" : "el",
+    "@value" : "Σύστημα συλλογής ωκεανογραφικών δεδομένων"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://en.wikipedia.org/wiki/Ocean_data_acquisition_system"
@@ -28050,16 +28166,79 @@
     "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "el",
+    "@value" : "ODAS"
+  }, {
     "@language" : "en",
+    "@value" : "ODAS"
+  }, {
+    "@language" : "es",
+    "@value" : "ODAS"
+  }, {
+    "@language" : "fr",
+    "@value" : "ODAS"
+  }, {
+    "@language" : "it",
+    "@value" : "ODAS"
+  }, {
+    "@language" : "no",
+    "@value" : "ODAS"
+  }, {
+    "@language" : "pt",
+    "@value" : "ODAS"
+  }, {
+    "@language" : "ro",
     "@value" : "ODAS"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A general type of oceanographic data acquisition system used for marine observations."
+  }, {
+    "@language" : "no",
+    "@value" : "En generell type system for innsamling av oseanografiske data brukt til marine observasjoner."
+  }, {
+    "@language" : "pt",
+    "@value" : "Um tipo geral de sistema de aquisição de dados oceanográficos utilizado para observações marinhas."
+  }, {
+    "@language" : "ro",
+    "@value" : "Un tip general de sistem de achiziție a datelor oceanografice utilizat pentru observații marine."
+  }, {
+    "@language" : "es",
+    "@value" : "Un tipo general de sistema de adquisición de datos oceanográficos utilizado para observaciones marinas."
+  }, {
+    "@language" : "it",
+    "@value" : "Un tipo generale di sistema di acquisizione di dati oceanografici utilizzato per le osservazioni marine."
+  }, {
+    "@language" : "fr",
+    "@value" : "Un type général de système d’acquisition de données océanographiques utilisé pour les observations marines."
+  }, {
+    "@language" : "el",
+    "@value" : "Ένας γενικός τύπος συστήματος συλλογής ωκεανογραφικών δεδομένων που χρησιμοποιείται για θαλάσσιες παρατηρήσεις."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "Ocean Data Acquisition System"
+  }, {
+    "@language" : "ro",
+    "@value" : "Sistem de achiziție a datelor oceanografice"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema de adquisición de datos oceánicos"
+  }, {
+    "@language" : "pt",
+    "@value" : "Sistema de aquisição de dados oceânicos"
+  }, {
+    "@language" : "it",
+    "@value" : "Sistema di acquisizione dati oceanografici"
+  }, {
+    "@language" : "no",
+    "@value" : "System for innsamling av havdata"
+  }, {
+    "@language" : "fr",
+    "@value" : "Système d’acquisition de données océaniques"
+  }, {
+    "@language" : "el",
+    "@value" : "Σύστημα συλλογής ωκεανογραφικών δεδομένων"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Ocean_Network_Canada",
@@ -28677,6 +28856,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα σημασιολογικό εργαλείο που χρησιμοποιείται για τη δημιουργία, την επεξεργασία και τη συντήρηση οντολογιών."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "pt",
+    "@value" : "Editor de ontologias"
+  }, {
+    "@language" : "ro",
+    "@value" : "Editor de ontologii"
+  }, {
+    "@language" : "es",
+    "@value" : "Editor de ontologías"
+  }, {
+    "@language" : "it",
+    "@value" : "Editor di ontologie"
+  }, {
+    "@language" : "no",
+    "@value" : "Ontologiredigeringsverktøy"
+  }, {
+    "@language" : "en",
+    "@value" : "Ontology editor"
+  }, {
+    "@language" : "fr",
+    "@value" : "Éditeur d'ontologies"
+  }, {
+    "@language" : "el",
+    "@value" : "Επεξεργαστής οντολογιών"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#OntologyEngineeringGroup",
@@ -30543,7 +30747,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "300"
+    "@value" : "300.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasERICMembership" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Porcupine_Abyssal_Plain_EMSO_membership"
@@ -30850,115 +31054,6 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#hasPrincipalInvestigator" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Nadine_LANTERI"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Project_is_led_by_an_Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "no",
-    "@value" : "Angir organisasjonen som er ansvarlig for å lede eller koordinere et forskningsprosjekt."
-  }, {
-    "@language" : "pt",
-    "@value" : "Indica a organização responsável pela liderança ou coordenação de um projeto de investigação."
-  }, {
-    "@language" : "it",
-    "@value" : "Indica l'organizzazione responsabile della direzione o del coordinamento di un progetto di ricerca."
-  }, {
-    "@language" : "es",
-    "@value" : "Indica la organización responsable de dirigir o coordinar un proyecto de investigación."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates the organization responsible for leading or coordinating a research project."
-  }, {
-    "@language" : "ro",
-    "@value" : "Indică organizația responsabilă de coordonarea sau conducerea unui proiect de cercetare."
-  }, {
-    "@language" : "fr",
-    "@value" : "Indique l'organisation responsable de la direction ou de la coordination d’un projet de recherche."
-  }, {
-    "@language" : "el",
-    "@value" : "Υποδεικνύει τον οργανισμό που είναι υπεύθυνος για τη διεύθυνση ή τον συντονισμό ενός ερευνητικού έργου."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchProject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "El proyecto está dirigido por una organización"
-  }, {
-    "@language" : "it",
-    "@value" : "Il progetto è guidato da un'organizzazione"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le projet est dirigé par une organisation"
-  }, {
-    "@language" : "pt",
-    "@value" : "O projeto é liderado por uma organização"
-  }, {
-    "@language" : "ro",
-    "@value" : "Proiectul este coordonat de o organizație"
-  }, {
-    "@language" : "en",
-    "@value" : "Project is led by an organisation"
-  }, {
-    "@language" : "no",
-    "@value" : "Prosjektet ledes av en organisasjon"
-  }, {
-    "@language" : "el",
-    "@value" : "Το έργο διευθύνεται από οργανισμό"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Organization"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "it",
-    "@value" : "Collega un progetto di ricerca all'organizzazione responsabile della sua direzione o coordinamento."
-  }, {
-    "@language" : "no",
-    "@value" : "Knytter et forskningsprosjekt til organisasjonen som leder eller koordinerer det."
-  }, {
-    "@language" : "ro",
-    "@value" : "Leagă un proiect de cercetare de organizația responsabilă de coordonarea sau conducerea acestuia."
-  }, {
-    "@language" : "pt",
-    "@value" : "Liga um projeto de investigação à organização responsável pela sua coordenação ou liderança."
-  }, {
-    "@language" : "es",
-    "@value" : "Relaciona un proyecto de investigación con la organización responsable de liderarlo o coordinarlo."
-  }, {
-    "@language" : "en",
-    "@value" : "Relates a research project to the organisation responsible for leading or coordinating it."
-  }, {
-    "@language" : "fr",
-    "@value" : "Relie un projet de recherche à l’organisation responsable de sa direction ou de sa coordination."
-  }, {
-    "@language" : "el",
-    "@value" : "Συνδέει ένα ερευνητικό έργο με τον οργανισμό που είναι υπεύθυνος για τη διεύθυνση ή τον συντονισμό του."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "es",
-    "@value" : "El proyecto está dirigido por una organización"
-  }, {
-    "@language" : "it",
-    "@value" : "Il progetto è guidato da un'organizzazione"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le projet est dirigé par une organisation"
-  }, {
-    "@language" : "pt",
-    "@value" : "O projeto é liderado por uma organização"
-  }, {
-    "@language" : "ro",
-    "@value" : "Proiectul este coordonat de o organizație"
-  }, {
-    "@language" : "en",
-    "@value" : "Project is led by an organisation"
-  }, {
-    "@language" : "no",
-    "@value" : "Prosjektet ledes av en organisasjon"
-  }, {
-    "@language" : "el",
-    "@value" : "Το έργο διευθύνεται από οργανισμό"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Protege",
@@ -31664,6 +31759,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα πλαίσιο λογισμικού που χρησιμοποιείται για τη δημιουργία, την ανάλυση, τον χειρισμό, τη σειριοποίηση ή την επικύρωση γράφων RDF."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "ro",
+    "@value" : "Cadru RDF"
+  }, {
+    "@language" : "es",
+    "@value" : "Framework RDF"
+  }, {
+    "@language" : "fr",
+    "@value" : "Framework RDF"
+  }, {
+    "@language" : "it",
+    "@value" : "Framework RDF"
+  }, {
+    "@language" : "pt",
+    "@value" : "Framework RDF"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF framework"
+  }, {
+    "@language" : "no",
+    "@value" : "RDF-rammeverk"
+  }, {
+    "@language" : "el",
+    "@value" : "Πλαίσιο RDF"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#RDFLib",
@@ -32092,7 +32212,13 @@
   "http://xmlns.com/foaf/0.1/depiction" : [ {
     "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Project_is_led_by_an_Organization" : [ {
+  "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#hasLogo" : [ {
+    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#isLedByOrganization" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#BRGM"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#CNRS"
@@ -32100,12 +32226,6 @@
     "@id" : "https://w3id.org/earthsemantics/OSO#IPGP"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#Ifremer"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#France"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#hasLogo" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility",
@@ -32165,9 +32285,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://sweetontology.net/humanResearch/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -32390,9 +32507,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#hasRegionalFacility"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "it",
@@ -32723,6 +32837,31 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Project"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "no",
+    "@value" : "Forskningsprosjekt"
+  }, {
+    "@language" : "it",
+    "@value" : "Progetto di ricerca"
+  }, {
+    "@language" : "ro",
+    "@value" : "Proiect de cercetare"
+  }, {
+    "@language" : "fr",
+    "@value" : "Projet de recherche"
+  }, {
+    "@language" : "pt",
+    "@value" : "Projeto de investigação"
+  }, {
+    "@language" : "es",
+    "@value" : "Proyecto de investigación"
+  }, {
+    "@language" : "en",
+    "@value" : "Research project"
+  }, {
+    "@language" : "el",
+    "@value" : "Ερευνητικό έργο"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Research_Council_of_Norway",
@@ -33294,6 +33433,31 @@
   }, {
     "@language" : "el",
     "@value" : "Μια υπηρεσία που εκθέτει δεδομένα RDF μέσω της γλώσσας ερωτημάτων SPARQL."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "SPARQL service"
+  }, {
+    "@language" : "no",
+    "@value" : "SPARQL-tjeneste"
+  }, {
+    "@language" : "fr",
+    "@value" : "Service SPARQL"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio SPARQL"
+  }, {
+    "@language" : "ro",
+    "@value" : "Serviciu SPARQL"
+  }, {
+    "@language" : "it",
+    "@value" : "Servizio SPARQL"
+  }, {
+    "@language" : "pt",
+    "@value" : "Serviço SPARQL"
+  }, {
+    "@language" : "el",
+    "@value" : "Υπηρεσία SPARQL"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Sapin",
@@ -33834,6 +33998,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα λογισμικό σύστημα σχεδιασμένο για την αποθήκευση, διαχείριση και υποβολή ερωτημάτων σε σημασιολογικά δεδομένα, όπως γράφοι RDF και γράφοι γνώσης."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "pt",
+    "@value" : "Base de dados semântica"
+  }, {
+    "@language" : "es",
+    "@value" : "Base de datos semántica"
+  }, {
+    "@language" : "fr",
+    "@value" : "Base de données sémantique"
+  }, {
+    "@language" : "it",
+    "@value" : "Base di dati semantica"
+  }, {
+    "@language" : "ro",
+    "@value" : "Bază de date semantică"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic database"
+  }, {
+    "@language" : "no",
+    "@value" : "Semantisk database"
+  }, {
+    "@language" : "el",
+    "@value" : "Σημασιολογική βάση δεδομένων"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SemanticDocumentationTool",
@@ -33890,6 +34079,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα εργαλείο που χρησιμοποιείται για τη δημιουργία τεκμηρίωσης για σημασιολογικά τεχνουργήματα."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "pt",
+    "@value" : "Ferramenta de documentação semântica"
+  }, {
+    "@language" : "es",
+    "@value" : "Herramienta de documentación semántica"
+  }, {
+    "@language" : "ro",
+    "@value" : "Instrument de documentare semantică"
+  }, {
+    "@language" : "fr",
+    "@value" : "Outil de documentation sémantique"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic documentation tool"
+  }, {
+    "@language" : "it",
+    "@value" : "Strumento di documentazione semantica"
+  }, {
+    "@language" : "no",
+    "@value" : "Verktøy for semantisk dokumentasjon"
+  }, {
+    "@language" : "el",
+    "@value" : "Εργαλείο σημασιολογικής τεκμηρίωσης"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SemanticEcosystemResource",
@@ -33943,6 +34157,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένας πόρος που χρησιμοποιείται για τον σχεδιασμό, τη συντήρηση, τη δημοσίευση, την τεκμηρίωση, την επικύρωση ή την επαναχρησιμοποίηση σημασιολογικών τεχνουργημάτων."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Recurso del ecosistema semántico"
+  }, {
+    "@language" : "pt",
+    "@value" : "Recurso do ecossistema semântico"
+  }, {
+    "@language" : "fr",
+    "@value" : "Ressource d’écosystème sémantique"
+  }, {
+    "@language" : "no",
+    "@value" : "Ressurs i det semantiske økosystemet"
+  }, {
+    "@language" : "ro",
+    "@value" : "Resursă a ecosistemului semantic"
+  }, {
+    "@language" : "it",
+    "@value" : "Risorsa dell'ecosistema semantico"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic ecosystem resource"
+  }, {
+    "@language" : "el",
+    "@value" : "Πόρος του σημασιολογικού οικοσυστήματος"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SemanticPortalFramework",
@@ -33999,6 +34238,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα πλαίσιο λογισμικού που χρησιμοποιείται για την ανάπτυξη, την εγκατάσταση και τη διαχείριση αποθετηρίων σημασιολογικών τεχνουργημάτων και πυλών οντολογιών."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Framework de portail sémantique"
+  }, {
+    "@language" : "pt",
+    "@value" : "Framework para portais semânticos"
+  }, {
+    "@language" : "es",
+    "@value" : "Framework para portales semánticos"
+  }, {
+    "@language" : "ro",
+    "@value" : "Framework pentru portaluri semantice"
+  }, {
+    "@language" : "it",
+    "@value" : "Framework per portali semantici"
+  }, {
+    "@language" : "no",
+    "@value" : "Rammeverk for semantiske portaler"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic portal framework"
+  }, {
+    "@language" : "el",
+    "@value" : "Πλαίσιο για σημασιολογικές πύλες"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SemanticRepository",
@@ -34057,6 +34321,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένας κατάλογος ή αποθετήριο που χρησιμοποιείται για τη δημοσίευση, την ευρετηρίαση, την ανακάλυψη και την ανταλλαγή σημασιολογικών τεχνουργημάτων."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "ro",
+    "@value" : "Depozit semantic"
+  }, {
+    "@language" : "fr",
+    "@value" : "Dépôt sémantique"
+  }, {
+    "@language" : "es",
+    "@value" : "Repositorio semántico"
+  }, {
+    "@language" : "it",
+    "@value" : "Repository semantico"
+  }, {
+    "@language" : "pt",
+    "@value" : "Repositório semântico"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic repository"
+  }, {
+    "@language" : "no",
+    "@value" : "Semantisk repositorium"
+  }, {
+    "@language" : "el",
+    "@value" : "Σημασιολογικό αποθετήριο"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SemanticTool",
@@ -34115,6 +34404,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα λογισμικό που χρησιμοποιείται σε ολόκληρο τον κύκλο ζωής των σημασιολογικών τεχνουργημάτων."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "pt",
+    "@value" : "Ferramenta semântica"
+  }, {
+    "@language" : "es",
+    "@value" : "Herramienta semántica"
+  }, {
+    "@language" : "ro",
+    "@value" : "Instrument semantic"
+  }, {
+    "@language" : "fr",
+    "@value" : "Outil sémantique"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic tool"
+  }, {
+    "@language" : "no",
+    "@value" : "Semantisk verktøy"
+  }, {
+    "@language" : "it",
+    "@value" : "Strumento semantico"
+  }, {
+    "@language" : "el",
+    "@value" : "Σημασιολογικό εργαλείο"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SemanticVisualizationTool",
@@ -34171,6 +34485,31 @@
   }, {
     "@language" : "el",
     "@value" : "Ένα εργαλείο που χρησιμοποιείται για την απεικόνιση σημασιολογικών τεχνουργημάτων, γράφων RDF ή δομών οντολογιών."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "pt",
+    "@value" : "Ferramenta de visualização semântica"
+  }, {
+    "@language" : "es",
+    "@value" : "Herramienta de visualización semántica"
+  }, {
+    "@language" : "ro",
+    "@value" : "Instrument de vizualizare semantică"
+  }, {
+    "@language" : "fr",
+    "@value" : "Outil de visualisation sémantique"
+  }, {
+    "@language" : "en",
+    "@value" : "Semantic visualization tool"
+  }, {
+    "@language" : "it",
+    "@value" : "Strumento di visualizzazione semantica"
+  }, {
+    "@language" : "no",
+    "@value" : "Verktøy for semantisk visualisering"
+  }, {
+    "@language" : "el",
+    "@value" : "Εργαλείο σημασιολογικής απεικόνισης"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#SeriesOfOceanographicCampaigns",
@@ -34230,9 +34569,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#OceanographicCampaign"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "ro",
@@ -34438,90 +34774,6 @@
     "@value" : "Τόπος παρατήρησης"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Site_has_a_Subsite",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A site can be associated to one or more subsites."
-  }, {
-    "@language" : "no",
-    "@value" : "Et område kan være knyttet til ett eller flere underområder."
-  }, {
-    "@language" : "pt",
-    "@value" : "Um sítio pode estar associado a um ou mais subsítios."
-  }, {
-    "@language" : "ro",
-    "@value" : "Un sit poate fi asociat cu unul sau mai multe sub-situri."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un site peut être associé à un ou plusieurs sous-sites."
-  }, {
-    "@language" : "es",
-    "@value" : "Un sitio puede estar asociado a uno o más subsitios."
-  }, {
-    "@language" : "it",
-    "@value" : "Un sito può essere associato a uno o più sottositi."
-  }, {
-    "@language" : "el",
-    "@value" : "Ένας σταθμός μπορεί να συνδέεται με έναν ή περισσότερους υποσταθμούς."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "El sitio tiene un subsitio"
-  }, {
-    "@language" : "it",
-    "@value" : "Il sito possiede un sottosito"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le site possède un sous-site"
-  }, {
-    "@language" : "pt",
-    "@value" : "O sítio possui um subsítio"
-  }, {
-    "@language" : "no",
-    "@value" : "Området har et underområde"
-  }, {
-    "@language" : "en",
-    "@value" : "Site has a subsite"
-  }, {
-    "@language" : "ro",
-    "@value" : "Situl are un sub-sit"
-  }, {
-    "@language" : "el",
-    "@value" : "Ο σταθμός έχει έναν υποσταθμό"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "es",
-    "@value" : "El sitio tiene un subsitio"
-  }, {
-    "@language" : "it",
-    "@value" : "Il sito possiede un sottosito"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le site possède un sous-site"
-  }, {
-    "@language" : "pt",
-    "@value" : "O sítio possui um subsítio"
-  }, {
-    "@language" : "no",
-    "@value" : "Området har et underområde"
-  }, {
-    "@language" : "en",
-    "@value" : "Site has a subsite"
-  }, {
-    "@language" : "ro",
-    "@value" : "Situl are un sub-sit"
-  }, {
-    "@language" : "el",
-    "@value" : "Ο σταθμός έχει έναν υποσταθμό"
-  } ]
-}, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -34581,7 +34833,7 @@
     "@value" : "Ο σταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Smartbay",
+  "@id" : "https://w3id.org/earthsemantics/OSO#SmartBay",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "http://dbpedia.org/resource/Atlantic_Ocean"
@@ -34633,7 +34885,7 @@
     "@value" : "Galway Bay Observatory"
   }, {
     "@language" : "en",
-    "@value" : "Smartbay"
+    "@value" : "SmartBay"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -34665,9 +34917,9 @@
     "@value" : "SmartBay"
   } ],
   "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Smartbay_buoy"
+    "@id" : "https://w3id.org/earthsemantics/OSO#SmartBay_buoy"
   }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Smartbay_observatory"
+    "@id" : "https://w3id.org/earthsemantics/OSO#SmartBay_observatory"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateFirstDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -34675,7 +34927,7 @@
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1"
+    "@value" : "1.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Ireland"
@@ -34692,7 +34944,7 @@
     "@value" : "27"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Smartbay_buoy",
+  "@id" : "https://w3id.org/earthsemantics/OSO#SmartBay_buoy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "http://dbpedia.org/resource/Atlantic_Ocean"
@@ -34706,28 +34958,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "el",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "en",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "es",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "fr",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "it",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "no",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "pt",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "ro",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://vocab.nerc.ac.uk/collection/L06/current/41/"
@@ -34740,28 +34992,28 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "el",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "en",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "es",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "fr",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "it",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "no",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "pt",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   }, {
     "@language" : "ro",
-    "@value" : "Smartbay Buoy"
+    "@value" : "SmartBay Buoy"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateFirstDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -34777,7 +35029,7 @@
     "@id" : "https://w3id.org/earthsemantics/OSO#Alan_BERRY"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Smartbay_observatory",
+  "@id" : "https://w3id.org/earthsemantics/OSO#SmartBay_observatory",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -34798,28 +35050,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "el",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "en",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "es",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "fr",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "it",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "no",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "pt",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "ro",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://vocab.nerc.ac.uk/collection/L06/current/11/"
@@ -34839,28 +35091,28 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "el",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "en",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "es",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "fr",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "it",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "no",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "pt",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   }, {
     "@language" : "ro",
-    "@value" : "Smartbay Observatory"
+    "@value" : "SmartBay Observatory"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateFirstDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -36084,7 +36336,57 @@
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado"
+  }, {
+    "@language" : "pt",
+    "@value" : "Estado"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato"
+  }, {
+    "@language" : "en",
+    "@value" : "Status"
+  }, {
+    "@language" : "no",
+    "@value" : "Status"
+  }, {
+    "@language" : "fr",
+    "@value" : "Statut"
+  }, {
+    "@language" : "ro",
+    "@value" : "Statut"
+  }, {
+    "@language" : "el",
+    "@value" : "Κατάσταση"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Estado"
+  }, {
+    "@language" : "pt",
+    "@value" : "Estado"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato"
+  }, {
+    "@language" : "en",
+    "@value" : "Status"
+  }, {
+    "@language" : "no",
+    "@value" : "Status"
+  }, {
+    "@language" : "fr",
+    "@value" : "Statut"
+  }, {
+    "@language" : "ro",
+    "@value" : "Statut"
+  }, {
+    "@language" : "el",
+    "@value" : "Κατάσταση"
+  } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Stefano_MISEROCCHI",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Person" ],
@@ -36641,174 +36943,6 @@
     "@value" : "Υποτοποθεσία παρατήρησης"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A subsite contains one or more platforms."
-  }, {
-    "@language" : "no",
-    "@value" : "Et underområde inneholder én eller flere plattformer."
-  }, {
-    "@language" : "pt",
-    "@value" : "Um subsítio contém uma ou mais plataformas."
-  }, {
-    "@language" : "it",
-    "@value" : "Un sottosito contiene una o più piattaforme."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un sous-site contient une ou plusieurs plateformes."
-  }, {
-    "@language" : "ro",
-    "@value" : "Un sub-sit conține una sau mai multe platforme."
-  }, {
-    "@language" : "es",
-    "@value" : "Un subsitio contiene una o más plataformas."
-  }, {
-    "@language" : "el",
-    "@value" : "Ένας υποσταθμός περιέχει μία ή περισσότερες πλατφόρμες."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "El subsitio contiene una plataforma"
-  }, {
-    "@language" : "it",
-    "@value" : "Il sottosito contiene una piattaforma"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le sous-site contient une plateforme"
-  }, {
-    "@language" : "pt",
-    "@value" : "O subsítio contém uma plataforma"
-  }, {
-    "@language" : "ro",
-    "@value" : "Sub-situl conține o platformă"
-  }, {
-    "@language" : "en",
-    "@value" : "Subsite contains a platform"
-  }, {
-    "@language" : "no",
-    "@value" : "Underområdet inneholder en plattform"
-  }, {
-    "@language" : "el",
-    "@value" : "Ο υποσταθμός περιέχει μια πλατφόρμα"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "es",
-    "@value" : "El subsitio contiene una plataforma"
-  }, {
-    "@language" : "it",
-    "@value" : "Il sottosito contiene una piattaforma"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le sous-site contient une plateforme"
-  }, {
-    "@language" : "pt",
-    "@value" : "O subsítio contém uma plataforma"
-  }, {
-    "@language" : "ro",
-    "@value" : "Sub-situl conține o platformă"
-  }, {
-    "@language" : "en",
-    "@value" : "Subsite contains a platform"
-  }, {
-    "@language" : "no",
-    "@value" : "Underområdet inneholder en plattform"
-  }, {
-    "@language" : "el",
-    "@value" : "Ο υποσταθμός περιέχει μια πλατφόρμα"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A subsite is part of a Research Infrastructure."
-  }, {
-    "@language" : "no",
-    "@value" : "Et underområde er en del av en forskningsinfrastruktur."
-  }, {
-    "@language" : "pt",
-    "@value" : "Um subsítio faz parte de uma Infraestrutura de Investigação."
-  }, {
-    "@language" : "it",
-    "@value" : "Un sottosito fa parte di un'Infrastruttura di Ricerca."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un sous-site fait partie d'une infrastructure de recherche."
-  }, {
-    "@language" : "ro",
-    "@value" : "Un sub-sit face parte dintr-o infrastructură de cercetare."
-  }, {
-    "@language" : "es",
-    "@value" : "Un subsitio forma parte de una Infraestructura de Investigación."
-  }, {
-    "@language" : "el",
-    "@value" : "Ένας υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "El subsitio forma parte de una Infraestructura de Investigación"
-  }, {
-    "@language" : "it",
-    "@value" : "Il sottosito fa parte di un'Infrastruttura di Ricerca"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le sous-site fait partie d'une infrastructure de recherche"
-  }, {
-    "@language" : "pt",
-    "@value" : "O subsítio faz parte de uma Infraestrutura de Investigação"
-  }, {
-    "@language" : "ro",
-    "@value" : "Sub-situl face parte dintr-o infrastructură de cercetare"
-  }, {
-    "@language" : "en",
-    "@value" : "Subsite is part of a Research Infrastructure"
-  }, {
-    "@language" : "no",
-    "@value" : "Underområdet er en del av en forskningsinfrastruktur"
-  }, {
-    "@language" : "el",
-    "@value" : "Ο υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "es",
-    "@value" : "El subsitio forma parte de una Infraestructura de Investigación"
-  }, {
-    "@language" : "it",
-    "@value" : "Il sottosito fa parte di un'Infrastruttura di Ricerca"
-  }, {
-    "@language" : "fr",
-    "@value" : "Le sous-site fait partie d'une infrastructure de recherche"
-  }, {
-    "@language" : "pt",
-    "@value" : "O subsítio faz parte de uma Infraestrutura de Investigação"
-  }, {
-    "@language" : "ro",
-    "@value" : "Sub-situl face parte dintr-o infrastructură de cercetare"
-  }, {
-    "@language" : "en",
-    "@value" : "Subsite is part of a Research Infrastructure"
-  }, {
-    "@language" : "no",
-    "@value" : "Underområdet er en del av en forskningsinfrastruktur"
-  }, {
-    "@language" : "el",
-    "@value" : "Ο υποσταθμός αποτελεί μέρος μιας Ερευνητικής Υποδομής"
-  } ]
-}, {
   "@id" : "https://w3id.org/earthsemantics/OSO#Surface",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/spatial" : [ {
@@ -36881,11 +37015,11 @@
     "@language" : "ro",
     "@value" : "Surface"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_Surface_BOREL"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Lucky_Strike_Surface_BOREL"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateEndDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -37044,16 +37178,16 @@
     "@language" : "no",
     "@value" : "Svinøy"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Site_has_a_Subsite" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Svinoy_North"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Svinoy_South"
-  } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Norway"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasSiteResponsible" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Laura_DE_STEUR"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#hasSubsite" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Svinoy_North"
+  }, {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Svinoy_South"
   } ],
   "https://w3id.org/earthsemantics/OSO#isTestSite" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -37125,7 +37259,7 @@
     "@language" : "no",
     "@value" : "Svinøy North"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Svinoy_North_Subsurface_Mooring"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
@@ -37288,7 +37422,7 @@
     "@language" : "no",
     "@value" : "Svinøy South"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Svinoy_South_Subsurface_Mooring"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
@@ -37879,13 +38013,13 @@
     "@language" : "ro",
     "@value" : "Tour Eiffel"
   } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_contains_a_Platform" : [ {
+  "https://w3id.org/earthsemantics/OSO#Site_is_part_of_a_RI" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
+  } ],
+  "https://w3id.org/earthsemantics/OSO#containsPlatform" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#SeaMoNEast"
   }, {
     "@id" : "https://w3id.org/earthsemantics/OSO#TourEiffel_AutonomousDevices"
-  } ],
-  "https://w3id.org/earthsemantics/OSO#Subsite_is_part_of_a_RI" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#EMSO-France"
   } ],
   "https://w3id.org/earthsemantics/OSO#dateFirstDeployment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -39650,8 +39784,8 @@
     "@value" : "2001-01-01"
   } ],
   "https://w3id.org/earthsemantics/OSO#distanceFromLand" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "13"
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "13.0"
   } ],
   "https://w3id.org/earthsemantics/OSO#hasCountry" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#Italy"
@@ -40494,90 +40628,6 @@
     "@id" : "https://orcid.org/0000-0003-3972-5757"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#associatedWithRI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Regional Facility is associated with one or more Research Infrastructures."
-  }, {
-    "@language" : "no",
-    "@value" : "En regional fasilitet er knyttet til én eller flere forskningsinfrastrukturer."
-  }, {
-    "@language" : "ro",
-    "@value" : "O facilitate regională este asociată cu una sau mai multe infrastructuri de cercetare."
-  }, {
-    "@language" : "pt",
-    "@value" : "Uma Instalação Regional está associada a uma ou mais Infraestruturas de Investigação."
-  }, {
-    "@language" : "es",
-    "@value" : "Una Instalación Regional está asociada con una o más Infraestructuras de Investigación."
-  }, {
-    "@language" : "it",
-    "@value" : "Una Struttura Regionale è associata a una o più Infrastrutture di Ricerca."
-  }, {
-    "@language" : "fr",
-    "@value" : "Une installation régionale est associée à une ou plusieurs infrastructures de recherche."
-  }, {
-    "@language" : "el",
-    "@value" : "Μια Περιφερειακή Εγκατάσταση συνδέεται με μία ή περισσότερες Ερευνητικές Υποδομές."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "pt",
-    "@value" : "A Instalação Regional está associada a uma Infraestrutura de Investigação"
-  }, {
-    "@language" : "ro",
-    "@value" : "Facilitatea regională este asociată cu o infrastructură de cercetare"
-  }, {
-    "@language" : "fr",
-    "@value" : "L'installation régionale est associée à une infrastructure de recherche"
-  }, {
-    "@language" : "es",
-    "@value" : "La Instalación Regional está asociada con una Infraestructura de Investigación"
-  }, {
-    "@language" : "it",
-    "@value" : "La Struttura Regionale è associata a una Infrastruttura di Ricerca"
-  }, {
-    "@language" : "en",
-    "@value" : "Regional Facility is associated with a Research Infrastructure"
-  }, {
-    "@language" : "no",
-    "@value" : "Regional fasilitet er knyttet til en forskningsinfrastruktur"
-  }, {
-    "@language" : "el",
-    "@value" : "Η Περιφερειακή Εγκατάσταση συνδέεται με μια Ερευνητική Υποδομή"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "pt",
-    "@value" : "A Instalação Regional está associada a uma Infraestrutura de Investigação"
-  }, {
-    "@language" : "ro",
-    "@value" : "Facilitatea regională este asociată cu o infrastructură de cercetare"
-  }, {
-    "@language" : "fr",
-    "@value" : "L'installation régionale est associée à une infrastructure de recherche"
-  }, {
-    "@language" : "es",
-    "@value" : "La Instalación Regional está asociada con una Infraestructura de Investigación"
-  }, {
-    "@language" : "it",
-    "@value" : "La Struttura Regionale è associata a una Infrastruttura di Ricerca"
-  }, {
-    "@language" : "en",
-    "@value" : "Regional Facility is associated with a Research Infrastructure"
-  }, {
-    "@language" : "no",
-    "@value" : "Regional fasilitet er knyttet til en forskningsinfrastruktur"
-  }, {
-    "@language" : "el",
-    "@value" : "Η Περιφερειακή Εγκατάσταση συνδέεται με μια Ερευνητική Υποδομή"
-  } ]
-}, {
   "@id" : "https://w3id.org/earthsemantics/OSO#containsPlatform",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -40864,15 +40914,7 @@
     "@value" : "Ημερομηνία που σηματοδοτεί το τέλος της επιχειρησιακής εγκατάστασης ενός οργάνου, πλατφόρμας, τοποθεσίας ή υποδομής."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#SubPlatform"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid32"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "pt",
@@ -40900,7 +40942,7 @@
     "@value" : "Ημερομηνία λήξης εγκατάστασης"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    "@id" : "_:genid38"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/endDate"
@@ -40959,15 +41001,7 @@
     "@value" : "Ημερομηνία της πρώτης επιχειρησιακής εγκατάστασης ενός οργάνου, πλατφόρμας, τοποθεσίας ή υποδομής."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#SubPlatform"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid42"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "pt",
@@ -40995,7 +41029,7 @@
     "@value" : "Ημερομηνία πρώτης εγκατάστασης"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    "@id" : "_:genid48"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/startDate"
@@ -41057,9 +41091,7 @@
     "@value" : "Απόσταση από την ακτή εκφρασμένη σε ναυτικά μίλια (NM)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
+    "@id" : "_:genid52"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
@@ -41171,7 +41203,7 @@
     "@value" : "ανατολικό όριο γεωγραφικού μήκους"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -41479,11 +41511,7 @@
     "@value" : "Συνδέει έναν οργανισμό ή μια ερευνητική υποδομή με τη σχετική χώρα."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Organization"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -41688,7 +41716,7 @@
   "@id" : "https://w3id.org/earthsemantics/OSO#hasDepth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "http://www.w3.org/2002/07/owl#Site"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -42161,9 +42189,7 @@
     "@value" : "Συνδέει μια τοποθεσία ή υποτοποθεσία με τη γεωμετρία της."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid9"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -42222,8 +42248,89 @@
     "@value" : "έχει γεωμετρία"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#hasLeader",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://w3id.org/earthsemantics/OSO#hasGroupLeader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Collega un gruppo alla persona responsabile della sua direzione o del suo coordinamento."
+  }, {
+    "@language" : "no",
+    "@value" : "Knytter en gruppe til personen som er ansvarlig for å lede eller koordinere den."
+  }, {
+    "@language" : "ro",
+    "@value" : "Leagă un grup de persoana responsabilă de conducerea sau coordonarea acestuia."
+  }, {
+    "@language" : "pt",
+    "@value" : "Liga um grupo à pessoa responsável pela sua liderança ou coordenação."
+  }, {
+    "@language" : "en",
+    "@value" : "Links a group to the person responsible for leading or coordinating it."
+  }, {
+    "@language" : "es",
+    "@value" : "Relaciona un grupo con la persona responsable de dirigirlo o coordinarlo."
+  }, {
+    "@language" : "fr",
+    "@value" : "Relie un groupe à la personne chargée de le diriger ou de le coordonner."
+  }, {
+    "@language" : "el",
+    "@value" : "Συνδέει μια ομάδα με το πρόσωπο που είναι υπεύθυνο για τη διεύθυνση ή τον συντονισμό της."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "a pour responsable de groupe"
+  }, {
+    "@language" : "ro",
+    "@value" : "are lider de grup"
+  }, {
+    "@language" : "it",
+    "@value" : "ha un responsabile di gruppo"
+  }, {
+    "@language" : "no",
+    "@value" : "har gruppeleder"
+  }, {
+    "@language" : "en",
+    "@value" : "has group leader"
+  }, {
+    "@language" : "pt",
+    "@value" : "tem líder de grupo"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene responsable de grupo"
+  }, {
+    "@language" : "el",
+    "@value" : "έχει υπεύθυνο ομάδας"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "a pour responsable de groupe"
+  }, {
+    "@language" : "ro",
+    "@value" : "are lider de grup"
+  }, {
+    "@language" : "it",
+    "@value" : "ha un responsabile di gruppo"
+  }, {
+    "@language" : "no",
+    "@value" : "har gruppeleder"
+  }, {
+    "@language" : "en",
+    "@value" : "has group leader"
+  }, {
+    "@language" : "pt",
+    "@value" : "tem líder de grupo"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene responsable de grupo"
+  }, {
+    "@language" : "el",
+    "@value" : "έχει υπεύθυνο ομάδας"
+  } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#hasLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -42281,7 +42388,7 @@
     "@value" : "έχει τοποθεσία"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Geometry"
+    "@id" : "http://schema.org/Place"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#isLocationOf"
@@ -42509,7 +42616,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#hasORCID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "ro",
     "@value" : "Această proprietate leagă o persoană de identificatorul său ORCID."
@@ -42562,9 +42669,6 @@
   }, {
     "@language" : "ro",
     "@value" : "ORCID"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "it",
@@ -42786,7 +42890,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#hasROR",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "ro",
     "@value" : "Această proprietate leagă o organizație de identificatorul său ROR (Research Organization Registry)."
@@ -42840,9 +42944,6 @@
     "@language" : "el",
     "@value" : "έχει ROR"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "it",
     "@value" : "Collega un'organizzazione al suo identificatore ROR (Research Organization Registry)."
@@ -42893,9 +42994,6 @@
     "@language" : "el",
     "@value" : "έχει ROR"
   } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#hasRegionalFacility",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#hasRegionalTeamLeader",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
@@ -42985,7 +43083,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#hasSiteResponsible",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A site is managed by a site responsible."
@@ -43299,6 +43397,90 @@
   }, {
     "@language" : "el",
     "@value" : "έχει υποτοποθεσία"
+  } ]
+}, {
+  "@id" : "https://w3id.org/earthsemantics/OSO#isAssociatedWithNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Collega una piattaforma a un'infrastruttura di ricerca o a una rete con cui è associata, senza implicare un'appartenenza formale."
+  }, {
+    "@language" : "no",
+    "@value" : "Knytter en plattform til en forskningsinfrastruktur eller et nettverk den er assosiert med, uten å innebære formelt medlemskap."
+  }, {
+    "@language" : "ro",
+    "@value" : "Leagă o platformă de o infrastructură de cercetare sau de o rețea cu care este asociată, fără a implica apartenență formală."
+  }, {
+    "@language" : "pt",
+    "@value" : "Liga uma plataforma a uma infraestrutura de investigação ou rede com a qual está associada, sem implicar uma pertença formal."
+  }, {
+    "@language" : "en",
+    "@value" : "Links a platform to a research infrastructure or network with which it is associated, without implying formal membership."
+  }, {
+    "@language" : "es",
+    "@value" : "Relaciona una plataforma con una infraestructura de investigación o red con la que está asociada, sin implicar una pertenencia formal."
+  }, {
+    "@language" : "fr",
+    "@value" : "Relie une plateforme à une infrastructure de recherche ou à un réseau auquel elle est associée, sans impliquer une appartenance formelle."
+  }, {
+    "@language" : "el",
+    "@value" : "Συνδέει μια πλατφόρμα με μια ερευνητική υποδομή ή ένα δίκτυο με το οποίο σχετίζεται, χωρίς να υποδηλώνει επίσημη συμμετοχή."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "er tilknyttet et nettverk"
+  }, {
+    "@language" : "fr",
+    "@value" : "est associée à un réseau"
+  }, {
+    "@language" : "ro",
+    "@value" : "este asociată cu o rețea"
+  }, {
+    "@language" : "es",
+    "@value" : "está asociada a una red"
+  }, {
+    "@language" : "pt",
+    "@value" : "está associada a uma rede"
+  }, {
+    "@language" : "en",
+    "@value" : "is associated with network"
+  }, {
+    "@language" : "it",
+    "@value" : "è associata a una rete"
+  }, {
+    "@language" : "el",
+    "@value" : "συνδέεται με δίκτυο"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "no",
+    "@value" : "er tilknyttet et nettverk"
+  }, {
+    "@language" : "fr",
+    "@value" : "est associée à un réseau"
+  }, {
+    "@language" : "ro",
+    "@value" : "este asociată cu o rețea"
+  }, {
+    "@language" : "es",
+    "@value" : "está asociada a una red"
+  }, {
+    "@language" : "pt",
+    "@value" : "está associada a uma rede"
+  }, {
+    "@language" : "en",
+    "@value" : "is associated with network"
+  }, {
+    "@language" : "it",
+    "@value" : "è associata a una rete"
+  }, {
+    "@language" : "el",
+    "@value" : "συνδέεται με δίκτυο"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#isBoundingBoxOf",
@@ -43615,11 +43797,7 @@
     "@value" : "είναι χώρα του"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Organization"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    "@id" : "_:genid12"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#hasCountry"
@@ -43815,9 +43993,7 @@
     "@value" : "είναι η γεωμετρία της"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "no",
@@ -43932,9 +44108,7 @@
     "@value" : "Μια περιφερειακή υποδομή διαχειρίζεται ή συντονίζεται από έναν ή περισσότερους οργανισμούς."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#OceanographicCampaign"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -44047,9 +44221,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://schema.org/Person"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#leadsResearchInfrastructure"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "it",
@@ -44301,7 +44472,7 @@
     "@value" : "Συνδέει μια περιγραφή γεωγραφικής θέσης ή μια γεωμετρία με την περιφερειακή υποδομή που περιγράφει."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Geometry"
+    "@id" : "http://schema.org/Place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
@@ -44385,9 +44556,7 @@
     "@value" : "Συνδέει μια ερευνητική υποδομή (ERIC ή εθνική) με τον οργανισμό που τη διαχειρίζεται ή τη συντονίζει."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ERIC"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
@@ -44527,66 +44696,88 @@
     "@value" : "είναι μέλος του"
   } ]
 }, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#isPartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#isPartOfNetwork",
+  "@id" : "https://w3id.org/earthsemantics/OSO#isPartOfResearchInfrastructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Collega un'infrastruttura di ricerca a un'infrastruttura di ricerca più ampia di cui fa parte."
+  }, {
+    "@language" : "no",
+    "@value" : "Knytter en forskningsinfrastruktur til en overordnet forskningsinfrastruktur som den er en del av."
+  }, {
+    "@language" : "ro",
+    "@value" : "Leagă o infrastructură de cercetare de o infrastructură de cercetare mai largă din care face parte."
+  }, {
+    "@language" : "pt",
+    "@value" : "Liga uma infraestrutura de investigação a uma infraestrutura de investigação mais ampla da qual faz parte."
+  }, {
+    "@language" : "en",
+    "@value" : "Links a research infrastructure to a broader research infrastructure of which it is part."
+  }, {
+    "@language" : "es",
+    "@value" : "Relaciona una infraestructura de investigación con una infraestructura de investigación más amplia de la que forma parte."
+  }, {
+    "@language" : "fr",
+    "@value" : "Relie une infrastructure de recherche à une infrastructure de recherche plus large dont elle fait partie."
+  }, {
+    "@language" : "el",
+    "@value" : "Συνδέει μια ερευνητική υποδομή με μια ευρύτερη ερευνητική υποδομή της οποίας αποτελεί μέρος."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
-    "@value" : "er del av et nettverk"
+    "@value" : "er del av en forskningsinfrastruktur"
   }, {
     "@language" : "it",
-    "@value" : "fa parte di una rete"
+    "@value" : "fa parte di un'infrastruttura di ricerca"
   }, {
     "@language" : "ro",
-    "@value" : "face parte dintr-o rețea"
+    "@value" : "face parte dintr-o infrastructură de cercetare"
   }, {
     "@language" : "fr",
-    "@value" : "fait partie d’un réseau"
+    "@value" : "fait partie d’une infrastructure de recherche"
   }, {
     "@language" : "pt",
-    "@value" : "faz parte de uma rede"
+    "@value" : "faz parte de uma infraestrutura de investigação"
   }, {
     "@language" : "es",
-    "@value" : "forma parte de una red"
+    "@value" : "forma parte de una infraestructura de investigación"
   }, {
     "@language" : "en",
-    "@value" : "is part of network"
+    "@value" : "is part of research infrastructure"
   }, {
     "@language" : "el",
-    "@value" : "είναι μέρος δικτύου"
+    "@value" : "είναι μέρος ερευνητικής υποδομής"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "no",
-    "@value" : "er del av et nettverk"
+    "@value" : "er del av en forskningsinfrastruktur"
   }, {
     "@language" : "it",
-    "@value" : "fa parte di una rete"
+    "@value" : "fa parte di un'infrastruttura di ricerca"
   }, {
     "@language" : "ro",
-    "@value" : "face parte dintr-o rețea"
+    "@value" : "face parte dintr-o infrastructură de cercetare"
   }, {
     "@language" : "fr",
-    "@value" : "fait partie d’un réseau"
+    "@value" : "fait partie d’une infrastructure de recherche"
   }, {
     "@language" : "pt",
-    "@value" : "faz parte de uma rede"
+    "@value" : "faz parte de uma infraestrutura de investigação"
   }, {
     "@language" : "es",
-    "@value" : "forma parte de una red"
+    "@value" : "forma parte de una infraestructura de investigación"
   }, {
     "@language" : "en",
-    "@value" : "is part of network"
+    "@value" : "is part of research infrastructure"
   }, {
     "@language" : "el",
-    "@value" : "είναι μέρος δικτύου"
+    "@value" : "είναι μέρος ερευνητικής υποδομής"
   } ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#isPlatformOf",
@@ -45410,9 +45601,7 @@
     "@value" : "Υποδεικνύει εάν ένας τόπος ή υποτόπος θεωρείται δοκιμαστικός τόπος (true/false)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "no",
@@ -45524,9 +45713,7 @@
     "@value" : "συντονίζει περιφερειακή υποδομή"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#OceanographicCampaign"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#isLedByOrganization"
@@ -45556,9 +45743,6 @@
     "@language" : "el",
     "@value" : "συντονίζει περιφερειακή υποδομή"
   } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO#leadsResearchInfrastructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/earthsemantics/OSO#leadsSite",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -45728,9 +45912,7 @@
     "@value" : "διαχειρίζεται υποδομή"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ERIC"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#ResearchInfrastructure"
+    "@id" : "_:genid29"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#isManagedBy"
@@ -45792,13 +45974,7 @@
     "@value" : "Τιμή εκφρασμένη σε μέτρα (m)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid58"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -45912,9 +46088,6 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/earthsemantics/OSO#ERIC"
   } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#hasERICMembership"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "it",
     "@value" : "Collega un'entità di adesione ERIC all'organizzazione ERIC a cui si riferisce l'adesione."
@@ -45997,13 +46170,7 @@
     "@value" : "Τιμή εκφρασμένη σε μέτρα (m)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Platform"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#RegionalFacility"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Site"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Subsite"
+    "@id" : "_:genid63"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
@@ -47040,7 +47207,7 @@
     "@value" : "δυτικό όριο γεωγραφικού μήκους"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "es",
@@ -47066,270 +47233,6 @@
   }, {
     "@language" : "el",
     "@value" : "δυτικό όριο γεωγραφικού μήκους"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/1.0.5/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/OSO.jsonld",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@value" : "application/ld+json"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO JSON-LD serialization"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation JSON-LD d’OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.jsonld"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/versions/1.1.0/OSO.jsonld"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/application/ld+json"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/OSO.n3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@value" : "text/n3"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO N3 serialization"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation N3 d’OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.n3"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/versions/1.1.0/OSO.n3"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/text/n3"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/OSO.nt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@value" : "application/n-triples"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO N-Triples serialization"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation N-Triples d’OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.nt"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/versions/1.1.0/OSO.nt"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/application/n-triples"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/OSO.owl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@value" : "application/rdf+xml"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO RDF/XML serialization"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation RDF/XML d’OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.owl"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/versions/1.1.0/OSO.owl"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/application/rdf+xml"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/OSO.trig",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@value" : "application/trig"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO TriG serialization"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation TriG d’OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.trig"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/versions/1.1.0/OSO.trig"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/application/trig"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/OSO.ttl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://www.iana.org/assignments/media-types/text/turtle"
-  } ],
-  "http://purl.org/dc/terms/isFormatOf" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OSO Turtle serialization"
-  }, {
-    "@language" : "fr",
-    "@value" : "Sérialisation Turtle d’OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.ttl"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/emso-eric/oso-ontology/main/versions/1.1.0/OSO.ttl"
-  } ],
-  "http://www.w3.org/ns/dcat#mediaType" : [ {
-    "@id" : "https://www.iana.org/assignments/media-types/text/turtle"
-  } ]
-}, {
-  "@id" : "https://w3id.org/earthsemantics/OSO/dataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "RDF dataset describing marine observatories structured by the Observatories of the Seas Ontology."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@id" : "https://doi.org/10.25504/FAIRsharing.654931"
-  }, {
-    "@id" : "https://doi.org/10.5281/zenodo.19497913"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-04-04"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-26"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Ifremer"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Observatories of the Seas Ontology dataset"
-  } ],
-  "http://purl.org/pav/previousVersion" : [ {
-    "@id" : "https://doi.org/10.5281/zenodo.19497913"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.5/"
-  } ],
-  "http://purl.org/pav/version" : [ {
-    "@value" : "1.1.0"
-  } ],
-  "http://rdfs.org/ns/void#sparqlEndpoint" : [ {
-    "@id" : "https://virtuoso.ifremer.fr/oso/"
-  } ],
-  "http://schema.org/url" : [ {
-    "@id" : "https://emso-eric.github.io/oso-ontology/"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://rdfs.org/ns/void#Dataset"
-  }, {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://virtuoso.ifremer.fr/oso/"
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "_:genid7"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.jsonld"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.n3"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.nt"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.owl"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.trig"
-  }, {
-    "@id" : "https://w3id.org/earthsemantics/OSO/OSO.ttl"
-  } ],
-  "http://www.w3.org/ns/dcat#landingPage" : [ {
-    "@id" : "https://earthportal.eu/ontologies/OSO"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "https://data.earthportal.eu/categories/CLIMATE"
-  }, {
-    "@id" : "https://data.earthportal.eu/categories/EARTH"
-  }, {
-    "@id" : "https://data.earthportal.eu/categories/ENV"
-  } ],
-  "http://www.w3.org/ns/prov#generatedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-26"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO#Ifremer"
-  } ],
-  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO/1.0.5/"
-  } ],
-  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
-    "@id" : "https://w3id.org/earthsemantics/OSO"
   } ]
 }, {
   "@id" : "https://w3id.org/mod#acronym",
