@@ -17,9 +17,9 @@ authors:
   - name: EMSO Data Management Service Group (DMSG)
     affiliation: EMSO ERIC
 
-version: "1.1.0"
+version: "1.2.0"
 
-date-released: 2026-06-30
+date-released: 2026-08-25
 
 license: "CC-BY-4.0"
 
@@ -74,6 +74,6 @@ preferred-citation:
       given-names: Steven
     - name: EMSO Data Management Service Group (DMSG)
   publisher: EMSO ERIC
-  version: "1.1.0"
+  version: "1.2.0"
   year: 2026
   doi: 10.5281/zenodo.19497913
