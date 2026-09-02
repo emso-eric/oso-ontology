@@ -13148,8 +13148,8 @@ OSO:YASGUI a schema1:WebApplication,
         <http://www.w3.org/2004/02/skos/core>,
         <http://www.w3.org/ns/prov-o>,
         foaf: ;
-    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.0.1/> ;
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.0.2/> ;
     owl:versionInfo "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· εισαγωγή επικύρωσης SHACL· βελτίωση της συνέπειας μεταξύ TBox, ABox και SHACL· εμπλουτισμός της μοντελοποίησης του σημασιολογικού οικοσυστήματος, των μεταδεδομένων της οντολογίας και των πολυγλωσσικών επισημάνσεων· βελτίωση κλάσεων και ιδιοτήτων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"@el,
         "1.2.0 – separated ontology model and instance data distributions; introduced SHACL validation; improved TBox, ABox and SHACL consistency; enriched semantic ecosystem modelling, ontology metadata and multilingual annotations; refined classes and properties; corrected SmartBay typographical error"@en,
         "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; introducción de la validación SHACL; mejora de la coherencia entre TBox, ABox y SHACL; enriquecimiento del modelado del ecosistema semántico, los metadatos de la ontología y las anotaciones multilingües; refinamiento de clases y propiedades; corrección de una errata relativa a SmartBay"@es,
