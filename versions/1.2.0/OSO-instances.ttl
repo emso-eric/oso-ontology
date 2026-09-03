@@ -8352,13 +8352,13 @@ OSO:Western_Ionian_Sea_EMSO_membership a owl:NamedIndividual,
 OSO:Western_Mediterranean_Sea a owl:NamedIndividual,
         OSO:RegionalFacility ;
     rdfs:label "Δυτική Μεσόγειος Θάλασσα"@el,
-    "Western Mediterranean Sea"@en,
-    "Mar Mediterráneo occidental"@es,
-    "Mer Méditerranée occidentale"@fr,
-    "Mar Mediterraneo occidentale"@it,
-    "Vestlige Middelhavet"@no,
-    "Mar Mediterrâneo Ocidental"@pt,
-    "Marea Mediterană de Vest"@ro ;
+               "Western Mediterranean Sea"@en,
+               "Mar Mediterráneo occidental"@es,
+               "Mer Méditerranée occidentale"@fr,
+               "Mar Mediterraneo occidentale"@it,
+               "Vestlige Middelhavet"@no,
+               "Mar Mediterrâneo Ocidental"@pt,
+               "Marea Mediterană de Vest"@ro ;
     dcterms:spatial <http://dbpedia.org/resource/Ligurian_Sea>,
         <http://dbpedia.org/resource/Mediterranean_Sea> ;
     rdfs:comment "Ο περιφερειακός κόμβος 'Western Mediterranean Sea' αντιστοιχεί στη Λιγουρική Θάλασσα, όπως ορίζεται από τον Διεθνή Υδρογραφικό Οργανισμό."@el,

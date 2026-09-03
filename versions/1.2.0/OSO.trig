@@ -34,7 +34,7 @@
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:N92aa9b20edc640e1942748005f35a992 {
+_:Nc4e66da8ee5b4f5f952dab3934fec36c {
     OSO:Bay_of_Biscay_Slope a owl:NamedIndividual,
             OSO:RegionalFacility ;
         rdfs:label "Φαράγγια του Βισκαϊκού Κόλπου"@el,
@@ -796,8 +796,8 @@ _:N92aa9b20edc640e1942748005f35a992 {
             "Dato som markerer slutten på den operative utplasseringen av et instrument, en plattform, et sted eller en infrastruktur."@no,
             "Data que marca o fim da implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
             "Data care marchează sfârșitul desfășurării operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b1 ;
-        rdfs:range _:n2c971be0b40b4adb8131b5ef7a9171b2b7 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b1 ;
+        rdfs:range _:n8d0aad8ab8ea48c8a6823cd73e2601c1b7 ;
         rdfs:subPropertyOf schema1:endDate ;
         skos:prefLabel "Ημερομηνία λήξης εγκατάστασης"@el,
             "Deployment end date"@en,
@@ -825,8 +825,8 @@ _:N92aa9b20edc640e1942748005f35a992 {
             "Dato for første operative utplassering av et instrument, en plattform, et sted eller en infrastruktur."@no,
             "Data da primeira implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
             "Data primei desfășurări operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b11 ;
-        rdfs:range _:n2c971be0b40b4adb8131b5ef7a9171b2b17 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b11 ;
+        rdfs:range _:n8d0aad8ab8ea48c8a6823cd73e2601c1b17 ;
         rdfs:subPropertyOf schema1:startDate ;
         skos:prefLabel "Ημερομηνία πρώτης εγκατάστασης"@el,
             "First deployment date"@en,
@@ -855,7 +855,7 @@ _:N92aa9b20edc640e1942748005f35a992 {
             "Avstand fra kysten uttrykt i nautiske mil (NM)."@no,
             "Distância à costa expressa em milhas náuticas (NM)."@pt,
             "Distanța față de coastă exprimată în mile marine (NM)."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b21 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b21 ;
         rdfs:range xsd:decimal ;
         skos:prefLabel "απόσταση από την ακτή"@el,
             "distance from land"@en,
@@ -1424,7 +1424,7 @@ _:N92aa9b20edc640e1942748005f35a992 {
             "Angir om et sted eller delsted regnes som et teststed (true/false)."@no,
             "Indica se um sítio ou subsítio é considerado um sítio de teste (true/false)."@pt,
             "Indică dacă un sit sau un subsit este considerat sit de testare (true/false)."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b24 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b24 ;
         rdfs:range xsd:boolean ;
         skos:prefLabel "είναι δοκιμαστικός τόπος"@el,
             "is test site"@en,
@@ -1453,7 +1453,7 @@ _:N92aa9b20edc640e1942748005f35a992 {
             "Verdi uttrykt i meter (m)."@no,
             "Valor expresso em metros (m)."@pt,
             "Valoare exprimată în metri (m)."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b27 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b27 ;
         rdfs:range xsd:integer ;
         skos:prefLabel "έχει μέγιστο βάθος"@el,
             "has maximum depth"@en,
@@ -1518,7 +1518,7 @@ _:N92aa9b20edc640e1942748005f35a992 {
             "Verdi uttrykt i meter (m)."@no,
             "Valor expresso em metros (m)."@pt,
             "Valoare exprimată în metri (m)."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b32 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b32 ;
         rdfs:range xsd:integer ;
         skos:prefLabel "έχει ελάχιστο βάθος"@el,
             "has minimum depth"@en,
@@ -3008,7 +3008,7 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "DYFAMED"@no,
             "DYFAMED"@pt,
             "DYFAMED"@ro ;
-        adms:identifier _:n88718d6d19704f7db755c6128b7a58a7b1 ;
+        adms:identifier _:n5002d43e6bf34a1cac839e9d3a409695b1 ;
         OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
         OSO:containsPlatform OSO:Dyfamed_Mugobs,
             OSO:Dyfamed_ODAS,
@@ -3441,7 +3441,7 @@ CLASS will be delivered through an Atlantic focused science programme, building 
             "Campagnes EMSO Mer Ligure Ouest"@fr ;
         skos:prefLabel "EMSO LIGURE OUEST"@en,
             "EMSO LIGURE OUEST"@fr ;
-        adms:identifier _:n88718d6d19704f7db755c6128b7a58a7b2 ;
+        adms:identifier _:n5002d43e6bf34a1cac839e9d3a409695b2 ;
         prov:wasAssociatedWith OSO:EMSO_France .
 
     OSO:EMSO_SA a owl:NamedIndividual,
@@ -9522,14 +9522,14 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
 
     OSO:Western_Mediterranean_Sea a owl:NamedIndividual,
             OSO:RegionalFacility ;
-        rdfs:label "Western Mediterranean Sea"@el,
+        rdfs:label "Δυτική Μεσόγειος Θάλασσα"@el,
             "Western Mediterranean Sea"@en,
-            "Western Mediterranean Sea"@es,
-            "Western Mediterranean Sea"@fr,
-            "Western Mediterranean Sea"@it,
-            "Western Mediterranean Sea"@no,
-            "Western Mediterranean Sea"@pt,
-            "Western Mediterranean Sea"@ro ;
+            "Mar Mediterráneo occidental"@es,
+            "Mer Méditerranée occidentale"@fr,
+            "Mar Mediterraneo occidentale"@it,
+            "Vestlige Middelhavet"@no,
+            "Mar Mediterrâneo Ocidental"@pt,
+            "Marea Mediterană de Vest"@ro ;
         dcterms:spatial <http://dbpedia.org/resource/Ligurian_Sea>,
             <http://dbpedia.org/resource/Mediterranean_Sea> ;
         rdfs:comment "Ο περιφερειακός κόμβος 'Western Mediterranean Sea' αντιστοιχεί στη Λιγουρική Θάλασσα, όπως ορίζεται από τον Διεθνή Υδρογραφικό Οργανισμό."@el,
@@ -9834,7 +9834,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Knytter en organisasjon eller forskningsinfrastruktur til tilhørende land."@no,
             "Liga uma organização ou infraestrutura de investigação ao país associado."@pt,
             "Leagă o organizație sau infrastructură de cercetare de țara asociată."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b37 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b37 ;
         rdfs:range <http://dbpedia.org/ontology/Country> ;
         rdfs:subPropertyOf schema1:addressCountry ;
         owl:inverseOf OSO:isCountryOf ;
@@ -9902,7 +9902,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Knytter et sted eller underområde til dets geometri."@no,
             "Liga um local ou sublocal à sua geometria."@pt,
             "Leagă un sit sau subsit de geometria sa."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b41 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b41 ;
         rdfs:range geosparql:Geometry ;
         owl:inverseOf OSO:isGeometryOf ;
         skos:prefLabel "έχει γεωμετρία"@el,
@@ -10224,7 +10224,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga um país a uma organização ou infraestrutura de investigação associada."@pt,
             "Leagă o țară de o organizație sau infrastructură de cercetare asociată."@ro ;
         rdfs:domain <http://dbpedia.org/ontology/Country> ;
-        rdfs:range _:n2c971be0b40b4adb8131b5ef7a9171b2b44 ;
+        rdfs:range _:n8d0aad8ab8ea48c8a6823cd73e2601c1b44 ;
         owl:inverseOf OSO:hasCountry ;
         skos:prefLabel "είναι χώρα του"@el,
             "is country of"@en,
@@ -10290,7 +10290,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga uma geometria ao local ou sublocal que descreve."@pt,
             "Leagă o geometrie de situl sau subsitul pe care îl descrie."@ro ;
         rdfs:domain geosparql:Geometry ;
-        rdfs:range _:n2c971be0b40b4adb8131b5ef7a9171b2b48 ;
+        rdfs:range _:n8d0aad8ab8ea48c8a6823cd73e2601c1b48 ;
         owl:inverseOf OSO:hasGeometry ;
         skos:prefLabel "είναι η γεωμετρία της"@el,
             "is geometry of"@en,
@@ -10318,7 +10318,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "En regional infrastruktur administreres eller koordineres av én eller flere organisasjoner."@no,
             "Uma infraestrutura regional é gerida ou coordenada por uma ou mais organizações."@pt,
             "O infrastructură regională este gestionată sau coordonată de una sau mai multe organizații."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b51 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b51 ;
         rdfs:range foaf:Organization ;
         owl:inverseOf OSO:leadsRegionalFacility ;
         skos:prefLabel "συντονίζεται από οργανισμό"@el,
@@ -10434,7 +10434,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Knytter en forskningsinfrastruktur (ERIC eller nasjonal) til organisasjonen som administrerer eller koordinerer den."@no,
             "Liga uma infraestrutura de investigação (ERIC ou nacional) à organização que a gere ou coordena."@pt,
             "Leagă o infrastructură de cercetare (ERIC sau națională) de organizația care o gestionează sau coordonează."@ro ;
-        rdfs:domain _:n2c971be0b40b4adb8131b5ef7a9171b2b55 ;
+        rdfs:domain _:n8d0aad8ab8ea48c8a6823cd73e2601c1b55 ;
         rdfs:range foaf:Organization ;
         owl:inverseOf OSO:managesInfrastructure ;
         skos:prefLabel "διαχειρίζεται από"@el,
@@ -10762,7 +10762,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga uma organização a uma infraestrutura regional que gere ou coordena."@pt,
             "Leagă o organizație de infrastructura regională pe care o gestionează sau coordonează."@ro ;
         rdfs:domain foaf:Organization ;
-        rdfs:range _:n2c971be0b40b4adb8131b5ef7a9171b2b58 ;
+        rdfs:range _:n8d0aad8ab8ea48c8a6823cd73e2601c1b58 ;
         owl:inverseOf OSO:isLedByOrganization ;
         skos:prefLabel "συντονίζει περιφερειακή υποδομή"@el,
             "leads regional facility"@en,
@@ -10828,7 +10828,7 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Liga uma organização à infraestrutura de investigação que gere ou coordena."@pt,
             "Leagă o organizație de infrastructura de cercetare pe care o gestionează sau coordonează."@ro ;
         rdfs:domain foaf:Organization ;
-        rdfs:range _:n2c971be0b40b4adb8131b5ef7a9171b2b61 ;
+        rdfs:range _:n8d0aad8ab8ea48c8a6823cd73e2601c1b61 ;
         owl:inverseOf OSO:isManagedBy ;
         skos:prefLabel "διαχειρίζεται υποδομή"@el,
             "manages infrastructure"@en,
@@ -13167,13 +13167,13 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Må ikke forveksles med OpenScienceOntology (OSO) eller Ontology for Scenario Orchestration (OSO)."@no,
             "Não confundir com OpenScienceOntology (OSO) nem com Ontology for Scenario Orchestration (OSO)."@pt,
             "A nu se confunda cu OpenScienceOntology (OSO) sau cu Ontology for Scenario Orchestration (OSO)."@ro ;
-        adms:identifier _:n2c971be0b40b4adb8131b5ef7a9171b2b64,
-            _:n2c971be0b40b4adb8131b5ef7a9171b2b65,
-            _:n2c971be0b40b4adb8131b5ef7a9171b2b66 ;
+        adms:identifier _:n8d0aad8ab8ea48c8a6823cd73e2601c1b64,
+            _:n8d0aad8ab8ea48c8a6823cd73e2601c1b65,
+            _:n8d0aad8ab8ea48c8a6823cd73e2601c1b66 ;
         adms:representationTechnique "OWL 2 DL in Turtle syntax" ;
         adms:status <http://purl.org/adms/status/Completed> ;
         dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
-        dcat:contactPoint _:n2c971be0b40b4adb8131b5ef7a9171b2b67 ;
+        dcat:contactPoint _:n8d0aad8ab8ea48c8a6823cd73e2601c1b67 ;
         dcat:keyword "θαλάσσια παρατηρητήρια"@el,
             "EMSO"@en,
             "FAIR data"@en,
@@ -15549,223 +15549,223 @@ mettre en place une infrastructure d’observation sous-marine à Mayotte afin d
             "Plataforma de observação"@pt,
             "Platformă de observație"@ro .
 
-    _:n88718d6d19704f7db755c6128b7a58a7b3 a vcard:Kind ;
+    _:n5002d43e6bf34a1cac839e9d3a409695b3 a vcard:Kind ;
         vcard:fn "EMSO Data Management Service Group" ;
         vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
         vcard:hasOrganizationName "EMSO ERIC" .
 
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b1 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b2 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b10 rdf:first xsd:gYear ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b11 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b12 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b12 rdf:first OSO:Platform ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b13 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b13 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b14 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b14 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b15 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b15 rdf:first OSO:SubPlatform ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b16 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b16 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b17 a rdfs:Datatype ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b18 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b18 rdf:first xsd:date ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b19 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b19 rdf:first xsd:gYearMonth ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b20 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b2 rdf:first OSO:Platform ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b3 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b20 rdf:first xsd:gYear ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b21 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b22 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b22 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b23 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b23 rdf:first OSO:Site ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b24 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b25 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b25 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b26 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b26 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b27 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b28 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b28 rdf:first OSO:Platform ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b29 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b29 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b30 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b3 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b4 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b30 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b31 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b31 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b32 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b33 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b33 rdf:first OSO:Platform ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b34 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b34 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b35 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b35 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b36 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b36 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b37 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b38 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b38 rdf:first foaf:Organization ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b39 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b39 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b40 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b4 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b5 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b40 rdf:first OSO:ResearchInfrastructure ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b41 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b42 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b42 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b43 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b43 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b44 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b45 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b45 rdf:first foaf:Organization ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b46 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b46 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b47 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b47 rdf:first OSO:ResearchInfrastructure ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b48 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b49 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b49 rdf:first OSO:Site ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b50 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b5 rdf:first OSO:SubPlatform ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b6 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b50 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b51 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b52 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b52 rdf:first OSO:OceanographicCampaign ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b53 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b53 rdf:first OSO:RegionalFacility ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b54 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b54 rdf:first OSO:ResearchProject ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b55 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b56 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b56 rdf:first OSO:ERIC ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b57 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b57 rdf:first OSO:ResearchInfrastructure ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b58 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b59 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b59 rdf:first OSO:OceanographicCampaign ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b60 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b6 rdf:first OSO:Subsite ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b60 rdf:first OSO:RegionalFacility ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b61 a owl:Class ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b62 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b62 rdf:first OSO:ERIC ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b63 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b63 rdf:first OSO:ResearchInfrastructure ;
-        rdf:rest () .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b64 a adms:Identifier ;
-        skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
-        skos:prefLabel "FAIRsharing DOI for OSO"@en .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b65 a adms:Identifier ;
-        skos:notation "https://w3id.org/earthsemantics/OSO" ;
-        skos:prefLabel "Persistent IRI for OSO"@en .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b66 a adms:Identifier ;
-        skos:notation "https://doi.org/10.5281/zenodo.19497912" ;
-        skos:prefLabel "Zenodo DOI for OSO"@en .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b67 a vcard:Kind ;
-        vcard:fn "EMSO Data Management Service Group" ;
-        vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
-        vcard:hasOrganizationName "EMSO ERIC" .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b7 a rdfs:Datatype ;
-        owl:unionOf _:n2c971be0b40b4adb8131b5ef7a9171b2b8 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b8 rdf:first xsd:date ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b9 .
-
-    _:n2c971be0b40b4adb8131b5ef7a9171b2b9 rdf:first xsd:gYearMonth ;
-        rdf:rest _:n2c971be0b40b4adb8131b5ef7a9171b2b10 .
-
-    _:n88718d6d19704f7db755c6128b7a58a7b1 a adms:Identifier ;
+    _:n5002d43e6bf34a1cac839e9d3a409695b1 a adms:Identifier ;
         schema1:value "10.17882/43749" ;
         skos:notation "10.17882/43749" .
 
-    _:n88718d6d19704f7db755c6128b7a58a7b2 a adms:Identifier ;
+    _:n5002d43e6bf34a1cac839e9d3a409695b2 a adms:Identifier ;
         dcterms:creator "Flotte Océanographique Française" ;
         skos:notation "10.18142/295" .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b1 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b2 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b10 rdf:first xsd:gYear ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b11 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b12 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b12 rdf:first OSO:Platform ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b13 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b13 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b14 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b14 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b15 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b15 rdf:first OSO:SubPlatform ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b16 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b16 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b17 a rdfs:Datatype ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b18 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b18 rdf:first xsd:date ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b19 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b19 rdf:first xsd:gYearMonth ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b20 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b2 rdf:first OSO:Platform ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b3 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b20 rdf:first xsd:gYear ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b21 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b22 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b22 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b23 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b23 rdf:first OSO:Site ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b24 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b25 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b25 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b26 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b26 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b27 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b28 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b28 rdf:first OSO:Platform ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b29 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b29 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b30 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b3 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b4 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b30 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b31 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b31 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b32 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b33 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b33 rdf:first OSO:Platform ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b34 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b34 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b35 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b35 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b36 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b36 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b37 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b38 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b38 rdf:first foaf:Organization ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b39 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b39 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b40 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b4 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b5 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b40 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b41 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b42 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b42 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b43 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b43 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b44 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b45 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b45 rdf:first foaf:Organization ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b46 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b46 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b47 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b47 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b48 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b49 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b49 rdf:first OSO:Site ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b50 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b5 rdf:first OSO:SubPlatform ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b6 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b50 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b51 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b52 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b52 rdf:first OSO:OceanographicCampaign ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b53 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b53 rdf:first OSO:RegionalFacility ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b54 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b54 rdf:first OSO:ResearchProject ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b55 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b56 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b56 rdf:first OSO:ERIC ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b57 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b57 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b58 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b59 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b59 rdf:first OSO:OceanographicCampaign ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b60 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b6 rdf:first OSO:Subsite ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b60 rdf:first OSO:RegionalFacility ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b61 a owl:Class ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b62 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b62 rdf:first OSO:ERIC ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b63 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b63 rdf:first OSO:ResearchInfrastructure ;
+        rdf:rest () .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b64 a adms:Identifier ;
+        skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
+        skos:prefLabel "FAIRsharing DOI for OSO"@en .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b65 a adms:Identifier ;
+        skos:notation "https://w3id.org/earthsemantics/OSO" ;
+        skos:prefLabel "Persistent IRI for OSO"@en .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b66 a adms:Identifier ;
+        skos:notation "https://doi.org/10.5281/zenodo.19497912" ;
+        skos:prefLabel "Zenodo DOI for OSO"@en .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b67 a vcard:Kind ;
+        vcard:fn "EMSO Data Management Service Group" ;
+        vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
+        vcard:hasOrganizationName "EMSO ERIC" .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b7 a rdfs:Datatype ;
+        owl:unionOf _:n8d0aad8ab8ea48c8a6823cd73e2601c1b8 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b8 rdf:first xsd:date ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b9 .
+
+    _:n8d0aad8ab8ea48c8a6823cd73e2601c1b9 rdf:first xsd:gYearMonth ;
+        rdf:rest _:n8d0aad8ab8ea48c8a6823cd73e2601c1b10 .
 }
 
