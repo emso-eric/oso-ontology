@@ -1,0 +1,316 @@
+@prefix OSO: <https://w3id.org/earthsemantics/OSO#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+OSO:DisciplineShape a sh:NodeShape ;
+    sh:targetClass OSO:Discipline .
+
+OSO:ERICMembershipShape a sh:NodeShape ;
+    sh:property [ sh:clazz OSO:RegionalFacility ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:isERICMembershipOf ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ERIC ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:membershipInERIC ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:ERICMembership .
+
+OSO:ERICShape a sh:NodeShape ;
+    sh:property [ sh:clazz OSO:ResearchInfrastructure ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:ERICfederate ;
+            sh:severity sh:Violation ],
+        [ sh:clazz foaf:Organization ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:isManagedBy ;
+            sh:severity sh:Violation ],
+        [ sh:clazz xsd:anyURI ;
+            sh:nodeKind sh:IRI ;
+            sh:path foaf:homepage ;
+            sh:severity sh:Violation ],
+        [ sh:clazz schema1:Person ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:ERIC_has_a_Director_General ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:ERIC .
+
+OSO:FundedProjectShape a sh:NodeShape ;
+    sh:property [ sh:clazz <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasSpatialExtent ;
+            sh:severity sh:Violation ],
+        [ sh:clazz xsd:anyURI ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasLogo ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:FundedProject .
+
+OSO:OceanographicCampaignShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:path OSO:hasDOI ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:OceanographicCampaign .
+
+OSO:PlatformShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:integer ;
+            sh:path OSO:maxWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:minWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:clazz schema1:Person ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasPrincipalInvestigator ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateEndDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateFirstDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:clazz skos:Concept ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasPlatformCategory ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:Platform .
+
+OSO:RegionalFacilityShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:date ;
+            sh:path OSO:dateFirstDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:clazz xsd:anyURI ;
+            sh:nodeKind sh:IRI ;
+            sh:path foaf:homepage ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Site ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:containsSite ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:DistanceFromLand ;
+            sh:severity sh:Violation ],
+        [ sh:clazz schema1:Person ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasRegionalTeamLeader ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:OceanographicCampaign ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:linkedToCampaigns ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ResearchProject ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:RegionalFacility_is_linked_to_a_project ;
+            sh:severity sh:Violation ],
+        [ sh:clazz <http://dbpedia.org/ontology/Country> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasCountry ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:maxWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Geometry ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasLocation ;
+            sh:severity sh:Violation ],
+        [ sh:clazz <http://www.w3.org/2003/01/geo/wgs84_pos#BoundingBox> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasBoundingBox ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:SeriesOfOceanographicCampaigns ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:linkedToSeries ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Site ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasSite ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateEndDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:minWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ERICMembership ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasERICMembership ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ResearchInfrastructure ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:associatedWithRI ;
+            sh:severity sh:Violation ],
+        [ sh:clazz foaf:Organization ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:ledByOrganization ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ResearchInfrastructure ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:RegionalFacilityispartofRI ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ResearchInfrastructure ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:RegionalFacilityisRelatedTo ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:RegionalFacility .
+
+OSO:ResearchInfrastructureShape a sh:NodeShape ;
+    sh:property [ sh:clazz <http://dbpedia.org/ontology/Country> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasCountry ;
+            sh:severity sh:Violation ],
+        [ sh:clazz foaf:Organization ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:isManagedBy ;
+            sh:severity sh:Violation ],
+        [ sh:clazz xsd:anyURI ;
+            sh:nodeKind sh:IRI ;
+            sh:path foaf:homepage ;
+            sh:severity sh:Violation ],
+        [ sh:clazz schema1:Person ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:RegionalFacilityisledby ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:ResearchInfrastructure .
+
+OSO:ResearchProjectShape a sh:NodeShape ;
+    sh:property [ sh:clazz foaf:Organization ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Project_is_led_by_an_Organization ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:ResearchProject .
+
+OSO:SeriesOfOceanographicCampaignsShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:path OSO:hasDOI ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:SeriesOfOceanographicCampaigns .
+
+OSO:SiteShape a sh:NodeShape ;
+    sh:property [ sh:clazz foaf:Organization ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:SiteLedBy ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Platform ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:containsPlatform ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:DistanceFromLand ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:minWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:boolean ;
+            sh:path OSO:isTestSite ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ResearchInfrastructure ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Site_is_part_of_a_RI ;
+            sh:severity sh:Violation ],
+        [ sh:clazz <http://www.w3.org/2003/01/geo/wgs84_pos#Latitude> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Site_has_Latitude ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Subsite ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasSubsite ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Subsite ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Site_has_a_Subsite ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateEndDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:maxWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:clazz geo:Geometry ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasGeometry ;
+            sh:severity sh:Violation ],
+        [ sh:clazz schema1:Person ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasSiteResponsible ;
+            sh:severity sh:Violation ],
+        [ sh:clazz xsd:anyURI ;
+            sh:nodeKind sh:IRI ;
+            sh:path foaf:homepage ;
+            sh:severity sh:Violation ],
+        [ sh:clazz <http://www.w3.org/2003/01/geo/wgs84_pos#Longitude> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Site_has_Longitude ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateFirstDeployment ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:Site .
+
+OSO:SubPlatformShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:date ;
+            sh:path OSO:dateEndDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateFirstDeployment ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:SubPlatform .
+
+OSO:SubsiteShape a sh:NodeShape ;
+    sh:property [ sh:clazz <http://www.w3.org/2003/01/geo/wgs84_pos#Longitude> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Site_has_Longitude ;
+            sh:severity sh:Violation ],
+        [ sh:clazz <http://www.w3.org/2003/01/geo/wgs84_pos#Latitude> ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Site_has_Latitude ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateEndDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:minWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:clazz geo:Geometry ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:hasGeometry ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:integer ;
+            sh:path OSO:maxWaterDepth ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:date ;
+            sh:path OSO:dateFirstDeployment ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:Platform ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Subsite_contains_a_Platform ;
+            sh:severity sh:Violation ],
+        [ sh:datatype xsd:boolean ;
+            sh:path OSO:isTestSite ;
+            sh:severity sh:Violation ],
+        [ sh:clazz OSO:ResearchInfrastructure ;
+            sh:nodeKind sh:IRI ;
+            sh:path OSO:Subsite_is_part_of_a_RI ;
+            sh:severity sh:Violation ] ;
+    sh:targetClass OSO:Subsite .
+
+<https://w3id.org/earthsemantics/OSO/shacl> a owl:Ontology ;
+    dcterms:conformsTo sh: ;
+    dcterms:creator <https://orcid.org/0000-0001-8502-9812> ;
+    dcterms:description "Structural SHACL validation profile auto-derived from the OSO TBox (rdfs:domain / rdfs:range assertions). One sh:NodeShape per named class, with sh:property constraints expressing sh:class (object properties) and sh:datatype (datatype properties)."@en ;
+    dcterms:issued "2026-04-12"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:relation <https://w3id.org/earthsemantics/OSO/1.0.2> ;
+    dcterms:source <https://w3id.org/earthsemantics/OSO/1.0.2> ;
+    dcterms:title "OSO SHACL validation profile"@en ;
+    rdfs:seeAlso <https://github.com/emso-eric/oso-ontology>,
+        <https://w3id.org/earthsemantics/OSO> ;
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/shacl/1.0.2> ;
+    owl:versionInfo "1.0.2" .
+
