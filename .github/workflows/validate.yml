@@ -2,7 +2,6 @@ name: Validate OSO ontology
 
 on:
   push:
-    branches: [main]
   pull_request:
     branches: [main]
 
