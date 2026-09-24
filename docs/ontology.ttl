@@ -12855,7 +12855,6 @@ OSO:YASGUI a schema1:WebApplication,
         sweetRealmOceanFloor:,
         <https://earthportal.eu/ontologies/EASYDATA_THEMES>,
         <https://terra-vocabulary.org/ncl/DataTerraRepositoryFairIncubator/_InfraRecherche> ;
-    omv:URI <https://w3id.org/earthsemantics/OSO> ;
     omv:acronym "OSO" ;
     omv:creationDate "2025-04-04"^^xsd:date ;
     omv:description "Οντολογία που περιγράφει τα θαλάσσια παρατηρητήρια (περιφερειακές υποδομές, τοποθεσίες, πλατφόρμες) για την υποστήριξη της διαχείρισης δεδομένων FAIR και της διαλειτουργικότητας, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
@@ -12937,7 +12936,6 @@ OSO:YASGUI a schema1:WebApplication,
         <https://earthportal.eu/ontologies/OSO>,
         <https://github.com/emso-eric/oso-ontology>,
         <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology> ;
-    omv:resourceLocator <https://w3id.org/earthsemantics/OSO> ;
     omv:status "Published" ;
     omv:useImports rdfs:,
         owl:,
@@ -13131,7 +13129,6 @@ OSO:YASGUI a schema1:WebApplication,
         "Co-construcție cu experți din domeniu și aliniere iterativă cu ontologii de referință"@ro,
         "OSO include alinieri semantice selectate cu concepte SWEET pentru a îmbunătăți interoperabilitatea cu vocabularele din științele Pământului și ale mediului."@ro,
         "Ontologie care descrie relațiile dintre facilitățile regionale, siturile, platformele, infrastructurile de cercetare, organizațiile, croazierele și persoanele responsabile la fiecare nivel."@ro ;
-    rdfs:isDefinedBy <https://w3id.org/earthsemantics/OSO> ;
     rdfs:seeAlso <https://doi.org/10.5281/zenodo.19497912>,
         <https://emso-eric.github.io/oso-ontology/>,
         <https://fairsharing.org/FAIRsharing.654931>,

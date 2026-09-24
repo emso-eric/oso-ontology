@@ -43,7 +43,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from rdflib import Graph, RDF, URIRef
+from rdflib import BNode, Graph, RDF, URIRef
 from rdflib.namespace import OWL
 
 # OWL/RDF meta-classes: a subject typed with one of these is a TBox entity.
@@ -76,7 +76,15 @@ SERIALIZATIONS = [
 
 
 def partition_tbox_abox(graph: Graph):
-    """Return (tbox_graph, abox_graph) partitioned from `graph`."""
+    """Return (tbox_graph, abox_graph) partitioned from `graph`.
+
+    Triples are grouped into blank-node-connected components first: a bnode
+    must appear in exactly one partition, otherwise serialising TBox and
+    ABox to separate files splits shared bnodes (adms:identifier, vcard
+    contact points, shared owl:unionOf lists, ...) and the union is no
+    longer isomorphic to the source. A component goes to the ABox only if
+    all its URIRef members are individuals.
+    """
     individuals = set()
     for subject in set(graph.subjects()):
         types = list(graph.objects(subject, RDF.type))
@@ -84,10 +92,36 @@ def partition_tbox_abox(graph: Graph):
         if types and not any(t in TBOX_METACLASSES for t in types):
             individuals.add(subject)
 
+    # Union-find over components linked by blank nodes.
+    parent = {}
+
+    def find(node):
+        parent.setdefault(node, node)
+        while parent[node] is not node:
+            parent[node] = parent[parent[node]]
+            node = parent[node]
+        return node
+
+    for s, p, o in graph:
+        find(s)
+        find(o)
+        if isinstance(s, BNode) or isinstance(o, BNode):
+            parent[find(o)] = find(s)
+
+    component_members = {}
+    for node in parent:
+        component_members.setdefault(find(node), set()).add(node)
+
+    abox_components = set()
+    for root, members in component_members.items():
+        urirefs = [m for m in members if isinstance(m, URIRef)]
+        if urirefs and all(m in individuals for m in urirefs):
+            abox_components.add(root)
+
     tbox = Graph()
     abox = Graph()
     for s, p, o in graph:
-        (abox if s in individuals else tbox).add((s, p, o))
+        (abox if find(s) in abox_components else tbox).add((s, p, o))
 
     # Carry over namespace bindings so serializations reuse the source prefixes.
     for prefix, ns in graph.namespaces():

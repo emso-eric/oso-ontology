@@ -17,6 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          # On `release` events the default ref is the tag (detached HEAD);
+          # the regenerated artefacts must be committed on main.
+          ref: main
 
       - uses: actions/setup-python@v7
         with:

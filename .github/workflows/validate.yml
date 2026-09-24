@@ -44,6 +44,7 @@ jobs:
 
       - name: Validate instances against OSO SHACL profile
         run: |
+          mkdir -p reports
           pyshacl -s OSO-shacl.ttl -f turtle OSO-instances.ttl \
             > reports/shacl-report.ttl || true
 

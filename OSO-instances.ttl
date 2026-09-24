@@ -1,5 +1,4 @@
 @prefix OSO: <https://w3id.org/earthsemantics/OSO#> .
-@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix cerif: <https://w3id.org/cerif/vocab/> .
 @prefix datacite: <http://purl.org/spar/datacite/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -14,7 +13,6 @@
 @prefix sweetRealmLandVolcanic: <http://sweetontology.net/realmLandVolcanic/> .
 @prefix sweetRealmOcean: <http://sweetontology.net/realmOcean/> .
 @prefix sweetRealmOceanFloor: <http://sweetontology.net/realmOceanFloor/> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -90,6 +88,95 @@ OSO:Condor_seamount a owl:NamedIndividual,
     OSO:RegionalFacility_is_related_to_RI OSO:EMSO-PT ;
     OSO:containsSite OSO:CONDOR ;
     OSO:isLedByOrganization OSO:IPMA .
+
+OSO:Dyfamed_Mugobs a owl:NamedIndividual,
+        OSO:Platform ;
+    rdfs:label "DYFAMED MUGOBS"@el,
+        "DYFAMED MUGOBS"@en,
+        "DYFAMED MUGOBS"@es,
+        "DYFAMED MUGOBS"@fr,
+        "DYFAMED MUGOBS"@it,
+        "DYFAMED MUGOBS"@no,
+        "DYFAMED MUGOBS"@pt,
+        "DYFAMED MUGOBS"@ro ;
+    dcterms:spatial <http://dbpedia.org/resource/Ligurian_Sea>,
+        <http://dbpedia.org/resource/Mediterranean_Sea> ;
+    rdfs:seeAlso <http://vocab.nerc.ac.uk/collection/L06/current/11/> ;
+    skos:altLabel "DYFAMED Mugobs"@en,
+        "DYFAMED Mugobs"@fr ;
+    skos:closeMatch <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthscienceplatforms/c_172cedf2> ;
+    skos:definition "Marine observation platform deployed at the DYFAMED site in the northwestern Mediterranean Sea."@en,
+        "Plateforme d’observation marine déployée sur le site DYFAMED en Méditerranée nord-occidentale."@fr ;
+    skos:prefLabel "DYFAMED MUGOBS"@el,
+        "DYFAMED MUGOBS"@en,
+        "DYFAMED MUGOBS"@es,
+        "DYFAMED MUGOBS"@fr,
+        "DYFAMED MUGOBS"@it,
+        "DYFAMED MUGOBS"@no,
+        "DYFAMED MUGOBS"@pt,
+        "DYFAMED MUGOBS"@ro ;
+    OSO:dateFirstDeployment "2024-11-15"^^xsd:date ;
+    OSO:hasCountry OSO:France ;
+    OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/11/> .
+
+OSO:Dyfamed_ODAS a owl:NamedIndividual,
+        OSO:Ocean_Data_Acquisition_System,
+        OSO:Platform ;
+    rdfs:label "Πλωτήρας DYFAMED ODAS"@el,
+        "DYFAMED ODAS Buoy"@en,
+        "Boya ODAS DYFAMED"@es,
+        "Bouée ODAS DYFAMED"@fr,
+        "Boa ODAS DYFAMED"@it,
+        "DYFAMED ODAS-bøye"@no,
+        "Boia ODAS DYFAMED"@pt,
+        "Geamandură ODAS DYFAMED"@ro ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ocean_data_acquisition_system>,
+        <https://fr.wikipedia.org/wiki/Système_d’acquisition_de_données_océaniques>,
+        <https://pt.wikipedia.org/wiki/ODAS>,
+        <https://unesdoc.unesco.org/ark:/48223/pf0000023696>,
+        <https://www.obs-vlfr.fr/cd_rom_dmtt/sodyf_main.htm> ;
+    skos:altLabel "DYFAMED Buoy"@en,
+        "DYFAMED oceanographic buoy"@en,
+        "Bouée océanographique DYFAMED"@fr ;
+    skos:closeMatch <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthscienceplatforms/c_63600fe1> ;
+    skos:definition "The DYFAMED ODAS buoy is a specific oceanographic platform associated with the DYFAMED site and based on the Ocean Data Acquisition System (ODAS) concept."@en,
+        "La bouée ODAS DYFAMED est une plateforme océanographique spécifique associée au site DYFAMED et fondée sur le concept d’Ocean Data Acquisition System (ODAS)."@fr ;
+    skos:prefLabel "Πλωτήρας DYFAMED ODAS"@el,
+        "DYFAMED ODAS Buoy"@en,
+        "Boya ODAS DYFAMED"@es,
+        "Bouée ODAS DYFAMED"@fr,
+        "Boa ODAS DYFAMED"@it,
+        "DYFAMED ODAS-bøye"@no,
+        "Boia ODAS DYFAMED"@pt,
+        "Geamandură ODAS DYFAMED"@ro ;
+    OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> .
+
+OSO:Dyfamed_mooring a owl:NamedIndividual,
+        OSO:Platform ;
+    rdfs:label "Αγκυροβολημένη πλατφόρμα DYFAMED"@el,
+        "DYFAMED mooring"@en,
+        "Fondeo DYFAMED"@es,
+        "Mouillage DYFAMED"@fr,
+        "Ormeggio DYFAMED"@it,
+        "DYFAMED-fortøyning"@no,
+        "Fundeio DYFAMED"@pt,
+        "Sistem de ancorare DYFAMED"@ro ;
+    rdfs:seeAlso <https://www.emso-fr.org/fr/DYFAMED> ;
+    skos:altLabel "DYFAMED anchored platform"@en,
+        "DYFAMED oceanographic mooring"@en,
+        "Mouillage océanographique DYFAMED"@fr ;
+    skos:definition "An oceanographic mooring platform deployed at the DYFAMED site for long-term observations in the northwestern Mediterranean Sea."@en,
+        "Une plateforme de mouillage océanographique déployée sur le site DYFAMED pour des observations à long terme en Méditerranée nord-occidentale."@fr ;
+    skos:prefLabel "Αγκυροβολημένη πλατφόρμα DYFAMED"@el,
+        "DYFAMED mooring"@en,
+        "Fondeo DYFAMED"@es,
+        "Mouillage DYFAMED"@fr,
+        "Ormeggio DYFAMED"@it,
+        "DYFAMED-fortøyning"@no,
+        "Fundeio DYFAMED"@pt,
+        "Sistem de ancorare DYFAMED"@ro ;
+    OSO:dateFirstDeployment "1988-02-01"^^xsd:date ;
+    OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> .
 
 OSO:EMBRC-France a owl:NamedIndividual,
         OSO:ResearchInfrastructure ;
@@ -853,8 +940,8 @@ OSO:ANTARES a owl:NamedIndividual,
         "ANTARES"@no,
         "ANTARES"@pt,
         "ANTARES"@ro ;
-    OSO:containsPlatform OSO:IL07 ;
     OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:containsPlatform OSO:IL07 ;
     OSO:dateFirstDeployment "2014-01-01"^^xsd:date ;
     OSO:isTestSite false .
 
@@ -988,13 +1075,13 @@ ATLANTIC WHALE DEAL believes that by protecting whales, they're also making a po
         "Atlantic Whale Deal"@pt,
         "Atlantic Whale Deal"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/AtlanticWhaleDeal.png> ;
-    OSO:isLedByOrganization OSO:ARDITI ;
     OSO:hasCountry OSO:France,
         OSO:Ireland,
         OSO:Portugal,
         OSO:Spain ;
     OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/AtlanticWhaleDeal.png> ;
-    OSO:hasSpatialExtent OSO:AtlanticWhaleDeal_bbox .
+    OSO:hasSpatialExtent OSO:AtlanticWhaleDeal_bbox ;
+    OSO:isLedByOrganization OSO:ARDITI .
 
 OSO:Azores a owl:NamedIndividual,
         OSO:RegionalFacility ;
@@ -1059,7 +1146,7 @@ OSO:Azores_EMSO_membership a owl:NamedIndividual,
         "deltakelse av Azorene i EMSO"@no,
         "participação dos Açores no EMSO"@pt,
         "participarea Azorelor în EMSO"@ro ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Azores ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -1185,10 +1272,10 @@ OSO:BJS a owl:NamedIndividual,
         "BJS"@pt,
         "BJS"@ro ;
     foaf:name "Secondary Junction Box"@en ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:BJS_BathyBot,
         OSO:BJS_BathyDock,
         OSO:BJS_SeabedStation ;
-    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2020-01-01"^^xsd:date ;
     OSO:isTestSite false .
 
@@ -1326,7 +1413,7 @@ OSO:Balearic_Sea_EMSO_membership a owl:NamedIndividual,
         "deltakelse av Balearhavet i EMSO"@no,
         "participação do Mar Balear no EMSO"@pt,
         "participarea Mării Baleare în EMSO"@ro ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Balearic_Sea ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -1412,7 +1499,7 @@ OSO:Black_Sea_EMSO_membership a owl:NamedIndividual,
         "deltakelse av Svartehavet i EMSO"@no,
         "participação do Mar Negro no EMSO"@pt,
         "participarea Mării Negre în EMSO"@ro ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Black_Sea ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -1758,8 +1845,8 @@ OSO:Capelinhos a owl:NamedIndividual,
         "Capelinhos"@no,
         "Capelinhos"@pt,
         "Capelinhos"@ro ;
-    OSO:containsPlatform OSO:Capelinhos_AutonomousDevices ;
     OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:containsPlatform OSO:Capelinhos_AutonomousDevices ;
     OSO:isTestSite false .
 
 OSO:Carlos_SOUSA a schema1:Person,
@@ -1868,7 +1955,7 @@ OSO:Celtic_Seas_EMSO_membership a owl:NamedIndividual,
         "deltakelse av Celtic Seas i EMSO"@no,
         "participação dos Mares Celtas no EMSO"@pt,
         "participarea Celtic Seas în EMSO"@ro ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Celtic_Seas ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -2031,7 +2118,7 @@ OSO:Cretan_Sea_EMSO_membership a owl:NamedIndividual,
         "EMSO-medlemskap for Kretahavet"@no,
         "Participação do Mar de Creta no EMSO"@pt,
         "Participarea Mării Cretei în EMSO"@ro ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Cretan_Sea ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -2104,53 +2191,6 @@ OSO:DAS a owl:NamedIndividual,
         "DAS"@ro ;
     OSO:hasPrincipalInvestigator OSO:Martin_PATRIAT .
 
-OSO:DYFAMED a owl:NamedIndividual,
-        OSO:Site ;
-    rdfs:label "DYFAMED"@el,
-        "DYFAMED"@en,
-        "DYFAMED"@es,
-        "DYFAMED"@fr,
-        "DYFAMED"@it,
-        "DYFAMED"@no,
-        "DYFAMED"@pt,
-        "DYFAMED"@ro ;
-    dcterms:identifier "10.17882/43749" ;
-    schema1:sameAs <https://doi.org/10.17882/43749> ;
-    schema1:url <https://www.emso-fr.org/fr/DYFAMED> ;
-    rdfs:comment "DYFAMED: Dynamics of Atmospheric Fluxes in the Mediterranean"@en,
-        "DYFAMED : DYnamique des Flux Atmosphériques en MEDiterranée"@fr ;
-    rdfs:seeAlso <https://www.emso-fr.org/fr/DYFAMED>,
-        <https://www.seanoe.org/data/00326/43749/> ;
-    skos:altLabel "DYFAMED observatory"@en,
-        "DYFAMED site"@en,
-        "Observatoire DYFAMED"@fr,
-        "Site DYFAMED"@fr ;
-    skos:definition "A long-term open-ocean observation site in the northwestern Mediterranean Sea associated with EMSO-France and dedicated to atmospheric, biogeochemical and oceanographic monitoring."@en,
-        "Un site d’observation hauturière à long terme en Méditerranée nord-occidentale associé à EMSO-France et dédié au suivi atmosphérique, biogéochimique et océanographique."@fr ;
-    skos:notation "10.17882/43749" ;
-    skos:prefLabel "DYFAMED"@el,
-        "DYFAMED"@en,
-        "DYFAMED"@es,
-        "DYFAMED"@fr,
-        "DYFAMED"@it,
-        "DYFAMED"@no,
-        "DYFAMED"@pt,
-        "DYFAMED"@ro ;
-    adms:identifier [ a adms:Identifier ;
-            schema1:value "10.17882/43749" ;
-            skos:notation "10.17882/43749" ] ;
-    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
-    OSO:containsPlatform OSO:Dyfamed_Mugobs,
-        OSO:Dyfamed_ODAS,
-        OSO:Dyfamed_mooring ;
-    OSO:dateFirstDeployment "1988-02"^^xsd:gYearMonth ;
-    OSO:distanceFromLand 27.0 ;
-    OSO:hasCountry OSO:France ;
-    OSO:hasLocation OSO:French_riviera ;
-    OSO:hasSiteResponsible OSO:Laurent_COPPOLA ;
-    OSO:isTestSite false ;
-    OSO:maxWaterDepth 2300 .
-
 OSO:Dione a owl:NamedIndividual,
         OSO:Site ;
     rdfs:label "Dione"@el,
@@ -2203,95 +2243,6 @@ OSO:Dione_Seabed_Station a owl:NamedIndividual,
     OSO:hasCountry OSO:Italy ;
     OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/11/> ;
     OSO:hasPrincipalInvestigator OSO:Davide_EMBRIACO .
-
-OSO:Dyfamed_Mugobs a owl:NamedIndividual,
-        OSO:Platform ;
-    rdfs:label "DYFAMED MUGOBS"@el,
-        "DYFAMED MUGOBS"@en,
-        "DYFAMED MUGOBS"@es,
-        "DYFAMED MUGOBS"@fr,
-        "DYFAMED MUGOBS"@it,
-        "DYFAMED MUGOBS"@no,
-        "DYFAMED MUGOBS"@pt,
-        "DYFAMED MUGOBS"@ro ;
-    dcterms:spatial <http://dbpedia.org/resource/Ligurian_Sea>,
-        <http://dbpedia.org/resource/Mediterranean_Sea> ;
-    rdfs:seeAlso <http://vocab.nerc.ac.uk/collection/L06/current/11/> ;
-    skos:altLabel "DYFAMED Mugobs"@en,
-        "DYFAMED Mugobs"@fr ;
-    skos:closeMatch <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthscienceplatforms/c_172cedf2> ;
-    skos:definition "Marine observation platform deployed at the DYFAMED site in the northwestern Mediterranean Sea."@en,
-        "Plateforme d’observation marine déployée sur le site DYFAMED en Méditerranée nord-occidentale."@fr ;
-    skos:prefLabel "DYFAMED MUGOBS"@el,
-        "DYFAMED MUGOBS"@en,
-        "DYFAMED MUGOBS"@es,
-        "DYFAMED MUGOBS"@fr,
-        "DYFAMED MUGOBS"@it,
-        "DYFAMED MUGOBS"@no,
-        "DYFAMED MUGOBS"@pt,
-        "DYFAMED MUGOBS"@ro ;
-    OSO:dateFirstDeployment "2024-11-15"^^xsd:date ;
-    OSO:hasCountry OSO:France ;
-    OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/11/> .
-
-OSO:Dyfamed_ODAS a owl:NamedIndividual,
-        OSO:Ocean_Data_Acquisition_System,
-        OSO:Platform ;
-    rdfs:label "Πλωτήρας DYFAMED ODAS"@el,
-        "DYFAMED ODAS Buoy"@en,
-        "Boya ODAS DYFAMED"@es,
-        "Bouée ODAS DYFAMED"@fr,
-        "Boa ODAS DYFAMED"@it,
-        "DYFAMED ODAS-bøye"@no,
-        "Boia ODAS DYFAMED"@pt,
-        "Geamandură ODAS DYFAMED"@ro ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ocean_data_acquisition_system>,
-        <https://fr.wikipedia.org/wiki/Système_d’acquisition_de_données_océaniques>,
-        <https://pt.wikipedia.org/wiki/ODAS>,
-        <https://unesdoc.unesco.org/ark:/48223/pf0000023696>,
-        <https://www.obs-vlfr.fr/cd_rom_dmtt/sodyf_main.htm> ;
-    skos:altLabel "DYFAMED Buoy"@en,
-        "DYFAMED oceanographic buoy"@en,
-        "Bouée océanographique DYFAMED"@fr ;
-    skos:closeMatch <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthscienceplatforms/c_63600fe1> ;
-    skos:definition "The DYFAMED ODAS buoy is a specific oceanographic platform associated with the DYFAMED site and based on the Ocean Data Acquisition System (ODAS) concept."@en,
-        "La bouée ODAS DYFAMED est une plateforme océanographique spécifique associée au site DYFAMED et fondée sur le concept d’Ocean Data Acquisition System (ODAS)."@fr ;
-    skos:prefLabel "Πλωτήρας DYFAMED ODAS"@el,
-        "DYFAMED ODAS Buoy"@en,
-        "Boya ODAS DYFAMED"@es,
-        "Bouée ODAS DYFAMED"@fr,
-        "Boa ODAS DYFAMED"@it,
-        "DYFAMED ODAS-bøye"@no,
-        "Boia ODAS DYFAMED"@pt,
-        "Geamandură ODAS DYFAMED"@ro ;
-    OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> .
-
-OSO:Dyfamed_mooring a owl:NamedIndividual,
-        OSO:Platform ;
-    rdfs:label "Αγκυροβολημένη πλατφόρμα DYFAMED"@el,
-        "DYFAMED mooring"@en,
-        "Fondeo DYFAMED"@es,
-        "Mouillage DYFAMED"@fr,
-        "Ormeggio DYFAMED"@it,
-        "DYFAMED-fortøyning"@no,
-        "Fundeio DYFAMED"@pt,
-        "Sistem de ancorare DYFAMED"@ro ;
-    rdfs:seeAlso <https://www.emso-fr.org/fr/DYFAMED> ;
-    skos:altLabel "DYFAMED anchored platform"@en,
-        "DYFAMED oceanographic mooring"@en,
-        "Mouillage océanographique DYFAMED"@fr ;
-    skos:definition "An oceanographic mooring platform deployed at the DYFAMED site for long-term observations in the northwestern Mediterranean Sea."@en,
-        "Une plateforme de mouillage océanographique déployée sur le site DYFAMED pour des observations à long terme en Méditerranée nord-occidentale."@fr ;
-    skos:prefLabel "Αγκυροβολημένη πλατφόρμα DYFAMED"@el,
-        "DYFAMED mooring"@en,
-        "Fondeo DYFAMED"@es,
-        "Mouillage DYFAMED"@fr,
-        "Ormeggio DYFAMED"@it,
-        "DYFAMED-fortøyning"@no,
-        "Fundeio DYFAMED"@pt,
-        "Sistem de ancorare DYFAMED"@ro ;
-    OSO:dateFirstDeployment "1988-02-01"^^xsd:date ;
-    OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> .
 
 OSO:E1M3A a owl:NamedIndividual,
         OSO:Site ;
@@ -2595,36 +2546,6 @@ OSO:EMSO_DMSG a schema1:Organization,
         "interopérabilité"@fr ;
     OSO:hasGroupLeader OSO:Enoc_MARTINEZ .
 
-OSO:EMSO_LIGURE_OUEST a owl:NamedIndividual,
-        OSO:SeriesOfOceanographicCampaigns ;
-    rdfs:label "EMSO LIGURE OUEST"@en,
-        "EMSO LIGURE OUEST"@fr ;
-    dcterms:description "Σειρά ωκεανογραφικών αποστολών που σχετίζονται με τον σταθμό παρατήρησης EMSO Ligure Ouest στη Λιγουρική Θάλασσα."@el,
-        "Series of oceanographic campaigns associated with the EMSO Ligure Ouest observatory site in the Ligurian Sea."@en,
-        "Serie de campañas oceanográficas asociadas al sitio de observación EMSO Ligure Ouest en el mar de Liguria."@es,
-        "Série de campagnes océanographiques associées au site EMSO Ligure Ouest en mer Ligure."@fr,
-        "Serie di campagne oceanografiche associate al sito osservativo EMSO Ligure Ouest nel Mar Ligure."@it,
-        "Serie av oseanografiske kampanjer knyttet til observasjonsstedet EMSO Ligure Ouest i Liguriahavet."@no,
-        "Série de campanhas oceanográficas associadas ao sítio de observação EMSO Ligure Ouest no Mar da Ligúria."@pt,
-        "Serie de campanii oceanografice asociate sitului de observare EMSO Ligure Ouest din Marea Ligurică."@ro ;
-    dcterms:identifier <https://doi.org/10.18142/295> ;
-    dcterms:subject OSO:EMSO_Ligure_Ouest,
-        OSO:OceanographicCampaign ;
-    dcterms:title "EMSO LIGURE OUEST"@en,
-        "EMSO LIGURE OUEST"@fr ;
-    schema1:url <https://campagnes.flotteoceanographique.fr/series/295/fr/> ;
-    rdfs:seeAlso <https://campagnes.flotteoceanographique.fr/series/295/fr/>,
-        <https://doi.org/10.18142/295>,
-        <https://www.emso-fr.org/fr/EMSO-France/Les-sites/EMSO-Ligure-Ouest> ;
-    skos:altLabel "EMSO Ligurian Sea campaigns"@en,
-        "Campagnes EMSO Mer Ligure Ouest"@fr ;
-    skos:prefLabel "EMSO LIGURE OUEST"@en,
-        "EMSO LIGURE OUEST"@fr ;
-    adms:identifier [ a adms:Identifier ;
-            dcterms:creator "Flotte Océanographique Française" ;
-            skos:notation "10.18142/295" ] ;
-    prov:wasAssociatedWith OSO:EMSO_France .
-
 OSO:EMSO_SA a owl:NamedIndividual,
         prov:Activity,
         OSO:OceanographicCampaign ;
@@ -2828,9 +2749,9 @@ OSO:EUXINUS a schema1:Project,
         "EUXINUS"@fr,
         "EUXINUS"@ro ;
     prov:wasAssociatedWith OSO:GeoEcoMar ;
-    OSO:isLedByOrganization OSO:GeoEcoMar ;
     OSO:hasCountry OSO:Romania ;
-    OSO:hasLocation OSO:Black_Sea .
+    OSO:hasLocation OSO:Black_Sea ;
+    OSO:isLedByOrganization OSO:GeoEcoMar .
 
 OSO:EarthPortalLogo a schema1:ImageObject ;
     rdfs:label "Λογότυπο EarthPortal"@el,
@@ -3573,7 +3494,7 @@ OSO:Hellenic_Arc_EMSO_membership a owl:NamedIndividual,
     skos:prefLabel "Συμμετοχή του Ελληνικού Τόξου στο EMSO"@el,
         "Hellenic Arc EMSO membership"@en,
         "Adhésion de Hellenic Arc à EMSO"@fr ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Hellenic_Arc ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -3993,7 +3914,7 @@ OSO:Iberian_Margin_EMSO_membership a owl:NamedIndividual,
     skos:prefLabel "Iberian Margin EMSO membership"@en,
         "Adhésion de la marge ibérique à EMSO"@fr,
         "Participação da Margem Ibérica no EMSO"@pt ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Iberian_Margin ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -4135,7 +4056,7 @@ OSO:Iroise_EMSO_membership a owl:NamedIndividual,
         "Iroise-deltakelse i EMSO"@no,
         "participação da Iroise no EMSO"@pt,
         "participarea Iroise în EMSO"@ro ;
-    prov:startedAtTime "2016-09-29T00:00:00Z"^^xsd:dateTime ;
+    prov:startedAtTime "2016-09-29T00:00:00+00:00"^^xsd:dateTime ;
     OSO:isERICMembershipOf OSO:Iroise ;
     OSO:membershipInERIC OSO:EMSO .
 
@@ -4509,8 +4430,6 @@ OSO:LO a owl:NamedIndividual,
         "LO"@no,
         "LO"@pt,
         "LO"@ro ;
-    OSO:hasSubsite OSO:ANTARES,
-        OSO:BJS ;
     OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:ALBATROSS,
         OSO:MII ;
@@ -4520,6 +4439,8 @@ OSO:LO a owl:NamedIndividual,
     OSO:hasLocation OSO:French_riviera ;
     OSO:hasSiteResponsible OSO:Dominique_LEFEVRE,
         OSO:Séverine_MARTINI ;
+    OSO:hasSubsite OSO:ANTARES,
+        OSO:BJS ;
     OSO:isTestSite false ;
     OSO:maxWaterDepth 2475 .
 
@@ -4561,6 +4482,33 @@ OSO:LUCKYDIVMIC a owl:NamedIndividual,
         "LUCKYDIVMIC"@pt,
         "LUCKYDIVMIC"@ro .
 
+OSO:Laurent_COPPOLA a schema1:Person,
+        owl:NamedIndividual ;
+    rdfs:label "Laurent COPPOLA"@el,
+        "Laurent COPPOLA"@en,
+        "Laurent COPPOLA"@es,
+        "Laurent COPPOLA"@fr,
+        "Laurent COPPOLA"@it,
+        "Laurent COPPOLA"@no,
+        "Laurent COPPOLA"@pt,
+        "Laurent COPPOLA"@ro ;
+    schema1:name "Laurent Coppola"@en,
+        "Laurent Coppola"@fr ;
+    skos:definition "Researcher involved in marine biogeochemistry, ocean observation and Mediterranean marine research infrastructures."@en,
+        "Investigador implicado en la biogeoquímica marina, la observación oceánica y las infraestructuras marinas de investigación en el Mediterráneo."@es,
+        "Chercheur impliqué dans la biogéochimie marine, l’observation océanique et les infrastructures marines de recherche en Méditerranée."@fr,
+        "Ricercatore coinvolto nella biogeochimica marina, nell’osservazione oceanica e nelle infrastrutture marine di ricerca nel Mediterraneo."@it ;
+    skos:exactMatch <https://orcid.org/0000-0003-0473-1129> ;
+    skos:prefLabel "Laurent COPPOLA"@el,
+        "Laurent COPPOLA"@en,
+        "Laurent COPPOLA"@es,
+        "Laurent COPPOLA"@fr,
+        "Laurent COPPOLA"@it,
+        "Laurent COPPOLA"@no,
+        "Laurent COPPOLA"@pt,
+        "Laurent COPPOLA"@ro ;
+    OSO:hasORCID <https://orcid.org/0000-0003-0473-1129> .
+
 OSO:LavaLake a owl:NamedIndividual,
         OSO:Subsite ;
     rdfs:label "Lava Lake"@el,
@@ -4593,9 +4541,9 @@ OSO:LavaLake a owl:NamedIndividual,
         "Lava Lake"@no,
         "Lava Lake"@pt,
         "Lava Lake"@ro ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:SeaMoNWest,
         OSO:WestLake ;
-    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:isTestSite false .
 
 OSO:Ligurian_Sea a owl:NamedIndividual,
@@ -4725,7 +4673,7 @@ OSO:Lion_mooring a owl:NamedIndividual,
         "Lion mooring"@pt,
         "Lion mooring"@ro ;
     OSO:hasPlatformCategory <http://vocab.nerc.ac.uk/collection/L06/current/48/> ;
-    OSO:isAssociatedWithNetwork OSO:EMSO-France.
+    OSO:isAssociatedWithNetwork OSO:EMSO-France .
 
 OSO:Lucky_Strike a owl:NamedIndividual,
         OSO:Site ;
@@ -4765,6 +4713,12 @@ OSO:Lucky_Strike a owl:NamedIndividual,
         "Lucky Strike"@no,
         "Lucky Strike"@pt,
         "Lucky Strike"@ro ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:containsPlatform OSO:Lucky_Strike_AutonomousDevices,
+        OSO:Lucky_Strike_EGIM,
+        OSO:Lucky_Strike_Hydrographic_Mooring ;
+    OSO:hasSiteResponsible OSO:Laurent_GAUTIER,
+        OSO:Thibault_BARREYRE ;
     OSO:hasSubsite OSO:Capelinhos,
         OSO:Cimendef,
         OSO:Crystal,
@@ -4780,12 +4734,6 @@ OSO:Lucky_Strike a owl:NamedIndividual,
         OSO:TourEiffel,
         OSO:WhiteCastle,
         OSO:Y3 ;
-    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
-    OSO:containsPlatform OSO:Lucky_Strike_AutonomousDevices,
-        OSO:Lucky_Strike_EGIM,
-        OSO:Lucky_Strike_Hydrographic_Mooring ;
-    OSO:hasSiteResponsible OSO:Laurent_GAUTIER,
-        OSO:Thibault_BARREYRE ;
     OSO:isTestSite false .
 
 OSO:Lucky_Strike_AutonomousDevices a owl:NamedIndividual,
@@ -4970,9 +4918,9 @@ OSO:MARLEY a owl:NamedIndividual,
         "MARLEY"@no,
         "MARLEY"@pt,
         "MARLEY"@ro ;
+    OSO:isAssociatedWithNetwork OSO:EMSO-France ;
     OSO:isLinkedToCampaign OSO:ChEReef_2022 ;
     OSO:isLinkedToCampaignSeries OSO:CHEREEF_OBS ;
-    OSO:isAssociatedWithNetwork OSO:EMSO-France;
     OSO:maxWaterDepth 780 .
 
 OSO:MARMESONET a owl:NamedIndividual,
@@ -5318,9 +5266,9 @@ OSO:Marha a schema1:Project,
         "LIFE Marha"@pt,
         "LIFE Marha"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> ;
-    OSO:isLedByOrganization OSO:OFB ;
     OSO:hasCountry OSO:France ;
-    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> .
+    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/life_marha.jpg> ;
+    OSO:isLedByOrganization OSO:OFB .
 
 OSO:Marine_Institute a owl:NamedIndividual,
         foaf:Organization,
@@ -5868,8 +5816,8 @@ OSO:MontSegur a owl:NamedIndividual,
         "Mont Segur"@no,
         "Mont Segur"@pt,
         "Mont Segur"@ro ;
-    OSO:containsPlatform OSO:MontSegur_AutonomousDevices ;
     OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:containsPlatform OSO:MontSegur_AutonomousDevices ;
     OSO:hasCountry OSO:France ;
     OSO:isTestSite false .
 
@@ -7154,12 +7102,12 @@ OSO:REVOSIMA a schema1:Project,
         "REVOSIMA"@pt,
         "REVOSIMA"@ro ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> ;
+    OSO:hasCountry OSO:France ;
+    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> ;
     OSO:isLedByOrganization OSO:BRGM,
         OSO:CNRS,
         OSO:IPGP,
-        OSO:Ifremer ;
-    OSO:hasCountry OSO:France ;
-    OSO:hasLogo <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/images/revosima.png> .
+        OSO:Ifremer .
 
 OSO:SN-4 a owl:NamedIndividual,
         OSO:Site ;
@@ -7893,8 +7841,8 @@ OSO:Surface a owl:NamedIndividual,
         "Surface"@no,
         "Surface"@pt,
         "Surface"@ro ;
-    OSO:containsPlatform OSO:Lucky_Strike_Surface_BOREL ;
     OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:containsPlatform OSO:Lucky_Strike_Surface_BOREL ;
     OSO:dateEndDeployment "2023-07-15"^^xsd:date ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
     OSO:hasCountry OSO:Portugal ;
@@ -7923,10 +7871,10 @@ OSO:Svinoy a owl:NamedIndividual,
         "Svinøy"@no,
         "Svinoy"@pt,
         "Svinoy"@ro ;
-    OSO:hasSubsite OSO:Svinoy_North,
-        OSO:Svinoy_South ;
     OSO:hasCountry OSO:Norway ;
     OSO:hasSiteResponsible OSO:Laura_DE_STEUR ;
+    OSO:hasSubsite OSO:Svinoy_North,
+        OSO:Svinoy_South ;
     OSO:isTestSite false .
 
 OSO:Svinoy_North a owl:NamedIndividual,
@@ -8110,9 +8058,9 @@ OSO:TourEiffel a owl:NamedIndividual,
         "Tour Eiffel"@no,
         "Tour Eiffel"@pt,
         "Tour Eiffel"@ro ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:containsPlatform OSO:SeaMoNEast,
         OSO:TourEiffel_AutonomousDevices ;
-    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
     OSO:dateFirstDeployment "2010-10-01"^^xsd:date ;
     OSO:hasCountry OSO:Portugal ;
     OSO:isTestSite false .
@@ -8352,13 +8300,13 @@ OSO:Western_Ionian_Sea_EMSO_membership a owl:NamedIndividual,
 OSO:Western_Mediterranean_Sea a owl:NamedIndividual,
         OSO:RegionalFacility ;
     rdfs:label "Δυτική Μεσόγειος Θάλασσα"@el,
-               "Western Mediterranean Sea"@en,
-               "Mar Mediterráneo occidental"@es,
-               "Mer Méditerranée occidentale"@fr,
-               "Mar Mediterraneo occidentale"@it,
-               "Vestlige Middelhavet"@no,
-               "Mar Mediterrâneo Ocidental"@pt,
-               "Marea Mediterană de Vest"@ro ;
+        "Western Mediterranean Sea"@en,
+        "Mar Mediterráneo occidental"@es,
+        "Mer Méditerranée occidentale"@fr,
+        "Mar Mediterraneo occidentale"@it,
+        "Vestlige Middelhavet"@no,
+        "Mar Mediterrâneo Ocidental"@pt,
+        "Marea Mediterană de Vest"@ro ;
     dcterms:spatial <http://dbpedia.org/resource/Ligurian_Sea>,
         <http://dbpedia.org/resource/Mediterranean_Sea> ;
     rdfs:comment "Ο περιφερειακός κόμβος 'Western Mediterranean Sea' αντιστοιχεί στη Λιγουρική Θάλασσα, όπως ορίζεται από τον Διεθνή Υδρογραφικό Οργανισμό."@el,
@@ -9283,6 +9231,34 @@ OSO:European_Commission a owl:NamedIndividual,
     foaf:depiction OSO:EuropeanCommissionLogo ;
     OSO:hasROR <https://ror.org/00k4n6c32> .
 
+OSO:French_riviera a schema1:Place,
+        owl:NamedIndividual ;
+    rdfs:label "Γαλλική Ριβιέρα"@el,
+        "French Riviera"@en,
+        "Riviera francesa"@es,
+        "Côte d’Azur"@fr,
+        "Riviera francese"@it,
+        "Franske riviera"@no,
+        "Riviera Francesa"@pt,
+        "Riviera Franceză"@ro ;
+    skos:altLabel "Côte d'Azur"@en,
+        "French Mediterranean coast"@en,
+        "Riviera française"@fr ;
+    skos:definition "Mediterranean coastal region of southeastern France associated with marine observation activities and EMSO-related infrastructures."@en,
+        "Région côtière méditerranéenne du sud-est de la France associée aux activités d’observation marine et aux infrastructures liées à EMSO."@fr,
+        "Regione costiera mediterranea del sud-est della Francia associata alle attività di osservazione marina e alle infrastrutture legate a EMSO."@it ;
+    skos:exactMatch <http://dbpedia.org/resource/French_Riviera>,
+        <https://www.wikidata.org/entity/Q182822> ;
+    skos:prefLabel "Γαλλική Ριβιέρα"@el,
+        "French Riviera"@en,
+        "Riviera francesa"@es,
+        "Côte d’Azur"@fr,
+        "Riviera francese"@it,
+        "Franske riviera"@no,
+        "Riviera Francesa"@pt,
+        "Riviera Franceză"@ro ;
+    OSO:hasCountry OSO:France .
+
 OSO:George_PETIHAKIS a schema1:Person,
         owl:NamedIndividual ;
     rdfs:label "George PETIHAKIS"@el,
@@ -9535,33 +9511,6 @@ OSO:Lampaul_Canyon a owl:NamedIndividual,
         "Lampaul Canyon"@ro ;
     OSO:containsPlatform OSO:MARLEY ;
     OSO:isTestSite false .
-
-OSO:Laurent_COPPOLA a schema1:Person,
-        owl:NamedIndividual ;
-    rdfs:label "Laurent COPPOLA"@el,
-        "Laurent COPPOLA"@en,
-        "Laurent COPPOLA"@es,
-        "Laurent COPPOLA"@fr,
-        "Laurent COPPOLA"@it,
-        "Laurent COPPOLA"@no,
-        "Laurent COPPOLA"@pt,
-        "Laurent COPPOLA"@ro ;
-    schema1:name "Laurent Coppola"@en,
-        "Laurent Coppola"@fr ;
-    skos:definition "Researcher involved in marine biogeochemistry, ocean observation and Mediterranean marine research infrastructures."@en,
-        "Investigador implicado en la biogeoquímica marina, la observación oceánica y las infraestructuras marinas de investigación en el Mediterráneo."@es,
-        "Chercheur impliqué dans la biogéochimie marine, l’observation océanique et les infrastructures marines de recherche en Méditerranée."@fr,
-        "Ricercatore coinvolto nella biogeochimica marina, nell’osservazione oceanica e nelle infrastrutture marine di ricerca nel Mediterraneo."@it ;
-    skos:exactMatch <https://orcid.org/0000-0003-0473-1129> ;
-    skos:prefLabel "Laurent COPPOLA"@el,
-        "Laurent COPPOLA"@en,
-        "Laurent COPPOLA"@es,
-        "Laurent COPPOLA"@fr,
-        "Laurent COPPOLA"@it,
-        "Laurent COPPOLA"@no,
-        "Laurent COPPOLA"@pt,
-        "Laurent COPPOLA"@ro ;
-    OSO:hasORCID <https://orcid.org/0000-0003-0473-1129> .
 
 OSO:Leonidas_PERIVOLIOTIS a schema1:Person,
         owl:NamedIndividual ;
@@ -10552,34 +10501,6 @@ OSO:DataTerra a owl:NamedIndividual ;
         "système Terre"@fr ;
     foaf:depiction OSO:DataTerraLogo ;
     OSO:hasROR <https://ror.org/0518tra10> .
-
-OSO:French_riviera a schema1:Place,
-        owl:NamedIndividual ;
-    rdfs:label "Γαλλική Ριβιέρα"@el,
-        "French Riviera"@en,
-        "Riviera francesa"@es,
-        "Côte d’Azur"@fr,
-        "Riviera francese"@it,
-        "Franske riviera"@no,
-        "Riviera Francesa"@pt,
-        "Riviera Franceză"@ro ;
-    skos:altLabel "Côte d'Azur"@en,
-        "French Mediterranean coast"@en,
-        "Riviera française"@fr ;
-    skos:definition "Mediterranean coastal region of southeastern France associated with marine observation activities and EMSO-related infrastructures."@en,
-        "Région côtière méditerranéenne du sud-est de la France associée aux activités d’observation marine et aux infrastructures liées à EMSO."@fr,
-        "Regione costiera mediterranea del sud-est della Francia associata alle attività di osservazione marina e alle infrastrutture legate a EMSO."@it ;
-    skos:exactMatch <http://dbpedia.org/resource/French_Riviera>,
-        <https://www.wikidata.org/entity/Q182822> ;
-    skos:prefLabel "Γαλλική Ριβιέρα"@el,
-        "French Riviera"@en,
-        "Riviera francesa"@es,
-        "Côte d’Azur"@fr,
-        "Riviera francese"@it,
-        "Franske riviera"@no,
-        "Riviera Francesa"@pt,
-        "Riviera Franceză"@ro ;
-    OSO:hasCountry OSO:France .
 
 OSO:GeoEcoMar a owl:NamedIndividual,
         foaf:Organization,
@@ -12150,9 +12071,4 @@ OSO:France a <http://dbpedia.org/ontology/Country>,
         "Frankrike"@no,
         "França"@pt,
         "Franța"@ro .
-
-[] a vcard:Kind ;
-    vcard:fn "EMSO Data Management Service Group" ;
-    vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
-    vcard:hasOrganizationName "EMSO ERIC" .
 
