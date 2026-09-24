@@ -1,0 +1,14 @@
+PREFIX OSO: <https://w3id.org/earthsemantics/OSO#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Number of core observatory entities lacking an English label (must be 0).
+SELECT ?entity (COUNT(?entity) AS ?violations)
+WHERE {
+  ?entity a ?type .
+  VALUES ?type { OSO:RegionalFacility OSO:Site OSO:Platform }
+  FILTER NOT EXISTS {
+    ?entity rdfs:label ?label .
+    FILTER (lang(?label) = "en")
+  }
+}
+GROUP BY ?entity

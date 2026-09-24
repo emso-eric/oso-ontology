@@ -1,0 +1,41 @@
+name: Regenerate documentation artefacts
+
+# Regenerates docs/ontology.{ttl,nt,owl,jsonld} from the authoritative
+# OSO.ttl. These artefacts are published through GitHub Pages and consumed
+# by external catalogues (LOV, FOOPS); they must always mirror the source.
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    name: Regenerate docs/ontology.*
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Regenerate docs artefacts
+        run: python maintenance/generate_docs.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ontology.ttl docs/ontology.nt docs/ontology.owl docs/ontology.jsonld
+          if git diff --cached --quiet; then
+            echo "docs artefacts already up to date"
+          else
+            git commit -m "Regenerate docs/ontology.* from OSO.ttl"
+            git push
+          fi

@@ -1,0 +1,8 @@
+id: CQ-OSO-003
+question: "Does every OSO class and property carry an English rdfs:label?"
+query_file: queries/CQ-OSO-003.rq
+expected_result: expected/CQ-OSO-003.json
+cases:
+  - class_without_en_label
+  - property_without_en_label
+owner_role: ontology_maintainer

@@ -1,0 +1,8 @@
+PREFIX OSO: <https://w3id.org/earthsemantics/OSO#>
+
+# Regional Facilities containing no Site (must be none).
+SELECT ?facility
+WHERE {
+  ?facility a OSO:RegionalFacility .
+  FILTER NOT EXISTS { ?facility OSO:containsSite ?site }
+}

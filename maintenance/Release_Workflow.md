@@ -40,7 +40,7 @@ flowchart TD
 |------|---------|----------------|--------------|
 | 1 | Ontology development | Manual | Manual |
 | 2 | Release preparation | Manual | Automated |
-| 3 | Documentation generation | Semi-manual | Automated |
+| 3 | Documentation generation | Semi-manual (serialisations automated) | Automated |
 | 4 | Distribution package generation | Semi-manual | Automated |
 | 5 | GitHub release | Manual | Automated |
 | 6 | External publication | Manual | Partially automated |
@@ -190,13 +190,26 @@ Generate and publish the human-readable ontology documentation.
 
 | Tool | Role |
 |---|---|
-| Widoco | Documentation generation |
+| Widoco | HTML documentation generation |
 | Java | Widoco runtime |
+| `maintenance/generate_docs.py` | RDF serialisations published in `docs/` |
 | Git | Publication |
 
 ### Activities
 
-- Generate documentation with Widoco.
+- Generate documentation with Widoco (HTML pages, diagrams, WebVOWL).
+- Regenerate the published RDF serialisations with
+  `python maintenance/generate_docs.py`.
+
+> **Important**
+>
+> Widoco serialises `docs/ontology.*` after loading the `owl:imports`
+> closure, which inlines imported vocabularies and can rewrite the
+> `owl:Ontology` header with an imported IRI (observed: prov-o in 1.1.0,
+> wgs84_pos in 1.2.0). The serialisations published in `docs/` must
+> therefore be produced by `generate_docs.py`, not taken from the Widoco
+> output. `generate_docs.py --check` and CI enforce this invariant.
+
 - Verify generated pages, diagrams and WebVOWL.
 - Publish `docs/` to GitHub Pages.
 
@@ -211,6 +224,7 @@ Verify generated resources, links and published documentation.
 | Widoco execution | ✅ High |
 | Publication | ✅ High |
 | Link checking | ✅ High |
+| Docs serialisations | ✅ Automated (`generate_docs.py` + CI) |
 
 ## Phase 4 – Distribution Package Generation
 
