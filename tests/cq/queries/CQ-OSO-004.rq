@@ -1,0 +1,9 @@
+PREFIX OSO: <https://w3id.org/earthsemantics/OSO#>
+
+# Platforms not referenced by any containment property (must be none).
+SELECT ?platform
+WHERE {
+  ?platform a OSO:Platform .
+  FILTER NOT EXISTS { ?parent OSO:containsPlatform ?platform }
+  FILTER NOT EXISTS { ?parent OSO:containsSubPlatform ?platform }
+}

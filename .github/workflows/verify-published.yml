@@ -1,0 +1,26 @@
+name: Verify published ontology artefacts
+
+# End-to-end check of what GitHub Pages actually serves. Runs after every
+# Pages build: if docs/ontology.* ever drifts from OSO.ttl again (e.g. a
+# Widoco-generated serialisation is committed by mistake), this fails on
+# the deployed site, not just in the repository.
+on:
+  page_build:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Check live artefacts on GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Verify published serialisations
+        run: python maintenance/verify_published.py

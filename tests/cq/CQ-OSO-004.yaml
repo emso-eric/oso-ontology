@@ -1,0 +1,7 @@
+id: CQ-OSO-004
+question: "Which platforms are not attached to any Site or SubPlatform? (structural orphan check)"
+query_file: queries/CQ-OSO-004.rq
+expected_result: expected/CQ-OSO-004.json
+cases:
+  - platform_without_parent
+owner_role: data_steward

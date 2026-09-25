@@ -1,0 +1,7 @@
+id: CQ-OSO-001
+question: "Do all core observatory entities (RegionalFacility, Site, Platform) carry an English rdfs:label?"
+query_file: queries/CQ-OSO-001.rq
+expected_result: expected/CQ-OSO-001.json
+cases:
+  - entities_missing_en_label
+owner_role: ontology_maintainer

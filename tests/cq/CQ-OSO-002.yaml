@@ -1,0 +1,7 @@
+id: CQ-OSO-002
+question: "Does every Regional Facility contain at least one Site?"
+query_file: queries/CQ-OSO-002.rq
+expected_result: expected/CQ-OSO-002.json
+cases:
+  - regional_facility_without_site
+owner_role: data_steward

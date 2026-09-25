@@ -1,0 +1,85 @@
+name: Validate OSO ontology
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Syntax, identity and consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Validate ontology and artefacts
+        run: python maintenance/validate_ontology.py
+
+      - name: Check published docs artefacts
+        run: python maintenance/generate_docs.py --check
+
+      - name: Run competency question tests
+        run: python maintenance/run_cq_tests.py
+
+  shacl-report:
+    name: SHACL report (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Validate instances against OSO SHACL profile
+        run: |
+          mkdir -p reports
+          pyshacl -s OSO-shacl.ttl -f turtle OSO-instances.ttl \
+            > reports/shacl-report.ttl || true
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: shacl-report
+          path: reports/
+          if-no-files-found: ignore
+
+  robot-report:
+    name: ROBOT report (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Download ROBOT
+        run: |
+          curl -sSL -o robot.jar \
+            https://github.com/ontodev/robot/releases/latest/download/robot.jar
+
+      - name: Run ROBOT report
+        run: |
+          mkdir -p reports
+          java -jar robot.jar report \
+            --input OSO.ttl \
+            --output reports/robot-report.tsv || true
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: robot-report
+          path: reports/
+          if-no-files-found: ignore

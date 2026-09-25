@@ -16,6 +16,7 @@
 @prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema1: <http://schema.org/> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
@@ -29,19 +30,467 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix void: <http://rdfs.org/ns/void#> .
-@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/earthsemantics/OSO> a owl:Ontology ;
+    rdfs:label "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"@el,
+        "Observatories of the Seas Ontology (OSO)"@en,
+        "Ontología de los observatorios marinos (OSO)"@es,
+        "Ontologie des observatoires marins (OSO)"@fr,
+        "Ontologia degli osservatori marini (OSO)"@it,
+        "Ontologi for marine observatorier (OSO)"@no,
+        "Ontologia dos observatórios marinhos (OSO)"@pt,
+        "Ontologia observatoarelor marine (OSO)"@ro ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    cc:morePermissions <https://github.com/emso-eric/oso-ontology/blob/main/LICENSE> ;
+    cc:useGuidelines <https://emso-eric.github.io/oso-ontology/> ;
+    door:isAlignedTo <http://sweetontology.net/sweetAll>,
+        <http://vocab.nerc.ac.uk/>,
+        <https://earthportal.eu/ontologies/ARG>,
+        <https://w3id.org/cerif/vocab#> ;
+    door:ontologyRelatedTo sweetHumanResearch:,
+        sweetRealmOcean:,
+        sweetRealmOceanFeature:,
+        sweetRealmOceanFloor:,
+        <https://earthportal.eu/ontologies/EASYDATA_THEMES>,
+        <https://terra-vocabulary.org/ncl/DataTerraRepositoryFairIncubator/_InfraRecherche> ;
+    omv:acronym "OSO" ;
+    omv:creationDate "2025-04-04"^^xsd:date ;
+    omv:description "Οντολογία που περιγράφει τα θαλάσσια παρατηρητήρια (περιφερειακές υποδομές, τοποθεσίες, πλατφόρμες) για την υποστήριξη της διαχείρισης δεδομένων FAIR και της διαλειτουργικότητας, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
+        "Ontology describing marine observatories (Regional Facilities, Sites, Platforms) to support FAIR data management and interoperability, particularly in the EMSO ERIC context."@en,
+        "Ontología que describe los observatorios marinos (infraestructuras regionales, sitios, plataformas) para apoyar la gestión FAIR de datos y la interoperabilidad, especialmente en el contexto de EMSO ERIC."@es,
+        "Ontologie décrivant les observatoires marins (infrastructures régionales, sites, plateformes) pour soutenir la gestion FAIR des données et l’interopérabilité, notamment dans le cadre d’EMSO ERIC."@fr,
+        "Ontologia che descrive gli osservatori marini (infrastrutture regionali, siti, piattaforme) per supportare la gestione FAIR dei dati e l’interoperabilità, in particolare nel contesto EMSO ERIC."@it,
+        "Ontologi som beskriver marine observatorier (regionale fasiliteter, steder, plattformer) for å støtte FAIR datastyring og interoperabilitet, spesielt i EMSO ERIC-konteksten."@no,
+        "Ontologia que descreve os observatórios marinhos (infraestruturas regionais, locais, plataformas) para apoiar a gestão FAIR de dados e a interoperabilidade, especialmente no contexto do EMSO ERIC."@pt,
+        "Ontologia care descrie observatoarele marine (facilități regionale, situri, platforme) pentru a susține gestionarea FAIR a datelor și interoperabilitatea, în special în contextul EMSO ERIC."@ro ;
+    omv:designedForOntologyTask omv:AnnotationTask,
+        omv:IndexingTask,
+        omv:IntegrationTask,
+        omv:QueryFormulationTask ;
+    omv:documentation <https://emso-eric.github.io/oso-ontology/>,
+        <https://github.com/emso-eric/oso-ontology> ;
+    omv:endorsedBy OSO:EMSO_DMSG ;
+    omv:hasDomain <https://data.earthportal.eu/categories/CLIMATE>,
+        <https://data.earthportal.eu/categories/EARTH>,
+        <https://data.earthportal.eu/categories/ENV>,
+        "Θαλάσσιες ερευνητικές υποδομές"@el,
+        "Marine Research Infrastructures"@en,
+        "Infraestructuras de investigación marina"@es,
+        "Infrastructures de recherche marine"@fr,
+        "Infrastrutture di ricerca marina"@it,
+        "Marine forskningsinfrastrukturer"@no,
+        "Infraestruturas de investigação marinha"@pt,
+        "Infrastructuri de cercetare marină"@ro ;
+    omv:hasFormalityLevel <http://w3id.org/nkos/nkostype#ontology> ;
+    omv:hasOntologyLanguage "OWL" ;
+    omv:hasOntologyName "Οντολογία των θαλάσσιων παρατηρητηρίων (OSO)"@el,
+        "Observatories of the Seas Ontology (OSO)"@en,
+        "Ontología de los observatorios marinos (OSO)"@es,
+        "Ontologie des observatoires marins (OSO)"@fr,
+        "Ontologia degli osservatori marini (OSO)"@it,
+        "Ontologi for marine observatorier (OSO)"@no,
+        "Ontologia dos observatórios marinhos (OSO)"@pt,
+        "Ontologia observatoarelor marine (OSO)"@ro ;
+    omv:hasOntologySyntax <http://www.w3.org/ns/formats/Turtle> ;
+    omv:hasOntologyType "Application ontology" ;
+    omv:keywords "θαλάσσια παρατηρητήρια, δεδομένα FAIR, EMSO, ερευνητικές υποδομές, οντολογία, υποβρύχια παρατηρητήρια"@el,
+        "marine observatories, FAIR data, EMSO, research infrastructures, ontology, underwater observatories"@en,
+        "observatorios marinos, datos FAIR, EMSO, infraestructuras de investigación, ontología, observatorios submarinos"@es,
+        "observatoires marins, données FAIR, EMSO, infrastructures de recherche, ontologie, observatoires sous-marins"@fr,
+        "osservatori marini, dati FAIR, EMSO, infrastrutture di ricerca, ontologia, osservatori sottomarini"@it,
+        "marine observatorier, FAIR-data, EMSO, forskningsinfrastrukturer, ontologi, undervannsobservatorier"@no,
+        "observatórios marinhos, dados FAIR, EMSO, infraestruturas de investigação, ontologia, observatórios subaquáticos"@pt,
+        "observatoare marine, date FAIR, EMSO, infrastructuri de cercetare, ontologie, observatoare subacvatice"@ro ;
+    omv:name "Οντολογία θαλάσσιων παρατηρητηρίων"@el,
+        "Observatories of the Seas Ontology"@en,
+        "Ontología de los observatorios marinos"@es,
+        "Ontologie des observatoires marins"@fr,
+        "Ontologia degli osservatori marini"@it,
+        "Ontologi for marine observatorier"@no,
+        "Ontologia dos observatórios marinhos"@pt,
+        "Ontologia observatoarelor marine"@ro ;
+    omv:naturalLanguage "el",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "no",
+        "pt",
+        "ro" ;
+    omv:numberOfAxioms 24767 ;
+    omv:numberOfClasses 84 ;
+    omv:numberOfIndividuals 761 ;
+    omv:numberOfProperties 172 ;
+    omv:ontologyPurpose "Περιγραφή της δομής και των βασικών στοιχείων των θαλάσσιων παρατηρητηρίων για τη βελτίωση της διαχείρισης δεδομένων, της διαλειτουργικότητας και της επαναχρησιμοποίησης, ιδιαίτερα στο πλαίσιο της υποδομής EMSO."@el,
+        "Describe the structure and key components of marine observatories to improve data management, interoperability, and reuse, especially in the EMSO research infrastructure context."@en,
+        "Describir la estructura y los componentes clave de los observatorios marinos para mejorar la gestión de datos, la interoperabilidad y la reutilización, especialmente en el contexto de la infraestructura de investigación EMSO."@es,
+        "Décrire la structure et les composants clés des observatoires marins afin d'améliorer la gestion, l'interopérabilité et la réutilisation des données, notamment dans le cadre de l'infrastructure de recherche EMSO."@fr,
+        "Descrivere la struttura e i principali componenti degli osservatori marini per migliorare la gestione, l'interoperabilità e il riutilizzo dei dati, in particolare nel contesto dell'infrastruttura di ricerca EMSO."@it,
+        "Beskrive strukturen og hovedkomponentene i marine observatorier for å forbedre datastyring, interoperabilitet og gjenbruk, spesielt i EMSO-forskningsinfrastrukturens kontekst."@no,
+        "Descrever a estrutura e os principais componentes dos observatórios marinhos para melhorar a gestão de dados, a interoperabilidade e a reutilização, especialmente no contexto da infraestrutura de investigação EMSO."@pt,
+        "Descrierea structurii și a componentelor cheie ale observatoarelor marine pentru a îmbunătăți gestionarea, interoperabilitatea și reutilizarea datelor, în special în contextul infrastructurii EMSO."@ro ;
+    omv:reference <https://doi.org/10.25504/FAIRsharing.654931>,
+        <https://doi.org/10.5281/zenodo.19497913>,
+        <https://earthportal.eu/ontologies/OSO>,
+        <https://github.com/emso-eric/oso-ontology>,
+        <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology> ;
+    omv:status "Published" ;
+    omv:useImports rdfs:,
+        owl:,
+        skos:,
+        foaf: ;
+    omv:usedOntologyEngineeringMethodology <https://w3id.org/okn/o/sd#OntologyEngineering>,
+        "Iterative ontology engineering methodology based on FAIR principles, competency questions, semantic alignments, and ontology reuse."@en ;
+    omv:usedOntologyEngineeringTool <https://github.com/RDFLib/rdflib/>,
+        <https://github.com/dgarijo/Widoco>,
+        <https://protege.stanford.edu/>,
+        <https://vscodium.com/> ;
+    omv:version "1.2.0" ;
+    dcterms:abstract "Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
+        "The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework."@en,
+        "La ontología OSO estructura los observatorios marinos en tres niveles jerárquicos: infraestructuras regionales, sitios y plataformas. Apoya la gestión FAIR de datos, la interoperabilidad y la integración de información sobre infraestructuras marinas, especialmente en el contexto de EMSO ERIC."@es,
+        "L'ontologie OSO structure les observatoires marins en trois niveaux hiérarchiques : infrastructures régionales, sites et plateformes. Elle soutient la gestion FAIR des données, l'interopérabilité et l'intégration des informations sur les infrastructures marines, notamment dans le cadre d'EMSO ERIC."@fr,
+        "L'ontologia OSO struttura gli osservatori marini in tre livelli gerarchici: infrastrutture regionali, siti e piattaforme. Supporta la gestione FAIR dei dati, l'interoperabilità e l'integrazione delle informazioni sulle infrastrutture marine, in particolare nel contesto EMSO ERIC."@it,
+        "OSO-ontologien strukturerer marine observatorier i tre hierarkiske nivåer: regionale fasiliteter, steder og plattformer. Den støtter FAIR datastyring, interoperabilitet og integrasjon av informasjon om marine infrastrukturer, spesielt i EMSO ERIC-konteksten."@no,
+        "A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC."@pt,
+        "Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC."@ro ;
+    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.2.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
+    dcterms:conformsTo <https://semver.org/>,
+        <https://www.conventionalcommits.org/>,
+        <https://www.w3.org/TR/owl2-overview/>,
+        <https://www.w3.org/TR/prov-o/>,
+        <https://www.w3.org/TR/skos-reference/>,
+        <https://www.w3.org/TR/sparql11-query/>,
+        <https://www.w3.org/TR/vocab-dcat-3/> ;
+    dcterms:contributor OSO:EMSO_DMSG ;
+    dcterms:coverage "Παγκόσμια κάλυψη, με έμφαση στις ευρωπαϊκές θάλασσες και στις θαλάσσιες ερευνητικές υποδομές"@el,
+        "Global, with a focus on European Seas and marine research infrastructures"@en,
+        "Cobertura global, con enfoque en los mares europeos y las infraestructuras de investigación marina"@es,
+        "Couverture mondiale, avec un focus sur les mers européennes et les infrastructures de recherche marines"@fr,
+        "Copertura globale, con focus sui mari europei e le infrastrutture di ricerca marine"@it,
+        "Global dekning, med fokus på europeiske havområder og marine forskningsinfrastrukturer"@no,
+        "Cobertura global, com foco nos mares europeus e nas infraestruturas de investigação marinha"@pt,
+        "Acoperire globală, cu accent pe mările europene și infrastructurile de cercetare marine"@ro ;
+    dcterms:created "2025-04-04"^^xsd:date ;
+    dcterms:creator OSO:Ifremer,
+        OSO:Steven_PIEL ;
+    dcterms:description "Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού. Να μην συγχέεται με το OpenScienceOntology (OSO)."@el,
+        "Ontology describing coastal and open seas observatories, including all EMSO observatories as part of the European Multidisciplinary Seafloor and Water Column Observatories infrastructure. Not to be confused with the OpenScienceOntology (OSO)."@en,
+        "Ontología que describe los observatorios marinos costeros y de alta mar, incluyendo todos los observatorios EMSO en el marco de la infraestructura europea multidisciplinar para el fondo marino y la columna de agua. No debe confundirse con OpenScienceOntology (OSO)."@es,
+        "Ontologie décrivant les observatoires marins côtiers et hauturiers, incluant l’ensemble des observatoires EMSO, dans le cadre de l'infrastructure européenne multidisciplinaire dédiée aux fonds marins et à la colonne d’eau. À ne pas confondre avec l'OpenScienceOntology (OSO)."@fr,
+        "Ontologia che descrive gli osservatori marini costieri e d'altura, compresi tutti gli osservatori EMSO, nell'ambito dell'infrastruttura europea multidisciplinare dei fondali marini e della colonna d'acqua. Da non confondere con OpenScienceOntology (OSO)."@it,
+        "Ontologi som beskriver kyst- og dyphavsobservatorier, inkludert alle EMSO-observatorier, som del av den europeiske tverrfaglige infrastrukturen for havbunn og vannsøyle. Må ikke forveksles med OpenScienceOntology (OSO)."@no,
+        "Ontologia que descreve os observatórios costeiros e de mar aberto, incluindo todos os observatórios EMSO no âmbito da infraestrutura europeia multidisciplinar dos fundos marinhos e da coluna de água. Não deve ser confundida com OpenScienceOntology (OSO)."@pt,
+        "Ontologie care descrie observatoarele marine de coastă și de larg, inclusiv toate observatoarele EMSO, ca parte a infrastructurii europene multidisciplinare a fundului mării și a coloanei de apă. A nu se confunda cu OpenScienceOntology (OSO)."@ro ;
+    dcterms:format <http://www.w3.org/ns/formats/JSON-LD>,
+        <http://www.w3.org/ns/formats/N-Triples>,
+        <http://www.w3.org/ns/formats/N3>,
+        <http://www.w3.org/ns/formats/RDF_XML>,
+        <http://www.w3.org/ns/formats/TriG>,
+        <http://www.w3.org/ns/formats/Turtle> ;
+    dcterms:hasFormat <https://w3id.org/earthsemantics/OSO/OSO.jsonld>,
+        <https://w3id.org/earthsemantics/OSO/OSO.n3>,
+        <https://w3id.org/earthsemantics/OSO/OSO.nt>,
+        <https://w3id.org/earthsemantics/OSO/OSO.owl>,
+        <https://w3id.org/earthsemantics/OSO/OSO.trig>,
+        <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
+    dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
+    dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931>,
+        <https://doi.org/10.5281/zenodo.19497912>,
+        <https://doi.pangaea.de/10.1594/PANGAEA.957446>,
+        <https://earthportal.eu/ontologies/OSO>,
+        <https://fairsharing.org/FAIRsharing.654931>,
+        <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology>,
+        <https://www.seanoe.org/data/00947/105929/>,
+        <https://zenodo.org/records/10697877> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/el>,
+        <http://id.loc.gov/vocabulary/iso639-1/en>,
+        <http://id.loc.gov/vocabulary/iso639-1/es>,
+        <http://id.loc.gov/vocabulary/iso639-1/fr>,
+        <http://id.loc.gov/vocabulary/iso639-1/it>,
+        <http://id.loc.gov/vocabulary/iso639-1/no>,
+        <http://id.loc.gov/vocabulary/iso639-1/pt>,
+        <http://id.loc.gov/vocabulary/iso639-1/ro> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-08-25"^^xsd:date ;
+    dcterms:provenance "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.126.04524 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."@el,
+        "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.126.04524 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."@en,
+        "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.126.04524 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."@es,
+        "L'ontologie a été développée et maintenue à l'aide de Protégé 5.6.9, VSCodium 1.126.04524 et RDFLib 7.6.0, versionnée et publiée via GitHub. La gestion des versions suit Semantic Versioning (SemVer) et l'historique des commits respecte la spécification Conventional Commits. Les métadonnées de l'ontologie sont vérifiées et mises à jour, et les statistiques de l'ontologie sont recalculées à chaque nouvelle version."@fr,
+        "L'ontologia è stata sviluppata e mantenuta utilizzando Protégé 5.6.9, VSCodium 1.126.04524 e RDFLib 7.6.0, versionata e pubblicata tramite GitHub. Il versionamento segue Semantic Versioning (SemVer) e la cronologia dei commit rispetta la specifica Conventional Commits. I metadati dell'ontologia vengono verificati e aggiornati, e le statistiche dell'ontologia vengono ricalcolate a ogni nuova versione."@it,
+        "Ontologien ble utviklet og vedlikeholdt med Protégé 5.6.9, VSCodium 1.126.04524 og RDFLib 7.6.0, versjonskontrollert og publisert gjennom GitHub. Versjoneringen følger Semantic Versioning (SemVer), og commit-historikken følger spesifikasjonen Conventional Commits. Ontologiens metadata blir gjennomgått og oppdatert, og ontologistatistikken blir beregnet på nytt for hver nye versjon."@no,
+        "A ontologia foi desenvolvida e mantida utilizando o Protégé 5.6.9, o VSCodium 1.126.04524 e o RDFLib 7.6.0, versionada e publicada através do GitHub. O versionamento segue o Semantic Versioning (SemVer) e o histórico de commits respeita a especificação Conventional Commits. Os metadados da ontologia são revistos e atualizados, e as estatísticas da ontologia são recalculadas a cada nova versão."@pt,
+        "Ontologia a fost dezvoltată și întreținută utilizând Protégé 5.6.9, VSCodium 1.126.04524 și RDFLib 7.6.0, gestionată prin controlul versiunilor și publicată prin GitHub. Versionarea urmează Semantic Versioning (SemVer), iar istoricul commit-urilor respectă specificația Conventional Commits. Metadatele ontologiei sunt revizuite și actualizate, iar statisticile ontologiei sunt recalculate pentru fiecare nouă versiune."@ro ;
+    dcterms:publisher OSO:Ifremer ;
+    dcterms:relation <https://doi.org/10.5281/zenodo.19497912>,
+        <https://emso-eric.github.io/oso-ontology/>,
+        <https://github.com/emso-eric/oso-ontology>,
+        <https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl>,
+        <https://w3id.org/earthsemantics/OSO/dcat> ;
+    dcterms:rightsHolder OSO:Ifremer ;
+    dcterms:source <https://github.com/emso-eric/oso-ontology> ;
+    dcterms:spatial "Παγκόσμια κάλυψη (εστίαση στις ευρωπαϊκές θάλασσες)"@el,
+        "Global (focus on European Seas)"@en,
+        "Cobertura global (enfocada en los mares europeos)"@es,
+        "Couverture mondiale (accent sur les mers européennes)"@fr,
+        "Copertura globale (con focus sui mari europei)"@it,
+        "Global dekning (fokus på europeiske havområder)"@no,
+        "Cobertura global (com foco nos mares europeus)"@pt,
+        "Acoperire globală (cu accent pe mările europene)"@ro ;
+    dcterms:subject <http://www.wikidata.org/entity/Q1438053>,
+        <http://www.wikidata.org/entity/Q43518> ;
+    dcterms:temporal "Από περίπου το 1990 έως σήμερα"@el,
+        "From ~1990 to present"@en,
+        "Desde ~1990 hasta la actualidad"@es,
+        "Depuis environ 1990 jusqu'à aujourd'hui"@fr,
+        "Dal ~1990 ad oggi"@it,
+        "Fra ca. 1990 til i dag"@no,
+        "Desde ~1990 até o presente"@pt,
+        "Din ~1990 până în prezent"@ro ;
+    dcterms:title "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"@el,
+        "Observatories of the Seas Ontology (OSO)"@en,
+        "Ontología de los observatorios marinos (OSO)"@es,
+        "Ontologie des observatoires marins (OSO)"@fr,
+        "Ontologia degli osservatori marini (OSO)"@it,
+        "Ontologi for marine observatorier (OSO)"@no,
+        "Ontologia dos observatórios marinhos (OSO)"@pt,
+        "Ontologia observatoarelor marine (OSO)"@ro ;
+    pav:authoredBy <https://orcid.org/0009-0008-1759-5254> ;
+    pav:createdBy <https://orcid.org/0009-0008-1759-5254> ;
+    pav:createdOn "2025-04-04"^^xsd:date ;
+    pav:createdWith <https://protege.stanford.edu/>,
+        <https://vscodium.com/> ;
+    pav:curatedBy <https://orcid.org/0009-0008-1759-5254> ;
+    pav:curatedOn "2026-08-20"^^xsd:date ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+    pav:version "1.2.0" ;
+    datacite:doi "10.5281/zenodo.19497913" ;
+    vann:example OSO:Site ;
+    vann:preferredNamespacePrefix "OSO" ;
+    vann:preferredNamespaceUri OSO: ;
+    voaf:metadataVoc cc:,
+        omv:,
+        dcterms:,
+        pav:,
+        vann:,
+        voaf:,
+        void:,
+        schema1:,
+        rdfs:,
+        owl:,
+        skos:,
+        adms:,
+        dcat:,
+        prov:,
+        sd:,
+        foaf:,
+        mod: ;
+    voaf:toDoList <https://github.com/emso-eric/oso-ontology/issues>,
+        <https://github.com/emso-eric/oso-ontology/issues?q=is%3Aopen+label%3Aenhancement> ;
+    schema1:associatedMedia <https://emso-eric.github.io/oso-ontology/resources/oso-diagram.png> ;
+    schema1:codeRepository <https://github.com/emso-eric/oso-ontology> ;
+    schema1:copyrightHolder OSO:EMSO,
+        OSO:Ifremer ;
+    schema1:includedInDataCatalog <https://earthportal.eu/ontologies/OSO>,
+        <https://fairsharing.org/FAIRsharing.654931>,
+        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
+    schema1:memberOf <https://emso.eu/>,
+        <https://www.data-terra.org/>,
+        <https://www.odatis-ocean.fr/> ;
+    schema1:sameAs <https://earthportal.eu/ontologies/OSO>,
+        <https://github.com/emso-eric/oso-ontology> ;
+    schema1:translator OSO:EMSO_DMSG ;
+    schema1:url <https://emso-eric.github.io/oso-ontology/> ;
+    rdfs:comment "Οντολογία που περιγράφει τις σχέσεις μεταξύ περιφερειακών υποδομών, τοποθεσιών, πλατφορμών, ερευνητικών υποδομών, οργανισμών, αποστολών και των υπευθύνων σε κάθε επίπεδο."@el,
+        "Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες"@el,
+        "Το OSO περιλαμβάνει επιλεγμένες σημασιολογικές αντιστοιχίσεις με έννοιες SWEET, ώστε να βελτιωθεί η διαλειτουργικότητα με λεξιλόγια των επιστημών της Γης και του περιβάλλοντος."@el,
+        "Co-construction with domain experts and iterative alignment with reference ontologies"@en,
+        "OSO includes selected semantic alignments with SWEET concepts to improve interoperability with Earth and environmental science vocabularies."@en,
+        "Ontology describing the relationships between Regional Facilities, Sites, Platforms, Research Infrastructures, Organisations, Cruises, and the persons in charge of each level."@en,
+        "Co-construcción con expertos del dominio y alineación iterativa con ontologías de referencia"@es,
+        "OSO incluye alineaciones semánticas seleccionadas con conceptos de SWEET para mejorar la interoperabilidad con vocabularios de ciencias de la Tierra y del medio ambiente."@es,
+        "Ontología que describe las relaciones entre instalaciones regionales, emplazamientos, plataformas, infraestructuras de investigación, organizaciones, cruceros y las personas responsables de cada nivel."@es,
+        "Co-construction avec des experts métier et alignement itératif avec des ontologies de référence"@fr,
+        "OSO inclut des alignements sémantiques ciblés avec des concepts SWEET afin d'améliorer l'interopérabilité avec les vocabulaires des sciences de la Terre et de l'environnement."@fr,
+        "Ontologie décrivant les relations entre les nœuds régionaux, les sites, les plateformes, les infrastructures de recherche, les organisations, les campagnes à la mer et les personnes responsables à chaque niveau."@fr,
+        "Co-costruzione con esperti di dominio e allineamento iterativo con ontologie di riferimento"@it,
+        "OSO include allineamenti semantici selezionati con concetti SWEET per migliorare l'interoperabilità con i vocabolari delle scienze della Terra e dell'ambiente."@it,
+        "Ontologia che descrive le relazioni tra strutture regionali, siti, piattaforme, infrastrutture di ricerca, organizzazioni, crociere e i responsabili di ciascun livello."@it,
+        "OSO inkluderer utvalgte semantiske tilpasninger til SWEET-begreper for å forbedre interoperabiliteten med vokabularer innen jord- og miljøvitenskap."@no,
+        "Ontologi som beskriver forholdet mellom regionale fasiliteter, steder, plattformer, forskningsinfrastrukturer, organisasjoner, cruiser og de ansvarlige på hvert nivå."@no,
+        "Samskaping med fagpersoner og iterativ tilpasning til referanseontologier"@no,
+        "A OSO inclui alinhamentos semânticos selecionados com conceitos SWEET para melhorar a interoperabilidade com vocabulários das ciências da Terra e do ambiente."@pt,
+        "Co-construção com especialistas no domínio e alinhamento iterativo com ontologias de referência"@pt,
+        "Ontologia que descreve as relações entre instalações regionais, locais, plataformas, infraestruturas de investigação, organizações, cruzeiros e os responsáveis por cada nível."@pt,
+        "Co-construcție cu experți din domeniu și aliniere iterativă cu ontologii de referință"@ro,
+        "OSO include alinieri semantice selectate cu concepte SWEET pentru a îmbunătăți interoperabilitatea cu vocabularele din științele Pământului și ale mediului."@ro,
+        "Ontologie care descrie relațiile dintre facilitățile regionale, siturile, platformele, infrastructurile de cercetare, organizațiile, croazierele și persoanele responsabile la fiecare nivel."@ro ;
+    rdfs:seeAlso <https://doi.org/10.5281/zenodo.19497912>,
+        <https://emso-eric.github.io/oso-ontology/>,
+        <https://fairsharing.org/FAIRsharing.654931>,
+        <https://github.com/emso-eric/oso-ontology>,
+        <https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO> ;
+    owl:backwardCompatibleWith <https://w3id.org/earthsemantics/OSO/1.0.0/>,
+        <https://w3id.org/earthsemantics/OSO/1.0.1/>,
+        <https://w3id.org/earthsemantics/OSO/1.0.2/>,
+        <https://w3id.org/earthsemantics/OSO/1.0.3/>,
+        <https://w3id.org/earthsemantics/OSO/1.0.4/>,
+        <https://w3id.org/earthsemantics/OSO/1.0.5/>,
+        <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+    owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/ns/prov-o>,
+        foaf: ;
+    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    owl:versionInfo "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· εισαγωγή επικύρωσης SHACL· βελτίωση της συνέπειας μεταξύ TBox, ABox και SHACL· εμπλουτισμός της μοντελοποίησης του σημασιολογικού οικοσυστήματος, των μεταδεδομένων της οντολογίας και των πολυγλωσσικών επισημάνσεων· βελτίωση κλάσεων και ιδιοτήτων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"@el,
+        "1.2.0 – separated ontology model and instance data distributions; introduced SHACL validation; improved TBox, ABox and SHACL consistency; enriched semantic ecosystem modelling, ontology metadata and multilingual annotations; refined classes and properties; corrected SmartBay typographical error"@en,
+        "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; introducción de la validación SHACL; mejora de la coherencia entre TBox, ABox y SHACL; enriquecimiento del modelado del ecosistema semántico, los metadatos de la ontología y las anotaciones multilingües; refinamiento de clases y propiedades; corrección de una errata relativa a SmartBay"@es,
+        "1.2.0 – séparation des distributions du modèle ontologique et des données d’instances ; introduction de la validation SHACL ; amélioration de la cohérence entre TBox, ABox et SHACL ; enrichissement de la modélisation de l’écosystème sémantique, des métadonnées de l’ontologie et des annotations multilingues ; amélioration des classes et propriétés ; correction d’une erreur typographique concernant SmartBay"@fr,
+        "1.2.0 – separazione delle distribuzioni del modello ontologico e dei dati delle istanze; introduzione della validazione SHACL; miglioramento della coerenza tra TBox, ABox e SHACL; arricchimento della modellazione dell’ecosistema semantico, dei metadati dell’ontologia e delle annotazioni multilingue; perfezionamento di classi e proprietà; correzione di un refuso relativo a SmartBay"@it,
+        "1.2.0 – separate distribusjoner for ontologimodellen og instansdata; innføring av SHACL-validering; forbedret konsistens mellom TBox, ABox og SHACL; beriket modellering av det semantiske økosystemet, ontologimetadata og flerspråklige annotasjoner; forbedring av klasser og egenskaper; retting av en skrivefeil knyttet til SmartBay"@no,
+        "1.2.0 – separação das distribuições do modelo ontológico e dos dados de instâncias; introdução da validação SHACL; melhoria da coerência entre TBox, ABox e SHACL; enriquecimento da modelação do ecossistema semântico, dos metadados da ontologia e das anotações multilingues; aperfeiçoamento de classes e propriedades; correção de um erro tipográfico relativo ao SmartBay"@pt,
+        "1.2.0 – separarea distribuțiilor modelului ontologic și ale datelor de instanță; introducerea validării SHACL; îmbunătățirea coerenței între TBox, ABox și SHACL; îmbogățirea modelării ecosistemului semantic, a metadatelor ontologiei și a adnotărilor multilingve; rafinarea claselor și proprietăților; corectarea unei erori tipografice referitoare la SmartBay"@ro ;
+    skos:altLabel "OSO",
+        "Open Seas Observatories"@en ;
+    skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,
+        "This ontology aims to describe underwater observatories, in particular those associated with the European Multidisciplinary Seafloor and Water Column Observatories (EMSO), which has been a European Research Infrastructure Consortium (ERIC) since 2016."@en,
+        "Esta ontología tiene como objetivo describir los observatorios submarinos, en particular los asociados al Observatorio Multidisciplinar Europeo del Fondo Marino y la Columna de Agua (EMSO), que es un Consorcio Europeo de Infraestructuras de Investigación (ERIC) desde 2016."@es,
+        "Cette ontologie vise à décrire les observatoires sous-marins, en particulier ceux associés au réseau européen d'observatoires multidisciplinaires des fonds marins et de la colonne d'eau (EMSO), qui constitue un consortium européen d'infrastructures de recherche (ERIC) depuis 2016."@fr,
+        "Questa ontologia ha lo scopo di descrivere gli osservatori sottomarini, in particolare quelli associati agli Osservatori multidisciplinari europei dei fondali marini e della colonna d'acqua (EMSO), che dal 2016 costituiscono un Consorzio europeo per le infrastrutture di ricerca (ERIC)."@it,
+        "Denne ontologien har som mål å beskrive undervannsobservatorier, særlig de som er tilknyttet European Multidisciplinary Seafloor and Water Column Observatories (EMSO), som har vært et europeisk forskningsinfrastrukturkonsortium (ERIC) siden 2016."@no,
+        "Esta ontologia visa descrever observatórios subaquáticos, em particular os associados ao Observatório Multidisciplinar Europeu do Fundo Marinho e da Coluna de Água (EMSO), que é um Consórcio Europeu de Infraestruturas de Investigação (ERIC) desde 2016."@pt,
+        "Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016."@ro ;
+    skos:hiddenLabel "Ontology for Scenario Orchestration"@en,
+        "OpenScienceOntology"@en ;
+    skos:prefLabel "Οντολογία θαλάσσιων παρατηρητηρίων"@el,
+        "Observatories of the Seas Ontology"@en,
+        "Ontología de los observatorios marinos"@es,
+        "Ontologie des observatoires marins"@fr,
+        "Ontologia degli osservatori marini"@it,
+        "Ontologi for marine observatorier"@no,
+        "Ontologia dos observatórios marinhos"@pt,
+        "Ontologia observatoarelor marine"@ro ;
+    skos:scopeNote "Να μην συγχέεται με το OpenScienceOntology (OSO) ή το Ontology for Scenario Orchestration (OSO)."@el,
+        "Not to be confused with OpenScienceOntology (OSO) or Ontology for Scenario Orchestration (OSO)."@en,
+        "No confundir con OpenScienceOntology (OSO) ni con Ontology for Scenario Orchestration (OSO)."@es,
+        "À ne pas confondre avec OpenScienceOntology (OSO) ni avec Ontology for Scenario Orchestration (OSO)."@fr,
+        "Da non confondere con OpenScienceOntology (OSO) o Ontology for Scenario Orchestration (OSO)."@it,
+        "Må ikke forveksles med OpenScienceOntology (OSO) eller Ontology for Scenario Orchestration (OSO)."@no,
+        "Não confundir com OpenScienceOntology (OSO) nem com Ontology for Scenario Orchestration (OSO)."@pt,
+        "A nu se confunda cu OpenScienceOntology (OSO) sau cu Ontology for Scenario Orchestration (OSO)."@ro ;
+    adms:identifier [ a adms:Identifier ;
+            skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
+            skos:prefLabel "FAIRsharing DOI for OSO"@en ],
+        [ a adms:Identifier ;
+            skos:notation "https://w3id.org/earthsemantics/OSO" ;
+            skos:prefLabel "Persistent IRI for OSO"@en ],
+        [ a adms:Identifier ;
+            skos:notation "https://doi.org/10.5281/zenodo.19497912" ;
+            skos:prefLabel "Zenodo DOI for OSO"@en ] ;
+    adms:representationTechnique "OWL 2 DL in Turtle syntax" ;
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "EMSO Data Management Service Group" ;
+            vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
+            vcard:hasOrganizationName "EMSO ERIC" ] ;
+    dcat:keyword "θαλάσσια παρατηρητήρια"@el,
+        "EMSO"@en,
+        "FAIR data"@en,
+        "marine observatories"@en,
+        "ontology"@en,
+        "research infrastructures"@en,
+        "underwater observatories"@en,
+        "datos FAIR"@es,
+        "observatorios marinos"@es,
+        "données FAIR"@fr,
+        "infrastructures de recherche"@fr,
+        "observatoires marins"@fr,
+        "osservatori marini"@it,
+        "marine observatorier"@no,
+        "observatórios marinhos"@pt,
+        "observatoare marine"@ro ;
+    dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
+    prov:generatedAtTime "2026-08-20"^^xsd:date ;
+    prov:wasAttributedTo OSO:Ifremer ;
+    prov:wasGeneratedBy OSO:OntologyEngineeringWorkflow,
+        "Developed as part of the EMSO ERIC Data Management Service Group activities"@en ;
+    sd:endpoint <https://virtuoso.ifremer.fr/oso/> ;
+    foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png> ;
+    foaf:fundedBy OSO:EMSO_EVOLVE ;
+    foaf:page <https://earthportal.eu/ontologies/OSO>,
+        <https://emso-eric.github.io/oso-ontology/>,
+        <https://fairsharing.org/FAIRsharing.654931>,
+        <https://github.com/emso-eric/oso-ontology> ;
+    mod:acronym "OSO" ;
+    mod:competencyQuestion "Ποιες πλατφόρμες ανήκουν σε έναν συγκεκριμένο σταθμό;"@el,
+        "Ποιες ωκεανογραφικές αποστολές συνδέονται με μια περιφερειακή υποδομή;"@el,
+        "Ποιο είναι το βάθος μιας πλατφόρμας;"@el,
+        "Ποιοι οργανισμοί συμμετέχουν σε μια συγκεκριμένη υποδομή παρατήρησης;"@el,
+        "Ποιοι σταθμοί αποτελούν μέρος μιας περιφερειακής υποδομής;"@el,
+        "Ποιος είναι ο κύριος ερευνητής (PI) ή ο περιφερειακός υπεύθυνος;"@el,
+        "What is the depth of a platform?"@en,
+        "Which oceanographic cruises are associated with a regional facility?"@en,
+        "Which organisations are involved in a given observatory infrastructure?"@en,
+        "Which platforms belong to a given site?"@en,
+        "Which sites are part of a regional facility?"@en,
+        "Who is the Principal Investigator or Regional Team Leader?"@en,
+        "¿Cuál es la profundidad de una plataforma?"@es,
+        "¿Quién es el Investigador Principal (PI) o el responsable regional?"@es,
+        "¿Qué campañas oceanográficas están asociadas a una infraestructura regional?"@es,
+        "¿Qué organizaciones están involucradas en una infraestructura de observación dada?"@es,
+        "¿Qué plataformas pertenecen a un sitio dado?"@es,
+        "¿Qué sitios forman parte de una infraestructura regional?"@es,
+        "Quelle est la profondeur d’une plateforme ?"@fr,
+        "Quelles campagnes océanographiques sont associées à une infrastructure régionale ?"@fr,
+        "Quelles organisations sont impliquées dans une infrastructure d’observation donnée ?"@fr,
+        "Quelles plateformes appartiennent à un site donné ?"@fr,
+        "Quels sites font partie d’une infrastructure régionale ?"@fr,
+        "Qui est le responsable scientifique (PI) ou le responsable régional ?"@fr,
+        "Chi è il Principal Investigator (PI) o il responsabile regionale?"@it,
+        "Qual è la profondità di una piattaforma?"@it,
+        "Quali campagne oceanografiche sono associate a una infrastruttura regionale?"@it,
+        "Quali organizzazioni sono coinvolte in una infrastruttura di osservazione specifica?"@it,
+        "Quali piattaforme appartengono a un sito specifico?"@it,
+        "Quali siti fanno parte di una infrastruttura regionale?"@it,
+        "Hva er dybden til en plattform?"@no,
+        "Hvem er hovedansvarlig forsker (PI) eller regional leder?"@no,
+        "Hvilke organisasjoner er involvert i en gitt observasjonsinfrastruktur?"@no,
+        "Hvilke oseanografiske tokt er knyttet til en regional infrastruktur?"@no,
+        "Hvilke plattformer tilhører et gitt sted?"@no,
+        "Hvilke steder er en del av en regional infrastruktur?"@no,
+        "Quais campanhas oceanográficas estão associadas a uma infraestrutura regional?"@pt,
+        "Quais locais fazem parte de uma infraestrutura regional?"@pt,
+        "Quais organizações estão envolvidas numa determinada infraestrutura de observação?"@pt,
+        "Quais plataformas pertencem a um determinado local?"@pt,
+        "Qual é a profundidade de uma plataforma?"@pt,
+        "Quem é o Investigador Principal (PI) ou o responsável regional?"@pt,
+        "Care este adâncimea unei platforme?"@ro,
+        "Ce campanii oceanografice sunt asociate unei infrastructuri regionale?"@ro,
+        "Ce organizații sunt implicate într-o anumită infrastructură de observare?"@ro,
+        "Ce platforme aparțin unui anumit sit?"@ro,
+        "Ce situri fac parte dintr-o infrastructură regională?"@ro,
+        "Cine este Investigatorul Principal (PI) sau responsabilul regional?"@ro ;
+    mod:endorsedBy OSO:EMSO,
+        OSO:EMSO-France,
+        OSO:Ifremer ;
+    mod:group <https://data.earthportal.eu/groups/DATA_TERRA>,
+        <https://data.earthportal.eu/groups/EPOS>,
+        <https://data.earthportal.eu/groups/IFREMER>,
+        <https://data.earthportal.eu/groups/ODATIS> ;
+    mod:hierarchyProperty rdfs:subClassOf ;
+    mod:maxDepth 5 ;
+    mod:obsoleteParent owl:deprecated ;
+    mod:ontologyInUse <https://earthportal.eu/projects/EMSO_EVOLVE>,
+        OSO:EMSO_EVOLVE ;
+    mod:status "active" .
 
 OSO:CollaborativeDevelopmentPlatform a owl:Class ;
     rdfs:label "Πλατφόρμα συνεργατικής ανάπτυξης"@el,
-        "Collaborative development platform"@en,
-        "Plataforma de desarrollo colaborativo"@es,
-        "Plateforme de développement collaboratif"@fr,
-        "Piattaforma di sviluppo collaborativo"@it,
-        "Plattform for samarbeidsutvikling"@no,
-        "Plataforma de desenvolvimento colaborativo"@pt,
-        "Platformă de dezvoltare colaborativă"@ro ;
-    skos:prefLabel "Πλατφόρμα συνεργατικής ανάπτυξης"@el,
         "Collaborative development platform"@en,
         "Plataforma de desarrollo colaborativo"@es,
         "Plateforme de développement collaboratif"@fr,
@@ -57,7 +506,62 @@ OSO:CollaborativeDevelopmentPlatform a owl:Class ;
         "Una piattaforma software che supporta lo sviluppo collaborativo, il controllo di versione, il tracciamento delle issue e la gestione del codice sorgente."@it,
         "En programvareplattform som støtter samarbeidsbasert programvareutvikling, versjonskontroll, saksoppfølging og håndtering av kildekode."@no,
         "Uma plataforma de software que suporta o desenvolvimento colaborativo, o controlo de versões, o acompanhamento de problemas e a gestão do código-fonte."@pt,
-        "O platformă software care sprijină dezvoltarea colaborativă, controlul versiunilor, urmărirea problemelor și gestionarea codului sursă."@ro .
+        "O platformă software care sprijină dezvoltarea colaborativă, controlul versiunilor, urmărirea problemelor și gestionarea codului sursă."@ro ;
+    skos:prefLabel "Πλατφόρμα συνεργατικής ανάπτυξης"@el,
+        "Collaborative development platform"@en,
+        "Plataforma de desarrollo colaborativo"@es,
+        "Plateforme de développement collaboratif"@fr,
+        "Piattaforma di sviluppo collaborativo"@it,
+        "Plattform for samarbeidsutvikling"@no,
+        "Plataforma de desenvolvimento colaborativo"@pt,
+        "Platformă de dezvoltare colaborativă"@ro .
+
+OSO:DYFAMED a owl:NamedIndividual,
+        OSO:Site ;
+    rdfs:label "DYFAMED"@el,
+        "DYFAMED"@en,
+        "DYFAMED"@es,
+        "DYFAMED"@fr,
+        "DYFAMED"@it,
+        "DYFAMED"@no,
+        "DYFAMED"@pt,
+        "DYFAMED"@ro ;
+    dcterms:identifier "10.17882/43749" ;
+    schema1:sameAs <https://doi.org/10.17882/43749> ;
+    schema1:url <https://www.emso-fr.org/fr/DYFAMED> ;
+    rdfs:comment "DYFAMED: Dynamics of Atmospheric Fluxes in the Mediterranean"@en,
+        "DYFAMED : DYnamique des Flux Atmosphériques en MEDiterranée"@fr ;
+    rdfs:seeAlso <https://www.emso-fr.org/fr/DYFAMED>,
+        <https://www.seanoe.org/data/00326/43749/> ;
+    skos:altLabel "DYFAMED observatory"@en,
+        "DYFAMED site"@en,
+        "Observatoire DYFAMED"@fr,
+        "Site DYFAMED"@fr ;
+    skos:definition "A long-term open-ocean observation site in the northwestern Mediterranean Sea associated with EMSO-France and dedicated to atmospheric, biogeochemical and oceanographic monitoring."@en,
+        "Un site d’observation hauturière à long terme en Méditerranée nord-occidentale associé à EMSO-France et dédié au suivi atmosphérique, biogéochimique et océanographique."@fr ;
+    skos:notation "10.17882/43749" ;
+    skos:prefLabel "DYFAMED"@el,
+        "DYFAMED"@en,
+        "DYFAMED"@es,
+        "DYFAMED"@fr,
+        "DYFAMED"@it,
+        "DYFAMED"@no,
+        "DYFAMED"@pt,
+        "DYFAMED"@ro ;
+    adms:identifier [ a adms:Identifier ;
+            schema1:value "10.17882/43749" ;
+            skos:notation "10.17882/43749" ] ;
+    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
+    OSO:containsPlatform OSO:Dyfamed_Mugobs,
+        OSO:Dyfamed_ODAS,
+        OSO:Dyfamed_mooring ;
+    OSO:dateFirstDeployment "1988-02"^^xsd:gYearMonth ;
+    OSO:distanceFromLand 27.0 ;
+    OSO:hasCountry OSO:France ;
+    OSO:hasLocation OSO:French_riviera ;
+    OSO:hasSiteResponsible OSO:Laurent_COPPOLA ;
+    OSO:isTestSite false ;
+    OSO:maxWaterDepth 2300 .
 
 OSO:Discipline a owl:Class ;
     rdfs:label "Επιστημονικός κλάδος"@el,
@@ -86,6 +590,36 @@ OSO:Discipline a owl:Class ;
         "Disiplin"@no,
         "Disciplina"@pt,
         "Disciplină"@ro .
+
+OSO:EMSO_LIGURE_OUEST a owl:NamedIndividual,
+        OSO:SeriesOfOceanographicCampaigns ;
+    rdfs:label "EMSO LIGURE OUEST"@en,
+        "EMSO LIGURE OUEST"@fr ;
+    dcterms:description "Σειρά ωκεανογραφικών αποστολών που σχετίζονται με τον σταθμό παρατήρησης EMSO Ligure Ouest στη Λιγουρική Θάλασσα."@el,
+        "Series of oceanographic campaigns associated with the EMSO Ligure Ouest observatory site in the Ligurian Sea."@en,
+        "Serie de campañas oceanográficas asociadas al sitio de observación EMSO Ligure Ouest en el mar de Liguria."@es,
+        "Série de campagnes océanographiques associées au site EMSO Ligure Ouest en mer Ligure."@fr,
+        "Serie di campagne oceanografiche associate al sito osservativo EMSO Ligure Ouest nel Mar Ligure."@it,
+        "Serie av oseanografiske kampanjer knyttet til observasjonsstedet EMSO Ligure Ouest i Liguriahavet."@no,
+        "Série de campanhas oceanográficas associadas ao sítio de observação EMSO Ligure Ouest no Mar da Ligúria."@pt,
+        "Serie de campanii oceanografice asociate sitului de observare EMSO Ligure Ouest din Marea Ligurică."@ro ;
+    dcterms:identifier <https://doi.org/10.18142/295> ;
+    dcterms:subject OSO:EMSO_Ligure_Ouest,
+        OSO:OceanographicCampaign ;
+    dcterms:title "EMSO LIGURE OUEST"@en,
+        "EMSO LIGURE OUEST"@fr ;
+    schema1:url <https://campagnes.flotteoceanographique.fr/series/295/fr/> ;
+    rdfs:seeAlso <https://campagnes.flotteoceanographique.fr/series/295/fr/>,
+        <https://doi.org/10.18142/295>,
+        <https://www.emso-fr.org/fr/EMSO-France/Les-sites/EMSO-Ligure-Ouest> ;
+    skos:altLabel "EMSO Ligurian Sea campaigns"@en,
+        "Campagnes EMSO Mer Ligure Ouest"@fr ;
+    skos:prefLabel "EMSO LIGURE OUEST"@en,
+        "EMSO LIGURE OUEST"@fr ;
+    adms:identifier [ a adms:Identifier ;
+            dcterms:creator "Flotte Océanographique Française" ;
+            skos:notation "10.18142/295" ] ;
+    prov:wasAssociatedWith OSO:EMSO_France .
 
 OSO:FAIRAssessmentTool a owl:Class ;
     rdfs:label "Εργαλείο αξιολόγησης FAIR"@el,
@@ -549,24 +1083,10 @@ OSO:dateEndDeployment a owl:DatatypeProperty ;
         "Dato som markerer slutten på den operative utplasseringen av et instrument, en plattform, et sted eller en infrastruktur."@no,
         "Data que marca o fim da implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
         "Data care marchează sfârșitul desfășurării operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-            owl:unionOf (
-            OSO:Platform
-            OSO:RegionalFacility
-            OSO:Site
-            OSO:SubPlatform
-            OSO:Subsite
-            )
-    ] ;
-    rdfs:range [
-        a rdfs:Datatype ;
-        owl:unionOf (
-            xsd:date
-            xsd:gYearMonth
-            xsd:gYear
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:Platform OSO:RegionalFacility OSO:Site OSO:SubPlatform OSO:Subsite ) ] ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:date xsd:gYearMonth xsd:gYear ) ] ;
     rdfs:subPropertyOf schema1:endDate ;
     skos:prefLabel "Ημερομηνία λήξης εγκατάστασης"@el,
         "Deployment end date"@en,
@@ -594,24 +1114,10 @@ OSO:dateFirstDeployment a owl:DatatypeProperty ;
         "Dato for første operative utplassering av et instrument, en plattform, et sted eller en infrastruktur."@no,
         "Data da primeira implantação operacional de um instrumento, plataforma, local ou infraestrutura."@pt,
         "Data primei desfășurări operaționale a unui instrument, platforme, sit sau infrastructuri."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:Platform
-            OSO:RegionalFacility
-            OSO:Site
-            OSO:SubPlatform
-            OSO:Subsite
-            )
-        ] ;
-    rdfs:range [
-        a rdfs:Datatype ;
-        owl:unionOf (
-            xsd:date
-            xsd:gYearMonth
-            xsd:gYear
-            )
-        ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:Platform OSO:RegionalFacility OSO:Site OSO:SubPlatform OSO:Subsite ) ] ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:date xsd:gYearMonth xsd:gYear ) ] ;
     rdfs:subPropertyOf schema1:startDate ;
     skos:prefLabel "Ημερομηνία πρώτης εγκατάστασης"@el,
         "First deployment date"@en,
@@ -640,13 +1146,8 @@ OSO:distanceFromLand a owl:DatatypeProperty ;
         "Avstand fra kysten uttrykt i nautiske mil (NM)."@no,
         "Distância à costa expressa em milhas náuticas (NM)."@pt,
         "Distanța față de coastă exprimată în mile marine (NM)."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:RegionalFacility
-            OSO:Site
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:RegionalFacility OSO:Site ) ] ;
     rdfs:range xsd:decimal ;
     skos:prefLabel "απόσταση από την ακτή"@el,
         "distance from land"@en,
@@ -874,6 +1375,34 @@ OSO:hasFormerDirectorGeneral a owl:ObjectProperty ;
         "tem antigo diretor-geral"@pt,
         "are fost director general"@ro .
 
+OSO:hasGroupLeader a owl:ObjectProperty ;
+    rdfs:label "έχει υπεύθυνο ομάδας"@el,
+        "has group leader"@en,
+        "tiene responsable de grupo"@es,
+        "a pour responsable de groupe"@fr,
+        "ha un responsabile di gruppo"@it,
+        "har gruppeleder"@no,
+        "tem líder de grupo"@pt,
+        "are lider de grup"@ro ;
+    rdfs:comment "Συνδέει μια ομάδα με το πρόσωπο που είναι υπεύθυνο για τη διεύθυνση ή τον συντονισμό της."@el,
+        "Links a group to the person responsible for leading or coordinating it."@en,
+        "Relaciona un grupo con la persona responsable de dirigirlo o coordinarlo."@es,
+        "Relie un groupe à la personne chargée de le diriger ou de le coordonner."@fr,
+        "Collega un gruppo alla persona responsabile della sua direzione o del suo coordinamento."@it,
+        "Knytter en gruppe til personen som er ansvarlig for å lede eller koordinere den."@no,
+        "Liga um grupo à pessoa responsável pela sua liderança ou coordenação."@pt,
+        "Leagă un grup de persoana responsabilă de conducerea sau coordonarea acestuia."@ro ;
+    rdfs:domain foaf:Group ;
+    rdfs:range schema1:Person ;
+    skos:prefLabel "έχει υπεύθυνο ομάδας"@el,
+        "has group leader"@en,
+        "tiene responsable de grupo"@es,
+        "a pour responsable de groupe"@fr,
+        "ha un responsabile di gruppo"@it,
+        "har gruppeleder"@no,
+        "tem líder de grupo"@pt,
+        "are lider de grup"@ro .
+
 OSO:hasLogo a owl:ObjectProperty ;
     rdfs:label "έχει λογότυπο"@el,
         "has logo"@en,
@@ -910,8 +1439,8 @@ OSO:hasLogo a owl:ObjectProperty ;
         "tem logótipo"@pt,
         "are siglă"@ro .
 
-OSO:hasORCID a owl:ObjectProperty,
-               owl:FunctionalProperty ;
+OSO:hasORCID a owl:FunctionalProperty,
+        owl:ObjectProperty ;
     rdfs:label "ORCID"@el,
         "ORCID"@en,
         "ORCID"@es,
@@ -974,8 +1503,8 @@ OSO:hasPlatformCategory a owl:ObjectProperty ;
         "tem categoria de plataforma"@pt,
         "are categorie de platformă"@ro .
 
-OSO:hasROR a owl:ObjectProperty,
-             owl:FunctionalProperty ;
+OSO:hasROR a owl:FunctionalProperty,
+        owl:ObjectProperty ;
     rdfs:label "έχει ROR"@el,
         "has a ROR"@en,
         "tiene un ROR"@es,
@@ -1030,23 +1559,33 @@ OSO:hasStatus a owl:ObjectProperty ;
         "tem estado"@pt,
         "are statut"@ro .
 
-OSO:Status a owl:Class ;
-    rdfs:label "Κατάσταση"@el,
-        "Status"@en,
-        "Estado"@es,
-        "Statut"@fr,
-        "Stato"@it,
-        "Status"@no,
-        "Estado"@pt,
-        "Statut"@ro ;
-    skos:prefLabel "Κατάσταση"@el,
-        "Status"@en,
-        "Estado"@es,
-        "Statut"@fr,
-        "Stato"@it,
-        "Status"@no,
-        "Estado"@pt,
-        "Statut"@ro .
+OSO:isAssociatedWithNetwork a owl:ObjectProperty ;
+    rdfs:label "συνδέεται με δίκτυο"@el,
+        "is associated with network"@en,
+        "está asociada a una red"@es,
+        "est associée à un réseau"@fr,
+        "è associata a una rete"@it,
+        "er tilknyttet et nettverk"@no,
+        "está associada a uma rede"@pt,
+        "este asociată cu o rețea"@ro ;
+    rdfs:comment "Συνδέει μια πλατφόρμα με μια ερευνητική υποδομή ή ένα δίκτυο με το οποίο σχετίζεται, χωρίς να υποδηλώνει επίσημη συμμετοχή."@el,
+        "Links a platform to a research infrastructure or network with which it is associated, without implying formal membership."@en,
+        "Relaciona una plataforma con una infraestructura de investigación o red con la que está asociada, sin implicar una pertenencia formal."@es,
+        "Relie une plateforme à une infrastructure de recherche ou à un réseau auquel elle est associée, sans impliquer une appartenance formelle."@fr,
+        "Collega una piattaforma a un'infrastruttura di ricerca o a una rete con cui è associata, senza implicare un'appartenenza formale."@it,
+        "Knytter en plattform til en forskningsinfrastruktur eller et nettverk den er assosiert med, uten å innebære formelt medlemskap."@no,
+        "Liga uma plataforma a uma infraestrutura de investigação ou rede com a qual está associada, sem implicar uma pertença formal."@pt,
+        "Leagă o platformă de o infrastructură de cercetare sau de o rețea cu care este asociată, fără a implica apartenență formală."@ro ;
+    rdfs:domain OSO:Platform ;
+    rdfs:range OSO:ResearchInfrastructure ;
+    skos:prefLabel "συνδέεται με δίκτυο"@el,
+        "is associated with network"@en,
+        "está asociada a una red"@es,
+        "est associée à un réseau"@fr,
+        "è associata a una rete"@it,
+        "er tilknyttet et nettverk"@no,
+        "está associada a uma rede"@pt,
+        "este asociată cu o rețea"@ro .
 
 OSO:isInvolvedIn a owl:ObjectProperty ;
     rdfs:label "συμμετέχει σε"@el,
@@ -1104,61 +1643,33 @@ OSO:isLedByPerson a owl:ObjectProperty ;
         "A infraestrutura de investigação é liderada por"@pt,
         "Infrastructura de cercetare este condusă de"@ro .
 
-OSO:hasGroupLeader a owl:ObjectProperty ;
-    rdfs:label "έχει υπεύθυνο ομάδας"@el,
-        "has group leader"@en,
-        "tiene responsable de grupo"@es,
-        "a pour responsable de groupe"@fr,
-        "ha un responsabile di gruppo"@it,
-        "har gruppeleder"@no,
-        "tem líder de grupo"@pt,
-        "are lider de grup"@ro ;
-    rdfs:comment "Συνδέει μια ομάδα με το πρόσωπο που είναι υπεύθυνο για τη διεύθυνση ή τον συντονισμό της."@el,
-        "Links a group to the person responsible for leading or coordinating it."@en,
-        "Relaciona un grupo con la persona responsable de dirigirlo o coordinarlo."@es,
-        "Relie un groupe à la personne chargée de le diriger ou de le coordonner."@fr,
-        "Collega un gruppo alla persona responsabile della sua direzione o del suo coordinamento."@it,
-        "Knytter en gruppe til personen som er ansvarlig for å lede eller koordinere den."@no,
-        "Liga um grupo à pessoa responsável pela sua liderança ou coordenação."@pt,
-        "Leagă un grup de persoana responsabilă de conducerea sau coordonarea acestuia."@ro ;
-    rdfs:domain foaf:Group ;
-    rdfs:range schema1:Person ;
-    skos:prefLabel "έχει υπεύθυνο ομάδας"@el,
-        "has group leader"@en,
-        "tiene responsable de grupo"@es,
-        "a pour responsable de groupe"@fr,
-        "ha un responsabile di gruppo"@it,
-        "har gruppeleder"@no,
-        "tem líder de grupo"@pt,
-        "are lider de grup"@ro .
-
-OSO:isAssociatedWithNetwork a owl:ObjectProperty ;
-    rdfs:label "συνδέεται με δίκτυο"@el,
-        "is associated with network"@en,
-        "está asociada a una red"@es,
-        "est associée à un réseau"@fr,
-        "è associata a una rete"@it,
-        "er tilknyttet et nettverk"@no,
-        "está associada a uma rede"@pt,
-        "este asociată cu o rețea"@ro ;
-    rdfs:comment "Συνδέει μια πλατφόρμα με μια ερευνητική υποδομή ή ένα δίκτυο με το οποίο σχετίζεται, χωρίς να υποδηλώνει επίσημη συμμετοχή."@el,
-        "Links a platform to a research infrastructure or network with which it is associated, without implying formal membership."@en,
-        "Relaciona una plataforma con una infraestructura de investigación o red con la que está asociada, sin implicar una pertenencia formal."@es,
-        "Relie une plateforme à une infrastructure de recherche ou à un réseau auquel elle est associée, sans impliquer une appartenance formelle."@fr,
-        "Collega una piattaforma a un'infrastruttura di ricerca o a una rete con cui è associata, senza implicare un'appartenenza formale."@it,
-        "Knytter en plattform til en forskningsinfrastruktur eller et nettverk den er assosiert med, uten å innebære formelt medlemskap."@no,
-        "Liga uma plataforma a uma infraestrutura de investigação ou rede com a qual está associada, sem implicar uma pertença formal."@pt,
-        "Leagă o platformă de o infrastructură de cercetare sau de o rețea cu care este asociată, fără a implica apartenență formală."@ro ;
-    rdfs:domain OSO:Platform ;
+OSO:isPartOfResearchInfrastructure a owl:ObjectProperty ;
+    rdfs:label "είναι μέρος ερευνητικής υποδομής"@el,
+        "is part of research infrastructure"@en,
+        "forma parte de una infraestructura de investigación"@es,
+        "fait partie d’une infrastructure de recherche"@fr,
+        "fa parte di un'infrastruttura di ricerca"@it,
+        "er del av en forskningsinfrastruktur"@no,
+        "faz parte de uma infraestrutura de investigação"@pt,
+        "face parte dintr-o infrastructură de cercetare"@ro ;
+    rdfs:comment "Συνδέει μια ερευνητική υποδομή με μια ευρύτερη ερευνητική υποδομή της οποίας αποτελεί μέρος."@el,
+        "Links a research infrastructure to a broader research infrastructure of which it is part."@en,
+        "Relaciona una infraestructura de investigación con una infraestructura de investigación más amplia de la que forma parte."@es,
+        "Relie une infrastructure de recherche à une infrastructure de recherche plus large dont elle fait partie."@fr,
+        "Collega un'infrastruttura di ricerca a un'infrastruttura di ricerca più ampia di cui fa parte."@it,
+        "Knytter en forskningsinfrastruktur til en overordnet forskningsinfrastruktur som den er en del av."@no,
+        "Liga uma infraestrutura de investigação a uma infraestrutura de investigação mais ampla da qual faz parte."@pt,
+        "Leagă o infrastructură de cercetare de o infrastructură de cercetare mai largă din care face parte."@ro ;
+    rdfs:domain OSO:ResearchInfrastructure ;
     rdfs:range OSO:ResearchInfrastructure ;
-    skos:prefLabel "συνδέεται με δίκτυο"@el,
-        "is associated with network"@en,
-        "está asociada a una red"@es,
-        "est associée à un réseau"@fr,
-        "è associata a una rete"@it,
-        "er tilknyttet et nettverk"@no,
-        "está associada a uma rede"@pt,
-        "este asociată cu o rețea"@ro .
+    skos:prefLabel "είναι μέρος ερευνητικής υποδομής"@el,
+        "is part of research infrastructure"@en,
+        "forma parte de una infraestructura de investigación"@es,
+        "fait partie d’une infrastructure de recherche"@fr,
+        "fa parte di un'infrastruttura di ricerca"@it,
+        "er del av en forskningsinfrastruktur"@no,
+        "faz parte de uma infraestrutura de investigação"@pt,
+        "face parte dintr-o infrastructură de cercetare"@ro .
 
 OSO:isTestSite a owl:DatatypeProperty ;
     rdfs:label "είναι δοκιμαστικός τόπος"@el,
@@ -1177,13 +1688,8 @@ OSO:isTestSite a owl:DatatypeProperty ;
         "Angir om et sted eller delsted regnes som et teststed (true/false)."@no,
         "Indica se um sítio ou subsítio é considerado um sítio de teste (true/false)."@pt,
         "Indică dacă un sit sau un subsit este considerat sit de testare (true/false)."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-    owl:unionOf (
-        OSO:Site
-        OSO:Subsite
-    )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:Site OSO:Subsite ) ] ;
     rdfs:range xsd:boolean ;
     skos:prefLabel "είναι δοκιμαστικός τόπος"@el,
         "is test site"@en,
@@ -1212,15 +1718,8 @@ OSO:maxWaterDepth a owl:DatatypeProperty ;
         "Verdi uttrykt i meter (m)."@no,
         "Valor expresso em metros (m)."@pt,
         "Valoare exprimată în metri (m)."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:Platform
-            OSO:RegionalFacility
-            OSO:Site
-            OSO:Subsite
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:Platform OSO:RegionalFacility OSO:Site OSO:Subsite ) ] ;
     rdfs:range xsd:integer ;
     skos:prefLabel "έχει μέγιστο βάθος"@el,
         "has maximum depth"@en,
@@ -1285,15 +1784,8 @@ OSO:minWaterDepth a owl:DatatypeProperty ;
         "Verdi uttrykt i meter (m)."@no,
         "Valor expresso em metros (m)."@pt,
         "Valoare exprimată în metri (m)."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:Platform
-            OSO:RegionalFacility
-            OSO:Site
-            OSO:Subsite
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:Platform OSO:RegionalFacility OSO:Site OSO:Subsite ) ] ;
     rdfs:range xsd:integer ;
     skos:prefLabel "έχει ελάχιστο βάθος"@el,
         "has minimum depth"@en,
@@ -1424,6 +1916,24 @@ OSO:Deployment a owl:Class ;
         "Utsetting"@no,
         "Implantação"@pt,
         "Desfășurare"@ro .
+
+OSO:Status a owl:Class ;
+    rdfs:label "Κατάσταση"@el,
+        "Status"@en,
+        "Estado"@es,
+        "Statut"@fr,
+        "Stato"@it,
+        "Status"@no,
+        "Estado"@pt,
+        "Statut"@ro ;
+    skos:prefLabel "Κατάσταση"@el,
+        "Status"@en,
+        "Estado"@es,
+        "Statut"@fr,
+        "Stato"@it,
+        "Status"@no,
+        "Estado"@pt,
+        "Statut"@ro .
 
 OSO:containsPlatform a owl:ObjectProperty ;
     rdfs:label "περιέχει πλατφόρμα"@el,
@@ -1558,14 +2068,8 @@ OSO:hasCountry a owl:ObjectProperty ;
         "Knytter en organisasjon eller forskningsinfrastruktur til tilhørende land."@no,
         "Liga uma organização ou infraestrutura de investigação ao país associado."@pt,
         "Leagă o organizație sau infrastructură de cercetare de țara asociată."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            foaf:Organization
-            OSO:RegionalFacility
-            OSO:ResearchInfrastructure
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( foaf:Organization OSO:RegionalFacility OSO:ResearchInfrastructure ) ] ;
     rdfs:range <http://dbpedia.org/ontology/Country> ;
     rdfs:subPropertyOf schema1:addressCountry ;
     owl:inverseOf OSO:isCountryOf ;
@@ -1577,6 +2081,43 @@ OSO:hasCountry a owl:ObjectProperty ;
         "har land"@no,
         "tem país"@pt,
         "are țară"@ro .
+
+OSO:hasERICMembership a owl:ObjectProperty ;
+    rdfs:label "έχει συμμετοχή σε ERIC"@el,
+        "has ERIC membership"@en,
+        "tiene membresía en un ERIC"@es,
+        "a une appartenance à un ERIC"@fr,
+        "ha un'appartenenza a un ERIC"@it,
+        "har medlemskap i et ERIC"@no,
+        "tem participação em um ERIC"@pt,
+        "are apartenență la un ERIC"@ro ;
+    rdfs:comment "Συνδέει μια περιφερειακή υποδομή με τη συμμετοχή της σε μια υποδομή ERIC."@el,
+        "Links a regional facility to its membership within an ERIC infrastructure."@en,
+        "Relaciona una infraestructura regional con su membresía dentro de una infraestructura ERIC."@es,
+        "Relie une infrastructure régionale à son appartenance à un ERIC."@fr,
+        "Collega un'infrastruttura regionale alla sua adesione a un'infrastruttura ERIC."@it,
+        "Knytter en regional infrastruktur til medlemskapet i en ERIC-infrastruktur."@no,
+        "Liga uma infraestrutura regional à sua participação em uma infraestrutura ERIC."@pt,
+        "Leagă o infrastructură regională de apartenența sa la o infrastructură ERIC."@ro ;
+    rdfs:domain OSO:RegionalFacility ;
+    rdfs:range OSO:ERICMembership ;
+    owl:inverseOf OSO:isERICMembershipOf ;
+    skos:definition "Συνδέει μια περιφερειακή υποδομή με την οντότητα συμμετοχής ERIC της."@el,
+        "Relates a regional facility to its ERIC membership entity."@en,
+        "Relaciona una infraestructura regional con su entidad de membresía ERIC."@es,
+        "Relie une infrastructure régionale à son entité d’adhésion ERIC."@fr,
+        "Collega un'infrastruttura regionale alla sua entità di adesione ERIC."@it,
+        "Knytter en regional infrastruktur til dens ERIC-medlemskapsenhet."@no,
+        "Liga uma infraestrutura regional à sua entidade de adesão ERIC."@pt,
+        "Leagă o infrastructură regională de entitatea sa de apartenență ERIC."@ro ;
+    skos:prefLabel "έχει συμμετοχή σε ERIC"@el,
+        "has ERIC membership"@en,
+        "tiene membresía en un ERIC"@es,
+        "a une appartenance à un ERIC"@fr,
+        "ha un'appartenenza a un ERIC"@it,
+        "har medlemskap i et ERIC"@no,
+        "tem participação em um ERIC"@pt,
+        "are apartenență la un ERIC"@ro .
 
 OSO:hasGeometry a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -1596,13 +2137,8 @@ OSO:hasGeometry a owl:FunctionalProperty,
         "Knytter et sted eller underområde til dets geometri."@no,
         "Liga um local ou sublocal à sua geometria."@pt,
         "Leagă un sit sau subsit de geometria sa."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:Site
-            OSO:Subsite
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:Site OSO:Subsite ) ] ;
     rdfs:range geosparql:Geometry ;
     owl:inverseOf OSO:isGeometryOf ;
     skos:prefLabel "έχει γεωμετρία"@el,
@@ -1924,14 +2460,8 @@ OSO:isCountryOf a owl:ObjectProperty ;
         "Liga um país a uma organização ou infraestrutura de investigação associada."@pt,
         "Leagă o țară de o organizație sau infrastructură de cercetare asociată."@ro ;
     rdfs:domain <http://dbpedia.org/ontology/Country> ;
-    rdfs:range [
-    a owl:Class ;
-        owl:unionOf (
-            foaf:Organization
-            OSO:RegionalFacility
-            OSO:ResearchInfrastructure
-            )
-    ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( foaf:Organization OSO:RegionalFacility OSO:ResearchInfrastructure ) ] ;
     owl:inverseOf OSO:hasCountry ;
     skos:prefLabel "είναι χώρα του"@el,
         "is country of"@en,
@@ -1997,13 +2527,8 @@ OSO:isGeometryOf a owl:ObjectProperty ;
         "Liga uma geometria ao local ou sublocal que descreve."@pt,
         "Leagă o geometrie de situl sau subsitul pe care îl descrie."@ro ;
     rdfs:domain geosparql:Geometry ;
-    rdfs:range [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:Site
-            OSO:Subsite
-            )
-    ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( OSO:Site OSO:Subsite ) ] ;
     owl:inverseOf OSO:hasGeometry ;
     skos:prefLabel "είναι η γεωμετρία της"@el,
         "is geometry of"@en,
@@ -2031,14 +2556,8 @@ OSO:isLedByOrganization a owl:ObjectProperty ;
         "En regional infrastruktur administreres eller koordineres av én eller flere organisasjoner."@no,
         "Uma infraestrutura regional é gerida ou coordenada por uma ou mais organizações."@pt,
         "O infrastructură regională este gestionată sau coordonată de una sau mai multe organizații."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:OceanographicCampaign
-            OSO:RegionalFacility
-            OSO:ResearchProject
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:OceanographicCampaign OSO:RegionalFacility OSO:ResearchProject ) ] ;
     rdfs:range foaf:Organization ;
     owl:inverseOf OSO:leadsRegionalFacility ;
     skos:prefLabel "συντονίζεται από οργανισμό"@el,
@@ -2154,13 +2673,8 @@ OSO:isManagedBy a owl:ObjectProperty ;
         "Knytter en forskningsinfrastruktur (ERIC eller nasjonal) til organisasjonen som administrerer eller koordinerer den."@no,
         "Liga uma infraestrutura de investigação (ERIC ou nacional) à organização que a gere ou coordena."@pt,
         "Leagă o infrastructură de cercetare (ERIC sau națională) de organizația care o gestionează sau coordonează."@ro ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:ERIC
-            OSO:ResearchInfrastructure
-            )
-    ] ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( OSO:ERIC OSO:ResearchInfrastructure ) ] ;
     rdfs:range foaf:Organization ;
     owl:inverseOf OSO:managesInfrastructure ;
     skos:prefLabel "διαχειρίζεται από"@el,
@@ -2488,13 +3002,8 @@ OSO:leadsRegionalFacility a owl:ObjectProperty ;
         "Liga uma organização a uma infraestrutura regional que gere ou coordena."@pt,
         "Leagă o organizație de infrastructura regională pe care o gestionează sau coordonează."@ro ;
     rdfs:domain foaf:Organization ;
-    rdfs:range [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:OceanographicCampaign
-            OSO:RegionalFacility
-            )
-    ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( OSO:OceanographicCampaign OSO:RegionalFacility ) ] ;
     owl:inverseOf OSO:isLedByOrganization ;
     skos:prefLabel "συντονίζει περιφερειακή υποδομή"@el,
         "leads regional facility"@en,
@@ -2560,13 +3069,8 @@ OSO:managesInfrastructure a owl:ObjectProperty ;
         "Liga uma organização à infraestrutura de investigação que gere ou coordena."@pt,
         "Leagă o organizație de infrastructura de cercetare pe care o gestionează sau coordonează."@ro ;
     rdfs:domain foaf:Organization ;
-    rdfs:range [
-        a owl:Class ;
-        owl:unionOf (
-            OSO:ERIC
-            OSO:ResearchInfrastructure
-            )
-    ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( OSO:ERIC OSO:ResearchInfrastructure ) ] ;
     owl:inverseOf OSO:isManagedBy ;
     skos:prefLabel "διαχειρίζεται υποδομή"@el,
         "manages infrastructure"@en,
@@ -2602,532 +3106,6 @@ OSO:SemanticEcosystemResource a owl:Class ;
         "Ressurs i det semantiske økosystemet"@no,
         "Recurso do ecossistema semântico"@pt,
         "Resursă a ecosistemului semantic"@ro .
-
-OSO:SeriesOfOceanographicCampaigns a owl:Class ;
-    rdfs:label "Σειρά ωκεανογραφικών εκστρατειών"@el,
-        "Series of Oceanographic Campaigns"@en,
-        "Serie de campañas oceanográficas"@es,
-        "Série de campagnes océanographiques"@fr,
-        "Serie di campagne oceanografiche"@it,
-        "Serie med havforskningskampanjer"@no,
-        "Série de campanhas oceanográficas"@pt,
-        "Serie de campanii oceanografice"@ro ;
-    metadata:prefixIRI "omv:SeriesOfOceanographicCampaigns" ;
-    rdfs:comment "Μια θεματική ή χρονική ομαδοποίηση συναφών ωκεανογραφικών εκστρατειών που συνδέεται με μια περιφερειακή υποδομή."@el,
-        "A thematic or temporal grouping of related oceanographic campaigns linked to a Regional Facility."@en,
-        "Una agrupación temática o temporal de campañas oceanográficas relacionadas, vinculada a una instalación regional."@es,
-        "Un regroupement thématique ou temporel de campagnes océanographiques liées à un noeud régional."@fr,
-        "Un raggruppamento tematico o temporale di campagne oceanografiche correlate, collegato a una struttura regionale."@it,
-        "En tematisk eller tidsmessig gruppering av relaterte havforskningskampanjer knyttet til en regional infrastruktur."@no,
-        "Um agrupamento temático ou temporal de campanhas oceanográficas relacionadas, associado a uma infraestrutura regional."@pt,
-        "O grupare tematică sau temporală de campanii oceanografice asociate unei infrastructuri regionale."@ro ;
-    rdfs:seeAlso OSO:OceanographicCampaign ;
-    skos:prefLabel "Σειρά ωκεανογραφικών εκστρατειών"@el,
-        "Series of Oceanographic Campaigns"@en,
-        "Serie de campañas oceanográficas"@es,
-        "Série de campagnes océanographiques"@fr,
-        "Serie di campagne oceanografiche"@it,
-        "Serie med havforskningskampanjer"@no,
-        "Série de campanhas oceanográficas"@pt,
-        "Serie de campanii oceanografice"@ro .
-
-OSO:hasERICMembership a owl:ObjectProperty ;
-    rdfs:label "έχει συμμετοχή σε ERIC"@el,
-        "has ERIC membership"@en,
-        "tiene membresía en un ERIC"@es,
-        "a une appartenance à un ERIC"@fr,
-        "ha un'appartenenza a un ERIC"@it,
-        "har medlemskap i et ERIC"@no,
-        "tem participação em um ERIC"@pt,
-        "are apartenență la un ERIC"@ro ;
-    rdfs:comment "Συνδέει μια περιφερειακή υποδομή με τη συμμετοχή της σε μια υποδομή ERIC."@el,
-        "Links a regional facility to its membership within an ERIC infrastructure."@en,
-        "Relaciona una infraestructura regional con su membresía dentro de una infraestructura ERIC."@es,
-        "Relie une infrastructure régionale à son appartenance à un ERIC."@fr,
-        "Collega un'infrastruttura regionale alla sua adesione a un'infrastruttura ERIC."@it,
-        "Knytter en regional infrastruktur til medlemskapet i en ERIC-infrastruktur."@no,
-        "Liga uma infraestrutura regional à sua participação em uma infraestrutura ERIC."@pt,
-        "Leagă o infrastructură regională de apartenența sa la o infrastructură ERIC."@ro ;
-    rdfs:domain OSO:RegionalFacility ;
-    rdfs:range OSO:ERICMembership ;
-    owl:inverseOf OSO:isERICMembershipOf ;
-    skos:definition "Συνδέει μια περιφερειακή υποδομή με την οντότητα συμμετοχής ERIC της."@el,
-        "Relates a regional facility to its ERIC membership entity."@en,
-        "Relaciona una infraestructura regional con su entidad de membresía ERIC."@es,
-        "Relie une infrastructure régionale à son entité d’adhésion ERIC."@fr,
-        "Collega un'infrastruttura regionale alla sua entità di adesione ERIC."@it,
-        "Knytter en regional infrastruktur til dens ERIC-medlemskapsenhet."@no,
-        "Liga uma infraestrutura regional à sua entidade de adesão ERIC."@pt,
-        "Leagă o infrastructură regională de entitatea sa de apartenență ERIC."@ro ;
-    skos:prefLabel "έχει συμμετοχή σε ERIC"@el,
-        "has ERIC membership"@en,
-        "tiene membresía en un ERIC"@es,
-        "a une appartenance à un ERIC"@fr,
-        "ha un'appartenenza a un ERIC"@it,
-        "har medlemskap i et ERIC"@no,
-        "tem participação em um ERIC"@pt,
-        "are apartenență la un ERIC"@ro .
-
-<https://w3id.org/earthsemantics/OSO> a owl:Ontology ;
-    rdfs:label "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"@el,
-        "Observatories of the Seas Ontology (OSO)"@en,
-        "Ontología de los observatorios marinos (OSO)"@es,
-        "Ontologie des observatoires marins (OSO)"@fr,
-        "Ontologia degli osservatori marini (OSO)"@it,
-        "Ontologi for marine observatorier (OSO)"@no,
-        "Ontologia dos observatórios marinhos (OSO)"@pt,
-        "Ontologia observatoarelor marine (OSO)"@ro ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    cc:morePermissions <https://github.com/emso-eric/oso-ontology/blob/main/LICENSE> ;
-    cc:useGuidelines <https://emso-eric.github.io/oso-ontology/> ;
-    door:isAlignedTo <http://sweetontology.net/sweetAll>,
-        <http://vocab.nerc.ac.uk/>,
-        <https://earthportal.eu/ontologies/ARG>,
-        <https://w3id.org/cerif/vocab#> ;
-    door:ontologyRelatedTo sweetHumanResearch:,
-        sweetRealmOcean:,
-        sweetRealmOceanFeature:,
-        sweetRealmOceanFloor:,
-        <https://earthportal.eu/ontologies/EASYDATA_THEMES>,
-        <https://terra-vocabulary.org/ncl/DataTerraRepositoryFairIncubator/_InfraRecherche> ;
-    omv:URI <https://w3id.org/earthsemantics/OSO> ;
-    omv:acronym "OSO" ;
-    omv:creationDate "2025-04-04"^^xsd:date ;
-    omv:description "Οντολογία που περιγράφει τα θαλάσσια παρατηρητήρια (περιφερειακές υποδομές, τοποθεσίες, πλατφόρμες) για την υποστήριξη της διαχείρισης δεδομένων FAIR και της διαλειτουργικότητας, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
-        "Ontology describing marine observatories (Regional Facilities, Sites, Platforms) to support FAIR data management and interoperability, particularly in the EMSO ERIC context."@en,
-        "Ontología que describe los observatorios marinos (infraestructuras regionales, sitios, plataformas) para apoyar la gestión FAIR de datos y la interoperabilidad, especialmente en el contexto de EMSO ERIC."@es,
-        "Ontologie décrivant les observatoires marins (infrastructures régionales, sites, plateformes) pour soutenir la gestion FAIR des données et l’interopérabilité, notamment dans le cadre d’EMSO ERIC."@fr,
-        "Ontologia che descrive gli osservatori marini (infrastrutture regionali, siti, piattaforme) per supportare la gestione FAIR dei dati e l’interoperabilità, in particolare nel contesto EMSO ERIC."@it,
-        "Ontologi som beskriver marine observatorier (regionale fasiliteter, steder, plattformer) for å støtte FAIR datastyring og interoperabilitet, spesielt i EMSO ERIC-konteksten."@no,
-        "Ontologia que descreve os observatórios marinhos (infraestruturas regionais, locais, plataformas) para apoiar a gestão FAIR de dados e a interoperabilidade, especialmente no contexto do EMSO ERIC."@pt,
-        "Ontologia care descrie observatoarele marine (facilități regionale, situri, platforme) pentru a susține gestionarea FAIR a datelor și interoperabilitatea, în special în contextul EMSO ERIC."@ro ;
-    omv:designedForOntologyTask omv:AnnotationTask,
-        omv:IndexingTask,
-        omv:IntegrationTask,
-        omv:QueryFormulationTask ;
-    omv:documentation <https://emso-eric.github.io/oso-ontology/>,
-        <https://github.com/emso-eric/oso-ontology> ;
-    omv:endorsedBy OSO:EMSO_DMSG ;
-    omv:hasDomain <https://data.earthportal.eu/categories/CLIMATE>,
-        <https://data.earthportal.eu/categories/EARTH>,
-        <https://data.earthportal.eu/categories/ENV>,
-        "Θαλάσσιες ερευνητικές υποδομές"@el,
-        "Marine Research Infrastructures"@en,
-        "Infraestructuras de investigación marina"@es,
-        "Infrastructures de recherche marine"@fr,
-        "Infrastrutture di ricerca marina"@it,
-        "Marine forskningsinfrastrukturer"@no,
-        "Infraestruturas de investigação marinha"@pt,
-        "Infrastructuri de cercetare marină"@ro ;
-    omv:hasFormalityLevel <http://w3id.org/nkos/nkostype#ontology> ;
-    omv:hasOntologyLanguage "OWL" ;
-    omv:hasOntologyName "Οντολογία των θαλάσσιων παρατηρητηρίων (OSO)"@el,
-        "Observatories of the Seas Ontology (OSO)"@en,
-        "Ontología de los observatorios marinos (OSO)"@es,
-        "Ontologie des observatoires marins (OSO)"@fr,
-        "Ontologia degli osservatori marini (OSO)"@it,
-        "Ontologi for marine observatorier (OSO)"@no,
-        "Ontologia dos observatórios marinhos (OSO)"@pt,
-        "Ontologia observatoarelor marine (OSO)"@ro ;
-    omv:hasOntologySyntax <http://www.w3.org/ns/formats/Turtle> ;
-    omv:hasOntologyType "Application ontology" ;
-    omv:keywords "θαλάσσια παρατηρητήρια, δεδομένα FAIR, EMSO, ερευνητικές υποδομές, οντολογία, υποβρύχια παρατηρητήρια"@el,
-        "marine observatories, FAIR data, EMSO, research infrastructures, ontology, underwater observatories"@en,
-        "observatorios marinos, datos FAIR, EMSO, infraestructuras de investigación, ontología, observatorios submarinos"@es,
-        "observatoires marins, données FAIR, EMSO, infrastructures de recherche, ontologie, observatoires sous-marins"@fr,
-        "osservatori marini, dati FAIR, EMSO, infrastrutture di ricerca, ontologia, osservatori sottomarini"@it,
-        "marine observatorier, FAIR-data, EMSO, forskningsinfrastrukturer, ontologi, undervannsobservatorier"@no,
-        "observatórios marinhos, dados FAIR, EMSO, infraestruturas de investigação, ontologia, observatórios subaquáticos"@pt,
-        "observatoare marine, date FAIR, EMSO, infrastructuri de cercetare, ontologie, observatoare subacvatice"@ro ;
-    omv:name "Οντολογία θαλάσσιων παρατηρητηρίων"@el,
-        "Observatories of the Seas Ontology"@en,
-        "Ontología de los observatorios marinos"@es,
-        "Ontologie des observatoires marins"@fr,
-        "Ontologia degli osservatori marini"@it,
-        "Ontologi for marine observatorier"@no,
-        "Ontologia dos observatórios marinhos"@pt,
-        "Ontologia observatoarelor marine"@ro ;
-    omv:naturalLanguage "el",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "no",
-        "pt",
-        "ro" ;
-    omv:numberOfAxioms 24767 ;
-    omv:numberOfClasses 84 ;
-    omv:numberOfIndividuals 761 ;
-    omv:numberOfProperties 172 ;
-    omv:ontologyPurpose "Περιγραφή της δομής και των βασικών στοιχείων των θαλάσσιων παρατηρητηρίων για τη βελτίωση της διαχείρισης δεδομένων, της διαλειτουργικότητας και της επαναχρησιμοποίησης, ιδιαίτερα στο πλαίσιο της υποδομής EMSO."@el,
-        "Describe the structure and key components of marine observatories to improve data management, interoperability, and reuse, especially in the EMSO research infrastructure context."@en,
-        "Describir la estructura y los componentes clave de los observatorios marinos para mejorar la gestión de datos, la interoperabilidad y la reutilización, especialmente en el contexto de la infraestructura de investigación EMSO."@es,
-        "Décrire la structure et les composants clés des observatoires marins afin d'améliorer la gestion, l'interopérabilité et la réutilisation des données, notamment dans le cadre de l'infrastructure de recherche EMSO."@fr,
-        "Descrivere la struttura e i principali componenti degli osservatori marini per migliorare la gestione, l'interoperabilità e il riutilizzo dei dati, in particolare nel contesto dell'infrastruttura di ricerca EMSO."@it,
-        "Beskrive strukturen og hovedkomponentene i marine observatorier for å forbedre datastyring, interoperabilitet og gjenbruk, spesielt i EMSO-forskningsinfrastrukturens kontekst."@no,
-        "Descrever a estrutura e os principais componentes dos observatórios marinhos para melhorar a gestão de dados, a interoperabilidade e a reutilização, especialmente no contexto da infraestrutura de investigação EMSO."@pt,
-        "Descrierea structurii și a componentelor cheie ale observatoarelor marine pentru a îmbunătăți gestionarea, interoperabilitatea și reutilizarea datelor, în special în contextul infrastructurii EMSO."@ro ;
-    omv:reference <https://doi.org/10.25504/FAIRsharing.654931>,
-        <https://doi.org/10.5281/zenodo.19497913>,
-        <https://earthportal.eu/ontologies/OSO>,
-        <https://github.com/emso-eric/oso-ontology>,
-        <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology> ;
-    omv:resourceLocator <https://w3id.org/earthsemantics/OSO> ;
-    omv:status "Published" ;
-    omv:useImports rdfs:,
-        owl:,
-        skos:,
-        foaf: ;
-    omv:usedOntologyEngineeringMethodology <https://w3id.org/okn/o/sd#OntologyEngineering>,
-        "Iterative ontology engineering methodology based on FAIR principles, competency questions, semantic alignments, and ontology reuse."@en ;
-    omv:usedOntologyEngineeringTool <https://github.com/RDFLib/rdflib/>,
-        <https://github.com/dgarijo/Widoco>,
-        <https://protege.stanford.edu/>,
-        <https://vscodium.com/> ;
-    omv:version "1.2.0" ;
-    dcterms:abstract "Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
-        "The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework."@en,
-        "La ontología OSO estructura los observatorios marinos en tres niveles jerárquicos: infraestructuras regionales, sitios y plataformas. Apoya la gestión FAIR de datos, la interoperabilidad y la integración de información sobre infraestructuras marinas, especialmente en el contexto de EMSO ERIC."@es,
-        "L'ontologie OSO structure les observatoires marins en trois niveaux hiérarchiques : infrastructures régionales, sites et plateformes. Elle soutient la gestion FAIR des données, l'interopérabilité et l'intégration des informations sur les infrastructures marines, notamment dans le cadre d'EMSO ERIC."@fr,
-        "L'ontologia OSO struttura gli osservatori marini in tre livelli gerarchici: infrastrutture regionali, siti e piattaforme. Supporta la gestione FAIR dei dati, l'interoperabilità e l'integrazione delle informazioni sulle infrastrutture marine, in particolare nel contesto EMSO ERIC."@it,
-        "OSO-ontologien strukturerer marine observatorier i tre hierarkiske nivåer: regionale fasiliteter, steder og plattformer. Den støtter FAIR datastyring, interoperabilitet og integrasjon av informasjon om marine infrastrukturer, spesielt i EMSO ERIC-konteksten."@no,
-        "A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC."@pt,
-        "Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC."@ro ;
-    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.2.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
-    dcterms:conformsTo <https://semver.org/>,
-        <https://www.conventionalcommits.org/>,
-        <https://www.w3.org/TR/owl2-overview/>,
-        <https://www.w3.org/TR/prov-o/>,
-        <https://www.w3.org/TR/skos-reference/>,
-        <https://www.w3.org/TR/sparql11-query/>,
-        <https://www.w3.org/TR/vocab-dcat-3/> ;
-    dcterms:contributor OSO:EMSO_DMSG ;
-    dcterms:coverage "Παγκόσμια κάλυψη, με έμφαση στις ευρωπαϊκές θάλασσες και στις θαλάσσιες ερευνητικές υποδομές"@el,
-        "Global, with a focus on European Seas and marine research infrastructures"@en,
-        "Cobertura global, con enfoque en los mares europeos y las infraestructuras de investigación marina"@es,
-        "Couverture mondiale, avec un focus sur les mers européennes et les infrastructures de recherche marines"@fr,
-        "Copertura globale, con focus sui mari europei e le infrastrutture di ricerca marine"@it,
-        "Global dekning, med fokus på europeiske havområder og marine forskningsinfrastrukturer"@no,
-        "Cobertura global, com foco nos mares europeus e nas infraestruturas de investigação marinha"@pt,
-        "Acoperire globală, cu accent pe mările europene și infrastructurile de cercetare marine"@ro ;
-    dcterms:created "2025-04-04"^^xsd:date ;
-    dcterms:creator OSO:Ifremer,
-        OSO:Steven_PIEL ;
-    dcterms:description "Οντολογία που περιγράφει τα παράκτια και ανοιχτά θαλάσσια παρατηρητήρια, συμπεριλαμβανομένων όλων των παρατηρητηρίων EMSO, στο πλαίσιο της ευρωπαϊκής πολυκλαδικής υποδομής για τον πυθμένα και τη στήλη του νερού. Να μην συγχέεται με το OpenScienceOntology (OSO)."@el,
-        "Ontology describing coastal and open seas observatories, including all EMSO observatories as part of the European Multidisciplinary Seafloor and Water Column Observatories infrastructure. Not to be confused with the OpenScienceOntology (OSO)."@en,
-        "Ontología que describe los observatorios marinos costeros y de alta mar, incluyendo todos los observatorios EMSO en el marco de la infraestructura europea multidisciplinar para el fondo marino y la columna de agua. No debe confundirse con OpenScienceOntology (OSO)."@es,
-        "Ontologie décrivant les observatoires marins côtiers et hauturiers, incluant l’ensemble des observatoires EMSO, dans le cadre de l'infrastructure européenne multidisciplinaire dédiée aux fonds marins et à la colonne d’eau. À ne pas confondre avec l'OpenScienceOntology (OSO)."@fr,
-        "Ontologia che descrive gli osservatori marini costieri e d'altura, compresi tutti gli osservatori EMSO, nell'ambito dell'infrastruttura europea multidisciplinare dei fondali marini e della colonna d'acqua. Da non confondere con OpenScienceOntology (OSO)."@it,
-        "Ontologi som beskriver kyst- og dyphavsobservatorier, inkludert alle EMSO-observatorier, som del av den europeiske tverrfaglige infrastrukturen for havbunn og vannsøyle. Må ikke forveksles med OpenScienceOntology (OSO)."@no,
-        "Ontologia que descreve os observatórios costeiros e de mar aberto, incluindo todos os observatórios EMSO no âmbito da infraestrutura europeia multidisciplinar dos fundos marinhos e da coluna de água. Não deve ser confundida com OpenScienceOntology (OSO)."@pt,
-        "Ontologie care descrie observatoarele marine de coastă și de larg, inclusiv toate observatoarele EMSO, ca parte a infrastructurii europene multidisciplinare a fundului mării și a coloanei de apă. A nu se confunda cu OpenScienceOntology (OSO)."@ro ;
-    dcterms:format <http://www.w3.org/ns/formats/JSON-LD>,
-        <http://www.w3.org/ns/formats/N-Triples>,
-        <http://www.w3.org/ns/formats/N3>,
-        <http://www.w3.org/ns/formats/RDF_XML>,
-        <http://www.w3.org/ns/formats/TriG>,
-        <http://www.w3.org/ns/formats/Turtle> ;
-    dcterms:hasFormat <https://w3id.org/earthsemantics/OSO/OSO.jsonld>,
-        <https://w3id.org/earthsemantics/OSO/OSO.n3>,
-        <https://w3id.org/earthsemantics/OSO/OSO.nt>,
-        <https://w3id.org/earthsemantics/OSO/OSO.owl>,
-        <https://w3id.org/earthsemantics/OSO/OSO.trig>,
-        <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
-    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
-    dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
-    dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931>,
-        <https://doi.org/10.5281/zenodo.19497912>,
-        <https://doi.pangaea.de/10.1594/PANGAEA.957446>,
-        <https://earthportal.eu/ontologies/OSO>,
-        <https://fairsharing.org/FAIRsharing.654931>,
-        <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology>,
-        <https://www.seanoe.org/data/00947/105929/>,
-        <https://zenodo.org/records/10697877> ;
-    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/el>,
-        <http://id.loc.gov/vocabulary/iso639-1/en>,
-        <http://id.loc.gov/vocabulary/iso639-1/es>,
-        <http://id.loc.gov/vocabulary/iso639-1/fr>,
-        <http://id.loc.gov/vocabulary/iso639-1/it>,
-        <http://id.loc.gov/vocabulary/iso639-1/no>,
-        <http://id.loc.gov/vocabulary/iso639-1/pt>,
-        <http://id.loc.gov/vocabulary/iso639-1/ro> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-08-25"^^xsd:date ;
-    dcterms:provenance "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.126.04524 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."@el,
-        "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.126.04524 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."@en,
-        "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.126.04524 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."@es,
-        "L'ontologie a été développée et maintenue à l'aide de Protégé 5.6.9, VSCodium 1.126.04524 et RDFLib 7.6.0, versionnée et publiée via GitHub. La gestion des versions suit Semantic Versioning (SemVer) et l'historique des commits respecte la spécification Conventional Commits. Les métadonnées de l'ontologie sont vérifiées et mises à jour, et les statistiques de l'ontologie sont recalculées à chaque nouvelle version."@fr,
-        "L'ontologia è stata sviluppata e mantenuta utilizzando Protégé 5.6.9, VSCodium 1.126.04524 e RDFLib 7.6.0, versionata e pubblicata tramite GitHub. Il versionamento segue Semantic Versioning (SemVer) e la cronologia dei commit rispetta la specifica Conventional Commits. I metadati dell'ontologia vengono verificati e aggiornati, e le statistiche dell'ontologia vengono ricalcolate a ogni nuova versione."@it,
-        "Ontologien ble utviklet og vedlikeholdt med Protégé 5.6.9, VSCodium 1.126.04524 og RDFLib 7.6.0, versjonskontrollert og publisert gjennom GitHub. Versjoneringen følger Semantic Versioning (SemVer), og commit-historikken følger spesifikasjonen Conventional Commits. Ontologiens metadata blir gjennomgått og oppdatert, og ontologistatistikken blir beregnet på nytt for hver nye versjon."@no,
-        "A ontologia foi desenvolvida e mantida utilizando o Protégé 5.6.9, o VSCodium 1.126.04524 e o RDFLib 7.6.0, versionada e publicada através do GitHub. O versionamento segue o Semantic Versioning (SemVer) e o histórico de commits respeita a especificação Conventional Commits. Os metadados da ontologia são revistos e atualizados, e as estatísticas da ontologia são recalculadas a cada nova versão."@pt,
-        "Ontologia a fost dezvoltată și întreținută utilizând Protégé 5.6.9, VSCodium 1.126.04524 și RDFLib 7.6.0, gestionată prin controlul versiunilor și publicată prin GitHub. Versionarea urmează Semantic Versioning (SemVer), iar istoricul commit-urilor respectă specificația Conventional Commits. Metadatele ontologiei sunt revizuite și actualizate, iar statisticile ontologiei sunt recalculate pentru fiecare nouă versiune."@ro ;
-    dcterms:publisher OSO:Ifremer ;
-    dcterms:relation <https://doi.org/10.5281/zenodo.19497912>,
-                     <https://emso-eric.github.io/oso-ontology/>,
-                     <https://github.com/emso-eric/oso-ontology>,
-                     <https://w3id.org/earthsemantics/OSO/dcat>,
-                     <https://w3id.org/earthsemantics/OSO/OSO-shacl.ttl> ;
-    dcterms:rightsHolder OSO:Ifremer ;
-    dcterms:source <https://github.com/emso-eric/oso-ontology> ;
-    dcterms:spatial "Παγκόσμια κάλυψη (εστίαση στις ευρωπαϊκές θάλασσες)"@el,
-        "Global (focus on European Seas)"@en,
-        "Cobertura global (enfocada en los mares europeos)"@es,
-        "Couverture mondiale (accent sur les mers européennes)"@fr,
-        "Copertura globale (con focus sui mari europei)"@it,
-        "Global dekning (fokus på europeiske havområder)"@no,
-        "Cobertura global (com foco nos mares europeus)"@pt,
-        "Acoperire globală (cu accent pe mările europene)"@ro ;
-    dcterms:subject <http://www.wikidata.org/entity/Q1438053>,
-        <http://www.wikidata.org/entity/Q43518> ;
-    dcterms:temporal "Από περίπου το 1990 έως σήμερα"@el,
-        "From ~1990 to present"@en,
-        "Desde ~1990 hasta la actualidad"@es,
-        "Depuis environ 1990 jusqu'à aujourd'hui"@fr,
-        "Dal ~1990 ad oggi"@it,
-        "Fra ca. 1990 til i dag"@no,
-        "Desde ~1990 até o presente"@pt,
-        "Din ~1990 până în prezent"@ro ;
-    dcterms:title "Οντολογία θαλάσσιων παρατηρητηρίων (OSO)"@el,
-        "Observatories of the Seas Ontology (OSO)"@en,
-        "Ontología de los observatorios marinos (OSO)"@es,
-        "Ontologie des observatoires marins (OSO)"@fr,
-        "Ontologia degli osservatori marini (OSO)"@it,
-        "Ontologi for marine observatorier (OSO)"@no,
-        "Ontologia dos observatórios marinhos (OSO)"@pt,
-        "Ontologia observatoarelor marine (OSO)"@ro ;
-    pav:authoredBy <https://orcid.org/0009-0008-1759-5254> ;
-    pav:createdBy <https://orcid.org/0009-0008-1759-5254> ;
-    pav:createdOn "2025-04-04"^^xsd:date ;
-    pav:createdWith <https://protege.stanford.edu/>,
-        <https://vscodium.com/> ;
-    pav:curatedBy <https://orcid.org/0009-0008-1759-5254> ;
-    pav:curatedOn "2026-08-20"^^xsd:date ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    pav:version "1.2.0" ;
-    datacite:doi "10.5281/zenodo.19497913" ;
-    vann:example OSO:Site ;
-    vann:preferredNamespacePrefix "OSO" ;
-    vann:preferredNamespaceUri OSO: ;
-    voaf:metadataVoc cc:,
-        omv:,
-        dcterms:,
-        pav:,
-        vann:,
-        voaf:,
-        void:,
-        schema1:,
-        rdfs:,
-        owl:,
-        skos:,
-        adms:,
-        dcat:,
-        prov:,
-        sd:,
-        foaf:,
-        mod: ;
-    voaf:toDoList <https://github.com/emso-eric/oso-ontology/issues>,
-        <https://github.com/emso-eric/oso-ontology/issues?q=is%3Aopen+label%3Aenhancement> ;
-    schema1:associatedMedia <https://emso-eric.github.io/oso-ontology/resources/oso-diagram.png> ;
-    schema1:codeRepository <https://github.com/emso-eric/oso-ontology> ;
-    schema1:copyrightHolder OSO:EMSO,
-        OSO:Ifremer ;
-    schema1:includedInDataCatalog <https://earthportal.eu/ontologies/OSO>,
-        <https://fairsharing.org/FAIRsharing.654931>,
-        <https://lov.linkeddata.es/dataset/lov/vocabs/oso> ;
-    schema1:memberOf <https://emso.eu/>,
-        <https://www.data-terra.org/>,
-        <https://www.odatis-ocean.fr/> ;
-    schema1:sameAs <https://earthportal.eu/ontologies/OSO>,
-        <https://github.com/emso-eric/oso-ontology> ;
-    schema1:translator OSO:EMSO_DMSG ;
-    schema1:url <https://emso-eric.github.io/oso-ontology/> ;
-    rdfs:comment "Οντολογία που περιγράφει τις σχέσεις μεταξύ περιφερειακών υποδομών, τοποθεσιών, πλατφορμών, ερευνητικών υποδομών, οργανισμών, αποστολών και των υπευθύνων σε κάθε επίπεδο."@el,
-        "Συνεκπόνηση με ειδικούς του τομέα και επαναληπτική ευθυγράμμιση με πρότυπες οντολογίες"@el,
-        "Το OSO περιλαμβάνει επιλεγμένες σημασιολογικές αντιστοιχίσεις με έννοιες SWEET, ώστε να βελτιωθεί η διαλειτουργικότητα με λεξιλόγια των επιστημών της Γης και του περιβάλλοντος."@el,
-        "Co-construction with domain experts and iterative alignment with reference ontologies"@en,
-        "OSO includes selected semantic alignments with SWEET concepts to improve interoperability with Earth and environmental science vocabularies."@en,
-        "Ontology describing the relationships between Regional Facilities, Sites, Platforms, Research Infrastructures, Organisations, Cruises, and the persons in charge of each level."@en,
-        "Co-construcción con expertos del dominio y alineación iterativa con ontologías de referencia"@es,
-        "OSO incluye alineaciones semánticas seleccionadas con conceptos de SWEET para mejorar la interoperabilidad con vocabularios de ciencias de la Tierra y del medio ambiente."@es,
-        "Ontología que describe las relaciones entre instalaciones regionales, emplazamientos, plataformas, infraestructuras de investigación, organizaciones, cruceros y las personas responsables de cada nivel."@es,
-        "Co-construction avec des experts métier et alignement itératif avec des ontologies de référence"@fr,
-        "OSO inclut des alignements sémantiques ciblés avec des concepts SWEET afin d'améliorer l'interopérabilité avec les vocabulaires des sciences de la Terre et de l'environnement."@fr,
-        "Ontologie décrivant les relations entre les nœuds régionaux, les sites, les plateformes, les infrastructures de recherche, les organisations, les campagnes à la mer et les personnes responsables à chaque niveau."@fr,
-        "Co-costruzione con esperti di dominio e allineamento iterativo con ontologie di riferimento"@it,
-        "OSO include allineamenti semantici selezionati con concetti SWEET per migliorare l'interoperabilità con i vocabolari delle scienze della Terra e dell'ambiente."@it,
-        "Ontologia che descrive le relazioni tra strutture regionali, siti, piattaforme, infrastrutture di ricerca, organizzazioni, crociere e i responsabili di ciascun livello."@it,
-        "OSO inkluderer utvalgte semantiske tilpasninger til SWEET-begreper for å forbedre interoperabiliteten med vokabularer innen jord- og miljøvitenskap."@no,
-        "Ontologi som beskriver forholdet mellom regionale fasiliteter, steder, plattformer, forskningsinfrastrukturer, organisasjoner, cruiser og de ansvarlige på hvert nivå."@no,
-        "Samskaping med fagpersoner og iterativ tilpasning til referanseontologier"@no,
-        "A OSO inclui alinhamentos semânticos selecionados com conceitos SWEET para melhorar a interoperabilidade com vocabulários das ciências da Terra e do ambiente."@pt,
-        "Co-construção com especialistas no domínio e alinhamento iterativo com ontologias de referência"@pt,
-        "Ontologia que descreve as relações entre instalações regionais, locais, plataformas, infraestruturas de investigação, organizações, cruzeiros e os responsáveis por cada nível."@pt,
-        "Co-construcție cu experți din domeniu și aliniere iterativă cu ontologii de referință"@ro,
-        "OSO include alinieri semantice selectate cu concepte SWEET pentru a îmbunătăți interoperabilitatea cu vocabularele din științele Pământului și ale mediului."@ro,
-        "Ontologie care descrie relațiile dintre facilitățile regionale, siturile, platformele, infrastructurile de cercetare, organizațiile, croazierele și persoanele responsabile la fiecare nivel."@ro ;
-    rdfs:isDefinedBy <https://w3id.org/earthsemantics/OSO> ;
-    rdfs:seeAlso <https://doi.org/10.5281/zenodo.19497912>,
-        <https://emso-eric.github.io/oso-ontology/>,
-        <https://fairsharing.org/FAIRsharing.654931>,
-        <https://github.com/emso-eric/oso-ontology>,
-        <https://service.tib.eu/webvowl/#iri=https://earthportal.eu/ontologies/OSO> ;
-    owl:backwardCompatibleWith <https://w3id.org/earthsemantics/OSO/1.0.0/>,
-        <https://w3id.org/earthsemantics/OSO/1.0.1/>,
-        <https://w3id.org/earthsemantics/OSO/1.0.2/>,
-        <https://w3id.org/earthsemantics/OSO/1.0.3/>,
-        <https://w3id.org/earthsemantics/OSO/1.0.4/>,
-        <https://w3id.org/earthsemantics/OSO/1.0.5/>,
-        <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos>,
-        <http://www.w3.org/2004/02/skos/core>,
-        <http://www.w3.org/ns/prov-o>,
-        foaf: ;
-    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    owl:versionInfo
-    "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· εισαγωγή επικύρωσης SHACL· βελτίωση της συνέπειας μεταξύ TBox, ABox και SHACL· εμπλουτισμός της μοντελοποίησης του σημασιολογικού οικοσυστήματος, των μεταδεδομένων της οντολογίας και των πολυγλωσσικών επισημάνσεων· βελτίωση κλάσεων και ιδιοτήτων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"@el,
-    "1.2.0 – separated ontology model and instance data distributions; introduced SHACL validation; improved TBox, ABox and SHACL consistency; enriched semantic ecosystem modelling, ontology metadata and multilingual annotations; refined classes and properties; corrected SmartBay typographical error"@en,
-    "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; introducción de la validación SHACL; mejora de la coherencia entre TBox, ABox y SHACL; enriquecimiento del modelado del ecosistema semántico, los metadatos de la ontología y las anotaciones multilingües; refinamiento de clases y propiedades; corrección de una errata relativa a SmartBay"@es,
-    "1.2.0 – séparation des distributions du modèle ontologique et des données d’instances ; introduction de la validation SHACL ; amélioration de la cohérence entre TBox, ABox et SHACL ; enrichissement de la modélisation de l’écosystème sémantique, des métadonnées de l’ontologie et des annotations multilingues ; amélioration des classes et propriétés ; correction d’une erreur typographique concernant SmartBay"@fr,
-    "1.2.0 – separazione delle distribuzioni del modello ontologico e dei dati delle istanze; introduzione della validazione SHACL; miglioramento della coerenza tra TBox, ABox e SHACL; arricchimento della modellazione dell’ecosistema semantico, dei metadati dell’ontologia e delle annotazioni multilingue; perfezionamento di classi e proprietà; correzione di un refuso relativo a SmartBay"@it,
-    "1.2.0 – separate distribusjoner for ontologimodellen og instansdata; innføring av SHACL-validering; forbedret konsistens mellom TBox, ABox og SHACL; beriket modellering av det semantiske økosystemet, ontologimetadata og flerspråklige annotasjoner; forbedring av klasser og egenskaper; retting av en skrivefeil knyttet til SmartBay"@no,
-    "1.2.0 – separação das distribuições do modelo ontológico e dos dados de instâncias; introdução da validação SHACL; melhoria da coerência entre TBox, ABox e SHACL; enriquecimento da modelação do ecossistema semântico, dos metadados da ontologia e das anotações multilingues; aperfeiçoamento de classes e propriedades; correção de um erro tipográfico relativo ao SmartBay"@pt,
-    "1.2.0 – separarea distribuțiilor modelului ontologic și ale datelor de instanță; introducerea validării SHACL; îmbunătățirea coerenței între TBox, ABox și SHACL; îmbogățirea modelării ecosistemului semantic, a metadatelor ontologiei și a adnotărilor multilingve; rafinarea claselor și proprietăților; corectarea unei erori tipografice referitoare la SmartBay"@ro ;
-    skos:altLabel "OSO",
-        "Open Seas Observatories"@en ;
-    skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,
-        "This ontology aims to describe underwater observatories, in particular those associated with the European Multidisciplinary Seafloor and Water Column Observatories (EMSO), which has been a European Research Infrastructure Consortium (ERIC) since 2016."@en,
-        "Esta ontología tiene como objetivo describir los observatorios submarinos, en particular los asociados al Observatorio Multidisciplinar Europeo del Fondo Marino y la Columna de Agua (EMSO), que es un Consorcio Europeo de Infraestructuras de Investigación (ERIC) desde 2016."@es,
-        "Cette ontologie vise à décrire les observatoires sous-marins, en particulier ceux associés au réseau européen d'observatoires multidisciplinaires des fonds marins et de la colonne d'eau (EMSO), qui constitue un consortium européen d'infrastructures de recherche (ERIC) depuis 2016."@fr,
-        "Questa ontologia ha lo scopo di descrivere gli osservatori sottomarini, in particolare quelli associati agli Osservatori multidisciplinari europei dei fondali marini e della colonna d'acqua (EMSO), che dal 2016 costituiscono un Consorzio europeo per le infrastrutture di ricerca (ERIC)."@it,
-        "Denne ontologien har som mål å beskrive undervannsobservatorier, særlig de som er tilknyttet European Multidisciplinary Seafloor and Water Column Observatories (EMSO), som har vært et europeisk forskningsinfrastrukturkonsortium (ERIC) siden 2016."@no,
-        "Esta ontologia visa descrever observatórios subaquáticos, em particular os associados ao Observatório Multidisciplinar Europeu do Fundo Marinho e da Coluna de Água (EMSO), que é um Consórcio Europeu de Infraestruturas de Investigação (ERIC) desde 2016."@pt,
-        "Această ontologie are ca scop descrierea observatoarelor subacvatice, în special a celor asociate cu Observatoarele multidisciplinare europene ale fundului mării și coloanei de apă (EMSO), care constituie un consorțiu european de infrastructură de cercetare (ERIC) din 2016."@ro ;
-    skos:hiddenLabel "Ontology for Scenario Orchestration"@en,
-        "OpenScienceOntology"@en ;
-    skos:prefLabel "Οντολογία θαλάσσιων παρατηρητηρίων"@el,
-        "Observatories of the Seas Ontology"@en,
-        "Ontología de los observatorios marinos"@es,
-        "Ontologie des observatoires marins"@fr,
-        "Ontologia degli osservatori marini"@it,
-        "Ontologi for marine observatorier"@no,
-        "Ontologia dos observatórios marinhos"@pt,
-        "Ontologia observatoarelor marine"@ro ;
-    skos:scopeNote "Να μην συγχέεται με το OpenScienceOntology (OSO) ή το Ontology for Scenario Orchestration (OSO)."@el,
-        "Not to be confused with OpenScienceOntology (OSO) or Ontology for Scenario Orchestration (OSO)."@en,
-        "No confundir con OpenScienceOntology (OSO) ni con Ontology for Scenario Orchestration (OSO)."@es,
-        "À ne pas confondre avec OpenScienceOntology (OSO) ni avec Ontology for Scenario Orchestration (OSO)."@fr,
-        "Da non confondere con OpenScienceOntology (OSO) o Ontology for Scenario Orchestration (OSO)."@it,
-        "Må ikke forveksles med OpenScienceOntology (OSO) eller Ontology for Scenario Orchestration (OSO)."@no,
-        "Não confundir com OpenScienceOntology (OSO) nem com Ontology for Scenario Orchestration (OSO)."@pt,
-        "A nu se confunda cu OpenScienceOntology (OSO) sau cu Ontology for Scenario Orchestration (OSO)."@ro ;
-    adms:identifier [ a adms:Identifier ;
-            skos:notation "https://doi.org/10.25504/FAIRsharing.654931" ;
-            skos:prefLabel "FAIRsharing DOI for OSO"@en ],
-        [ a adms:Identifier ;
-            skos:notation "https://w3id.org/earthsemantics/OSO" ;
-            skos:prefLabel "Persistent IRI for OSO"@en ],
-        [ a adms:Identifier ;
-            skos:notation "https://doi.org/10.5281/zenodo.19497912" ;
-            skos:prefLabel "Zenodo DOI for OSO"@en ] ;
-    adms:representationTechnique "OWL 2 DL in Turtle syntax" ;
-    adms:status <http://purl.org/adms/status/Completed> ;
-    dcat:accessURL <https://virtuoso.ifremer.fr/oso/> ;
-    dcat:contactPoint [ a vcard:Kind ;
-            vcard:fn "EMSO Data Management Service Group" ;
-            vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
-            vcard:hasOrganizationName "EMSO ERIC" ] ;
-    dcat:keyword "θαλάσσια παρατηρητήρια"@el,
-        "EMSO"@en,
-        "FAIR data"@en,
-        "marine observatories"@en,
-        "ontology"@en,
-        "research infrastructures"@en,
-        "underwater observatories"@en,
-        "datos FAIR"@es,
-        "observatorios marinos"@es,
-        "données FAIR"@fr,
-        "infrastructures de recherche"@fr,
-        "observatoires marins"@fr,
-        "osservatori marini"@it,
-        "marine observatorier"@no,
-        "observatórios marinhos"@pt,
-        "observatoare marine"@ro ;
-    dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
-    prov:generatedAtTime "2026-08-20"^^xsd:date ;
-    prov:wasAttributedTo OSO:Ifremer ;
-    prov:wasGeneratedBy OSO:OntologyEngineeringWorkflow,
-        "Developed as part of the EMSO ERIC Data Management Service Group activities"@en ;
-    sd:endpoint <https://virtuoso.ifremer.fr/oso/> ;
-    foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png> ;
-    foaf:fundedBy OSO:EMSO_EVOLVE ;
-    foaf:page <https://earthportal.eu/ontologies/OSO>,
-        <https://emso-eric.github.io/oso-ontology/>,
-        <https://fairsharing.org/FAIRsharing.654931>,
-        <https://github.com/emso-eric/oso-ontology> ;
-    mod:acronym "OSO" ;
-    mod:competencyQuestion "Ποιες πλατφόρμες ανήκουν σε έναν συγκεκριμένο σταθμό;"@el,
-        "Ποιες ωκεανογραφικές αποστολές συνδέονται με μια περιφερειακή υποδομή;"@el,
-        "Ποιο είναι το βάθος μιας πλατφόρμας;"@el,
-        "Ποιοι οργανισμοί συμμετέχουν σε μια συγκεκριμένη υποδομή παρατήρησης;"@el,
-        "Ποιοι σταθμοί αποτελούν μέρος μιας περιφερειακής υποδομής;"@el,
-        "Ποιος είναι ο κύριος ερευνητής (PI) ή ο περιφερειακός υπεύθυνος;"@el,
-        "What is the depth of a platform?"@en,
-        "Which oceanographic cruises are associated with a regional facility?"@en,
-        "Which organisations are involved in a given observatory infrastructure?"@en,
-        "Which platforms belong to a given site?"@en,
-        "Which sites are part of a regional facility?"@en,
-        "Who is the Principal Investigator or Regional Team Leader?"@en,
-        "¿Cuál es la profundidad de una plataforma?"@es,
-        "¿Quién es el Investigador Principal (PI) o el responsable regional?"@es,
-        "¿Qué campañas oceanográficas están asociadas a una infraestructura regional?"@es,
-        "¿Qué organizaciones están involucradas en una infraestructura de observación dada?"@es,
-        "¿Qué plataformas pertenecen a un sitio dado?"@es,
-        "¿Qué sitios forman parte de una infraestructura regional?"@es,
-        "Quelle est la profondeur d’une plateforme ?"@fr,
-        "Quelles campagnes océanographiques sont associées à une infrastructure régionale ?"@fr,
-        "Quelles organisations sont impliquées dans une infrastructure d’observation donnée ?"@fr,
-        "Quelles plateformes appartiennent à un site donné ?"@fr,
-        "Quels sites font partie d’une infrastructure régionale ?"@fr,
-        "Qui est le responsable scientifique (PI) ou le responsable régional ?"@fr,
-        "Chi è il Principal Investigator (PI) o il responsabile regionale?"@it,
-        "Qual è la profondità di una piattaforma?"@it,
-        "Quali campagne oceanografiche sono associate a una infrastruttura regionale?"@it,
-        "Quali organizzazioni sono coinvolte in una infrastruttura di osservazione specifica?"@it,
-        "Quali piattaforme appartengono a un sito specifico?"@it,
-        "Quali siti fanno parte di una infrastruttura regionale?"@it,
-        "Hva er dybden til en plattform?"@no,
-        "Hvem er hovedansvarlig forsker (PI) eller regional leder?"@no,
-        "Hvilke organisasjoner er involvert i en gitt observasjonsinfrastruktur?"@no,
-        "Hvilke oseanografiske tokt er knyttet til en regional infrastruktur?"@no,
-        "Hvilke plattformer tilhører et gitt sted?"@no,
-        "Hvilke steder er en del av en regional infrastruktur?"@no,
-        "Quais campanhas oceanográficas estão associadas a uma infraestrutura regional?"@pt,
-        "Quais locais fazem parte de uma infraestrutura regional?"@pt,
-        "Quais organizações estão envolvidas numa determinada infraestrutura de observação?"@pt,
-        "Quais plataformas pertencem a um determinado local?"@pt,
-        "Qual é a profundidade de uma plataforma?"@pt,
-        "Quem é o Investigador Principal (PI) ou o responsável regional?"@pt,
-        "Care este adâncimea unei platforme?"@ro,
-        "Ce campanii oceanografice sunt asociate unei infrastructuri regionale?"@ro,
-        "Ce organizații sunt implicate într-o anumită infrastructură de observare?"@ro,
-        "Ce platforme aparțin unui anumit sit?"@ro,
-        "Ce situri fac parte dintr-o infrastructură regională?"@ro,
-        "Cine este Investigatorul Principal (PI) sau responsabilul regional?"@ro ;
-    mod:endorsedBy OSO:EMSO,
-        OSO:EMSO-France,
-        OSO:Ifremer ;
-    mod:group <https://data.earthportal.eu/groups/DATA_TERRA>,
-        <https://data.earthportal.eu/groups/EPOS>,
-        <https://data.earthportal.eu/groups/IFREMER>,
-        <https://data.earthportal.eu/groups/ODATIS> ;
-    mod:hierarchyProperty rdfs:subClassOf ;
-    mod:maxDepth 5 ;
-    mod:obsoleteParent owl:deprecated ;
-    mod:ontologyInUse <https://earthportal.eu/projects/EMSO_EVOLVE>,
-        OSO:EMSO_EVOLVE ;
-    mod:status "active" .
 
 OSO:ERICMembership a owl:Class ;
     rdfs:label "Συμμετοχή σε ERIC"@el,
@@ -3174,6 +3152,34 @@ OSO:FundedProject a owl:Class ;
         "Finansiert prosjekt"@no,
         "Projeto financiado"@pt,
         "Proiect finanțat"@ro .
+
+OSO:SeriesOfOceanographicCampaigns a owl:Class ;
+    rdfs:label "Σειρά ωκεανογραφικών εκστρατειών"@el,
+        "Series of Oceanographic Campaigns"@en,
+        "Serie de campañas oceanográficas"@es,
+        "Série de campagnes océanographiques"@fr,
+        "Serie di campagne oceanografiche"@it,
+        "Serie med havforskningskampanjer"@no,
+        "Série de campanhas oceanográficas"@pt,
+        "Serie de campanii oceanografice"@ro ;
+    metadata:prefixIRI "omv:SeriesOfOceanographicCampaigns" ;
+    rdfs:comment "Μια θεματική ή χρονική ομαδοποίηση συναφών ωκεανογραφικών εκστρατειών που συνδέεται με μια περιφερειακή υποδομή."@el,
+        "A thematic or temporal grouping of related oceanographic campaigns linked to a Regional Facility."@en,
+        "Una agrupación temática o temporal de campañas oceanográficas relacionadas, vinculada a una instalación regional."@es,
+        "Un regroupement thématique ou temporel de campagnes océanographiques liées à un noeud régional."@fr,
+        "Un raggruppamento tematico o temporale di campagne oceanografiche correlate, collegato a una struttura regionale."@it,
+        "En tematisk eller tidsmessig gruppering av relaterte havforskningskampanjer knyttet til en regional infrastruktur."@no,
+        "Um agrupamento temático ou temporal de campanhas oceanográficas relacionadas, associado a uma infraestrutura regional."@pt,
+        "O grupare tematică sau temporală de campanii oceanografice asociate unei infrastructuri regionale."@ro ;
+    rdfs:seeAlso OSO:OceanographicCampaign ;
+    skos:prefLabel "Σειρά ωκεανογραφικών εκστρατειών"@el,
+        "Series of Oceanographic Campaigns"@en,
+        "Serie de campañas oceanográficas"@es,
+        "Série de campagnes océanographiques"@fr,
+        "Serie di campagne oceanografiche"@it,
+        "Serie med havforskningskampanjer"@no,
+        "Série de campanhas oceanográficas"@pt,
+        "Serie de campanii oceanografice"@ro .
 
 OSO:ResearchProject a owl:Class ;
     rdfs:label "Ερευνητικό έργο"@el,
@@ -3319,34 +3325,6 @@ OSO:ERIC a owl:Class ;
         "ERIC"@pt,
         "ERIC"@ro .
 
-OSO:isPartOfResearchInfrastructure a owl:ObjectProperty ;
-    rdfs:label "είναι μέρος ερευνητικής υποδομής"@el,
-        "is part of research infrastructure"@en,
-        "forma parte de una infraestructura de investigación"@es,
-        "fait partie d’une infrastructure de recherche"@fr,
-        "fa parte di un'infrastruttura di ricerca"@it,
-        "er del av en forskningsinfrastruktur"@no,
-        "faz parte de uma infraestrutura de investigação"@pt,
-        "face parte dintr-o infrastructură de cercetare"@ro ;
-    rdfs:comment "Συνδέει μια ερευνητική υποδομή με μια ευρύτερη ερευνητική υποδομή της οποίας αποτελεί μέρος."@el,
-        "Links a research infrastructure to a broader research infrastructure of which it is part."@en,
-        "Relaciona una infraestructura de investigación con una infraestructura de investigación más amplia de la que forma parte."@es,
-        "Relie une infrastructure de recherche à une infrastructure de recherche plus large dont elle fait partie."@fr,
-        "Collega un'infrastruttura di ricerca a un'infrastruttura di ricerca più ampia di cui fa parte."@it,
-        "Knytter en forskningsinfrastruktur til en overordnet forskningsinfrastruktur som den er en del av."@no,
-        "Liga uma infraestrutura de investigação a uma infraestrutura de investigação mais ampla da qual faz parte."@pt,
-        "Leagă o infrastructură de cercetare de o infrastructură de cercetare mai largă din care face parte."@ro ;
-    rdfs:domain OSO:ResearchInfrastructure ;
-    rdfs:range OSO:ResearchInfrastructure ;
-    skos:prefLabel "είναι μέρος ερευνητικής υποδομής"@el,
-        "is part of research infrastructure"@en,
-        "forma parte de una infraestructura de investigación"@es,
-        "fait partie d’une infrastructure de recherche"@fr,
-        "fa parte di un'infrastruttura di ricerca"@it,
-        "er del av en forskningsinfrastruktur"@no,
-        "faz parte de uma infraestrutura de investigação"@pt,
-        "face parte dintr-o infrastructură de cercetare"@ro .
-
 OSO:SemanticTool a owl:Class ;
     rdfs:label "Σημασιολογικό εργαλείο"@el,
         "Semantic tool"@en,
@@ -3374,6 +3352,34 @@ OSO:SemanticTool a owl:Class ;
         "Semantisk verktøy"@no,
         "Ferramenta semântica"@pt,
         "Instrument semantic"@ro .
+
+OSO:Subsite a owl:Class ;
+    rdfs:label "Υποτοποθεσία παρατήρησης"@el,
+        "Observation Subsite"@en,
+        "Sub-sitio de observación"@es,
+        "Sous-site d'observation"@fr,
+        "Sotto-sito di osservazione"@it,
+        "Delområde for observasjon"@no,
+        "Sublocal de observação"@pt,
+        "Sub-site de observație"@ro ;
+    metadata:prefixIRI "OSO:Subsite" ;
+    rdfs:comment "Μια υποτοποθεσία παρατήρησης, λεπτότερο συστατικό ενός τόπου, που επιτρέπει αυξημένη χωρική ανάλυση για μέτρηση ή οργανολογία."@el,
+        "A subsite of observation, a finer component of a site, enabling increased spatial granularity for measurement or instrumentation."@en,
+        "Un sub-sitio de observación, componente más detallado de un sitio, que permite una mayor granularidad espacial para mediciones o instrumentación."@es,
+        "Un sous-site d'observation, composante plus fine d’un site, qui permet une granularité spatiale accrue pour la mesure ou l'instrumentation."@fr,
+        "Un sotto-sito di osservazione, componente più fine di un sito, che consente una maggiore granularità spaziale per le misurazioni o la strumentazione."@it,
+        "Et delområde for observasjon, en finere komponent av et sted, som muliggjør økt romlig granularitet for måling eller instrumentering."@no,
+        "Um sublocal de observação, componente mais detalhado de um site, permitindo maior granularidade espacial para medições ou instrumentação."@pt,
+        "Un sub-site de observație, componentă mai detaliată a unui site, care permite o granularitate spațială crescută pentru măsurători sau instrumentare."@ro ;
+    rdfs:subClassOf OSO:Site ;
+    skos:prefLabel "Υποτοποθεσία παρατήρησης"@el,
+        "Observation Subsite"@en,
+        "Sub-sitio de observación"@es,
+        "Sous-site d'observation"@fr,
+        "Sotto-sito di osservazione"@it,
+        "Delområde for observasjon"@no,
+        "Sublocal de observação"@pt,
+        "Sub-site de observație"@ro .
 
 OSO:ResearchInfrastructure a owl:Class ;
     rdfs:label "Ερευνητική Υποδομή"@el,
@@ -3412,34 +3418,6 @@ OSO:ResearchInfrastructure a owl:Class ;
         "Forskningsinfrastruktur"@no,
         "Infraestrutura de Investigação"@pt,
         "Infrastructură de cercetare"@ro .
-
-OSO:Subsite a owl:Class ;
-    rdfs:label "Υποτοποθεσία παρατήρησης"@el,
-        "Observation Subsite"@en,
-        "Sub-sitio de observación"@es,
-        "Sous-site d'observation"@fr,
-        "Sotto-sito di osservazione"@it,
-        "Delområde for observasjon"@no,
-        "Sublocal de observação"@pt,
-        "Sub-site de observație"@ro ;
-    metadata:prefixIRI "OSO:Subsite" ;
-    rdfs:comment "Μια υποτοποθεσία παρατήρησης, λεπτότερο συστατικό ενός τόπου, που επιτρέπει αυξημένη χωρική ανάλυση για μέτρηση ή οργανολογία."@el,
-        "A subsite of observation, a finer component of a site, enabling increased spatial granularity for measurement or instrumentation."@en,
-        "Un sub-sitio de observación, componente más detallado de un sitio, que permite una mayor granularidad espacial para mediciones o instrumentación."@es,
-        "Un sous-site d'observation, composante plus fine d’un site, qui permet une granularité spatiale accrue pour la mesure ou l'instrumentation."@fr,
-        "Un sotto-sito di osservazione, componente più fine di un sito, che consente una maggiore granularità spaziale per le misurazioni o la strumentazione."@it,
-        "Et delområde for observasjon, en finere komponent av et sted, som muliggjør økt romlig granularitet for måling eller instrumentering."@no,
-        "Um sublocal de observação, componente mais detalhado de um site, permitindo maior granularidade espacial para medições ou instrumentação."@pt,
-        "Un sub-site de observație, componentă mai detaliată a unui site, care permite o granularitate spațială crescută pentru măsurători sau instrumentare."@ro ;
-    rdfs:subClassOf OSO:Site ;
-    skos:prefLabel "Υποτοποθεσία παρατήρησης"@el,
-        "Observation Subsite"@en,
-        "Sub-sitio de observación"@es,
-        "Sous-site d'observation"@fr,
-        "Sotto-sito di osservazione"@it,
-        "Delområde for observasjon"@no,
-        "Sublocal de observação"@pt,
-        "Sub-site de observație"@ro .
 
 OSO:Platform a owl:Class ;
     rdfs:label "Πλατφόρμα παρατήρησης"@el,
@@ -3537,3 +3515,9 @@ OSO:RegionalFacility a owl:Class ;
         "Regional fasilitet"@no,
         "Infraestrutura regional"@pt,
         "Infrastructură regională"@ro .
+
+[] a vcard:Kind ;
+    vcard:fn "EMSO Data Management Service Group" ;
+    vcard:hasEmail <mailto:emso.dmsg@emso-eu.org> ;
+    vcard:hasOrganizationName "EMSO ERIC" .
+

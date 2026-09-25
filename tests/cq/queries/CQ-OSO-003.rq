@@ -1,0 +1,15 @@
+PREFIX OSO: <https://w3id.org/earthsemantics/OSO#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# OSO-namespace classes and properties lacking an English label (must be none).
+SELECT ?term
+WHERE {
+  ?term a ?type .
+  VALUES ?type { owl:Class owl:ObjectProperty owl:DatatypeProperty }
+  FILTER (STRSTARTS(STR(?term), "https://w3id.org/earthsemantics/OSO#"))
+  FILTER NOT EXISTS {
+    ?term rdfs:label ?label .
+    FILTER (lang(?label) = "en")
+  }
+}
