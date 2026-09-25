@@ -29,8 +29,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r maintenance/requirements.txt
 
-      - name: Regenerate docs artefacts
-        run: python maintenance/generate_docs.py
+      - name: Regenerate docs artefacts only on semantic drift
+        run: |
+          # Serialisation byte ordering is not stable across environments;
+          # regenerate only when the committed files stop being faithful
+          # to OSO.ttl (--check is an isomorphism test), not on byte churn.
+          if python maintenance/generate_docs.py --check; then
+            echo "docs artefacts already faithful to OSO.ttl"
+          else
+            python maintenance/generate_docs.py
+          fi
 
       - name: Commit changes if any
         run: |
