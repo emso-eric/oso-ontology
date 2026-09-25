@@ -141,6 +141,27 @@ def validate(include_versions: bool) -> tuple[list[str], list[str]]:
             union.add(t)
         if not isomorphic(union, source):
             errors.append("OSO-ontology.ttl ∪ OSO-instances.ttl is not isomorphic to OSO.ttl.")
+        # An individual (typed owl:NamedIndividual, no OWL meta-class type)
+        # must live in the ABox; the ontology IRI itself is exempt.
+        metaclasses = {OWL.Class, OWL.ObjectProperty, OWL.DatatypeProperty,
+                       OWL.AnnotationProperty, OWL.Ontology}
+        leaked = {
+            s for s in tbox.subjects(RDF.type, OWL.NamedIndividual)
+            if s != OSO_IRI and metaclasses.isdisjoint(tbox.objects(s, RDF.type))
+        }
+        if leaked:
+            errors.append(
+                f"OSO-ontology.ttl: {len(leaked)} individual(s) leaked into the TBox "
+                f"(e.g. {sorted(map(str, leaked))[0]})."
+            )
+        split = {s for s in tbox.subjects() if isinstance(s, URIRef)} & {
+            s for s in abox.subjects() if isinstance(s, URIRef)
+        }
+        if split:
+            errors.append(
+                f"{len(split)} subject(s) described in both OSO-ontology.ttl and "
+                f"OSO-instances.ttl (e.g. {sorted(map(str, split))[0]})."
+            )
 
     # --- Root serialisations must mirror the source ---
     for rel, fmt in ROOT_SERIALIZATIONS + [("OSO.trig", "trig")]:

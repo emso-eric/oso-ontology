@@ -78,21 +78,24 @@ SERIALIZATIONS = [
 def partition_tbox_abox(graph: Graph):
     """Return (tbox_graph, abox_graph) partitioned from `graph`.
 
-    Triples are grouped into blank-node-connected components first: a bnode
-    must appear in exactly one partition, otherwise serialising TBox and
-    ABox to separate files splits shared bnodes (adms:identifier, vcard
-    contact points, shared owl:unionOf lists, ...) and the union is no
-    longer isomorphic to the source. A component goes to the ABox only if
-    all its URIRef members are individuals.
+    Triples with an IRI subject follow that subject. Blank nodes are not
+    classified by their own types: each bnode-connected structure (linked
+    through bnode-to-bnode edges only) follows the IRI subjects that
+    reference it, so shared bnodes (adms:identifier, vcard contact points,
+    owl:unionOf lists, ...) never end up split across the two files, which
+    would break the isomorphism of TBox ∪ ABox with the source. A structure
+    goes to the ABox only if every referencing IRI subject is an individual.
     """
     individuals = set()
     for subject in set(graph.subjects()):
+        if not isinstance(subject, URIRef):
+            continue
         types = list(graph.objects(subject, RDF.type))
         # An individual has at least one type, none of which is a meta-class.
         if types and not any(t in TBOX_METACLASSES for t in types):
             individuals.add(subject)
 
-    # Union-find over components linked by blank nodes.
+    # Union-find over blank nodes, joined only by bnode-to-bnode edges.
     parent = {}
 
     def find(node):
@@ -102,26 +105,28 @@ def partition_tbox_abox(graph: Graph):
             node = parent[node]
         return node
 
+    owners = {}
     for s, p, o in graph:
-        find(s)
-        find(o)
-        if isinstance(s, BNode) or isinstance(o, BNode):
+        if isinstance(s, BNode) and isinstance(o, BNode):
             parent[find(o)] = find(s)
+    for s, p, o in graph:
+        if isinstance(s, URIRef) and isinstance(o, BNode):
+            owners.setdefault(find(o), set()).add(s)
 
-    component_members = {}
-    for node in parent:
-        component_members.setdefault(find(node), set()).add(node)
-
-    abox_components = set()
-    for root, members in component_members.items():
-        urirefs = [m for m in members if isinstance(m, URIRef)]
-        if urirefs and all(m in individuals for m in urirefs):
-            abox_components.add(root)
+    abox_components = {
+        root for root, refs in owners.items() if all(r in individuals for r in refs)
+    }
 
     tbox = Graph()
     abox = Graph()
     for s, p, o in graph:
-        (abox if find(s) in abox_components else tbox).add((s, p, o))
+        if isinstance(s, BNode):
+            in_abox = find(s) in abox_components
+        else:
+            in_abox = s in individuals
+            if in_abox and isinstance(o, BNode) and find(o) not in abox_components:
+                in_abox = False
+        (abox if in_abox else tbox).add((s, p, o))
 
     # Carry over namespace bindings so serializations reuse the source prefixes.
     for prefix, ns in graph.namespaces():
@@ -182,7 +187,8 @@ def main(argv=None) -> int:
         print(f"[generate] source not found: {source_path}", file=sys.stderr)
         return 2
 
-    expected_version_iri = f"https://w3id.org/earthsemantics/OSO/{args.version}"
+    # Published OSO releases use a trailing slash (e.g. .../OSO/1.2.0/).
+    expected_version_iri = f"https://w3id.org/earthsemantics/OSO/{args.version}/"
 
     print(f"[generate] loading {source_path}")
     source = Graph().parse(str(source_path), format="turtle")

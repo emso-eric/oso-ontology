@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r maintenance/requirements.txt
 
+      - name: Unit tests (maintenance tooling)
+        run: python -m pytest tests/ -q
+
       - name: Validate ontology and artefacts
         run: python maintenance/validate_ontology.py
 
