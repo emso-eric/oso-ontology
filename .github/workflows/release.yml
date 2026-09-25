@@ -1,0 +1,95 @@
+name: Release OSO
+
+# Pushing a tag vX.Y.Z runs every quality gate, then creates a DRAFT GitHub
+# release whose assets are the files committed under versions/X.Y.Z/ (never
+# regenerated) plus their SHA256SUMS. A maintainer reviews and publishes the
+# draft; publishing triggers the Zenodo archive and publish-docs.yml.
+# workflow_dispatch runs the same gates for a version without releasing.
+on:
+  push:
+    tags: ["v*.*.*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to check (X.Y.Z) — dry run, no release is created"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Gates and draft release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Resolve version
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            version="${{ inputs.version }}"
+          else
+            version="${GITHUB_REF_NAME#v}"
+          fi
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+          echo "Releasing OSO $version (dry run: $DRY_RUN)"
+
+      - name: Tag must point to a commit on main
+        if: env.DRY_RUN != 'true'
+        run: git merge-base --is-ancestor "$GITHUB_SHA" origin/main
+
+      - name: Release must not already exist
+        if: env.DRY_RUN != 'true'
+        run: |
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            echo "::error::Release $GITHUB_REF_NAME already exists; releases are immutable."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Unit tests
+        run: python -m pytest tests/ -q
+
+      - name: Validate ontology and artefacts
+        run: python maintenance/validate_ontology.py
+
+      - name: Check published docs artefacts
+        run: python maintenance/generate_docs.py --check
+
+      - name: Competency questions
+        run: python maintenance/run_cq_tests.py
+
+      - name: Release gate
+        run: |
+          args=(--version "$VERSION" --checksums dist/SHA256SUMS)
+          if [ "$DRY_RUN" != "true" ]; then args+=(--tag "$GITHUB_REF_NAME"); fi
+          python maintenance/check_release.py "${args[@]}"
+
+      - name: Create draft release
+        if: env.DRY_RUN != 'true'
+        run: |
+          dir="versions/$VERSION"
+          mapfile -t assets < <(awk -v d="$dir" '{print d "/" $2}' dist/SHA256SUMS)
+          gh release create "$GITHUB_REF_NAME" --draft --verify-tag \
+            --title "OSO $VERSION" \
+            --notes-file "$dir/README.md" \
+            "${assets[@]}" dist/SHA256SUMS
+
+      - name: Verify uploaded assets
+        if: env.DRY_RUN != 'true'
+        run: |
+          gh release download "$GITHUB_REF_NAME" --dir downloaded
+          cd downloaded && sha256sum --check ../dist/SHA256SUMS

@@ -101,6 +101,12 @@ def check_ontology_header(graph: Graph, label: str, expect_version: bool) -> lis
         for prop, name in [(OWL.versionIRI, "owl:versionIRI"), (OWL.versionInfo, "owl:versionInfo")]:
             if (OSO_IRI, prop, None) not in graph:
                 errors.append(f"{label}: missing {name} on <{OSO_IRI}>")
+        # OWL API discards candidate ontology IRIs used as annotation values
+        # (owlcs/owlapi#1080): a self-reference makes Widoco/FOOPS report an
+        # imported ontology IRI instead of OSO.
+        self_refs = sorted(str(p) for p in graph.predicates(OSO_IRI, OSO_IRI))
+        if self_refs:
+            errors.append(f"{label}: self-referencing annotation(s) on <{OSO_IRI}>: {self_refs}")
     else:
         # Metadata files may declare their own ontology headers; they must
         # never redeclare the OSO ontology IRI under another subject.
@@ -110,37 +116,39 @@ def check_ontology_header(graph: Graph, label: str, expect_version: bool) -> lis
     return errors
 
 
-def validate(include_versions: bool) -> tuple[list[str], list[str]]:
-    errors: list[str] = []
-    warnings: list[str] = []
+def check_bundle(base: Path) -> tuple[Graph | None, list[str]]:
+    """Check a distribution bundle (repo root or versions/<v>/).
 
-    # --- Authoritative source ---
-    source_path = REPO_ROOT / "OSO.ttl"
+    Returns the parsed OSO.ttl (None if unparseable) and the list of errors:
+    ontology identity, exact TBox/ABox partition, and isomorphism of every
+    serialisation with OSO.ttl.
+    """
+    errors: list[str] = []
+    prefix = "" if base == REPO_ROOT else f"{base.relative_to(REPO_ROOT)}/"
+
     try:
-        source = Graph().parse(str(source_path), format="turtle")
+        source = Graph().parse(str(base / "OSO.ttl"), format="turtle")
     except Exception as e:  # noqa: BLE001
-        return [f"OSO.ttl: parse error: {e}"]
-    errors += check_ontology_header(source, "OSO.ttl", expect_version=True)
+        return None, [f"{prefix}OSO.ttl: parse error: {e}"]
+    errors += check_ontology_header(source, f"{prefix}OSO.ttl", expect_version=True)
 
     # --- TBox/ABox partition ---
-    tbox_path = REPO_ROOT / "OSO-ontology.ttl"
-    abox_path = REPO_ROOT / "OSO-instances.ttl"
     try:
-        tbox = Graph().parse(str(tbox_path), format="turtle")
-        abox = Graph().parse(str(abox_path), format="turtle")
+        tbox = Graph().parse(str(base / "OSO-ontology.ttl"), format="turtle")
+        abox = Graph().parse(str(base / "OSO-instances.ttl"), format="turtle")
     except Exception as e:  # noqa: BLE001
-        errors.append(f"partition: parse error: {e}")
+        errors.append(f"{prefix}partition: parse error: {e}")
         tbox = abox = None
     if tbox is not None:
         if set(tbox) & set(abox):
-            errors.append("OSO-ontology.ttl and OSO-instances.ttl overlap.")
+            errors.append(f"{prefix}OSO-ontology.ttl and OSO-instances.ttl overlap.")
         union = Graph()
         for t in tbox:
             union.add(t)
         for t in abox:
             union.add(t)
         if not isomorphic(union, source):
-            errors.append("OSO-ontology.ttl ∪ OSO-instances.ttl is not isomorphic to OSO.ttl.")
+            errors.append(f"{prefix}OSO-ontology.ttl ∪ OSO-instances.ttl is not isomorphic to OSO.ttl.")
         # An individual (typed owl:NamedIndividual, no OWL meta-class type)
         # must live in the ABox; the ontology IRI itself is exempt.
         metaclasses = {OWL.Class, OWL.ObjectProperty, OWL.DatatypeProperty,
@@ -151,7 +159,7 @@ def validate(include_versions: bool) -> tuple[list[str], list[str]]:
         }
         if leaked:
             errors.append(
-                f"OSO-ontology.ttl: {len(leaked)} individual(s) leaked into the TBox "
+                f"{prefix}OSO-ontology.ttl: {len(leaked)} individual(s) leaked into the TBox "
                 f"(e.g. {sorted(map(str, leaked))[0]})."
             )
         split = {s for s in tbox.subjects() if isinstance(s, URIRef)} & {
@@ -159,23 +167,32 @@ def validate(include_versions: bool) -> tuple[list[str], list[str]]:
         }
         if split:
             errors.append(
-                f"{len(split)} subject(s) described in both OSO-ontology.ttl and "
-                f"OSO-instances.ttl (e.g. {sorted(map(str, split))[0]})."
+                f"{prefix}OSO-ontology.ttl / OSO-instances.ttl: {len(split)} subject(s) "
+                f"described in both files (e.g. {sorted(map(str, split))[0]})."
             )
 
-    # --- Root serialisations must mirror the source ---
+    # --- Serialisations must mirror the source ---
     for rel, fmt in ROOT_SERIALIZATIONS + [("OSO.trig", "trig")]:
-        path = REPO_ROOT / rel
+        path = base / rel
         if not path.exists():
-            errors.append(f"{rel}: file missing")
+            errors.append(f"{prefix}{rel}: file missing")
             continue
         try:
             g = parse(path, fmt)
         except Exception as e:  # noqa: BLE001
-            errors.append(f"{rel}: parse error: {e}")
+            errors.append(f"{prefix}{rel}: parse error: {e}")
             continue
         if not isomorphic(g, source):
-            errors.append(f"{rel}: graph differs from OSO.ttl (out of sync)")
+            errors.append(f"{prefix}{rel}: graph differs from OSO.ttl (out of sync)")
+
+    return source, errors
+
+
+def validate(include_versions: bool) -> tuple[list[str], list[str]]:
+    warnings: list[str] = []
+    source, errors = check_bundle(REPO_ROOT)
+    if source is None:
+        return errors, warnings
 
     # --- Published docs artefacts must mirror the source ---
     for rel, fmt in [("docs/ontology.ttl", "turtle")] + DOCS_SERIALIZATIONS:

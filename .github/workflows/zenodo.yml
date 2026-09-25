@@ -1,0 +1,51 @@
+name: Publish release on Zenodo
+
+# Publishing a GitHub release deposits its assets as the new version of the
+# OSO Zenodo concept record. The version DOI was reserved while preparing the
+# release (maintenance/zenodo.py reserve) and is read from
+# versions/X.Y.Z/OSO-dcat.ttl. The published GitHub assets are the source:
+# they are checked against SHA256SUMS before upload, and the Zenodo files are
+# checked again after publication.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to (re)deposit, e.g. v1.2.1"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  zenodo:
+    name: Deposit on Zenodo
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+      ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+      ZENODO_URL: ${{ vars.ZENODO_URL || 'https://zenodo.org' }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Download and verify release assets
+        run: |
+          gh release download "$TAG" --dir dist
+          cd dist && sha256sum --check SHA256SUMS
+
+      - name: Deposit on Zenodo
+        run: |
+          python maintenance/zenodo.py publish --version "${TAG#v}" \
+            --files dist --checksums dist/SHA256SUMS \
+            --release-url "https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG"
