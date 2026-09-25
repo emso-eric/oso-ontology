@@ -37,6 +37,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import html
 import os
 import re
 import sys
@@ -44,12 +45,13 @@ from pathlib import Path
 
 import requests
 from rdflib import Graph, URIRef
-from rdflib.namespace import DCTERMS
+from rdflib.namespace import DCTERMS, OWL
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OSO_IRI = URIRef("https://w3id.org/earthsemantics/OSO")
 RDM_JSON = "application/vnd.inveniordm.v1+json"
-DOI_RE = re.compile(r"^(?:https://doi\.org/)?10\.5281/zenodo\.(\d+)$")
+# 10.5281 = Zenodo DOIs; 10.5072 = test DOIs issued by sandbox.zenodo.org.
+DOI_RE = re.compile(r"^(?:https://doi\.org/)?10\.(?:5281|5072)/zenodo\.(\d+)$")
 
 
 class ZenodoError(Exception):
@@ -98,6 +100,26 @@ def compare_files(expected_sha256: dict[str, str], local: dict[str, dict[str, st
     if extra:
         errors.append(f"unexpected file(s) on Zenodo: {extra}")
     return errors
+
+
+RELEASE_PARAGRAPH = re.compile(r"<p>\s*This release \(v[^)]*\).*?</p>", re.S)
+
+
+def release_description(previous_html: str, version: str, notes: str) -> str:
+    """Zenodo copies the previous version's metadata into a new version:
+    replace its release-specific paragraph with one for `version`."""
+    base = RELEASE_PARAGRAPH.sub("", previous_html).rstrip()
+    notes = html.escape(notes.strip().rstrip("."))
+    return f"{base}\n<p>This release (v{version}): {notes}.</p>"
+
+
+def version_notes(version: str) -> str:
+    """English owl:versionInfo of versions/<version>/OSO.ttl, without the version prefix."""
+    g = Graph().parse(str(REPO_ROOT / "versions" / version / "OSO.ttl"), format="turtle")
+    notes = [str(o) for o in g.objects(OSO_IRI, OWL.versionInfo) if getattr(o, "language", None) == "en"]
+    if len(notes) != 1:
+        raise ZenodoError(f"expected one English owl:versionInfo in versions/{version}/OSO.ttl, found {len(notes)}")
+    return re.sub(rf"^{re.escape(version)}\s*[–-]\s*", "", notes[0])
 
 
 def declared_doi(version: str) -> str:
@@ -168,8 +190,12 @@ class Zenodo:
     def finalize_metadata(self, rid: str, version: str, release_url: str | None) -> None:
         draft = self.draft(rid)
         md = draft["metadata"]
+        today = dt.date.today().isoformat()
         md["version"] = version
-        md["publication_date"] = dt.date.today().isoformat()
+        md["publication_date"] = today
+        md["description"] = release_description(md.get("description", ""), version, version_notes(version))
+        md["dates"] = [d for d in md.get("dates", []) if d.get("type", {}).get("id") != "updated"]
+        md["dates"].append({"date": today, "type": {"id": "updated"}, "description": f"OSO version {version}"})
         if release_url:
             related = [r for r in md.get("related_identifiers", []) if r.get("identifier") != release_url]
             related.append({"identifier": release_url, "scheme": "url",

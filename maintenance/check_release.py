@@ -44,9 +44,9 @@ from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DCTERMS, OWL
 
 from validate_ontology import OSO_IRI, REPO_ROOT, check_bundle
-from zenodo import DOI_RE
-
 CONCEPT_DOI = "10.5281/zenodo.19497912"
+# Released files must carry a production Zenodo DOI, never a sandbox one.
+DOI_RE = re.compile(r"^(?:https://doi\.org/)?10\.5281/zenodo\.\d+$")
 DCAT = Namespace("http://www.w3.org/ns/dcat#")
 PAV = Namespace("http://purl.org/pav/")
 
