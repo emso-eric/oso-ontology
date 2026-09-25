@@ -42,7 +42,7 @@ flowchart TD
 | 2 | Release preparation | Manual | Automated |
 | 3 | Documentation generation | Semi-manual (serialisations automated) | Automated |
 | 4 | Distribution package generation | Semi-manual | Automated |
-| 5 | GitHub release | Manual | Automated |
+| 5 | GitHub release | Automated (draft), published manually | Automated |
 | 6 | External publication | Manual | Partially automated |
 
 ## Prerequisites
@@ -283,14 +283,31 @@ Publish the official release on GitHub.
 
 ### Activities
 
-- Commit release artefacts.
-- Create Git tag.
-- Create GitHub Release.
-- Publish repository.
+1. Commit the release artefacts under `versions/X.Y.Z/` through a pull
+   request (`OSO.ttl` identical to the root source, TBox/ABox,
+   serialisations, SHACL, DCAT, VoID, `README.md` release notes) and bump
+   `CITATION.cff`.
+2. Check locally: `python maintenance/check_release.py --version X.Y.Z`.
+3. After merge, tag the merge commit on `main`: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+4. `.github/workflows/release.yml` runs all gates and creates a **draft**
+   release with the committed files and `SHA256SUMS` as assets.
+5. Review the draft (title, notes) and publish it. Publishing triggers the
+   Zenodo archive and `publish-docs.yml`.
+
+> **Important**
+>
+> Releases are immutable. Never edit `versions/X.Y.Z/` or replace release
+> assets after publication: any fix ships as a new patch version. The 1.2.0
+> archive was edited after publication (labels fixed in `versions/1.2.0/`
+> but not in the release assets), which left two different "1.2.0"
+> contents in circulation.
 
 ### Validation
 
-Verify repository, tag, release and GitHub Pages.
+`release.yml` blocks the release unless the tag points to `main`, the
+version is new and higher than every existing release, and
+`check_release.py` passes; it then verifies the uploaded assets against
+`SHA256SUMS`.
 
 ### Automation potential
 
