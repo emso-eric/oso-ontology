@@ -1,11 +1,14 @@
 name: Verify published ontology artefacts
 
-# End-to-end check of what GitHub Pages actually serves. Runs after every
-# Pages build: if docs/ontology.* ever drifts from OSO.ttl again (e.g. a
-# Widoco-generated serialisation is committed by mistake), this fails on
-# the deployed site, not just in the repository.
+# End-to-end check of what is actually published. Runs after every Pages
+# build and daily: if docs/ontology.* ever drifts from OSO.ttl again (e.g. a
+# Widoco-generated serialisation is committed by mistake), or the latest
+# Zenodo version stops matching its GitHub release, this fails on the
+# deployed resources, not just in the repository.
 on:
   page_build:
+  schedule:
+    - cron: "17 5 * * *"
   workflow_dispatch:
 
 jobs:
@@ -24,3 +27,36 @@ jobs:
 
       - name: Verify published serialisations
         run: python maintenance/verify_published.py
+
+  zenodo:
+    name: Check the latest release on Zenodo
+    if: github.event_name != 'page_build'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r maintenance/requirements.txt
+
+      - name: Download the latest release
+        run: |
+          tag="$(gh release view --json tagName --jq .tagName)"
+          echo "VERSION=${tag#v}" >> "$GITHUB_ENV"
+          gh release download "$tag" --dir dist
+          cd dist && sha256sum --check SHA256SUMS
+
+      - name: Zenodo files match the release
+        run: python maintenance/zenodo.py verify --version "$VERSION" --files dist --checksums dist/SHA256SUMS
+
+      - name: Version DOI resolves
+        run: |
+          doi="$(python -c "import sys; sys.path.insert(0, 'maintenance'); from zenodo import declared_doi; print(declared_doi('$VERSION'))")"
+          code="$(curl -s -o /dev/null -w '%{http_code}' "https://doi.org/$doi")"
+          echo "https://doi.org/$doi -> HTTP $code"
+          [ "$code" = 302 ] || { echo "::error::DOI $doi does not resolve (HTTP $code)"; exit 1; }
