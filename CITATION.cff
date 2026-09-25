@@ -17,9 +17,9 @@ authors:
   - name: EMSO Data Management Service Group (DMSG)
     affiliation: EMSO ERIC
 
-version: "1.2.0"
+version: "1.2.1"
 
-date-released: 2026-08-25
+date-released: 2026-09-25
 
 license: "CC-BY-4.0"
 
@@ -29,7 +29,7 @@ repository-code: https://github.com/emso-eric/oso-ontology
 
 url: https://w3id.org/earthsemantics/OSO
 
-doi: 10.5281/zenodo.19497913
+doi: 10.5281/zenodo.19497912
 
 abstract: >
   The Observatories of the Seas Ontology (OSO) is a FAIR ontology for marine
@@ -50,6 +50,10 @@ keywords:
   - Argo
 
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22957027
+    description: Zenodo DOI of version 1.2.1
+
   - type: doi
     value: 10.25504/FAIRsharing.654931
     description: FAIRsharing record
@@ -74,6 +78,6 @@ preferred-citation:
       given-names: Steven
     - name: EMSO Data Management Service Group (DMSG)
   publisher: EMSO ERIC
-  version: "1.2.0"
+  version: "1.2.1"
   year: 2026
-  doi: 10.5281/zenodo.19497913
+  doi: 10.5281/zenodo.22957027

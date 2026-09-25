@@ -12932,7 +12932,7 @@ OSO:YASGUI a schema1:WebApplication,
         "Descrever a estrutura e os principais componentes dos observatórios marinhos para melhorar a gestão de dados, a interoperabilidade e a reutilização, especialmente no contexto da infraestrutura de investigação EMSO."@pt,
         "Descrierea structurii și a componentelor cheie ale observatoarelor marine pentru a îmbunătăți gestionarea, interoperabilitatea și reutilizarea datelor, în special în contextul infrastructurii EMSO."@ro ;
     omv:reference <https://doi.org/10.25504/FAIRsharing.654931>,
-        <https://doi.org/10.5281/zenodo.19497913>,
+        <https://doi.org/10.5281/zenodo.19497912>,
         <https://earthportal.eu/ontologies/OSO>,
         <https://github.com/emso-eric/oso-ontology>,
         <https://www.emso-fr.org/Data/Observatories-of-Seas-Ontology> ;
@@ -12947,7 +12947,7 @@ OSO:YASGUI a schema1:WebApplication,
         <https://github.com/dgarijo/Widoco>,
         <https://protege.stanford.edu/>,
         <https://vscodium.com/> ;
-    omv:version "1.2.0" ;
+    omv:version "1.2.1" ;
     dcterms:abstract "Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
         "The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework."@en,
         "La ontología OSO estructura los observatorios marinos en tres niveles jerárquicos: infraestructuras regionales, sitios y plataformas. Apoya la gestión FAIR de datos, la interoperabilidad y la integración de información sobre infraestructuras marinas, especialmente en el contexto de EMSO ERIC."@es,
@@ -12956,7 +12956,7 @@ OSO:YASGUI a schema1:WebApplication,
         "OSO-ontologien strukturerer marine observatorier i tre hierarkiske nivåer: regionale fasiliteter, steder og plattformer. Den støtter FAIR datastyring, interoperabilitet og integrasjon av informasjon om marine infrastrukturer, spesielt i EMSO ERIC-konteksten."@no,
         "A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC."@pt,
         "Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC."@ro ;
-    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.2.0. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
+    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.2.1. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
     dcterms:conformsTo <https://semver.org/>,
         <https://www.conventionalcommits.org/>,
         <https://www.w3.org/TR/owl2-overview/>,
@@ -12996,8 +12996,8 @@ OSO:YASGUI a schema1:WebApplication,
         <https://w3id.org/earthsemantics/OSO/OSO.owl>,
         <https://w3id.org/earthsemantics/OSO/OSO.trig>,
         <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
-    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.22957027> ;
     dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
     dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931>,
         <https://doi.org/10.5281/zenodo.19497912>,
@@ -13016,7 +13016,7 @@ OSO:YASGUI a schema1:WebApplication,
         <http://id.loc.gov/vocabulary/iso639-1/pt>,
         <http://id.loc.gov/vocabulary/iso639-1/ro> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-08-25"^^xsd:date ;
+    dcterms:modified "2026-09-25"^^xsd:date ;
     dcterms:provenance "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.126.04524 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."@el,
         "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.126.04524 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."@en,
         "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.126.04524 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."@es,
@@ -13065,10 +13065,10 @@ OSO:YASGUI a schema1:WebApplication,
     pav:createdWith <https://protege.stanford.edu/>,
         <https://vscodium.com/> ;
     pav:curatedBy <https://orcid.org/0009-0008-1759-5254> ;
-    pav:curatedOn "2026-08-20"^^xsd:date ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    pav:version "1.2.0" ;
-    datacite:doi "10.5281/zenodo.19497913" ;
+    pav:curatedOn "2026-09-25"^^xsd:date ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    pav:version "1.2.1" ;
+    datacite:doi "10.5281/zenodo.19497912" ;
     vann:example OSO:Site ;
     vann:preferredNamespacePrefix "OSO" ;
     vann:preferredNamespaceUri OSO: ;
@@ -13140,21 +13140,22 @@ OSO:YASGUI a schema1:WebApplication,
         <https://w3id.org/earthsemantics/OSO/1.0.3/>,
         <https://w3id.org/earthsemantics/OSO/1.0.4/>,
         <https://w3id.org/earthsemantics/OSO/1.0.5/>,
-        <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
+        <https://w3id.org/earthsemantics/OSO/1.1.0/>,
+        <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
     owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos>,
         <http://www.w3.org/2004/02/skos/core>,
         <http://www.w3.org/ns/prov-o>,
         foaf: ;
-    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    owl:versionInfo "1.2.0 – διαχωρισμός των διανομών του οντολογικού μοντέλου και των δεδομένων στιγμιοτύπων· εισαγωγή επικύρωσης SHACL· βελτίωση της συνέπειας μεταξύ TBox, ABox και SHACL· εμπλουτισμός της μοντελοποίησης του σημασιολογικού οικοσυστήματος, των μεταδεδομένων της οντολογίας και των πολυγλωσσικών επισημάνσεων· βελτίωση κλάσεων και ιδιοτήτων· διόρθωση τυπογραφικού σφάλματος σχετικά με το SmartBay"@el,
-        "1.2.0 – separated ontology model and instance data distributions; introduced SHACL validation; improved TBox, ABox and SHACL consistency; enriched semantic ecosystem modelling, ontology metadata and multilingual annotations; refined classes and properties; corrected SmartBay typographical error"@en,
-        "1.2.0 – separación de las distribuciones del modelo ontológico y de los datos de instancias; introducción de la validación SHACL; mejora de la coherencia entre TBox, ABox y SHACL; enriquecimiento del modelado del ecosistema semántico, los metadatos de la ontología y las anotaciones multilingües; refinamiento de clases y propiedades; corrección de una errata relativa a SmartBay"@es,
-        "1.2.0 – séparation des distributions du modèle ontologique et des données d’instances ; introduction de la validation SHACL ; amélioration de la cohérence entre TBox, ABox et SHACL ; enrichissement de la modélisation de l’écosystème sémantique, des métadonnées de l’ontologie et des annotations multilingues ; amélioration des classes et propriétés ; correction d’une erreur typographique concernant SmartBay"@fr,
-        "1.2.0 – separazione delle distribuzioni del modello ontologico e dei dati delle istanze; introduzione della validazione SHACL; miglioramento della coerenza tra TBox, ABox e SHACL; arricchimento della modellazione dell’ecosistema semantico, dei metadati dell’ontologia e delle annotazioni multilingue; perfezionamento di classi e proprietà; correzione di un refuso relativo a SmartBay"@it,
-        "1.2.0 – separate distribusjoner for ontologimodellen og instansdata; innføring av SHACL-validering; forbedret konsistens mellom TBox, ABox og SHACL; beriket modellering av det semantiske økosystemet, ontologimetadata og flerspråklige annotasjoner; forbedring av klasser og egenskaper; retting av en skrivefeil knyttet til SmartBay"@no,
-        "1.2.0 – separação das distribuições do modelo ontológico e dos dados de instâncias; introdução da validação SHACL; melhoria da coerência entre TBox, ABox e SHACL; enriquecimento da modelação do ecossistema semântico, dos metadados da ontologia e das anotações multilingues; aperfeiçoamento de classes e propriedades; correção de um erro tipográfico relativo ao SmartBay"@pt,
-        "1.2.0 – separarea distribuțiilor modelului ontologic și ale datelor de instanță; introducerea validării SHACL; îmbunătățirea coerenței între TBox, ABox și SHACL; îmbogățirea modelării ecosistemului semantic, a metadatelor ontologiei și a adnotărilor multilingve; rafinarea claselor și proprietăților; corectarea unei erori tipografice referitoare la SmartBay"@ro ;
+    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
+    owl:versionInfo "1.2.1 – διόρθωση της αναγνώρισης του IRI της οντολογίας από εργαλεία βασισμένα στο OWL API (αφαίρεση των αυτοαναφορικών σχολιασμών κεφαλίδας omv:URI, omv:resourceLocator και rdfs:isDefinedBy)· προσθήκη πολυγλωσσικών ετικετών για τη Δυτική Μεσόγειο Θάλασσα"@el,
+        "1.2.1 – fixed ontology IRI detection by OWL API-based tools (removed the self-referencing header annotations omv:URI, omv:resourceLocator and rdfs:isDefinedBy); added multilingual labels for the Western Mediterranean Sea"@en,
+        "1.2.1 – corrección de la detección del IRI de la ontología por herramientas basadas en OWL API (eliminación de las anotaciones autorreferenciales de la cabecera omv:URI, omv:resourceLocator y rdfs:isDefinedBy); adición de etiquetas multilingües para el mar Mediterráneo occidental"@es,
+        "1.2.1 – correction de la détection de l’IRI de l’ontologie par les outils fondés sur l’OWL API (suppression des annotations auto-référentielles de l’en-tête omv:URI, omv:resourceLocator et rdfs:isDefinedBy) ; ajout des libellés multilingues de la mer Méditerranée occidentale"@fr,
+        "1.2.1 – correzione del rilevamento dell’IRI dell’ontologia da parte degli strumenti basati su OWL API (rimozione delle annotazioni autoreferenziali dell’intestazione omv:URI, omv:resourceLocator e rdfs:isDefinedBy); aggiunta delle etichette multilingue per il Mar Mediterraneo occidentale"@it,
+        "1.2.1 – rettet gjenkjenning av ontologiens IRI i verktøy basert på OWL API (fjernet selvrefererende annotasjoner i hodet: omv:URI, omv:resourceLocator og rdfs:isDefinedBy); lagt til flerspråklige etiketter for Vestlige Middelhavet"@no,
+        "1.2.1 – correção da deteção do IRI da ontologia por ferramentas baseadas na OWL API (remoção das anotações autorreferenciais do cabeçalho omv:URI, omv:resourceLocator e rdfs:isDefinedBy); adição de rótulos multilingues para o Mar Mediterrâneo Ocidental"@pt,
+        "1.2.1 – corectarea detectării IRI-ului ontologiei de către instrumentele bazate pe OWL API (eliminarea adnotărilor autoreferențiale din antet omv:URI, omv:resourceLocator și rdfs:isDefinedBy); adăugarea etichetelor multilingve pentru Marea Mediterană de Vest"@ro ;
     skos:altLabel "OSO",
         "Open Seas Observatories"@en ;
     skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,
@@ -13216,7 +13217,7 @@ OSO:YASGUI a schema1:WebApplication,
         "observatórios marinhos"@pt,
         "observatoare marine"@ro ;
     dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
-    prov:generatedAtTime "2026-08-20"^^xsd:date ;
+    prov:generatedAtTime "2026-09-25"^^xsd:date ;
     prov:wasAttributedTo OSO:Ifremer ;
     prov:wasGeneratedBy OSO:OntologyEngineeringWorkflow,
         "Developed as part of the EMSO ERIC Data Management Service Group activities"@en ;

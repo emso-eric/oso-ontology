@@ -35,9 +35,9 @@
 
     dcterms:publisher <https://ror.org/04xkqms46> ;
     dcterms:issued "2025-04-04"^^xsd:date ;
-    dcterms:modified "2026-08-20"^^xsd:date ;
+    dcterms:modified "2026-09-25"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:identifier <https://doi.org/10.5281/zenodo.22030990> ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.22957027> ;
 
     dcterms:conformsTo <https://w3id.org/earthsemantics/OSO> ;
 
@@ -51,12 +51,12 @@
         "el"^^xsd:language ,
         "no"^^xsd:language ;
 
-    owl:versionInfo "1.2.0" ;
-    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
-    pav:version "1.2.0" ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.1.0/> ;
-    prov:generatedAtTime "2026-08-20"^^xsd:date ;
+    owl:versionInfo "1.2.1" ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
+    pav:version "1.2.1" ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    prov:wasDerivedFrom <https://w3id.org/earthsemantics/OSO/1.2.0/> ;
+    prov:generatedAtTime "2026-09-25"^^xsd:date ;
     prov:wasAttributedTo <https://ror.org/04xkqms46> ;
 
     foaf:page <https://w3id.org/earthsemantics/OSO> ;
@@ -70,11 +70,11 @@
 
     void:exampleResource <https://w3id.org/earthsemantics/OSO#Azores> ;
 
-    # Provisional statistics for the current 1.2.0 working files.
+    # Statistics computed from OSO-instances.ttl (1.2.1).
     # Recompute from the final OSO-instances.ttl before release.
-    void:triples 11654 ;
-    void:classes 49 ;
-    void:properties 117 ;
+    void:triples 11650 ;
+    void:classes 48 ;
+    void:properties 110 ;
     void:entities 381 ;
     void:uriSpace "https://w3id.org/earthsemantics/OSO#" ;
 
