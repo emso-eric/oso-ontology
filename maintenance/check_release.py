@@ -17,7 +17,9 @@ Checks
               <version> is newer than every existing release tag.
 4. Metadata   OSO-dcat.ttl declares dcat:version, dcterms:hasVersion and
               pav:previousVersion consistently; CITATION.cff has the same
-              version; dcterms:modified is present on the ontology.
+              version; dcterms:modified is present on the ontology; the
+              Zenodo version DOI is declared once, identically in OSO.ttl and
+              OSO-dcat.ttl, and differs from the concept and previous DOIs.
 5. Tag        (--tag) the git tag is v<version>.
 
 Usage
@@ -42,7 +44,9 @@ from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DCTERMS, OWL
 
 from validate_ontology import OSO_IRI, REPO_ROOT, check_bundle
+from zenodo import DOI_RE
 
+CONCEPT_DOI = "10.5281/zenodo.19497912"
 DCAT = Namespace("http://www.w3.org/ns/dcat#")
 PAV = Namespace("http://purl.org/pav/")
 
@@ -117,9 +121,32 @@ def check_versioning(source: Graph, version: str, tags: list[str]) -> list[str]:
     return errors
 
 
+def zenodo_dois(graph: Graph) -> set[str]:
+    return {str(o).removeprefix("https://doi.org/")
+            for o in graph.objects(OSO_IRI, DCTERMS.identifier) if DOI_RE.match(str(o))}
+
+
+def check_doi(source: Graph, dcat: Graph, prev: str | None) -> list[str]:
+    """The version DOI (reserved on Zenodo) must be declared once, identically,
+    in OSO.ttl and OSO-dcat.ttl, and be new: zenodo.py publishes to it."""
+    errors = []
+    src, dc = zenodo_dois(source), zenodo_dois(dcat)
+    if len(dc) != 1:
+        return [f"OSO-dcat.ttl: expected one Zenodo version DOI (dcterms:identifier), found {sorted(dc)}"]
+    if src != dc:
+        errors.append(f"OSO.ttl dcterms:identifier {sorted(src)} differs from OSO-dcat.ttl {sorted(dc)}")
+    if dc == {CONCEPT_DOI}:
+        errors.append("the version DOI must not be the concept DOI")
+    prev_dcat = REPO_ROOT / "versions" / (prev or "") / "OSO-dcat.ttl"
+    if prev and prev_dcat.is_file() and zenodo_dois(Graph().parse(str(prev_dcat), format="turtle")) == dc:
+        errors.append(f"version DOI {sorted(dc)[0]} is the DOI of the previous release {prev}")
+    return errors
+
+
 def check_metadata(vdir: Path, version: str, prev: str | None) -> list[str]:
     errors = []
     dcat = Graph().parse(str(vdir / "OSO-dcat.ttl"), format="turtle")
+    errors += check_doi(Graph().parse(str(vdir / "OSO.ttl"), format="turtle"), dcat, prev)
     if (OSO_IRI, DCAT.version, Literal(version)) not in dcat:
         errors.append(f"OSO-dcat.ttl: dcat:version {version!r} missing on <{OSO_IRI}>")
     if (OSO_IRI, DCTERMS.hasVersion, version_iri(version)) not in dcat:

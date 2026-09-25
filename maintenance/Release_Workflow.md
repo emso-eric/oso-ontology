@@ -283,6 +283,10 @@ Publish the official release on GitHub.
 
 ### Activities
 
+0. Reserve the Zenodo version DOI:
+   `ZENODO_TOKEN=… python maintenance/zenodo.py reserve --version X.Y.Z --record <latest record id>`,
+   and write it as `dcterms:identifier` in `OSO.ttl` and `OSO-dcat.ttl`.
+   Cite the concept DOI `10.5281/zenodo.19497912` for "all versions".
 1. Commit the release artefacts under `versions/X.Y.Z/` through a pull
    request (`OSO.ttl` identical to the root source, TBox/ABox,
    serialisations, SHACL, DCAT, VoID, `README.md` release notes) and bump
@@ -291,8 +295,9 @@ Publish the official release on GitHub.
 3. After merge, tag the merge commit on `main`: `git tag vX.Y.Z && git push origin vX.Y.Z`.
 4. `.github/workflows/release.yml` runs all gates and creates a **draft**
    release with the committed files and `SHA256SUMS` as assets.
-5. Review the draft (title, notes) and publish it. Publishing triggers the
-   Zenodo archive and `publish-docs.yml`.
+5. Review the draft (title, notes) and publish it. Publishing triggers
+   `zenodo.yml` (deposit on the reserved DOI, checksums verified before and
+   after publication) and `publish-docs.yml`.
 
 > **Important**
 >
@@ -347,7 +352,7 @@ Verify that all platforms reference the same release and expose consistent metad
 | Activity | Automation |
 |---|---|
 | EarthPortal | ⚠️ Partial |
-| Zenodo | ✅ High |
+| Zenodo | ✅ Automated (`zenodo.yml`) |
 | LOV | ⚠️ Partial |
 | Metadata verification | ✅ High |
 
