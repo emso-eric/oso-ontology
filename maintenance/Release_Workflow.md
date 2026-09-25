@@ -197,7 +197,28 @@ Generate and publish the human-readable ontology documentation.
 
 ### Activities
 
-- Generate documentation with Widoco (HTML pages, diagrams, WebVOWL).
+- Generate documentation with Widoco, pinned to a known release
+  (1.4.25 was verified against the OWL API ontology-IRI bug, fixed in
+  OSO 1.2.1; `widoco-1.4.25-jar-with-dependencies_JDK-17.jar`,
+  SHA-256 `be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b`):
+
+  ```bash
+  java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
+    -ontFile OSO.ttl -outFolder /tmp/widoco-out -rewriteAll \
+    -getOntologyMetadata -webVowl -lang en-es-fr-it-no-pt-ro-el
+  ```
+
+- Sync the output into `docs/`, keeping the manually maintained
+  `share/` folder and the `index.html` alias of `index-en.html`:
+
+  ```bash
+  rsync -a --delete --exclude 'share/' --exclude 'index.html' \
+    --exclude 'ontology.ttl' --exclude 'ontology.nt' \
+    --exclude 'ontology.owl' --exclude 'ontology.jsonld' \
+    /tmp/widoco-out/ docs/
+  cp docs/index-en.html docs/index.html
+  ```
+
 - Regenerate the published RDF serialisations with
   `python maintenance/generate_docs.py`.
 
