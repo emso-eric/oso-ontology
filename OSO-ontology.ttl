@@ -516,53 +516,6 @@ OSO:CollaborativeDevelopmentPlatform a owl:Class ;
         "Plataforma de desenvolvimento colaborativo"@pt,
         "Platformă de dezvoltare colaborativă"@ro .
 
-OSO:DYFAMED a owl:NamedIndividual,
-        OSO:Site ;
-    rdfs:label "DYFAMED"@el,
-        "DYFAMED"@en,
-        "DYFAMED"@es,
-        "DYFAMED"@fr,
-        "DYFAMED"@it,
-        "DYFAMED"@no,
-        "DYFAMED"@pt,
-        "DYFAMED"@ro ;
-    dcterms:identifier "10.17882/43749" ;
-    schema1:sameAs <https://doi.org/10.17882/43749> ;
-    schema1:url <https://www.emso-fr.org/fr/DYFAMED> ;
-    rdfs:comment "DYFAMED: Dynamics of Atmospheric Fluxes in the Mediterranean"@en,
-        "DYFAMED : DYnamique des Flux Atmosphériques en MEDiterranée"@fr ;
-    rdfs:seeAlso <https://www.emso-fr.org/fr/DYFAMED>,
-        <https://www.seanoe.org/data/00326/43749/> ;
-    skos:altLabel "DYFAMED observatory"@en,
-        "DYFAMED site"@en,
-        "Observatoire DYFAMED"@fr,
-        "Site DYFAMED"@fr ;
-    skos:definition "A long-term open-ocean observation site in the northwestern Mediterranean Sea associated with EMSO-France and dedicated to atmospheric, biogeochemical and oceanographic monitoring."@en,
-        "Un site d’observation hauturière à long terme en Méditerranée nord-occidentale associé à EMSO-France et dédié au suivi atmosphérique, biogéochimique et océanographique."@fr ;
-    skos:notation "10.17882/43749" ;
-    skos:prefLabel "DYFAMED"@el,
-        "DYFAMED"@en,
-        "DYFAMED"@es,
-        "DYFAMED"@fr,
-        "DYFAMED"@it,
-        "DYFAMED"@no,
-        "DYFAMED"@pt,
-        "DYFAMED"@ro ;
-    adms:identifier [ a adms:Identifier ;
-            schema1:value "10.17882/43749" ;
-            skos:notation "10.17882/43749" ] ;
-    OSO:Site_is_part_of_a_RI OSO:EMSO-France ;
-    OSO:containsPlatform OSO:Dyfamed_Mugobs,
-        OSO:Dyfamed_ODAS,
-        OSO:Dyfamed_mooring ;
-    OSO:dateFirstDeployment "1988-02"^^xsd:gYearMonth ;
-    OSO:distanceFromLand 27.0 ;
-    OSO:hasCountry OSO:France ;
-    OSO:hasLocation OSO:French_riviera ;
-    OSO:hasSiteResponsible OSO:Laurent_COPPOLA ;
-    OSO:isTestSite false ;
-    OSO:maxWaterDepth 2300 .
-
 OSO:Discipline a owl:Class ;
     rdfs:label "Επιστημονικός κλάδος"@el,
         "Discipline"@en,
@@ -590,36 +543,6 @@ OSO:Discipline a owl:Class ;
         "Disiplin"@no,
         "Disciplina"@pt,
         "Disciplină"@ro .
-
-OSO:EMSO_LIGURE_OUEST a owl:NamedIndividual,
-        OSO:SeriesOfOceanographicCampaigns ;
-    rdfs:label "EMSO LIGURE OUEST"@en,
-        "EMSO LIGURE OUEST"@fr ;
-    dcterms:description "Σειρά ωκεανογραφικών αποστολών που σχετίζονται με τον σταθμό παρατήρησης EMSO Ligure Ouest στη Λιγουρική Θάλασσα."@el,
-        "Series of oceanographic campaigns associated with the EMSO Ligure Ouest observatory site in the Ligurian Sea."@en,
-        "Serie de campañas oceanográficas asociadas al sitio de observación EMSO Ligure Ouest en el mar de Liguria."@es,
-        "Série de campagnes océanographiques associées au site EMSO Ligure Ouest en mer Ligure."@fr,
-        "Serie di campagne oceanografiche associate al sito osservativo EMSO Ligure Ouest nel Mar Ligure."@it,
-        "Serie av oseanografiske kampanjer knyttet til observasjonsstedet EMSO Ligure Ouest i Liguriahavet."@no,
-        "Série de campanhas oceanográficas associadas ao sítio de observação EMSO Ligure Ouest no Mar da Ligúria."@pt,
-        "Serie de campanii oceanografice asociate sitului de observare EMSO Ligure Ouest din Marea Ligurică."@ro ;
-    dcterms:identifier <https://doi.org/10.18142/295> ;
-    dcterms:subject OSO:EMSO_Ligure_Ouest,
-        OSO:OceanographicCampaign ;
-    dcterms:title "EMSO LIGURE OUEST"@en,
-        "EMSO LIGURE OUEST"@fr ;
-    schema1:url <https://campagnes.flotteoceanographique.fr/series/295/fr/> ;
-    rdfs:seeAlso <https://campagnes.flotteoceanographique.fr/series/295/fr/>,
-        <https://doi.org/10.18142/295>,
-        <https://www.emso-fr.org/fr/EMSO-France/Les-sites/EMSO-Ligure-Ouest> ;
-    skos:altLabel "EMSO Ligurian Sea campaigns"@en,
-        "Campagnes EMSO Mer Ligure Ouest"@fr ;
-    skos:prefLabel "EMSO LIGURE OUEST"@en,
-        "EMSO LIGURE OUEST"@fr ;
-    adms:identifier [ a adms:Identifier ;
-            dcterms:creator "Flotte Océanographique Française" ;
-            skos:notation "10.18142/295" ] ;
-    prov:wasAssociatedWith OSO:EMSO_France .
 
 OSO:FAIRAssessmentTool a owl:Class ;
     rdfs:label "Εργαλείο αξιολόγησης FAIR"@el,
@@ -3107,6 +3030,34 @@ OSO:SemanticEcosystemResource a owl:Class ;
         "Recurso do ecossistema semântico"@pt,
         "Resursă a ecosistemului semantic"@ro .
 
+OSO:SeriesOfOceanographicCampaigns a owl:Class ;
+    rdfs:label "Σειρά ωκεανογραφικών εκστρατειών"@el,
+        "Series of Oceanographic Campaigns"@en,
+        "Serie de campañas oceanográficas"@es,
+        "Série de campagnes océanographiques"@fr,
+        "Serie di campagne oceanografiche"@it,
+        "Serie med havforskningskampanjer"@no,
+        "Série de campanhas oceanográficas"@pt,
+        "Serie de campanii oceanografice"@ro ;
+    metadata:prefixIRI "omv:SeriesOfOceanographicCampaigns" ;
+    rdfs:comment "Μια θεματική ή χρονική ομαδοποίηση συναφών ωκεανογραφικών εκστρατειών που συνδέεται με μια περιφερειακή υποδομή."@el,
+        "A thematic or temporal grouping of related oceanographic campaigns linked to a Regional Facility."@en,
+        "Una agrupación temática o temporal de campañas oceanográficas relacionadas, vinculada a una instalación regional."@es,
+        "Un regroupement thématique ou temporel de campagnes océanographiques liées à un noeud régional."@fr,
+        "Un raggruppamento tematico o temporale di campagne oceanografiche correlate, collegato a una struttura regionale."@it,
+        "En tematisk eller tidsmessig gruppering av relaterte havforskningskampanjer knyttet til en regional infrastruktur."@no,
+        "Um agrupamento temático ou temporal de campanhas oceanográficas relacionadas, associado a uma infraestrutura regional."@pt,
+        "O grupare tematică sau temporală de campanii oceanografice asociate unei infrastructuri regionale."@ro ;
+    rdfs:seeAlso OSO:OceanographicCampaign ;
+    skos:prefLabel "Σειρά ωκεανογραφικών εκστρατειών"@el,
+        "Series of Oceanographic Campaigns"@en,
+        "Serie de campañas oceanográficas"@es,
+        "Série de campagnes océanographiques"@fr,
+        "Serie di campagne oceanografiche"@it,
+        "Serie med havforskningskampanjer"@no,
+        "Série de campanhas oceanográficas"@pt,
+        "Serie de campanii oceanografice"@ro .
+
 OSO:ERICMembership a owl:Class ;
     rdfs:label "Συμμετοχή σε ERIC"@el,
         "ERIC membership"@en,
@@ -3152,34 +3103,6 @@ OSO:FundedProject a owl:Class ;
         "Finansiert prosjekt"@no,
         "Projeto financiado"@pt,
         "Proiect finanțat"@ro .
-
-OSO:SeriesOfOceanographicCampaigns a owl:Class ;
-    rdfs:label "Σειρά ωκεανογραφικών εκστρατειών"@el,
-        "Series of Oceanographic Campaigns"@en,
-        "Serie de campañas oceanográficas"@es,
-        "Série de campagnes océanographiques"@fr,
-        "Serie di campagne oceanografiche"@it,
-        "Serie med havforskningskampanjer"@no,
-        "Série de campanhas oceanográficas"@pt,
-        "Serie de campanii oceanografice"@ro ;
-    metadata:prefixIRI "omv:SeriesOfOceanographicCampaigns" ;
-    rdfs:comment "Μια θεματική ή χρονική ομαδοποίηση συναφών ωκεανογραφικών εκστρατειών που συνδέεται με μια περιφερειακή υποδομή."@el,
-        "A thematic or temporal grouping of related oceanographic campaigns linked to a Regional Facility."@en,
-        "Una agrupación temática o temporal de campañas oceanográficas relacionadas, vinculada a una instalación regional."@es,
-        "Un regroupement thématique ou temporel de campagnes océanographiques liées à un noeud régional."@fr,
-        "Un raggruppamento tematico o temporale di campagne oceanografiche correlate, collegato a una struttura regionale."@it,
-        "En tematisk eller tidsmessig gruppering av relaterte havforskningskampanjer knyttet til en regional infrastruktur."@no,
-        "Um agrupamento temático ou temporal de campanhas oceanográficas relacionadas, associado a uma infraestrutura regional."@pt,
-        "O grupare tematică sau temporală de campanii oceanografice asociate unei infrastructuri regionale."@ro ;
-    rdfs:seeAlso OSO:OceanographicCampaign ;
-    skos:prefLabel "Σειρά ωκεανογραφικών εκστρατειών"@el,
-        "Series of Oceanographic Campaigns"@en,
-        "Serie de campañas oceanográficas"@es,
-        "Série de campagnes océanographiques"@fr,
-        "Serie di campagne oceanografiche"@it,
-        "Serie med havforskningskampanjer"@no,
-        "Série de campanhas oceanográficas"@pt,
-        "Serie de campanii oceanografice"@ro .
 
 OSO:ResearchProject a owl:Class ;
     rdfs:label "Ερευνητικό έργο"@el,
