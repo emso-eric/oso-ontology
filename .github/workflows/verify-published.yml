@@ -57,6 +57,8 @@ jobs:
       - name: Version DOI resolves
         run: |
           doi="$(python -c "import sys; sys.path.insert(0, 'maintenance'); from zenodo import declared_doi; print(declared_doi('$VERSION'))")"
-          code="$(curl -s -o /dev/null -w '%{http_code}' "https://doi.org/$doi")"
+          code="$(curl -s -o /dev/null -w '%{http_code}' \
+            -A "OSO-release-pipeline/1.0 (+https://github.com/emso-eric/oso-ontology)" \
+            "https://doi.org/$doi")"
           echo "https://doi.org/$doi -> HTTP $code"
           [ "$code" = 302 ] || { echo "::error::DOI $doi does not resolve (HTTP $code)"; exit 1; }

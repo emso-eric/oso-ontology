@@ -22,7 +22,7 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 from rdflib import Graph, RDF, URIRef
 from rdflib.compare import isomorphic
@@ -31,6 +31,7 @@ from rdflib.namespace import OWL
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_BASE = "https://emso-eric.github.io/oso-ontology"
 OSO_IRI = URIRef("https://w3id.org/earthsemantics/OSO")
+USER_AGENT = "OSO-release-pipeline/1.0 (+https://github.com/emso-eric/oso-ontology)"
 
 ARTEFACTS = [
     ("ontology.ttl", "turtle"),
@@ -59,7 +60,7 @@ def verify(base_url: str) -> list[str]:
         url = f"{base_url.rstrip('/')}/{name}"
         label = f"{url}"
         try:
-            with urlopen(url, timeout=60) as r:
+            with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=60) as r:
                 data = r.read()
         except Exception as e:  # noqa: BLE001
             errors.append(f"{label}: fetch error: {e}")

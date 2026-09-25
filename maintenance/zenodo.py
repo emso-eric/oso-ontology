@@ -50,6 +50,9 @@ from rdflib.namespace import DCTERMS, OWL
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OSO_IRI = URIRef("https://w3id.org/earthsemantics/OSO")
 RDM_JSON = "application/vnd.inveniordm.v1+json"
+# Identifiable UA, as recommended by Zenodo for API clients:
+# https://blog.zenodo.org/2026/09/15/2026-09-15-stability-and-performance-updates/
+USER_AGENT = "OSO-release-pipeline/1.0 (+https://github.com/emso-eric/oso-ontology)"
 # 10.5281 = Zenodo DOIs; 10.5072 = test DOIs issued by sandbox.zenodo.org.
 DOI_RE = re.compile(r"^(?:https://doi\.org/)?10\.(?:5281|5072)/zenodo\.(\d+)$")
 
@@ -137,6 +140,7 @@ class Zenodo:
     def __init__(self, base_url: str, token: str | None):
         self.base = base_url.rstrip("/") + "/api"
         self.session = requests.Session()
+        self.session.headers["User-Agent"] = USER_AGENT
         if token:
             self.session.headers["Authorization"] = f"Bearer {token}"
 
