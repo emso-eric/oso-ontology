@@ -19,7 +19,7 @@ The objective is to ensure that every release follows a reproducible process whi
 | Script | Purpose |
 |---|---|
 | `generate_distributions.py` | Derives TBox/ABox and RDF serialisations for a `versions/<version>/` directory from its `OSO.ttl` source. |
-| `generate_metadata.py` | Generates DCAT, VoID and SHACL metadata files for a version. |
+| `generate_metadata.py` | Generates DCAT, VoID and SHACL metadata files in the pre-1.2.0 layout. Since 1.2.0 these files are curated and carried forward from the previous version with their version fields updated: do not use it for new releases. |
 | `generate_docs.py` | Regenerates `docs/ontology.{ttl,nt,owl,jsonld}` (GitHub Pages) from the root `OSO.ttl`. `--check` verifies without writing. |
 | `validate_ontology.py` | Blocking quality gate: RDF syntax, single `owl:Ontology` identity, partition and serialisation consistency. |
 | `run_cq_tests.py` | Runs the competency question tests under `tests/cq/`. |
@@ -39,7 +39,8 @@ GitHub Actions workflows enforce the pipeline:
   checks that `docs/ontology.*` mirror `OSO.ttl`, and runs the CQ tests.
   Non-blocking SHACL and ROBOT reports are produced as artefacts.
 - `.github/workflows/publish-docs.yml` — on release or manual dispatch:
-  regenerates `docs/ontology.*` and commits them if they drifted.
+  regenerates and commits `docs/ontology.*` only if they are no longer
+  semantically faithful to `OSO.ttl` (byte ordering changes are ignored).
 - `.github/workflows/release.yml` — on a `vX.Y.Z` tag: runs every gate
   above plus `check_release.py`, then creates a **draft** release whose
   assets are the files committed under `versions/X.Y.Z/` (never regenerated)
@@ -51,8 +52,10 @@ GitHub Actions workflows enforce the pipeline:
   files. Needs the `ZENODO_TOKEN` secret (scopes `deposit:write`,
   `deposit:actions`); the `ZENODO_URL` variable can point to
   `https://sandbox.zenodo.org` for rehearsals.
-- `.github/workflows/verify-published.yml` — after each Pages build: checks
-  that the live `ontology.*` artefacts carry the OSO identity.
+- `.github/workflows/verify-published.yml` — after each Pages build, daily
+  and on demand: checks that the live `ontology.*` artefacts carry the OSO
+  identity and mirror `OSO.ttl`, that the latest Zenodo version carries
+  exactly the latest release files, and that its version DOI resolves.
 
 Releases are immutable: a published version is never modified. Any fix,
 even to metadata or labels, ships as a new patch version.
