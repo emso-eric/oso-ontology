@@ -17,9 +17,9 @@ authors:
   - name: EMSO Data Management Service Group (DMSG)
     affiliation: EMSO ERIC
 
-version: "1.2.1"
+version: "1.2.2"
 
-date-released: 2026-09-25
+date-released: 2026-09-30
 
 license: "CC-BY-4.0"
 
@@ -51,8 +51,8 @@ keywords:
 
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.22957027
-    description: Zenodo DOI of version 1.2.1
+    value: 10.5281/zenodo.23158930
+    description: Zenodo DOI of version 1.2.2
 
   - type: doi
     value: 10.25504/FAIRsharing.654931
@@ -78,6 +78,6 @@ preferred-citation:
       given-names: Steven
     - name: EMSO Data Management Service Group (DMSG)
   publisher: EMSO ERIC
-  version: "1.2.1"
+  version: "1.2.2"
   year: 2026
-  doi: 10.5281/zenodo.22957027
+  doi: 10.5281/zenodo.23158930
