@@ -2,10 +2,10 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://w3id.org/earthsemantics/OSO/1.2.1/> a prov:Entity;
+<https://w3id.org/earthsemantics/OSO/1.2.2/> a prov:Entity;
 	 dc:title "Ontología de los observatorios marinos (OSO)";
-	 prov:wasAttributedTo <https://www.ifremer.fr/en>;
-	 dc:creator <https://www.ifremer.fr/en>;
+	 prov:wasAttributedTo <https://www.ifremer.fr/>;
+	 dc:creator <https://www.ifremer.fr/>;
 	 prov:wasAttributedTo <https://w3id.org/earthsemantics/OSO#Steven_PIEL>;
 	 dc:creator <https://w3id.org/earthsemantics/OSO#Steven_PIEL>;
 	 prov:wasAttributedTo <https://orcid.org/0009-0008-1759-5254>;
@@ -14,7 +14,7 @@
 	 prov:wasAttributedTo <https://emso.eu/>;
 	 dc:contributor <https://emso.eu/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/1.2.0/>;
-	 prov:wasGeneratedAt "2026-09-25";
+	 prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/1.2.1/>;
+	 prov:wasGeneratedAt "2026-09-30";
 .
 :agent0 a prov:Agent; foaf:name "https://w3id.org/earthsemantics/OSO#Ifremer".
