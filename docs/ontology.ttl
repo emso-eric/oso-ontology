@@ -148,7 +148,7 @@
         <https://github.com/dgarijo/Widoco>,
         <https://protege.stanford.edu/>,
         <https://vscodium.com/> ;
-    omv:version "1.2.2" ;
+    omv:version "1.2.3" ;
     dcterms:abstract "Η οντολογία OSO οργανώνει τα θαλάσσια παρατηρητήρια σε τρία ιεραρχικά επίπεδα: περιφερειακές υποδομές, τοποθεσίες και πλατφόρμες. Υποστηρίζει τη διαχείριση δεδομένων σύμφωνα με τις αρχές FAIR, τη διαλειτουργικότητα και την ενσωμάτωση πληροφοριών για θαλάσσιες υποδομές, ιδιαίτερα στο πλαίσιο του EMSO ERIC."@el,
         "The OSO ontology structures marine observatories into three hierarchical levels: Regional Facilities, Sites, and Platforms. It supports FAIR data management, interoperability, and integration of heterogeneous marine infrastructure information, particularly within the EMSO ERIC framework."@en,
         "La ontología OSO estructura los observatorios marinos en tres niveles jerárquicos: infraestructuras regionales, sitios y plataformas. Apoya la gestión FAIR de datos, la interoperabilidad y la integración de información sobre infraestructuras marinas, especialmente en el contexto de EMSO ERIC."@es,
@@ -157,7 +157,7 @@
         "OSO-ontologien strukturerer marine observatorier i tre hierarkiske nivåer: regionale fasiliteter, steder og plattformer. Den støtter FAIR datastyring, interoperabilitet og integrasjon av informasjon om marine infrastrukturer, spesielt i EMSO ERIC-konteksten."@no,
         "A ontologia OSO estrutura os observatórios marinhos em três níveis hierárquicos: infraestruturas regionais, locais e plataformas. Suporta a gestão FAIR de dados, a interoperabilidade e a integração de informações sobre infraestruturas marinhas, especialmente no contexto do EMSO ERIC."@pt,
         "Ontologia OSO structurează observatoarele marine în trei niveluri ierarhice: facilități regionale, situri și platforme. Susține gestionarea FAIR a datelor, interoperabilitatea și integrarea informațiilor despre infrastructuri marine, în special în contextul EMSO ERIC."@ro ;
-    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.2.2. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
+    dcterms:bibliographicCitation "Observatories of the Seas Ontology (OSO), version 1.2.3. EMSO ERIC / Ifremer. FAIRsharing DOI: 10.25504/FAIRsharing.654931."@en ;
     dcterms:conformsTo <https://semver.org/>,
         <https://www.conventionalcommits.org/>,
         <https://www.w3.org/TR/owl2-overview/>,
@@ -197,8 +197,8 @@
         <https://w3id.org/earthsemantics/OSO/OSO.owl>,
         <https://w3id.org/earthsemantics/OSO/OSO.trig>,
         <https://w3id.org/earthsemantics/OSO/OSO.ttl> ;
-    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.2/> ;
-    dcterms:identifier <https://doi.org/10.5281/zenodo.23158930> ;
+    dcterms:hasVersion <https://w3id.org/earthsemantics/OSO/1.2.3/> ;
+    dcterms:identifier <https://doi.org/10.5281/zenodo.23207425> ;
     dcterms:isDescribedBy <https://doi.org/10.25504/FAIRsharing.654931> ;
     dcterms:isReferencedBy <https://doi.org/10.25504/FAIRsharing.654931>,
         <https://doi.org/10.5281/zenodo.19497912>,
@@ -218,7 +218,7 @@
         <http://id.loc.gov/vocabulary/iso639-1/pt>,
         <http://id.loc.gov/vocabulary/iso639-1/ro> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-30"^^xsd:date ;
+    dcterms:modified "2026-10-07"^^xsd:date ;
     dcterms:provenance "Η οντολογία αναπτύχθηκε και συντηρείται με χρήση των Protégé 5.6.9, VSCodium 1.126.04524 και RDFLib 7.6.0, τελεί υπό έλεγχο εκδόσεων και δημοσιεύεται μέσω GitHub. Η διαχείριση εκδόσεων ακολουθεί το Semantic Versioning (SemVer), ενώ το ιστορικό των commits συμμορφώνεται με την προδιαγραφή Conventional Commits. Τα μεταδεδομένα της οντολογίας ελέγχονται και ενημερώνονται, ενώ τα στατιστικά της οντολογίας επανυπολογίζονται σε κάθε νέα έκδοση."@el,
         "The ontology was developed and maintained using Protégé 5.6.9, VSCodium 1.126.04524 and RDFLib 7.6.0, version-controlled and published through GitHub. Versioning follows Semantic Versioning (SemVer) and commit history follows the Conventional Commits specification. Ontology metadata are reviewed and updated, and ontology statistics are recomputed for each release."@en,
         "La ontología fue desarrollada y mantenida utilizando Protégé 5.6.9, VSCodium 1.126.04524 y RDFLib 7.6.0, versionada y publicada mediante GitHub. El versionado sigue Semantic Versioning (SemVer) y el historial de commits cumple la especificación Conventional Commits. Los metadatos de la ontología se revisan y actualizan, y las estadísticas de la ontología se recalculan en cada nueva versión."@es,
@@ -267,12 +267,12 @@
     pav:createdWith <https://protege.stanford.edu/>,
         <https://vscodium.com/> ;
     pav:curatedBy <https://orcid.org/0009-0008-1759-5254> ;
-    pav:curatedOn "2026-09-30"^^xsd:date ;
-    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
-    pav:version "1.2.2" ;
+    pav:curatedOn "2026-10-07"^^xsd:date ;
+    pav:previousVersion <https://w3id.org/earthsemantics/OSO/1.2.2/> ;
+    pav:version "1.2.3" ;
     datacite:doi "10.5281/zenodo.19497912" ;
     vann:example OSO:Site ;
-    vann:preferredNamespacePrefix "OSO" ;
+    vann:preferredNamespacePrefix "oso" ;
     vann:preferredNamespaceUri OSO: ;
     voaf:metadataVoc cc:,
         omv:,
@@ -349,21 +349,22 @@
         <https://w3id.org/earthsemantics/OSO/1.0.5/>,
         <https://w3id.org/earthsemantics/OSO/1.1.0/>,
         <https://w3id.org/earthsemantics/OSO/1.2.0/>,
-        <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
+        <https://w3id.org/earthsemantics/OSO/1.2.1/>,
+        <https://w3id.org/earthsemantics/OSO/1.2.2/> ;
     owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos>,
         <http://www.w3.org/2004/02/skos/core>,
         <http://www.w3.org/ns/prov-o>,
         foaf: ;
-    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
-    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.2/> ;
-    owl:versionInfo "1.2.2 – βελτίωση των μεταδεδομένων FAIR και προέλευσης· προσθήκη της ημερομηνίας δημοσίευσης, του λογότυπου της οντολογίας και τεκμηριωμένων σχέσεων εξειδίκευσης λεξιλογίων· προσθήκη πολυγλωσσικών περιγραφών σε όρους που δεν είχαν τεκμηρίωση· διόρθωση του πεδίου εφαρμογής της ιδιότητας hasDepth ώστε να αναφέρεται στην OSO:Site"@el,
-        "1.2.2 – improved FAIR and provenance metadata; added the ontology publication date, logo and documented vocabulary specialization relationships; added multilingual descriptions for previously undocumented terms; corrected the domain of hasDepth to OSO:Site"@en,
-        "1.2.2 – mejora de los metadatos FAIR y de procedencia; adición de la fecha de publicación de la ontología, del logotipo y de relaciones documentadas de especialización de vocabularios; adición de descripciones multilingües para términos anteriormente no documentados; corrección del dominio de hasDepth a OSO:Site"@es,
-        "1.2.2 – amélioration des métadonnées FAIR et de provenance ; ajout de la date de publication de l’ontologie, du logo et de relations documentées de spécialisation de vocabulaires ; ajout de descriptions multilingues pour des termes jusque-là non documentés ; correction du domaine de hasDepth vers OSO:Site"@fr,
-        "1.2.2 – miglioramento dei metadati FAIR e di provenienza; aggiunta della data di pubblicazione dell'ontologia, del logo e di relazioni documentate di specializzazione dei vocabolari; aggiunta di descrizioni multilingui per termini precedentemente non documentati; correzione del dominio di hasDepth a OSO:Site"@it,
-        "1.2.2 – forbedrede FAIR- og proveniensmetadata; lagt til publiseringsdato for ontologien, logo og dokumenterte relasjoner for vokabularspesialisering; lagt til flerspråklige beskrivelser for tidligere udokumenterte termer; korrigert domenet til hasDepth til OSO:Site"@no,
-        "1.2.2 – melhoria dos metadados FAIR e de proveniência; adição da data de publicação da ontologia, do logótipo e de relações documentadas de especialização de vocabulários; adição de descrições multilingues para termos anteriormente não documentados; correção do domínio de hasDepth para OSO:Site"@pt,
-        "1.2.2 – îmbunătățirea metadatelor FAIR și de proveniență; adăugarea datei de publicare a ontologiei, a logoului și a relațiilor documentate de specializare a vocabularelor; adăugarea descrierilor multilingve pentru termeni anterior nedocumentați; corectarea domeniului proprietății hasDepth la OSO:Site"@ro ;
+    owl:priorVersion <https://w3id.org/earthsemantics/OSO/1.2.2/> ;
+    owl:versionIRI <https://w3id.org/earthsemantics/OSO/1.2.3/> ;
+    owl:versionInfo "1.2.3 – ευθυγράμμιση του προτιμώμενου προθέματος χώρου ονομάτων (vann:preferredNamespacePrefix) σε «oso», όπως είναι καταχωρισμένο στα LOV και prefix.cc"@el,
+        "1.2.3 – preferred namespace prefix (vann:preferredNamespacePrefix) aligned to \"oso\", as registered in LOV and prefix.cc"@en,
+        "1.2.3 – alineación del prefijo de espacio de nombres preferido (vann:preferredNamespacePrefix) con «oso», tal como está registrado en LOV y prefix.cc"@es,
+        "1.2.3 – alignement du préfixe d’espace de noms préféré (vann:preferredNamespacePrefix) sur « oso », tel qu’enregistré dans LOV et prefix.cc"@fr,
+        "1.2.3 – allineamento del prefisso di namespace preferito (vann:preferredNamespacePrefix) a «oso», come registrato in LOV e prefix.cc"@it,
+        "1.2.3 – foretrukket navneromsprefiks (vann:preferredNamespacePrefix) justert til «oso», slik det er registrert i LOV og prefix.cc"@no,
+        "1.2.3 – alinhamento do prefixo de espaço de nomes preferido (vann:preferredNamespacePrefix) com «oso», tal como registado no LOV e no prefix.cc"@pt,
+        "1.2.3 – alinierea prefixului de spațiu de nume preferat (vann:preferredNamespacePrefix) la „oso”, așa cum este înregistrat în LOV și prefix.cc"@ro ;
     skos:altLabel "OSO",
         "Open Seas Observatories"@en ;
     skos:definition "Η οντολογία αυτή έχει ως στόχο να περιγράψει τα υποβρύχια παρατηρητήρια, ιδίως εκείνα που συνδέονται με τα Ευρωπαϊκά Πολυεπιστημονικά Παρατηρητήρια Θαλάσσιου Βυθού και Υδροκολώνας (EMSO), τα οποία αποτελούν Ευρωπαϊκό Συνεταιρισμό Ερευνητικής Υποδομής (ERIC) από το 2016."@el,
@@ -425,10 +426,10 @@
         "observatórios marinhos"@pt,
         "observatoare marine"@ro ;
     dcat:landingPage <https://earthportal.eu/ontologies/OSO> ;
-    prov:generatedAtTime "2026-09-30"^^xsd:date ;
+    prov:generatedAtTime "2026-10-07"^^xsd:date ;
     prov:wasAttributedTo OSO:Ifremer ;
     prov:wasGeneratedBy OSO:OntologyEngineeringWorkflow ;
-    prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/1.2.1/> ;
+    prov:wasRevisionOf <https://w3id.org/earthsemantics/OSO/1.2.2/> ;
     sd:endpoint <https://virtuoso.ifremer.fr/oso/> ;
     foaf:depiction <https://raw.githubusercontent.com/emso-eric/oso-ontology/main/oso-diagram.png> ;
     foaf:fundedBy OSO:EMSO_EVOLVE ;
