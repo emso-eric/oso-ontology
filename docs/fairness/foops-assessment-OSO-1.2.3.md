@@ -1,29 +1,38 @@
-# Évaluation FOOPS! — OSO
+# FOOPS! Assessment — OSO
 
-- **Ontologie** : https://w3id.org/earthsemantics/OSO
-- **Titre** : Οντολογία θαλάσσιων παρατηρητηρίων (OSO)
-- **Licence** : https://creativecommons.org/licenses/by/4.0/
-- **Ressource trouvée** : ontology
-- **Score global** : **1.0 / 1.0** — 24/24 tests réussis
-- **Date du rapport** : 2026-10-08
-- **API** : `POST https://foops.linkeddata.es/assessOntology` — corps `{"ontologyUri":"https://w3id.org/earthsemantics/OSO"}`
+Raw results returned by the FOOPS! API (`POST https://foops.linkeddata.es/assessOntology`), request body `{"ontologyUri":"https://w3id.org/earthsemantics/OSO"}`.
+
+| Field | Value |
+|---|---|
+| `ontology_URI` | https://w3id.org/earthsemantics/OSO |
+| `ontology_title` | Οντολογία θαλάσσιων παρατηρητηρίων (OSO) |
+| `ontology_license` | https://creativecommons.org/licenses/by/4.0/ |
+| `resource_found` | ontology |
+| `overall_score` | **1.0** |
+| `checks` | 24 |
+| Report generated | 2026-10-08 11:51 UTC |
 
 ---
 
-## Findable — 9/9
+## Results by check
 
-### ✅ PURL1 — Ontology has a persistent URL
+## Findable
 
-| | |
+### `PURL1` — Ontology has a persistent URL
+
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/PURL1` |
-| **Principe FAIR** | F1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/PURL1 |
+| `principle_id` | F1 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Ontology URI follows a follows a persistent URI scheme (URI: https://w3id.org/earthsemantics/OSO )
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Ontology URI follows a follows a persistent URI scheme (URI: https://w3id.org/earthsemantics/OSO )
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology has a persistent URL. We do so by checking if the ontology URI follows any of the following URI schemes:</p>
 <ul>
@@ -39,18 +48,21 @@
 
 </details>
 
-### ✅ URI1 — Ontology URI is resolvable
+### `URI1` — Ontology URI is resolvable
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/URI1` |
-| **Principe FAIR** | F1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/URI1 |
+| `principle_id` | F1 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Ontology URL is resolvable in application/rdf+xml
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Ontology URL is resolvable in application/rdf+xml
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology URI that was found within the ontology document is resolvable. 
 Note that the ontology URI found in the ontology may be different from the URI used in the assessment.
@@ -58,18 +70,21 @@ The test will pass if the vocabulary is resolvable in any of the following RDF s
 
 </details>
 
-### ✅ OM1 — Ontology minimum metadata is declared
+### `OM1` — Ontology minimum metadata is declared
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM1` |
-| **Principe FAIR** | F2 |
-| **Statut** | `ok` |
-| **Tests** | 6/6 réussis |
+| `id` | https://w3id.org/foops/test/OM1 |
+| `principle_id` | F2 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 6 / 6 |
 
-**Explication (API)** : All the minimum metadata were found!
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> All the minimum metadata were found!
+
+<details><summary>description</summary>
 
 <p>This check verifies if the following  minimum metadata are present in the ontology metadata:</p>
 <ul>
@@ -84,18 +99,21 @@ The test will pass if the vocabulary is resolvable in any of the following RDF s
 
 </details>
 
-### ✅ FIND1 — Ontology prefix is declared
+### `FIND1` — Ontology prefix is declared
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/FIND1` |
-| **Principe FAIR** | F3 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/FIND1 |
+| `principle_id` | F3 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Prefix declaration found in the ontology: oso
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Prefix declaration found in the ontology: oso
+
+<details><summary>description</summary>
 
 <p>This check verifies if an ontology prefix is declared in the ontology metadata. 
 The test will pass if a <a href="http://purl.org/vocab/vann/">vann:preferredNamespacePrefix</a> is declared.
@@ -103,18 +121,21 @@ Otherwise, the test will fail. </p>
 
 </details>
 
-### ✅ FIND2 — Ontology prefix is found in prefix.cc or LOV
+### `FIND2` — Ontology prefix is found in prefix.cc or LOV
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/FIND2` |
-| **Principe FAIR** | F4 |
-| **Statut** | `ok` |
-| **Tests** | 2/2 réussis |
+| `id` | https://w3id.org/foops/test/FIND2 |
+| `principle_id` | F4 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 2 / 2 |
 
-**Explication (API)** : Prefix declaration found with correct namespace (in prefix.cc)
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Prefix declaration found with correct namespace (in prefix.cc)
+
+<details><summary>description</summary>
 
 <p>This test verifies whether the ontology prefix is available in <a href="(https://prefix.cc/)">prefix.cc</a> or the <a href="(https://lov.linkeddata.es/)">Linked Open Vocabularies (LOV)</a> registries. 
 The test will pass if: </p>
@@ -127,18 +148,21 @@ The test will pass if: </p>
 
 </details>
 
-### ✅ FIND3 — Ontology found in community registry
+### `FIND3` — Ontology found in community registry
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/FIND3` |
-| **Principe FAIR** | F4 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/FIND3 |
+| `principle_id` | F4 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Otology is included in a data catalog.
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Otology is included in a data catalog.
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology can be found in a public registry like the Linked Open Vocabularies (LOV) public registry.
 The test will pass if the assessed ontology URI is found in the list of vocabularies returned by LOV.
@@ -147,18 +171,21 @@ The test will fail otherwise.   </p>
 
 </details>
 
-### ✅ VER1 — A version IRI is declared in the ontology metadata
+### `VER1` — A version IRI is declared in the ontology metadata
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/VER1` |
-| **Principe FAIR** | F1 |
-| **Statut** | `ok` |
-| **Tests** | 2/2 réussis |
+| `id` | https://w3id.org/foops/test/VER1 |
+| `principle_id` | F1 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 2 / 2 |
 
-**Explication (API)** : Version IRI defined, IRI is different from ontology URI. Version info found (1.2.3 – ευθυγράμμιση του προτιμώμενου προθέματος χώρου ονομάτων (vann:preferredNamespacePrefix) σε «oso», όπως είναι καταχωρισμένο στα LOV και prefix.cc).
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Version IRI defined, IRI is different from ontology URI. Version info found (1.2.3 – ευθυγράμμιση του προτιμώμενου προθέματος χώρου ονομάτων (vann:preferredNamespacePrefix) σε «oso», όπως είναι καταχωρισμένο στα LOV και prefix.cc).
+
+<details><summary>description</summary>
 
 <p>This test verifies whether there is an id for this ontology version, and whether the id is unique (i.e., different from the ontology URI). The test will pass if: </p>
 <ol>
@@ -169,55 +196,64 @@ The test will fail otherwise.   </p>
 
 </details>
 
-### ✅ VER2 — Ontology version IRI resolves
+### `VER2` — Ontology version IRI resolves
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/VER2` |
-| **Principe FAIR** | F1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/VER2 |
+| `principle_id` | F1 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Version IRI resolves
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Version IRI resolves
+
+<details><summary>description</summary>
 
 <p>This test verifies if the version IRI resolves. The test will pass if there is a version IRI for the ontology/vocabulary (detected using <a href="http://www.w3.org/2002/07/owl#versionIRI">owl:versionIRI</a> in the ontology metadata) and whether doing a request to said IRI returns a resource. 
 The test will fail if the resource is not found (404 response) or returns an error.</p>
 
 </details>
 
-### ✅ URI2 — Consistent ontology IDs are employed
+### `URI2` — Consistent ontology IDs are employed
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/URI2` |
-| **Principe FAIR** | F1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/URI2 |
+| `principle_id` | F1 |
+| `category_id` | Findable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Ontology URI is equal to ontology id
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Ontology URI is equal to ontology id
+
+<details><summary>description</summary>
 
 <p>This check verifies if the ontology URI is equal to the ontology ID. The test passes if the ontology URI used to load the ontology document is the same as the ontology id found in the document itself. Otherwise the test will fail.</p>
 
 </details>
 
-## Accessible — 3/3
+## Accessible
 
-### ✅ CN1 — Ontology has content negotiation for RDF in RDF/XML, TTL, NTriples or JSON-LD serializations
+### `CN1` — Ontology has content negotiation for RDF in RDF/XML, TTL, NTriples or JSON-LD serializations
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/CN1` |
-| **Principe FAIR** | A1 |
-| **Statut** | `ok` |
-| **Tests** | 2/2 réussis |
+| `id` | https://w3id.org/foops/test/CN1 |
+| `principle_id` | A1 |
+| `category_id` | Accessible |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 2 / 2 |
 
-**Explication (API)** : Ontology available in: HTML, RDF
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Ontology available in: HTML, RDF
+
+<details><summary>description</summary>
 
 <p>This test verifies whether HTML and an RDF representation is available for the target vocabulary by doing content negotiation on the ontology URI. The test will pass if the vocabulary is available in HTML and in any of the following RDF serializations: </p>
 <ul>
@@ -230,18 +266,21 @@ The test will fail if the resource is not found (404 response) or returns an err
 
 </details>
 
-### ✅ FIND_3_BIS — Ontology metadata are accessible, even when the ontology is not
+### `FIND_3_BIS` — Ontology metadata are accessible, even when the ontology is not
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/FIND_3_BIS` |
-| **Principe FAIR** | A2 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/FIND_3_BIS |
+| `principle_id` | A2 |
+| `category_id` | Accessible |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Otology is included in a data catalog.
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Otology is included in a data catalog.
+
+<details><summary>description</summary>
 
 <p>Metadata are accessible even when the ontology is no longer available. Since the metadata is usually included in the ontology, this test verifies if the ontology can be found in the <a href="https://lov.linkeddata.es">Linked Open Vocabularies (LOV) public registry</a>.
 The test will pass if the assessed ontology/vocabulary URI is found in the LOV list of vocabularies.
@@ -250,54 +289,63 @@ The test will fail otherwise. </p>
 
 </details>
 
-### ✅ HTTP1 — Ontology uses an open protocol
+### `HTTP1` — Ontology uses an open protocol
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/HTTP1` |
-| **Principe FAIR** | A1.1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/HTTP1 |
+| `principle_id` | A1.1 |
+| `category_id` | Accessible |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : The ontology uses an open protocol
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> The ontology uses an open protocol
+
+<details><summary>description</summary>
 
 <p>This check verifies if the ontology uses an open protocol (HTTP or HTTPS). The test will pass if the ontology URI starts with http or https. It will fail otherwise.</p>
 
 </details>
 
-## Reusable — 9/9
+## Reusable
 
-### ✅ DOC1 — Ontology has HTML documentation
+### `DOC1` — Ontology has HTML documentation
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/DOC1` |
-| **Principe FAIR** | R1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/DOC1 |
+| `principle_id` | R1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Ontology available in HTML
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Ontology available in HTML
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology has an HTML documentation. The test will attempt to download an HTML representation using the ontology URI, with content negotiation </p>
 
 </details>
 
-### ✅ OM2 — Ontology declares recommended metadata
+### `OM2` — Ontology declares recommended metadata
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM2` |
-| **Principe FAIR** | R1 |
-| **Statut** | `ok` |
-| **Tests** | 4/4 réussis |
+| `id` | https://w3id.org/foops/test/OM2 |
+| `principle_id` | R1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 4 / 4 |
 
-**Explication (API)** : All recommended metadata found!
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> All recommended metadata found!
+
+<details><summary>description</summary>
 
 <p>This test verifies if the following recommended metadata are present in the ontology metadata: </p>
 <ul>
@@ -311,18 +359,21 @@ The test will fail otherwise. </p>
 
 </details>
 
-### ✅ OM3 — Ontology declares detailed metadata
+### `OM3` — Ontology declares detailed metadata
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM3` |
-| **Principe FAIR** | R1 |
-| **Statut** | `ok` |
-| **Tests** | 6/6 réussis |
+| `id` | https://w3id.org/foops/test/OM3 |
+| `principle_id` | R1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 6 / 6 |
 
-**Explication (API)** : All optional metadata found!
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> All optional metadata found!
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology includes the following detailed metadata:</p>
 <ul>
@@ -340,18 +391,21 @@ The test will fail otherwise. </p>
 
 </details>
 
-### ✅ OM4_1 — Ontology has a license available
+### `OM4_1` — Ontology has a license available
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM4.1` |
-| **Principe FAIR** | R1.1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/OM4.1 |
+| `principle_id` | R1.1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : A license was found https://creativecommons.org/licenses/by/4.0/
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> A license was found https://creativecommons.org/licenses/by/4.0/
+
+<details><summary>description</summary>
 
 <p>This test verifies if a license (or rights) are associated with the ontology.
 The test will pass if a license is declared using any of the following properties: <a href="http://purl.org/dc/terms/license">dcterms:license</a>, <a href="https://schema.org/license">schema:license</a>, <a href="http://usefulinc.com/ns/doap#license">doap:license</a> or <a href="http://creativecommons.org/ns#license">cc:license</a>.</p>
@@ -360,35 +414,41 @@ The test will pass if a license is declared using any of the following propertie
 
 </details>
 
-### ✅ OM4_2 — Ontology license is resolvable
+### `OM4_2` — Ontology license is resolvable
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM4.2` |
-| **Principe FAIR** | R1.1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/OM4.2 |
+| `principle_id` | R1.1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : License could be resolved
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> License could be resolved
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology license is resolvable. The test will pass if the license available in the ontology metadata resolves to a resource. The test will fail if no license is declared (OM4.1), if the license is not a URI/URL, or if the response when requesting is 404 or an error. </p>
 
 </details>
 
-### ✅ OM5_1 — Ontology declares basic provenance metadata
+### `OM5_1` — Ontology declares basic provenance metadata
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM5.1` |
-| **Principe FAIR** | R1.2 |
-| **Statut** | `ok` |
-| **Tests** | 2/2 réussis |
+| `id` | https://w3id.org/foops/test/OM5.1 |
+| `principle_id` | R1.2 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 2 / 2 |
 
-**Explication (API)** : All basic provenance metadata found!
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> All basic provenance metadata found!
+
+<details><summary>description</summary>
 
 <p>This check verifies if basic provenance metadata is available for the ontology:  </p>
 <ul>
@@ -401,18 +461,21 @@ The test will pass if a license is declared using any of the following propertie
 
 </details>
 
-### ✅ OM5_2 — Ontology declares detailed provenance metadata
+### `OM5_2` — Ontology declares detailed provenance metadata
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/OM5.2` |
-| **Principe FAIR** | R1.2 |
-| **Statut** | `ok` |
-| **Tests** | 2/2 réussis |
+| `id` | https://w3id.org/foops/test/OM5.2 |
+| `principle_id` | R1.2 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 2 / 2 |
 
-**Explication (API)** : All detailed provenance metadata found!
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> All detailed provenance metadata found!
+
+<details><summary>description</summary>
 
 <p>This check verifies if detailed provenance information is available for the ontology: </p>
 <ul>
@@ -423,18 +486,21 @@ The test will pass if a license is declared using any of the following propertie
 
 </details>
 
-### ✅ VOC3 — Ontology documentation: all terms have labels
+### `VOC3` — Ontology documentation: all terms have labels
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/VOC3` |
-| **Principe FAIR** | R1 |
-| **Statut** | `ok` |
-| **Tests** | 100/100 réussis |
+| `id` | https://w3id.org/foops/test/VOC3 |
+| `principle_id` | R1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 100 / 100 |
 
-**Explication (API)** : Labels found for all ontology terms (100 terms found)
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Labels found for all ontology terms (100 terms found)
+
+<details><summary>description</summary>
 
 <p>This test verifies the extent to which all ontology terms have labels.
 The test will pass if all classes, properties and data properties have either an <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> or <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>.
@@ -443,18 +509,21 @@ Otherwise, the test will fail, indicating the level of completeness found (i.e.,
 
 </details>
 
-### ✅ VOC4 — Ontology documentation: all terms have definitions
+### `VOC4` — Ontology documentation: all terms have definitions
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/VOC4` |
-| **Principe FAIR** | R1 |
-| **Statut** | `ok` |
-| **Tests** | 100/100 réussis |
+| `id` | https://w3id.org/foops/test/VOC4 |
+| `principle_id` | R1 |
+| `category_id` | Reusable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 100 / 100 |
 
-**Explication (API)** : Descriptions found for all ontology terms (100 terms found)
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Descriptions found for all ontology terms (100 terms found)
+
+<details><summary>description</summary>
 
 <p>This check verifies whether all ontology terms have descriptions. 
 The test will pass if all classes, properties and data properties have at least one <a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a>, <a href="http://www.w3.org/2004/02/skos/core#definition">skos:definition</a> or <a href="http://purl.obolibrary.org/obo/IAO_0000118">obo:IAO_0000118</a> annotation.
@@ -463,20 +532,23 @@ For skos vocabularies, only the skos:Concepts are assessed.</p>
 
 </details>
 
-## Interoperable — 3/3
+## Interoperable
 
-### ✅ RDF1 — Ontology is available in RDF (TTL, N3, RDF/XML or JSON-LD)
+### `RDF1` — Ontology is available in RDF (TTL, N3, RDF/XML or JSON-LD)
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/RDF1` |
-| **Principe FAIR** | I1 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/RDF1 |
+| `principle_id` | I1 |
+| `category_id` | Interoperable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Ontology available in RDF
+**explanation**
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+> Ontology available in RDF
+
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology has a valid RDF serialization (TTL, N3, RDF/XML or JSON-LD are supported).
 The test will fail if no RDF serialization could be loaded for analysis (e.g., the ontology has typos that prevent its parsing).
@@ -484,18 +556,21 @@ The test uses the OWLAPI to load ontologies or vocabularies.</p>
 
 </details>
 
-### ✅ VOC1 — Ontology reuses existing vocabularies for metadata annotations
+### `VOC1` — Ontology reuses existing vocabularies for metadata annotations
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/VOC1` |
-| **Principe FAIR** | I2 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/VOC1 |
+| `principle_id` | I2 |
+| `category_id` | Interoperable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : Ontology reuses existing vocabularies for declaring metadata. 
+**explanation**
 
-**Ressources de référence détectées** :
+> Ontology reuses existing vocabularies for declaring metadata. 
+
+**reference_resources**
 
 - `http://purl.org/dc/terms/`
 - `http://purl.org/pav/`
@@ -506,7 +581,7 @@ The test uses the OWLAPI to load ontologies or vocabularies.</p>
 - `http://xmlns.com/foaf/0.1/`
 - `https://w3id.org/mod#`
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology reuses other vocabularies for declaring metadata terms (see tests OM1... OM5).
 The test will pass if metadata annotations using properties from any of the following vocabularies are used:</p>
@@ -527,25 +602,28 @@ The test will pass if metadata annotations using properties from any of the foll
 
 </details>
 
-### ✅ VOC2 — Ontology imports or reuses well established vocabularies
+### `VOC2` — Ontology imports or reuses well established vocabularies
 
-| | |
+| Field | Value |
 |---|---|
-| **ID du test** | `https://w3id.org/foops/test/VOC2` |
-| **Principe FAIR** | I2 |
-| **Statut** | `ok` |
-| **Tests** | 1/1 réussis |
+| `id` | https://w3id.org/foops/test/VOC2 |
+| `principle_id` | I2 |
+| `category_id` | Interoperable |
+| `status` | `ok` |
+| `total_passed_tests` / `total_tests_run` | 1 / 1 |
 
-**Explication (API)** : The ontology imports the following vocabularies: . Foundational ontologies extended. Nicely done!
+**explanation**
 
-**Ressources de référence détectées** :
+> The ontology imports the following vocabularies: . Foundational ontologies extended. Nicely done!
+
+**reference_resources**
 
 - `http://www.w3.org/2003/01/geo/wgs84_pos`
 - `http://www.w3.org/2004/02/skos/core`
 - `http://www.w3.org/ns/prov-o`
 - `http://xmlns.com/foaf/0.1/`
 
-<details><summary>Description complète du test (HTML renvoyé par l'API)</summary>
+<details><summary>description</summary>
 
 <p>This test verifies if the ontology imports/extends other vocabularies (besides RDF, OWL and RDFS).
 The test will pass if other vocabularies are imported (<a href="http://www.w3.org/2002/07/owl#imports">owl:imports</a>), or if classes, properties or data properties 
@@ -556,7 +634,7 @@ The test wil fail if no terms are reused.</p>
 
 ---
 
-## Réponse JSON brute de l'API
+## Raw API response (JSON, untruncated)
 
 ```json
 {
